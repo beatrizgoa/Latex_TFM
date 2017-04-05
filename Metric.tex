@@ -7,10 +7,42 @@ The first parameter that is used is the cost. The cost is used while the neural 
 More specifically, for training the neural ne
 
 \subsection{True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}
-True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN) are metrics that are used for bi-classes problems.
+True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN) are metrics that are used for bi-classes problems, positive class and negative class. The positive class is real users, genuine user and bonafide and negative class is the attack clas.
+Those metrics, aro gotten when a positive or negative samples is well or missclasified \cite{Sokolova}.\\
+If a positive sample is classified as positive is a true positive (TP), but if it has been classified as negative is a false negative (FN).\\
+If a negative sample is classified as negative is a true negative (TN), but if it has ben classified as positive, is a false positive (FP).\\
+
+From those four metrics, it could be extracted the confusion matrix for binary classification, explained in \ref{table:ConfusionMatrix} :
+
+\begin{table}[]
+\centering
+\label{table:ConfusionMatrix}
+\begin{tabular}{|
+>{\columncolor[HTML]{EFEFEF}}c |>{\columncolor[HTML]{FFFFFF}}c | >{\columncolor[HTML]{FFFFFF}}c |}
+\hline
+\textbf{Real / Classified} & \cellcolor[HTML]{EFEFEF}\textbf{Positive} & \cellcolor[HTML]{EFEFEF}\textbf{Negative} \\ \hline
+\textbf{Positve}           & TP                                        & FN                                        \\ \hline
+\textbf{Negative}          & FN                                        & TN                                        \\ \hline
+\end{tabular}
+\caption{Confusion Matrix}
+\end{table}
 
 \subsection{ROC curve}
+From the confusion matrix, it is posible claculate others parameters \cite{Sokolova}: precision, recall, specificity, accuracy because its values depend on TP, TN, FP, FN as could be se in it respective equation:.
+The ROC curve is
 
-\subsection{Precision and Recall}
+\begin{equation}
+  precision = \frac{TP}{TP + FP}
+\end{equation}
+
+\begin{equation}
+  recall = \frac{TP}{TP + FN}
+\end{equation}
+
+\begin{equation}
+  Accuracy = \frac{TP + TN}{TP + FP + FN + TN}
+\end{equation}
+
+\section{Precision and Recall}
 
 \subsection{APCR and BPCR}

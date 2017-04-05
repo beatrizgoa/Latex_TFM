@@ -5,4 +5,10 @@
   of mathematical expressions},'' {\em arXiv e-prints}, vol.~abs/1605.02688,
   May 2016.
 
+\bibitem{Sokolova}
+M.~Sokolova, N.~Japkowicz, and S.~Szpakowicz, ``Beyond accuracy, f-score and
+  roc: A family of discriminant measures for performance evaluation,'' in {\em
+  Proceedings of the 19th Australian Joint Conference on Artificial
+  Intelligence: Advances in Artificial Intelligence}, pp.~1015--1021, 2006.
+
 \end{thebibliography}

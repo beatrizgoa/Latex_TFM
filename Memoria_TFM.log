@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.4)  5 APR 2017 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.4)  5 APR 2017 18:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -547,20 +547,20 @@ Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 ) (/home/beaa/Escritorio/Latex_TFM/Memoria_TFM.aux)
 \openout1 = `Memoria_TFM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count138
@@ -576,7 +576,7 @@ LaTeX Font Info:    ... okay on input line 122.
 \everyMPtoPDFconversion=\toks30
 )
 \AtBeginShipoutBox=\box43
-Package hyperref Info: Link coloring OFF on input line 122.
+Package hyperref Info: Link coloring OFF on input line 119.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -584,9 +584,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count144
 )
-LaTeX Info: Redefining \ref on input line 122.
-LaTeX Info: Redefining \pageref on input line 122.
-LaTeX Info: Redefining \nameref on input line 122.
+LaTeX Info: Redefining \ref on input line 119.
+LaTeX Info: Redefining \pageref on input line 119.
+LaTeX Info: Redefining \nameref on input line 119.
  (/home/beaa/Escritorio/Latex_TFM/Memoria_TFM.out) (/home/beaa/Escritorio/Latex_TFM/Memoria_TFM.out)
 \@outlinefile=\write4
 \openout4 = `Memoria_TFM.out'.
@@ -640,15 +640,15 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 146.
+LaTeX Font Info:    Try loading font information for U+msa on input line 143.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 146.
+LaTeX Font Info:    Try loading font information for U+msb on input line 143.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 146.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 143.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
@@ -659,13 +659,12 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 ] [4
 
-] (/home/beaa/Escritorio/Latex_TFM/Memoria_TFM.toc)
+] (/home/beaa/Escritorio/Latex_TFM/Memoria_TFM.toc [5])
 \tf@toc=\write5
 \openout5 = `Memoria_TFM.toc'.
 
- [5] [6
+ [6] [1
 
-] [1
 
 ] [2]
 Chapter 1.
@@ -701,7 +700,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-) (/home/beaa/Escritorio/Latex_TFM/databases.tex [4] <images_databases/mnistExamples.png, id=165, 531.9875pt x 298.11375pt>
+) (/home/beaa/Escritorio/Latex_TFM/databases.tex [4] <images_databases/mnistExamples.png, id=200, 531.9875pt x 298.11375pt>
 File: images_databases/mnistExamples.png Graphic file (type png)
  <use images_databases/mnistExamples.png>
 Package pdftex.def Info: images_databases/mnistExamples.png used on input line 14.
@@ -716,27 +715,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-<images_databases/LFW/1.jpg, id=174, 250.9375pt x 250.9375pt>
+<images_databases/LFW/1.jpg, id=210, 250.9375pt x 250.9375pt>
 File: images_databases/LFW/1.jpg Graphic file (type jpg)
  <use images_databases/LFW/1.jpg>
 Package pdftex.def Info: images_databases/LFW/1.jpg used on input line 42.
 (pdftex.def)             Requested size: 91.04742pt x 91.0496pt.
- <images_databases/LFW/2.jpg, id=175, 250.9375pt x 250.9375pt>
+ <images_databases/LFW/2.jpg, id=211, 250.9375pt x 250.9375pt>
 File: images_databases/LFW/2.jpg Graphic file (type jpg)
  <use images_databases/LFW/2.jpg>
 Package pdftex.def Info: images_databases/LFW/2.jpg used on input line 43.
 (pdftex.def)             Requested size: 91.04742pt x 91.0496pt.
- <images_databases/LFW/3.jpg, id=176, 250.9375pt x 250.9375pt>
+ <images_databases/LFW/3.jpg, id=212, 250.9375pt x 250.9375pt>
 File: images_databases/LFW/3.jpg Graphic file (type jpg)
  <use images_databases/LFW/3.jpg>
 Package pdftex.def Info: images_databases/LFW/3.jpg used on input line 44.
 (pdftex.def)             Requested size: 91.04742pt x 91.0496pt.
- <images_databases/LFW/4.jpg, id=177, 250.9375pt x 250.9375pt>
+ <images_databases/LFW/4.jpg, id=213, 250.9375pt x 250.9375pt>
 File: images_databases/LFW/4.jpg Graphic file (type jpg)
  <use images_databases/LFW/4.jpg>
 Package pdftex.def Info: images_databases/LFW/4.jpg used on input line 45.
 (pdftex.def)             Requested size: 91.04742pt x 91.0496pt.
- <images_databases/LFW/5.jpg, id=178, 250.9375pt x 250.9375pt>
+ <images_databases/LFW/5.jpg, id=214, 250.9375pt x 250.9375pt>
 File: images_databases/LFW/5.jpg Graphic file (type jpg)
  <use images_databases/LFW/5.jpg>
 Package pdftex.def Info: images_databases/LFW/5.jpg used on input line 46.
@@ -781,53 +780,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-<images_databases/fravrgb/at1-0.JPG, id=187, 154.6578pt x 218.87486pt>
+<images_databases/fravrgb/at1-0.JPG, id=223, 154.6578pt x 218.87486pt>
 File: images_databases/fravrgb/at1-0.JPG Graphic file (type jpg)
  <use images_databases/fravrgb/at1-0.JPG>
 Package pdftex.def Info: images_databases/fravrgb/at1-0.JPG used on input line 81.
 (pdftex.def)             Requested size: 81.9406pt x 115.96303pt.
- <images_databases/fravrgb/at2-0.JPG, id=188, 279.99463pt x 396.0396pt>
+ <images_databases/fravrgb/at2-0.JPG, id=224, 279.99463pt x 396.0396pt>
 File: images_databases/fravrgb/at2-0.JPG Graphic file (type jpg)
  <use images_databases/fravrgb/at2-0.JPG>
 Package pdftex.def Info: images_databases/fravrgb/at2-0.JPG used on input line 82.
 (pdftex.def)             Requested size: 81.9406pt x 115.90002pt.
- <images_databases/fravrgb/at3-0.JPG, id=189, 452.20372pt x 642.58354pt>
+ <images_databases/fravrgb/at3-0.JPG, id=225, 452.20372pt x 642.58354pt>
 File: images_databases/fravrgb/at3-0.JPG Graphic file (type jpg)
  <use images_databases/fravrgb/at3-0.JPG>
 Package pdftex.def Info: images_databases/fravrgb/at3-0.JPG used on input line 83.
 (pdftex.def)             Requested size: 81.9406pt x 116.43463pt.
- <images_databases/fravrgb/at4-0.JPG, id=190, 125.95628pt x 178.19717pt>
+ <images_databases/fravrgb/at4-0.JPG, id=226, 125.95628pt x 178.19717pt>
 File: images_databases/fravrgb/at4-0.JPG Graphic file (type jpg)
  <use images_databases/fravrgb/at4-0.JPG>
 Package pdftex.def Info: images_databases/fravrgb/at4-0.JPG used on input line 84.
 (pdftex.def)             Requested size: 81.9406pt x 115.92738pt.
- <images_databases/fravrgb/real0.JPG, id=191, 288.25406pt x 407.6028pt>
+ <images_databases/fravrgb/real0.JPG, id=227, 288.25406pt x 407.6028pt>
 File: images_databases/fravrgb/real0.JPG Graphic file (type jpg)
  <use images_databases/fravrgb/real0.JPG>
 Package pdftex.def Info: images_databases/fravrgb/real0.JPG used on input line 85.
 (pdftex.def)             Requested size: 81.9406pt x 115.86324pt.
- <images_databases/fravrgb/at1-1.JPG, id=192, 214.12569pt x 302.91454pt>
+ <images_databases/fravrgb/at1-1.JPG, id=228, 214.12569pt x 302.91454pt>
 File: images_databases/fravrgb/at1-1.JPG Graphic file (type jpg)
  <use images_databases/fravrgb/at1-1.JPG>
 Package pdftex.def Info: images_databases/fravrgb/at1-1.JPG used on input line 92.
 (pdftex.def)             Requested size: 81.9406pt x 115.91757pt.
- <images_databases/fravrgb/at2-1.JPG, id=193, 237.45857pt x 335.74577pt>
+ <images_databases/fravrgb/at2-1.JPG, id=229, 237.45857pt x 335.74577pt>
 File: images_databases/fravrgb/at2-1.JPG Graphic file (type jpg)
  <use images_databases/fravrgb/at2-1.JPG>
 Package pdftex.def Info: images_databases/fravrgb/at2-1.JPG used on input line 93.
 (pdftex.def)             Requested size: 81.9406pt x 115.85803pt.
- <images_databases/fravrgb/at3-1.JPG, id=194, 294.8616pt x 418.95952pt>
+ <images_databases/fravrgb/at3-1.JPG, id=230, 294.8616pt x 418.95952pt>
 File: images_databases/fravrgb/at3-1.JPG Graphic file (type jpg)
  <use images_databases/fravrgb/at3-1.JPG>
 Package pdftex.def Info: images_databases/fravrgb/at3-1.JPG used on input line 94.
 (pdftex.def)             Requested size: 81.9406pt x 116.42564pt.
- <images_databases/fravrgb/at4-1.JPG, id=195, 148.05026pt x 209.37651pt>
+ <images_databases/fravrgb/at4-1.JPG, id=231, 148.05026pt x 209.37651pt>
 File: images_databases/fravrgb/at4-1.JPG Graphic file (type jpg)
 
 <use images_databases/fravrgb/at4-1.JPG>
 Package pdftex.def Info: images_databases/fravrgb/at4-1.JPG used on input line 95.
 (pdftex.def)             Requested size: 81.9406pt x 115.88264pt.
- <images_databases/fravrgb/real1.JPG, id=196, 341.94034pt x 483.58954pt>
+ <images_databases/fravrgb/real1.JPG, id=232, 341.94034pt x 483.58954pt>
 File: images_databases/fravrgb/real1.JPG Graphic file (type jpg)
  <use images_databases/fravrgb/real1.JPG>
 Package pdftex.def Info: images_databases/fravrgb/real1.JPG used on input line 96.
@@ -842,42 +841,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
-<images_databases/casia/at1-2.jpg, id=206, 722.7pt x 1284.8pt>
+[8 </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/at1-0.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/at2-0.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/at3-0.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/at4-0.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/real0.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/at1-1.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/at2-1.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/at3-1.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/at4-1.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/real1.JPG>] <images_databases/casia/at1-2.jpg, id=246, 722.7pt x 1284.8pt>
 File: images_databases/casia/at1-2.jpg Graphic file (type jpg)
  <use images_databases/casia/at1-2.jpg>
 Package pdftex.def Info: images_databases/casia/at1-2.jpg used on input line 126.
 (pdftex.def)             Requested size: 91.04742pt x 161.8543pt.
- <images_databases/casia/at2-2.jpg, id=207, 417.05812pt x 690.32906pt>
+ <images_databases/casia/at2-2.jpg, id=247, 417.05812pt x 690.32906pt>
 File: images_databases/casia/at2-2.jpg Graphic file (type jpg)
  <use images_databases/casia/at2-2.jpg>
 Package pdftex.def Info: images_databases/casia/at2-2.jpg used on input line 127.
 (pdftex.def)             Requested size: 91.04742pt x 150.70363pt.
- <images_databases/casia/at3-2.jpg, id=208, 722.7pt x 1284.8pt>
+ <images_databases/casia/at3-2.jpg, id=248, 722.7pt x 1284.8pt>
 File: images_databases/casia/at3-2.jpg Graphic file (type jpg)
- <use images_databases/casia/at3-2.jpg>
+
+<use images_databases/casia/at3-2.jpg>
 Package pdftex.def Info: images_databases/casia/at3-2.jpg used on input line 128.
 (pdftex.def)             Requested size: 91.04742pt x 161.8543pt.
- <images_databases/casia/real2.jpg, id=209, 722.7pt x 1284.8pt>
+ <images_databases/casia/real2.jpg, id=249, 722.7pt x 1284.8pt>
 File: images_databases/casia/real2.jpg Graphic file (type jpg)
  <use images_databases/casia/real2.jpg>
 Package pdftex.def Info: images_databases/casia/real2.jpg used on input line 129.
 (pdftex.def)             Requested size: 91.04742pt x 161.8543pt.
- <images_databases/casia/at1-1.jpg, id=210, 444.15938pt x 773.89125pt>
+ <images_databases/casia/at1-1.jpg, id=250, 444.15938pt x 773.89125pt>
 File: images_databases/casia/at1-1.jpg Graphic file (type jpg)
  <use images_databases/casia/at1-1.jpg>
 Package pdftex.def Info: images_databases/casia/at1-1.jpg used on input line 136.
 (pdftex.def)             Requested size: 91.04742pt x 158.63692pt.
- <images_databases/casia/at2-1.jpg, id=211, 524.71031pt x 813.79031pt>
+ <images_databases/casia/at2-1.jpg, id=251, 524.71031pt x 813.79031pt>
 File: images_databases/casia/at2-1.jpg Graphic file (type jpg)
  <use images_databases/casia/at2-1.jpg>
 Package pdftex.def Info: images_databases/casia/at2-1.jpg used on input line 137.
 (pdftex.def)             Requested size: 91.04742pt x 141.19853pt.
- <images_databases/casia/at3-1.jpg, id=212, 722.7pt x 1284.8pt>
+ <images_databases/casia/at3-1.jpg, id=252, 722.7pt x 1284.8pt>
 File: images_databases/casia/at3-1.jpg Graphic file (type jpg)
  <use images_databases/casia/at3-1.jpg>
 Package pdftex.def Info: images_databases/casia/at3-1.jpg used on input line 138.
 (pdftex.def)             Requested size: 91.04742pt x 161.8543pt.
- <images_databases/casia/real1.jpg, id=213, 722.7pt x 1284.8pt>
+ <images_databases/casia/real1.jpg, id=253, 722.7pt x 1284.8pt>
 File: images_databases/casia/real1.jpg Graphic file (type jpg)
  <use images_databases/casia/real1.jpg>
 Package pdftex.def Info: images_databases/casia/real1.jpg used on input line 139.
@@ -887,62 +887,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
-[8 </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/at1-0.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/at2-0.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/at3-0.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/at4-0.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/real0.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/at1-1.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/at2-1.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/at3-1.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/at4-1.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/fravrgb/real1.JPG>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 147--149
 
  []
 
-
+[9 </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at1-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at2-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at3-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/real2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at1-1.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at2-1.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at3-1.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/real1.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
-[9 </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at1-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at2-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at3-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/real2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at1-1.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at2-1.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at3-1.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/real1.jpg>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
-<images_databases/MFSD/at1-1.jpg, id=226, 110.3322pt x 116.1138pt>
+<images_databases/MFSD/at1-1.jpg, id=262, 110.3322pt x 116.1138pt>
 File: images_databases/MFSD/at1-1.jpg Graphic file (type jpg)
  <use images_databases/MFSD/at1-1.jpg>
 Package pdftex.def Info: images_databases/MFSD/at1-1.jpg used on input line 166.
 (pdftex.def)             Requested size: 91.04742pt x 95.82162pt.
- <images_databases/MFSD/at2-1.jpg, id=227, 88.8921pt x 90.3375pt>
+ <images_databases/MFSD/at2-1.jpg, id=263, 88.8921pt x 90.3375pt>
 File: images_databases/MFSD/at2-1.jpg Graphic file (type jpg)
  <use images_databases/MFSD/at2-1.jpg>
 Package pdftex.def Info: images_databases/MFSD/at2-1.jpg used on input line 167.
 (pdftex.def)             Requested size: 91.04742pt x 92.52898pt.
- <images_databases/MFSD/at3-1.jpg, id=228, 102.6234pt x 105.7551pt>
+ <images_databases/MFSD/at3-1.jpg, id=264, 102.6234pt x 105.7551pt>
 File: images_databases/MFSD/at3-1.jpg Graphic file (type jpg)
  <use images_databases/MFSD/at3-1.jpg>
 Package pdftex.def Info: images_databases/MFSD/at3-1.jpg used on input line 168.
 (pdftex.def)             Requested size: 91.04742pt x 93.83127pt.
- <images_databases/MFSD/1.jpg, id=229, 100.2144pt x 112.7412pt>
+ <images_databases/MFSD/1.jpg, id=265, 100.2144pt x 112.7412pt>
 File: images_databases/MFSD/1.jpg Graphic file (type jpg)
  <use images_databases/MFSD/1.jpg>
 Package pdftex.def Info: images_databases/MFSD/1.jpg used on input line 169.
 (pdftex.def)             Requested size: 91.04742pt x 102.4312pt.
- <images_databases/MFSD/at1-2.jpg, id=230, 68.4156pt x 76.8471pt>
+ <images_databases/MFSD/at1-2.jpg, id=266, 68.4156pt x 76.8471pt>
 File: images_databases/MFSD/at1-2.jpg Graphic file (type jpg)
  <use images_databases/MFSD/at1-2.jpg>
 Package pdftex.def Info: images_databases/MFSD/at1-2.jpg used on input line 175.
 (pdftex.def)             Requested size: 91.04742pt x 102.26984pt.
- <images_databases/MFSD/at2-2.jpg, id=231, 79.7379pt x 89.6148pt>
+ <images_databases/MFSD/at2-2.jpg, id=267, 79.7379pt x 89.6148pt>
 File: images_databases/MFSD/at2-2.jpg Graphic file (type jpg)
  <use images_databases/MFSD/at2-2.jpg>
 Package pdftex.def Info: images_databases/MFSD/at2-2.jpg used on input line 176.
 (pdftex.def)             Requested size: 91.04742pt x 102.32875pt.
- <images_databases/MFSD/at3-2.jpg, id=232, 88.1694pt x 99.0099pt>
+ <images_databases/MFSD/at3-2.jpg, id=268, 88.1694pt x 99.0099pt>
 File: images_databases/MFSD/at3-2.jpg Graphic file (type jpg)
  <use images_databases/MFSD/at3-2.jpg>
 Package pdftex.def Info: images_databases/MFSD/at3-2.jpg used on input line 177.
 (pdftex.def)             Requested size: 91.04742pt x 102.24721pt.
- <images_databases/MFSD/2.jpg, id=233, 67.9338pt x 76.3653pt>
+ <images_databases/MFSD/2.jpg, id=269, 67.9338pt x 76.3653pt>
 File: images_databases/MFSD/2.jpg Graphic file (type jpg)
  <use images_databases/MFSD/2.jpg>
 Package pdftex.def Info: images_databases/MFSD/2.jpg used on input line 178.
 (pdftex.def)             Requested size: 91.04742pt x 102.35341pt.
-) [10 </home/beaa/Escritorio/Latex_TFM/images_databases/MFSD/at1-1.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/MFSD/at2-1.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/MFSD/at3-1.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/MFSD/1.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/MFSD/at1-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/MFSD/at2-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/MFSD/at3-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/MFSD/2.jpg>]
+) (/home/beaa/Escritorio/Latex_TFM/Metric.tex [10 </home/beaa/Escritorio/Latex_TFM/images_databases/MFSD/at1-1.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/MFSD/at2-1.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/MFSD/at3-1.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/MFSD/1.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/MFSD/at1-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/MFSD/at2-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/MFSD/at3-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/MFSD/2.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
+
+ []
+
+
+Package caption Warning: \label without proper reference on input line 19.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `table:ConfusionMatrix' on page 11 undefined on input line 15.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 17.
+
+) [11] [12]
 Chapter 2.
 (/home/beaa/Escritorio/Latex_TFM/summary.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
@@ -979,7 +995,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-[11
+[13
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
@@ -1011,7 +1027,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-<images/ModificandoLenet/error_lenet.png, id=248, 578.16pt x 433.62pt>
+<images/ModificandoLenet/error_lenet.png, id=301, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/error_lenet.png Graphic file (type png)
  <use images/ModificandoLenet/error_lenet.png>
 Package pdftex.def Info: images/ModificandoLenet/error_lenet.png used on input line 33.
@@ -1021,7 +1037,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-<images/images_lenet/cost_lenet.png, id=251, 578.16pt x 433.62pt>
+<images/images_lenet/cost_lenet.png, id=304, 578.16pt x 433.62pt>
 File: images/images_lenet/cost_lenet.png Graphic file (type png)
  <use images/images_lenet/cost_lenet.png>
 Package pdftex.def Info: images/images_lenet/cost_lenet.png used on input line 42.
@@ -1031,12 +1047,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
-<images/images_lenet/w_layer0_epoch10.png, id=253, 578.16pt x 433.62pt>
+<images/images_lenet/w_layer0_epoch10.png, id=306, 578.16pt x 433.62pt>
 File: images/images_lenet/w_layer0_epoch10.png Graphic file (type png)
  <use images/images_lenet/w_layer0_epoch10.png>
 Package pdftex.def Info: images/images_lenet/w_layer0_epoch10.png used on input line 50.
 (pdftex.def)             Requested size: 218.51521pt x 163.88408pt.
- <images/images_lenet/w_layer1_epoch10.png, id=254, 578.16pt x 433.62pt>
+ <images/images_lenet/w_layer1_epoch10.png, id=307, 578.16pt x 433.62pt>
 File: images/images_lenet/w_layer1_epoch10.png Graphic file (type png)
  <use images/images_lenet/w_layer1_epoch10.png>
 Package pdftex.def Info: images/images_lenet/w_layer1_epoch10.png used on input line 51.
@@ -1045,12 +1061,12 @@ File: images/images_lenet/w_layer1_epoch10.png Graphic file (type png)
  <use images/images_lenet/w_layer1_epoch10.png>
 Package pdftex.def Info: images/images_lenet/w_layer1_epoch10.png used on input line 52.
 (pdftex.def)             Requested size: 218.51521pt x 163.88408pt.
- <images/images_lenet/w_layer1_epoch100.png, id=255, 578.16pt x 433.62pt>
+ <images/images_lenet/w_layer1_epoch100.png, id=308, 578.16pt x 433.62pt>
 File: images/images_lenet/w_layer1_epoch100.png Graphic file (type png)
  <use images/images_lenet/w_layer1_epoch100.png>
 Package pdftex.def Info: images/images_lenet/w_layer1_epoch100.png used on input line 53.
 (pdftex.def)             Requested size: 218.51521pt x 163.88408pt.
- [12]
+ [14]
 Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
@@ -1070,17 +1086,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
-[13 </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/error_lenet.png>] <images/images_lenet/lenet_batch/lenet_500batch_rror.png, id=273, 578.16pt x 433.62pt>
+[15 </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/error_lenet.png>] <images/images_lenet/lenet_batch/lenet_500batch_rror.png, id=326, 578.16pt x 433.62pt>
 File: images/images_lenet/lenet_batch/lenet_500batch_rror.png Graphic file (type png)
  <use images/images_lenet/lenet_batch/lenet_500batch_rror.png>
 Package pdftex.def Info: images/images_lenet/lenet_batch/lenet_500batch_rror.png used on input line 82.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
- <images/images_lenet/lenet_batch/lenet_20batch_error.png, id=274, 578.16pt x 433.62pt>
+ <images/images_lenet/lenet_batch/lenet_20batch_error.png, id=327, 578.16pt x 433.62pt>
 File: images/images_lenet/lenet_batch/lenet_20batch_error.png Graphic file (type png)
  <use images/images_lenet/lenet_batch/lenet_20batch_error.png>
 Package pdftex.def Info: images/images_lenet/lenet_batch/lenet_20batch_error.png used on input line 83.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
- <images/images_lenet/lenet_batch/lenet_100batch_error.png, id=275, 578.16pt x 433.62pt>
+ <images/images_lenet/lenet_batch/lenet_100batch_error.png, id=328, 578.16pt x 433.62pt>
 File: images/images_lenet/lenet_batch/lenet_100batch_error.png Graphic file (type png)
  <use images/images_lenet/lenet_batch/lenet_100batch_error.png>
 Package pdftex.def Info: images/images_lenet/lenet_batch/lenet_100batch_error.png used on input line 84.
@@ -1100,7 +1116,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
-[14 </home/beaa/Escritorio/Latex_TFM/images/images_lenet/cost_lenet.png>] [15 </home/beaa/Escritorio/Latex_TFM/images/images_lenet/w_layer0_epoch10.png> </home/beaa/Escritorio/Latex_TFM/images/images_lenet/w_layer1_epoch10.png> </home/beaa/Escritorio/Latex_TFM/images/images_lenet/w_layer1_epoch100.png>] [16 </home/beaa/Escritorio/Latex_TFM/images/images_lenet/lenet_batch/lenet_500batch_rror.png> </home/beaa/Escritorio/Latex_TFM/images/images_lenet/lenet_batch/lenet_20batch_error.png> </home/beaa/Escritorio/Latex_TFM/images/images_lenet/lenet_batch/lenet_100batch_error.png>]
+[16 </home/beaa/Escritorio/Latex_TFM/images/images_lenet/cost_lenet.png>] [17 </home/beaa/Escritorio/Latex_TFM/images/images_lenet/w_layer0_epoch10.png> </home/beaa/Escritorio/Latex_TFM/images/images_lenet/w_layer1_epoch10.png> </home/beaa/Escritorio/Latex_TFM/images/images_lenet/w_layer1_epoch100.png>] [18 </home/beaa/Escritorio/Latex_TFM/images/images_lenet/lenet_batch/lenet_500batch_rror.png> </home/beaa/Escritorio/Latex_TFM/images/images_lenet/lenet_batch/lenet_20batch_error.png> </home/beaa/Escritorio/Latex_TFM/images/images_lenet/lenet_batch/lenet_100batch_error.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
@@ -1110,27 +1126,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
-<images/ModificandoLenet/cost_lenet.png, id=301, 578.16pt x 433.62pt>
+<images/ModificandoLenet/cost_lenet.png, id=354, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/cost_lenet.png Graphic file (type png)
  <use images/ModificandoLenet/cost_lenet.png>
 Package pdftex.def Info: images/ModificandoLenet/cost_lenet.png used on input line 111.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- <images/ModificandoLenet/cost_lenet_LRN.png, id=302, 578.16pt x 433.62pt>
+ <images/ModificandoLenet/cost_lenet_LRN.png, id=355, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/cost_lenet_LRN.png Graphic file (type png)
  <use images/ModificandoLenet/cost_lenet_LRN.png>
 Package pdftex.def Info: images/ModificandoLenet/cost_lenet_LRN.png used on input line 112.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- <images/ModificandoLenet/cost_lenet_relu.png, id=303, 578.16pt x 433.62pt>
+ <images/ModificandoLenet/cost_lenet_relu.png, id=356, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/cost_lenet_relu.png Graphic file (type png)
  <use images/ModificandoLenet/cost_lenet_relu.png>
 Package pdftex.def Info: images/ModificandoLenet/cost_lenet_relu.png used on input line 113.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- <images/ModificandoLenet/cost_lenet_relu_lrn.png, id=304, 578.16pt x 433.62pt>
+ <images/ModificandoLenet/cost_lenet_relu_lrn.png, id=357, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/cost_lenet_relu_lrn.png Graphic file (type png)
  <use images/ModificandoLenet/cost_lenet_relu_lrn.png>
 Package pdftex.def Info: images/ModificandoLenet/cost_lenet_relu_lrn.png used on input line 114.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- <images/ModificandoLenet/cost_lenet_gausianInit.png, id=305, 578.16pt x 433.62pt>
+ <images/ModificandoLenet/cost_lenet_gausianInit.png, id=358, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/cost_lenet_gausianInit.png Graphic file (type png)
  <use images/ModificandoLenet/cost_lenet_gausianInit.png>
 Package pdftex.def Info: images/ModificandoLenet/cost_lenet_gausianInit.png used on input line 115.
@@ -1149,51 +1165,62 @@ File: images/ModificandoLenet/error_lenet.png Graphic file (type png)
 <use images/ModificandoLenet/error_lenet.png>
 Package pdftex.def Info: images/ModificandoLenet/error_lenet.png used on input line 122.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- <images/ModificandoLenet/error_lenet_LRN.png, id=308, 578.16pt x 433.62pt>
+ <images/ModificandoLenet/error_lenet_LRN.png, id=361, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/error_lenet_LRN.png Graphic file (type png)
  <use images/ModificandoLenet/error_lenet_LRN.png>
 Package pdftex.def Info: images/ModificandoLenet/error_lenet_LRN.png used on input line 123.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- <images/ModificandoLenet/error_lenet_relu.png, id=309, 578.16pt x 433.62pt>
+ <images/ModificandoLenet/error_lenet_relu.png, id=362, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/error_lenet_relu.png Graphic file (type png)
  <use images/ModificandoLenet/error_lenet_relu.png>
 Package pdftex.def Info: images/ModificandoLenet/error_lenet_relu.png used on input line 124.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- <images/ModificandoLenet/error_lenet_relu_lrn.png, id=310, 578.16pt x 433.62pt>
+ <images/ModificandoLenet/error_lenet_relu_lrn.png, id=363, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/error_lenet_relu_lrn.png Graphic file (type png)
  <use images/ModificandoLenet/error_lenet_relu_lrn.png>
 Package pdftex.def Info: images/ModificandoLenet/error_lenet_relu_lrn.png used on input line 125.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- <images/ModificandoLenet/error_frav_gausianInit.png, id=311, 578.16pt x 433.62pt>
+ <images/ModificandoLenet/error_frav_gausianInit.png, id=364, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/error_frav_gausianInit.png Graphic file (type png)
  <use images/ModificandoLenet/error_frav_gausianInit.png>
 Package pdftex.def Info: images/ModificandoLenet/error_frav_gausianInit.png used on input line 126.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- [17
+ [19
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
-[18] [19 </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/cost_lenet.png> </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/cost_lenet_LRN.png> </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/cost_lenet_relu.png> </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/cost_lenet_relu_lrn.png> </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/cost_lenet_gausianInit.png>] [20 </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/error_lenet_LRN.png> </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/error_lenet_relu.png> </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/error_lenet_relu_lrn.png> </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/error_frav_gausianInit.png>]) (/home/beaa/Escritorio/Latex_TFM/Memoria_TFM.bbl) [21
+[20] [21 </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/cost_lenet.png> </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/cost_lenet_LRN.png> </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/cost_lenet_relu.png> </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/cost_lenet_relu_lrn.png> </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/cost_lenet_gausianInit.png>] [22 </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/error_lenet_LRN.png> </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/error_lenet_relu.png> </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/error_lenet_relu_lrn.png> </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/error_frav_gausianInit.png>]) (/home/beaa/Escritorio/Latex_TFM/Memoria_TFM.bbl) [23
 
 
-] [22
+] [24
 
 ] (/home/beaa/Escritorio/Latex_TFM/Memoria_TFM.lof)
 \tf@lof=\write6
 \openout6 = `Memoria_TFM.lof'.
 
- [23] [24] (/home/beaa/Escritorio/Latex_TFM/Memoria_TFM.lot)
+ [25] [26] (/home/beaa/Escritorio/Latex_TFM/Memoria_TFM.lot)
 \tf@lot=\write7
 \openout7 = `Memoria_TFM.lot'.
+
+ [27
+
+] [28]
+/home/beaa/Escritorio/Latex_TFM/Memoria_TFM.tex:191: Undefined control sequence.
+l.191 \listofequations
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the Memoria_TFM.maf file.
 \openout3 = `Memoria_TFM.maf'.
-
 
 
 Package minitoc(hints) Warning: W0078
@@ -1211,30 +1238,31 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                in the Memoria_TFM.log file.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
-[25
-
-]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
- (/home/beaa/Escritorio/Latex_TFM/Memoria_TFM.aux)
+(/home/beaa/Escritorio/Latex_TFM/Memoria_TFM.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 192.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
 Package rerunfilecheck Info: File `Memoria_TFM.out' has not changed.
-(rerunfilecheck)             Checksum: A6CD87F52DFCCDEF516384F9F476BD35;1379.
+(rerunfilecheck)             Checksum: DAFE0D322EE1D7C9D1C726ADE161970B;1939.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
  ) 
 Here is how much of TeX's memory you used:
- 12238 strings out of 493029
- 183504 string characters out of 6136235
- 305938 words of memory out of 5000000
- 15194 multiletter control sequences out of 15000+600000
+ 12266 strings out of 493029
+ 183988 string characters out of 6136235
+ 306938 words of memory out of 5000000
+ 15204 multiletter control sequences out of 15000+600000
  14985 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,12n,43p,853b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,43p,853b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /home/beaa/Escritorio/Latex_TFM/Memoria_TFM.pdf (31 pages, 14391235 bytes).
+Output written on /home/beaa/Escritorio/Latex_TFM/Memoria_TFM.pdf (34 pages, 14402581 bytes).
 PDF statistics:
- 432 PDF objects out of 1000 (max. 8388607)
- 322 compressed objects within 4 object streams
- 84 named destinations out of 1000 (max. 500000)
- 414 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 492 PDF objects out of 1000 (max. 8388607)
+ 379 compressed objects within 4 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 470 words of extra memory for PDF output out of 10000 (max. 10000000)
 

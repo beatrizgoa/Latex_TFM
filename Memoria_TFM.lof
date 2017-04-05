@@ -12,23 +12,23 @@
 \contentsline {figure}{\numberline {1.7}{\ignorespaces Three attacks and real user from a user of MFSD database \relax }}{10}{figure.caption.11}
 \contentsline {figure}{\numberline {1.8}{\ignorespaces Three attacks and real user from a user of MFSD database \relax }}{10}{figure.caption.12}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Methodology}{11}{chapter.1.2}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Validation error obtained with Lenet and MNIST digits database\relax }}{13}{figure.caption.13}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Cost function of running Lenet with it is own database.\relax }}{14}{figure.caption.14}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Weights at epoch 10 and 100 of the two convolutional layers \relax }}{15}{figure.caption.15}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Validation error in each epoch for diferentes sizes of batches.\relax }}{16}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {batch size = 500 (original size)}}}{16}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {batch size = 20}}}{16}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {batch size = 100}}}{16}{figure.caption.16}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Cost function of Lenet and Lenet Modified.\relax }}{19}{figure.caption.17}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original LeNet}}}{19}{figure.caption.17}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Using LRN}}}{19}{figure.caption.17}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Using ReLu}}}{19}{figure.caption.17}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Using ReLu and LRN}}}{19}{figure.caption.17}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Using Gaussian weights init.}}}{19}{figure.caption.17}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Valid error of Lenet and Lenet Modified.\relax }}{20}{figure.caption.18}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original LeNet}}}{20}{figure.caption.18}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Using LRN}}}{20}{figure.caption.18}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Using ReLu}}}{20}{figure.caption.18}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Using ReLu and LRN}}}{20}{figure.caption.18}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Using Gaussian weights init.}}}{20}{figure.caption.18}
+\contentsline {xchapter}{Methodology}{13}{chapter.1.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Validation error obtained with Lenet and MNIST digits database\relax }}{15}{figure.caption.14}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Cost function of running Lenet with it is own database.\relax }}{16}{figure.caption.15}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Weights at epoch 10 and 100 of the two convolutional layers \relax }}{17}{figure.caption.16}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Validation error in each epoch for diferentes sizes of batches.\relax }}{18}{figure.caption.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {batch size = 500 (original size)}}}{18}{figure.caption.17}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {batch size = 20}}}{18}{figure.caption.17}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {batch size = 100}}}{18}{figure.caption.17}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Cost function of Lenet and Lenet Modified.\relax }}{21}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original LeNet}}}{21}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Using LRN}}}{21}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Using ReLu}}}{21}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Using ReLu and LRN}}}{21}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Using Gaussian weights init.}}}{21}{figure.caption.18}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Valid error of Lenet and Lenet Modified.\relax }}{22}{figure.caption.19}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original LeNet}}}{22}{figure.caption.19}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Using LRN}}}{22}{figure.caption.19}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Using ReLu}}}{22}{figure.caption.19}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Using ReLu and LRN}}}{22}{figure.caption.19}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Using Gaussian weights init.}}}{22}{figure.caption.19}
