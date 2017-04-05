@@ -7,8 +7,6 @@
 \usepackage[american]{babel}	% Idioma en castellano. que ls tablas se llamen tablas
 \usepackage{amsmath}		% Proporciona símbolos matemáticos de la American Mathematical Society
 \usepackage{amssymb}
-\usepackage[utf8]{inputenc}	% Escritura con acentosb
-\DeclareUnicodeCharacter{00A0}{ }
 \usepackage{latexsym}		% Símbolos
 \usepackage{eurosym}       % para el símbolo del euro
 \usepackage{fancyhdr}		% Cabecera y pie de página
@@ -18,7 +16,6 @@
 \usepackage{color}			% Colores
 \usepackage{graphicx}		% Gestión de imágenes
 \usepackage{wrapfig}
-\graphicspath{ {media/} }	% Carpeta en la que por defecto se encuentran las imagenes
 \usepackage{afterpage}
 \usepackage{epsfig}			% Entiende EPSs
 \usepackage{epstopdf}		% Entiende EPSs
@@ -43,27 +40,34 @@
 
 %Paquetes para tablas
 \usepackage[table,xcdraw]{xcolor}
-\usepackage{array} 
+\usepackage{array}
 \usepackage{booktabs} %cambiar ancho de las líneas
+% Arreglar el bug de \titlesec que no seme enumeraban las secciones
+\usepackage{etoolbox}
+
+\makeatletter
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother
+
 
 
 %Cabecera y pie de pagina
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagestyle{fancy}
-\fancyhf{} 
-%\fancyhead[RO]{\leftmark} % En las páginas impares, parte izquierda del encabezado, aparecerá el nombre de capítulo 
-\fancyhead[LE]{\leftmark} % En las páginas pares, parte derecha del encabezado, aparecerá el nombre de sección 
-\fancyhead[LO,RE]{\thepage} % Números de página en las esquinas de los encabezados 
-\renewcommand{\chaptermark}[1]{\markboth{\textbf{\thechapter. #1}}{}} % Formato para el capítulo: N. Nombre 
-\renewcommand{\sectionmark}[1]{\markright{\textbf{\thesection. #1}}} % Formato para la sección: N.M. Nombre 
-\renewcommand{\headrulewidth}{0.4pt} % Ancho de la línea horizontal bajo el encabezado 
-\renewcommand{\footrulewidth}{0.2pt} % Ancho de la línea horizontal sobre el pie 
+\fancyhf{}
+%\fancyhead[RO]{\leftmark} % En las páginas impares, parte izquierda del encabezado, aparecerá el nombre de capítulo
+\fancyhead[LE]{\leftmark} % En las páginas pares, parte derecha del encabezado, aparecerá el nombre de sección
+\fancyhead[LO,RE]{\thepage} % Números de página en las esquinas de los encabezados
+\renewcommand{\chaptermark}[1]{\markboth{\textbf{\thechapter. #1}}{}} % Formato para el capítulo: N. Nombre
+\renewcommand{\sectionmark}[1]{\markright{\textbf{\thesection. #1}}} % Formato para la sección: N.M. Nombre
+\renewcommand{\headrulewidth}{0.4pt} % Ancho de la línea horizontal bajo el encabezado
+\renewcommand{\footrulewidth}{0.2pt} % Ancho de la línea horizontal sobre el pie
 \setlength{\headheight}{1.5\headheight} % Aumenta la altura del encabezado en una vez y media
 \newcommand{\Keywords}[1]{\vfill\noindent{\small{\em Palabras clave}: #1}}
 \definecolor{grisclar}{gray}{0.5}
 \definecolor{grisfosc}{gray}{0.25}
 \newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\}
-\setlength{\parindent}{0cm} %Quitamos el indentado de cada parrafo
 
 \makeatletter %Para que al final de cada parte se reanude la numeración de capitulos por 1
 \@addtoreset{chapter}{part}
@@ -71,22 +75,10 @@
 
 \urlstyle{same}
 
-
-% Modifica algunas traducciones del paquete Babel
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\addto\captionsspanish{
-\def\tablename{Tabla}
-\def\bibname{Bibliografía}
-\def\listtablename{Índice de tablas}
-\def\contentsname{Índice general}
-\def\mtctitle{Contenidos}
-}
-
 % Título, autor y fecha del documento
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{\Huge \textbf{State-of-the-Art: ``Convolutional Neural Networks with Dynamic Vision Sensor data.''}}
-\author{\Huge \textit{Beatriz Gómez Ayllón}}
-
+\title{\Huge \textbf{`Learning convolutional Neural Network''}}
+\author{\Huge \textit{Beatriz G\'omez Ayll\'on}}
 
 
 
@@ -127,7 +119,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{document} 
+\begin{document}
 
 \mtcaddchapter % Para que el minitock salga bien
 
@@ -150,48 +142,11 @@
 %\blankpage %reverso del acta
 
 
-
-
-\begin{titlepage}
-    \begin{center}
-        \vspace*{1cm}
-        
-        \Huge \textbf{State of the Art}
-        
-        \vspace{0.5cm}
-        \Huge ``Convolutional Neural Networks with Dynamic Vision Sensor data.''
-        
-        \vspace{1.5cm}
-        
-        \Large \textbf{Beatriz Gómez Ayllón}
-        
-        \vspace{2cm}
-        
-       \Large \textit{Director: Aristeidis Tsitiridis\\
-       Co-director: Cristina Conde}
-        
-
-       \vspace{5cm}
-
-       	Universidad Rey Juan Carlos\\
-        \today
-
-        \vfill
-             
-        
-        
-    \end{center}
-\end{titlepage}
-
-
-
-
-
-%\maketitle
+\maketitle
 \blankpage %reverso titulo
 
 %%%%%%%%%%%%%%%% DEDICATORIA %%%%%%%%%%%%%%
-%\input{dedicatoria.tex} 
+%\input{dedicatoria.tex}
 %\blankpage %reverso
 
 %%%%%%%%%%%%%%%% AGRADECIMIENTOS %%%%%%%%%%%%%%%%%%
@@ -203,7 +158,7 @@
 \chapter*{Resumen}
 En este documento se va a tratar dos tipos de sistemas bio-inspirados, como son las redes neuronales artificiales y sensores de visión bio-inspirados, más concretamente las redes neuronales de convolución (CNN) y el sensor bio-inspirados ATIS.\\
 
-En primer lugar, para ambos sistemas, se va a exponer la base biológica en la que estos se han visto inspirados, en el caso de las redes artificiales se van a presentar las redes neuronales biológicas y para el caso del sensor de visión, el funcionamiento del ojo humano.\\ 
+En primer lugar, para ambos sistemas, se va a exponer la base biológica en la que estos se han visto inspirados, en el caso de las redes artificiales se van a presentar las redes neuronales biológicas y para el caso del sensor de visión, el funcionamiento del ojo humano.\\
 
 Se va a definir el funcionamiento teórico de de las redes artificiales y las redes de convolución, con algunas aplicaciones que se han desarrollado hasta el momento.\\
 
@@ -238,7 +193,7 @@ To conclude, the finality of the Master thesis is exposed and how it is going to
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \mainmatter
-	
+
 
 	\input{Theano.tex}
 	\input{summary.tex}
