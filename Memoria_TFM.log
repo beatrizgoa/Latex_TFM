@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.4)  5 APR 2017 18:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.4)  5 APR 2017 19:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -966,16 +966,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
@@ -990,15 +980,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
 [13
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
@@ -1023,89 +1008,94 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-<images/ModificandoLenet/error_lenet.png, id=301, 578.16pt x 433.62pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+<images/ModificandoLenet/error_lenet.png, id=303, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/error_lenet.png Graphic file (type png)
  <use images/ModificandoLenet/error_lenet.png>
-Package pdftex.def Info: images/ModificandoLenet/error_lenet.png used on input line 33.
+Package pdftex.def Info: images/ModificandoLenet/error_lenet.png used on input line 36.
 (pdftex.def)             Requested size: 318.66948pt x 239.0012pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
-<images/images_lenet/cost_lenet.png, id=304, 578.16pt x 433.62pt>
+[14] <images/images_lenet/cost_lenet.png, id=312, 578.16pt x 433.62pt>
 File: images/images_lenet/cost_lenet.png Graphic file (type png)
  <use images/images_lenet/cost_lenet.png>
-Package pdftex.def Info: images/images_lenet/cost_lenet.png used on input line 42.
+Package pdftex.def Info: images/images_lenet/cost_lenet.png used on input line 44.
 (pdftex.def)             Requested size: 318.66948pt x 239.0012pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-<images/images_lenet/w_layer0_epoch10.png, id=306, 578.16pt x 433.62pt>
+<images/images_lenet/w_layer0_epoch10.png, id=314, 578.16pt x 433.62pt>
 File: images/images_lenet/w_layer0_epoch10.png Graphic file (type png)
  <use images/images_lenet/w_layer0_epoch10.png>
-Package pdftex.def Info: images/images_lenet/w_layer0_epoch10.png used on input line 50.
+Package pdftex.def Info: images/images_lenet/w_layer0_epoch10.png used on input line 52.
 (pdftex.def)             Requested size: 218.51521pt x 163.88408pt.
- <images/images_lenet/w_layer1_epoch10.png, id=307, 578.16pt x 433.62pt>
+ <images/images_lenet/w_layer1_epoch10.png, id=315, 578.16pt x 433.62pt>
 File: images/images_lenet/w_layer1_epoch10.png Graphic file (type png)
  <use images/images_lenet/w_layer1_epoch10.png>
-Package pdftex.def Info: images/images_lenet/w_layer1_epoch10.png used on input line 51.
+Package pdftex.def Info: images/images_lenet/w_layer1_epoch10.png used on input line 53.
 (pdftex.def)             Requested size: 218.51521pt x 163.88408pt.
 File: images/images_lenet/w_layer1_epoch10.png Graphic file (type png)
  <use images/images_lenet/w_layer1_epoch10.png>
-Package pdftex.def Info: images/images_lenet/w_layer1_epoch10.png used on input line 52.
+Package pdftex.def Info: images/images_lenet/w_layer1_epoch10.png used on input line 54.
 (pdftex.def)             Requested size: 218.51521pt x 163.88408pt.
- <images/images_lenet/w_layer1_epoch100.png, id=308, 578.16pt x 433.62pt>
+ <images/images_lenet/w_layer1_epoch100.png, id=316, 578.16pt x 433.62pt>
 File: images/images_lenet/w_layer1_epoch100.png Graphic file (type png)
  <use images/images_lenet/w_layer1_epoch100.png>
-Package pdftex.def Info: images/images_lenet/w_layer1_epoch100.png used on input line 53.
+Package pdftex.def Info: images/images_lenet/w_layer1_epoch100.png used on input line 55.
 (pdftex.def)             Requested size: 218.51521pt x 163.88408pt.
- [14]
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+[15 </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/error_lenet.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-[15 </home/beaa/Escritorio/Latex_TFM/images/ModificandoLenet/error_lenet.png>] <images/images_lenet/lenet_batch/lenet_500batch_rror.png, id=326, 578.16pt x 433.62pt>
+<images/images_lenet/lenet_batch/lenet_500batch_rror.png, id=327, 578.16pt x 433.62pt>
 File: images/images_lenet/lenet_batch/lenet_500batch_rror.png Graphic file (type png)
  <use images/images_lenet/lenet_batch/lenet_500batch_rror.png>
-Package pdftex.def Info: images/images_lenet/lenet_batch/lenet_500batch_rror.png used on input line 82.
+Package pdftex.def Info: images/images_lenet/lenet_batch/lenet_500batch_rror.png used on input line 84.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
- <images/images_lenet/lenet_batch/lenet_20batch_error.png, id=327, 578.16pt x 433.62pt>
+ <images/images_lenet/lenet_batch/lenet_20batch_error.png, id=328, 578.16pt x 433.62pt>
 File: images/images_lenet/lenet_batch/lenet_20batch_error.png Graphic file (type png)
  <use images/images_lenet/lenet_batch/lenet_20batch_error.png>
-Package pdftex.def Info: images/images_lenet/lenet_batch/lenet_20batch_error.png used on input line 83.
+Package pdftex.def Info: images/images_lenet/lenet_batch/lenet_20batch_error.png used on input line 85.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
- <images/images_lenet/lenet_batch/lenet_100batch_error.png, id=328, 578.16pt x 433.62pt>
+ <images/images_lenet/lenet_batch/lenet_100batch_error.png, id=329, 578.16pt x 433.62pt>
 File: images/images_lenet/lenet_batch/lenet_100batch_error.png Graphic file (type png)
  <use images/images_lenet/lenet_batch/lenet_100batch_error.png>
-Package pdftex.def Info: images/images_lenet/lenet_batch/lenet_100batch_error.png used on input line 84.
+Package pdftex.def Info: images/images_lenet/lenet_batch/lenet_100batch_error.png used on input line 86.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
@@ -1116,79 +1106,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
-[16 </home/beaa/Escritorio/Latex_TFM/images/images_lenet/cost_lenet.png>] [17 </home/beaa/Escritorio/Latex_TFM/images/images_lenet/w_layer0_epoch10.png> </home/beaa/Escritorio/Latex_TFM/images/images_lenet/w_layer1_epoch10.png> </home/beaa/Escritorio/Latex_TFM/images/images_lenet/w_layer1_epoch100.png>] [18 </home/beaa/Escritorio/Latex_TFM/images/images_lenet/lenet_batch/lenet_500batch_rror.png> </home/beaa/Escritorio/Latex_TFM/images/images_lenet/lenet_batch/lenet_20batch_error.png> </home/beaa/Escritorio/Latex_TFM/images/images_lenet/lenet_batch/lenet_100batch_error.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+[16 </home/beaa/Escritorio/Latex_TFM/images/images_lenet/cost_lenet.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+[17 </home/beaa/Escritorio/Latex_TFM/images/images_lenet/w_layer0_epoch10.png> </home/beaa/Escritorio/Latex_TFM/images/images_lenet/w_layer1_epoch10.png> </home/beaa/Escritorio/Latex_TFM/images/images_lenet/w_layer1_epoch100.png>] [18 </home/beaa/Escritorio/Latex_TFM/images/images_lenet/lenet_batch/lenet_500batch_rror.png> </home/beaa/Escritorio/Latex_TFM/images/images_lenet/lenet_batch/lenet_20batch_error.png> </home/beaa/Escritorio/Latex_TFM/images/images_lenet/lenet_batch/lenet_100batch_error.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
-<images/ModificandoLenet/cost_lenet.png, id=354, 578.16pt x 433.62pt>
+<images/ModificandoLenet/cost_lenet.png, id=356, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/cost_lenet.png Graphic file (type png)
  <use images/ModificandoLenet/cost_lenet.png>
-Package pdftex.def Info: images/ModificandoLenet/cost_lenet.png used on input line 111.
+Package pdftex.def Info: images/ModificandoLenet/cost_lenet.png used on input line 113.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- <images/ModificandoLenet/cost_lenet_LRN.png, id=355, 578.16pt x 433.62pt>
+ <images/ModificandoLenet/cost_lenet_LRN.png, id=357, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/cost_lenet_LRN.png Graphic file (type png)
  <use images/ModificandoLenet/cost_lenet_LRN.png>
-Package pdftex.def Info: images/ModificandoLenet/cost_lenet_LRN.png used on input line 112.
+Package pdftex.def Info: images/ModificandoLenet/cost_lenet_LRN.png used on input line 114.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- <images/ModificandoLenet/cost_lenet_relu.png, id=356, 578.16pt x 433.62pt>
+ <images/ModificandoLenet/cost_lenet_relu.png, id=358, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/cost_lenet_relu.png Graphic file (type png)
  <use images/ModificandoLenet/cost_lenet_relu.png>
-Package pdftex.def Info: images/ModificandoLenet/cost_lenet_relu.png used on input line 113.
+Package pdftex.def Info: images/ModificandoLenet/cost_lenet_relu.png used on input line 115.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- <images/ModificandoLenet/cost_lenet_relu_lrn.png, id=357, 578.16pt x 433.62pt>
+ <images/ModificandoLenet/cost_lenet_relu_lrn.png, id=359, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/cost_lenet_relu_lrn.png Graphic file (type png)
  <use images/ModificandoLenet/cost_lenet_relu_lrn.png>
-Package pdftex.def Info: images/ModificandoLenet/cost_lenet_relu_lrn.png used on input line 114.
+Package pdftex.def Info: images/ModificandoLenet/cost_lenet_relu_lrn.png used on input line 116.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- <images/ModificandoLenet/cost_lenet_gausianInit.png, id=358, 578.16pt x 433.62pt>
+ <images/ModificandoLenet/cost_lenet_gausianInit.png, id=360, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/cost_lenet_gausianInit.png Graphic file (type png)
  <use images/ModificandoLenet/cost_lenet_gausianInit.png>
-Package pdftex.def Info: images/ModificandoLenet/cost_lenet_gausianInit.png used on input line 115.
+Package pdftex.def Info: images/ModificandoLenet/cost_lenet_gausianInit.png used on input line 117.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 File: images/ModificandoLenet/error_lenet.png Graphic file (type png)
 <use images/ModificandoLenet/error_lenet.png>
-Package pdftex.def Info: images/ModificandoLenet/error_lenet.png used on input line 122.
+Package pdftex.def Info: images/ModificandoLenet/error_lenet.png used on input line 124.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- <images/ModificandoLenet/error_lenet_LRN.png, id=361, 578.16pt x 433.62pt>
+ <images/ModificandoLenet/error_lenet_LRN.png, id=363, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/error_lenet_LRN.png Graphic file (type png)
  <use images/ModificandoLenet/error_lenet_LRN.png>
-Package pdftex.def Info: images/ModificandoLenet/error_lenet_LRN.png used on input line 123.
+Package pdftex.def Info: images/ModificandoLenet/error_lenet_LRN.png used on input line 125.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- <images/ModificandoLenet/error_lenet_relu.png, id=362, 578.16pt x 433.62pt>
+ <images/ModificandoLenet/error_lenet_relu.png, id=364, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/error_lenet_relu.png Graphic file (type png)
  <use images/ModificandoLenet/error_lenet_relu.png>
-Package pdftex.def Info: images/ModificandoLenet/error_lenet_relu.png used on input line 124.
+Package pdftex.def Info: images/ModificandoLenet/error_lenet_relu.png used on input line 126.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- <images/ModificandoLenet/error_lenet_relu_lrn.png, id=363, 578.16pt x 433.62pt>
+ <images/ModificandoLenet/error_lenet_relu_lrn.png, id=365, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/error_lenet_relu_lrn.png Graphic file (type png)
  <use images/ModificandoLenet/error_lenet_relu_lrn.png>
-Package pdftex.def Info: images/ModificandoLenet/error_lenet_relu_lrn.png used on input line 125.
+Package pdftex.def Info: images/ModificandoLenet/error_lenet_relu_lrn.png used on input line 127.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
- <images/ModificandoLenet/error_frav_gausianInit.png, id=364, 578.16pt x 433.62pt>
+ <images/ModificandoLenet/error_frav_gausianInit.png, id=366, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/error_frav_gausianInit.png Graphic file (type png)
  <use images/ModificandoLenet/error_frav_gausianInit.png>
-Package pdftex.def Info: images/ModificandoLenet/error_frav_gausianInit.png used on input line 126.
+Package pdftex.def Info: images/ModificandoLenet/error_frav_gausianInit.png used on input line 128.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
  [19
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
@@ -1208,19 +1203,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--144
  [27
 
 ] [28]
-/home/beaa/Escritorio/Latex_TFM/Memoria_TFM.tex:191: Undefined control sequence.
-l.191 \listofequations
-                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the Memoria_TFM.maf file.
 \openout3 = `Memoria_TFM.maf'.
+
 
 
 Package minitoc(hints) Warning: W0078
@@ -1237,32 +1224,32 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the Memoria_TFM.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
 (/home/beaa/Escritorio/Latex_TFM/Memoria_TFM.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 192.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
 Package rerunfilecheck Info: File `Memoria_TFM.out' has not changed.
-(rerunfilecheck)             Checksum: DAFE0D322EE1D7C9D1C726ADE161970B;1939.
+(rerunfilecheck)             Checksum: B6BE664192C129E8049AC200ED01F250;1941.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
  ) 
 Here is how much of TeX's memory you used:
- 12266 strings out of 493029
- 183988 string characters out of 6136235
+ 12268 strings out of 493029
+ 184007 string characters out of 6136235
  306938 words of memory out of 5000000
- 15204 multiletter control sequences out of 15000+600000
+ 15205 multiletter control sequences out of 15000+600000
  14985 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,12n,43p,853b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /home/beaa/Escritorio/Latex_TFM/Memoria_TFM.pdf (34 pages, 14402581 bytes).
+Output written on /home/beaa/Escritorio/Latex_TFM/Memoria_TFM.pdf (34 pages, 14326288 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 379 compressed objects within 4 object streams
- 99 named destinations out of 1000 (max. 500000)
+ 494 PDF objects out of 1000 (max. 8388607)
+ 381 compressed objects within 4 object streams
+ 100 named destinations out of 1000 (max. 500000)
  470 words of extra memory for PDF output out of 10000 (max. 10000000)
 

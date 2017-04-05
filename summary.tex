@@ -1,13 +1,17 @@
-\section{LeNet}
-LeNet is of a convolutional network designed for handwritten and machine-printed character recognition. The net has been proved with MINST database, a database of handwritten digits that comes with the net.\\ 
+\section{LeNet-5}
+LeNet-5 \cite{Lenet5} is the name of a cercain architecture of a convolutional network designed for handwritten and machine-printed character recognition. The net has been proved with MINST database, a database of handwritten digits that comes with the net.\\
 
-LeNet has been used to learn the implementation of convolutional neural networks, and LeNet is the basis of the network developed to carry out this project as it has been modified in order to adapt it to get this project goal.\\
+%TODO ADD FIGURE OF THE ARCHITECTURE OF LENET
 
-The architecture of LeNet is formed by two convolutional layers of size 5x5 and with 20 kernels in the first convolutional layer and 50 in the second one, those are followed (each one) by a max pool layer of size 2x2. Those four layer are followed by a fully-connected layer with 500 neurons at the output. The classifier which has been used is the logistic regression. The activation function of the convolutional layers and the logistic regression is tanh.\\
+The basic architecture of Lenet is two convolutional layer, followed each one by a max pooling layer and then a fully-connected layer. This architecture could be visualized in figure X.
 
-The learning rate is 0,1 and the network runs by 200 epoch. In each epoch the training is realized with the training data set and the validation with its corresponding validation set of data, if the validation has its best performance then the test is realized.\\ 
+LeNet has been used to learn the implementation of convolutional neural networks, and LeNet is the basis of the network developed to carry out this project as it has been modified in order to adapt it to get this project goal. The code of LeNet-5 in Python could be found in \url{www.deeplearning.net}\\
 
-The code of LeNet could be found in \url{www.deeplearning.net}, where the architecture, the training, test, validation, a early-stopping of the net, all the necessary to run the convolutional neural network is developed.\\
+The specifications of the downloaded LeNet code are the architecture of LeNet used for starting to work with this project is formed by two convolutional layers of size 5x5 and with 20 kernels in the first convolutional layer and 50 in the second one, those are followed (each one) by a max pooling-layer of size 2x2. Those four layer are followed by a fully-connected layer with 500 neurons at the output. The classifier which has been used is the logistic regression. The activation function of the convolutional layers and the logistic regression is tanh.\\
+
+The learning rate is 0.1 and the network runs by 200 epoch. The data is split in thre sets: training, testing and validating. For each subset, when is fed to the network it is fed in batches, whose size is choosen by the user. Using batches is to prevent memory problems.\\
+
+The training procedure is being realized for too many epochs as users has selected. While the trianing is being running, the validation is calculated for each epoch.
 
 \url{www.deeplearning.net} is the original page of Theano where could be found tutorials, how to install and get it and the documentation of its functions.\\
 
@@ -25,7 +29,6 @@ In a big while loop the training validation and testing is developed. The data i
 The training would run for a number of epoch that the user has given or by a early-Stopping that has been developed by authors. The early-stopping combats over-fitting by monitoring the model's performance on a validation set.\\
 
 \subsection{Results of LeNet}
-
 The result of the network using the given database could be seen in figure \ref{fig:Lenetresult}, where the least error in validation performance is 0.91 \% obtained at iteration 18300, with an error test performance of 0.92 \%. \\
 
 \begin{figure}[htb]
@@ -33,7 +36,6 @@ The result of the network using the given database could be seen in figure \ref{
 \includegraphics[width=0.7\textwidth]{images/ModificandoLenet/error_lenet.png}
 \caption{Validation error obtained with Lenet and MNIST digits database} \label{fig:Lenetresult}
 \end{figure}
-
 
 It is important optimize the cost function, so it is possible to analyze how the networks works looking the cost function. The cost produced at the training gets reduced with the increasing iterations, as it is seen in figure \ref{fig:Lenetcost}.\\
 
@@ -52,7 +54,7 @@ As it is known, weights are filters, twenty first weights of each convolutional 
 \includegraphics[width=0.48\textwidth]{images/images_lenet/w_layer1_epoch10.png}
 \includegraphics[width=0.48\textwidth]{images/images_lenet/w_layer1_epoch100.png}
 
-\caption{Weights at epoch 10 and 100 of the two convolutional layers } \label{fig:weights_lenet} 
+\caption{Weights at epoch 10 and 100 of the two convolutional layers } \label{fig:weights_lenet}
 \end{figure}
 
 While the network is learning, weights change and they would not have the same apparence if were represented. \\
@@ -66,7 +68,7 @@ While the network is learning, weights change and they would not have the same a
 
 %The number of kernels used in the conv layers are 48 and 96 of size 5x5, %the size of the max-pool layer is 2x2.\\
 
-%The network is trained with the 70\% of the data, the 30\% is used to test. %From the 70\% of the training data, the 25\% is used to validation.\\ 
+%The network is trained with the 70\% of the data, the 30\% is used to test. %From the 70\% of the training data, the 25\% is used to validation.\\
 
 Each time we take a sample and update our weights it is called a mini-batch. Each time we run through the entire database, it's called an epoch. Batch size determines how many examples you look at before making a weight update. The lower it is, the noisier the training signal is going to be, the higher it is, the longer it will take to compute the gradient for each step. \url{http://stats.stackexchange.com/questions/140811/how-large-should-the-batch-size-be-for-stochastic-gradient-descent}.\\
 
@@ -82,14 +84,14 @@ With the original size and size equal to 20, it is possible to get to the same m
 	\subfigure[batch size = 500 (original size)]{\includegraphics[width=0.47\textwidth]{images/images_lenet/lenet_batch/lenet_500batch_rror.png} }
 	\subfigure[batch size = 20]{\includegraphics[width=0.47\textwidth]{images/images_lenet/lenet_batch/lenet_20batch_error.png} }
 	\subfigure[batch size = 100]{\includegraphics[width=0.47\textwidth]{images/images_lenet/lenet_batch/lenet_100batch_error.png} }
-        
+
     \caption{Validation error in each epoch for diferentes sizes of batches.} \label{figures:LENET-batches}
 \end{figure}
 
 If the patience is increased from 10000 to 100000 for a batch size = 20 and equal to 100, results obtained are that for a value of 20, it has been running for 40 epoch, having the same results that the one obtained with a patience of 10000.\\
 
  For a value of 100 with the patience increased to 100000, the results are not the same as the one obtained the patience equal to 10000. In this occasion, the results are better than in the original one; The code has run for 258,08 minutes and for 200 epochs. The result obtained was better than in the original one has it has said. In epoch 51 has gotten a validation error of  1 \% and the error test has been 0,89\%, from this point, the test error that has been calculated five more times, has been increasing until get the value 0,85\% in iteration 55500, epoch number 111, the validation error obtained has been 0,95\%. From this epoch until number 200, the network has not had any better result.\\
- 
+
 In figure X it is possible to see the error function for those two examples. It could be seen that the example with batch size = 20 has just run for 40 epoch and the good results of the example with batch size = 100, remembering that the patience has been increased from 10000 to 100000.\\
 
 \clearpage
@@ -127,7 +129,7 @@ Visualizing the loss during the training, could be affirmed that the network wit
     \caption{Valid error of Lenet and Lenet Modified.} \label{fig:ErrorModLeNet}
 \end{figure}
 
-About the error at validation, visualizing the graphs in figure \ref{fig:CostModLeNet}, it is very similar the curve for original lenet, lenet with ReLu, lenet with LRN and lenet with LRN and ReLu. 
+About the error at validation, visualizing the graphs in figure \ref{fig:CostModLeNet}, it is very similar the curve for original lenet, lenet with ReLu, lenet with LRN and lenet with LRN and ReLu.
 
 At testing, the results obtained have been the following ones:
 
@@ -139,7 +141,6 @@ At testing, the results obtained have been the following ones:
 \item{Gaussian weight initialization}: Best validation score of 81.22\% obtained at iteration 100, with test performance 80.90\%.
 \end{itemize}
 
-
-The best configuration for the network is the original one. With Gaussian initalization, the network does not find a local minimum in such a sort of time. Using LRN and Relu, test result is closer to the obtained with LeNet original, but not as good as the last one. Changing the activation function has not been a good change. Not taking into account original LeNet, the best test performance has been obtained with 1,08\% using ReLu and LRN, but the best validation error is 0,99\% obtained using just LRN. The values are close of the modifications, but the modification of Gaussian weight initialization.\\ 
+The best configuration for the network is the original one. With Gaussian initalization, the network does not find a local minimum in such a sort of time. Using LRN and Relu, test result is closer to the obtained with LeNet original, but not as good as the last one. Changing the activation function has not been a good change. Not taking into account original LeNet, the best test performance has been obtained with 1,08\% using ReLu and LRN, but the best validation error is 0,99\% obtained using just LRN. The values are close of the modifications, but the modification of Gaussian weight initialization.\\
 
 \clearpage

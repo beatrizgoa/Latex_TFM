@@ -11,4 +11,9 @@ M.~Sokolova, N.~Japkowicz, and S.~Szpakowicz, ``Beyond accuracy, f-score and
   Proceedings of the 19th Australian Joint Conference on Artificial
   Intelligence: Advances in Artificial Intelligence}, pp.~1015--1021, 2006.
 
+\bibitem{Lenet5}
+Y.~Lecun, L.~Bottou, Y.~Bengio, and P.~Haffner, ``Gradient-based learning
+  applied to document recognition,'' in {\em Proceedings of the IEEE},
+  pp.~2278--2324, 1998.
+
 \end{thebibliography}

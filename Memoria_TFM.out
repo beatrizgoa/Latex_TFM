@@ -19,7 +19,7 @@
 \BOOKMARK [1][-]{section.1.1.5}{Precision and Recall}{chapter.1.1}% 19
 \BOOKMARK [2][-]{subsection.1.1.5.1}{APCR and BPCR}{section.1.1.5}% 20
 \BOOKMARK [0][-]{chapter.1.2}{Methodology}{part.1}% 21
-\BOOKMARK [1][-]{section.1.2.1}{LeNet}{chapter.1.2}% 22
+\BOOKMARK [1][-]{section.1.2.1}{LeNet-5}{chapter.1.2}% 22
 \BOOKMARK [2][-]{subsection.1.2.1.1}{Structure of Lenet}{section.1.2.1}% 23
 \BOOKMARK [2][-]{subsection.1.2.1.2}{Results of LeNet}{section.1.2.1}% 24
 \BOOKMARK [2][-]{subsection.1.2.1.3}{Modifying LeNet}{section.1.2.1}% 25
