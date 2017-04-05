@@ -155,31 +155,8 @@
 %\blankpage %reverso
 
 
-\chapter*{Resumen}
-En este documento se va a tratar dos tipos de sistemas bio-inspirados, como son las redes neuronales artificiales y sensores de visión bio-inspirados, más concretamente las redes neuronales de convolución (CNN) y el sensor bio-inspirados ATIS.\\
-
-En primer lugar, para ambos sistemas, se va a exponer la base biológica en la que estos se han visto inspirados, en el caso de las redes artificiales se van a presentar las redes neuronales biológicas y para el caso del sensor de visión, el funcionamiento del ojo humano.\\
-
-Se va a definir el funcionamiento teórico de de las redes artificiales y las redes de convolución, con algunas aplicaciones que se han desarrollado hasta el momento.\\
-
-En el caso del sensor ATIS, también va a ser definido su funcionamiento teórico, además de las ventajas de esta familia de sensores frente a los convencionales. El rango de aplicación de este sensor no es muy amplio debido a que no está muy comercializado. \\
-
-Por último, se va a presentar la finalidad del Trabajo Final de Máster que básicamente va a ser un trabajo entre los dos sistemas bio-inspirados, totalmente novedoso, y cuyo interés de investigación, hoy en día es muy alto.\\
-
-
-
 \chapter*{Abstract}
-In this document, two different bio-inspired systems are studied, artificial neural networks, particularly convolutional neural networks and a bio-inspired vision seeing, specifically ATIS sensor. \\
-
-It is exposed, for both systems, the biological base in which bio-inspired systems are based, in case of artificial neural networks, it is studied biological neural networks and in case of the vision seeing, how human eyes works.\\
-
-The theoric behavior of artificial neural network and convolutional neural networks is discussed and what is more, applications which has been developed until this moment are presented.\\
-
-In the event of ATIS sensor, is defined the theoric behavior too, moreover, the advantages of this sensor against conventional sensors. In spite of the limited range of applications of this sensor, by the low commercialization, there are showed applications.\\
-Putting all together,\\
-
-To conclude, the finality of the Master thesis is exposed and how it is going to be worked with the sum of this newfangled bio-inspired systems whose researched purpose it is increasing currently.\\
-
+Add abstract
 
 
 %%%%%%%%%%%%%%% ÍNDICE %%%%%%%%%%%%%%%%%%%%%%%
@@ -193,13 +170,15 @@ To conclude, the finality of the Master thesis is exposed and how it is going to
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \mainmatter
+\part{MOMORY}
 
-
-	\input{Theano.tex}
-	\input{summary.tex}
-	\label{cap:teoria}
-	\input{databases.tex}
-
+\chapter{Introduction}
+\label{chapter:Intro}
+  \input{Intro.tex}
+  \input{Theano.tex}
+  \input{databases.tex}
+\chapter{Methodology}
+  \input{summary.tex}
 
 \bibliographystyle{ieeetr}
 \bibliography{references.bib}
@@ -208,4 +187,6 @@ To conclude, the finality of the Master thesis is exposed and how it is going to
 %\chapter{Anexos}
 \fancyhead[RO]{} %Encabezado paginas impares con \part
 \listoffigures 	%indice de imágenes
+\blankpage
+\listoftables
 \end{document}
