@@ -1,0 +1,6 @@
+number of 0 class elments in training: 662
+number of 1 class elments in training: 1736
+number of 0 class elments in test: 68
+number of 1 class elments in test: 617
+number of 0 class elments in validation: 35
+number of 1 class elments in validation: 307

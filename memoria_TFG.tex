@@ -1,0 +1,252 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% >>>>>>>>>>> EMPIEZA PREÁMBULO <<<<<<<<<<< %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[12pt,a4paper,titlepage,twoside]{book}
+\usepackage[spanish]{babel}	% Idioma en castellano. que ls tablas se llamen tablas
+\usepackage{amsmath}		% Proporciona símbolos matemáticos de la American Mathematical Society
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}	% Escritura con acentosb
+\DeclareUnicodeCharacter{00A0}{ }
+\usepackage{latexsym}		% Símbolos
+\usepackage{eurosym}       % para el símbolo del euro
+\usepackage{fancyhdr}		% Cabecera y pie de página
+\usepackage{titlesec}		% Aspecto configurable de los capítulos
+\usepackage{longtable}		% Permite las tablas que ocupan más de una página
+\usepackage{anysize}		% Configuración de márgenes
+\usepackage{color}			% Colores
+\usepackage{graphicx}		% Gestión de imágenes
+\usepackage{wrapfig}
+\graphicspath{ {media/} }	% Carpeta en la que por defecto se encuentran las imagenes
+\usepackage{afterpage}
+\usepackage{epsfig}			% Entiende EPSs
+\usepackage{epstopdf}		% Entiende EPSs
+\DeclareGraphicsExtensions{.eps,.ps,.pdf}
+\usepackage{hyperref}       %Vínculos
+\usepackage{subfigure}		% Subfiguras
+\usepackage{minitoc}		% Indice por capítulo #1
+\dominitoc					% Indice por capítulo #2
+\usepackage{tocbibind}		% Incluir figuras, tablas, referencias e índice a éste
+\usepackage{pdfpages}		% Incluir PDFs
+\usepackage{anysize}		%Cambiar los margenes
+
+\usepackage{enumitem}		%Para incluir listas no numeradas.
+\renewcommand{\labelitemi}{$-$} %Para cambiar los símbolos de una lista no enumerada
+\renewcommand{\labelitemii}{$\cdot$}%Para cambiar los símbolos de una lista no enumerada
+\usepackage{titlesec}
+\usepackage{placeins} %Para Mostrar imagenes almacenadas en cada sección.
+%\usepackage{caption} %Cambiar el pie de foto
+\usepackage[font={small,it}]{caption}
+\usepackage{color} %Colores
+
+%Paquetes para tablas
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{array} 
+\usepackage{booktabs} %cambiar ancho de las líneas
+
+
+%Cabecera y pie de pagina
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+\fancyhf{} 
+%\fancyhead[RO]{\leftmark} % En las páginas impares, parte izquierda del encabezado, aparecerá el nombre de capítulo 
+\fancyhead[LE]{\leftmark} % En las páginas pares, parte derecha del encabezado, aparecerá el nombre de sección 
+\fancyhead[LO,RE]{\thepage} % Números de página en las esquinas de los encabezados 
+\renewcommand{\chaptermark}[1]{\markboth{\textbf{\thechapter. #1}}{}} % Formato para el capítulo: N. Nombre 
+\renewcommand{\sectionmark}[1]{\markright{\textbf{\thesection. #1}}} % Formato para la sección: N.M. Nombre 
+\renewcommand{\headrulewidth}{0.4pt} % Ancho de la línea horizontal bajo el encabezado 
+\renewcommand{\footrulewidth}{0.2pt} % Ancho de la línea horizontal sobre el pie 
+\setlength{\headheight}{1.5\headheight} % Aumenta la altura del encabezado en una vez y media
+\newcommand{\Keywords}[1]{\vfill\noindent{\small{\em Palabras clave}: #1}}
+\definecolor{grisclar}{gray}{0.5}
+\definecolor{grisfosc}{gray}{0.25}
+\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\}
+\setlength{\parindent}{0cm} %Quitamos el indentado de cada parrafo
+
+\makeatletter %Para que al final de cada parte se reanude la numeración de capitulos por 1
+\@addtoreset{chapter}{part}
+\makeatother
+
+
+
+% Modifica algunas traducciones del paquete Babel
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addto\captionsspanish{
+\def\tablename{Tabla}
+\def\bibname{Bibliografía}
+\def\listtablename{Índice de tablas}
+\def\contentsname{Índice general}
+\def\mtctitle{Contenidos}
+}
+
+% Título, autor y fecha del documento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\Huge \textbf{``Máster Oficial en Visión Artificial
+Tratamiento Digital de Imágenes
+Práctica evaluable'}}
+\author{\Huge \textit{Beatriz Gómez Ayllón}}
+
+
+
+% Referencias internas
+%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\fullref}[1]{\ref{#1} de la página \pageref{#1}}
+
+% Insertar página en blanco
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\blankpage}{
+\newpage \thispagestyle{empty}
+\emph{  }
+\newpage
+}
+
+
+% Elimina la cabecera de la última página vacía del capítulo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else%
+   \hbox{}
+   \thispagestyle{empty}	% Elimina estilo cabeceras y "plain" enumera la página como la siguiente
+   \newpage
+   \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% >>>>>>>>>> FINAL DEL PREÁMBULO <<<<<<<<<< %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% >>>>>>>>>>> EMPIEZA LO BUENO <<<<<<<<<<<< %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document} 
+
+\mtcaddchapter % Para que el minitock salga bien
+
+\frontmatter
+%margen del documento
+\marginsize{3.0cm}{2.0cm}{3.5cm}{2.5cm}
+
+
+%%%%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%%%
+\includepdf[pagecommand={\thispagestyle{empty}}]{media/portada.pdf}
+
+\blankpage
+
+\blankpage % Primera pagina
+\blankpage % Primera pagina - reverso
+
+
+%%%%%%%%%%%%%%%%% ACTA %%%%%%%%%%%%%%%%%%%%%
+\includepdf[pagecommand={\thispagestyle{empty}}]{media/Acta.pdf}
+\blankpage %reverso del acta
+
+
+
+\maketitle
+\blankpage %reverso titulo
+
+%%%%%%%%%%%%%%%% DEDICATORIA %%%%%%%%%%%%%%
+\input{dedicatoria.tex} 
+\blankpage %reverso
+
+%%%%%%%%%%%%%%%% AGRADECIMIENTOS %%%%%%%%%%%%%%%%%%
+\chapter*{Agradecimientos}
+	\input{agradecimientos}
+\blankpage %reverso
+
+
+\chapter*{Resumen}
+\input{resumen.tex}
+\chapter*{Abstract}
+\input{abstract.tex}
+
+
+\chapter*{Acrónimos}
+\input{abreviaciones.tex}
+\blankpage % derecha
+\blankpage %reverso
+
+%%%%%%%%%%%%%%% ÍNDICE %%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents %Tabla con el Indice
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% MEMORIA %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\mainmatter
+	
+\part{Memoria}
+\fancyhead[RO]{\bf I MEMORIA} %Encabezado paginas impares con \part
+\chapter{Motivación, objetivos e introducción}
+		\input{introducion}
+\label{cap:intro}
+\chapter{Metodología}
+	\input{metodologia.tex}
+\label{cap:metodologia}
+\chapter{Resultados}
+	\input{resultados.tex}
+\label{cap:resultados}
+\chapter{Conclusiones y líneas futuras}
+	\input{conclusiones.tex}
+\label{cap:conclusiones}
+
+
+%%%% bibliografía %%%%
+\input{Bibliografia.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% PLANOS %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+\fancyhead[RO]{\bf II PLANOS} %Encabezado paginas impares con \part
+\part{Planos}
+\label{parte:planos}
+%Ponemos en blanco las paginas que van a ser sustituidas por planos
+\blankpage \blankpage %1º plano
+\blankpage \blankpage %2º plano
+\blankpage \blankpage %3º plano
+\blankpage \blankpage %4º plano
+\blankpage \blankpage %5º plano
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% PLIEGO DE CONDICIONES %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fancyhead[RO]{\bf III PLIEGO Y CONDICIONES} %Encabezado paginas impares con \part
+
+\part{Pliego y Condiciones}
+	\input{pliegoCondiciones.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% PRESUPUESTO %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\part{Presupuesto}
+\fancyhead[RO]{\bf IV PRESUPUESTO} %Encabezado paginas impares con \part
+	\input{presupuesto.tex}
+
+
+%\chapter{Anexos}
+\blankpage
+\fancyhead[RO]{} %Encabezado paginas impares con \part
+\listoffigures 	%indice de imagenes
+\blankpage
+\listoftables	%indice de tablas
+\blankpage
+\blankpage
+\end{document}

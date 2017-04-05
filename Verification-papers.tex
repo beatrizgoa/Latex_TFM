@@ -1,0 +1,81 @@
+\documentclass[a4paper]{article}
+
+\usepackage[british,UKenglish,USenglish,english,american]{babel}
+\usepackage{inputenc}
+
+
+\begin{document}
+\title{Face verification papers}
+\maketitle
+
+\section{A Convolutional Neural Network Approach for Face Verification}
+
+\subsection{Intro}
+Face verification (or authentication), on the other hand, is to determine if two face images belong to the same person. A global predefined threshold is required to make a decision that discriminates between the subjects.\\
+
+Authors propose an improved version of the Siamese CNN architecture for the face verification task.\\
+
+Each CNN is reduced to four layers, and it is used 2D discrete cross-correlation instead of 2d discrete convolution in the conv. layer.\\ 
+
+\subsection{Proposed Architecture}
+Authors fusion convolutional and subsampling layers. The main principle is cpncolve with a stride of 2or more with a convolution kernel. \\
+
+It is used cross- correlation instead of convolution.\\
+
+Prediction is performed by searching the combination of variables that minimizes the energy. So, the goal is search the optimal W that minimizes the loss function. For simpler computation, it is used L1 norm as similarity measure.\\
+
+\subsection{Data Preparation and partitioning}
+Authors use AT\&T face database with images of size 112x92 pixels. Images are cropped to a 92x92 window size and resized to 46x46.\\
+
+It is used 320 face images for training and 40 for testing.\\
+
+\subsection{Architecture details and training protocol}
+The siamese architecture consistes of two identical CNN with shared weights, which are combined with a cost module that acts as a classifier.\\
+
+The first conv layer performs 6x6 fused conv/subsampling operations that generates 5 21x21 maps.\\
+
+The second conv layer uses a 6x6 fused conv/subsampling which produces 14 features maps.\\
+
+The optput of the second conv layer is convolved with 6x6 trainable kernels  and fully connected to 60 neurons.\\
+
+Next layer is a fully connected layer of 40 neurons. The output of this layer is used by the cost module which calculates the similary of the two vectors (1 per CNN).\\
+
+Weighs and biases are randomly initialize by gausian distribution with mean value of 0 and deviation of 0.05.\\
+
+\section{DeepFace: Closing the Gap to Human-Level Performance in Face Verification}
+
+\subsection{Architecture and Training}
+
+A 3D aigned 3-channels face image size of 152x152 pixels is theinputof the CNN. The first layer is a convolutional layer of 32 filtes of 11x11x3, resulting 32 features maps. The resulting 32 maps are fed to a max-pooling layer which takes  3x3 spatial neighbourhood with a stride of 2.\\
+
+Next layer is another convolutional layer that has 16 filters of size 9x9x16 ( to extract low -level features).\\
+
+The subsequent layers are instead locally connected, like a convolutional layer they apply a filter bank, but every location in the feature map learns a different set of filters (no sé muy bien que quiere decir esa frase). The last layer is fed by 74x74x3 patch.\\
+
+The last layers are two fully connected layers.\\
+
+The output of the las fully-connected layer is fed ot a k-way softmax which produces a distribution over the class labels.\\
+
+The loss is minimized by stochastic gradient deent and the gradients are computed by standar backpropagation error.\\
+
+Authors use ReLu activation function which is applied after every  convolution, locally connected and fully connected layer (except last one).\\
+
+It has been aplied dropout only in the first fully connected layer .\\
+
+Features are normalized between zero and one. to reduce the sensivity to illumination changes.
+
+\subsection{Datasets}
+There are some databases which haws been used:
+
+\begin{enumerate}
+\item The SFC dataset
+\item The LFW dataset
+\item The Youtube face dataset
+
+\end{enumerate}
+
+
+\section{•}
+
+\end{document}
+

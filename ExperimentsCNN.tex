@@ -1,0 +1,644 @@
+\documentclass[a4paper]{article}
+
+\usepackage[british,UKenglish,USenglish,english,american]{babel}
+\usepackage{inputenc}
+\usepackage{url}
+
+
+\begin{document}
+\title{Experiments}
+\maketitle
+
+
+
+\section{LeNet y the Wild Faces}
+
+This experiment is developed in \url{LeNet_faces2}. With the following characteristics defined with LeNet:\\
+
+\begin{itemize}
+\item $learning_rate=0.1, n_epochs=12, nkerns=[20, 50], batch_size=400$
+\item  T.tanh activaction function
+\item rng = numpy.random.RandomState(23455)
+\item kernel size = [5,5]
+\end{itemize}
+
+
+I have changed from LeNet the number of output neuros from the hidden layer (n\_in), the number of inputs of the sigmoidal (n\_out):\\
+
+$layer3 = LogisticRegression(input=layer2.output, n_in=10000, n_out=5748)$\\
+
+I have changed the input randomly and the output is the number of clases in the wild faces.\\
+
+The loading of the data is in read\_faces.py, I have downloaded the dataset and I read it. I resize the images to 28,28 , the same size that lenet se for its own datasest.\\
+
+I have not read anything in order to choose any parameter nor the activation function nor the classifier.\\
+
+I have gotten the following results:\\
+
+\textit{
+ epoch 1, minibatch 16/16, validation error 96.281250 \% \\
+     epoch 1, minibatch 16/16, test error of best model 95.843750 \%  \\
+epoch 2, minibatch 16/16, validation error 96.281250 \% \\
+epoch 3, minibatch 16/16, validation error 96.500000 \% \\
+epoch 4, minibatch 16/16, validation error 96.281250 \% \\
+     epoch 4, minibatch 16/16, test error of best model 95.500000 \%  \\ 
+epoch 5, minibatch 16/16, validation error 96.312500 \% \\
+epoch 6, minibatch 16/16, validation error 96.312500 \% \\
+('training @ iter = ', 100) \\
+epoch 7, minibatch 16/16, validation error 96.343750 \%  \\
+epoch 8, minibatch 16/16, validation error 96.312500 \% \\
+epoch 9, minibatch 16/16, validation error 96.281250 \% \\
+epoch 10, minibatch 16/16, validation error 96.187500 \% \\
+     epoch 10, minibatch 16/16, test error of best model 95.875000 \% \\
+epoch 11, minibatch 16/16, validation error 95.968750 \% \\
+     epoch 11, minibatch 16/16, test error of best model 95.218750 \% \\
+epoch 12, minibatch 16/16, validation error 95.750000 \% \\
+     epoch 12, minibatch 16/16, test error of best model 95.125000 \% \\
+Optimization complete. 
+Best validation score of 95.750000 \%  obtained at iteration 192, with test performance 95.125000 \% }\\
+
+
+\section{Project data}
+
+The data loaded is 'from', this folder has 5 folders os attacks, just 4 are going to be used, and 1 folder with the original data. \\
+
+Images are too big to be used directly, in adition, each image has it is own shape, so it is necessary resize them. To resize images, It has been calculate the proportion between widht and heigh, all images has a 0.7 proportion, so the resizes images has a 250 pixel heigh and 180 pizel width, and its proportion is 0.7 too.\\
+
+The split of the data into train (to train the net), validation (validate the parameters and calculate hyper-parameeters) and test to test the data is:\\
+n\_train\_batches: 489\\
+n\_valid\_batches: 162\\
+n\_test\_batches: 279\\
+
+The total number of samples is 489 + 162 + 279 = 930 samples with 136080 features.\\
+
+ X\_test, X\_split, y\_test, y\_split = train\_test\_split(X, y, test\_size=0.7, random\_state=42) \\
+    X\_validation, X\_train, y\_validation, y\_train = train\_test\_split(X\_split, y\_split, test\_size=0.75, random\_state=42) \\
+
+\subsection{2 classes}
+The images of the user folder has been associated to class 0 and the images of the four attacks have been associated to class 1.\\
+
+\subsection{5 clases}
+The images of the user folder has been associated to class 0,the images of the four attacks, attack 1, attack 2, attack 3 and attack 4 to 1, 2, 3 ,4 classes respectively.\\
+
+
+\section{LeNet changing learning rate y Project data}
+
+With 25 epoch, nkerns=[20, 50], batch\_size=50. Logistic regresion with 10 neurons.\\
+
+\subsection{learning\_rate=0.01}
+
+
+\subsubsection{2 classes}
+epoch 1, minibatch 9/9, validation error 20.666667 \% \\
+     epoch 1, minibatch 9/9, test error of best model 23.200000 \% \\
+epoch 2, minibatch 9/9, validation error 20.666667 \% \\
+epoch 3, minibatch 9/9, validation error 20.666667 \% \\
+epoch 4, minibatch 9/9, validation error 20.666667 \% \\
+epoch 5, minibatch 9/9, validation error 20.666667 \% \\
+epoch 6, minibatch 9/9, validation error 20.666667 \% \\
+epoch 7, minibatch 9/9, validation error 20.666667 \% \\
+epoch 8, minibatch 9/9, validation error 20.666667 \% \\
+epoch 9, minibatch 9/9, validation error 20.666667 \% \\
+epoch 10, minibatch 9/9, validation error 20.666667 \% \\
+epoch 11, minibatch 9/9, validation error 20.666667 \% \\
+('training \@ iter = ', 100)
+epoch 12, minibatch 9/9, validation error 20.666667 \% \\
+epoch 13, minibatch 9/9, validation error 20.666667 \% \\
+epoch 14, minibatch 9/9, validation error 20.666667 \% \\
+epoch 15, minibatch 9/9, validation error 20.666667 \% \\
+epoch 16, minibatch 9/9, validation error 20.666667 \% \\
+epoch 17, minibatch 9/9, validation error 20.666667 \% \\
+epoch 18, minibatch 9/9, validation error 20.666667 \% \\
+epoch 19, minibatch 9/9, validation error 20.666667 \% \\
+epoch 20, minibatch 9/9, validation error 20.666667 \% \\
+epoch 21, minibatch 9/9, validation error 20.666667 \% \\
+epoch 22, minibatch 9/9, validation error 20.666667 \% \\
+('training \@ iter = ', 200)
+epoch 23, minibatch 9/9, validation error 20.666667 \% \\
+epoch 24, minibatch 9/9, validation error 20.666667 \% \\
+epoch 25, minibatch 9/9, validation error 20.666667 \% \\
+Optimization complete. \\
+Best validation score of 20.666667 \% obtained at iteration 9, with test performance 23.200000 \% \\
+start time: 1468406439
+end time: 1468410280
+
+\subsubsection{5 classes}
+epoch 1, minibatch 9/9, validation error 78.000000 \% \\
+     epoch 1, minibatch 9/9, test error of best model 84.800000 \% \\
+epoch 2, minibatch 9/9, validation error 73.333333 \% \\
+     epoch 2, minibatch 9/9, test error of best model 81.200000 \% \\
+epoch 3, minibatch 9/9, validation error 67.333333 \% \\
+     epoch 3, minibatch 9/9, test error of best model 74.800000 \% \\
+epoch 4, minibatch 9/9, validation error 64.000000 \% \\
+     epoch 4, minibatch 9/9, test error of best model 73.200000 \% \\
+epoch 5, minibatch 9/9, validation error 74.000000 \% \\
+epoch 6, minibatch 9/9, validation error 70.666667 \% \\
+epoch 7, minibatch 9/9, validation error 62.666667 \% \\
+     epoch 7, minibatch 9/9, test error of best model 68.400000 \% \\
+epoch 8, minibatch 9/9, validation error 50.000000 \% \\
+     epoch 8, minibatch 9/9, test error of best model 60.400000 \% \\
+epoch 9, minibatch 9/9, validation error 66.000000 \% \\
+epoch 10, minibatch 9/9, validation error 55.333333 \% \\
+epoch 11, minibatch 9/9, validation error 64.666667 \% \\
+('training\ @ iter = ', 100)
+epoch 12, minibatch 9/9, validation error 58.666667 \% \\
+epoch 13, minibatch 9/9, validation error 53.333333 \% \\
+epoch 14, minibatch 9/9, validation error 58.666667 \% \\
+epoch 15, minibatch 9/9, validation error 52.666667 \% \\
+epoch 16, minibatch 9/9, validation error 50.000000 \% \\
+epoch 17, minibatch 9/9, validation error 51.333333 \% \\
+epoch 18, minibatch 9/9, validation error 52.000000 \% \\
+epoch 19, minibatch 9/9, validation error 51.333333 \% \\
+epoch 20, minibatch 9/9, validation error 52.666667 \% \\
+epoch 21, minibatch 9/9, validation error 56.666667 \% \\
+epoch 22, minibatch 9/9, validation error 52.666667 \% \\
+('training \@ iter = ', 200)
+epoch 23, minibatch 9/9, validation error 52.000000 \% \\
+epoch 24, minibatch 9/9, validation error 55.333333 \% \\
+epoch 25, minibatch 9/9, validation error 50.000000 \% \\
+Optimization complete. \\
+Best validation score of 50.000000 \%  obtained at iteration 72, with test performance 60.400000 \% \\
+
+start time: 1468402235
+endtime: 1468406362
+
+
+\section{based in Lenet y project data}
+
+The CNN is based in Lenet but some things have been changed in order to build a CNN similar to the one described in \textit{Learning Temporal Features Using LSTM-CNN Architecture for FaceAnti-spoofing}.\\
+
+This CNN has two conv nets, the first one with 48 filters and the second one with 96. The size of the filters is originally 3x3, but in this example I have tried with 5x5.\\
+
+The conv nets are followed by max pool layers of size 2x2.\\
+
+The activation funtion is the rectified linear activation function (reLu). I have used a normalized distribution of weights and bias, the same which was implemented in LeNet: weights are sampled randomly from a uniform distribution in the range [-1/fan-in, 1/fan-in], where fan-in is the number of inputs to a hidden unit. To use ReLu I have used the one implemented in theano.tensor.nnet.relu.\\
+
+Because of the huge number of batch\_size is 20. And the learning rate is 0.001, like in the paper.\\
+
+The number of neurons at the output of the hidden layer are 100. The classifier is the sigmoidal function.\\
+
+25 epoch.\\
+
+\subsection{random = 42}
+
+\subsubsection{2 classes}
+start time: 1468246168 end time: 1468264010; total time = 17842
+
+('training \@ iter = ', 0)
+epoch 1, minibatch 24/24, validation error 20.625000 \% \\
+     epoch 1, minibatch 24/24, test error of best model 23.076923 \% \\
+epoch 2, minibatch 24/24, validation error 20.625000 \% \\
+epoch 3, minibatch 24/24, validation error 20.625000 \% \\
+epoch 4, minibatch 24/24, validation error 20.625000 \% \\
+('training \@ iter = ', 100)
+epoch 5, minibatch 24/24, validation error 20.625000 \% \\
+epoch 6, minibatch 24/24, validation error 20.625000 \% \\
+epoch 7, minibatch 24/24, validation error 20.625000 \% \\
+epoch 8, minibatch 24/24, validation error 11.250000 \% \\
+     epoch 8, minibatch 24/24, test error of best model 13.461538 \% \\
+('training \@ iter = ', 200)
+epoch 9, minibatch 24/24, validation error 14.375000 \% \\
+epoch 10, minibatch 24/24, validation error 11.875000 \% \\
+epoch 11, minibatch 24/24, validation error 22.500000 \% \\
+epoch 12, minibatch 24/24, validation error 11.875000 \% \\
+('training \@ iter = ', 300)
+epoch 13, minibatch 24/24, validation error 9.375000 \% \\
+     epoch 13, minibatch 24/24, test error of best model 10.384615 \% \\
+epoch 14, minibatch 24/24, validation error 6.250000 \% \\
+     epoch 14, minibatch 24/24, test error of best model 8.076923 \% \\
+epoch 15, minibatch 24/24, validation error 5.625000 \% \\
+     epoch 15, minibatch 24/24, test error of best model 4.615385 \% \\
+epoch 16, minibatch 24/24, validation error 6.250000 \% \\
+('training \@ iter = ', 400)
+epoch 17, minibatch 24/24, validation error 5.000000 \% \\
+     epoch 17, minibatch 24/24, test error of best model 5.384615 \% \\
+epoch 18, minibatch 24/24, validation error 5.000000 \% \\
+epoch 19, minibatch 24/24, validation error 4.375000 \% \\
+     epoch 19, minibatch 24/24, test error of best model 5.769231 \% \\
+epoch 20, minibatch 24/24, validation error 10.000000 \% \\
+('training \@ iter = ', 500)
+epoch 21, minibatch 24/24, validation error 6.250000 \% \\
+epoch 22, minibatch 24/24, validation error 6.250000 \% \\
+epoch 23, minibatch 24/24, validation error 5.000000 \% \\
+epoch 24, minibatch 24/24, validation error 4.375000 \% \\
+epoch 25, minibatch 24/24, validation error 4.375000 \% \\
+Optimization complete.
+Best validation score of 4.375000 \% obtained at iteration 456, with test performance 5.769231 \% \\
+
+
+\subsubsection{5 classes}
+start time: 1468226442 and end time: 1468245773; total time = 19331.\\
+
+('training \@ iter = ', 0)
+epoch 1, minibatch 24/24, validation error 66.250000 \% \\
+     epoch 1, minibatch 24/24, test error of best model 66.923077 \% \\
+epoch 2, minibatch 24/24, validation error 60.625000 \% \\
+     epoch 2, minibatch 24/24, test error of best model 59.615385 \% \\
+epoch 3, minibatch 24/24, validation error 56.875000 \% \\
+     epoch 3, minibatch 24/24, test error of best model 56.923077 \% \\
+epoch 4, minibatch 24/24, validation error 33.750000 \% \\
+     epoch 4, minibatch 24/24, test error of best model 45.384615 \% \\
+('training \@ iter = ', 100)
+epoch 5, minibatch 24/24, validation error 27.500000 \% \\
+     epoch 5, minibatch 24/24, test error of best model 29.615385 \% \\
+epoch 6, minibatch 24/24, validation error 18.125000 \% \\
+     epoch 6, minibatch 24/24, test error of best model 22.307692 \% \\
+epoch 7, minibatch 24/24, validation error 22.500000 \% \\
+epoch 8, minibatch 24/24, validation error 11.250000 \% \\
+     epoch 8, minibatch 24/24, test error of best model 19.230769 \% \\
+('training \@ iter = ', 200)
+epoch 9, minibatch 24/24, validation error 11.875000 \% \\
+epoch 10, minibatch 24/24, validation error 10.625000 \% \\
+     epoch 10, minibatch 24/24, test error of best model 17.692308 \% \\
+epoch 11, minibatch 24/24, validation error 8.750000 \% \\
+     epoch 11, minibatch 24/24, test error of best model 15.000000 \% \\
+epoch 12, minibatch 24/24, validation error 10.000000 \% \\
+('training \@ iter = ', 300)
+epoch 13, minibatch 24/24, validation error 8.750000 \% \\
+     epoch 13, minibatch 24/24, test error of best model 14.230769 \% \\
+epoch 14, minibatch 24/24, validation error 8.125000 \% \\
+     epoch 14, minibatch 24/24, test error of best model 14.615385 \% \\
+epoch 15, minibatch 24/24, validation error 8.750000 \% \\
+epoch 16, minibatch 24/24, validation error 8.750000 \% \\
+('training \@ iter = ', 400)
+epoch 17, minibatch 24/24, validation error 8.125000 \% \\
+epoch 18, minibatch 24/24, validation error 8.125000 \% \\
+epoch 19, minibatch 24/24, validation error 7.500000 \% \\
+     epoch 19, minibatch 24/24, test error of best model 14.615385 \% \\
+epoch 20, minibatch 24/24, validation error 7.500000 \% \\
+('training \@ iter = ', 500)
+epoch 21, minibatch 24/24, validation error 7.500000 \% \\
+epoch 22, minibatch 24/24, validation error 7.500000 \% \\
+epoch 23, minibatch 24/24, validation error 7.500000 \% \\
+epoch 24, minibatch 24/24, validation error 7.500000 \% \\
+epoch 25, minibatch 24/24, validation error 7.500000 \% \\
+Optimization complete.
+Best validation score of 7.500000 \% obtained at iteration 456, with test performance 14.615385 \% \\
+
+\subsection{random = 144}
+
+\subsubsection{5 clases}
+'training \@ iter = ', 0)
+epoch 1, minibatch 24/24, validation error 45.625000 \% \\
+     epoch 1, minibatch 24/24, test error of best model 47.692308 \% \\
+epoch 2, minibatch 24/24, validation error 80.000000 \% \\
+epoch 3, minibatch 24/24, validation error 78.125000 \% \\
+epoch 4, minibatch 24/24, validation error 65.625000 \% \\
+('training \@ iter = ', 100)
+epoch 5, minibatch 24/24, validation error 58.750000 \% \\
+epoch 6, minibatch 24/24, validation error 54.375000 \% \\
+epoch 7, minibatch 24/24, validation error 83.125000 \% \\
+epoch 8, minibatch 24/24, validation error 83.125000 \% \\
+('training \@ iter = ', 200)
+epoch 9, minibatch 24/24, validation error 81.250000 \% \\
+epoch 10, minibatch 24/24, validation error 81.250000 \% \\
+epoch 11, minibatch 24/24, validation error 81.250000 \% \\
+epoch 12, minibatch 24/24, validation error 81.250000 \% \\
+('training \@ iter = ', 300)
+epoch 13, minibatch 24/24, validation error 81.250000 \% \\
+epoch 14, minibatch 24/24, validation error 81.250000 \% \\
+epoch 15, minibatch 24/24, validation error 81.250000 \% \\
+epoch 16, minibatch 24/24, validation error 81.250000 \% \\
+('training  \@ iter = ', 400)
+epoch 17, minibatch 24/24, validation error 81.250000 \% \\
+epoch 18, minibatch 24/24, validation error 81.250000 \% \\
+epoch 19, minibatch 24/24, validation error 81.250000 \% \\
+epoch 20, minibatch 24/24, validation error 81.250000 \% \\
+('training \@ iter = ', 500)
+epoch 21, minibatch 24/24, validation error 81.250000 \% \\
+epoch 22, minibatch 24/24, validation error 81.250000 \% \\
+epoch 23, minibatch 24/24, validation error 81.250000 \% \\
+epoch 24, minibatch 24/24, validation error 81.250000 \% \\
+epoch 25, minibatch 24/24, validation error 81.250000 \% \\
+Optimization complete. \\
+Best validation score of 45.625000 \% obtained at iteration 24, with test performance 47.692308 \% \\
+start time: 1468410345 \\
+end time: 1468427641 \\
+
+
+\subsubsection{2 clases}
+('training \@ iter = ', 0)
+epoch 1, minibatch 24/24, validation error 78.125000 \% \\
+     epoch 1, minibatch 24/24, test error of best model 78.076923 \% \\
+epoch 2, minibatch 24/24, validation error 78.125000 \% \\
+epoch 3, minibatch 24/24, validation error 78.125000 \% \\
+epoch 4, minibatch 24/24, validation error 78.125000 \% \\
+('training \@ iter = ', 100)
+epoch 5, minibatch 24/24, validation error 78.125000 \% \\
+epoch 6, minibatch 24/24, validation error 78.125000 \% \\
+epoch 7, minibatch 24/24, validation error 78.125000 \% \\
+epoch 8, minibatch 24/24, validation error 78.125000 \% \\
+('training \@ iter = ', 200)
+epoch 9, minibatch 24/24, validation error 78.125000 \% \\
+epoch 10, minibatch 24/24, validation error 78.125000 \% \\
+epoch 11, minibatch 24/24, validation error 78.125000 \% \\
+
+\subsection{random = 259}
+
+\subsubsection{2 classes}
+epoch 1, minibatch 24/24, validation error 21.875000 \% \\
+     epoch 1, minibatch 24/24, test error of best model 21.538462 \% \\
+epoch 2, minibatch 24/24, validation error 21.875000 \% \\
+epoch 3, minibatch 24/24, validation error 21.875000 \% \\
+epoch 4, minibatch 24/24, validation error 18.750000 \% \\
+     epoch 4, minibatch 24/24, test error of best model 21.538462 \% \\
+('training \@ iter = ', 100)
+epoch 5, minibatch 24/24, validation error 25.000000 \% \\
+epoch 6, minibatch 24/24, validation error 23.125000 \% \\
+epoch 7, minibatch 24/24, validation error 15.000000 \% \\
+     epoch 7, minibatch 24/24, test error of best model 14.230769 \% \\
+epoch 8, minibatch 24/24, validation error 21.875000 \% \\
+('training \@ iter = ', 200)
+epoch 9, minibatch 24/24, validation error 18.750000 \% \\
+epoch 10, minibatch 24/24, validation error 15.625000 \% \\
+epoch 11, minibatch 24/24, validation error 37.500000 \% \\
+epoch 12, minibatch 24/24, validation error 11.250000 \% \\
+     epoch 12, minibatch 24/24, test error of best model 11.538462 \% \\
+('training \@ iter = ', 300)
+epoch 13, minibatch 24/24, validation error 15.000000 \% \\
+epoch 14, minibatch 24/24, validation error 9.375000 \% \\
+     epoch 14, minibatch 24/24, test error of best model 8.076923 \% \\
+epoch 15, minibatch 24/24, validation error 8.750000 \% \\
+     epoch 15, minibatch 24/24, test error of best model 8.076923 \% \\
+epoch 16, minibatch 24/24, validation error 11.250000 \% \\
+('training \@ iter = ', 400)
+epoch 17, minibatch 24/24, validation error 25.000000 \% \\
+epoch 18, minibatch 24/24, validation error 9.375000 \% \\
+epoch 19, minibatch 24/24, validation error 7.500000 \% \\
+     epoch 19, minibatch 24/24, test error of best model 8.461538 \% \\
+epoch 20, minibatch 24/24, validation error 9.375000 \% \\
+('training \@ iter = ', 500)
+epoch 21, minibatch 24/24, validation error 9.375000 \% \\
+epoch 22, minibatch 24/24, validation error 9.375000 \% \\
+epoch 23, minibatch 24/24, validation error 9.375000 \% \\
+epoch 24, minibatch 24/24, validation error 9.375000 \% \\
+epoch 25, minibatch 24/24, validation error 9.375000 \% \\
+Optimization complete.\\
+Best validation score of 7.500000 \% obtained at iteration 456, with test performance 8.461538 \% \\
+start time: 1468492428 \\
+end time: 1468511183 \\
+
+\subsubsection{5 clases}
+epoch 1, minibatch 24/24, validation error 76.250000 \% \\
+     epoch 1, minibatch 24/24, test error of best model 73.076923 \% \\
+epoch 2, minibatch 24/24, validation error 81.875000 \% \\
+epoch 3, minibatch 24/24, validation error 75.000000 \% \\
+     epoch 3, minibatch 24/24, test error of best model 83.846154 \% \\
+epoch 4, minibatch 24/24, validation error 75.625000 \% \\
+('training \@ iter = ', 100)
+epoch 5, minibatch 24/24, validation error 83.125000 \% \\
+epoch 6, minibatch 24/24, validation error 73.750000 \% \\
+     epoch 6, minibatch 24/24, test error of best model 74.230769 \% \\
+epoch 7, minibatch 24/24, validation error 75.625000 \% \\
+epoch 8, minibatch 24/24, validation error 75.625000 \% \\
+('training \@ iter = ', 200)
+epoch 9, minibatch 24/24, validation error 76.250000 \% \\
+epoch 10, minibatch 24/24, validation error 78.125000 \% \\
+epoch 11, minibatch 24/24, validation error 81.875000 \% \\
+epoch 12, minibatch 24/24, validation error 83.750000 \% \\
+('training \@ iter = ', 300)
+epoch 13, minibatch 24/24, validation error 63.750000 \% \\
+     epoch 13, minibatch 24/24, test error of best model 62.307692 \% \\
+epoch 14, minibatch 24/24, validation error 61.250000 \% \\
+     epoch 14, minibatch 24/24, test error of best model 50.384615 \% \\
+epoch 15, minibatch 24/24, validation error 45.000000 \% \\
+     epoch 15, minibatch 24/24, test error of best model 43.076923 \% \\
+epoch 16, minibatch 24/24, validation error 39.375000 \% \\
+     epoch 16, minibatch 24/24, test error of best model 33.076923 \% \\
+('training \@ iter = ', 400)
+epoch 17, minibatch 24/24, validation error 31.875000 \% \\
+     epoch 17, minibatch 24/24, test error of best model 26.538462 \% \\
+epoch 18, minibatch 24/24, validation error 36.250000 \% \\
+epoch 19, minibatch 24/24, validation error 27.500000 \% \\
+     epoch 19, minibatch 24/24, test error of best model 33.076923 \% \\
+epoch 20, minibatch 24/24, validation error 23.125000 \% \\
+     epoch 20, minibatch 24/24, test error of best model 26.923077 \% \\
+('training \@ iter = ', 500)
+epoch 21, minibatch 24/24, validation error 21.875000 \% \\
+     epoch 21, minibatch 24/24, test error of best model 18.846154 \% \\
+epoch 22, minibatch 24/24, validation error 18.125000 \% \\
+     epoch 22, minibatch 24/24, test error of best model 14.230769 \% \\
+epoch 23, minibatch 24/24, validation error 18.750000 \% \\
+epoch 24, minibatch 24/24, validation error 18.750000 \% \\
+epoch 25, minibatch 24/24, validation error 18.750000 \% \\
+Optimization complete.\\
+Best validation score of 18.125000 \% obtained at iteration 528, with test performance 14.230769 \% \\
+start time: 1468528372\\
+end time: 1468549098\\
+
+Process finished with exit code 0 \\
+
+\section{Based in lenet y casia}
+
+\subsection{random state = 259 }
+
+\subsubsection{2 classes}
+epoch 1, minibatch 5/5, validation error 20.000000 \% \\
+epoch 2, minibatch 5/5, validation error 20.000000 \% \\
+epoch 3, minibatch 5/5, validation error 20.000000 \% \\
+epoch 4, minibatch 5/5, validation error 25.000000 \% \\
+epoch 5, minibatch 5/5, validation error 25.000000 \% \\
+epoch 6, minibatch 5/5, validation error 20.000000 \% \\
+epoch 7, minibatch 5/5, validation error 20.000000 \% \\
+epoch 8, minibatch 5/5, validation error 15.000000 \% \\
+epoch 9, minibatch 5/5, validation error 20.000000 \% \\
+epoch 10, minibatch 5/5, validation error 25.000000 \% \\
+epoch 11, minibatch 5/5, validation error 20.000000 \% \\
+epoch 12, minibatch 5/5, validation error 20.000000 \% \\
+epoch 13, minibatch 5/5, validation error 20.000000 \% \\
+epoch 14, minibatch 5/5, validation error 20.000000 \% \\
+epoch 15, minibatch 5/5, validation error 20.000000 \% \\
+epoch 16, minibatch 5/5, validation error 20.000000 \% \\
+epoch 17, minibatch 5/5, validation error 20.000000 \% \\
+epoch 18, minibatch 5/5, validation error 15.000000 \% \\
+epoch 19, minibatch 5/5, validation error 5.000000 \% \\
+epoch 20, minibatch 5/5, validation error 30.000000 \% \\
+('training \@ iter = ', 100)
+epoch 21, minibatch 5/5, validation error 20.000000 \% \\
+epoch 22, minibatch 5/5, validation error 25.000000 \% \\
+epoch 23, minibatch 5/5, validation error 20.000000 \% \\
+epoch 24, minibatch 5/5, validation error 10.000000 \% \\
+epoch 25, minibatch 5/5, validation error 15.000000 \% \\
+epoch 26, minibatch 5/5, validation error 20.000000 \% \\
+epoch 27, minibatch 5/5, validation error 20.000000 \% \\
+epoch 28, minibatch 5/5, validation error 20.000000 \% \\
+epoch 29, minibatch 5/5, validation error 10.000000 \% \\
+epoch 30, minibatch 5/5, validation error 35.000000 \% \\
+epoch 31, minibatch 5/5, validation error 15.000000 \% \\
+epoch 32, minibatch 5/5, validation error 20.000000 \% \\
+epoch 33, minibatch 5/5, validation error 35.000000 \% \\
+epoch 34, minibatch 5/5, validation error 20.000000 \% \\
+epoch 35, minibatch 5/5, validation error 20.000000 \% \\
+epoch 36, minibatch 5/5, validation error 20.000000 \% \\
+epoch 37, minibatch 5/5, validation error 20.000000 \% \\
+epoch 38, minibatch 5/5, validation error 15.000000 \% \\
+epoch 39, minibatch 5/5, validation error 20.000000 \% \\
+epoch 40, minibatch 5/5, validation error 20.000000 \% \\
+('training \@ iter = ', 200)
+epoch 41, minibatch 5/5, validation error 20.000000 \% \\
+epoch 42, minibatch 5/5, validation error 20.000000 \% \\
+epoch 43, minibatch 5/5, validation error 20.000000 \% \\
+epoch 44, minibatch 5/5, validation error 20.000000 \% \\
+epoch 45, minibatch 5/5, validation error 15.000000 \% \\
+epoch 46, minibatch 5/5, validation error 15.000000 \% \\
+epoch 47, minibatch 5/5, validation error 10.000000 \% \\
+epoch 48, minibatch 5/5, validation error 10.000000 \% \\
+epoch 49, minibatch 5/5, validation error 10.000000 \% \\
+epoch 50, minibatch 5/5, validation error 10.000000 \% \\
+epoch 51, minibatch 5/5, validation error 10.000000 \% \\
+epoch 52, minibatch 5/5, validation error 10.000000 \% \\
+epoch 53, minibatch 5/5, validation error 10.000000 \% \\
+epoch 54, minibatch 5/5, validation error 10.000000 \% \\
+epoch 55, minibatch 5/5, validation error 10.000000 \% \\
+epoch 56, minibatch 5/5, validation error 10.000000 \% \\
+epoch 57, minibatch 5/5, validation error 10.000000 \% \\
+epoch 58, minibatch 5/5, validation error 10.000000 \% \\
+epoch 59, minibatch 5/5, validation error 10.000000 \% \\
+epoch 60, minibatch 5/5, validation error 10.000000 \% \\
+('training \@ iter = ', 300)
+epoch 61, minibatch 5/5, validation error 10.000000 \% \\
+epoch 62, minibatch 5/5, validation error 10.000000 \% \\
+epoch 63, minibatch 5/5, validation error 10.000000 \% \\
+epoch 64, minibatch 5/5, validation error 10.000000 \% \\
+epoch 65, minibatch 5/5, validation error 10.000000 \% \\
+epoch 66, minibatch 5/5, validation error 10.000000 \% \\
+epoch 67, minibatch 5/5, validation error 10.000000 \% \\
+epoch 68, minibatch 5/5, validation error 10.000000 \% \\
+epoch 69, minibatch 5/5, validation error 10.000000 \% \\
+epoch 70, minibatch 5/5, validation error 10.000000 \% \\
+epoch 71, minibatch 5/5, validation error 10.000000 \% \\
+epoch 72, minibatch 5/5, validation error 10.000000 \% \\
+epoch 73, minibatch 5/5, validation error 10.000000 \% \\
+epoch 74, minibatch 5/5, validation error 10.000000 \% \\
+epoch 75, minibatch 5/5, validation error 10.000000 \% \\
+epoch 76, minibatch 5/5, validation error 10.000000 \% \\
+epoch 77, minibatch 5/5, validation error 10.000000 \% \\
+epoch 78, minibatch 5/5, validation error 10.000000 \% \\
+epoch 79, minibatch 5/5, validation error 10.000000 \% \\
+epoch 80, minibatch 5/5, validation error 10.000000 \% \\
+('training \@ iter = ', 400)
+epoch 81, minibatch 5/5, validation error 10.000000 \% \\
+epoch 82, minibatch 5/5, validation error 10.000000 \% \\
+epoch 83, minibatch 5/5, validation error 10.000000 \% \\
+epoch 84, minibatch 5/5, validation error 10.000000 \% \\
+epoch 85, minibatch 5/5, validation error 10.000000 \% \\
+epoch 86, minibatch 5/5, validation error 10.000000 \% \\
+epoch 87, minibatch 5/5, validation error 10.000000 \% \\
+epoch 88, minibatch 5/5, validation error 10.000000 \% \\
+epoch 89, minibatch 5/5, validation error 10.000000 \% \\
+epoch 90, minibatch 5/5, validation error 10.000000 \% \\
+epoch 91, minibatch 5/5, validation error 10.000000 \% \\
+epoch 92, minibatch 5/5, validation error 10.000000 \% \\
+epoch 93, minibatch 5/5, validation error 10.000000 \% \\
+epoch 94, minibatch 5/5, validation error 10.000000 \% \\
+epoch 95, minibatch 5/5, validation error 10.000000 \% \\
+epoch 96, minibatch 5/5, validation error 10.000000 \% \\
+epoch 97, minibatch 5/5, validation error 10.000000 \% \\
+epoch 98, minibatch 5/5, validation error 10.000000 \% \\
+epoch 99, minibatch 5/5, validation error 10.000000 \% \\
+epoch 100, minibatch 5/5, validation error 10.000000 \% \\
+ test error of best model 22.500000 \% \\
+Optimization complete. \\
+Best validation score of 5.000000 \% obtained at iteration 95, with test performance 22.500000 \% \\
+start time: 1469139838 \\
+end time: 1469141308 \\
+
+\subsection{random = 42}
+
+\subsubsection{2 classes}
+
+('training \@ iter \= ', 0)
+epoch 1, minibatch 5/5, validation error 35.000000 \% \\
+epoch 2, minibatch 5/5, validation error 35.000000 \% \\
+epoch 3, minibatch 5/5, validation error 30.000000 \% \\
+epoch 4, minibatch 5/5, validation error 35.000000 \% \\
+epoch 5, minibatch 5/5, validation error 20.000000 \% \\
+epoch 6, minibatch 5/5, validation error 50.000000 \% \\
+epoch 7, minibatch 5/5, validation error 45.000000 \% \\
+epoch 8, minibatch 5/5, validation error 35.000000 \% \\
+epoch 9, minibatch 5/5, validation error 35.000000 \% \\
+epoch 10, minibatch 5/5, validation error 40.000000 \% \\
+epoch 11, minibatch 5/5, validation error 60.000000 \% \\
+epoch 12, minibatch 5/5, validation error 55.000000 \% \\
+epoch 13, minibatch 5/5, validation error 30.000000 \% \\
+epoch 14, minibatch 5/5, validation error 65.000000 \% \\
+epoch 15, minibatch 5/5, validation error 65.000000 \% \\
+epoch 16, minibatch 5/5, validation error 25.000000 \% \\
+epoch 17, minibatch 5/5, validation error 35.000000 \% \\
+epoch 18, minibatch 5/5, validation error 65.000000 \% \\
+epoch 19, minibatch 5/5, validation error 40.000000 \% \\
+epoch 20, minibatch 5/5, validation error 25.000000 \% \\
+('training \@ iter \= ', 100)
+epoch 21, minibatch 5/5, validation error 40.000000 \% \\
+epoch 22, minibatch 5/5, validation error 20.000000 \% \\
+epoch 23, minibatch 5/5, validation error 30.000000 \% \\
+epoch 24, minibatch 5/5, validation error 40.000000 \% \\
+epoch 25, minibatch 5/5, validation error 65.000000 \% \\
+epoch 26, minibatch 5/5, validation error 20.000000 \% \\
+epoch 27, minibatch 5/5, validation error 65.000000 \% \\
+epoch 28, minibatch 5/5, validation error 35.000000 \% \\
+epoch 29, minibatch 5/5, validation error 65.000000 \% \\
+epoch 30, minibatch 5/5, validation error 50.000000 \% \\
+epoch 31, minibatch 5/5, validation error 35.000000 \% \\
+epoch 32, minibatch 5/5, validation error 30.000000 \% \\
+epoch 33, minibatch 5/5, validation error 30.000000 \% \\
+epoch 34, minibatch 5/5, validation error 65.000000 \% \\
+epoch 35, minibatch 5/5, validation error 35.000000 \% \\
+epoch 36, minibatch 5/5, validation error 50.000000 \% \\
+epoch 37, minibatch 5/5, validation error 25.000000 \% \\
+epoch 38, minibatch 5/5, validation error 30.000000 \% \\
+epoch 39, minibatch 5/5, validation error 45.000000 \% \\
+epoch 40, minibatch 5/5, validation error 15.000000 \% \\
+('training \@ iter = ', 200)
+epoch 41, minibatch 5/5, validation error 55.000000 \% \\
+epoch 42, minibatch 5/5, validation error 50.000000 \% \\
+epoch 43, minibatch 5/5, validation error 30.000000 \% \\
+epoch 44, minibatch 5/5, validation error 30.000000 \% \\
+epoch 45, minibatch 5/5, validation error 45.000000 \% \\
+epoch 46, minibatch 5/5, validation error 35.000000 \% \\
+epoch 47, minibatch 5/5, validation error 25.000000 \% \\
+epoch 48, minibatch 5/5, validation error 45.000000 \% \\
+epoch 49, minibatch 5/5, validation error 35.000000 \% \\
+epoch 50, minibatch 5/5, validation error 35.000000 \% \\
+epoch 51, minibatch 5/5, validation error 35.000000 \% \\
+epoch 52, minibatch 5/5, validation error 40.000000 \% \\
+epoch 53, minibatch 5/5, validation error 25.000000 \% \\
+epoch 54, minibatch 5/5, validation error 60.000000 \% \\
+epoch 55, minibatch 5/5, validation error 40.000000 \% \\
+epoch 56, minibatch 5/5, validation error 25.000000 \% \\
+epoch 57, minibatch 5/5, validation error 20.000000 \% \\
+epoch 58, minibatch 5/5, validation error 40.000000 \% \\
+epoch 59, minibatch 5/5, validation error 25.000000 \% \\
+epoch 60, minibatch 5/5, validation error 25.000000 \% \\
+('training \@ iter = ', 300)
+epoch 61, minibatch 5/5, validation error 30.000000 \% \\
+epoch 62, minibatch 5/5, validation error 30.000000 \% \\
+epoch 63, minibatch 5/5, validation error 25.000000 \% \\
+epoch 64, minibatch 5/5, validation error 25.000000 \% \\
+epoch 65, minibatch 5/5, validation error 20.000000 \% \\
+epoch 66, minibatch 5/5, validation error 25.000000 \% \\
+epoch 67, minibatch 5/5, validation error 25.000000 \% \\
+epoch 68, minibatch 5/5, validation error 25.000000 \% \\
+epoch 69, minibatch 5/5, validation error 25.000000 \% \\
+epoch 70, minibatch 5/5, validation error 25.000000 \% \\
+epoch 71, minibatch 5/5, validation error 25.000000 \% \\
+epoch 72, minibatch 5/5, validation error 25.000000 \% \\
+epoch 73, minibatch 5/5, validation error 25.000000 \% \\
+epoch 74, minibatch 5/5, validation error 25.000000 \% \\
+epoch 75, minibatch 5/5, validation error 20.000000 \% \\
+epoch 76, minibatch 5/5, validation error 15.000000 \% \\
+epoch 77, minibatch 5/5, validation error 15.000000 \% \\
+epoch 78, minibatch 5/5, validation error 15.000000 \% \\
+epoch 79, minibatch 5/5, validation error 15.000000 \% \\
+epoch 80, minibatch 5/5, validation error 15.000000 \% \\
+('training \@ iter = ', 400)
+epoch 81, minibatch 5/5, validation error 15.000000 \% \\ 
+epoch 100, minibatch 5/5, validation error 15.000000 \% \\
+ test error of best model 25.000000 \% \\
+Optimization complete.\\
+Best validation score of 15.000000 \% obtained at iteration 200, with test performance 25.000000 \% \\
+start\ time: 1469177651 \\
+end\_time: 1469179290 \\
+
+\end{document}
+

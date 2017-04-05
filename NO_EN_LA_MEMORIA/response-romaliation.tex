@@ -1,0 +1,43 @@
+\documentclass[a4paper]{article}
+
+\usepackage[british,UKenglish,USenglish,english,american]{babel}
+\usepackage{inputenc}
+\usepackage{url}
+
+
+\begin{document}
+\title{local response normalization layer}
+\maketitle
+
+\section{local response normalization layer}
+In this paper I am going to write what I have found od response normalizacion layer.
+
+\section{Fist Forum}
+
+\url{https://www.kaggle.com/c/second-annual-data-science-bowl/forums/t/18548/keras-deep-learning-tutorial-0-0359?page=6}
+
+\section{Second one}
+\url{https://www.quora.com/What-are-response-normalization-layers-in-neural-networks}\\
+
+ts best explained with Convolutional Neural Nets on image recognition. There are two types of normalization:\\
+
+-pooling-normalization, which averages or takes the max over some small image space, making the network shift/scale invariant.\\
+
+-response-normalization, which takes the max over different units at the same location in image space. Picture two units, where one response most to a vertical and the other to a horizontal line. In response-normalization only the strongest activation wins and gets transferred to the next layer.\\
+
+Difference between local and batch normalization: \\
+\url{https://www.quora.com/What-are-the-practical-differences-between-batch-normalization-and-layer-normalization-in-deep-neural-networks#}\\
+
+All the normalization is calculated using this equation\\
+
+\begin{equation}
+x̂ =x−mean(x¯)std(x¯))x^=x−mean(x¯)std(x¯))
+\end{equation} 
+
+The difference is how to calculate the x¯x¯.\\
+
+In layer normalization x¯x¯ = all of the summed inputs to the neurons in a layer on a single training case\\
+
+And in batch normalization x¯x¯= all of the summed inputs of single neuron on single batch\\
+
+\end{document}

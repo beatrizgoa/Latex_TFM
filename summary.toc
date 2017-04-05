@@ -1,0 +1,29 @@
+\select@language {american}
+\contentsline {section}{\numberline {0.1}Introduction}{3}
+\contentsline {section}{\numberline {0.2}Databases}{4}
+\contentsline {subsection}{\numberline {0.2.1}MNIST digit database}{4}
+\contentsline {subsection}{\numberline {0.2.2}Labeled faces in the wild}{5}
+\contentsline {subsection}{\numberline {0.2.3}FRAV dataset}{6}
+\contentsline {subsection}{\numberline {0.2.4}CASIA dataset}{8}
+\contentsline {subsection}{\numberline {0.2.5}MSU - MFSD database}{8}
+\contentsline {section}{\numberline {0.3}LeNet}{11}
+\contentsline {subsection}{\numberline {0.3.1}Structure of Lenet}{11}
+\contentsline {subsection}{\numberline {0.3.2}Results of LeNet}{12}
+\contentsline {subsection}{\numberline {0.3.3}Modifying LeNet}{17}
+\contentsline {section}{\numberline {0.4}Start working with Faces databases}{21}
+\contentsline {subsection}{\numberline {0.4.1}Using Labeled Faces in the Wild}{21}
+\contentsline {subsubsection}{Changing learning rate}{23}
+\contentsline {subsubsection}{Changing convolutional parameters}{24}
+\contentsline {subsection}{\numberline {0.4.2}Using relu as an activaction function instead of tanh}{26}
+\contentsline {subsection}{\numberline {0.4.3}using FRAV dataset}{27}
+\contentsline {section}{\numberline {0.5}Regenerating the databases}{30}
+\contentsline {subsection}{\numberline {0.5.1}using RGB and NIR FRAV database}{30}
+\contentsline {subsubsection}{Adding images in characteristic level}{30}
+\contentsline {subsection}{\numberline {0.5.2}Architecture implemented in Casia videos}{36}
+\contentsline {subsection}{\numberline {0.5.3}As close as possible as Imagenet}{39}
+\contentsline {subsubsection}{Network configuration for each experiment}{39}
+\contentsline {subsubsection}{frav results}{41}
+\contentsline {subsubsection}{casia results}{42}
+\contentsline {subsubsection}{MFSD results}{48}
+\contentsline {subsection}{\numberline {0.5.4}New database}{49}
+\contentsline {subsubsection}{experiments}{50}
