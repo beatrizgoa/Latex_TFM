@@ -2,21 +2,22 @@
 In this section, the metrics that have used to express the results are going to be shown and explained.
 
 \subsection{Cost and Error}
-The first parameter that is used is the cost. The cost is used while the neural network is training. The lower value, The better performanceof the networok.
+The first parameter that is used is the cost. The cost is used while the neural network is training. The lower value, The better performanceof the networok.\\
 
 More specifically, for training the neural ne
 
 \subsection{True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}
-True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN) are metrics that are used for bi-classes problems, positive class and negative class. The positive class is real users, genuine user and bonafide and negative class is the attack clas.
+True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN) are metrics that are used for bi-classes problems, positive class and negative class. The positive class is real users, genuine user and bonafide and negative class is the attack clas.\\
+
 Those metrics, aro gotten when a positive or negative samples is well or missclasified \cite{Sokolova}.\\
+
 If a positive sample is classified as positive is a true positive (TP), but if it has been classified as negative is a false negative (FN).\\
 If a negative sample is classified as negative is a true negative (TN), but if it has ben classified as positive, is a false positive (FP).\\
 
-From those four metrics, it could be extracted the confusion matrix for binary classification, explained in \ref{table:ConfusionMatrix} :
+From those four metrics, it could be extracted the confusion matrix for binary classification, explained in \ref{table:ConfusionMatrix}:
 
 \begin{table}[]
 \centering
-\label{table:ConfusionMatrix}
 \begin{tabular}{|
 >{\columncolor[HTML]{EFEFEF}}c |>{\columncolor[HTML]{FFFFFF}}c | >{\columncolor[HTML]{FFFFFF}}c |}
 \hline
@@ -24,13 +25,11 @@ From those four metrics, it could be extracted the confusion matrix for binary c
 \textbf{Positve}           & TP                                        & FN                                        \\ \hline
 \textbf{Negative}          & FN                                        & TN                                        \\ \hline
 \end{tabular}
-\caption{Confusion Matrix}
+\caption{Confusion Matrix} \label{table:ConfusionMatrix}
 \end{table}
 
 \subsection{ROC curve}
-From the confusion matrix, it is posible claculate others parameters \cite{Sokolova}: precision, recall, specificity, accuracy because its values depend on TP, TN, FP, FN as could be se in it respective equation:.
-The ROC curve is
-
+From the confusion matrix, it is posible claculate others parameters \cite{Sokolova}: precision, recall, specificity, accuracy because its values depend on TP, TN, FP, FN as could be se in it respective equation:\\
 \begin{equation}
   precision = \frac{TP}{TP + FP}
 \end{equation}
@@ -43,6 +42,28 @@ The ROC curve is
   Accuracy = \frac{TP + TN}{TP + FP + FN + TN}
 \end{equation}
 
+The ROC curve is \\
+
 \section{Precision and Recall}
 
 \subsection{APCR and BPCR}
+The ISO/IEC 30107-3 \cite{ISO}
+
+Attack Presentation Classification Error Rate (APCER) is defined as the proportion of presentation atacks that has been classified incorrectly (as \textit{bona fide} presentation.)\\
+
+\begin{equation}
+  APCER_{PAIS} = \frac{1}{N_{PAIS}}\sum_{i=1}^{N_{PAIS}}(1 - Res_{i})
+\end{equation}
+
+\textit{Bona fide} Presentation Classification Error Rate (BPCER) is defined as the proportion of \textit{bina fide} presentations  incorrectly classified as presentation attacks.\\
+
+\begin{equation}
+  BPCER = \frac{\sum_{i=1}^{N\_{BF}}RES_{i}}{N_{BF}}
+\end{equation}
+
+
+where: \begin{itemize}
+\item N\_{BF} is the number of \textit{bona fide} presentations
+\item Res\_{i} is 1 if i\^{th} presentation is classified as an attack and 0 if is classified as a \textit{bona fie} presentation.
+\item N\_{PAIS} is the number of attack presentations
+\end{itemize}
