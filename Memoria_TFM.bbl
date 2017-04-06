@@ -19,4 +19,8 @@ Y.~Lecun, L.~Bottou, Y.~Bengio, and P.~Haffner, ``Gradient-based learning
   applied to document recognition,'' in {\em Proceedings of the IEEE},
   pp.~2278--2324, 1998.
 
+\bibitem{Yoshua}
+Y.~Bengio, ``Practical recommendations for gradient-based training of deep
+  architectures,'' {\em CoRR}, vol.~abs/1206.5533, 2012.
+
 \end{thebibliography}

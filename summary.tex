@@ -1,64 +1,73 @@
 \section{LeNet-5}
-LeNet-5 \cite{Lenet5} is the name of a cercain architecture of a convolutional network designed for handwritten and machine-printed character recognition. The net has been proved with MINST database, a database of handwritten digits that comes with the net.\\
+LeNet-5 \cite{Lenet5} is the name of a cercain architecture of a convolutional network designed for document recognition (handwritten, machine printed characters) developed by Yan Lecun \textit{et al}.\\
 
-%TODO ADD FIGURE OF THE ARCHITECTURE OF LENET
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.7\textwidth]{images/images_lenet/LenetArquitectura.png}
+  \caption{LeNet-5 Arquitecture}
+  \label{Lenet5Arquitectura}
+\end{figure}
 
-The basic architecture of Lenet is two convolutional layer, followed each one by a max pooling layer and then a fully-connected layer. This architecture could be visualized in figure X.
+The basic architecture of Lenet is two convolutional layer, followed each one by a max pooling layer and then a fully-connected layer. This architecture could be visualized in figure \ref{Lenet5Arquitectura} where if it possible to visualize the input image dimension across the layers and its final shape.\\
 
-LeNet has been used to learn the implementation of convolutional neural networks, and LeNet is the basis of the network developed to carry out this project as it has been modified in order to adapt it to get this project goal. The code of LeNet-5 in Python could be found in \url{www.deeplearning.net}\\
+LeNet is a usefull convolutional neural network that is usually used by begginires users to learn deep learning matter because its short architecture and it is implemented in lots of deep learning framework using it to explain the framework. Because of this, LeNet-5 has been used as basis of the project and to learn Theano and convolutional neural networsk theory and implementation.\\
 
-The specifications of the downloaded LeNet code are the architecture of LeNet used for starting to work with this project is formed by two convolutional layers of size 5x5 and with 20 kernels in the first convolutional layer and 50 in the second one, those are followed (each one) by a max pooling-layer of size 2x2. Those four layer are followed by a fully-connected layer with 500 neurons at the output. The classifier which has been used is the logistic regression. The activation function of the convolutional layers and the logistic regression is tanh.\\
+The code of LeNet in Python using Theano, and its explanaition, is openly available in \url{www.deeplearning.net}.\\
 
-The learning rate is 0.1 and the network runs by 200 epoch. The data is split in thre sets: training, testing and validating. For each subset, when is fed to the network it is fed in batches, whose size is choosen by the user. Using batches is to prevent memory problems.\\
+\subsection{LeNet-5 specifications}
+The specifications of the downloaded LeNet code are the architecture of LeNet used for starting to work with this project is formed by two convolutional layers of size 5x5 and with 20 kernels in the first convolutional layer and 50 in the second one, those are followed (each one) by a max pooling-layer of size 2x2. Those four layer are followed by a fully-connected layer with 500 neurons at the output. The classifier which has been used is the logistic regression. The activation function of the convolutional layers and the logistic regression is tanh. The learning rate used is 0.1 and the network runs by 200 epoch.\\
 
-The training procedure is being realized for too many epochs as users has selected. While the trianing is being running, the validation is calculated for each epoch.
+The data used is MNIST digit database, whose characteristics are described in secion \ref{subsec:MNIST}. The data comes split in three subsets: training, testing and validating. Each subset is used for training, testting or validating respectively.\\
 
-\url{www.deeplearning.net} is the original page of Theano where could be found tutorials, how to install and get it and the documentation of its functions.\\
+The data is not fed to the network in one go, each subset is grouped in smalls subsets called batches and whose size is choosen by user. In the code available of LeNet-5 the batch size is 500 samples. The network is fed by batches, so the size of the net depends on the batch size not the (train, test or validate) subset. In this example, the batch size, is the same for the three subsets. When the subset is divide into batches, if there are some samples that are not enough for a batch, those samples are not used.\\
 
-\subsection{Structure of Lenet}
-LeNet works basically with theano although it uses others libraries like NumPy.\\
+The network train for a specified number of epoch. Each epoch has as many iterations as necessary to go through all batches of the train subset. The reason of using batches is to define the size of the network and because, usually, the quantity of samples used in deep learning is big (thousand, millions..) and too much memory would be need to build a network of its size and the computational resources available may not be enough.\\
 
-First of all in Lenet the data is loaded. The function that download the data check, firstly, if the data is not downloaded yet, if it downloaded it does not repeat the download. The data is downloaded split into train, test and validation subsets.\\
+As the MNIST digit database available with the code has 50000 samples for training, 10000 for testing and 10000 for validating, the number of batches for each subset (with 500 samples for each batch) is 100 for training, 20 for testing and 20 for validating
 
-After loading the data, the architecture is defined, the layers are called because they has been defined as objects, each kind of layer, one different object. There is a object for convolutional + maxpooling, another object for the hidden layers that is a fully connected layer, and the classifier used that is logistic regression. Each part of the code could be found in \url{www.deeplearning.net}\\
+The training procedure is being realized for too many epochs as users has selected and returns the cost of the procedure. While the trianing is being running, the validation is calculated for each epoch and the validation returns the error of the procedure. The training cost and the validation error are used to know the behaviour or the learning process of the network and how it generalizes with the purpose of choosing the best model.\\
 
-After creating the structure, the functions of training, validating and testing are created as Theano functions.\\
+The test is realized while the training is being executed, more speficilay, when the validation has been realized and the results are the best obtained in the whole process until that iteration. The result that is used to compared with others classfiers or with others articles.\\
 
-In a big while loop the training validation and testing is developed. The data is trained. Each mini-batch (that is a small quantity of that given by the user, it is used in order to not train or test all the data together because it would take too much computer resources) is trained and the weights and bias of each layer are updated. It is given a validation frequency, this parameters decides how many validations are produced. So the data is trained and validation, when a best score of validation is produced, the data is tested.\\
+In addition to the number of epoch, other way to stop the traning procedure is early-stopping, this method is used to avoid over fitting tracking the validation process \cite{Yoshua}. The decision of stopping the training depends on \textit{the patience} and is chosen by user.\\
 
-The training would run for a number of epoch that the user has given or by a early-Stopping that has been developed by authors. The early-stopping combats over-fitting by monitoring the model's performance on a validation set.\\
+%%%%% Creo que esto de aqui abajo no es necesario %%%%%%
+%First of all in Lenet the data is loaded. The function that download the data check, firstly, if the data is not downloaded yet, if it downloaded it does not repeat the download. The data is downloaded split into train, test and validation subsets.\\
 
-\subsection{Results of LeNet}
-The result of the network using the given database could be seen in figure \ref{fig:Lenetresult}, where the least error in validation performance is 0.91 \% obtained at iteration 18300, with an error test performance of 0.92 \%. \\
+%After loading the data, the architecture is defined, the layers are called because they has been defined as objects, each kind of layer, one different object. There is a object for convolutional + maxpooling, another object for the hidden layers that is a fully connected layer, and the classifier used that is logistic regression. Each part of the code could be found in \url{www.deeplearning.net}\\
+
+%After creating the structure, the functions of training, validating and testing are created as Theano functions.\\
+
+%In a big while loop the training validation and testing is developed. The data is trained. Each mini-batch (that is a small quantity of that given by the user, it is used in order to not train or test all the data together because it would take too much computer resources) is trained and the weights and bias of each layer are updated. It is given a validation frequency, this parameters decides how many validations are produced. So the data is trained and validation, when a best score of validation is produced, the data is tested.\\
+
+%The training would run for a number of epoch that the user has given or by a early-Stopping that has been developed by authors. The early-stopping combats over-fitting by monitoring the model's performance on a validation set.\\
+
+\subsection{LeNet-5 Results}
+While the training is being calculate, the weights are being update in each iteration. When A  model is selected or saved, weights are actually what is being chosen or saved. An example of weigths is represented in figure \ref where twenty first weights at epoch 10 of the first convolutional layer are represented. So when its being trained, what the network is doing is adapting the weights to the input to get a good performance.\\
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.7\textwidth]{images/ModificandoLenet/error_lenet.png}
-\caption{Validation error obtained with Lenet and MNIST digits database} \label{fig:Lenetresult}
+\includegraphics[width=0.85\textwidth]{images/images_lenet/w_layer0_epoch10.png}
+\caption{Weights at epoch 10 of the first convolutional layer} \label{fig:weights_lenet}
 \end{figure}
 
-It is important optimize the cost function, so it is possible to analyze how the networks works looking the cost function. The cost produced at the training gets reduced with the increasing iterations, as it is seen in figure \ref{fig:Lenetcost}.\\
+The training procedure returns the cost function in each iteration to evaluate the training behaviour. The cost function at trainig obtained executing LeNet-5 is represented in figure \ref{fig:Lenetcost}, and its value decreases as the iterations rise converging in almost 0; this curve is the desired one for each training practice, because it is not oscilate abruptly and converges in a very low value logarithmically.\\
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.7\textwidth]{images/images_lenet/cost_lenet.png}
-\caption{Cost function of running Lenet with it is own database.} \label{fig:Lenetcost}
+\caption{Cost function at training running LeNet-5 with MNIST digit database.} \label{fig:Lenetcost}
 \end{figure}
 
-As it is known, weights are filters, twenty first weights of each convolutional layers are shown in figure \ref{fig:weights_lenet} of the tenth and hundredth epoch.\\
+The error obtained at validation is represented in figure \ref{fig:Lenetresult}, where could be seen that the value decreases logarithmically too converging, aproximately, in 1 (a low value) and this behaviour of the curve is the desired in a validation process. The convergence value of the validation is not usually as much lower as the training convergence value, and the point where it starts to converge is later than in the training.\\
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.48\textwidth]{images/images_lenet/w_layer0_epoch10.png}
-\includegraphics[width=0.48\textwidth]{images/images_lenet/w_layer1_epoch10.png}
-\includegraphics[width=0.48\textwidth]{images/images_lenet/w_layer1_epoch10.png}
-\includegraphics[width=0.48\textwidth]{images/images_lenet/w_layer1_epoch100.png}
-
-\caption{Weights at epoch 10 and 100 of the two convolutional layers } \label{fig:weights_lenet}
+\includegraphics[width=0.7\textwidth]{images/ModificandoLenet/error_lenet.png}
+\caption{Validation error obtained with LeNet-5 with MNIST digit database} \label{fig:Lenetresult}
 \end{figure}
 
-While the network is learning, weights change and they would not have the same apparence if were represented. \\
-
+The test result has been calculated with the model of the iterarion 18300 (epoch $37^{th}$), with a validation error of 0.91\%. The error rate obtained is 0.92\% what it means that 920 samples of 100000 of the testing subset are being missclasified.\\
 
 %The neural network has beoen built in Python using Theano library. The %network has been based on the one exposed in \textit{Learn Convolutional %Neural Network for Face Anti-Spoofing} and \textit{LeNet}.\\
 
@@ -70,14 +79,16 @@ While the network is learning, weights change and they would not have the same a
 
 %The network is trained with the 70\% of the data, the 30\% is used to test. %From the 70\% of the training data, the 25\% is used to validation.\\
 
-Each time we take a sample and update our weights it is called a mini-batch. Each time we run through the entire database, it's called an epoch. Batch size determines how many examples you look at before making a weight update. The lower it is, the noisier the training signal is going to be, the higher it is, the longer it will take to compute the gradient for each step. \url{http://stats.stackexchange.com/questions/140811/how-large-should-the-batch-size-be-for-stochastic-gradient-descent}.\\
 
+\subsection{Modifying LeNet}
+Modifications has been made to LeNet-5 architecture. First the batch size has been changed and then the activation function, a normalization has been added o the weight initialization. The database used for those experiments is the MNIST digit database.\\
 
-To be sure that the batch size do not affect to the results, it has been changed, in first place into 20 and in second place into 100. In the fist example (when batch size = 20), the while has been break because of early-stopped at epoch 31, from epoch 16 the networks does not improve the validation result.\\
+\subsubsection{Changing the batch size}
+Two experiments have been developed in order to compare the results when the batch size is changed and how the network behaviour change too with respect to LeNet-5 with the original batch size (500).\\
 
-In figure \ref{figures:LENET-batches} the error in each epoch is represented  for 500 batch size, the original size, for a value of 20 and 100. In the original case, the error stars with a value of 9\% aprox. with the batch size = 20 the error in the first iteration is about 2.4\%, and with a bunch of 100 images, the validation error is 3.5\%.
+The first experiment is with 20 samples per batch. For the second experiment, the batch size used is 100. In both cases, the training process has been stopped by the early-stopping; at epoch $31^{th}$ has stopped the first experiment, because from epoch $16^{th}$ the error at validating was not being improved and for the scond experiment, at $33^{th}$ epoch is when the early-stopping has finished the training.\\
 
-With the original size and size equal to 20, it is possible to get to the same minimum, the difference between those examples is that each one get to that conclusion into different epochs. With a batch size equal to 100, the code stopped because of the early-stop with a patience of 10000; it stop in epoch 33,while those epochs, it has been possible to get to a test error of 1.04\% in iteration 8500 when the validation error was 1.01\%, it has been running with put getting a better validation score for 17 epoch. With a batch size = 20, the code also has stopped earlier because of the same reason, but in that case it has been possible to get to the same minimum that with the original size; the epoch in which has stopped is 31, it has been running without getting a better validation score for 15 epochs.\\
+The validation error for both experimets and the original LeNet are represented in figure \ref{figures:LENET-batches}. From images could be seen that the validation error in first epochs is lower (9 \% in the first experimet) than the validation error when the batch size is bigger. Whith the batch size equal to 20, the optimal test error rate has been obtained in the first $15^{th}$ epochs, the same error rate than in the original case (0.92\%), but for 100 samples per batch, it has not been possible to get to that error rate, the best test error rate has been 1.04\% at iteration 8500.\\
 
 \begin{figure}[htb]
     \centering
@@ -88,14 +99,21 @@ With the original size and size equal to 20, it is possible to get to the same m
     \caption{Validation error in each epoch for diferentes sizes of batches.} \label{figures:LENET-batches}
 \end{figure}
 
-If the patience is increased from 10000 to 100000 for a batch size = 20 and equal to 100, results obtained are that for a value of 20, it has been running for 40 epoch, having the same results that the one obtained with a patience of 10000.\\
+%Each time we take a sample and update our weights it is called a mini-batch. Each time we run through the entire database, it's called an epoch. Batch size determines how many examples you look at before making a weight update. The lower it is, the noisier the training signal is going to be, the higher it is, the longer it will take to compute the gradient for each step. \url{http://stats.stackexchange.com/questions/140811/how-large-should-the-batch-size-be-for-stochastic-gradient-descent}.\\
 
- For a value of 100 with the patience increased to 100000, the results are not the same as the one obtained the patience equal to 10000. In this occasion, the results are better than in the original one; The code has run for 258,08 minutes and for 200 epochs. The result obtained was better than in the original one has it has said. In epoch 51 has gotten a validation error of  1 \% and the error test has been 0,89\%, from this point, the test error that has been calculated five more times, has been increasing until get the value 0,85\% in iteration 55500, epoch number 111, the validation error obtained has been 0,95\%. From this epoch until number 200, the network has not had any better result.\\
+Concluding, more epochs are necessary when the batch size is bigger because there are not enough updates in each epoch \cite{Yoshua}. Usually, the value of the batch size used is 32 \cite{Yoshua} and the choice, generally, is computational.\\
 
-In figure X it is possible to see the error function for those two examples. It could be seen that the example with batch size = 20 has just run for 40 epoch and the good results of the example with batch size = 100, remembering that the patience has been increased from 10000 to 100000.\\
+In figure \ref{figures:LENET-batches} the error in each epoch is represented  for 500 batch size, the original size, for a value of 20 and 100. In the original case, the error stars with a value of 9\% aprox. with the batch size = 20 the error in the first iteration is about 2.4\%, and with a bunch of 100 images, the validation error is 3.5\%.\\
 
-\clearpage
-\subsection{Modifying LeNet}
+With the original size and size equal to 20, it is possible to get to the same minimum, the difference between those examples is that each one get to that conclusion into different epochs. With a batch size equal to 100, the code stopped because of the early-stop with a patience of 10000; it stop in epoch 33,while those epochs, it has been possible to get to a test error of 1.04\% in iteration 8500 when the validation error was 1.01\%, it has been running with put getting a better validation score for 17 epoch. With a batch size = 20, the code also has stopped earlier because of the same reason, but in that case it has been possible to get to the same minimum that with the original size; the epoch in which has stopped is 31, it has been running without getting a better validation score for 15 epochs.\\
+
+
+%If the patience is increased from 10000 to 100000 for a batch size = 20 and equal to 100, results obtained are that for a value of 20, it has been running for 40 epoch, having the same results that the one obtained with a patience of 10000.\\
+
+%For a value of 100 with the patience increased to 100000, the results are not the same as the one obtained the patience equal to 10000. In this occasion, the results are better than in the original one; The code has run for 258,08 minutes and for 200 epochs. The result obtained was better than in the original one has it has said. In epoch 51 has gotten a validation error of  1 \% and the error test has been 0,89\%, from this point, the test error that has been calculated five more times, has been increasing until get the value 0,85\% in iteration 55500, epoch number 111, the validation error obtained has been 0,95\%. From this epoch until number 200, the network has not had any better result.\\
+
+%In figure X it is possible to see the error function for those two examples. It could be seen that the example with batch size = 20 has just run for 40 epoch and the good results of the example with batch size = 100, remembering that the patience has been increased from 10000 to 100000.\\
+
 From LeNet, with the database gray scale digit database, the one that LeNet uses in the original example (grey scale images whose size is 28x28), some modification has been realized:\\
 
 \begin{itemize}
