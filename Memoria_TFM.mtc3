@@ -2,3 +2,20 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.1}Structure of Lenet}{\reset@font\mtcSSfont 14}{subsection.1.2.1.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.2}Results of LeNet}{\reset@font\mtcSSfont 14}{subsection.1.2.1.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.3}Modifying LeNet}{\reset@font\mtcSSfont 19}{subsection.1.2.1.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Start working with Faces databases}{\reset@font\mtcSfont 23}{section.1.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Using Labeled Faces in the Wild}{\reset@font\mtcSSfont 23}{subsection.1.2.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Changing learning rate}{\reset@font\mtcSSSfont 24}{subsubsection*.23}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Changing convolutional parameters}{\reset@font\mtcSSSfont 25}{subsubsection*.27}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Using ReLu as an activation function instead of tanh}{\reset@font\mtcSSfont 27}{subsection.1.2.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.3}using FRAV dataset}{\reset@font\mtcSSfont 28}{subsection.1.2.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Regenerating the databases}{\reset@font\mtcSfont 31}{section.1.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}using RGB and NIR FRAV database}{\reset@font\mtcSSfont 31}{subsection.1.2.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Adding images in characteristic level}{\reset@font\mtcSSSfont 32}{subsubsection*.36}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}Architecture implemented in Casia videos}{\reset@font\mtcSSfont 38}{subsection.1.2.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.3}As close as possible as Imagenet}{\reset@font\mtcSSfont 41}{subsection.1.2.3.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Network configuration for each experiment}{\reset@font\mtcSSSfont 41}{subsubsection*.40}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode frav results}{\reset@font\mtcSSSfont 42}{subsubsection*.41}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode casia results}{\reset@font\mtcSSSfont 45}{subsubsection*.48}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode MFSD results}{\reset@font\mtcSSSfont 49}{subsubsection*.53}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.4}New database}{\reset@font\mtcSSfont 50}{subsection.1.2.3.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode experiments}{\reset@font\mtcSSSfont 51}{subsubsection*.57}}

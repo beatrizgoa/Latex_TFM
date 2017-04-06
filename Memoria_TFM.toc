@@ -28,6 +28,23 @@
 \contentsline {subsection}{\numberline {2.1.1}Structure of Lenet}{14}{subsection.1.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Results of LeNet}{14}{subsection.1.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Modifying LeNet}{19}{subsection.1.2.1.3}
-\contentsline {chapter}{Bibliography}{23}{chapter*.20}
-\contentsline {chapter}{List of Figures}{25}{chapter*.21}
-\contentsline {chapter}{List of Tables}{27}{chapter*.22}
+\contentsline {section}{\numberline {2.2}Start working with Faces databases}{23}{section.1.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Using Labeled Faces in the Wild}{23}{subsection.1.2.2.1}
+\contentsline {subsubsection}{Changing learning rate}{24}{subsubsection*.23}
+\contentsline {subsubsection}{Changing convolutional parameters}{25}{subsubsection*.27}
+\contentsline {subsection}{\numberline {2.2.2}Using ReLu as an activation function instead of tanh}{27}{subsection.1.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}using FRAV dataset}{28}{subsection.1.2.2.3}
+\contentsline {section}{\numberline {2.3}Regenerating the databases}{31}{section.1.2.3}
+\contentsline {subsection}{\numberline {2.3.1}using RGB and NIR FRAV database}{31}{subsection.1.2.3.1}
+\contentsline {subsubsection}{Adding images in characteristic level}{32}{subsubsection*.36}
+\contentsline {subsection}{\numberline {2.3.2}Architecture implemented in Casia videos}{38}{subsection.1.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}As close as possible as Imagenet}{41}{subsection.1.2.3.3}
+\contentsline {subsubsection}{Network configuration for each experiment}{41}{subsubsection*.40}
+\contentsline {subsubsection}{frav results}{42}{subsubsection*.41}
+\contentsline {subsubsection}{casia results}{45}{subsubsection*.48}
+\contentsline {subsubsection}{MFSD results}{49}{subsubsection*.53}
+\contentsline {subsection}{\numberline {2.3.4}New database}{50}{subsection.1.2.3.4}
+\contentsline {subsubsection}{experiments}{51}{subsubsection*.57}
+\contentsline {chapter}{Bibliography}{59}{chapter*.64}
+\contentsline {chapter}{List of Figures}{61}{chapter*.65}
+\contentsline {chapter}{List of Tables}{65}{chapter*.66}

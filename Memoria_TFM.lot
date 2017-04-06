@@ -6,3 +6,5 @@
 \contentsline {table}{\numberline {1.1}{\ignorespaces Confusion Matrix\relax }}{11}{table.caption.13}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Methodology}{13}{chapter.1.2}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Distribution of samples FRAV (RGB + NIR) database\relax }}{33}{table.caption.37}
+\contentsline {table}{\numberline {2.2}{\ignorespaces TP, TN, FP, FN rates in the first trying of imagenet.\relax }}{40}{table.caption.39}
