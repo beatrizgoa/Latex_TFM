@@ -1,10 +1,43 @@
-\section{Classifiers}
-In this section, the classifiers used along the document are described.\\
+\section{Classifiers and Reduction of the dimensionality algorithms}
+In this section, the classifiers used along the thesis are described and dimensionality reduction algorithms.\\
+\subsection{Classifiers}
 
-\subsection{Logistic Regression}
+\subsubsection{Logistic Regression}
 
-\subsection{Super Vector Machine}
+\subsubsection{Support Vector Machine}
+Support Vector Machine (SVM) is a two-class classifier. The smallest generalization error is linked  to the \textit{margin} concept. Margin is the perpendicular distance between the closest sample of the database and the calculate hyperplane \cite{MachineLearning}. An hyperplane is optimal if the margin is the maximum and this margin is calculated:\\
 
-\subsection{K Nearest Neighbors}
+\begin{equation}
+\underset{w b}{\operatorname{arg\,max}}\left \{ \frac{1}{||W||} \underset{n}{\operatorname{min}}[t_{n}(W^T \phi (X_n)+b)]   \right \}
+\end{equation}
 
-\subsection{Decision Tree}
+Where \textit{w, b} are the parameters that should be optimized in order to maximize the distance. \textit{$t_n$} are the training samples. $\phi$ is a fixed feature-space transformation, \textit{b} is the bias parameter.\\
+
+based on estimate the hyperplane that the distance between classes, the closest vectors of each class, is maximized \cite{SVM1, MachineLearning}.
+
+\subsubsection{K Nearest Neighbors}
+K- Nearest Neighbour (KNN) is a generative and non parametric classifier. For classifying, the density estimation procedure is used. The density function is determined by the form \cite{MachineLearning}:
+\begin{equation}
+p(x) = \frac{K}{N V}
+\end{equation}
+
+Where \textit{K} is the number of points inside the region \textit{R} whose volume is \textit{V} and \textit{N} is the number of total samples or observations.\\
+
+This classifiers uses the observation directly to classify and needs all the samples to predict a new one. The probability of a sample \textit{x} belonging to a class \textit{$C_k$} is defined by \cite{MachineLearning}:
+\begin{equation}
+p(x|C_k) = \frac{K_k}{N_k V}
+\end{equation}
+
+Where $N_k$ are the observations of a class $C_k$ and $K_k$ of it class points are contained in the volume \textit{V}.\\
+
+The \textit{K} value is fixed, should be calculated and optimized by user of each application.\\
+
+\subsubsection{Decision Tree}
+
+\subsection{Dimensionality reduction algorithms}
+The objective of those algorithms is transform the characteristic vector into another characteristic vector but whit a lower dimensionality. The two techniques used along the thesis are described.
+\subsubsection{Linear Discriminant Analysis}
+Linear Discriminant Analysis (LDA)
+
+\subsubsection{Principal Component Analysis}
+Principal Component Analysis (PCA)

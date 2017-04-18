@@ -1,9 +1,8 @@
 \begin{thebibliography}{1}
 
 \bibitem{theano}
-{Theano Development Team}, ``{Theano: A {Python} framework for fast computation
-  of mathematical expressions},'' {\em arXiv e-prints}, vol.~abs/1605.02688,
-  May 2016.
+T.~D. Team, ``Theano: A {Python} framework for fast computation of mathematical
+  expressions,'' {\em arXiv e-prints}, vol.~abs/1605.02688, May 2016.
 
 \bibitem{Sokolova}
 M.~Sokolova, N.~Japkowicz, and S.~Szpakowicz, ``Beyond accuracy, f-score and
@@ -14,6 +13,15 @@ M.~Sokolova, N.~Japkowicz, and S.~Szpakowicz, ``Beyond accuracy, f-score and
 \bibitem{ISO}
 ``Sc37 iso/iec jtc1,'' 2014.
 
+\bibitem{MachineLearning}
+C.~M. Bishop, {\em Pattern Recognition and Machine Learning (Information
+  Science and Statistics)}.
+\newblock Springer-Verlag New York, Inc., 2006.
+
+\bibitem{SVM1}
+D.~Ciobanu, ``Using svm for classification,'' {\em Acta Universitatis Danubius.
+  OEconomica}, no.~5(5), pp.~209--224, 2012.
+
 \bibitem{Lenet5}
 Y.~Lecun, L.~Bottou, Y.~Bengio, and P.~Haffner, ``Gradient-based learning
   applied to document recognition,'' in {\em Proceedings of the IEEE},
@@ -22,5 +30,17 @@ Y.~Lecun, L.~Bottou, Y.~Bengio, and P.~Haffner, ``Gradient-based learning
 \bibitem{Yoshua}
 Y.~Bengio, ``Practical recommendations for gradient-based training of deep
   architectures,'' {\em CoRR}, vol.~abs/1206.5533, 2012.
+
+\bibitem{XavierInitialization}
+X.~Glorot and Y.~Bengio, ``Understanding the difficulty of training deep
+  feedforward neural networks,'' in {\em In Proceedings of the International
+  Conference on Artificial Intelligence and Statistics (AISTATS’10). Society
+  for Artificial Intelligence and Statistics}, 2010.
+
+\bibitem{LSTM-CNN}
+Z.~Xu, S.~Li, and W.~Deng, ``Learning temporal features using {LSTM-CNN}
+  architecture for face anti-spoofing,'' in {\em 3rd {IAPR} Asian Conference on
+  Pattern Recognition, {ACPR} 2015, Kuala Lumpur, Malaysia, November 3-6,
+  2015}, pp.~141--145, 2015.
 
 \end{thebibliography}

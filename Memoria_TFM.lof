@@ -1,6 +1,6 @@
 \select@language {american}
 \contentsline {xchapter}{}{i}{Doc-Start}
-\contentsline {xpart}{MOMORY}{3}{part.1}
+\contentsline {xpart}{MEMORY}{3}{part.1}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Introduction}{3}{chapter.1.1}
 \contentsline {figure}{\numberline {1.1}{\ignorespaces digits MNIST images database\relax }}{5}{figure.caption.5}
@@ -12,68 +12,68 @@
 \contentsline {figure}{\numberline {1.7}{\ignorespaces Three attacks and real user from a user of MFSD database \relax }}{10}{figure.caption.11}
 \contentsline {figure}{\numberline {1.8}{\ignorespaces Three attacks and real user from a user of MFSD database \relax }}{10}{figure.caption.12}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Methodology}{13}{chapter.1.2}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces LeNet-5 Arquitecture\relax }}{13}{figure.caption.14}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Weights at epoch 10 of the first convolutional layer\relax }}{15}{figure.caption.15}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Cost function at training running LeNet-5 with MNIST digit database.\relax }}{16}{figure.caption.16}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Validation error obtained with LeNet-5 with MNIST digit database\relax }}{17}{figure.caption.17}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Validation error in each epoch for diferentes sizes of batches.\relax }}{18}{figure.caption.19}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {batch size = 500 (original size)}}}{18}{figure.caption.19}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {batch size = 20}}}{18}{figure.caption.19}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {batch size = 100}}}{18}{figure.caption.19}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Cost function of Lenet and Lenet Modified.\relax }}{21}{figure.caption.20}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original LeNet}}}{21}{figure.caption.20}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Using LRN}}}{21}{figure.caption.20}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Using ReLu}}}{21}{figure.caption.20}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Using ReLu and LRN}}}{21}{figure.caption.20}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Using Gaussian weights init.}}}{21}{figure.caption.20}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Valid error of Lenet and Lenet Modified.\relax }}{22}{figure.caption.21}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original LeNet}}}{22}{figure.caption.21}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Using LRN}}}{22}{figure.caption.21}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Using ReLu}}}{22}{figure.caption.21}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Using ReLu and LRN}}}{22}{figure.caption.21}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Using Gaussian weights init.}}}{22}{figure.caption.21}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Error of Lenet using LFW.\relax }}{24}{figure.caption.22}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Error of Lenet using LFW with a learning rate of 0.001.\relax }}{25}{figure.caption.23}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Cost of Lenet using LFW with a learning rate of 0.001.\relax }}{26}{figure.caption.24}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Error of Lenet using LFW changing learning rate to 0.01.\relax }}{27}{figure.caption.26}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Error of Lenet using LFW changing learning rate to 0.1.\relax }}{28}{figure.caption.27}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Error of Lenet using LFW changing learning rate to 0.5.\relax }}{29}{figure.caption.28}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Error of Lenet using LFW changing number of kernels in example 1.\relax }}{30}{figure.caption.30}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Error of Lenet using LFW changing number of kernels and the filter size in example 2.\relax }}{31}{figure.caption.31}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Error of Lenet using LFW changing number of kernels and the filter size in example 3.\relax }}{32}{figure.caption.32}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Output of the convolutional layers using LeNet and LFW.\relax }}{34}{figure.caption.33}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Cost function at training of the three examples chanching the convolutional parameters.\relax }}{35}{figure.caption.34}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Example 1}}}{35}{figure.caption.34}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Example 2}}}{35}{figure.caption.34}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Example 3}}}{35}{figure.caption.34}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Error and cost using ReLu instead of tanh\relax }}{36}{figure.caption.35}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cost at training}}}{36}{figure.caption.35}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Error at validation}}}{36}{figure.caption.35}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Error using FRAV database and five classes.\relax }}{37}{figure.caption.36}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Error using FRAV database and two classes.\relax }}{37}{figure.caption.37}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Error of Lenet in the first try to build imagenet.\relax }}{40}{figure.caption.40}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Cost at training and error at validating. Normal initialition. Learning rate = 0.001 (frav1).\relax }}{43}{figure.caption.44}
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Cost at training and error at validating. Gassian initialization. Learning rate = 0.001 - frav\_gaussian\_init\relax }}{43}{figure.caption.45}
-\contentsline {figure}{\numberline {2.25}{\ignorespaces Cost at training and error at validating - Gaussian initialization. learning rate = 0.01 frav svm\_gauss.\relax }}{44}{figure.caption.46}
-\contentsline {figure}{\numberline {2.26}{\ignorespaces Cost at training and error at validating - Noraml initialization. learning rate = 0.01 frav svm\_general.\relax }}{44}{figure.caption.47}
-\contentsline {figure}{\numberline {2.27}{\ignorespaces ROC and Precision- Recall courve - Noraml initialization. learning rate = 0.01 frav svm\_general.\relax }}{45}{figure.caption.48}
-\contentsline {figure}{\numberline {2.28}{\ignorespaces Training loss of four test Casia database\relax }}{46}{figure.caption.51}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Test 1}}}{46}{figure.caption.51}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Test 2}}}{46}{figure.caption.51}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Test 3}}}{46}{figure.caption.51}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Test 4}}}{46}{figure.caption.51}
-\contentsline {figure}{\numberline {2.29}{\ignorespaces Validation error of four test Casia database\relax }}{47}{figure.caption.52}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Test 1}}}{47}{figure.caption.52}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Test 2}}}{47}{figure.caption.52}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Test 3}}}{47}{figure.caption.52}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Test 4}}}{47}{figure.caption.52}
-\contentsline {figure}{\numberline {2.30}{\ignorespaces Cost at training and error at validating -casia svm\_gauss.\relax }}{48}{figure.caption.53}
-\contentsline {figure}{\numberline {2.31}{\ignorespaces Cost at training and error at validating -casia svm\_general.\relax }}{48}{figure.caption.54}
-\contentsline {figure}{\numberline {2.32}{\ignorespaces Cost at training and error at validating - mfsd svm\_gauss.\relax }}{49}{figure.caption.56}
-\contentsline {figure}{\numberline {2.33}{\ignorespaces Cost at training and error at validating - mfsd svm\_general.\relax }}{49}{figure.caption.57}
-\contentsline {figure}{\numberline {2.34}{\ignorespaces cost and error of the tree experiments with frav.\relax }}{53}{figure.caption.60}
-\contentsline {figure}{\numberline {2.35}{\ignorespaces cost and error of the tree experiments with FRAV (rgb + nir) image level images.\relax }}{54}{figure.caption.61}
-\contentsline {figure}{\numberline {2.36}{\ignorespaces cost and error of the tree experiments with CASIA images.\relax }}{55}{figure.caption.62}
-\contentsline {figure}{\numberline {2.37}{\ignorespaces cost and error of the tree experiments with CASIA videos.\relax }}{56}{figure.caption.63}
-\contentsline {figure}{\numberline {2.38}{\ignorespaces cost and error of the tree experiments with MFSD images.\relax }}{57}{figure.caption.64}
+\contentsline {xchapter}{Methodology}{15}{chapter.1.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces LeNet-5 Arquitecture\relax }}{15}{figure.caption.20}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Weights at epoch 10 of the first convolutional layer\relax }}{17}{figure.caption.21}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Cost function at training running LeNet-5 with MNIST digit database.\relax }}{18}{figure.caption.22}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Validation error obtained with LeNet-5 with MNIST digit database\relax }}{19}{figure.caption.23}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Validation error in each epoch for different sizes of batches.\relax }}{20}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {batch size = 500 (original size)}}}{20}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {batch size = 20}}}{20}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {batch size = 100}}}{20}{figure.caption.25}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Cost function of Lenet and Lenet Modified.\relax }}{23}{figure.caption.27}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original LeNet}}}{23}{figure.caption.27}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Experiment 1: using LRN}}}{23}{figure.caption.27}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Experiment 2: using ReLu}}}{23}{figure.caption.27}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Experiment 3: using ReLu and LRN}}}{23}{figure.caption.27}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Experiment 4: using Gaussian weights init.}}}{23}{figure.caption.27}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Valid error of Lenet and Lenet Modified.\relax }}{24}{figure.caption.28}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original LeNet}}}{24}{figure.caption.28}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Experiment 1: using LRN}}}{24}{figure.caption.28}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Experiment 2: using ReLu}}}{24}{figure.caption.28}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Experiment 3: using ReLu and LRN}}}{24}{figure.caption.28}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Experiment 4: using Gaussian weights init.}}}{24}{figure.caption.28}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Error of Lenet using LFW.\relax }}{26}{figure.caption.29}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Error of LeNet-5 using LFW with a learning rate of 0.001.\relax }}{27}{figure.caption.31}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Cost of Lenet using LFW with a learning rate of 0.001.\relax }}{28}{figure.caption.32}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Error of Lenet using LFW changing learning rate to 0.01.\relax }}{29}{figure.caption.33}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Error of Lenet using LFW changing learning rate to 0.1.\relax }}{30}{figure.caption.34}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Error of Lenet using LFW changing learning rate to 0.5.\relax }}{31}{figure.caption.35}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Error of Lenet using LFW changing number of kernels in example 1.\relax }}{32}{figure.caption.37}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Error of Lenet using LFW changing number of kernels and the filter size in example 2.\relax }}{33}{figure.caption.38}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Error of Lenet using LFW changing number of kernels and the filter size in example 3.\relax }}{34}{figure.caption.39}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Output of the convolutional layers using LeNet and LFW.\relax }}{36}{figure.caption.40}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Cost function at training of the three examples chanching the convolutional parameters.\relax }}{37}{figure.caption.41}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Example 1}}}{37}{figure.caption.41}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Example 2}}}{37}{figure.caption.41}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Example 3}}}{37}{figure.caption.41}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Error and cost using ReLu instead of tanh\relax }}{38}{figure.caption.43}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cost at training}}}{38}{figure.caption.43}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Error at validation}}}{38}{figure.caption.43}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Error using FRAV database and five classes.\relax }}{39}{figure.caption.44}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Error using FRAV database and two classes.\relax }}{39}{figure.caption.45}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Error of Lenet in the first try to build imagenet.\relax }}{42}{figure.caption.48}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Cost at training and error at validating. Normal initialition. Learning rate = 0.001 (frav1).\relax }}{45}{figure.caption.52}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Cost at training and error at validating. Gassian initialization. Learning rate = 0.001 - frav\_gaussian\_init\relax }}{45}{figure.caption.53}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Cost at training and error at validating - Gaussian initialization. learning rate = 0.01 frav svm\_gauss.\relax }}{46}{figure.caption.54}
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Cost at training and error at validating - Noraml initialization. learning rate = 0.01 frav svm\_general.\relax }}{46}{figure.caption.55}
+\contentsline {figure}{\numberline {2.27}{\ignorespaces ROC and Precision- Recall courve - Noraml initialization. learning rate = 0.01 frav svm\_general.\relax }}{47}{figure.caption.56}
+\contentsline {figure}{\numberline {2.28}{\ignorespaces Training loss of four test Casia database\relax }}{48}{figure.caption.59}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Test 1}}}{48}{figure.caption.59}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Test 2}}}{48}{figure.caption.59}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Test 3}}}{48}{figure.caption.59}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Test 4}}}{48}{figure.caption.59}
+\contentsline {figure}{\numberline {2.29}{\ignorespaces Validation error of four test Casia database\relax }}{49}{figure.caption.60}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Test 1}}}{49}{figure.caption.60}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Test 2}}}{49}{figure.caption.60}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Test 3}}}{49}{figure.caption.60}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Test 4}}}{49}{figure.caption.60}
+\contentsline {figure}{\numberline {2.30}{\ignorespaces Cost at training and error at validating -casia svm\_gauss.\relax }}{50}{figure.caption.61}
+\contentsline {figure}{\numberline {2.31}{\ignorespaces Cost at training and error at validating -casia svm\_general.\relax }}{50}{figure.caption.62}
+\contentsline {figure}{\numberline {2.32}{\ignorespaces Cost at training and error at validating - mfsd svm\_gauss.\relax }}{51}{figure.caption.64}
+\contentsline {figure}{\numberline {2.33}{\ignorespaces Cost at training and error at validating - mfsd svm\_general.\relax }}{51}{figure.caption.65}
+\contentsline {figure}{\numberline {2.34}{\ignorespaces cost and error of the tree experiments with frav.\relax }}{55}{figure.caption.68}
+\contentsline {figure}{\numberline {2.35}{\ignorespaces cost and error of the tree experiments with FRAV (rgb + nir) image level images.\relax }}{56}{figure.caption.69}
+\contentsline {figure}{\numberline {2.36}{\ignorespaces cost and error of the tree experiments with CASIA images.\relax }}{57}{figure.caption.70}
+\contentsline {figure}{\numberline {2.37}{\ignorespaces cost and error of the tree experiments with CASIA videos.\relax }}{58}{figure.caption.71}
+\contentsline {figure}{\numberline {2.38}{\ignorespaces cost and error of the tree experiments with MFSD images.\relax }}{59}{figure.caption.72}

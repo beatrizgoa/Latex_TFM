@@ -1,5 +1,5 @@
 \section{LeNet-5}
-LeNet-5 \cite{Lenet5} is the name of a cercain architecture of a convolutional network designed for document recognition (handwritten, machine printed characters) developed by Yan Lecun \textit{et al}.\\
+LeNet-5 \cite{Lenet5} is the name of a certain architecture of a convolutional network designed for document recognition (handwritten, machine printed characters) developed by Yan Lecun \textit{et al}.\\
 
 \begin{figure}[htb]
   \centering
@@ -8,28 +8,30 @@ LeNet-5 \cite{Lenet5} is the name of a cercain architecture of a convolutional n
   \label{Lenet5Arquitectura}
 \end{figure}
 
-The basic architecture of Lenet is two convolutional layer, followed each one by a max pooling layer and then a fully-connected layer. This architecture could be visualized in figure \ref{Lenet5Arquitectura} where if it possible to visualize the input image dimension across the layers and its final shape.\\
+The basic architecture of LeNet-5 is two convolutional layer, followed each one by a max pooling layer and then a fully-connected layer. This architecture could be visualized in figure \ref{Lenet5Arquitectura} where it is possible to visualize the input image dimensions across the layers and its final shape.\\
 
-LeNet is a usefull convolutional neural network that is usually used by begginires users to learn deep learning matter because its short architecture and it is implemented in lots of deep learning framework using it to explain the framework. Because of this, LeNet-5 has been used as basis of the project and to learn Theano and convolutional neural networsk theory and implementation.\\
+LeNet is a useful convolutional neural network that is usually used by beginners users to learn deep learning matter because its short architecture and it is implemented in lots of deep learning framework using it to explain the framework. Because of this, LeNet-5 has been used as basis of the project and to learn Theano and convolutional neural networks theory and implementation.\\
 
-The code of LeNet in Python using Theano, and its explanaition, is openly available in \url{www.deeplearning.net}.\\
+The code of LeNet in Python using Theano, and its explanation, is openly available in \url{www.deeplearning.net}.\\
 
 \subsection{LeNet-5 specifications}
-The specifications of the downloaded LeNet code are the architecture of LeNet used for starting to work with this project is formed by two convolutional layers of size 5x5 and with 20 kernels in the first convolutional layer and 50 in the second one, those are followed (each one) by a max pooling-layer of size 2x2. Those four layer are followed by a fully-connected layer with 500 neurons at the output. The classifier which has been used is the logistic regression. The activation function of the convolutional layers and the logistic regression is tanh. The learning rate used is 0.1 and the network runs by 200 epoch.\\
+The specifications of the downloaded LeNet code are the architecture of LeNet-5 used for starting to work with this project is formed by two convolutional layers of size 5x5 and with 20 kernels in the first convolutional layer and 50 in the second one, those are followed (each one) by a max pooling-layer of size 2x2. Those four layer are followed by a fully-connected layer with 500 neurons at the output.\\
 
-The data used is MNIST digit database, whose characteristics are described in secion \ref{subsec:MNIST}. The data comes split in three subsets: training, testing and validating. Each subset is used for training, testting or validating respectively.\\
+The classifier which has been used is the logistic regression which is trained at the same time as the convolutional neural network. The activation function of the convolutional layers and the logistic regression is tanh. The learning rate used is 0.1 and the network runs by 200 epoch.\\
 
-The data is not fed to the network in one go, each subset is grouped in smalls subsets called batches and whose size is choosen by user. In the code available of LeNet-5 the batch size is 500 samples. The network is fed by batches, so the size of the net depends on the batch size not the (train, test or validate) subset. In this example, the batch size, is the same for the three subsets. When the subset is divide into batches, if there are some samples that are not enough for a batch, those samples are not used.\\
+The data used is MNIST digit database, whose characteristics are described in section \ref{subsec:MNIST}. The data comes split in three subsets: training, testing and validating. Each subset is used for training, testing or validating respectively.\\
+
+The data is not fed to the network in one go, each subset is grouped in smalls subsets called batches and whose size is chosen by user. In the code available of LeNet-5 the batch size is 500 samples. The network is fed by batches, so the size of the net depends on the batch size not the (train, test or validate) subset. In this example, the batch size, is the same for the three subsets. When the subset is divide into batches, if there are some samples that are not enough for a batch, those samples are not used.\\
 
 The network train for a specified number of epoch. Each epoch has as many iterations as necessary to go through all batches of the train subset. The reason of using batches is to define the size of the network and because, usually, the quantity of samples used in deep learning is big (thousand, millions..) and too much memory would be need to build a network of its size and the computational resources available may not be enough.\\
 
 As the MNIST digit database available with the code has 50000 samples for training, 10000 for testing and 10000 for validating, the number of batches for each subset (with 500 samples for each batch) is 100 for training, 20 for testing and 20 for validating
 
-The training procedure is being realized for too many epochs as users has selected and returns the cost of the procedure. While the trianing is being running, the validation is calculated for each epoch and the validation returns the error of the procedure. The training cost and the validation error are used to know the behaviour or the learning process of the network and how it generalizes with the purpose of choosing the best model.\\
+The training procedure is being realized for too many epochs as users has selected and returns the cost of the procedure. While the trianing is being running, the validation is calculated for each epoch and the validation returns the error of the procedure. The training cost and the validation error are used to know the behavior or the learning process of the network and how it generalizes with the purpose of choosing the best model.\\
 
-The test is realized while the training is being executed, more speficilay, when the validation has been realized and the results are the best obtained in the whole process until that iteration. The result that is used to compared with others classfiers or with others articles.\\
+The test is realized while the training is being executed, more specifically, when the validation has been realized and the results are the best obtained in the whole process until that iteration. The result that is used to compared with others classifiers or with others articles.\\
 
-In addition to the number of epoch, other way to stop the traning procedure is early-stopping, this method is used to avoid over fitting tracking the validation process \cite{Yoshua}. The decision of stopping the training depends on \textit{the patience} and is chosen by user.\\
+In addition to the number of epoch, other way to stop the training procedure is early-stopping, this method is used to avoid over fitting tracking the validation process \cite{Yoshua}. The decision of stopping the training depends on \textit{the patience} and is chosen by user.\\
 
 %%%%% Creo que esto de aqui abajo no es necesario %%%%%%
 %First of all in Lenet the data is loaded. The function that download the data check, firstly, if the data is not downloaded yet, if it downloaded it does not repeat the download. The data is downloaded split into train, test and validation subsets.\\
@@ -43,15 +45,15 @@ In addition to the number of epoch, other way to stop the traning procedure is e
 %The training would run for a number of epoch that the user has given or by a early-Stopping that has been developed by authors. The early-stopping combats over-fitting by monitoring the model's performance on a validation set.\\
 
 \subsection{LeNet-5 Results}
-While the training is being calculate, the weights are being update in each iteration. When A  model is selected or saved, weights are actually what is being chosen or saved. An example of weigths is represented in figure \ref where twenty first weights at epoch 10 of the first convolutional layer are represented. So when its being trained, what the network is doing is adapting the weights to the input to get a good performance.\\
+While the training is being calculate, the weights are being update in each iteration. When A  model is selected or saved, weights are actually what is being chosen or saved. An example of weights is represented in figure \ref where twenty first weights at epoch 10 of the first convolutional layer are represented. So when its being trained, what the network is doing is adapting the weights to the input to get a good performance.\\
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.85\textwidth]{images/images_lenet/w_layer0_epoch10.png}
+\includegraphics[width=0.7\textwidth]{images/images_lenet/w_layer0_epoch10.png}
 \caption{Weights at epoch 10 of the first convolutional layer} \label{fig:weights_lenet}
 \end{figure}
 
-The training procedure returns the cost function in each iteration to evaluate the training behaviour. The cost function at trainig obtained executing LeNet-5 is represented in figure \ref{fig:Lenetcost}, and its value decreases as the iterations rise converging in almost 0; this curve is the desired one for each training practice, because it is not oscilate abruptly and converges in a very low value logarithmically.\\
+The training procedure returns the cost function in each iteration to evaluate the training behavior. The cost function at training obtained executing LeNet-5 is represented in figure \ref{fig:Lenetcost}, and its value decreases as the iterations rise converging in almost 0; this curve is the desired one for each training practice, because it is not oscillate abruptly and converges in a very low value logarithmically.\\
 
 \begin{figure}[htb]
 \centering
@@ -59,7 +61,7 @@ The training procedure returns the cost function in each iteration to evaluate t
 \caption{Cost function at training running LeNet-5 with MNIST digit database.} \label{fig:Lenetcost}
 \end{figure}
 
-The error obtained at validation is represented in figure \ref{fig:Lenetresult}, where could be seen that the value decreases logarithmically too converging, aproximately, in 1 (a low value) and this behaviour of the curve is the desired in a validation process. The convergence value of the validation is not usually as much lower as the training convergence value, and the point where it starts to converge is later than in the training.\\
+The error obtained at validation is represented in figure \ref{fig:Lenetresult}, where could be seen that the value decreases logarithmically too converging, approximately, in 1 (a low value) and this behavior of the curve is the desired in a validation process. The convergence value of the validation is not usually as much lower as the training convergence value, and the point where it starts to converge is later than in the training.\\
 
 \begin{figure}[htb]
 \centering
@@ -67,7 +69,7 @@ The error obtained at validation is represented in figure \ref{fig:Lenetresult},
 \caption{Validation error obtained with LeNet-5 with MNIST digit database} \label{fig:Lenetresult}
 \end{figure}
 
-The test result has been calculated with the model of the iterarion 18300 (epoch $37^{th}$), with a validation error of 0.91\%. The error rate obtained is 0.92\% what it means that 920 samples of 100000 of the testing subset are being missclasified.\\
+The test result has been calculated with the model of the iteration 18300 (epoch $37^{th}$), with a validation error of 0.91\%. The error rate obtained is 0.92\% what it means that 920 samples of 100000 of the testing subset are being misclassified.\\
 
 %The neural network has beoen built in Python using Theano library. The %network has been based on the one exposed in \textit{Learn Convolutional %Neural Network for Face Anti-Spoofing} and \textit{LeNet}.\\
 
@@ -84,11 +86,11 @@ The test result has been calculated with the model of the iterarion 18300 (epoch
 Modifications has been made to LeNet-5 architecture. First the batch size has been changed and then the activation function, a normalization has been added o the weight initialization. The database used for those experiments is the MNIST digit database.\\
 
 \subsubsection{Changing the batch size}
-Two experiments have been developed in order to compare the results when the batch size is changed and how the network behaviour change too with respect to LeNet-5 with the original batch size (500).\\
+Two experiments have been developed in order to compare the results when the batch size is changed and how the network behavior change too with respect to LeNet-5 with the original batch size (500).\\
 
-The first experiment is with 20 samples per batch. For the second experiment, the batch size used is 100. In both cases, the training process has been stopped by the early-stopping; at epoch $31^{th}$ has stopped the first experiment, because from epoch $16^{th}$ the error at validating was not being improved and for the scond experiment, at $33^{th}$ epoch is when the early-stopping has finished the training.\\
+The first experiment is with 20 samples per batch. For the second experiment, the batch size used is 100. In both cases, the training process has been stopped by the early-stopping; at epoch $31^{th}$ has stopped the first experiment, because from epoch $16^{th}$ the error at validating was not being improved and for the second experiment, at $33^{th}$ epoch is when the early-stopping has finished the training.\\
 
-The validation error for both experimets and the original LeNet are represented in figure \ref{figures:LENET-batches}. From images could be seen that the validation error in first epochs is lower (9 \% in the first experimet) than the validation error when the batch size is bigger. Whith the batch size equal to 20, the optimal test error rate has been obtained in the first $15^{th}$ epochs, the same error rate than in the original case (0.92\%), but for 100 samples per batch, it has not been possible to get to that error rate, the best test error rate has been 1.04\% at iteration 8500.\\
+The validation error for both experiments and the original LeNet are represented in figure \ref{figures:LENET-batches}. From images could be seen that the validation error in first epochs is lower (9 \% in the first experiment) than the validation error when the batch size is bigger. Whith the batch size equal to 20, the optimal test error rate has been obtained in the first $15^{th}$ epochs, the same error rate than in the original case (0.92\%), but for 100 samples per batch, it has not been possible to get to that error rate, the best test error rate has been 1.04\% at iteration 8500.\\
 
 \begin{figure}[htb]
     \centering
@@ -96,14 +98,14 @@ The validation error for both experimets and the original LeNet are represented 
 	\subfigure[batch size = 20]{\includegraphics[width=0.47\textwidth]{images/images_lenet/lenet_batch/lenet_20batch_error.png} }
 	\subfigure[batch size = 100]{\includegraphics[width=0.47\textwidth]{images/images_lenet/lenet_batch/lenet_100batch_error.png} }
 
-    \caption{Validation error in each epoch for diferentes sizes of batches.} \label{figures:LENET-batches}
+    \caption{Validation error in each epoch for different sizes of batches.} \label{figures:LENET-batches}
 \end{figure}
 
 %Each time we take a sample and update our weights it is called a mini-batch. Each time we run through the entire database, it's called an epoch. Batch size determines how many examples you look at before making a weight update. The lower it is, the noisier the training signal is going to be, the higher it is, the longer it will take to compute the gradient for each step. \url{http://stats.stackexchange.com/questions/140811/how-large-should-the-batch-size-be-for-stochastic-gradient-descent}.\\
 
 Concluding, more epochs are necessary when the batch size is bigger because there are not enough updates in each epoch \cite{Yoshua}. Usually, the value of the batch size used is 32 \cite{Yoshua} and the choice, generally, is computational.\\
 
-In figure \ref{figures:LENET-batches} the error in each epoch is represented  for 500 batch size, the original size, for a value of 20 and 100. In the original case, the error stars with a value of 9\% aprox. with the batch size = 20 the error in the first iteration is about 2.4\%, and with a bunch of 100 images, the validation error is 3.5\%.\\
+In figure \ref{figures:LENET-batches} the error in each epoch is represented  for 500 batch size, the original size, for a value of 20 and 100. In the original case, the error stars with a value of 9\% approx. with the batch size = 20 the error in the first iteration is about 2.4\%, and with a bunch of 100 images, the validation error is 3.5\%.\\
 
 With the original size and size equal to 20, it is possible to get to the same minimum, the difference between those examples is that each one get to that conclusion into different epochs. With a batch size equal to 100, the code stopped because of the early-stop with a patience of 10000; it stop in epoch 33,while those epochs, it has been possible to get to a test error of 1.04\% in iteration 8500 when the validation error was 1.01\%, it has been running with put getting a better validation score for 17 epoch. With a batch size = 20, the code also has stopped earlier because of the same reason, but in that case it has been possible to get to the same minimum that with the original size; the epoch in which has stopped is 31, it has been running without getting a better validation score for 15 epochs.\\
 
@@ -114,13 +116,29 @@ With the original size and size equal to 20, it is possible to get to the same m
 
 %In figure X it is possible to see the error function for those two examples. It could be seen that the example with batch size = 20 has just run for 40 epoch and the good results of the example with batch size = 100, remembering that the patience has been increased from 10000 to 100000.\\
 
-From LeNet, with the database gray scale digit database, the one that LeNet uses in the original example (grey scale images whose size is 28x28), some modification has been realized:\\
+
+\subsubsection{Changing activation function, normalization and weights initialization}
+As the same way as the batch has been changed and its results has been compared in the previous subsection, the activation function has been changed, a normalization layer has been added and weights initialization has been changed.\\
+
+LeNet-5 does not use any normalization layer, but in this experiment from the different normalization availables (batch normalization, local normalization, ...) Local Response normalization has been added after the max-pooling layers.\\
+
+The activation function used in LeNet-5 is tanh, it has been changed to rectified linear unit (ReLu) activation function.\\
+
+With respect to the weight initialization, in LeNet, for the convolutional layers and the fully connected layer,  a normalized initialization \cite{XavierInitialization} is used:
+
+\begin{equation}
+  W \sim U [- \frac{\sqrt{6}}{\sqrt{n_{j}+n_{j+1}}},\frac{\sqrt{6}}{\sqrt{n_{j}+n_{j+1}}}]
+\end{equation}
+
+Where $n_{j}$ is the number of neuron of the current layer and $n_{j}$ is number of neurons of the following layers. In this experiment, this initialization has been changed to a weight initialization with a Gaussian distribution.\\
+
+Above the details of each experiment are described:\\
 
 \begin{itemize}
-\item{Using Local Response Normalization (LRN) In which a normalization has been carried out in the convolutional-max pooling layers.}
-\item{Using ReLu as activation function:} The activation function tanh has been substituted by ReLu activation function in convolutional and fully connected layers.
-\item{Using Relu and LRN}: The activation function used is ReLu and LRN has been used as  normalization layer.
-\item{Change weights initialization}: Weights initialization has been changed by Gaussian. In which mean value that has been used is 0 and std is 0.01. Weights initialization has been changed in convolutional and fully connected layers. Also, bias initialization has been changed by ones.
+\item{Experiment 1: using Local Response Normalization (LRN) In which a normalization has been carried out in the convolutional-max pooling layers.}
+\item{Experiment 2: using ReLu as activation function:} The activation function tanh has been substituted by ReLu activation function in convolutional and fully connected layers.
+\item{Experiment 3: using ReLu and LRN}: The activation function used is ReLu and LRN has been used as  normalization layer.
+\item{Experiment 4: changing weights initialization}: Weights initialization has been changed by Gaussian. In which mean value that has been used is 0 and std is 0.01. Weights initialization has been changed in convolutional and fully connected layers. Also, bias initialization has been changed by ones.
 \end{itemize}
 
 %Using Local Response Normalization we want to detect high frequency features with a large response. If we normalize around the local neighborhood of the excited neuron, it becomes even more sensitive as compared to its neighbors.[\url{https://prateekvjoshi.com/2016/04/05/what-is-local-response-normalization-in-convolutional-neural-networks/}].\\
@@ -129,60 +147,61 @@ First, the cost of training process are going to be visualized with the original
 
 \begin{figure}[htb]    \centering
 	\subfigure[Original LeNet]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet.png}\label{fig:cost_lenet} }
-	\subfigure[Using LRN]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet_LRN.png}}
-	\subfigure[Using ReLu]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet_relu.png}}
-	\subfigure[Using ReLu and LRN]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet_relu_lrn.png}}
-	\subfigure[Using Gaussian weights init.]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet_gausianInit.png} \label{fig:cost_gaus_lenet}}
+	\subfigure[Experiment 1: using LRN]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet_LRN.png}}
+	\subfigure[Experiment 2: using ReLu]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet_relu.png}}
+	\subfigure[Experiment 3: using ReLu and LRN]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet_relu_lrn.png}}
+	\subfigure[Experiment 4: using Gaussian weights init.]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet_gausianInit.png} \label{fig:cost_gaus_lenet}}
     \caption{Cost function of Lenet and Lenet Modified.} \label{fig:CostModLeNet}
 \end{figure}
 
-Visualizing the loss during the training, could be affirmed that the network with Gaussian initialization is in a local minimum because the loss has converged as could be seen in figure \ref{fig:cost_gaus_lenet}. The loss of LeNet without being modified (figure  \ref{fig:cost_lenet}) is the one whose oscillation at training is less than others.\\\\
+Visualizing the loss during the training, could be affirmed that the network with Gaussian initialization is in a local minimum because the loss has converged as could be seen in figure \ref{fig:cost_gaus_lenet}. The loss of LeNet without being modified (figure  \ref{fig:cost_lenet}) is the one whose oscillation at training is less than others.\\
 
 \begin{figure}[htb]    \centering
 	\subfigure[Original LeNet]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/error_lenet.png}\label{fig:error_lenet} }
-	\subfigure[Using LRN]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/error_lenet_LRN.png}}
-	\subfigure[Using ReLu]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/error_lenet_relu.png}}
-	\subfigure[Using ReLu and LRN]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/error_lenet_relu_lrn.png}}
-	\subfigure[Using Gaussian weights init.]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/error_frav_gausianInit.png} \label{fig:error_gaus_lenet}}
+	\subfigure[Experiment 1: using LRN]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/error_lenet_LRN.png}}
+	\subfigure[Experiment 2: using ReLu]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/error_lenet_relu.png}}
+	\subfigure[Experiment 3: using ReLu and LRN]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/error_lenet_relu_lrn.png}}
+	\subfigure[Experiment 4: using Gaussian weights init.]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/error_frav_gausianInit.png} \label{fig:error_gaus_lenet}}
     \caption{Valid error of Lenet and Lenet Modified.} \label{fig:ErrorModLeNet}
 \end{figure}
 
-About the error at validation, visualizing the graphs in figure \ref{fig:CostModLeNet}, it is very similar the curve for original lenet, lenet with ReLu, lenet with LRN and lenet with LRN and ReLu.
+About the error at validation, visualizing the graphs in figure \ref{fig:CostModLeNet}, it is very similar the curve for original LeNet-5, LeNet-5 with ReLu, LeNet-5 with LRN and LeNet-5 with LRN and ReLu.\\
 
-At testing, the results obtained have been the following ones:
+The results obtained, at testing, have been the following ones:
 
 \begin{itemize}
 \item{Original LeNet}: Best validation score of 0.91 \% obtained at iteration 17400, with test performance 0.92\%.
-\item{Using Local Response Normalization}: Best validation score of 0.99 \% obtained at iteration 13400, with test performance 1.6 \%.
-\item{Using ReLu as activation function}:Best validation score of 1.04 \% obtained at iteration 11900, with test performance 2.4\%.
-\item{Using Relu and LRN}: Best validation score of 1.18 \% obtained at iteration 19500, with test performance 1.08 \%.
-\item{Gaussian weight initialization}: Best validation score of 81.22\% obtained at iteration 100, with test performance 80.90\%.
+\item{Experiment 1: using Local Response Normalization}: Best validation score of 0.99 \% obtained at iteration 13400, with test performance 1.6 \%.
+\item{Experiment 2: using ReLu as activation function}:Best validation score of 1.04 \% obtained at iteration 11900, with test performance 2.4\%.
+\item{Experiment 3: using ReLu and LRN}: Best validation score of 1.18 \% obtained at iteration 19500, with test performance 1.08 \%.
+\item{Experiment 4: Gaussian weight initialization}: Best validation score of 81.22\% obtained at iteration 100, with test performance 80.90\%.
 \end{itemize}
 
-The best configuration for the network is the original one. With Gaussian initalization, the network does not find a local minimum in such a sort of time. Using LRN and Relu, test result is closer to the obtained with LeNet original, but not as good as the last one. Changing the activation function has not been a good change. Not taking into account original LeNet, the best test performance has been obtained with 1,08\% using ReLu and LRN, but the best validation error is 0,99\% obtained using just LRN. The values are close of the modifications, but the modification of Gaussian weight initialization.\\
+The best configuration for the network is the original one. With Gaussian initialization, the network does not find a local minimum in such a sort of time. Using LRN and ReLu, test result is closer to the obtained with LeNet original, but not as good as the last one. Changing the activation function has not been a good change. Not taking into account original LeNet, the best test performance has been obtained with 1,08\% using ReLu and LRN, but the best validation error is 0,99\% obtained using just LRN. The values are close of the modifications, but the modification of Gaussian weight initialization.\\
 
 \clearpage
 \section{Start working with Faces databases}
-The project has been developed from LeNet, changes would be explained below.\\
+Once LeNet-5 architecture has been understanding, the used database is changed because the final goal is using a convolutional neural network with different faces databases.\\
 
 \subsection{Using Labeled Faces in the Wild}
-With the purpose of reading and working with face images, a script has been developed where images are preccesed. All images are pseudo-randomized and grouped in  training set (49\% of the total database), testing test (30\% of the total data) and validatng set (21\% of the data).\\
+With the purpose of reading and working with face images, the Labeled Faces in the Wild (LFW) database is used. Because of that, a script has been developed where images are precessed. All images are pseudo-randomized and grouped in training set (49\% of the total database), testing test (30\% of the total data) and validating set (21\% of the data).\\
 
 To split the data, train\_test\_split function from sklearn.cross\_validation has been used. This function pseudo-randomize the data, so you can repeat the randomized split data in the same way assigning the same seed to the function.\\
 
-With If the batch size is 500, 13 batches are going to be used for training, 6 for validation and 6 for testing.\\
+For the next experiment, 500 samples are used for each batch, so 13 batches are going to be used for training, 6 for validation and 6 for testing. Images has been resized to 28x28 size, as MNIST digit database available with the code. \\
 
-\begin{itemize}
-\item $learning_rate=0.1, n_epochs=12, nkerns=[20, 50], batch_size=500$
-\item  T.tanh activaction function
-\item rng = numpy.random.RandomState(23455)
-\item kernel size = [5,5]
-\item images resized to 28x28
-\item 12 epoch
-\item The number of neurons at the input of the regression class is 10000, and the number of neurons at the output is 5748 (Number of people).
-\end{itemize}
+The parameters has not been changed, but the number of epoch that has been decreased to 12, and the number of neurons at the output of the logistic regression that has been changed from 10 to 5748 (the number of classes or different people).\\
 
-The results obtained are not good, because of the fact that parameters have been chosen randomly. and the network has not been optimized to this purpose.\\
+%\begin{itemize}
+%\item $learning_rate=0.1, n_epochs=12, nkerns=[20, 50], batch_size=500$
+%\item  T.tanh activation function
+%\item rng = numpy.random.RandomState(23455)
+%\item kernel size = [5,5]
+%\item images resized to 28x28
+%\item 12 epoch
+%\item The number of neurons at the input of the regression class is 10000, and the number of neurons at the output is 5748 (Number of people).
+%\end{itemize}
+The results obtained are not good, because of the fact that the network has not been optimized to this purpose, the number of epoch should be more and for each class there are a few samples and should be much more.\\
 
 \begin{figure}[htb]
 \centering
@@ -190,16 +209,19 @@ The results obtained are not good, because of the fact that parameters have been
 \caption{Error of Lenet using LFW.} \label{fig:LENETLFW}
 \end{figure}
 
-Figure \ref{fig:LENETLFW} represents the validation error \% in each epoch, and it could be seen that in the last epoch, the error is the smallest one, and the test error in that point is 95.125000 \%.\\
+Figure \ref{fig:LENETLFW} represents the validation error \% in each epoch, and it could be seen that in the last epoch, the error is the smallest one, and the test error in that point is 95.125000 \%, a really high error rate because of the bag learning procedure.\\
+
+\subsubsection{Changing learning rate}
+Despite the fact that the configuration of the networks is not to this database, learning rate is going to be changed so it is possible to know how it affects.\\
 
 In order to know how the net works with different learning rates, it has been changed to 0.001 and the number of epoch has been raised to 50.\\
 
-The error in each epoch could be seen in figure \ref{fig:LENETLFWerror0-001} , where it is shown that the net does not learn because the learning rate is too small and it would need more epoch. The cost function of the training could be seen in figure \ref{fig:LENETLFWcost0-001}, where it has been reducing during epochs, but it has been reduced a bit, from 8.7 to 8.1.\\
+The error at validating in each epoch could be seen in figure \ref{fig:LENETLFWerror0-001} , where it is shown that the net does not learn because the learning rate is too small and it would need more epochs. The cost function at training of the training could be seen in figure \ref{fig:LENETLFWcost0-001}, where the cost it has been reducing during epochs, but it has not been reduced significantly, from 8.7 to 8.1.\\
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.7\textwidth]{images/LFW_learningrate/error_0_001.png}
-\caption{Error of Lenet using LFW with a learning rate of 0.001.} \label{fig:LENETLFWerror0-001}
+\caption{Error of LeNet-5 using LFW with a learning rate of 0.001.} \label{fig:LENETLFWerror0-001}
 \end{figure}
 
 \begin{figure}[htb]
@@ -211,9 +233,6 @@ The error in each epoch could be seen in figure \ref{fig:LENETLFWerror0-001} , w
 A 97,73\% error of test performance has been gotten, which has been obtained in iteration 13. \\
 
 The conclusion is the learning rate is too small to this configuration of the net and the data given.\\
-
-\subsubsection{Changing learning rate}
-Despite the fact that the configuration of the networks is not to this database, learning rate is going to be changed so it is possible to know how it affects.\\
 
 If the learning rate is increased to 0.01: Best validation score of 96.266667 \% obtained at iteration 481, with test performance 95.733333 \%\\
 
@@ -294,8 +313,7 @@ Also, it is possible to see the output at the convolutional layer, in figure \re
 
 The result of the third example is a best validation score of 95.73 \% obtained at iteration 546, with test performance 95.23 \%. \\
 
-
-The cost function og those three experiments are represented in \ref{fig:LENETLFW_Cost}
+The cost function of those three experiments are represented in \ref{fig:LENETLFW_Cost}
 
 \begin{figure}[htb]
     \centering
@@ -310,7 +328,7 @@ The cost function og those three experiments are represented in \ref{fig:LENETLF
 %The theano function used to build this kind of layer depends of theano version,
 
 
-\subsection{Using ReLu as an activation function instead of tanh}
+\subsubsection{Using ReLu as an activation function instead of tanh}
 Originally LeNet uses as activation function tanh(), but in this section, ReLu (Rectified linear units) activation function is going to be used. In equation \ref{Relu-formula} is shown how it is defined.  \\
 
 \begin{equation}
@@ -329,27 +347,26 @@ The error and the cost in each epoch could be seen in figure \ref{fig:LENET_relu
 \label{fig:LENET_relu}
 \end{figure}
 
+\subsection{Using FRAV dataset}
+One of the databases used with the final architecture and configuration of the network is FRAV database. LeNet-5 is tested with this database in this current section.\\
 
-
-\subsection{using FRAV dataset}
-The experiments made with this database are just with RGB images (for the time being), so 939 images of people has been  used, 489 train images has been used, 162 validation images and 279 test images.\\
+The experiments made with this database are just with RGB images, so 939 images of people has been used, 489 samples are used for the training subset, 162 samples has been used in the validation subset and 279 samples in the test subset.\\
 
 Because images has not the same shape, they have been re-sized into 252x180, this new shape is proportional 0.7*height = weight because all images studied save that proportion. In addition, making images smaller also gives the security of not having memory problems, because the huge quantity of used images.\\
 
-The network has been tested with this databases in the two ways of classify images, with two classes (genuine and attacks) and five classes (genuine and four classes, one per type of attack). Also, different learning rates have been used.\\
+The network has been tested with this databases in the two ways of classify images, with two classes (genuine and attacks) and five classes (genuine and four classes, one per type of attack).\\ %Also, different learning rates have been used.\\
 
-
-The first experiment made was based in the neural network LeNet, without changing parameters:\\
+The first experiment made was based in the neural network LeNet, without changing parameters, but batch size because 500 is too big, there are not enough samples:\\
 
 \begin{itemize}
-\item 25 epoch
-\item nkerns=[20, 50]
-\item batch\_size=50
-\item learning rate = 0.01
-\item Logistic regresion with 10 neurons.\\
+\item 25 epoch.
+\item 20 and 50 kernels of each convolutional layer.
+\item 50 batch size.
+\item 0.01 learning rate.
+\item Logistic regression with 10 neurons.\\
 \end{itemize}
 
-The results that were obtained there were not as bad as the one with labeled faces in the wild (LFW).\\
+The obtained results are with 5 classes classification and there were not as bad as the one with labeled faces in the wild (LFW), in this database there are more samples per class.\\
 
 Figure \ref{fig:FRAV_five} shows the validation error of five classes, the best validation error has token place in epoch 7 with test performance 60.4\%. It has token 68.78 minutes to run.\\
 
@@ -369,17 +386,24 @@ In figure \ref{fig:FRAV_two}, the validation error in different epoch could be v
 \label{fig:FRAV_two}
 \end{figure}
 
-After this, the CNN has been changed in order to build a CNN similar to the one described in \textit{Learning Temporal Features Using LSTM-CNN Architecture for FaceAnti-spoofing}.\\
+The time in both cases, classifying with two or five classes are similar, but not the result, is better when just two classes are used and no differentiation is made among attacks. There would be need more samples and more time to get a better score if five classes classification is wanted.\\
 
-This CNN has two conv. nets., the first one with 48 filters and the second one with 96. The size of the filters is 5x5. The conv. nets. are followed by max pool layers of size 2x2.\\
+For the time being no differentiation among classes is done, there is no necessity to differentiate the attacks, so the classification is going to be bi-classe: genuine and attack.\\
 
-The activation function is the rectified linear activation function (ReLu). I have used a normalized distribution of weights and bias, the same which was implemented in LeNet: weights are sampled randomly from a uniform distribution in the range [-1/fan-in, 1/fan-in], where fan-in is the number of inputs to a hidden unit. To use ReLu I have used the one implemented in \textit{theano.tensor.nnet.relu}.\\
+\section{Defining a new architecture}
+From LeNet-5 code which is proportioned by \url{deeplearning.net} changes has been developed to build a new architecture \cite{LSTM-CNN}. \\
 
-Because of the huge number of images, the  batch\_size has been changed into 20. And the learning rate is 0.001, like in the paper.\\
+%After this, the CNN has been changed in order to build a CNN similar to the one described in \textit{Learning Temporal Features Using LSTM-CNN Architecture for FaceAnti-spoofing}.\\
 
-The number of neurons at the output of the hidden layer are 100. The classifier is the sigmoidal function. 25 epoch have been used to run the net at the training.\\
+The new architecture of the Convolutional Neural Network is formed by two convolutional layers, the first one with 48 filters and the second one with 96. The size of the filters is 5x5. Each convolutional layer is followed by a max pool layer of size 2x2.\\
 
-This database has been run with different seeds when the data is split in order to observe the behavior of the net with different sets of data.\\
+The activation function has been changed to the rectified linear activation function (ReLu), a function implemented in Theano has been used to this purpose \textit{theano.tensor.nnet.relu}. For the weight initialization, a normalized distribution of weights and bias, the same which was implemented in LeNet-5: weights are sampled randomly from a uniform distribution.\\
+
+Because of the huge number of images, the  batch size has been changed to 20. And the learning rate is 0.001.\\
+
+The number of neurons at the output of the hidden layer are 100. The classifier is the sigmoidal function. 25 epoch have been used for training the network.\\
+
+This database has been run with different seeds when the data is split in order to observe the behavior of the net with different combinations of sets of data.\\
 
 %(AÑADIR LOS RESULTADOS CON LAS DIFERENTES SEMILLAS)
 
@@ -524,8 +548,6 @@ The code had been running for 364,39 hours. And the true positive rate, true neg
 \caption{TP, TN, FP, FN rates in the first trying of imagenet.}
 
 \end{table}
-
-
 
 \clearpage
 %\subsection{Reading frav faces}

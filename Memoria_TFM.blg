@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Memoria_TFM.aux
 The style file: ieeetr.bst
 Database file #1: references.bib.bib
-You've used 5 entries,
+You've used 9 entries,
             1876 wiz_defined-function locations,
-            509 strings with 4370 characters,
-and the built_in function-call counts, 1199 in all, are:
-= -- 115
-> -- 34
+            534 strings with 5180 characters,
+and the built_in function-call counts, 2176 in all, are:
+= -- 210
+> -- 61
 < -- 0
-+ -- 14
-- -- 9
-* -- 77
-:= -- 163
-add.period$ -- 5
-call.type$ -- 5
-change.case$ -- 5
++ -- 25
+- -- 16
+* -- 133
+:= -- 291
+add.period$ -- 10
+call.type$ -- 9
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 67
-empty$ -- 131
-format.name$ -- 9
-if$ -- 294
+cite$ -- 9
+duplicate$ -- 127
+empty$ -- 242
+format.name$ -- 16
+if$ -- 542
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 4
-newline$ -- 18
-num.names$ -- 4
-pop$ -- 27
+int.to.str$ -- 9
+missing$ -- 9
+newline$ -- 31
+num.names$ -- 8
+pop$ -- 50
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 43
+skip$ -- 76
 stack$ -- 0
-substring$ -- 80
-swap$ -- 24
+substring$ -- 140
+swap$ -- 44
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 10
-width$ -- 6
-write$ -- 44
+while$ -- 19
+width$ -- 10
+write$ -- 80
