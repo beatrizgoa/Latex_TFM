@@ -465,6 +465,8 @@ INPUT /home/beaa/Escritorio/Latex_TFM/Intro.tex
 INPUT /home/beaa/Escritorio/Latex_TFM/Intro.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /home/beaa/Escritorio/Latex_TFM/cnn_theory.tex
+INPUT /home/beaa/Escritorio/Latex_TFM/cnn_theory.tex
 INPUT /home/beaa/Escritorio/Latex_TFM/Theano.tex
 INPUT /home/beaa/Escritorio/Latex_TFM/Theano.tex
 INPUT /home/beaa/Escritorio/Latex_TFM/databases.tex
@@ -878,6 +880,8 @@ INPUT /home/beaa/Escritorio/Latex_TFM/images/redes/ejecucion1/general_svm_mfsd/m
 INPUT /home/beaa/Escritorio/Latex_TFM/images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_iteself_lr_0_001/error.png
 INPUT /home/beaa/Escritorio/Latex_TFM/images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_iteself_lr_0_001/error.png
 INPUT /home/beaa/Escritorio/Latex_TFM/images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_iteself_lr_0_001/error.png
+INPUT /home/beaa/Escritorio/Latex_TFM/conclusion.tex
+INPUT /home/beaa/Escritorio/Latex_TFM/conclusion.tex
 INPUT /home/beaa/Escritorio/Latex_TFM/Memoria_TFM.bbl
 INPUT /home/beaa/Escritorio/Latex_TFM/Memoria_TFM.bbl
 INPUT /home/beaa/Escritorio/Latex_TFM/Memoria_TFM.lof

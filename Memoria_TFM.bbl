@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{theano}
 T.~D. Team, ``Theano: A {Python} framework for fast computation of mathematical
@@ -12,6 +12,15 @@ M.~Sokolova, N.~Japkowicz, and S.~Szpakowicz, ``Beyond accuracy, f-score and
 
 \bibitem{ISO}
 ``Sc37 iso/iec jtc1,'' 2014.
+
+\bibitem{Duda}
+R.~O. Duda, P.~E. Hart, and D.~G. Stork, {\em Pattern Classification (2Nd
+  Edition)}.
+\newblock Wiley-Interscience, 2000.
+
+\bibitem{PCAvsLDA}
+A.~M. Martinez and A.~C. Kak, ``Pca versus lda,'' {\em IEEE TRANSACTIONS ON
+  PATTERN ANALYSIS AND MACHINE INTELLIGENCE}, vol.~23, pp.~228--233, 2001.
 
 \bibitem{MachineLearning}
 C.~M. Bishop, {\em Pattern Recognition and Machine Learning (Information

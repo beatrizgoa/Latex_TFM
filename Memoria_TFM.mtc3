@@ -12,13 +12,13 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Using FRAV dataset}{\reset@font\mtcSSfont 30}{subsection.1.2.2.2}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Defining a new architecture}{\reset@font\mtcSfont 32}{section.1.2.3}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Regenerating the databases}{\reset@font\mtcSfont 33}{section.1.2.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}using RGB and NIR FRAV database}{\reset@font\mtcSSfont 34}{subsection.1.2.4.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Adding images in characteristic level}{\reset@font\mtcSSSfont 35}{subsubsection*.46}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}Architecture implemented in Casia videos}{\reset@font\mtcSSfont 40}{subsection.1.2.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.3}As close as possible as Imagenet}{\reset@font\mtcSSfont 43}{subsection.1.2.4.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Adding images in characteristic level}{\reset@font\mtcSSSfont 34}{subsubsection*.46}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}Architecture implemented in Casia videos}{\reset@font\mtcSSfont 40}{subsection.1.2.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}As close as possible as Imagenet}{\reset@font\mtcSSfont 43}{subsection.1.2.4.2}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Network configuration for each experiment}{\reset@font\mtcSSSfont 43}{subsubsection*.50}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode frav results}{\reset@font\mtcSSSfont 44}{subsubsection*.51}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Results with FRAV database}{\reset@font\mtcSSSfont 44}{subsubsection*.51}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode casia results}{\reset@font\mtcSSSfont 47}{subsubsection*.58}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode MFSD results}{\reset@font\mtcSSSfont 51}{subsubsection*.63}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.4}New database}{\reset@font\mtcSSfont 52}{subsection.1.2.4.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.3}New database}{\reset@font\mtcSSfont 52}{subsection.1.2.4.3}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode experiments}{\reset@font\mtcSSSfont 53}{subsubsection*.67}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Conclusions}{\reset@font\mtcSfont 54}{section.1.2.5}}
