@@ -388,10 +388,10 @@ In figure \ref{fig:FRAV_two}, the validation error in different epoch could be v
 
 The time in both cases, classifying with two or five classes are similar, but not the result, is better when just two classes are used and no differentiation is made among attacks. There would be need more samples and more time to get a better score if five classes classification is wanted.\\
 
-For the time being no differentiation among classes is done, there is no necessity to differentiate the attacks, so the classification is going to be bi-classe: genuine and attack.\\
+% TODO For the time being no differentiation among classes is done, there is no necessity to differentiate the attacks, so the classification is going to be bi-classe: genuine and attack.\\
 
 \section{Defining a new architecture}
-From LeNet-5 code which is proportioned by \url{deeplearning.net} changes has been developed to build a new architecture \cite{LSTM-CNN}. \\
+From the LeNet-5 code, which is proportioned by \url{deeplearning.net}, changes has been developed to build a new architecture \cite{LSTM-CNN}. \\
 
 %After this, the CNN has been changed in order to build a CNN similar to the one described in \textit{Learning Temporal Features Using LSTM-CNN Architecture for FaceAnti-spoofing}.\\
 
@@ -399,18 +399,17 @@ The new architecture of the Convolutional Neural Network is formed by two convol
 
 The activation function has been changed to the rectified linear activation function (ReLu), a function implemented in Theano has been used to this purpose \textit{theano.tensor.nnet.relu}. For the weight initialization, a normalized distribution of weights and bias, the same which was implemented in LeNet-5: weights are sampled randomly from a uniform distribution.\\
 
-Because of the huge number of images, the  batch size has been changed to 20. And the learning rate is 0.001.\\
+Because of the huge number of images, the  batch size has been changed to 20. And the learning rate is 0.001. The number of neurons at the output of the hidden layer are 100. The classifier is the sigmoid function. 25 epoch have been used for training the network.\\
 
-The number of neurons at the output of the hidden layer are 100. The classifier is the sigmoidal function. 25 epoch have been used for training the network.\\
+the used database in this experiment is Casia database and its samples have been pre-processed, images are resized into 52x104, the relation between width and height is proportional to the original size of images, but they have not the same shape. At the time to split the data into train, test and validation, different seeds have been used with the purpose of test the net with different combination of the data.\\
 
-This database has been run with different seeds when the data is split in order to observe the behavior of the net with different combinations of sets of data.\\
-
+% NO ENCUENTRO LOS RESULTADOSS
 %(AÑADIR LOS RESULTADOS CON LAS DIFERENTES SEMILLAS)
 
 %\subsection{using CASIA dataset}
 %Before proving casia databse in the convolutional neural network, the net has been modified in order to diference training and test, so the net train and validate and when a new best score of error is gotten, the network is saved. After training, the best configuration of the network is loaded and tested with the test set.\\
 
-%From the database, images have been resized in order to save memory, into 52x104 images. Also, two different ways of using classes has been used, first, two classes has been used, one the imges of the genuine people and another class with the atacks, the last way of separate classes is assigning one different class to a different attack.\\
+two different ways of using classes has been used, first, two classes has been used, one the imges of the genuine people and another class with the atacks, the last way of separate classes is assigning one different class to a different attack.\\
 
 %Casia database has also been proved using two classes and two seeds.\\
 
@@ -418,28 +417,20 @@ This database has been run with different seeds when the data is split in order 
 
 
 \section{Regenerating the databases}
-The databases have been generated in a different way from the used before. In this new way, the possibility of access to the missclasified samples is possible. SO the characteristic of misclassified images could be studied. This is not used now, but in the future it could be useful.\\
+The databases have been generated in a different way from the used before. In this new way, the possibility of access to the misclassified samples is possible. SO the characteristic of misclassified images could be studied. This is not used now, but in the future it could be useful.\\
 
 In order to build the new database, a script as been programmed manually because the test-train split sklearn function does not let know what image has been read and now it is possible to compare the right class of each image with the predicted one.\\
 
 All this work has been changed because it is interesting to know the characteristics of people (if has beard, glasses or long hair) that are not well classified.\\
 
-It has been necessary to shuffle the data twice in order to mix it properly and traning, testing and validating test would have data of the five classes.\\
-
-\subsection{using RGB and NIR FRAV database}
-To use both images at the same time, it is possible to do it in two different ways:
-\begin{itemize}
-\item Characteristic level: adding the NIR image as another layer to RGB image, so the resultant image have hightxweightx4 dimensions (NIR images has one layer because it is a grey scale image and RGB images has tree layers, one per each primary color). The network is feed with the resultant images like other times.
-\item Classification level: training two network twice, first, with RGB images and then with NIR images and when the classification is produced combine them.
-\end{itemize}
-
+It has been necessary to shuffle the data twice in order to mix it properly and training, testing and validating test would have data of the five classes.\\
 
 \subsubsection{Adding images in characteristic level}
 In order to get this particular goal, each image is re-sized proportionally to original image to 52x104 dimensions. Each NIR image is appended to its correspondent RGB image.\\
 
 In order to create a list of images where images are not putted in order, each image followed by another could be of a different class. Two shuffles has been necessary, the first one with a seed = 0.5 and the second one with a seed = 0.1, so the randomize order of images could be repeated.\\
 
-For training, the 70\% of the total data has been used, for testing the 20\% and for validating the resting 10\%. There are 157 images in each class and the distribution is represented in the table \ref{FRAV_distribution1}.\\
+For training, the 70\% of the total data has been used, for testing the 20\% and for validating the testing 10\%. There are 157 images in each class and the distribution is represented in the table \ref{FRAV_distribution1}.\\
 
 \begin{table}[]
 \centering
@@ -489,7 +480,7 @@ To get that results 3,04 hours was needed to run the code.\\
 \subsection{Architecture implemented in Casia videos}
 In this section, the architecture used in the paper of the Casia videos would be repeated partially. The paper is learn convolutional neural network for face anti-spoofing.\\
 
-The architecture followed in the paper is the same used in Imagenet, it is formed by five convolutional layers, followed by three fully-connected layers. The two first conv layer and the last one are followed by a max-pool layer. The two first conv layers are followed by response normalization layers too. Authors use ReLu like activation function in each layer. The first two fully-connected layers are followed by two dropout layers, and the last layer output is followed by softmax.\\
+The architecture followed in the paper is the same used in Imagenet, it is formed by five convolutional layers, followed by three fully-connected layers. The two first conv layer and the last one are followed by a max-pool layer. The two first conv layers are followed by response normalization layers too. Authors use ReLu like activation function in each layer. The first two fully-connected layers are followed by two dropout layers, and the last layer output is followed by softmax layer as a classifier.\\
 
 Authors do not explain anything else about the architecture. In the paper of Imagenet is said that:
 
@@ -600,7 +591,7 @@ MFSD  (learning\_rate=0.01, n\_epochs=400, nkerns=[96, 256, 386, 384, 256], batc
 
 IMPORTANT: The valid graphs are made with SOFTMAX independly of the classifier used to test.\\
 
-\subsubsection{frav results}
+\subsubsection{Results with FRAV database}
 
 In this section, cost (at training) and error (at validating) is going to be visualized. First when FRAV database has been trained with Gaussian initialization and with a learning rate = 0.001 \ref{fig:Imagenet2-frav1}. Second with the same learning rate, but Gaussian initialization for weights \ref{fig:Imagenet2-frav_gaussian_init}. Third, decreasing the learning rate to 0.01 and with normal initialization \ref{fig:Imagenet2-frav-svm_general} and the last one, whit the same learning rate but with Gaussian weights initialization \ref{fig:Imagenet2-frav-svm_gauss}.\\
 
@@ -876,8 +867,6 @@ CASIA videos   &    0.1    & 478& 75 &  105& 62 \\
 MFSD           &    10     & 19 &  1 &   8 & 0 \\
 \end{tabular}
 \end{table}
-
-
 
 Looking the graphs where a minidataset has been used (20 images or 14), if the cost (training) is visualized, could be expected that the train is learning the images because the cost decreases to 0 (almost zero) so that means that if it is tested with itself the error should be 0, but that does not happen.\\
 
