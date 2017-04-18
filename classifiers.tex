@@ -1,6 +1,10 @@
 \section{Classifiers and Reduction of the dimensionality algorithms}
-In this section, the classifiers used along the thesis are described and dimensionality reduction algorithms.\\
+Classifying is called to the task of sign a a category to a object. The classification task is based in the features of the object obtained of the feature extractor \cite{Duda}, that in the particular case of this thesis is the output of a convolutional neural network.\\
+
+The output of the convolutional neural network could be bigger enough and some features could not be relevant for the classification. To solve the speed and robustness issues that could appear because of the quantity of features \cite{PCAvsLDA}, techniques to reduce the dimensionality are used.
+
 \subsection{Classifiers}
+In this section, the classifiers used along the thesis are described and dimensionality reduction algorithms.\\
 
 \subsubsection{Logistic Regression}
 
@@ -35,9 +39,9 @@ The \textit{K} value is fixed, should be calculated and optimized by user of eac
 \subsubsection{Decision Tree}
 
 \subsection{Dimensionality reduction algorithms}
-The objective of those algorithms is transform the characteristic vector into another characteristic vector but whit a lower dimensionality. The two techniques used along the thesis are described.
+The objective of those algorithms is transform the characteristic vector into another characteristic vector but whit a lower dimensionality. Linear methods, that projects the dimensional data onto an another space whose dimensionality is lower \cite{Duda}, have been used. The two techniques, the most common used, are described and used along the thesis.\\
 \subsubsection{Linear Discriminant Analysis}
-Linear Discriminant Analysis (LDA)
+Linear Discriminant Analysis (LDA) looks for the vectors in the space that best discriminate among classes \cite{PCAvsLDA}.
 
 \subsubsection{Principal Component Analysis}
-Principal Component Analysis (PCA)
+Principal Component Analysis (PCA) uses a subspace in which the the variance direction among basis vectors is maximum in the original space \cite{PCAvsLDA}
