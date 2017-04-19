@@ -2,7 +2,27 @@
 
 \bibitem{theano}
 T.~D. Team, ``Theano: A {Python} framework for fast computation of mathematical
-  expressions,'' {\em arXiv e-prints}, vol.~abs/1605.02688, May 2016.
+  expressions,'' {\em arXiv e-prints}, vol.~abs/1605.02688, 2016.
+
+\bibitem{MNISTimage}
+``Sample digits of mnist handwritten digit database.''
+  \url{https://www.researchgate.net/figure/264273647_fig1_Fig-18-0-9-Sample-digits-of-MNIST-handwritten-digit-database}.
+\newblock Accessed: 2017-04-19.
+
+\bibitem{LFWTech}
+G.~B. Huang, M.~Ramesh, T.~Berg, and E.~Learned-Miller, ``Labeled faces in the
+  wild: A database for studying face recognition in unconstrained
+  environments,'' Tech. Rep. 07-49, University of Massachusetts, Amherst, 2007.
+
+\bibitem{ABC4EU}
+``Automated border control gates for europe.'' \url{http://abc4eu.com/}.
+\newblock Accessed: 2017-04-19.
+
+\bibitem{Casiadatbase}
+Z.~Zhang, J.~Yan, S.~Liu, Z.~Lei, D.~Yi, and S.~Z. Li, ``A face antispoofing
+  database with diverse attacks,'' in {\em 5th {IAPR} International Conference
+  on Biometrics, {ICB} 2012, New Delhi, India, March 29 - April 1, 2012},
+  pp.~26--31, 2012.
 
 \bibitem{Stutz}
 D.~Stutz, ``Understanding convolutional neural networks,'' 2014.

@@ -3,11 +3,21 @@
 \contentsline {xpart}{MEMORY}{3}{part.1}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Introduction}{3}{chapter.1.1}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces digits MNIST images database\relax }}{5}{figure.caption.5}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Examples of Labeled faces in the wild imamges\relax }}{7}{figure.caption.6}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Four attacks and real user from RGB FRAV database \relax }}{8}{figure.caption.7}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Four attacks and real user from RGB FRAV database \relax }}{8}{figure.caption.8}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Three attacks and real user from casia database \relax }}{9}{figure.caption.9}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces MNIST digit images database. Image obtained from \cite {MNISTimage}\relax }}{5}{figure.caption.5}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Samples of LFW database\relax }}{6}{figure.caption.6}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Four attacks and real user from RGB FRAV database \relax }}{7}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {printed image attack}}}{7}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {mask attack}}}{7}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {eye mask attack}}}{7}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {tablet attack}}}{7}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {real user}}}{7}{figure.caption.7}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Four attacks and real user from RGB FRAV database \relax }}{7}{figure.caption.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {printed image attack}}}{7}{figure.caption.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {mask attack}}}{7}{figure.caption.8}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {eye mask attack}}}{7}{figure.caption.8}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {tablet attack}}}{7}{figure.caption.8}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {real user}}}{7}{figure.caption.8}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Three attacks and real user from casia database \relax }}{10}{figure.caption.9}
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Three attacks and real user from casia database \relax }}{10}{figure.caption.10}
 \contentsline {figure}{\numberline {1.7}{\ignorespaces Three attacks and real user from a user of MFSD database \relax }}{11}{figure.caption.11}
 \contentsline {figure}{\numberline {1.8}{\ignorespaces Three attacks and real user from a user of MFSD database \relax }}{11}{figure.caption.12}

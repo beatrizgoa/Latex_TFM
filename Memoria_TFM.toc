@@ -16,22 +16,22 @@
 \contentsline {section}{\numberline {1.4}Databases}{5}{section.1.1.4}
 \contentsline {subsection}{\numberline {1.4.1}MNIST digit database}{5}{subsection.1.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Labeled faces in the wild}{6}{subsection.1.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}FRAV dataset}{6}{subsection.1.1.4.3}
+\contentsline {subsection}{\numberline {1.4.3}FRAV dataset}{7}{subsection.1.1.4.3}
 \contentsline {subsection}{\numberline {1.4.4}CASIA dataset}{9}{subsection.1.1.4.4}
 \contentsline {subsection}{\numberline {1.4.5}MSU - MFSD database}{10}{subsection.1.1.4.5}
 \contentsline {section}{\numberline {1.5}Metrics}{11}{section.1.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Cost and Error rate}{11}{subsection.1.1.5.1}
+\contentsline {subsection}{\numberline {1.5.1}Cost and Error rate}{12}{subsection.1.1.5.1}
 \contentsline {subsection}{\numberline {1.5.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{12}{subsection.1.1.5.2}
 \contentsline {subsection}{\numberline {1.5.3}ROC curve and Precision and Recall curve}{13}{subsection.1.1.5.3}
 \contentsline {subsection}{\numberline {1.5.4}APCER and BPCER}{14}{subsection.1.1.5.4}
 \contentsline {section}{\numberline {1.6}Classifiers and Reduction of the dimensionality algorithms}{15}{section.1.1.6}
 \contentsline {subsection}{\numberline {1.6.1}Classifiers}{15}{subsection.1.1.6.1}
-\contentsline {subsubsection}{Logistic Regression}{15}{subsubsection*.15}
-\contentsline {subsubsection}{Support Vector Machine}{15}{subsubsection*.16}
+\contentsline {subsubsection}{Logistic Regression}{16}{subsubsection*.15}
+\contentsline {subsubsection}{Support Vector Machine}{16}{subsubsection*.16}
 \contentsline {subsubsection}{K Nearest Neighbors}{16}{subsubsection*.17}
-\contentsline {subsubsection}{Decision Tree}{16}{subsubsection*.18}
-\contentsline {subsection}{\numberline {1.6.2}Dimensionality reduction algorithms}{16}{subsection.1.1.6.2}
-\contentsline {subsubsection}{Linear Discriminant Analysis}{16}{subsubsection*.19}
+\contentsline {subsubsection}{Decision Tree}{17}{subsubsection*.18}
+\contentsline {subsection}{\numberline {1.6.2}Dimensionality reduction algorithms}{17}{subsection.1.1.6.2}
+\contentsline {subsubsection}{Linear Discriminant Analysis}{17}{subsubsection*.19}
 \contentsline {subsubsection}{Principal Component Analysis}{17}{subsubsection*.20}
 \contentsline {chapter}{\numberline {2}Methodology}{19}{chapter.1.2}
 \contentsline {section}{\numberline {2.1}LeNet-5}{19}{section.1.2.1}

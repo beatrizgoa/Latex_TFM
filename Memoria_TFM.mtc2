@@ -10,20 +10,20 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.4}Databases}{\reset@font\mtcSfont 5}{section.1.1.4}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.1}MNIST digit database}{\reset@font\mtcSSfont 5}{subsection.1.1.4.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.2}Labeled faces in the wild}{\reset@font\mtcSSfont 6}{subsection.1.1.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.3}FRAV dataset}{\reset@font\mtcSSfont 6}{subsection.1.1.4.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.3}FRAV dataset}{\reset@font\mtcSSfont 7}{subsection.1.1.4.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.4}CASIA dataset}{\reset@font\mtcSSfont 9}{subsection.1.1.4.4}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.5}MSU - MFSD database}{\reset@font\mtcSSfont 10}{subsection.1.1.4.5}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.5}Metrics}{\reset@font\mtcSfont 11}{section.1.1.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.1}Cost and Error rate}{\reset@font\mtcSSfont 11}{subsection.1.1.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.1}Cost and Error rate}{\reset@font\mtcSSfont 12}{subsection.1.1.5.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{\reset@font\mtcSSfont 12}{subsection.1.1.5.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.3}ROC curve and Precision and Recall curve}{\reset@font\mtcSSfont 13}{subsection.1.1.5.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.4}APCER and BPCER}{\reset@font\mtcSSfont 14}{subsection.1.1.5.4}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.6}Classifiers and Reduction of the dimensionality algorithms}{\reset@font\mtcSfont 15}{section.1.1.6}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.1}Classifiers}{\reset@font\mtcSSfont 15}{subsection.1.1.6.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Logistic Regression}{\reset@font\mtcSSSfont 15}{subsubsection*.15}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Support Vector Machine}{\reset@font\mtcSSSfont 15}{subsubsection*.16}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Logistic Regression}{\reset@font\mtcSSSfont 16}{subsubsection*.15}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Support Vector Machine}{\reset@font\mtcSSSfont 16}{subsubsection*.16}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode K Nearest Neighbors}{\reset@font\mtcSSSfont 16}{subsubsection*.17}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Decision Tree}{\reset@font\mtcSSSfont 16}{subsubsection*.18}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.2}Dimensionality reduction algorithms}{\reset@font\mtcSSfont 16}{subsection.1.1.6.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Linear Discriminant Analysis}{\reset@font\mtcSSSfont 16}{subsubsection*.19}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Decision Tree}{\reset@font\mtcSSSfont 17}{subsubsection*.18}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.2}Dimensionality reduction algorithms}{\reset@font\mtcSSfont 17}{subsection.1.1.6.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Linear Discriminant Analysis}{\reset@font\mtcSSSfont 17}{subsubsection*.19}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Principal Component Analysis}{\reset@font\mtcSSSfont 17}{subsubsection*.20}}
