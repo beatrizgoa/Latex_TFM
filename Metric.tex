@@ -14,14 +14,14 @@ The loss is calculated in the following way:\\
 
 
 \subsection{True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}
-If each predicted class is compared with it real target True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN) values could be calculated. These metrics are used for bi-classes problems, when there is a positive class and a negative class. The positive class, in the particular example of this thesis is being real users, genuine user and \textit{bona fide} and the negative class is the attack class.\\
+If each predicted class is compared with it real target, True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN) values could be calculated. These metrics are used for bi-classes problems, when there is a positive class and a negative class. The positive class, in the particular example of this thesis, is being real users, genuine user or \textit{bona fide} and the negative class is the attack class.\\
 
-Those metrics, are gotten when a positive or negative samples is well or misclassified \cite{Sokolova}.\\
+Those metrics, are gotten when a positive or negative samples is well or misclassified \cite{Sokolova}. The classified sample or predicted is compared with it real target.\\
 
 If a positive sample is classified as positive is a true positive (TP), but if it has been classified as negative is a false negative (FN).\\
 If a negative sample is classified as negative is a true negative (TN), but if it has been classified as positive, is a false positive (FP).\\
 
-From those four metrics, it could be extracted the confusion matrix for binary classification which is defined in \ref{table:ConfusionMatrix}:
+From those four metrics, it could be extracted the confusion matrix for binary classification which is defined in \ref{table:ConfusionMatrix} \cite{ROC}:
 
 \begin{table}[]
 \centering
@@ -37,23 +37,52 @@ From those four metrics, it could be extracted the confusion matrix for binary c
 
 The confusion Matrix resume those four metrics in a simple table. Both the confusion matrix or the parameters individually are widely utilized.\\
 
-\subsection{ROC curve}
-From the confusion matrix, it is possible calculate others parameters \cite{Sokolova}: precision, recall, specificity, accuracy because its values depend on TP, TN, FP, FN as could be seen in it respective equation:\\
+\subsection{ROC curve and Precision and Recall curve}
+From the confusion matrix, it is possible calculate others parameters \cite{Sokolova}: precision, recall, specificity, accuracy because its values depend on TP, TN, FP, FN:\\
+\begin{itemize}
+\item The False Positive Rate (FPR) is defined as the proportion of all the negative samples (\textit{N}) that are classified as positive incorrectly \cite{ROC}:
+
+\begin{equation}
+FPR = FP / N
+\end{equation}
+
+\item The True Positive Rate (TPR) is defined as the proportion of all the positive samples (\textit{P} that are classified correctly \cite{ROC}: 
+
+\begin{equation}
+FPR = TP / P
+\end{equation}
+
+%TPR could be called sensitivity and FPR could be calculated as 1 – specificity \\
+
+\item Precision
+
 \begin{equation}
   precision = \frac{TP}{TP + FP}
 \end{equation}
+\item Recall
 
 \begin{equation}
   recall = \frac{TP}{TP + FN}
 \end{equation}
+\item Accuracy
 
 \begin{equation}
   Accuracy = \frac{TP + TN}{TP + FP + FN + TN}
 \end{equation}
 
-The ROC curve is the representation of \\
+\end{itemize}
 
-\subsection{Precision and Recall}
+ as could be seen in it respective equation:\\
+
+
+
+
+
+
+
+
+The Receiver Operator Characteristic (ROC) curves is the representation how the number of positives samples which has been classified correctly changes with the number of negative samples incorrectly classified. The ROC curve is defined by the parameters False Positive Rate (FPR) and True Positive Rate (TPR) \cite{ROC}.\\
+
 The Precision and Recall curve is the representation of the Precision and the Recall in the same graph.\\
 
 \subsection{APCR and BPCR}
