@@ -1,22 +1,6 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Memoria_TFM.aux
 The style file: ieeetr.bst
-I couldn't open database file references.bib.bib
----line 251 of file Memoria_TFM.aux
- : \bibdata{references.bib
- :                        }
-I'm skipping whatever remains of this command
-I found no database files---while reading file Memoria_TFM.aux
-Warning--I didn't find a database entry for "theano"
-Warning--I didn't find a database entry for "Stutz"
-Warning--I didn't find a database entry for "Sokolova"
-Warning--I didn't find a database entry for "ROC"
-Warning--I didn't find a database entry for "ISO"
-Warning--I didn't find a database entry for "Duda"
-Warning--I didn't find a database entry for "PCAvsLDA"
-Warning--I didn't find a database entry for "MachineLearning"
-Warning--I didn't find a database entry for "SVM1"
-Warning--I didn't find a database entry for "Lenet5"
-Warning--I didn't find a database entry for "Yoshua"
-Warning--I didn't find a database entry for "XavierInitialization"
-Warning--I didn't find a database entry for "LSTM-CNN"
-(There were 2 error messages)
+Database file #1: references.bib
+Warning--entry type for "Stutz" isn't style-file defined
+--line 102 of file references.bib
+(There was 1 warning)

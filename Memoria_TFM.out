@@ -18,7 +18,7 @@
 \BOOKMARK [2][-]{subsection.1.1.5.1}{Cost and Error}{section.1.1.5}% 18
 \BOOKMARK [2][-]{subsection.1.1.5.2}{True Positives \(TP\), True Negatives \(TN\), False Positives \(FP\), False Negatives \(FN\)}{section.1.1.5}% 19
 \BOOKMARK [2][-]{subsection.1.1.5.3}{ROC curve and Precision and Recall curve}{section.1.1.5}% 20
-\BOOKMARK [2][-]{subsection.1.1.5.4}{APCR and BPCR}{section.1.1.5}% 21
+\BOOKMARK [2][-]{subsection.1.1.5.4}{APCER and BPCER}{section.1.1.5}% 21
 \BOOKMARK [1][-]{section.1.1.6}{Classifiers and Reduction of the dimensionality algorithms}{chapter.1.1}% 22
 \BOOKMARK [2][-]{subsection.1.1.6.1}{Classifiers}{section.1.1.6}% 23
 \BOOKMARK [2][-]{subsection.1.1.6.2}{Dimensionality reduction algorithms}{section.1.1.6}% 24
@@ -36,6 +36,6 @@
 \BOOKMARK [2][-]{subsection.1.2.4.2}{As close as possible as Imagenet}{section.1.2.4}% 36
 \BOOKMARK [2][-]{subsection.1.2.4.3}{New database}{section.1.2.4}% 37
 \BOOKMARK [1][-]{section.1.2.5}{Conclusions}{chapter.1.2}% 38
-\BOOKMARK [0][-]{chapter*.74}{Bibliography}{part.1}% 39
-\BOOKMARK [0][-]{chapter*.75}{List of Figures}{part.1}% 40
-\BOOKMARK [0][-]{chapter*.76}{List of Tables}{part.1}% 41
+\BOOKMARK [0][-]{chapter*.75}{Bibliography}{part.1}% 39
+\BOOKMARK [0][-]{chapter*.76}{List of Figures}{part.1}% 40
+\BOOKMARK [0][-]{chapter*.77}{List of Tables}{part.1}% 41

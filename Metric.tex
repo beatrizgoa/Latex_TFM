@@ -1,5 +1,12 @@
 \section{Metrics}
-In this section, the metrics that have used to express the results obtained, in each experiment, are going to be explained.
+To characterize a system, it is necessary metrics that evaluate it. In this section the used metrics along the thesis are exposed.\\
+
+Before describing the parameters it is necessary define that the posed problem is bi-class, that means that only two classes would be used:
+
+\begin{itemize}
+\item Positive class: Are the samples of the real users, the genuine or \textit{bona fide}.
+\item Negative class: Are the different attacks samples which that pretend to be real users but not.
+\end{itemize}
 
 \subsection{Cost and Error}
 The first parameter that is used is the cost. The cost is used while the neural network is training, in fact, is the value that must be minimized during the training. The lower value, The better performance of the network.\\
@@ -12,25 +19,27 @@ The loss is calculated in the following way:\\
   Loss(\theta, D) = - \sum_{i=0}^{|D|}log P(Y = y^{(i)}|x^{(i)}, \theta)
 \end{equation}
 
+The error in the validation process is calculated after the logistic regression classification, because is the classifier used during the training process. The error during the testing procedure depends on the used classifier. In both cases, the error represents the number of misclassified samples over the total samples used.\\ 
+
 
 \subsection{True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}
-If each predicted class is compared with it real target, True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN) values could be calculated. These metrics are used for bi-classes problems, when there is a positive class and a negative class. The positive class, in the particular example of this thesis, is being real users, genuine user or \textit{bona fide} and the negative class is the attack class.\\
+If each predicted class is compared with it real target, True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN) values could be calculated. These metrics are usually used for bi-classes problems.\\
 
 Those metrics, are gotten when a positive or negative samples is well or misclassified \cite{Sokolova}. The classified sample or predicted is compared with it real target.\\
 
 If a positive sample is classified as positive is a true positive (TP), but if it has been classified as negative is a false negative (FN).\\
 If a negative sample is classified as negative is a true negative (TN), but if it has been classified as positive, is a false positive (FP).\\
 
-From those four metrics, it could be extracted the confusion matrix for binary classification which is defined in \ref{table:ConfusionMatrix} \cite{ROC}:
+From those four metrics, it could be extracted the confusion matrix for binary classification which is defined in table \ref{table:ConfusionMatrix} \cite{ROC, Sokolova}:
 
-\begin{table}[]
+\begin{table}[htb]
 \centering
 \begin{tabular}{|
 >{\columncolor[HTML]{EFEFEF}}c |>{\columncolor[HTML]{FFFFFF}}c | >{\columncolor[HTML]{FFFFFF}}c |}
 \hline
 \textbf{Real / Classified} & \cellcolor[HTML]{EFEFEF}\textbf{Positive} & \cellcolor[HTML]{EFEFEF}\textbf{Negative} \\ \hline
 \textbf{Positve}           & TP                                        & FN                                        \\ \hline
-\textbf{Negative}          & FN                                        & TN                                        \\ \hline
+\textbf{Negative}          & FP                                        & TN                                        \\ \hline
 \end{tabular}
 \caption{Confusion Matrix} \label{table:ConfusionMatrix}
 \end{table}
@@ -39,54 +48,56 @@ The confusion Matrix resume those four metrics in a simple table. Both the confu
 
 \subsection{ROC curve and Precision and Recall curve}
 From the confusion matrix, it is possible calculate others parameters \cite{Sokolova}: precision, recall, specificity, accuracy because its values depend on TP, TN, FP, FN:\\
+
 \begin{itemize}
 \item The False Positive Rate (FPR) is defined as the proportion of all the negative samples (\textit{N}) that are classified as positive incorrectly \cite{ROC}:
 
 \begin{equation}
-FPR = FP / N
+FPR = \frac{FP}{N}
 \end{equation}
+Where:
+ \begin{equation}
+  N = FP + TN
+\end{equation} 
 
-\item The True Positive Rate (TPR) is defined as the proportion of all the positive samples (\textit{P} that are classified correctly \cite{ROC}: 
-
+\item The True Positive Rate (TPR) is defined as the proportion of all the positive samples (\textit{P}) that are classified correctly \cite{ROC}. This parameter could be known as Recall too: 
 \begin{equation}
-FPR = TP / P
+TPR = Recall = \frac{TP}{P} 
 \end{equation}
-
+Where:
+ \begin{equation}
+  P = TP + FN
+\end{equation} 
 %TPR could be called sensitivity and FPR could be calculated as 1 – specificity \\
 
-\item Precision
-
+\item Precision is defined as the proportion of real positive samples that has been classified as positive \cite{ROC,Sokolova}:
 \begin{equation}
   precision = \frac{TP}{TP + FP}
 \end{equation}
-\item Recall
 
-\begin{equation}
-  recall = \frac{TP}{TP + FN}
-\end{equation}
-\item Accuracy
-
+\item Accuracy is defined as the proportion of the well-classified samples of all the samples \cite{Sokolova}:
 \begin{equation}
   Accuracy = \frac{TP + TN}{TP + FP + FN + TN}
 \end{equation}
-
 \end{itemize}
 
- as could be seen in it respective equation:\\
+The Receiver Operator Characteristic (ROC) curve is the representation how the number of positives samples which has been classified correctly changes with the number of negative samples incorrectly classified. The ROC curve is defined by the parameters False Positive Rate (FPR) and True Positive Rate (TPR) \cite{ROC}.\\
 
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.4\textwidth]{images_miscelaneus/roccomp.jpg}
+  \caption{ROC curves. Image obtained from \cite{RocImage}}
+  \label{RocImage}
+\end{figure}
 
+The figure \ref{RocImage}, obtained from \cite{RocImage}, it is shown a ROC graph in which three curves are shown.  The yellow one represents a good classification, it is the desired ROC curve, but the blue curve represents a bad classification and it is not the desired result.\\
 
+The Precision and Recall curve is the representation of the Precision and the Recall in the same graph. The desired behaviour of a classification system is a high recall and a high precision because the predictions made by the classifier would be correct.\\
 
+\subsection{APCER and BPCER}
+The ISO/IEC 30107-3 \cite{ISO} is the collaboration result of  the International Organization for Standardization (ISO) with the International Electrotechnical Commission (IEC).\\
 
-
-
-
-The Receiver Operator Characteristic (ROC) curves is the representation how the number of positives samples which has been classified correctly changes with the number of negative samples incorrectly classified. The ROC curve is defined by the parameters False Positive Rate (FPR) and True Positive Rate (TPR) \cite{ROC}.\\
-
-The Precision and Recall curve is the representation of the Precision and the Recall in the same graph.\\
-
-\subsection{APCR and BPCR}
-The ISO/IEC 30107-3 \cite{ISO}
+This ISO defines the terms related to the tests, the reports and the biometric presentation of bioimetrics systems. In addition, the performance methods, specify principles as well as metrics are defined. From this document, the APCER, BPCER and APCER-BPCER curve metrics have been obtained:\\
 
 Attack Presentation Classification Error Rate (APCER) is defined as the proportion of presentation attacks that has been classified incorrectly (as \textit{bona fide} presentation.)\\
 
@@ -100,9 +111,10 @@ Attack Presentation Classification Error Rate (APCER) is defined as the proporti
   BPCER = \frac{\sum_{i=1}^{N_{BF}}Res_{i}}{N_{BF}}
 \end{equation}
 
-
 where: \begin{itemize}
 \item $N_{BF}$ is the number of \textit{bona fide} presentations
 \item $Res_{i}$ is 1 if $i^{th}$ presentation is classified as an attack and 0 if is classified as a \textit{bona fie} presentation.
 \item $N_{PAIS}$ is the number of attack presentations
 \end{itemize}
+
+The APCER-BPCER curve shows in the same graph both parameters. The ideal system would have a low APCER (0) and a low BPCER (0) because it means that samples are not incorrectly classified.\\ 
