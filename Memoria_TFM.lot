@@ -3,8 +3,8 @@
 \contentsline {xpart}{MEMORY}{3}{part.1}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Introduction}{3}{chapter.1.1}
-\contentsline {table}{\numberline {1.1}{\ignorespaces Confusion Matrix\relax }}{13}{table.caption.13}
+\contentsline {table}{\numberline {1.1}{\ignorespaces Confusion Matrix\relax }}{13}{table.caption.11}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Methodology}{19}{chapter.1.2}
-\contentsline {table}{\numberline {2.1}{\ignorespaces Distribution of samples FRAV (RGB + NIR) database\relax }}{39}{table.caption.48}
-\contentsline {table}{\numberline {2.2}{\ignorespaces TP, TN, FP, FN rates in the first trying of imagenet.\relax }}{46}{table.caption.50}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Distribution of samples FRAV (RGB + NIR) database\relax }}{39}{table.caption.46}
+\contentsline {table}{\numberline {2.2}{\ignorespaces TP, TN, FP, FN rates in the first trying of imagenet.\relax }}{46}{table.caption.48}

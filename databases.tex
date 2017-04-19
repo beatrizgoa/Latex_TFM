@@ -67,23 +67,29 @@ One exaple of RGB images of FRAV database are shown in figure \ref{fig:RGB-frav1
 
 \begin{figure}[htb]
 \centering
-\subfigure[printed image attack]{\includegraphics[width=0.18\textwidth]{images_databases/fravrgb/at1-1.JPG} \label{frav_im2-1} }
-\subfigure[mask attack]{\includegraphics[width=0.18\textwidth]{images_databases/fravrgb/at2-1.JPG} \label{frav_im2-2}}
-\subfigure[eye mask attack]{\includegraphics[width=0.18\textwidth]{images_databases/fravrgb/at3-1.JPG} \label{frav_im2-3}}
-\subfigure[tablet attack]{\includegraphics[width=0.18\textwidth]{images_databases/fravrgb/at4-1.JPG} \label{frav_im2-4}}
-\subfigure[real user]{\includegraphics[width=0.18\textwidth]{images_databases/fravrgb/real1.JPG} \label{frav_im2-5}}
+\subfigure[printed RGB image attack]{ \includegraphics[width=0.18\textwidth]{images_databases/fravrgb/at1-1.JPG} \label{frav_im2-1} }
+\subfigure[mask attack RGB]{\includegraphics[width=0.18\textwidth]{images_databases/fravrgb/at2-1.JPG} \label{frav_im2-2}}
+\subfigure[eye mask attack RGB]{\includegraphics[width=0.18\textwidth]{images_databases/fravrgb/at3-1.JPG} \label{frav_im2-3}}
+\subfigure[tablet attack RGB]{\includegraphics[width=0.18\textwidth]{images_databases/fravrgb/at4-1.JPG} \label{frav_im2-4}}
+\subfigure[real user RGB]{\includegraphics[width=0.18\textwidth]{images_databases/fravrgb/real1.JPG} \label{frav_im2-5}} //
 
-\caption{Four attacks and real user from RGB FRAV database } \label{fig:RGB-frav2}
+\subfigure[printed NIR image attack]{\includegraphics[width=0.18\textwidth]{images_databases/fravnnir/at-1.jpg} \label{frav_im-1} }
+\subfigure[mask attack NIR]{\includegraphics[width=0.18\textwidth]{images_databases/fravnnir/at-2.jpg} \label{frav_im3-2}}
+\subfigure[eye mask attack NIR]{\includegraphics[width=0.18\textwidth]{images_databases/fravnnir/at-3.jpg} \label{frav_im3-3}}
+\subfigure[tablet attack NIR]{\includegraphics[width=0.18\textwidth]{images_databases/fravnnir/at-4.jpg} \label{frav_im3-4}}
+\subfigure[real user NIR]{\includegraphics[width=0.18\textwidth]{images_databases/fravnnir/real.jpg} \label{frav_im3-5}} //
+
+\caption{Four attacks and real user of RGB and NIR FRAV database } \label{fig:RGB-frav2}
 \end{figure}
 
 As could be seen in figure \ref{fig:RGB-frav1} and figure \ref{fig:RGB-frav2}, five different classes composes this database. One class is the real user class and the other four classes are four spoofing attacks per user:\\
 
 \begin{itemize}
- \item Original images of people represented in figure \ref{frav_im1-4}.
- \item Images of people printed (attack) represented in figure \ref{frav_im1-1} and figure \ref{frav_im2-1}.
- \item Images of people with a mask (attack)represented in figure \ref{frav_im1-2}and figure \ref{frav_im2-2}.
- \item Images of people with a mask with the eyes cropped (attack)represented in figure \ref{frav_im1-3} and figure \ref{frav_im2-3}
- \item Images of people in a tablet (attack)represented in figure \ref{frav_im1-4} and figure \ref{frav_im2-4}.\\
+ \item Original images of people represented in figure \ref{frav_im1-4} and figure \ref{frav_im2-5} for RBG images and figure \ref{frav_im3-5} for NIR image.
+ \item Images of people printed (attack) represented in figure \ref{frav_im1-1} and figure \ref{frav_im2-1} for RBG images and figure \ref{frav_im3-1} for NIR image.
+ \item Images of people with a mask (attack)represented in figure \ref{frav_im1-2}and figure \ref{frav_im2-2}for RBG images and figure \ref{frav_im3-2} for NIR image.
+ \item Images of people with a mask with the eyes cropped (attack)represented in figure \ref{frav_im1-3} and figure \ref{frav_im2-3} for RBG images and figure \ref{frav_im3-3} for NIR image.
+ \item Images of people in a tablet (attack)represented in figure \ref{frav_im1-4} and figure \ref{frav_im2-4} for RBG images and figure \ref{frav_im3-4} for NIR image.\\
  \end{itemize}
 
 Images of classes can be found in RGB and NIR (not all RGB images has its corresponding NIR image). Characteristics of FRAV images database are the following ones:\\
@@ -99,11 +105,11 @@ Images of classes can be found in RGB and NIR (not all RGB images has its corres
 This database is used in two different ways:
 
 \begin{enumerate}
-  \item Using only RGB images, where there are 933 people, in which each person would have a genuine image and four attack, so 4665 samples are available.
+  \item Using only RGB images (figure \ref{fig:RGB-frav1}), where there are 933 people, in which each person would have a genuine image and four attack, so 4665 samples are available.
   \item Using the RGB and NIR images, where there are 195 people which correspond with NIR images and its corresponding images in RGB. 975 samples are available.
 \end{enumerate}
 
-If RGB and NIR images are used at the same time, two different methods, for using both types of images together, are used:
+If RGB and NIR (figure \ref{fig:RGB-frav2})images are used at the same time, two different methods, for using both types of images together, are used:
 \begin{itemize}
 \item Characteristic level: adding the NIR image as another layer to RGB image, so the resultant image have hightxweightx4 dimensions (NIR images has one layer because it is a gray scale image and RGB images has tree layers, one per each primary color). The network is feed with the resultant images like other times.
 \item Classification level: after the network training and before feeding the classifier, RGB and NIR would be trained separately and its features would be appended as the input of the classifier. 
@@ -117,81 +123,99 @@ When the classes are build, two ways are possible to be done: the first one wher
 \subsection{CASIA dataset}
 The CASIA Face Anti-Spoofing database is a database from the Chinese Academy of Sciences Centre for Biometrics and Security Research (CASIA-CBSR) \cite{Casiadatbase}.
 
-
-In the same way as FRAV dataset, this database is formed by real or genuine images of people and three different attacks of the same people:
-
-\begin{itemize}
- \item Images of people printed (attack).
- \item Images of people with a mask (attack).
- \item Images of people with a mask with the eyes cropped (attack).
- \end{itemize}
-
-
-\begin{itemize}
-\item There are 939 people in each RGB class or 195 in NIR class.
-\item There is one image per person.
-\item The size of each image is 720x1280 pixels.
-\item The faces in images are in the center of the image.\\
-\item Images are RGB.
-\end{itemize}
-
-
-Two people of Casia database could be seen in figure \ref{fig:casia1} and figure \ref{fig:casia2}, where three attacks types could be seen with the real user of both examples.
+A person of CASIA database could be seen in figure \ref{fig:casia2}, where three attacks types could be seen (figure \ref{casia_im1-1}, \ref{casia_im2-1} and \ref{casia_im3-1} ) with the real user (figure \ref{casia_im4-1}). \\
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.2\textwidth]{images_databases/casia/at1-2.jpg}
-\includegraphics[width=0.2\textwidth]{images_databases/casia/at2-2.jpg}
-\includegraphics[width=0.2\textwidth]{images_databases/casia/at3-2.jpg}
-\includegraphics[width=0.2\textwidth]{images_databases/casia/real2.jpg}
+\subfigure[printed image attack]{\includegraphics[width=0.2\textwidth]{images_databases/casia/at1-2.jpg} \label{casia_im1-1} }
+\subfigure[eye printed image attack]{\includegraphics[width=0.2\textwidth]{images_databases/casia/at2-2.jpg} \label{casia_im2-1} }
+\subfigure[tablet attack]{\includegraphics[width=0.2\textwidth]{images_databases/casia/at3-2.jpg} \label{casia_im3-1} }
+\subfigure[real user]{\includegraphics[width=0.2\textwidth]{images_databases/casia/real2.jpg} \label{casia_im4-1} }
 
 \caption{Three attacks and real user from casia database } \label{fig:casia2}
 \end{figure}
 
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.2\textwidth]{images_databases/casia/at1-1.jpg}
-\includegraphics[width=0.2\textwidth]{images_databases/casia/at2-1.jpg}
-\includegraphics[width=0.2\textwidth]{images_databases/casia/at3-1.jpg}
-\includegraphics[width=0.2\textwidth]{images_databases/casia/real1.jpg}
+In the same way as FRAV dataset, this database is formed by real or genuine images of people and three different attacks of the same people:
 
-\caption{Three attacks and real user from casia database } \label{fig:casia1}
-\end{figure}
+\begin{itemize}
+ \item Images of people printed (attack) represented in figure \ref{casia_im1-1}.
+ \item Images of people with a mask with the eyes cropped (attack) represented in figure \ref{casia_im2-1}.
+ \item Tablet attack represented in figure \ref{casia_im3-1}
+  \item Images of real users represented in figure \ref{casia_im4-1}.
+ \end{itemize}
+
+Originally, this database is a video database, in which each sample is a different video, but for the experiments developed no videos (entirely or fed directly to the network) have been used. The CASIA database has been used in two different ways:
+
+\begin{itemize}
+ \item Using a single image per person and class. When this database is used, it is going to be referred as CASIA image database.
+ \item Reading three frames per video and saving each frame as a independent image sample. This database is going to be referred as CASIA video database.
+\end{itemize}
+
+The characteristics of the CASIA image database are the following ones:
+\begin{itemize}
+\item There are 49 images per user, so there are 196 unique samples.
+\item Samples do not have the same size.
+\item Samples are in RGB space.
+\item The face of the image is centred.
+\end{itemize}
+
+The characteristics of the CASIA video database are the following ones:
+\begin{itemize}
+\item There are 8 videos per person (two videos for real user, and two per each attack). There are two videos because one is filmed horizontally and the other vertically, one filmed with a smartphone and the other with the frontal camera of a laptop. 
+\item There are 50 different users, so there are 400 different videos.
+\item For each video 3 frames are read, so there are 1200 unique samples.
+\cite Samples are in RGB space.
+\cite Faces are centred in the image and blink expression and movement of people are produced.
+\end{itemize}
+
+At the time of assigning a class, it could be done using two classes, the positive class to the real users and the negative class to the attacks; If each attack is assigned to a independent class, it would be four different classes, the real user class and three attack classes.\\ 
+
+%\begin{figure}[htb]
+%\centering
+%\includegraphics[width=0.2\textwidth]{images_databases/casia/at1-1.jpg}
+%\includegraphics[width=0.2\textwidth]{images_databases/casia/at2-1.jpg}
+%\includegraphics[width=0.2\textwidth]{images_databases/casia/at3-1.jpg}
+%\includegraphics[width=0.2\textwidth]{images_databases/casia/real1.jpg}
+
+%\caption{Three attacks and real user from casia database } \label{fig:casia1}
+%\end{figure}
 
 \subsection{MSU - MFSD database}
-The MSU Mobile Face Spoofing Database (MFSD) is a video face anti-spoofing database although for this work just images have been used.\\
+The MSU Mobile Face Spoofing Database (MFSD) is a video face anti-spoofing database \cite{MSUdatabse}.\\
 
-The database consist on users and attacks of the same people:\\
+In figure \ref{fig:mfsd} are represented the three attacks and a real user which forms this database:\\
 \begin{itemize}
-\item Genuine users
-\item
+\item Printed photo attack represented in figure \ref{mfsd_im1-1}.
+\item Tablet attack where a video is Replayed represented in figure \ref{mfsd_im1-1}.
+\item Smartphone attack represented in figure \ref{mfsd_im1-1}.
+\item Real user represented in figure \ref{mfsd_im1-1}.
 \end{itemize}
-
-The characteristics of the database are the following ones:\\
-
-\begin{itemize}
-\item 35 images per attack or genuine user.
-\item Images are RGB.
-\item Faces are centered in images.
-\item The size of each image are not equal. Approximately images are 300px heigh and 335px width.
-\end{itemize}
-
-In figure \ref{fig:mfsd} and figure \ref{fig:mfsd2} It is posible to see the three attacks and the real user.\\
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.2\textwidth]{images_databases/MFSD/at1-1.jpg}
-\includegraphics[width=0.2\textwidth]{images_databases/MFSD/at2-1.jpg}
-\includegraphics[width=0.2\textwidth]{images_databases/MFSD/at3-1.jpg}
-\includegraphics[width=0.2\textwidth]{images_databases/MFSD/1.jpg}
-\caption{Three attacks and real user from a user of MFSD database } \label{fig:mfsd}
+\subfigure[printed image attack]{\includegraphics[width=0.2\textwidth]{images_databases/MFSD/at1-1.jpg} \label{mfsd_im1-1} }
+\subfigure[tablet attack]{\includegraphics[width=0.2\textwidth]{images_databases/MFSD/at2-1.jpg} \label{mfsd_im2-1} }
+\subfigure[smartphone attack]{\includegraphics[width=0.2\textwidth]{images_databases/MFSD/at3-1.jpg} \label{mfsd_im3-1} }
+\subfigure[real user]{\includegraphics[width=0.2\textwidth]{images_databases/MFSD/1.jpg} \label{mfsd_im4-1} }
+
+\caption{Three attacks and  real user from a person of MFSD database } \label{fig:mfsd}
 \end{figure}
 
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.2\textwidth]{images_databases/MFSD/at1-2.jpg}
-\includegraphics[width=0.2\textwidth]{images_databases/MFSD/at2-2.jpg}
-\includegraphics[width=0.2\textwidth]{images_databases/MFSD/at3-2.jpg}
-\includegraphics[width=0.2\textwidth]{images_databases/MFSD/2.jpg}
-\caption{Three attacks and real user from a user of MFSD database } \label{fig:mfsd2}
-\end{figure}
+
+Originally, the database is a video one, but just one image per user and class is used. The characteristics of the database are the following ones:\\
+\begin{itemize}
+\item There are 35 images per attack or genuine user. There are 140 unique samples.
+\item Images are in RGB space.
+\item Faces are centred in images.
+\item The size of each image are not equal. Approximately images are 300 pixel heigh and 335 pixel width.
+\end{itemize}
+
+
+%\begin{figure}[htb]
+%\centering
+%\includegraphics[width=0.2\textwidth]{images_databases/MFSD/at1-2.jpg}
+%\includegraphics[width=0.2\textwidth]{images_databases/MFSD/at2-2.jpg}
+%\includegraphics[width=0.2\textwidth]{images_databases/MFSD/at3-2.jpg}
+%\includegraphics[width=0.2\textwidth]{images_databases/MFSD/2.jpg}
+%\caption{Three attacks and real user from a user of MFSD database } \label{fig:mfsd2}
+%\end{figure}

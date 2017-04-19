@@ -24,6 +24,11 @@ Z.~Zhang, J.~Yan, S.~Liu, Z.~Lei, D.~Yi, and S.~Z. Li, ``A face antispoofing
   on Biometrics, {ICB} 2012, New Delhi, India, March 29 - April 1, 2012},
   pp.~26--31, 2012.
 
+\bibitem{MSUdatabse}
+D.~Wen, H.~Han, and A.~K. Jain, ``Face spoof detection with image distortion
+  analysis,'' {\em {IEEE} Trans. Information Forensics and Security}, vol.~10,
+  no.~4, pp.~746--761, 2015.
+
 \bibitem{Stutz}
 D.~Stutz, ``Understanding convolutional neural networks,'' 2014.
 
