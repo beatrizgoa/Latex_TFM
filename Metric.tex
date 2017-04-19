@@ -8,7 +8,7 @@ Before describing the parameters it is necessary define that the posed problem i
 \item Negative class: Are the different attacks samples which that pretend to be real users but not.
 \end{itemize}
 
-\subsection{Cost and Error}
+\subsection{Cost and Error rate}
 The first parameter that is used is the cost. The cost is used while the neural network is training, in fact, is the value that must be minimized during the training. The lower value, The better performance of the network.\\
 
 The cost calculated with the Minibatch Stochastic Gradient Descent (MSGD) is the Negative Log-Likelihood Loss. The MSGD is a variant of the Stochastic Gradient Descent in which the cost is calculated with a mini batch of data, not each sample independently and the Loss is the accumulation \cite{Stutz}.\\
@@ -92,7 +92,7 @@ The Receiver Operator Characteristic (ROC) curve is the representation how the n
 
 The figure \ref{RocImage}, obtained from \cite{RocImage}, it is shown a ROC graph in which three curves are shown.  The yellow one represents a good classification, it is the desired ROC curve, but the blue curve represents a bad classification and it is not the desired result.\\
 
-The Precision and Recall curve is the representation of the Precision and the Recall in the same graph. The desired behaviour of a classification system is a high recall and a high precision because the predictions made by the classifier would be correct.\\
+The Precision and Recall curve is the representation of the Precision and the Recall in the same graph. The desired behaviour of a classification system is a high recall (1) and a high precision (1) because that would mean that predictions made by the classifier are correct.\\
 
 \subsection{APCER and BPCER}
 The ISO/IEC 30107-3 \cite{ISO} is the collaboration result of  the International Organization for Standardization (ISO) with the International Electrotechnical Commission (IEC).\\

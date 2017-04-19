@@ -14,7 +14,7 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.4}CASIA dataset}{\reset@font\mtcSSfont 9}{subsection.1.1.4.4}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.5}MSU - MFSD database}{\reset@font\mtcSSfont 10}{subsection.1.1.4.5}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.5}Metrics}{\reset@font\mtcSfont 11}{section.1.1.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.1}Cost and Error}{\reset@font\mtcSSfont 11}{subsection.1.1.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.1}Cost and Error rate}{\reset@font\mtcSSfont 11}{subsection.1.1.5.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{\reset@font\mtcSSfont 12}{subsection.1.1.5.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.3}ROC curve and Precision and Recall curve}{\reset@font\mtcSSfont 13}{subsection.1.1.5.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.4}APCER and BPCER}{\reset@font\mtcSSfont 14}{subsection.1.1.5.4}}

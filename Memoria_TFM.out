@@ -15,7 +15,7 @@
 \BOOKMARK [2][-]{subsection.1.1.4.4}{CASIA dataset}{section.1.1.4}% 15
 \BOOKMARK [2][-]{subsection.1.1.4.5}{MSU - MFSD database}{section.1.1.4}% 16
 \BOOKMARK [1][-]{section.1.1.5}{Metrics}{chapter.1.1}% 17
-\BOOKMARK [2][-]{subsection.1.1.5.1}{Cost and Error}{section.1.1.5}% 18
+\BOOKMARK [2][-]{subsection.1.1.5.1}{Cost and Error rate}{section.1.1.5}% 18
 \BOOKMARK [2][-]{subsection.1.1.5.2}{True Positives \(TP\), True Negatives \(TN\), False Positives \(FP\), False Negatives \(FN\)}{section.1.1.5}% 19
 \BOOKMARK [2][-]{subsection.1.1.5.3}{ROC curve and Precision and Recall curve}{section.1.1.5}% 20
 \BOOKMARK [2][-]{subsection.1.1.5.4}{APCER and BPCER}{section.1.1.5}% 21
