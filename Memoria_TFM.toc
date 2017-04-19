@@ -6,57 +6,59 @@
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1.1}
 \contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Anti-spoofing}{3}{subsection.1.1.1.1}
-\contentsline {section}{\numberline {1.2}Programming language and frameworks}{3}{section.1.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Python}{3}{subsection.1.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Theano and others frameworks}{3}{subsection.1.1.2.2}
-\contentsline {subsubsection}{Theano}{3}{subsubsection*.3}
+\contentsline {section}{\numberline {1.2}Convolutional Neural Network background theory}{3}{section.1.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Introduction}{3}{subsection.1.1.2.1}
+\contentsline {section}{\numberline {1.3}Programming language and frameworks}{3}{section.1.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Python}{3}{subsection.1.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Theano and others frameworks}{4}{subsection.1.1.3.2}
+\contentsline {subsubsection}{Theano}{4}{subsubsection*.3}
 \contentsline {subsubsection}{NumPy, Scikit-learn and Matplotlib}{4}{subsubsection*.4}
-\contentsline {section}{\numberline {1.3}Databases}{4}{section.1.1.3}
-\contentsline {subsection}{\numberline {1.3.1}MNIST digit database}{5}{subsection.1.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Labeled faces in the wild}{6}{subsection.1.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}FRAV dataset}{7}{subsection.1.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}CASIA dataset}{8}{subsection.1.1.3.4}
-\contentsline {subsection}{\numberline {1.3.5}MSU - MFSD database}{9}{subsection.1.1.3.5}
-\contentsline {section}{\numberline {1.4}Metrics}{11}{section.1.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Cost and Error}{11}{subsection.1.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{11}{subsection.1.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}ROC curve}{12}{subsection.1.1.4.3}
-\contentsline {subsection}{\numberline {1.4.4}Precision and Recall}{12}{subsection.1.1.4.4}
-\contentsline {subsection}{\numberline {1.4.5}APCR and BPCR}{12}{subsection.1.1.4.5}
-\contentsline {section}{\numberline {1.5}Classifiers and Reduction of the dimensionality algorithms}{13}{section.1.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Classifiers}{13}{subsection.1.1.5.1}
-\contentsline {subsubsection}{Logistic Regression}{13}{subsubsection*.14}
-\contentsline {subsubsection}{Support Vector Machine}{13}{subsubsection*.15}
+\contentsline {section}{\numberline {1.4}Databases}{5}{section.1.1.4}
+\contentsline {subsection}{\numberline {1.4.1}MNIST digit database}{5}{subsection.1.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Labeled faces in the wild}{6}{subsection.1.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}FRAV dataset}{6}{subsection.1.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}CASIA dataset}{9}{subsection.1.1.4.4}
+\contentsline {subsection}{\numberline {1.4.5}MSU - MFSD database}{10}{subsection.1.1.4.5}
+\contentsline {section}{\numberline {1.5}Metrics}{10}{section.1.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Cost and Error}{11}{subsection.1.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{11}{subsection.1.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}ROC curve}{12}{subsection.1.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Precision and Recall}{12}{subsection.1.1.5.4}
+\contentsline {subsection}{\numberline {1.5.5}APCR and BPCR}{13}{subsection.1.1.5.5}
+\contentsline {section}{\numberline {1.6}Classifiers and Reduction of the dimensionality algorithms}{13}{section.1.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Classifiers}{14}{subsection.1.1.6.1}
+\contentsline {subsubsection}{Logistic Regression}{14}{subsubsection*.14}
+\contentsline {subsubsection}{Support Vector Machine}{14}{subsubsection*.15}
 \contentsline {subsubsection}{K Nearest Neighbors}{14}{subsubsection*.16}
-\contentsline {subsubsection}{Decision Tree}{14}{subsubsection*.17}
-\contentsline {subsection}{\numberline {1.5.2}Dimensionality reduction algorithms}{14}{subsection.1.1.5.2}
-\contentsline {subsubsection}{Linear Discriminant Analysis}{14}{subsubsection*.18}
-\contentsline {subsubsection}{Principal Component Analysis}{14}{subsubsection*.19}
-\contentsline {chapter}{\numberline {2}Methodology}{15}{chapter.1.2}
-\contentsline {section}{\numberline {2.1}LeNet-5}{15}{section.1.2.1}
-\contentsline {subsection}{\numberline {2.1.1}LeNet-5 specifications}{16}{subsection.1.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}LeNet-5 Results}{17}{subsection.1.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Modifying LeNet}{18}{subsection.1.2.1.3}
-\contentsline {subsubsection}{Changing the batch size}{19}{subsubsection*.24}
-\contentsline {subsubsection}{Changing activation function, normalization and weights initialization}{21}{subsubsection*.26}
-\contentsline {section}{\numberline {2.2}Start working with Faces databases}{25}{section.1.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Using Labeled Faces in the Wild}{25}{subsection.1.2.2.1}
-\contentsline {subsubsection}{Changing learning rate}{25}{subsubsection*.30}
-\contentsline {subsubsection}{Changing convolutional parameters}{27}{subsubsection*.36}
-\contentsline {subsubsection}{Using ReLu as an activation function instead of tanh}{29}{subsubsection*.42}
-\contentsline {subsection}{\numberline {2.2.2}Using FRAV dataset}{30}{subsection.1.2.2.2}
-\contentsline {section}{\numberline {2.3}Defining a new architecture}{32}{section.1.2.3}
-\contentsline {section}{\numberline {2.4}Regenerating the databases}{33}{section.1.2.4}
-\contentsline {subsubsection}{Adding images in characteristic level}{34}{subsubsection*.46}
-\contentsline {subsection}{\numberline {2.4.1}Architecture implemented in Casia videos}{40}{subsection.1.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}As close as possible as Imagenet}{43}{subsection.1.2.4.2}
-\contentsline {subsubsection}{Network configuration for each experiment}{43}{subsubsection*.50}
-\contentsline {subsubsection}{Results with FRAV database}{44}{subsubsection*.51}
-\contentsline {subsubsection}{casia results}{47}{subsubsection*.58}
-\contentsline {subsubsection}{MFSD results}{51}{subsubsection*.63}
-\contentsline {subsection}{\numberline {2.4.3}New database}{52}{subsection.1.2.4.3}
-\contentsline {subsubsection}{experiments}{53}{subsubsection*.67}
-\contentsline {section}{\numberline {2.5}Conclusions}{54}{section.1.2.5}
-\contentsline {chapter}{Bibliography}{61}{chapter*.74}
-\contentsline {chapter}{List of Figures}{63}{chapter*.75}
-\contentsline {chapter}{List of Tables}{67}{chapter*.76}
+\contentsline {subsubsection}{Decision Tree}{15}{subsubsection*.17}
+\contentsline {subsection}{\numberline {1.6.2}Dimensionality reduction algorithms}{15}{subsection.1.1.6.2}
+\contentsline {subsubsection}{Linear Discriminant Analysis}{15}{subsubsection*.18}
+\contentsline {subsubsection}{Principal Component Analysis}{15}{subsubsection*.19}
+\contentsline {chapter}{\numberline {2}Methodology}{17}{chapter.1.2}
+\contentsline {section}{\numberline {2.1}LeNet-5}{17}{section.1.2.1}
+\contentsline {subsection}{\numberline {2.1.1}LeNet-5 specifications}{18}{subsection.1.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}LeNet-5 Results}{19}{subsection.1.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Modifying LeNet}{20}{subsection.1.2.1.3}
+\contentsline {subsubsection}{Changing the batch size}{21}{subsubsection*.24}
+\contentsline {subsubsection}{Changing activation function, normalization and weights initialization}{23}{subsubsection*.26}
+\contentsline {section}{\numberline {2.2}Start working with Faces databases}{27}{section.1.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Using Labeled Faces in the Wild}{27}{subsection.1.2.2.1}
+\contentsline {subsubsection}{Changing learning rate}{27}{subsubsection*.30}
+\contentsline {subsubsection}{Changing convolutional parameters}{29}{subsubsection*.36}
+\contentsline {subsubsection}{Using ReLu as an activation function instead of tanh}{31}{subsubsection*.42}
+\contentsline {subsection}{\numberline {2.2.2}Using FRAV dataset}{32}{subsection.1.2.2.2}
+\contentsline {section}{\numberline {2.3}Defining a new architecture}{34}{section.1.2.3}
+\contentsline {section}{\numberline {2.4}Regenerating the databases}{35}{section.1.2.4}
+\contentsline {subsubsection}{Adding images in characteristic level}{36}{subsubsection*.46}
+\contentsline {subsection}{\numberline {2.4.1}Architecture implemented in Casia videos}{42}{subsection.1.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}As close as possible as Imagenet}{45}{subsection.1.2.4.2}
+\contentsline {subsubsection}{Network configuration for each experiment}{45}{subsubsection*.50}
+\contentsline {subsubsection}{Results with FRAV database}{46}{subsubsection*.51}
+\contentsline {subsubsection}{casia results}{49}{subsubsection*.58}
+\contentsline {subsubsection}{MFSD results}{53}{subsubsection*.63}
+\contentsline {subsection}{\numberline {2.4.3}New database}{54}{subsection.1.2.4.3}
+\contentsline {subsubsection}{experiments}{55}{subsubsection*.67}
+\contentsline {section}{\numberline {2.5}Conclusions}{56}{section.1.2.5}
+\contentsline {chapter}{Bibliography}{63}{chapter*.74}
+\contentsline {chapter}{List of Figures}{65}{chapter*.75}
+\contentsline {chapter}{List of Tables}{69}{chapter*.76}

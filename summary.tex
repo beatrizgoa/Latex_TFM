@@ -19,6 +19,8 @@ The specifications of the downloaded LeNet code are the architecture of LeNet-5 
 
 The classifier which has been used is the logistic regression which is trained at the same time as the convolutional neural network. The activation function of the convolutional layers and the logistic regression is tanh. The learning rate used is 0.1 and the network runs by 200 epoch.\\
 
+The cost function or loss that must be minimized during the training is the negative log-likelihood. LeNet-5 uses the stochastic gradient method with mini-batches (MSGD).\\
+
 The data used is MNIST digit database, whose characteristics are described in section \ref{subsec:MNIST}. The data comes split in three subsets: training, testing and validating. Each subset is used for training, testing or validating respectively.\\
 
 The data is not fed to the network in one go, each subset is grouped in smalls subsets called batches and whose size is chosen by user. In the code available of LeNet-5 the batch size is 500 samples. The network is fed by batches, so the size of the net depends on the batch size not the (train, test or validate) subset. In this example, the batch size, is the same for the three subsets. When the subset is divide into batches, if there are some samples that are not enough for a batch, those samples are not used.\\

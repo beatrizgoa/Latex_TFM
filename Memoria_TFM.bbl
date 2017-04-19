@@ -4,6 +4,9 @@
 T.~D. Team, ``Theano: A {Python} framework for fast computation of mathematical
   expressions,'' {\em arXiv e-prints}, vol.~abs/1605.02688, May 2016.
 
+\bibitem{Stutz}
+D.~Stutz, ``Understanding convolutional neural networks,'' 2014.
+
 \bibitem{Sokolova}
 M.~Sokolova, N.~Japkowicz, and S.~Szpakowicz, ``Beyond accuracy, f-score and
   roc: A family of discriminant measures for performance evaluation,'' in {\em
