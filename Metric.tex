@@ -75,7 +75,7 @@ Where:
   precision = \frac{TP}{TP + FP}
 \end{equation}
 
-\item Accuracy is defined as the proportion of the well-classified samples of all the samples \cite{Sokolova}:
+\item Accuracy is defined as the proportion of the well-classified samples of all the samples \cite{Sokolova}. The classifiers implemented in scikit-learn library return this value as metric.:
 \begin{equation}
   Accuracy = \frac{TP + TN}{TP + FP + FN + TN}
 \end{equation}
@@ -91,6 +91,8 @@ The Receiver Operator Characteristic (ROC) curve is the representation how the n
 \end{figure}
 
 The figure \ref{RocImage}, obtained from \cite{RocImage}, it is shown a ROC graph in which three curves are shown.  The yellow one represents a good classification, it is the desired ROC curve, but the blue curve represents a bad classification and it is not the desired result.\\
+
+From the ROC curve, the Area Under the Curve (AUC) could be obtained, this value is the integral of the ROC curve, and its maximun value is 1 that means a perfect performance of the classifier. If the value of this parameter is lower than 0.7 the classifier performance should be improved significantly.\\
 
 The Precision and Recall curve is the representation of the Precision and the Recall in the same graph. The desired behaviour of a classification system is a high recall (1) and a high precision (1) because that would mean that predictions made by the classifier are correct.\\
 
