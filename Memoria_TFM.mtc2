@@ -17,7 +17,7 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.1}Cost and Error rate}{\reset@font\mtcSSfont 12}{subsection.1.1.5.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{\reset@font\mtcSSfont 13}{subsection.1.1.5.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.3}ROC curve and Precision and Recall curve}{\reset@font\mtcSSfont 13}{subsection.1.1.5.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.4}APCER and BPCER}{\reset@font\mtcSSfont 14}{subsection.1.1.5.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.4}APCER and BPCER}{\reset@font\mtcSSfont 15}{subsection.1.1.5.4}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.6}Classifiers and Reduction of the dimensionality algorithms}{\reset@font\mtcSfont 16}{section.1.1.6}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.1}Classifiers}{\reset@font\mtcSSfont 16}{subsection.1.1.6.1}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Logistic Regression}{\reset@font\mtcSSSfont 16}{subsubsection*.13}}

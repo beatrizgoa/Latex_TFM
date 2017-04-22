@@ -95,11 +95,11 @@ As could be seen in figure \ref{fig:RGB-frav1} and figure \ref{fig:RGB-frav2}, f
 Images of classes can be found in RGB and NIR (not all RGB images has its corresponding NIR image). Characteristics of FRAV images database are the following ones:\\
 
 \begin{itemize}
- \item There are 939 people in each RGB class or 195 in each NIR class.
+\item There are 939 people in each RGB class or 195 in each NIR class.
 \item There is one image per person.
 \item Each image has it is own shape.
-\item As it real user has all the four attaks, all the classes has the same number of samples.
-\item The faces are centred in the image.\\
+\item As it real user has all the four attack, all the classes has the same number of samples.
+\item The faces are centered in the image.\\
 \end{itemize}
 
 This database is used in two different ways:
@@ -112,10 +112,10 @@ This database is used in two different ways:
 If RGB and NIR (figure \ref{fig:RGB-frav2})images are used at the same time, two different methods, for using both types of images together, are used:
 \begin{itemize}
 \item Characteristic level: adding the NIR image as another layer to RGB image, so the resultant image have hightxweightx4 dimensions (NIR images has one layer because it is a gray scale image and RGB images has tree layers, one per each primary color). The network is feed with the resultant images like other times.
-\item Classification level: after the network training and before feeding the classifier, RGB and NIR would be trained separately and its features would be appended as the input of the classifier. 
+\item Classification level: after the network training and before feeding the classifier, RGB and NIR would be trained separately and its features would be appended as the input of the classifier.
 \end{itemize}
 
-To conclude, this database is going to be used in the three different ways: just RGB images, RGB and NIR images added in characteristic level or classification level.\\ 
+To conclude, this database is going to be used in the three different ways: just RGB images, RGB and NIR images added in characteristic level or classification level.\\
 
 When the classes are build, two ways are possible to be done: the first one where real people are one class (positive) and the different attacks are other class (negatives), so two classes have been used; and the second way where each attacks correspond with a class, so five classes (4 attacks and 1 real) have been used.\\
 
@@ -161,14 +161,14 @@ The characteristics of the CASIA image database are the following ones:
 
 The characteristics of the CASIA video database are the following ones:
 \begin{itemize}
-\item There are 8 videos per person (two videos for real user, and two per each attack). There are two videos because one is filmed horizontally and the other vertically, one filmed with a smartphone and the other with the frontal camera of a laptop. 
+\item There are 8 videos per person (two videos for real user, and two per each attack). There are two videos because one is filmed horizontally and the other vertically, one filmed with a smartphone and the other with the frontal camera of a laptop.
 \item There are 50 different users, so there are 400 different videos.
 \item For each video 3 frames are read, so there are 1200 unique samples.
 \cite Samples are in RGB space.
 \cite Faces are centred in the image and blink expression and movement of people are produced.
 \end{itemize}
 
-At the time of assigning a class, it could be done using two classes, the positive class to the real users and the negative class to the attacks; If each attack is assigned to a independent class, it would be four different classes, the real user class and three attack classes.\\ 
+At the time of assigning a class, it could be done using two classes, the positive class to the real users and the negative class to the attacks; If each attack is assigned to a independent class, it would be four different classes, the real user class and three attack classes.\\
 
 %\begin{figure}[htb]
 %\centering

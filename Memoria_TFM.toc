@@ -23,7 +23,7 @@
 \contentsline {subsection}{\numberline {1.5.1}Cost and Error rate}{12}{subsection.1.1.5.1}
 \contentsline {subsection}{\numberline {1.5.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{13}{subsection.1.1.5.2}
 \contentsline {subsection}{\numberline {1.5.3}ROC curve and Precision and Recall curve}{13}{subsection.1.1.5.3}
-\contentsline {subsection}{\numberline {1.5.4}APCER and BPCER}{14}{subsection.1.1.5.4}
+\contentsline {subsection}{\numberline {1.5.4}APCER and BPCER}{15}{subsection.1.1.5.4}
 \contentsline {section}{\numberline {1.6}Classifiers and Reduction of the dimensionality algorithms}{16}{section.1.1.6}
 \contentsline {subsection}{\numberline {1.6.1}Classifiers}{16}{subsection.1.1.6.1}
 \contentsline {subsubsection}{Logistic Regression}{16}{subsubsection*.13}
@@ -57,7 +57,8 @@
 \contentsline {subsubsection}{MFSD results}{55}{subsubsection*.62}
 \contentsline {subsection}{\numberline {2.4.3}New database}{56}{subsection.1.2.4.3}
 \contentsline {subsubsection}{experiments}{57}{subsubsection*.66}
-\contentsline {section}{\numberline {2.5}Conclusions}{58}{section.1.2.5}
+\contentsline {section}{\numberline {2.5}Final architecture}{58}{section.1.2.5}
+\contentsline {section}{\numberline {2.6}Conclusions}{59}{section.1.2.6}
 \contentsline {chapter}{Bibliography}{65}{chapter*.73}
 \contentsline {chapter}{List of Figures}{67}{chapter*.74}
 \contentsline {chapter}{List of Tables}{71}{chapter*.75}

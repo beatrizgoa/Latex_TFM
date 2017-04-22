@@ -1,8 +1,51 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Memoria_TFM.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Memoria_TFM.aux
 The style file: ieeetr.bst
 Database file #1: references.bib
 Warning--entry type for "Stutz" isn't style-file defined
 --line 97 of file references.bib
 Warning--I didn't find a database entry for "S"
 Warning--I didn't find a database entry for "F"
+You've used 19 entries,
+            1876 wiz_defined-function locations,
+            596 strings with 6762 characters,
+and the built_in function-call counts, 4364 in all, are:
+= -- 427
+> -- 140
+< -- 1
++ -- 56
+- -- 37
+* -- 264
+:= -- 582
+add.period$ -- 24
+call.type$ -- 19
+change.case$ -- 17
+chr.to.int$ -- 0
+cite$ -- 19
+duplicate$ -- 234
+empty$ -- 479
+format.name$ -- 37
+if$ -- 1092
+int.to.chr$ -- 0
+int.to.str$ -- 19
+missing$ -- 15
+newline$ -- 65
+num.names$ -- 15
+pop$ -- 105
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 147
+stack$ -- 0
+substring$ -- 260
+swap$ -- 80
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 38
+width$ -- 21
+write$ -- 169
 (There were 3 warnings)
