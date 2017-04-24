@@ -893,4 +893,14 @@ For each database, it has been split randomly into train, test and validate subs
 
 The classifiers used to classify the features of the output of the CNN and get the results are the SVM (with RBF and linear kernel), KNN, Decision Tree and logistic regression. Also, PCA and LDA techniques has been used with each classifier separately to reduce the dimensionality of the features.\\
 
-With the purpose of having a more general results, all the training, validation and testing, process has been repeated three times, those times are differentiated among them in the seed if the pseudo-randomized initialization of the weights.\\
+The classifiers, before use them, has been personalize to each and particular time (for each database and if LDA or PCA is used). For that, cross validation has been used, more concretely, the \textit{cros\_val\_Score()} function from sklarn has used with 10 folders.\\
+
+\begin{itemize}
+\item For SMV classifier, the C parameter has been searched among the following values: 0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 2, 3, 5 and 10.
+\item For KNN classifier, the number of neighbours (K)has been searched among the following values: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 and 30.
+\item For Deep Trees classifier, the depth of the tree has been searches among the following values: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 and 30.
+\item For PCA, the number of components has been found in a range of 3 to 5000, in 3 to 3 steps.
+\item For LDA, the number of components has been found in a range of 1 to the length of the characteristic vector in 10 to 10 steps.
+\end{itemize} 
+
+With the purpose of having a more general results, all the training, validation and testing (with the classification) processes have been repeated three times, those times are differentiated among them in the seed if the pseudo-randomized initialization of the weights.\\
