@@ -18,12 +18,13 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{\reset@font\mtcSSfont 13}{subsection.1.1.5.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.3}ROC curve and Precision and Recall curve}{\reset@font\mtcSSfont 13}{subsection.1.1.5.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.4}APCER and BPCER}{\reset@font\mtcSSfont 15}{subsection.1.1.5.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.6}Classifiers and Reduction of the dimensionality algorithms}{\reset@font\mtcSfont 16}{section.1.1.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.6}Classifiers, Reduction of the dimensionality algorithms and Cross Validation}{\reset@font\mtcSfont 16}{section.1.1.6}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.1}Classifiers}{\reset@font\mtcSSfont 16}{subsection.1.1.6.1}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Logistic Regression}{\reset@font\mtcSSSfont 16}{subsubsection*.13}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Support Vector Machine}{\reset@font\mtcSSSfont 16}{subsubsection*.14}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode K Nearest Neighbors}{\reset@font\mtcSSSfont 17}{subsubsection*.15}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Decision Tree}{\reset@font\mtcSSSfont 17}{subsubsection*.16}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.2}Dimensionality reduction algorithms}{\reset@font\mtcSSfont 17}{subsection.1.1.6.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Linear Discriminant Analysis}{\reset@font\mtcSSSfont 17}{subsubsection*.17}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Principal Component Analysis}{\reset@font\mtcSSSfont 18}{subsubsection*.18}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Support Vector Machine}{\reset@font\mtcSSSfont 17}{subsubsection*.14}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode K Nearest Neighbours}{\reset@font\mtcSSSfont 18}{subsubsection*.16}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Decision Tree}{\reset@font\mtcSSSfont 19}{subsubsection*.17}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.2}Dimensionality reduction algorithms}{\reset@font\mtcSSfont 19}{subsection.1.1.6.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Linear Discriminant Analysis}{\reset@font\mtcSSSfont 19}{subsubsection*.18}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Principal Component Analysis}{\reset@font\mtcSSSfont 19}{subsubsection*.19}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.3}Cross Validation}{\reset@font\mtcSSfont 19}{subsection.1.1.6.3}}

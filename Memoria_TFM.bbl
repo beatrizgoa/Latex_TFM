@@ -59,14 +59,28 @@ R.~O. Duda, P.~E. Hart, and D.~G. Stork, {\em Pattern Classification (2Nd
 A.~M. Martinez and A.~C. Kak, ``Pca versus lda,'' {\em IEEE TRANSACTIONS ON
   PATTERN ANALYSIS AND MACHINE INTELLIGENCE}, vol.~23, pp.~228--233, 2001.
 
+\bibitem{ClassifiersReview}
+S.~Dreiseitl and L.~Ohno-Machado, ``Logistic regression and artificial neural
+  network classification models: a methodology review,'' {\em Journal of
+  Biomedical Informatics}, vol.~35, no.~5–6, pp.~352 -- 359, 2002.
+
 \bibitem{MachineLearning}
 C.~M. Bishop, {\em Pattern Recognition and Machine Learning (Information
   Science and Statistics)}.
 \newblock Springer-Verlag New York, Inc., 2006.
 
+\bibitem{SVMimage}
+``Opencv - understanding svm.''
+  \urlhttp://docs.opencv.org/3.1.0/d4/db1/tutorial_py_svm_basics.html.
+
 \bibitem{SVM1}
 D.~Ciobanu, ``Using svm for classification,'' {\em Acta Universitatis Danubius.
   OEconomica}, no.~5(5), pp.~209--224, 2012.
+
+\bibitem{practicalguideSVM}
+C.-W. Hsu, C.-C. Chang, and C.-J. Lin, ``A practical guide to support vector
+  classification,'' tech. rep., Department of Computer Science, National Taiwan
+  University, 2003.
 
 \bibitem{Lenet5}
 Y.~Lecun, L.~Bottou, Y.~Bengio, and P.~Haffner, ``Gradient-based learning
