@@ -70,8 +70,9 @@ C.~M. Bishop, {\em Pattern Recognition and Machine Learning (Information
 \newblock Springer-Verlag New York, Inc., 2006.
 
 \bibitem{SVMimage}
-``Opencv - understanding svm.''
-  \urlhttp://docs.opencv.org/3.1.0/d4/db1/tutorial_py_svm_basics.html.
+``Opencv - undestanding svm.''
+  \url{http://docs.opencv.org/3.1.0/d4/db1/tutorial_py_svm_basics.html}.
+\newblock Accessed: 2017-04-24.
 
 \bibitem{SVM1}
 D.~Ciobanu, ``Using svm for classification,'' {\em Acta Universitatis Danubius.
@@ -81,6 +82,11 @@ D.~Ciobanu, ``Using svm for classification,'' {\em Acta Universitatis Danubius.
 C.-W. Hsu, C.-C. Chang, and C.-J. Lin, ``A practical guide to support vector
   classification,'' tech. rep., Department of Computer Science, National Taiwan
   University, 2003.
+
+\bibitem{Treeimage}
+``Scikit-learn - decision tree.''
+  \url{http://scikit-learn.org/stable/modules/tree.html}.
+\newblock Accessed: 2017-04-28.
 
 \bibitem{Lenet5}
 Y.~Lecun, L.~Bottou, Y.~Bengio, and P.~Haffner, ``Gradient-based learning

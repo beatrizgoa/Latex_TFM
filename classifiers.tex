@@ -77,10 +77,15 @@ Where $N_k$ are the observations of a class $C_k$ and $K_k$ of it class points a
 The \textit{K} value is fixed, should be calculated and optimized by user of each application.\\
 
 \subsubsection{Decision Tree}
-Decision Tree classifier is based in a natural classification based in a sequence of true/false or yes/no questions \cite{Duda}.\\
+Decision Tree classifier is based in a natural classification based in a sequence of true/false or yes/no questions \cite{Duda}. It could be used as a binary classifier or with \textit{k} classes. \\
 
+The input data is split to maximize its separation, resulting a tree structure \cite{ClassifiersReview} as is described in figure \ref{fig:Tree} (image obtained from \cite{Treeimage}). Where depending on the features, a sample changes from a principal branch to a branch of this until a class is signed. The last branches correspond to the classes and the same class could be in different final branches. \\
 
-
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\textwidth]{images_miscelaneus/tree.png}
+\caption{Decision Tree Classifier. Image obtained from \cite{Treeimage}} \label{fig:Tree}
+\end{figure}
 
 \subsection{Dimensionality reduction algorithms}
 The objective of those algorithms is transform the characteristic vector into another characteristic vector but whit a lower dimensionality. Linear methods, that projects the dimensional data onto an another space whose dimensionality is lower \cite{Duda}, have been used. The two techniques, the most common used, are described and used along the thesis.\\
@@ -88,6 +93,14 @@ The objective of those algorithms is transform the characteristic vector into an
 Linear Discriminant Analysis (LDA) looks for the vectors in the space that best discriminate among classes \cite{PCAvsLDA}.
 
 \subsubsection{Principal Component Analysis}
-Principal Component Analysis (PCA) uses a subspace in which the the variance direction among basis vectors is maximum in the original space \cite{PCAvsLDA}
+Principal Component Analysis (PCA) uses a subspace in which the the variance direction among basis vectors is maximum in the original space \cite{PCAvsLDA}. PCA faces the problem of reducing the \textit{n} dimensional samples vector to a single vector \textit{X\_0}. The \textit{X\_0} vector would be the result of the sum of the squared distances between \textit{X\_0} and various features \textit{X\_k} is the smallest cite{Duda}.\\
+
+
 
 \subsection{Cross Validation}
+Classifiers are defined by certain parameters. For example,the number of neighbours (\textit{k}) in KNN classifier is a value that user have to determine. In this case is useful use Cross Validation to determine the value of \textit{k}.\\
+
+This method uses the training samples. They are split in groups (\textit{kfolds}) and used to train and test the classifier with different values; in the KNN case, the value k would be change. A metric (score) is calculated and it is possible to determine the value of the classifier in which the metric is the optimum.\\
+
+This technique has been use to calculate the value which a classifier is defined. For SVM classifier the value \textit{C}, for KNN classifier the value {k}, for Decision Tree classifier the depth of the tree, softmax classifier to determine the learning rate when it has not been trained at the same time of the network and for PCA and LDA the number of components. \\
+ 

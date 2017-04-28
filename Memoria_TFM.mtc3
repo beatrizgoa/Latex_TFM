@@ -2,24 +2,24 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.1}LeNet-5 specifications}{\reset@font\mtcSSfont 22}{subsection.1.2.1.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.2}LeNet-5 Results}{\reset@font\mtcSSfont 23}{subsection.1.2.1.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.3}Modifying LeNet}{\reset@font\mtcSSfont 24}{subsection.1.2.1.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Changing the batch size}{\reset@font\mtcSSSfont 25}{subsubsection*.24}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Changing activation function, normalization and weights initialization}{\reset@font\mtcSSSfont 27}{subsubsection*.26}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Changing the batch size}{\reset@font\mtcSSSfont 25}{subsubsection*.25}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Changing activation function, normalization and weights initialization}{\reset@font\mtcSSSfont 27}{subsubsection*.27}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Start working with Faces databases}{\reset@font\mtcSfont 31}{section.1.2.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Using Labeled Faces in the Wild}{\reset@font\mtcSSfont 31}{subsection.1.2.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Changing learning rate}{\reset@font\mtcSSSfont 31}{subsubsection*.30}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Changing convolutional parameters}{\reset@font\mtcSSSfont 33}{subsubsection*.36}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Using ReLu as an activation function instead of tanh}{\reset@font\mtcSSSfont 35}{subsubsection*.42}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Changing learning rate}{\reset@font\mtcSSSfont 31}{subsubsection*.31}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Changing convolutional parameters}{\reset@font\mtcSSSfont 33}{subsubsection*.37}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Using ReLu as an activation function instead of tanh}{\reset@font\mtcSSSfont 35}{subsubsection*.43}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Using FRAV dataset}{\reset@font\mtcSSfont 36}{subsection.1.2.2.2}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Defining a new architecture}{\reset@font\mtcSfont 38}{section.1.2.3}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Regenerating the databases}{\reset@font\mtcSfont 39}{section.1.2.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Adding images in characteristic level}{\reset@font\mtcSSSfont 40}{subsubsection*.46}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Adding images in characteristic level}{\reset@font\mtcSSSfont 40}{subsubsection*.47}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}Architecture implemented in Casia videos}{\reset@font\mtcSSfont 46}{subsection.1.2.4.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}As close as possible as Imagenet}{\reset@font\mtcSSfont 49}{subsection.1.2.4.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Network configuration for each experiment}{\reset@font\mtcSSSfont 49}{subsubsection*.50}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Results with FRAV database}{\reset@font\mtcSSSfont 50}{subsubsection*.51}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode casia results}{\reset@font\mtcSSSfont 52}{subsubsection*.58}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode MFSD results}{\reset@font\mtcSSSfont 57}{subsubsection*.63}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Network configuration for each experiment}{\reset@font\mtcSSSfont 49}{subsubsection*.51}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Results with FRAV database}{\reset@font\mtcSSSfont 50}{subsubsection*.52}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode casia results}{\reset@font\mtcSSSfont 53}{subsubsection*.59}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode MFSD results}{\reset@font\mtcSSSfont 57}{subsubsection*.64}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.3}New database}{\reset@font\mtcSSfont 58}{subsection.1.2.4.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode experiments}{\reset@font\mtcSSSfont 59}{subsubsection*.67}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode experiments}{\reset@font\mtcSSSfont 59}{subsubsection*.68}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Final architecture}{\reset@font\mtcSfont 60}{section.1.2.5}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}Conclusions}{\reset@font\mtcSfont 61}{section.1.2.6}}
