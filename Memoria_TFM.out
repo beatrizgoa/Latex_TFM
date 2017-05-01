@@ -5,39 +5,41 @@
 \BOOKMARK [2][-]{subsection.1.1.1.1}{Anti-spoofing}{section.1.1.1}% 5
 \BOOKMARK [1][-]{section.1.1.2}{Convolutional Neural Network background theory}{chapter.1.1}% 6
 \BOOKMARK [2][-]{subsection.1.1.2.1}{Introduction}{section.1.1.2}% 7
-\BOOKMARK [1][-]{section.1.1.3}{Programming language and frameworks}{chapter.1.1}% 8
-\BOOKMARK [2][-]{subsection.1.1.3.1}{Python}{section.1.1.3}% 9
-\BOOKMARK [2][-]{subsection.1.1.3.2}{Theano and others frameworks}{section.1.1.3}% 10
-\BOOKMARK [1][-]{section.1.1.4}{Databases}{chapter.1.1}% 11
-\BOOKMARK [2][-]{subsection.1.1.4.1}{MNIST digit database}{section.1.1.4}% 12
-\BOOKMARK [2][-]{subsection.1.1.4.2}{Labeled faces in the wild}{section.1.1.4}% 13
-\BOOKMARK [2][-]{subsection.1.1.4.3}{FRAV dataset}{section.1.1.4}% 14
-\BOOKMARK [2][-]{subsection.1.1.4.4}{CASIA dataset}{section.1.1.4}% 15
-\BOOKMARK [2][-]{subsection.1.1.4.5}{MSU - MFSD database}{section.1.1.4}% 16
-\BOOKMARK [1][-]{section.1.1.5}{Metrics}{chapter.1.1}% 17
-\BOOKMARK [2][-]{subsection.1.1.5.1}{Cost and Error rate}{section.1.1.5}% 18
-\BOOKMARK [2][-]{subsection.1.1.5.2}{True Positives \(TP\), True Negatives \(TN\), False Positives \(FP\), False Negatives \(FN\)}{section.1.1.5}% 19
-\BOOKMARK [2][-]{subsection.1.1.5.3}{ROC curve and Precision and Recall curve}{section.1.1.5}% 20
-\BOOKMARK [2][-]{subsection.1.1.5.4}{APCER and BPCER}{section.1.1.5}% 21
-\BOOKMARK [1][-]{section.1.1.6}{Classifiers, Reduction of the dimensionality algorithms and Cross Validation}{chapter.1.1}% 22
-\BOOKMARK [2][-]{subsection.1.1.6.1}{Classifiers}{section.1.1.6}% 23
-\BOOKMARK [2][-]{subsection.1.1.6.2}{Dimensionality reduction algorithms}{section.1.1.6}% 24
-\BOOKMARK [2][-]{subsection.1.1.6.3}{Cross Validation}{section.1.1.6}% 25
-\BOOKMARK [0][-]{chapter.1.2}{Methodology}{part.1}% 26
-\BOOKMARK [1][-]{section.1.2.1}{LeNet-5}{chapter.1.2}% 27
-\BOOKMARK [2][-]{subsection.1.2.1.1}{LeNet-5 specifications}{section.1.2.1}% 28
-\BOOKMARK [2][-]{subsection.1.2.1.2}{LeNet-5 Results}{section.1.2.1}% 29
-\BOOKMARK [2][-]{subsection.1.2.1.3}{Modifying LeNet}{section.1.2.1}% 30
-\BOOKMARK [1][-]{section.1.2.2}{Start working with Faces databases}{chapter.1.2}% 31
-\BOOKMARK [2][-]{subsection.1.2.2.1}{Using Labeled Faces in the Wild}{section.1.2.2}% 32
-\BOOKMARK [2][-]{subsection.1.2.2.2}{Using FRAV dataset}{section.1.2.2}% 33
-\BOOKMARK [1][-]{section.1.2.3}{Defining a new architecture}{chapter.1.2}% 34
-\BOOKMARK [1][-]{section.1.2.4}{Regenerating the databases}{chapter.1.2}% 35
-\BOOKMARK [2][-]{subsection.1.2.4.1}{Architecture implemented in Casia videos}{section.1.2.4}% 36
-\BOOKMARK [2][-]{subsection.1.2.4.2}{As close as possible as Imagenet}{section.1.2.4}% 37
-\BOOKMARK [2][-]{subsection.1.2.4.3}{New database}{section.1.2.4}% 38
-\BOOKMARK [1][-]{section.1.2.5}{Final architecture}{chapter.1.2}% 39
-\BOOKMARK [1][-]{section.1.2.6}{Conclusions}{chapter.1.2}% 40
-\BOOKMARK [0][-]{chapter*.75}{Bibliography}{part.1}% 41
-\BOOKMARK [0][-]{chapter*.76}{List of Figures}{part.1}% 42
-\BOOKMARK [0][-]{chapter*.77}{List of Tables}{part.1}% 43
+\BOOKMARK [2][-]{subsection.1.1.2.2}{Biological Neural Networks}{section.1.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.1.2.3}{Artificial Neural Networks \(ANN\)}{section.1.1.2}% 9
+\BOOKMARK [1][-]{section.1.1.3}{Programming language and frameworks}{chapter.1.1}% 10
+\BOOKMARK [2][-]{subsection.1.1.3.1}{Python}{section.1.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.1.3.2}{Theano and others frameworks}{section.1.1.3}% 12
+\BOOKMARK [1][-]{section.1.1.4}{Databases}{chapter.1.1}% 13
+\BOOKMARK [2][-]{subsection.1.1.4.1}{MNIST digit database}{section.1.1.4}% 14
+\BOOKMARK [2][-]{subsection.1.1.4.2}{Labeled faces in the wild}{section.1.1.4}% 15
+\BOOKMARK [2][-]{subsection.1.1.4.3}{FRAV dataset}{section.1.1.4}% 16
+\BOOKMARK [2][-]{subsection.1.1.4.4}{CASIA dataset}{section.1.1.4}% 17
+\BOOKMARK [2][-]{subsection.1.1.4.5}{MSU - MFSD database}{section.1.1.4}% 18
+\BOOKMARK [1][-]{section.1.1.5}{Metrics}{chapter.1.1}% 19
+\BOOKMARK [2][-]{subsection.1.1.5.1}{Cost and Error rate}{section.1.1.5}% 20
+\BOOKMARK [2][-]{subsection.1.1.5.2}{True Positives \(TP\), True Negatives \(TN\), False Positives \(FP\), False Negatives \(FN\)}{section.1.1.5}% 21
+\BOOKMARK [2][-]{subsection.1.1.5.3}{ROC curve and Precision and Recall curve}{section.1.1.5}% 22
+\BOOKMARK [2][-]{subsection.1.1.5.4}{APCER and BPCER}{section.1.1.5}% 23
+\BOOKMARK [1][-]{section.1.1.6}{Classifiers, Reduction of the dimensionality algorithms and Cross Validation}{chapter.1.1}% 24
+\BOOKMARK [2][-]{subsection.1.1.6.1}{Classifiers}{section.1.1.6}% 25
+\BOOKMARK [2][-]{subsection.1.1.6.2}{Dimensionality reduction algorithms}{section.1.1.6}% 26
+\BOOKMARK [2][-]{subsection.1.1.6.3}{Cross Validation}{section.1.1.6}% 27
+\BOOKMARK [0][-]{chapter.1.2}{Methodology}{part.1}% 28
+\BOOKMARK [1][-]{section.1.2.1}{LeNet-5}{chapter.1.2}% 29
+\BOOKMARK [2][-]{subsection.1.2.1.1}{LeNet-5 specifications}{section.1.2.1}% 30
+\BOOKMARK [2][-]{subsection.1.2.1.2}{LeNet-5 Results}{section.1.2.1}% 31
+\BOOKMARK [2][-]{subsection.1.2.1.3}{Modifying LeNet}{section.1.2.1}% 32
+\BOOKMARK [1][-]{section.1.2.2}{Start working with Faces databases}{chapter.1.2}% 33
+\BOOKMARK [2][-]{subsection.1.2.2.1}{Using Labeled Faces in the Wild}{section.1.2.2}% 34
+\BOOKMARK [2][-]{subsection.1.2.2.2}{Using FRAV dataset}{section.1.2.2}% 35
+\BOOKMARK [1][-]{section.1.2.3}{Defining a new architecture}{chapter.1.2}% 36
+\BOOKMARK [1][-]{section.1.2.4}{Regenerating the databases}{chapter.1.2}% 37
+\BOOKMARK [2][-]{subsection.1.2.4.1}{Architecture implemented in Casia videos}{section.1.2.4}% 38
+\BOOKMARK [2][-]{subsection.1.2.4.2}{As close as possible as Imagenet}{section.1.2.4}% 39
+\BOOKMARK [2][-]{subsection.1.2.4.3}{New database}{section.1.2.4}% 40
+\BOOKMARK [1][-]{section.1.2.5}{Final architecture}{chapter.1.2}% 41
+\BOOKMARK [1][-]{section.1.2.6}{Conclusions}{chapter.1.2}% 42
+\BOOKMARK [0][-]{chapter*.81}{Bibliography}{part.1}% 43
+\BOOKMARK [0][-]{chapter*.82}{List of Figures}{part.1}% 44
+\BOOKMARK [0][-]{chapter*.83}{List of Tables}{part.1}% 45

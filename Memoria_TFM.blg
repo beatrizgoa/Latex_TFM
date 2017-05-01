@@ -1,8 +1,58 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Memoria_TFM.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Memoria_TFM.aux
 The style file: ieeetr.bst
 Database file #1: references.bib
 Warning--entry type for "Stutz" isn't style-file defined
 --line 96 of file references.bib
+I was expecting a `,' or a `}'---line 211 of file references.bib
+ :   
+ :   edition = {8}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "S"
 Warning--I didn't find a database entry for "F"
-(There were 3 warnings)
+Warning--empty publisher in BINN
+Warning--empty title in neuroscience
+You've used 27 entries,
+            1876 wiz_defined-function locations,
+            639 strings with 7822 characters,
+and the built_in function-call counts, 5726 in all, are:
+= -- 560
+> -- 188
+< -- 1
++ -- 76
+- -- 49
+* -- 333
+:= -- 769
+add.period$ -- 38
+call.type$ -- 27
+change.case$ -- 22
+chr.to.int$ -- 0
+cite$ -- 29
+duplicate$ -- 303
+empty$ -- 639
+format.name$ -- 49
+if$ -- 1440
+int.to.chr$ -- 0
+int.to.str$ -- 27
+missing$ -- 24
+newline$ -- 95
+num.names$ -- 21
+pop$ -- 151
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 177
+stack$ -- 0
+substring$ -- 296
+swap$ -- 94
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 46
+width$ -- 29
+write$ -- 239
+(There was 1 error message)

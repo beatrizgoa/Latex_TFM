@@ -3,101 +3,105 @@
 \contentsline {xpart}{MEMORY}{3}{part.1}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Introduction}{3}{chapter.1.1}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces MNIST digit images database. Image obtained from \cite {MNISTimage}\relax }}{5}{figure.caption.5}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Samples of LFW database\relax }}{6}{figure.caption.6}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Four attacks and real user from RGB FRAV database \relax }}{7}{figure.caption.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {printed image attack}}}{7}{figure.caption.7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {mask attack}}}{7}{figure.caption.7}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {eye mask attack}}}{7}{figure.caption.7}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {tablet attack}}}{7}{figure.caption.7}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {real user}}}{7}{figure.caption.7}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Four attacks and real user of RGB and NIR FRAV database \relax }}{8}{figure.caption.8}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {printed RGB image attack}}}{8}{figure.caption.8}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {mask attack RGB}}}{8}{figure.caption.8}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {eye mask attack RGB}}}{8}{figure.caption.8}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {tablet attack RGB}}}{8}{figure.caption.8}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {real user RGB}}}{8}{figure.caption.8}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {printed NIR image attack}}}{8}{figure.caption.8}
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {mask attack NIR}}}{8}{figure.caption.8}
-\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {eye mask attack NIR}}}{8}{figure.caption.8}
-\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {tablet attack NIR}}}{8}{figure.caption.8}
-\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {real user NIR}}}{8}{figure.caption.8}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Three attacks and real user from casia database \relax }}{10}{figure.caption.9}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {printed image attack}}}{10}{figure.caption.9}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {eye printed image attack}}}{10}{figure.caption.9}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {tablet attack}}}{10}{figure.caption.9}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {real user}}}{10}{figure.caption.9}
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Three attacks and real user from a person of MFSD database \relax }}{11}{figure.caption.10}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {printed image attack}}}{11}{figure.caption.10}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {tablet attack}}}{11}{figure.caption.10}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {smartphone attack}}}{11}{figure.caption.10}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {real user}}}{11}{figure.caption.10}
-\contentsline {figure}{\numberline {1.7}{\ignorespaces ROC curves. Image obtained from \cite {RocImage}\relax }}{15}{figure.caption.12}
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Optimal hyperplane and the decision boundary. Image obtained from \cite {SVMimage}\relax }}{18}{figure.caption.15}
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Decision Tree Classifier. Image obtained from \cite {Treeimage}\relax }}{19}{figure.caption.18}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Biological Neural Network. Image obtained from \cite {BINN}\relax }}{4}{figure.caption.3}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Schematic of a general neural network.\relax }}{5}{figure.caption.4}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Simplest neural network architecture.\relax }}{6}{figure.caption.5}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Different activation functions. Image obtained from \cite {BINN}\relax }}{7}{figure.caption.6}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces MNIST digit images database. Image obtained from \cite {MNISTimage}\relax }}{9}{figure.caption.11}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Samples of LFW database\relax }}{10}{figure.caption.12}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Four attacks and real user from RGB FRAV database \relax }}{11}{figure.caption.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {printed image attack}}}{11}{figure.caption.13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {mask attack}}}{11}{figure.caption.13}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {eye mask attack}}}{11}{figure.caption.13}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {tablet attack}}}{11}{figure.caption.13}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {real user}}}{11}{figure.caption.13}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Four attacks and real user of RGB and NIR FRAV database \relax }}{12}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {printed RGB image attack}}}{12}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {mask attack RGB}}}{12}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {eye mask attack RGB}}}{12}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {tablet attack RGB}}}{12}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {real user RGB}}}{12}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {printed NIR image attack}}}{12}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {mask attack NIR}}}{12}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {eye mask attack NIR}}}{12}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {tablet attack NIR}}}{12}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {real user NIR}}}{12}{figure.caption.14}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Three attacks and real user from casia database \relax }}{14}{figure.caption.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {printed image attack}}}{14}{figure.caption.15}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {eye printed image attack}}}{14}{figure.caption.15}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {tablet attack}}}{14}{figure.caption.15}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {real user}}}{14}{figure.caption.15}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Three attacks and real user from a person of MFSD database \relax }}{15}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {printed image attack}}}{15}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {tablet attack}}}{15}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {smartphone attack}}}{15}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {real user}}}{15}{figure.caption.16}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces ROC curves. Image obtained from \cite {RocImage}\relax }}{18}{figure.caption.18}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Optimal hyperplane and the decision boundary. Image obtained from \cite {SVMimage}\relax }}{22}{figure.caption.21}
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Decision Tree Classifier. Image obtained from \cite {Treeimage}\relax }}{23}{figure.caption.24}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Methodology}{21}{chapter.1.2}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces LeNet-5 Arquitecture\relax }}{21}{figure.caption.21}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Weights at epoch 10 of the first convolutional layer\relax }}{23}{figure.caption.22}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Cost function at training running LeNet-5 with MNIST digit database.\relax }}{24}{figure.caption.23}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Validation error obtained with LeNet-5 with MNIST digit database\relax }}{25}{figure.caption.24}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Validation error in each epoch for different sizes of batches.\relax }}{26}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {batch size = 500 (original size)}}}{26}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {batch size = 20}}}{26}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {batch size = 100}}}{26}{figure.caption.26}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Cost function of Lenet and Lenet Modified.\relax }}{29}{figure.caption.28}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original LeNet}}}{29}{figure.caption.28}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Experiment 1: using LRN}}}{29}{figure.caption.28}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Experiment 2: using ReLu}}}{29}{figure.caption.28}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Experiment 3: using ReLu and LRN}}}{29}{figure.caption.28}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Experiment 4: using Gaussian weights init.}}}{29}{figure.caption.28}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Valid error of Lenet and Lenet Modified.\relax }}{30}{figure.caption.29}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original LeNet}}}{30}{figure.caption.29}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Experiment 1: using LRN}}}{30}{figure.caption.29}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Experiment 2: using ReLu}}}{30}{figure.caption.29}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Experiment 3: using ReLu and LRN}}}{30}{figure.caption.29}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Experiment 4: using Gaussian weights init.}}}{30}{figure.caption.29}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Error of Lenet using LFW.\relax }}{32}{figure.caption.30}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Error of LeNet-5 using LFW with a learning rate of 0.001.\relax }}{33}{figure.caption.32}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Cost of Lenet using LFW with a learning rate of 0.001.\relax }}{34}{figure.caption.33}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Error of Lenet using LFW changing learning rate to 0.01.\relax }}{35}{figure.caption.34}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Error of Lenet using LFW changing learning rate to 0.1.\relax }}{36}{figure.caption.35}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Error of Lenet using LFW changing learning rate to 0.5.\relax }}{37}{figure.caption.36}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Error of Lenet using LFW changing number of kernels in example 1.\relax }}{38}{figure.caption.38}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Error of Lenet using LFW changing number of kernels and the filter size in example 2.\relax }}{39}{figure.caption.39}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Error of Lenet using LFW changing number of kernels and the filter size in example 3.\relax }}{40}{figure.caption.40}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Output of the convolutional layers using LeNet and LFW.\relax }}{42}{figure.caption.41}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Cost function at training of the three examples chanching the convolutional parameters.\relax }}{43}{figure.caption.42}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Example 1}}}{43}{figure.caption.42}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Example 2}}}{43}{figure.caption.42}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Example 3}}}{43}{figure.caption.42}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Error and cost using ReLu instead of tanh\relax }}{44}{figure.caption.44}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cost at training}}}{44}{figure.caption.44}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Error at validation}}}{44}{figure.caption.44}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Error using FRAV database and five classes.\relax }}{45}{figure.caption.45}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Error using FRAV database and two classes.\relax }}{45}{figure.caption.46}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Error of Lenet in the first try to build imagenet.\relax }}{48}{figure.caption.49}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Cost at training and error at validating. Normal initialition. Learning rate = 0.001 (frav1).\relax }}{51}{figure.caption.53}
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Cost at training and error at validating. Gassian initialization. Learning rate = 0.001 - frav\_gaussian\_init\relax }}{51}{figure.caption.54}
-\contentsline {figure}{\numberline {2.25}{\ignorespaces Cost at training and error at validating - Gaussian initialization. learning rate = 0.01 frav svm\_gauss.\relax }}{52}{figure.caption.55}
-\contentsline {figure}{\numberline {2.26}{\ignorespaces Cost at training and error at validating - Noraml initialization. learning rate = 0.01 frav svm\_general.\relax }}{52}{figure.caption.56}
-\contentsline {figure}{\numberline {2.27}{\ignorespaces ROC and Precision- Recall courve - Noraml initialization. learning rate = 0.01 frav svm\_general.\relax }}{53}{figure.caption.57}
-\contentsline {figure}{\numberline {2.28}{\ignorespaces Training loss of four test Casia database\relax }}{54}{figure.caption.60}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Test 1}}}{54}{figure.caption.60}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Test 2}}}{54}{figure.caption.60}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Test 3}}}{54}{figure.caption.60}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Test 4}}}{54}{figure.caption.60}
-\contentsline {figure}{\numberline {2.29}{\ignorespaces Validation error of four test Casia database\relax }}{55}{figure.caption.61}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Test 1}}}{55}{figure.caption.61}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Test 2}}}{55}{figure.caption.61}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Test 3}}}{55}{figure.caption.61}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Test 4}}}{55}{figure.caption.61}
-\contentsline {figure}{\numberline {2.30}{\ignorespaces Cost at training and error at validating -casia svm\_gauss.\relax }}{56}{figure.caption.62}
-\contentsline {figure}{\numberline {2.31}{\ignorespaces Cost at training and error at validating -casia svm\_general.\relax }}{56}{figure.caption.63}
-\contentsline {figure}{\numberline {2.32}{\ignorespaces Cost at training and error at validating - mfsd svm\_gauss.\relax }}{57}{figure.caption.65}
-\contentsline {figure}{\numberline {2.33}{\ignorespaces Cost at training and error at validating - mfsd svm\_general.\relax }}{57}{figure.caption.66}
-\contentsline {figure}{\numberline {2.34}{\ignorespaces cost and error of the tree experiments with frav.\relax }}{62}{figure.caption.69}
-\contentsline {figure}{\numberline {2.35}{\ignorespaces cost and error of the tree experiments with FRAV (rgb + nir) image level images.\relax }}{63}{figure.caption.70}
-\contentsline {figure}{\numberline {2.36}{\ignorespaces cost and error of the tree experiments with CASIA images.\relax }}{64}{figure.caption.71}
-\contentsline {figure}{\numberline {2.37}{\ignorespaces cost and error of the tree experiments with CASIA videos.\relax }}{65}{figure.caption.72}
-\contentsline {figure}{\numberline {2.38}{\ignorespaces cost and error of the tree experiments with MFSD images.\relax }}{66}{figure.caption.73}
+\contentsline {xchapter}{Methodology}{25}{chapter.1.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces LeNet-5 Arquitecture\relax }}{25}{figure.caption.27}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Weights at epoch 10 of the first convolutional layer\relax }}{27}{figure.caption.28}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Cost function at training running LeNet-5 with MNIST digit database.\relax }}{28}{figure.caption.29}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Validation error obtained with LeNet-5 with MNIST digit database\relax }}{29}{figure.caption.30}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Validation error in each epoch for different sizes of batches.\relax }}{30}{figure.caption.32}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {batch size = 500 (original size)}}}{30}{figure.caption.32}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {batch size = 20}}}{30}{figure.caption.32}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {batch size = 100}}}{30}{figure.caption.32}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Cost function of Lenet and Lenet Modified.\relax }}{33}{figure.caption.34}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original LeNet}}}{33}{figure.caption.34}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Experiment 1: using LRN}}}{33}{figure.caption.34}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Experiment 2: using ReLu}}}{33}{figure.caption.34}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Experiment 3: using ReLu and LRN}}}{33}{figure.caption.34}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Experiment 4: using Gaussian weights init.}}}{33}{figure.caption.34}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Valid error of Lenet and Lenet Modified.\relax }}{34}{figure.caption.35}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original LeNet}}}{34}{figure.caption.35}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Experiment 1: using LRN}}}{34}{figure.caption.35}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Experiment 2: using ReLu}}}{34}{figure.caption.35}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Experiment 3: using ReLu and LRN}}}{34}{figure.caption.35}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Experiment 4: using Gaussian weights init.}}}{34}{figure.caption.35}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Error of Lenet using LFW.\relax }}{36}{figure.caption.36}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Error of LeNet-5 using LFW with a learning rate of 0.001.\relax }}{37}{figure.caption.38}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Cost of Lenet using LFW with a learning rate of 0.001.\relax }}{38}{figure.caption.39}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Error of Lenet using LFW changing learning rate to 0.01.\relax }}{39}{figure.caption.40}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Error of Lenet using LFW changing learning rate to 0.1.\relax }}{40}{figure.caption.41}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Error of Lenet using LFW changing learning rate to 0.5.\relax }}{41}{figure.caption.42}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Error of Lenet using LFW changing number of kernels in example 1.\relax }}{42}{figure.caption.44}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Error of Lenet using LFW changing number of kernels and the filter size in example 2.\relax }}{43}{figure.caption.45}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Error of Lenet using LFW changing number of kernels and the filter size in example 3.\relax }}{44}{figure.caption.46}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Output of the convolutional layers using LeNet and LFW.\relax }}{46}{figure.caption.47}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Cost function at training of the three examples chanching the convolutional parameters.\relax }}{47}{figure.caption.48}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Example 1}}}{47}{figure.caption.48}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Example 2}}}{47}{figure.caption.48}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Example 3}}}{47}{figure.caption.48}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Error and cost using ReLu instead of tanh\relax }}{48}{figure.caption.50}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cost at training}}}{48}{figure.caption.50}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Error at validation}}}{48}{figure.caption.50}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Error using FRAV database and five classes.\relax }}{49}{figure.caption.51}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Error using FRAV database and two classes.\relax }}{49}{figure.caption.52}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Error of Lenet in the first try to build imagenet.\relax }}{52}{figure.caption.55}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Cost at training and error at validating. Normal initialition. Learning rate = 0.001 (frav1).\relax }}{55}{figure.caption.59}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Cost at training and error at validating. Gassian initialization. Learning rate = 0.001 - frav\_gaussian\_init\relax }}{55}{figure.caption.60}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Cost at training and error at validating - Gaussian initialization. learning rate = 0.01 frav svm\_gauss.\relax }}{56}{figure.caption.61}
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Cost at training and error at validating - Noraml initialization. learning rate = 0.01 frav svm\_general.\relax }}{56}{figure.caption.62}
+\contentsline {figure}{\numberline {2.27}{\ignorespaces ROC and Precision- Recall courve - Noraml initialization. learning rate = 0.01 frav svm\_general.\relax }}{57}{figure.caption.63}
+\contentsline {figure}{\numberline {2.28}{\ignorespaces Training loss of four test Casia database\relax }}{58}{figure.caption.66}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Test 1}}}{58}{figure.caption.66}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Test 2}}}{58}{figure.caption.66}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Test 3}}}{58}{figure.caption.66}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Test 4}}}{58}{figure.caption.66}
+\contentsline {figure}{\numberline {2.29}{\ignorespaces Validation error of four test Casia database\relax }}{59}{figure.caption.67}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Test 1}}}{59}{figure.caption.67}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Test 2}}}{59}{figure.caption.67}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Test 3}}}{59}{figure.caption.67}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Test 4}}}{59}{figure.caption.67}
+\contentsline {figure}{\numberline {2.30}{\ignorespaces Cost at training and error at validating -casia svm\_gauss.\relax }}{60}{figure.caption.68}
+\contentsline {figure}{\numberline {2.31}{\ignorespaces Cost at training and error at validating -casia svm\_general.\relax }}{60}{figure.caption.69}
+\contentsline {figure}{\numberline {2.32}{\ignorespaces Cost at training and error at validating - mfsd svm\_gauss.\relax }}{61}{figure.caption.71}
+\contentsline {figure}{\numberline {2.33}{\ignorespaces Cost at training and error at validating - mfsd svm\_general.\relax }}{61}{figure.caption.72}
+\contentsline {figure}{\numberline {2.34}{\ignorespaces cost and error of the tree experiments with frav.\relax }}{66}{figure.caption.75}
+\contentsline {figure}{\numberline {2.35}{\ignorespaces cost and error of the tree experiments with FRAV (rgb + nir) image level images.\relax }}{67}{figure.caption.76}
+\contentsline {figure}{\numberline {2.36}{\ignorespaces cost and error of the tree experiments with CASIA images.\relax }}{68}{figure.caption.77}
+\contentsline {figure}{\numberline {2.37}{\ignorespaces cost and error of the tree experiments with CASIA videos.\relax }}{69}{figure.caption.78}
+\contentsline {figure}{\numberline {2.38}{\ignorespaces cost and error of the tree experiments with MFSD images.\relax }}{70}{figure.caption.79}

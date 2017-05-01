@@ -1,5 +1,22 @@
 \begin{thebibliography}{10}
 
+\bibitem{Rojas}
+R.~Rojas, {\em Neural Networks: A Systematic Introduction}.
+\newblock Springer-Verlag New York, Inc, 1996.
+
+\bibitem{BINN}
+D.~Kriesel, {\em A Brief Introduction to Neural Networks}.
+\newblock 2007.
+
+\bibitem{neuroscience}
+M.~F. Bear, B.~W.Connors, and M.~A. Paradiso.
+\newblock Williams \& Wilkins, 1996.
+
+\bibitem{krose}
+B.~J.~A. Kr{\"o}se and P.~P. van~der Smagt, {\em An Introduction to Neural
+  Networks}.
+\newblock The University of Amsterdam, 1996.
+
 \bibitem{theano}
 T.~D. Team, ``Theano: A {Python} framework for fast computation of mathematical
   expressions,'' {\em arXiv e-prints}, vol.~abs/1605.02688, 2016.
