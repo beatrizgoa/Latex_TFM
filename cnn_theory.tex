@@ -2,7 +2,7 @@
 In this section, the basis and the theoretical background of the convolutional neural networks theory is exposed.\\
 
 \subsection{Historical introduction}
-The historical introduction to neural networks is going to be summarized \cite{DKriesel}:
+The historical introduction to neural networks is going to be summarized \cite{BINN}:
 
 Neural Networks are introduced by first time in the years 40 by Warren McCulloch and Walter Pitts, more specifically, simple models of neural networks (switches based on neurons) were able to calculate almost every arithmetic problems and logic operations. Few years layer, the recognition of spacial patters field was defined as a interesting scope for neural networks.\\
 
@@ -39,9 +39,9 @@ As the same way as the nervous systems is formed by neurons, artificial neural n
 
 Basically, there are three types of artificial neurons:
 \begin{description}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
-\item \textbf{Input neurons}, if belong to the input layer. This neurons receive the input data of the network.\\
-\item \textbf{Hidden Units}, if belong to the processing layers. There are many types of layers: convolutional, pooling, dropout... There could be as many hidden layers and hidden units as user desire. The connectivity and the topology of the layers define the topology of the network. \\
-\item \textbf{Output neurons}, if belong to the output layer. This neurons gives the user the processed information.\\
+\item \textbf{Input neurons}, if belong to the input layer. This neurons receive the input data of the network.
+\item \textbf{Hidden Units}, if belong to the processing layers. There are many types of layers: convolutional, pooling, dropout... There could be as many hidden layers and hidden units as user desire. The connectivity and the topology of the layers define the topology of the network.
+\item \textbf{Output neurons}, if belong to the output layer. This neurons gives the user the processed information.
 \end{description}
 
 In figure \ref{fig:esquemaneuronal} the schematic of a general neural network it is possible to visualize the schematic of a general neural network with an undefined number of neurons in each layer and an undefined number of hidden layers.\\
@@ -78,11 +78,10 @@ Due to activation function, the output of the neuron would change if the input i
 \end{figure}
 
 \subsubsection{Analogies between ANN and Biological Neural Networks}
-Analogies between Artificial and Biological Neural networks could be found (if both basic theory is known) because the first one (artificial NN) are based in the second one. It is easy to see that biological neurons correspond to artificial neurons. But the cell body correspond with transference function. The output to others neurons would correspond to the axon and synapses with weights and bias. The soma would correspond with the transfer function. Those analogies are summarized in table \ref{Analogias}. Artificial neural networks are just inspired in Biological neural networks, that both work in a different (although inspired) way must be made clear.\\
+Analogies between Artificial and Biological Neural networks could be found (if both basic theory is known) because the first one (artificial NN) are based in the second one. It is easy to see that biological neurons correspond to artificial neurons. But the cell body correspond with transference function. The output to others neurons would correspond to the axon and synapses with weights and bias. The soma would correspond with the transfer function. Those analogies are summarized in table \ref{table:Analogias}. Artificial neural networks are just inspired in Biological neural networks, that both work in a different (although inspired) way must be made clear.\\
 
 \begin{table}[htb]
 \centering
-\label{Analogias}
 \begin{tabular}{|c|c|}
 \hline
 \rowcolor[HTML]{ECF4FF} \textbf{Artificial Neural Component} & \textbf{Analogy}        \\ \hline
@@ -90,9 +89,9 @@ Neuron Artificial Neuron                        & Biological Neuron       \\
 Transfer function                & Soma \\
 Connexion between Artificial neurons               & Axón                     \\
 Weight                                     & Synapses                 \\ \hline
-\end{tabular}  \caption{Analogies between artificial neural networks and biological neural networks}
-\end{table}
+\end{tabular}  \caption{Analogies between artificial neural networks and biological neural networks} \label{table:Analogias}
 
+\end{table}
 
 \subsubsection{Learning}
 Neuronal networks are able to learn features from the input to classify or just extract features of the input data. In order to know how to get the desired output, a learning process is needed. The learning process what really do is modifying weights and bias values for each layer with the purpose of getting a better output \cite{NNDesign}.\\
@@ -145,6 +144,13 @@ The layers that conforms the networks could be different depending on the mathem
 
 El rendimiento de las redes está determinado por muchos factores interrelacionados arquitectónicos; Entre ellos están el número de capas, dimensiones de los mapas de características, extensiones del kernel espaciales, el número de parámetros y tamaños de agrupación y la colocación de las capas %\cite{LeCum2}.
 
+\subsection{Type of Networks}
+
+\begin{description}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
+	\item \textbf{Siamese:}
+	\item \textbf{Convolutional:}
+	\item \textbf{Recurrent:}
+\end{description}
 
 \section{Convolutional Neural Network (CNN)}
 Convolutional neural network are a determinate typology of neural network, CNN are inspired in how the visual cortex of a cat works \cite{Doorn}. This type of neural networks are (usually) used with images at input.\\

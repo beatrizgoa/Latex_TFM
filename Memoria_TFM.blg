@@ -10,7 +10,6 @@ I was expecting a `,' or a `}'---line 211 of file references.bib
  :   edition = {8th}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "DKriesel"
 Warning--I didn't find a database entry for "S"
 Warning--I didn't find a database entry for "F"
 Warning--empty publisher in BINN
@@ -18,7 +17,7 @@ Warning--empty title in neuroscience
 Warning--can't use both volume and number fields in Doorn
 You've used 31 entries,
             1876 wiz_defined-function locations,
-            669 strings with 8648 characters,
+            667 strings with 8632 characters,
 and the built_in function-call counts, 6517 in all, are:
 = -- 619
 > -- 246

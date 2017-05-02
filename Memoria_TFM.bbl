@@ -1,12 +1,12 @@
 \begin{thebibliography}{10}
 
-\bibitem{Rojas}
-R.~Rojas, {\em Neural Networks: A Systematic Introduction}.
-\newblock Springer-Verlag New York, Inc, 1996.
-
 \bibitem{BINN}
 D.~Kriesel, {\em A Brief Introduction to Neural Networks}.
 \newblock 2007.
+
+\bibitem{Rojas}
+R.~Rojas, {\em Neural Networks: A Systematic Introduction}.
+\newblock Springer-Verlag New York, Inc, 1996.
 
 \bibitem{neuroscience}
 M.~F. Bear, B.~W.Connors, and M.~A. Paradiso.

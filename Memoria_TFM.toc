@@ -14,7 +14,8 @@
 \contentsline {subsubsection}{Analogies between ANN and Biological Neural Networks}{8}{subsubsection*.7}
 \contentsline {subsubsection}{Learning}{8}{subsubsection*.9}
 \contentsline {subsubsection}{Type of Layers}{10}{subsubsection*.10}
-\contentsline {section}{\numberline {1.3}Convolutional Neural Network (CNN)}{10}{section.1.1.3}
+\contentsline {subsection}{\numberline {1.2.5}Type of Networks}{10}{subsection.1.1.2.5}
+\contentsline {section}{\numberline {1.3}Convolutional Neural Network (CNN)}{11}{section.1.1.3}
 \contentsline {section}{\numberline {1.4}Programming language and frameworks}{11}{section.1.1.4}
 \contentsline {subsection}{\numberline {1.4.1}Python}{11}{subsection.1.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Theano and others frameworks}{11}{subsection.1.1.4.2}
@@ -66,7 +67,8 @@
 \contentsline {subsection}{\numberline {2.4.3}New database}{66}{subsection.1.2.4.3}
 \contentsline {subsubsection}{experiments}{67}{subsubsection*.76}
 \contentsline {section}{\numberline {2.5}Final architecture}{68}{section.1.2.5}
-\contentsline {section}{\numberline {2.6}Conclusions}{69}{section.1.2.6}
-\contentsline {chapter}{Bibliography}{75}{chapter*.83}
-\contentsline {chapter}{List of Figures}{79}{chapter*.84}
-\contentsline {chapter}{List of Tables}{83}{chapter*.85}
+\contentsline {section}{\numberline {2.6}Conclusions}{75}{section.1.2.6}
+\contentsline {section}{\numberline {2.7}Future work}{75}{section.1.2.7}
+\contentsline {chapter}{Bibliography}{77}{chapter*.83}
+\contentsline {chapter}{List of Figures}{81}{chapter*.84}
+\contentsline {chapter}{List of Tables}{85}{chapter*.85}
