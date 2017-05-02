@@ -434,7 +434,7 @@ In order to create a list of images where images are not putted in order, each i
 
 For training, the 70\% of the total data has been used, for testing the 20\% and for validating the testing 10\%. There are 157 images in each class and the distribution is represented in the table \ref{FRAV_distribution1}.\\
 
-\begin{table}[]
+\begin{table}[htb]
 \centering
 \label{FRAV_distribution1}
 \begin{tabular}{c|ccccc|c|}
@@ -901,6 +901,6 @@ The classifiers, before use them, has been personalize to each and particular ti
 \item For Deep Trees classifier, the depth of the tree has been searches among the following values: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 and 30.
 \item For PCA, the number of components has been found in a range of 3 to 5000, in 3 to 3 steps.
 \item For LDA, the number of components has been found in a range of 1 to the length of the characteristic vector in 10 to 10 steps.
-\end{itemize} 
+\end{itemize}
 
 With the purpose of having a more general results, all the training, validation and testing (with the classification) processes have been repeated three times, those times are differentiated among them in the seed if the pseudo-randomized initialization of the weights.\\

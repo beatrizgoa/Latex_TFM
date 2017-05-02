@@ -1,33 +1,37 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.1}Introduction}{\reset@font\mtcSfont 3}{section.1.1.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.1.1}Anti-spoofing}{\reset@font\mtcSSfont 3}{subsection.1.1.1.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.2}Convolutional Neural Network background theory}{\reset@font\mtcSfont 3}{section.1.1.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.1}Introduction}{\reset@font\mtcSSfont 3}{subsection.1.1.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.2}Biological Neural Networks}{\reset@font\mtcSSfont 4}{subsection.1.1.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.3}Artificial Neural Networks (ANN)}{\reset@font\mtcSSfont 4}{subsection.1.1.2.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Analogies between ANN and Biological Neural Networks}{\reset@font\mtcSSSfont 6}{subsubsection*.7}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.3}Programming language and frameworks}{\reset@font\mtcSfont 7}{section.1.1.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.1}Python}{\reset@font\mtcSSfont 7}{subsection.1.1.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.2}Theano and others frameworks}{\reset@font\mtcSSfont 7}{subsection.1.1.3.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Theano}{\reset@font\mtcSSSfont 8}{subsubsection*.9}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode NumPy, Scikit-learn and Matplotlib}{\reset@font\mtcSSSfont 8}{subsubsection*.10}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.4}Databases}{\reset@font\mtcSfont 8}{section.1.1.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.1}MNIST digit database}{\reset@font\mtcSSfont 9}{subsection.1.1.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.2}Labeled faces in the wild}{\reset@font\mtcSSfont 10}{subsection.1.1.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.3}FRAV dataset}{\reset@font\mtcSSfont 10}{subsection.1.1.4.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.4}CASIA dataset}{\reset@font\mtcSSfont 13}{subsection.1.1.4.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.5}MSU - MFSD database}{\reset@font\mtcSSfont 15}{subsection.1.1.4.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.5}Metrics}{\reset@font\mtcSfont 16}{section.1.1.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.1}Cost and Error rate}{\reset@font\mtcSSfont 16}{subsection.1.1.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{\reset@font\mtcSSfont 17}{subsection.1.1.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.3}ROC curve and Precision and Recall curve}{\reset@font\mtcSSfont 17}{subsection.1.1.5.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.4}APCER and BPCER}{\reset@font\mtcSSfont 19}{subsection.1.1.5.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.6}Classifiers, Reduction of the dimensionality algorithms and Cross Validation}{\reset@font\mtcSfont 20}{section.1.1.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.1}Classifiers}{\reset@font\mtcSSfont 20}{subsection.1.1.6.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Logistic Regression}{\reset@font\mtcSSSfont 20}{subsubsection*.19}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Support Vector Machine}{\reset@font\mtcSSSfont 21}{subsubsection*.20}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode K Nearest Neighbours}{\reset@font\mtcSSSfont 22}{subsubsection*.22}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Decision Tree}{\reset@font\mtcSSSfont 23}{subsubsection*.23}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.2}Dimensionality reduction algorithms}{\reset@font\mtcSSfont 23}{subsection.1.1.6.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Linear Discriminant Analysis}{\reset@font\mtcSSSfont 23}{subsubsection*.25}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Principal Component Analysis}{\reset@font\mtcSSSfont 24}{subsubsection*.26}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.3}Cross Validation}{\reset@font\mtcSSfont 24}{subsection.1.1.6.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.2}Neural Network background theory}{\reset@font\mtcSfont 3}{section.1.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.1}Historical introduction}{\reset@font\mtcSSfont 3}{subsection.1.1.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.2}Introduction}{\reset@font\mtcSSfont 4}{subsection.1.1.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.3}Biological Neural Networks}{\reset@font\mtcSSfont 5}{subsection.1.1.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.2.4}Artificial Neural Networks (ANN)}{\reset@font\mtcSSfont 5}{subsection.1.1.2.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Analogies between ANN and Biological Neural Networks}{\reset@font\mtcSSSfont 8}{subsubsection*.7}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Learning}{\reset@font\mtcSSSfont 8}{subsubsection*.9}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Type of Layers}{\reset@font\mtcSSSfont 10}{subsubsection*.10}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.3}Convolutional Neural Network (CNN)}{\reset@font\mtcSfont 10}{section.1.1.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.4}Programming language and frameworks}{\reset@font\mtcSfont 11}{section.1.1.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.1}Python}{\reset@font\mtcSSfont 11}{subsection.1.1.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.2}Theano and others frameworks}{\reset@font\mtcSSfont 11}{subsection.1.1.4.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Theano}{\reset@font\mtcSSSfont 11}{subsubsection*.11}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode NumPy, Scikit-learn and Matplotlib}{\reset@font\mtcSSSfont 12}{subsubsection*.12}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.5}Databases}{\reset@font\mtcSfont 12}{section.1.1.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.1}MNIST digit database}{\reset@font\mtcSSfont 12}{subsection.1.1.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.2}Labeled faces in the wild}{\reset@font\mtcSSfont 13}{subsection.1.1.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.3}FRAV dataset}{\reset@font\mtcSSfont 14}{subsection.1.1.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.4}CASIA dataset}{\reset@font\mtcSSfont 17}{subsection.1.1.5.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.5.5}MSU - MFSD database}{\reset@font\mtcSSfont 18}{subsection.1.1.5.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.6}Metrics}{\reset@font\mtcSfont 19}{section.1.1.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.1}Cost and Error rate}{\reset@font\mtcSSfont 20}{subsection.1.1.6.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{\reset@font\mtcSSfont 20}{subsection.1.1.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.3}ROC curve and Precision and Recall curve}{\reset@font\mtcSSfont 21}{subsection.1.1.6.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.6.4}APCER and BPCER}{\reset@font\mtcSSfont 22}{subsection.1.1.6.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.7}Classifiers, Reduction of the dimensionality algorithms and Cross Validation}{\reset@font\mtcSfont 23}{section.1.1.7}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.7.1}Classifiers}{\reset@font\mtcSSfont 24}{subsection.1.1.7.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Logistic Regression}{\reset@font\mtcSSSfont 24}{subsubsection*.21}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Support Vector Machine}{\reset@font\mtcSSSfont 24}{subsubsection*.22}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode K Nearest Neighbours}{\reset@font\mtcSSSfont 26}{subsubsection*.24}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Decision Tree}{\reset@font\mtcSSSfont 26}{subsubsection*.25}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.7.2}Dimensionality reduction algorithms}{\reset@font\mtcSSfont 26}{subsection.1.1.7.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Linear Discriminant Analysis}{\reset@font\mtcSSSfont 27}{subsubsection*.27}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Principal Component Analysis}{\reset@font\mtcSSSfont 27}{subsubsection*.28}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.7.3}Cross Validation}{\reset@font\mtcSSfont 27}{subsection.1.1.7.3}}

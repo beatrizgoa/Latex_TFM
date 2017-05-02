@@ -17,6 +17,27 @@ B.~J.~A. Kr{\"o}se and P.~P. van~der Smagt, {\em An Introduction to Neural
   Networks}.
 \newblock The University of Amsterdam, 1996.
 
+\bibitem{NNDesign}
+H.~B. Demuth, M.~H. Beale, O.~De~Jess, and M.~T. Hagan, {\em Neural Network
+  Design}.
+\newblock USA: Martin Hagan, 2nd~ed., 2014.
+
+\bibitem{Doorn}
+{\em Analysis of Deep Convolutional Neural Network Architectures}, vol.~21,
+  University of Twente, 2014.
+
+\bibitem{Lecum3}
+C.~Farabet, R.~Paz, J.~Perez-Carrasco, C.~Zamarreños, A.~Linares-Barranco,
+  Y.~LeCun, E.~Culurciello, T.~Serrano-Gotarredona, and B.~Linares-Barranco,
+  ``Comparison between frame-constrained fix-pixel-value and frame-free
+  spiking-dynamic-pixel convnets for visual processing,'' {\em Frontiers in
+  Neuroscience}, vol.~6, p.~32, 2012.
+
+\bibitem{Lecum2}
+D.~Eigen, J.~T. Rolfe, R.~Fergus, and Y.~LeCun, ``Understanding deep
+  architectures using a recursive convolutional network,'' {\em CoRR},
+  vol.~abs/1312.1847, 2013.
+
 \bibitem{theano}
 T.~D. Team, ``Theano: A {Python} framework for fast computation of mathematical
   expressions,'' {\em arXiv e-prints}, vol.~abs/1605.02688, 2016.

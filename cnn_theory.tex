@@ -1,5 +1,20 @@
-\section{Convolutional Neural Network background theory}
+\section{Neural Network background theory}
 In this section, the basis and the theoretical background of the convolutional neural networks theory is exposed.\\
+
+\subsection{Historical introduction}
+The historical introduction to neural networks is going to be summarized \cite{DKriesel}:
+
+Neural Networks are introduced by first time in the years 40 by Warren McCulloch and Walter Pitts, more specifically, simple models of neural networks (switches based on neurons) were able to calculate almost every arithmetic problems and logic operations. Few years layer, the recognition of spacial patters field was defined as a interesting scope for neural networks.\\
+
+In 1949 the `Hebbian rule' was postulate by Donald O. Hebb. The rules describes the generalized learning basis of neural networks. This rule explain that two connected neurons have  a bigger strength if they are active at the same time, and the strength changes proportionally to the product of the two activities.\\
+
+From 1951, the golden age of neural networks start although it stopped with a big pause. The first neurocomputer which was capable to adjust the weights by itself was developed in 1951 and was called \textit{Snark}. The fist neurocomputer able to recognize simple numbers was called \textit{`Mark I perceptron'} as was developed between 1957 and 1958.\\
+
+It was in 1959 when Franck Rosenblatt  defined the \textit{perceptron} and the \textit{perceptron convergence theorem} was verified. One year later, the \textit{ADALINE (ADAptive LInear NEuron)} was developed, this was the first commercially used neural network which was a fast and precise system. One important characteristic was the \textit{delta rule} rule used for the training procedure. Before the golden age finished, researched figured out that the XOR function was not able to be solve with just one perceptron.\\
+
+From these years, neural networks does not have much importance, until computational resources were enough. But some important advances were developed ad the \textit{linear associator} model (an associative memory model). The backpropagation of error, a very used learning procedure was defined in 1974 by Paul Werbos. \textit{The self-organizing feature maps} were described in 1982, there are also known as Kohonen maps. In 1983, a neural model able to recognize handwritten characters was developed as an extension of the Cognitron, the new model was called Neocognitron.\\
+
+From this time on, neural networks are having a significant importance and are researched widely, it has to notice, that nowadays the computational resources are bigger than some years and that makes that the researchers could be more extensive.\\
 
 \subsection{Introduction}
 Humans, along the history, have tried to reproduce nature. Evolution, has turned out to be a big coordination in nature. If object recognition, associate concepts, memorize or extracting the semantic of images are focused, humans are provided of those processing information qualities. Trying to get those qualities with technology is a current (and not surprising) challenge.\\
@@ -37,7 +52,7 @@ In figure \ref{fig:esquemaneuronal} the schematic of a general neural network it
 \caption{Schematic of a general neural network.} \label{fig:esquemaneuronal}
 \end{figure}
 
-A single neuron is formed by an input, a weight \textit{W} and a bias \textit{b} associated (Independent term). The value of the bias is always 1, but it has an associated weight that maked that the value of the bias change. Weight and bias values could be modified. The output of the neuron is associated to an activation function. \\
+A single neuron is formed by an input, a weight \textit{W} and a bias \textit{b} associated (Independent term). The value of the bias is always 1, but it has an associated weight that make that the value of the bias change. Weight and bias values could be modified. The output of the neuron is associated to an activation function. \\
 
 \begin{figure}[htb]
 \centering
@@ -45,7 +60,7 @@ A single neuron is formed by an input, a weight \textit{W} and a bias \textit{b}
 \caption{Simplest neural network architecture.} \label{fig:neuronasencilla}
 \end{figure}
 
-The simplest example of a neural network is formed by two inputs neurons and a output neuron as it is shown in figure \ref{fig:neuronasencila} in which \textit{$W=[w_1,w_2]$} are refered to the weights assigned to each neuron. The \textit{b} value is refered to the bias term. \textit{$X=[x_{1},x_{2}]$} are the input of the network architecture and \textit{y(x)} the output. The output is predetermined by the equation \ref{eq:ecuation_neuronasencilla}. So, the output would depend on the input, weights and bias sand the activation function \textit{F} \cite{krose} and it would result as he transfer function.\\
+The simplest example of a neural network is formed by two inputs neurons and a output neuron as it is shown in figure \ref{fig:neuronasencila} in which \textit{$W=[w_1,w_2]$} are refered to the weights assigned to each neuron. The \textit{b} value is refered to the bias term. \textit{$X=[x_{1},x_{2}]$} are the input of the network architecture and \textit{y(x)} the output. The output is predetermined by the equation \ref{eq:ecuation_neuronasencilla}. So, the output would depend on the input, weights and bias sand the activation function (or transfer function) \textit{F} \cite{krose}. \\
 
 %Ecuacion salida neurona
 			\begin{equation}
@@ -65,8 +80,9 @@ Due to activation function, the output of the neuron would change if the input i
 \subsubsection{Analogies between ANN and Biological Neural Networks}
 Analogies between Artificial and Biological Neural networks could be found (if both basic theory is known) because the first one (artificial NN) are based in the second one. It is easy to see that biological neurons correspond to artificial neurons. But the cell body correspond with transference function. The output to others neurons would correspond to the axon and synapses with weights and bias. The soma would correspond with the transfer function. Those analogies are summarized in table \ref{Analogias}. Artificial neural networks are just inspired in Biological neural networks, that both work in a different (although inspired) way must be made clear.\\
 
-\begin{table}[h]
+\begin{table}[htb]
 \centering
+\label{Analogias}
 \begin{tabular}{|c|c|}
 \hline
 \rowcolor[HTML]{ECF4FF} \textbf{Artificial Neural Component} & \textbf{Analogy}        \\ \hline
@@ -74,6 +90,64 @@ Neuron Artificial Neuron                        & Biological Neuron       \\
 Transfer function                & Soma \\
 Connexion between Artificial neurons               & Axón                     \\
 Weight                                     & Synapses                 \\ \hline
-\end{tabular}
-\caption[Analogies between artificial neural networks and biological neural networks]\label{Analogias}
+\end{tabular}  \caption{Analogies between artificial neural networks and biological neural networks}
 \end{table}
+
+
+\subsubsection{Learning}
+Neuronal networks are able to learn features from the input to classify or just extract features of the input data. In order to know how to get the desired output, a learning process is needed. The learning process what really do is modifying weights and bias values for each layer with the purpose of getting a better output \cite{NNDesign}.\\
+
+There are three main different learning procedures that defined following \cite{NNDesign}:
+
+\begin{description}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
+	\item \textbf{Supervised Learning:} the input training data is given with its target (correct result of its corresponding sample), that means that the train samples has associated the desired output. The learning consist in adjust the weights and bias until the output of the network is the same or the closest value as the target.
+	\item \textbf{Reinforcement Learning:} in the training, the correct target is not provided, but just a grade is given to the network.
+	\item \textbf{Unsupervised Learning:} there is not help in the training, no target and no grade, just the input data. The networks learn to cluster the input data and the weights and bias changes in function of the bias.
+\end{description}
+
+All the learning procedures in neural networks have in common the modification of weights ans bias to learn and obtain the desired output, so the error at the output is minimized. The most useful learning procedure is the supervised learning, along this project this is the used.\\
+
+Una manera de buscar ese mínimo error en la red es utilizando el método del descenso del gradiente, $\mathit{\nabla}$.\\
+
+El gradiente es una generalización de la derivada para funciones multidimensionales. Este método busca un mínimo en pasos proporcionales en la dirección contraria al gradiente (negativo). El problema que plantea este método es encontrar en un mínimo local en lugar de en un mínimo global, a pesar de ser un mínimo que proporciona un error aceptable puede existir un mínimo en el gradiente que ofrezca un error menor. %\cite{DKriesel} \cite{understandConv}.
+También hay que llegar a un compromiso entre el tamaño de los pasos, ya que si son muy grandes te puedes saltar el mínimo, y son muy pequeños el coste computacional es mucho mayor al igual que el tiempo de procesado.\\
+
+La retropropagación del error o \textit{Backpropagation error} es un tipo de aprendizaje supervisado muy recurrido, en el que se sabe de antemano la salida deseada. Al tener salida deseada y la salida real de la red \textit{y(x)}, se puede calcular la función del error que comete la red \textit{Err(w)} que va a ser usado, en función de los pesos para entrenar la red para obtener la salida deseada más aproximada posible.\\
+
+El error \textit{E} que comete una red es la suma de los errores de cada muestra \textit{p}, $E^{p}$:
+
+%Ecuacion error 1
+\begin{equation}
+E=\sum_{p}E^p = \frac{1}{2}\sum_{p}(\delta^p- y^p)^2
+\end{equation}
+
+El error total, se puede definir como el mínimo cuadrado medio de la salida deseada y la salida real para cada muestra. El mínimo cuadrado medio encuentra los valores de todos los pesos que minimizan la función de error a través del descenso de gradiente. La idea es hacer un cambio en el peso proporcional al negativo de la derivada del error medido en el patrón actual con respecto a cada peso %\cite{BKrose} \cite{DKriesel}.\\
+
+La retropropagación del error está basada en la regla delta generalizada o ``generalized delta rule''. En la retropropagación del error se sabe la salida deseada de la red, calculando con la regla delta la adaptación de los pesos, pero para aplicar esto a salida de las capas ocultas es necesario aplicar la regla de la cadena para adaptar los pesos de las capas ocultas ya que no se tiene el valor $\delta$ para estas capas. La regla de la cadena distribuye el error de una neurona de salida $y_o$ todas las neuronas ocultas con las que está conectadas, comparando la salida deseada $d_o$ y resultando en la señal error $\sigma_o$ Por lo que el peso de una conexión entre dos neuronas se puede expresar %\cite{BKrose} \cite{DKriesel}:\\
+
+%Ecuacion backpropagation 1
+			\begin{equation}
+			\Delta_{p}W_{jk}=\gamma \delta _{k}^{p}y_{j}^{p}
+			\label{eq:ecuation_back1}
+			\end{equation}\\
+
+Siendo  $\gamma$ la constante de aprendizaje, \textit{k} la unidad que recibe la entrada y salida de la neurona \textit{j}.\\
+
+\subsubsection{Type of Layers}
+The layers that conforms the networks could be different depending on the mathematical operation. The most common used layers are described above:
+\begin{description}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
+	\item \textbf{Convolutional layer:} In this type of layers, the convolution operator is processed at the input. Weights are the applying filters and the output are the features or characteristics useful to extract the information of the image. In one convolutional layer, there could be used as many filters are user defines.
+	\item \textbf{Pooling Layer:} In this layer, the dimensionality is reduced. The most important information is preserved. It is usually used at the output of the convolutional to resume its out \cite{Doorn}. The most used pooling layer is the max-pooling layer, the maximum values are saved.
+	\item \textbf{No-linearity layer: } Esta capa consta de una función sigmoide punto tanh() aplicado a la entrada de la capa. Sin embargo, en las implementaciones recientes, se han utilizado otras no linealidades más sofisticadas \cite{Lecum3, Doorn}.
+	\item \textbf{Dropout layer:} Las neuronas de una arquitectura diseñada tienden a confiar en la salidas de unas neuronas específicas, y esto provoca sobreajuste. La finalidad de esta capa es evitar este problema, para ello se omiten los valores de activación a cero omitiendo temporalmente algunas neuronas en cada caso de entrenamiento. De este modo, las neuronas se vuelven más adaptativas y menos restrictivas a la arquitectura. Otra forma similar de evitar el problema es utilizar \textbf{``DropConnect''}, donde en lugar de eliminar las neuronas, son los pesos los que se ponen a cero \cite{Doorn}.\\
+	\item  \textbf{Fully-connected layer:} La finalidad de esta capa es usada para la clasificación basada en las características que se han ido computando en la red %\cite{understandConv}.
+\end{description}
+
+El rendimiento de las redes está determinado por muchos factores interrelacionados arquitectónicos; Entre ellos están el número de capas, dimensiones de los mapas de características, extensiones del kernel espaciales, el número de parámetros y tamaños de agrupación y la colocación de las capas %\cite{LeCum2}.
+
+
+\section{Convolutional Neural Network (CNN)}
+Convolutional neural network are a determinate typology of neural network, CNN are inspired in how the visual cortex of a cat works \cite{Doorn}. This type of neural networks are (usually) used with images at input.\\
+
+Convolutional neural network has been used successfully in recognition and classification task includying document and object recognition, face detection, robotics navegation... \cite{Lecum2, Lecum3}.
+ Una red de convolución consiste en múltiples capas de bancos de filtros seguido de no linealidad y la agrupación espacial. En la figura %\ref{convnet} se puede ver un esquema simplificado de las redes neuronales %\cite{Farabet}. \\
