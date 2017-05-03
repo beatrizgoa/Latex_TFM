@@ -22,9 +22,19 @@ H.~B. Demuth, M.~H. Beale, O.~De~Jess, and M.~T. Hagan, {\em Neural Network
   Design}.
 \newblock USA: Martin Hagan, 2nd~ed., 2014.
 
+\bibitem{Duda}
+R.~O. Duda, P.~E. Hart, and D.~G. Stork, {\em Pattern Classification (2Nd
+  Edition)}.
+\newblock Wiley-Interscience, 2000.
+
 \bibitem{Doorn}
 {\em Analysis of Deep Convolutional Neural Network Architectures}, vol.~21,
   University of Twente, 2014.
+
+\bibitem{Lecum2}
+D.~Eigen, J.~T. Rolfe, R.~Fergus, and Y.~LeCun, ``Understanding deep
+  architectures using a recursive convolutional network,'' {\em CoRR},
+  vol.~abs/1312.1847, 2013.
 
 \bibitem{Lecum3}
 C.~Farabet, R.~Paz, J.~Perez-Carrasco, C.~Zamarreños, A.~Linares-Barranco,
@@ -32,11 +42,6 @@ C.~Farabet, R.~Paz, J.~Perez-Carrasco, C.~Zamarreños, A.~Linares-Barranco,
   ``Comparison between frame-constrained fix-pixel-value and frame-free
   spiking-dynamic-pixel convnets for visual processing,'' {\em Frontiers in
   Neuroscience}, vol.~6, p.~32, 2012.
-
-\bibitem{Lecum2}
-D.~Eigen, J.~T. Rolfe, R.~Fergus, and Y.~LeCun, ``Understanding deep
-  architectures using a recursive convolutional network,'' {\em CoRR},
-  vol.~abs/1312.1847, 2013.
 
 \bibitem{theano}
 T.~D. Team, ``Theano: A {Python} framework for fast computation of mathematical
@@ -87,11 +92,6 @@ J.~Davis and M.~Goadrich, ``The relationship between precision-recall and roc
 
 \bibitem{ISO}
 ``Sc37 iso/iec jtc1,'' 2014.
-
-\bibitem{Duda}
-R.~O. Duda, P.~E. Hart, and D.~G. Stork, {\em Pattern Classification (2Nd
-  Edition)}.
-\newblock Wiley-Interscience, 2000.
 
 \bibitem{PCAvsLDA}
 A.~M. Martinez and A.~C. Kak, ``Pca versus lda,'' {\em IEEE TRANSACTIONS ON

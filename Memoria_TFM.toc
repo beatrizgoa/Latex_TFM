@@ -14,32 +14,31 @@
 \contentsline {subsubsection}{Analogies between ANN and Biological Neural Networks}{8}{subsubsection*.7}
 \contentsline {subsubsection}{Learning}{8}{subsubsection*.9}
 \contentsline {subsubsection}{Type of Layers}{10}{subsubsection*.10}
-\contentsline {subsection}{\numberline {1.2.5}Type of Networks}{10}{subsection.1.1.2.5}
-\contentsline {section}{\numberline {1.3}Convolutional Neural Network (CNN)}{11}{section.1.1.3}
+\contentsline {section}{\numberline {1.3}Convolutional Neural Network (CNN)}{10}{section.1.1.3}
 \contentsline {section}{\numberline {1.4}Programming language and frameworks}{11}{section.1.1.4}
 \contentsline {subsection}{\numberline {1.4.1}Python}{11}{subsection.1.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Theano and others frameworks}{11}{subsection.1.1.4.2}
 \contentsline {subsubsection}{Theano}{11}{subsubsection*.11}
-\contentsline {subsubsection}{NumPy, Scikit-learn and Matplotlib}{12}{subsubsection*.12}
+\contentsline {subsubsection}{NumPy, Scikit-learn and Matplotlib}{11}{subsubsection*.12}
 \contentsline {section}{\numberline {1.5}Databases}{12}{section.1.1.5}
 \contentsline {subsection}{\numberline {1.5.1}MNIST digit database}{12}{subsection.1.1.5.1}
 \contentsline {subsection}{\numberline {1.5.2}Labeled faces in the wild}{13}{subsection.1.1.5.2}
 \contentsline {subsection}{\numberline {1.5.3}FRAV dataset}{14}{subsection.1.1.5.3}
-\contentsline {subsection}{\numberline {1.5.4}CASIA dataset}{17}{subsection.1.1.5.4}
+\contentsline {subsection}{\numberline {1.5.4}CASIA dataset}{16}{subsection.1.1.5.4}
 \contentsline {subsection}{\numberline {1.5.5}MSU - MFSD database}{18}{subsection.1.1.5.5}
 \contentsline {section}{\numberline {1.6}Metrics}{19}{section.1.1.6}
-\contentsline {subsection}{\numberline {1.6.1}Cost and Error rate}{20}{subsection.1.1.6.1}
+\contentsline {subsection}{\numberline {1.6.1}Cost and Error rate}{19}{subsection.1.1.6.1}
 \contentsline {subsection}{\numberline {1.6.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{20}{subsection.1.1.6.2}
-\contentsline {subsection}{\numberline {1.6.3}ROC curve and Precision and Recall curve}{21}{subsection.1.1.6.3}
+\contentsline {subsection}{\numberline {1.6.3}ROC curve and Precision and Recall curve}{20}{subsection.1.1.6.3}
 \contentsline {subsection}{\numberline {1.6.4}APCER and BPCER}{22}{subsection.1.1.6.4}
 \contentsline {section}{\numberline {1.7}Classifiers, Reduction of the dimensionality algorithms and Cross Validation}{23}{section.1.1.7}
-\contentsline {subsection}{\numberline {1.7.1}Classifiers}{24}{subsection.1.1.7.1}
-\contentsline {subsubsection}{Logistic Regression}{24}{subsubsection*.21}
+\contentsline {subsection}{\numberline {1.7.1}Classifiers}{23}{subsection.1.1.7.1}
+\contentsline {subsubsection}{Logistic Regression}{23}{subsubsection*.21}
 \contentsline {subsubsection}{Support Vector Machine}{24}{subsubsection*.22}
-\contentsline {subsubsection}{K Nearest Neighbours}{26}{subsubsection*.24}
+\contentsline {subsubsection}{K Nearest Neighbours}{25}{subsubsection*.24}
 \contentsline {subsubsection}{Decision Tree}{26}{subsubsection*.25}
 \contentsline {subsection}{\numberline {1.7.2}Dimensionality reduction algorithms}{26}{subsection.1.1.7.2}
-\contentsline {subsubsection}{Linear Discriminant Analysis}{27}{subsubsection*.27}
+\contentsline {subsubsection}{Linear Discriminant Analysis}{26}{subsubsection*.27}
 \contentsline {subsubsection}{Principal Component Analysis}{27}{subsubsection*.28}
 \contentsline {subsection}{\numberline {1.7.3}Cross Validation}{27}{subsection.1.1.7.3}
 \contentsline {chapter}{\numberline {2}Methodology}{29}{chapter.1.2}
@@ -67,8 +66,7 @@
 \contentsline {subsection}{\numberline {2.4.3}New database}{66}{subsection.1.2.4.3}
 \contentsline {subsubsection}{experiments}{67}{subsubsection*.76}
 \contentsline {section}{\numberline {2.5}Final architecture}{68}{section.1.2.5}
-\contentsline {section}{\numberline {2.6}Conclusions}{75}{section.1.2.6}
-\contentsline {section}{\numberline {2.7}Future work}{75}{section.1.2.7}
-\contentsline {chapter}{Bibliography}{77}{chapter*.83}
-\contentsline {chapter}{List of Figures}{81}{chapter*.84}
-\contentsline {chapter}{List of Tables}{85}{chapter*.85}
+\contentsline {section}{\numberline {2.6}Conclusions}{69}{section.1.2.6}
+\contentsline {chapter}{Bibliography}{75}{chapter*.83}
+\contentsline {chapter}{List of Figures}{79}{chapter*.84}
+\contentsline {chapter}{List of Tables}{83}{chapter*.85}

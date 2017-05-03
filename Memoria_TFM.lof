@@ -9,23 +9,23 @@
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Different activation functions. Image obtained from \cite {BINN}\relax }}{7}{figure.caption.6}
 \contentsline {figure}{\numberline {1.5}{\ignorespaces MNIST digit images database. Image obtained from \cite {MNISTimage}\relax }}{13}{figure.caption.13}
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Samples of LFW database\relax }}{14}{figure.caption.14}
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Four attacks and real user from RGB FRAV database \relax }}{15}{figure.caption.15}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {printed image attack}}}{15}{figure.caption.15}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {mask attack}}}{15}{figure.caption.15}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {eye mask attack}}}{15}{figure.caption.15}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {tablet attack}}}{15}{figure.caption.15}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {real user}}}{15}{figure.caption.15}
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Four attacks and real user of RGB and NIR FRAV database \relax }}{16}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {printed RGB image attack}}}{16}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {mask attack RGB}}}{16}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {eye mask attack RGB}}}{16}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {tablet attack RGB}}}{16}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {real user RGB}}}{16}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {printed NIR image attack}}}{16}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {mask attack NIR}}}{16}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {eye mask attack NIR}}}{16}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {tablet attack NIR}}}{16}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {real user NIR}}}{16}{figure.caption.16}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Four attacks and real user from RGB FRAV database \relax }}{14}{figure.caption.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {printed image attack}}}{14}{figure.caption.15}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {mask attack}}}{14}{figure.caption.15}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {eye mask attack}}}{14}{figure.caption.15}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {tablet attack}}}{14}{figure.caption.15}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {real user}}}{14}{figure.caption.15}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Four attacks and real user of RGB and NIR FRAV database \relax }}{15}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {printed RGB image attack}}}{15}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {mask attack RGB}}}{15}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {eye mask attack RGB}}}{15}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {tablet attack RGB}}}{15}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {real user RGB}}}{15}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {printed NIR image attack}}}{15}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {mask attack NIR}}}{15}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {eye mask attack NIR}}}{15}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {tablet attack NIR}}}{15}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {real user NIR}}}{15}{figure.caption.16}
 \contentsline {figure}{\numberline {1.9}{\ignorespaces Three attacks and real user from casia database \relax }}{17}{figure.caption.17}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {printed image attack}}}{17}{figure.caption.17}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {eye printed image attack}}}{17}{figure.caption.17}
@@ -38,7 +38,7 @@
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {real user}}}{19}{figure.caption.18}
 \contentsline {figure}{\numberline {1.11}{\ignorespaces ROC curves. Image obtained from \cite {RocImage}\relax }}{22}{figure.caption.20}
 \contentsline {figure}{\numberline {1.12}{\ignorespaces Optimal hyperplane and the decision boundary. Image obtained from \cite {SVMimage}\relax }}{25}{figure.caption.23}
-\contentsline {figure}{\numberline {1.13}{\ignorespaces Decision Tree Classifier. Image obtained from \cite {Treeimage}\relax }}{27}{figure.caption.26}
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Decision Tree Classifier. Image obtained from \cite {Treeimage}\relax }}{26}{figure.caption.26}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Methodology}{29}{chapter.1.2}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces LeNet-5 Arquitecture\relax }}{29}{figure.caption.29}
