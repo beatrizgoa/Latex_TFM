@@ -1,7 +1,33 @@
-\section{Introduction}
-This document blaaa blaaa
+\chapter{Introduction}\label{ch:introduction}
 
-\subsection{Anti-spoofing}
-bla bla bla
+\section{Motivation}
+Artificial intelligence is a field that I, personally, find very interesting. Convolutional neural networks and its bio-inspired basis is the most attractive subject that I have considered: how from images, features are learned and the big accuracy of pattern recognition task is gotten makes me learn deeply in this subject. This is the main reason on focusing in this thesis in convolutional neural networks.\\
 
-% Soy un comentario de Carlos.
+The object with which neural network would be used in this thesis is face spoofing detection, this is because I would like to work with real problems that could be used in the real world like is this subject, that is being part of the \textit{ABC4EU European Project}. Because of this and the importance of detecting cases of identity theft in nowadays security has driven me to work in spoofing detection attacks using convolutional neural networks.
+
+\section{Objectives}
+The principal objective of this thesis is being able to classify face images from people. Those images are people images (real users) and images from people trying to impersonate (attacks).\\
+
+The samples used are from different databases: CASIA, FRAV and MFSU database. Those databases are formed by real users and attacks samples (images of people with mask, images from smart phones or tablets, ...) and have been used in recognition and spoofing task before.\\
+
+To differentiate between real users images and the attacks images a Convolutional Neural Netork (CNN) has been developed using Python language and Theano (a Python library). The secondary objective is learning this artificial intelligence research field that nowadays has a significance importance.\\
+
+Images from each database are feed to the CNN and the output features obtained are the input of the classifiers. Various classifiers has been trained (KNN, logistic regression, Support Vector Machine, ...) for this purpose.\\
+
+Get the best combination between CNN and classifier to classify correctly the most number of samples is another objective. Knowing what database is better for this thesis objectives and why also would be part of the objective.\\
+
+Finally, trying to differentiate characteristics of the well-classified and bad-classified samples would be interesting. The last objective is identify a pattern (if exists) of bad-classified samples.\\
+
+\section{Thesis structure}
+This thesis is formed by a brief introduction (chapter \ref{ch:introduction}) in which the motivation to carry out this project has been exposed and this thesis main objectives are described.\\
+
+Before go ahead to the development of the main part, a short introduction to neural network is presented as well as anti-spoofing projects developed in others research articles. The classifiers and metric used along the project is shown in this chapter too.\\
+
+In chapter \ref{ch:methodology}, the main part is developed, here the steps that have led to the final architecture of the neural networks are explained.\\
+
+In the following chapter (chapter \ref{ch:results} the results obtained in the previous chapter (chapter \ref{ch:methodology}) are presented and discussed.\\
+
+The last chapter ,chapter \ref{ch:concl}, the conclusion obtained along the thesis are discussed and the future work is proposed.\\
+
+ 
+  
