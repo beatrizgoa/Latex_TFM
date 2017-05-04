@@ -1,0 +1,16 @@
+\clearpage
+\section{Conclusions}
+In this section the conclusions obtained along the methodology and results are presented and discussed.\\
+
+The importance of having a representative and well-build database is essential to train any classifier or neural network, because it is the main tool which classifiers or neural networks have to use. In the used databases, it has been proved that the quality of images is important to extract the features better and minimize the error. The results used with the FRAV database were better than CASIA database (for example) and one reason is the quality of images.\\
+
+Continuing with databases, the need of having a balanced database has been raised. If the database is composed by 70\% class 1 samples and 30\% class 2 samples, just if the classifier classify all the samples as class 1, the error will be the 30\%, so the classify would learn better to classify one class samples. This problem has appeared in experiments. There are different ways to try to minimize unbalanced databases, the first one would be get more samples from the class which has less samples. There not work if more samples of the less-samples class are obtained from the existing one, because if samples are repeated the classifier would learn them and over-fitting would be obtained.\\
+
+\begin{itemize}
+\item From \cite{PCAvsLDA}: when a small (or non-representative) training data set is used, there is no guarantee that LDA will outperform PCA (esto deberia de compararse con los resultados que se obtinen y parafrasear la frase si es necesario).
+\item Best results with FRAV because of the quality of images
+\item A balanced database and which more samples would reproduce better results.
+\end{itemize}
+
+\section{Future work}
+First try to minimize the unbalanced database, like it is not possible to get more samples, change the error in that way that the network does not be penalized as much as will be during training if a sample of the less-samples class  is misclassified.\\
