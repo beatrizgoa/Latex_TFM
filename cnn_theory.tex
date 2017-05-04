@@ -129,7 +129,7 @@ The error is calculated as defined in equation \ref{eq:error_bb}
 E=\sum_{p}E^p = \frac{1}{2}\sum_{p}(\delta^p- y^p)^2
 \end{equation} \label{eq:error_bb}
 
-The error is backpropagated to the last layers until the first layer, modifying the weights to balance the error proportionally to the gradient of the error function. This is called the chain rule or the delta rule \cite{Duda, BINN, krose}. The backpropagation equation is defined above\\
+The error is backpropagated to the last layers until the first layer, modifying the weights to balance the error proportionally to the gradient of the error function. This is called the chain rule or the delta rule \cite{Duda, BINN, krose}. The backpropagation equation is defined below\\
 
 %Ecuacion backpropagation 1
 			\begin{equation}
@@ -148,7 +148,7 @@ There are three useful training protocols depending on how training set is used:
 
 
 \subsubsection{Type of Layers}
-The layers that conforms the networks could be different depending on the mathematical operation. The most common used layers are described above:
+The layers that conforms the networks could be different depending on the mathematical operation. The most common used layers are described below:
 \begin{description}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
 	\item \textbf{Convolutional layer:} In this type of layers, the convolution operator is processed at the input. Weights are the applying filters and the output are the features or characteristics useful to extract the information of the image. In one convolutional layer, there could be used as many filters are user defines.
 	\item \textbf{Pooling Layer:} In this layer, the dimensionality is reduced. The most important information is preserved. It is usually used at the output of the convolutional to resume its out \cite{Doorn}. The most used pooling layer is the max-pooling layer, the maximum values are saved.
