@@ -7,12 +7,12 @@
 \BOOKMARK [0][-]{chapter.1.2}{Theoretical Basics}{part.1}% 7
 \BOOKMARK [1][-]{section.1.2.1}{Introduction}{chapter.1.2}% 8
 \BOOKMARK [1][-]{section.1.2.2}{Anti-spoofing and biometrics systems}{chapter.1.2}% 9
-\BOOKMARK [2][-]{subsection.1.2.2.1}{Introduction}{section.1.2.2}% 10
+\BOOKMARK [2][-]{subsection.1.2.2.1}{Spoofing and biometrics introduction}{section.1.2.2}% 10
 \BOOKMARK [2][-]{subsection.1.2.2.2}{Face anti-spoofing}{section.1.2.2}% 11
 \BOOKMARK [2][-]{subsection.1.2.2.3}{Related Works}{section.1.2.2}% 12
 \BOOKMARK [1][-]{section.1.2.3}{Neural Network background theory}{chapter.1.2}% 13
 \BOOKMARK [2][-]{subsection.1.2.3.1}{Historical introduction}{section.1.2.3}% 14
-\BOOKMARK [2][-]{subsection.1.2.3.2}{Introduction}{section.1.2.3}% 15
+\BOOKMARK [2][-]{subsection.1.2.3.2}{Introduction to ANN}{section.1.2.3}% 15
 \BOOKMARK [2][-]{subsection.1.2.3.3}{Biological Neural Networks}{section.1.2.3}% 16
 \BOOKMARK [2][-]{subsection.1.2.3.4}{Artificial Neural Networks \(ANN\)}{section.1.2.3}% 17
 \BOOKMARK [1][-]{section.1.2.4}{Convolutional Neural Network \(CNN\)}{chapter.1.2}% 18

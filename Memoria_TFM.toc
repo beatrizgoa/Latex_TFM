@@ -10,12 +10,12 @@
 \contentsline {chapter}{\numberline {2}Theoretical Basics}{5}{chapter.1.2}
 \contentsline {section}{\numberline {2.1}Introduction}{5}{section.1.2.1}
 \contentsline {section}{\numberline {2.2}Anti-spoofing and biometrics systems}{5}{section.1.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Introduction}{5}{subsection.1.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Spoofing and biometrics introduction}{5}{subsection.1.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Face anti-spoofing}{7}{subsection.1.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Related Works}{7}{subsection.1.2.2.3}
 \contentsline {section}{\numberline {2.3}Neural Network background theory}{8}{section.1.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Historical introduction}{8}{subsection.1.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Introduction}{9}{subsection.1.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Introduction to ANN}{9}{subsection.1.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Biological Neural Networks}{9}{subsection.1.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Artificial Neural Networks (ANN)}{10}{subsection.1.2.3.4}
 \contentsline {subsubsection}{Analogies between ANN and Biological Neural Networks}{12}{subsubsection*.8}
