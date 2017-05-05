@@ -450,7 +450,7 @@ For training, the 70\% of the total data has been used, for testing the 20\% and
 
 The code runs for 150 epoch with a learning rate of 0.001 and a batch size of 20 images.\\
 
-The disadvantage of using mini-batches is that there are some images remain and the quantity os less than a mini-batch, that images are not used, so from 157 testing images, just 140 has been used.\\
+The disadvantage of using mini-batches is that there are some images remain and the quantity of less than a mini-batch, that images are not used, so from 157 testing images, just 140 has been used.\\
 
 The test error that has been gotten is 30\% at iteration 1863 where the best validation score was gotten (26,67\%). Where:
 
@@ -480,8 +480,8 @@ To get that results 3,04 hours was needed to run the code.\\
 
 \clearpage
 
-\subsection{Architecture implemented in Casia videos}
-In this section, the architecture used in the paper of the Casia videos would be repeated partially. The paper is learn convolutional neural network for face anti-spoofing.\\
+\subsection{Architecture implemented in CASIA videos}
+In this section, the architecture used in the paper of the CASIA videos would be repeated partially. The paper is learn convolutional neural network for face anti-spoofing.\\
 
 The architecture followed in the paper is the same used in Imagenet, it is formed by five convolutional layers, followed by three fully-connected layers. The two first conv layer and the last one are followed by a max-pool layer. The two first conv layers are followed by response normalization layers too. Authors use ReLu like activation function in each layer. The first two fully-connected layers are followed by two dropout layers, and the last layer output is followed by softmax layer as a classifier.\\
 
@@ -875,7 +875,7 @@ Looking the graphs where a minidataset has been used (20 images or 14), if the c
 
 The conclusion is the needed of a balanced database, at least to do this experiment. In which the number of class 0 samples are the same that the number of class 1 samples, because the network would not learn in the same way if in some cases the number of samples of  attack class is four times than the number of samples of class 1, just predicting 0 would have 25\% accuracy, and having less than 5 samples in validation or testing is not a good generalizer (2 samples in class 0 MFSD database).\\
 
-\section{Final architecture} %Used in ejecucion 2
+\section{Final architecture}\label{Final_archi} %Used in ejecucion 2
 The architecture utilized in the final, and the most important experiment is described in this section.\\
 
 The neural network is composed by five convolutional layers. The first and second convolutional layers (CL1 and CL2) , whose kernel sizes are 11x11 and 3x3 respectively, are followed by a local response normalization layer and a max pool layer whose size is 2x2. The third convolutional layer (CL3), with a kernel size of 3x3 , the next layer is a convolutional one (CL4) of size 3x3 followed by a max-pool layer whose size is 2x2. The next two layers are Dropouts layers (DL1 and DL2) with 4096 neurons. The next layer us a Fully-connected layer (FL) with 4096 neurons at the input and 2000 layers at the output.\\

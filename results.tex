@@ -1,8 +1,10 @@
-In this chapter the results obtained are presented as well as the training process that is going to be discussed. The hole proccess (training and testing has been realized three times to have more general results.
+%!TEX root = Memoria_TFM.tex
+
+In this chapter the results obtained are presented as well as the training process that is going to be discussed. The hole process (training and testing) has been realized three times to have more general results.
 
 
 \section{Training and validating process}
-The convolutional neural networks has been trained independently for each database.  Due to the fact that the training process has been realized 
+The convolutional neural networks has been trained independently for each database as is explained in \ref{Final_archi}  Due to the fact that the training process has been realized 
 
 \subsection{CASIA Image database}
 
@@ -19,3 +21,127 @@ The convolutional neural networks has been trained independently for each databa
 
 \section{Testing process}
 From the best CNN model, for each database, A SVM (with lineal and RBF kernel), KNN, Decision Tree and logistic regression has been trained. Also the testing has been realize after training a LDA with each classifier and PCA with each classifier. The results are going to be exposed independently of each database and then compared among all databases.\\
+
+\subsection{CASIA Image database}
+
+\begin{table}[]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+Classifier                                                              & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + PCA\\ nº components =\end{tabular} & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + LDA\\ nº components =\end{tabular} & APCR & BPCR \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular} & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    \\ \hline
+\end{tabular}%
+}
+\caption{APCR and BPCR classifying results using CASIA image database}
+\label{APCR_BPCR_CASIA_im}
+\end{table}
+
+
+\subsection{CASIA Video database}
+
+\begin{table}[]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+Classifier                                                              & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + PCA\\ nº components =\end{tabular} & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + LDA\\ nº components =\end{tabular} & APCR & BPCR \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular} & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    \\ \hline
+\end{tabular}%
+}
+\caption{APCR and BPCR classifying results using CASIA video database}
+\label{APCR_BPCR_CASIA_vid}
+\end{table}
+
+\subsection{FRAV database}
+
+\begin{table}[]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+Classifier                                                              & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + PCA\\ nº components =\end{tabular} & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + LDA\\ nº components =\end{tabular} & APCR & BPCR \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular} & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    \\ \hline
+\end{tabular}%
+}
+\caption{APCR and BPCR classifying results using FRAV RGB database}
+\label{APCR_BPCR_FRAV}
+\end{table}
+
+
+\subsection{FRAV RGB+NIR (feature level) database}
+
+\begin{table}[]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+Classifier                                                              & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + PCA\\ nº components =\end{tabular} & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + LDA\\ nº components =\end{tabular} & APCR & BPCR \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular} & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    \\ \hline
+\end{tabular}%
+}
+\caption{APCR and BPCR classifying results using FRAV RGB+NIR (feature level) database}
+\label{APCR_BPCR_FRAV_feature}
+\end{table}
+
+\subsection{FRAV RGB+NIR (classification level) database}
+
+\begin{table}[]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+Classifier                                                              & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + PCA\\ nº components =\end{tabular} & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + LDA\\ nº components =\end{tabular} & APCR & BPCR \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular} & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    \\ \hline
+\end{tabular}%
+}
+\caption{APCR and BPCR classifying results using FRAV RGB+NIR (classification level) database}
+\label{APCR_BPCR_FRAV_class}
+\end{table}
+
+\subsection{MFSD-MSU database}
+
+\begin{table}[]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+Classifier                                                              & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + PCA\\ nº components =\end{tabular} & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + LDA\\ nº components =\end{tabular} & APCR & BPCR \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular} & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    \\ \hline
+\end{tabular}%
+}
+\caption{APCR and BPCR classifying results using MFSD-MSU database}
+\label{APCR_BPCR_MFSD}
+\end{table}
+
+\subsection{Comparative among databases}

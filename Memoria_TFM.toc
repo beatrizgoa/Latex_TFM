@@ -7,73 +7,91 @@
 \contentsline {section}{\numberline {1.1}Motivation}{3}{section.1.1.1}
 \contentsline {section}{\numberline {1.2}Objectives}{3}{section.1.1.2}
 \contentsline {section}{\numberline {1.3}Thesis structure}{4}{section.1.1.3}
-\contentsline {chapter}{\numberline {2}Methodology}{5}{chapter.1.2}
-\contentsline {section}{\numberline {2.1}Anti-spoofing and biometrics systems}{5}{section.1.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Introduction}{5}{subsection.1.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Face anti-spoofing}{6}{subsection.1.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Related Works}{7}{subsection.1.2.1.3}
-\contentsline {section}{\numberline {2.2}Neural Network background theory}{8}{section.1.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Historical introduction}{8}{subsection.1.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Introduction}{9}{subsection.1.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Biological Neural Networks}{9}{subsection.1.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Artificial Neural Networks (ANN)}{10}{subsection.1.2.2.4}
+\contentsline {chapter}{\numberline {2}Theoretical Basics}{5}{chapter.1.2}
+\contentsline {section}{\numberline {2.1}Introduction}{5}{section.1.2.1}
+\contentsline {section}{\numberline {2.2}Anti-spoofing and biometrics systems}{5}{section.1.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Introduction}{5}{subsection.1.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Face anti-spoofing}{7}{subsection.1.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Related Works}{7}{subsection.1.2.2.3}
+\contentsline {section}{\numberline {2.3}Neural Network background theory}{8}{section.1.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Historical introduction}{8}{subsection.1.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Introduction}{9}{subsection.1.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Biological Neural Networks}{9}{subsection.1.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Artificial Neural Networks (ANN)}{10}{subsection.1.2.3.4}
 \contentsline {subsubsection}{Analogies between ANN and Biological Neural Networks}{12}{subsubsection*.8}
-\contentsline {subsubsection}{Learning}{12}{subsubsection*.10}
+\contentsline {subsubsection}{Learning}{13}{subsubsection*.10}
 \contentsline {subsubsection}{Type of Layers}{14}{subsubsection*.11}
-\contentsline {section}{\numberline {2.3}Convolutional Neural Network (CNN)}{15}{section.1.2.3}
-\contentsline {section}{\numberline {2.4}Programming language and frameworks}{15}{section.1.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Python}{15}{subsection.1.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Theano and others frameworks}{15}{subsection.1.2.4.2}
+\contentsline {section}{\numberline {2.4}Convolutional Neural Network (CNN)}{15}{section.1.2.4}
+\contentsline {section}{\numberline {2.5}Programming language and frameworks}{15}{section.1.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Python}{15}{subsection.1.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Theano and others frameworks}{15}{subsection.1.2.5.2}
 \contentsline {subsubsection}{Theano}{15}{subsubsection*.12}
 \contentsline {subsubsection}{NumPy, Scikit-learn and Matplotlib}{16}{subsubsection*.13}
-\contentsline {section}{\numberline {2.5}Databases}{16}{section.1.2.5}
-\contentsline {subsection}{\numberline {2.5.1}MNIST digit database}{17}{subsection.1.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Labeled faces in the wild}{17}{subsection.1.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}FRAV dataset}{18}{subsection.1.2.5.3}
-\contentsline {subsection}{\numberline {2.5.4}CASIA dataset}{21}{subsection.1.2.5.4}
-\contentsline {subsection}{\numberline {2.5.5}MSU - MFSD database}{23}{subsection.1.2.5.5}
-\contentsline {section}{\numberline {2.6}Metrics}{24}{section.1.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Cost and Error rate}{24}{subsection.1.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{24}{subsection.1.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}ROC curve and Precision and Recall curve}{25}{subsection.1.2.6.3}
-\contentsline {subsection}{\numberline {2.6.4}APCER and BPCER}{27}{subsection.1.2.6.4}
-\contentsline {section}{\numberline {2.7}Classifiers, Reduction of the dimensionality algorithms and Cross Validation}{28}{section.1.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Classifiers}{28}{subsection.1.2.7.1}
+\contentsline {section}{\numberline {2.6}Databases}{16}{section.1.2.6}
+\contentsline {subsection}{\numberline {2.6.1}MNIST digit database}{17}{subsection.1.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Labeled faces in the wild}{17}{subsection.1.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}FRAV dataset}{18}{subsection.1.2.6.3}
+\contentsline {subsection}{\numberline {2.6.4}CASIA dataset}{21}{subsection.1.2.6.4}
+\contentsline {subsection}{\numberline {2.6.5}MSU - MFSD database}{23}{subsection.1.2.6.5}
+\contentsline {section}{\numberline {2.7}Metrics}{24}{section.1.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Cost and Error rate}{24}{subsection.1.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{24}{subsection.1.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}ROC curve and Precision and Recall curve}{25}{subsection.1.2.7.3}
+\contentsline {subsection}{\numberline {2.7.4}APCER and BPCER}{27}{subsection.1.2.7.4}
+\contentsline {section}{\numberline {2.8}Classifiers, Reduction of the dimensionality algorithms and Cross Validation}{28}{section.1.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Classifiers}{28}{subsection.1.2.8.1}
 \contentsline {subsubsection}{Logistic Regression}{28}{subsubsection*.22}
 \contentsline {subsubsection}{Support Vector Machine}{29}{subsubsection*.23}
 \contentsline {subsubsection}{K Nearest Neighbours}{30}{subsubsection*.25}
 \contentsline {subsubsection}{Decision Tree}{30}{subsubsection*.26}
-\contentsline {subsection}{\numberline {2.7.2}Dimensionality reduction algorithms}{31}{subsection.1.2.7.2}
+\contentsline {subsection}{\numberline {2.8.2}Dimensionality reduction algorithms}{31}{subsection.1.2.8.2}
 \contentsline {subsubsection}{Linear Discriminant Analysis}{31}{subsubsection*.28}
 \contentsline {subsubsection}{Principal Component Analysis}{32}{subsubsection*.29}
-\contentsline {subsection}{\numberline {2.7.3}Cross Validation}{32}{subsection.1.2.7.3}
-\contentsline {section}{\numberline {2.8}LeNet-5}{32}{section.1.2.8}
-\contentsline {subsection}{\numberline {2.8.1}LeNet-5 specifications}{33}{subsection.1.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}LeNet-5 Results}{34}{subsection.1.2.8.2}
-\contentsline {subsection}{\numberline {2.8.3}Modifying LeNet}{36}{subsection.1.2.8.3}
-\contentsline {subsubsection}{Changing the batch size}{36}{subsubsection*.34}
-\contentsline {subsubsection}{Changing activation function, normalization and weights initialization}{38}{subsubsection*.36}
-\contentsline {section}{\numberline {2.9}Start working with Faces databases}{43}{section.1.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Using Labeled Faces in the Wild}{43}{subsection.1.2.9.1}
+\contentsline {subsection}{\numberline {2.8.3}Cross Validation}{32}{subsection.1.2.8.3}
+\contentsline {chapter}{\numberline {3}Methodology}{33}{chapter.1.3}
+\contentsline {section}{\numberline {3.1}LeNet-5}{33}{section.1.3.1}
+\contentsline {subsection}{\numberline {3.1.1}LeNet-5 specifications}{34}{subsection.1.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}LeNet-5 Results}{35}{subsection.1.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Modifying LeNet}{36}{subsection.1.3.1.3}
+\contentsline {subsubsection}{Changing the batch size}{37}{subsubsection*.34}
+\contentsline {subsubsection}{Changing activation function, normalization and weights initialization}{39}{subsubsection*.36}
+\contentsline {section}{\numberline {3.2}Start working with Faces databases}{43}{section.1.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Using Labeled Faces in the Wild}{43}{subsection.1.3.2.1}
 \contentsline {subsubsection}{Changing learning rate}{43}{subsubsection*.40}
 \contentsline {subsubsection}{Changing convolutional parameters}{45}{subsubsection*.46}
 \contentsline {subsubsection}{Using ReLu as an activation function instead of tanh}{47}{subsubsection*.52}
-\contentsline {subsection}{\numberline {2.9.2}Using FRAV dataset}{48}{subsection.1.2.9.2}
-\contentsline {section}{\numberline {2.10}Defining a new architecture}{50}{section.1.2.10}
-\contentsline {section}{\numberline {2.11}Regenerating the databases}{51}{section.1.2.11}
+\contentsline {subsection}{\numberline {3.2.2}Using FRAV dataset}{48}{subsection.1.3.2.2}
+\contentsline {section}{\numberline {3.3}Defining a new architecture}{50}{section.1.3.3}
+\contentsline {section}{\numberline {3.4}Regenerating the databases}{51}{section.1.3.4}
 \contentsline {subsubsection}{Adding images in characteristic level}{52}{subsubsection*.56}
-\contentsline {subsection}{\numberline {2.11.1}Architecture implemented in Casia videos}{58}{subsection.1.2.11.1}
-\contentsline {subsection}{\numberline {2.11.2}As close as possible as Imagenet}{61}{subsection.1.2.11.2}
+\contentsline {subsection}{\numberline {3.4.1}Architecture implemented in CASIA videos}{58}{subsection.1.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}As close as possible as Imagenet}{61}{subsection.1.3.4.2}
 \contentsline {subsubsection}{Network configuration for each experiment}{61}{subsubsection*.60}
 \contentsline {subsubsection}{Results with FRAV database}{62}{subsubsection*.61}
 \contentsline {subsubsection}{casia results}{65}{subsubsection*.68}
 \contentsline {subsubsection}{MFSD results}{69}{subsubsection*.73}
-\contentsline {subsection}{\numberline {2.11.3}New database}{70}{subsection.1.2.11.3}
+\contentsline {subsection}{\numberline {3.4.3}New database}{70}{subsection.1.3.4.3}
 \contentsline {subsubsection}{experiments}{71}{subsubsection*.77}
-\contentsline {section}{\numberline {2.12}Final architecture}{72}{section.1.2.12}
-\contentsline {chapter}{\numberline {3}Results}{79}{chapter.1.3}
-\contentsline {chapter}{\numberline {4}Conclusions and future work}{81}{chapter.1.4}
-\contentsline {section}{\numberline {4.1}Conclusions}{81}{section.1.4.1}
-\contentsline {chapter}{Bibliography}{83}{chapter*.84}
-\contentsline {chapter}{List of Figures}{87}{chapter*.85}
-\contentsline {chapter}{List of Tables}{91}{chapter*.86}
+\contentsline {section}{\numberline {3.5}Final architecture}{72}{section.1.3.5}
+\contentsline {chapter}{\numberline {4}Results}{79}{chapter.1.4}
+\contentsline {section}{\numberline {4.1}Training and validating process}{79}{section.1.4.1}
+\contentsline {subsection}{\numberline {4.1.1}CASIA Image database}{79}{subsection.1.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}CASIA Video database}{79}{subsection.1.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}FRAV database}{79}{subsection.1.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}FRAV RGB+NIR (feature level) database}{79}{subsection.1.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}FRAV RGB+NIR (classification level) database}{79}{subsection.1.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}MFSD database}{79}{subsection.1.4.1.6}
+\contentsline {section}{\numberline {4.2}Testing process}{79}{section.1.4.2}
+\contentsline {subsection}{\numberline {4.2.1}CASIA Image database}{80}{subsection.1.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}CASIA Video database}{80}{subsection.1.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}FRAV database}{80}{subsection.1.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}FRAV RGB+NIR (feature level) database}{80}{subsection.1.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}FRAV RGB+NIR (classification level) database}{80}{subsection.1.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}MFSD-MSU database}{80}{subsection.1.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Comparative among databases}{80}{subsection.1.4.2.7}
+\contentsline {chapter}{\numberline {5}Conclusions and future work}{83}{chapter.1.5}
+\contentsline {section}{\numberline {5.1}Conclusions}{83}{section.1.5.1}
+\contentsline {section}{\numberline {5.2}FUture work}{83}{section.1.5.2}
+\contentsline {chapter}{Bibliography}{85}{chapter*.90}
+\contentsline {chapter}{List of Figures}{89}{chapter*.91}
+\contentsline {chapter}{List of Tables}{93}{chapter*.92}
