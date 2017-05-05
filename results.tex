@@ -24,17 +24,17 @@ From the best CNN model, for each database, A SVM (with lineal and RBF kernel), 
 
 \subsection{CASIA Image database}
 
-\begin{table}[]
+\begin{table}[htb]
 \centering
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c||c|c|c||c|c|c|}
 \hline
 \rowcolor[HTML]{ECF4FF} 
 Classifier                                                              & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + PCA\\ nº components =\end{tabular} & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + LDA\\ nº components =\end{tabular} & APCR & BPCR \\ \hline
-\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ \hline
 \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular} & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    \\ \hline
 \end{tabular}%
 }
@@ -45,17 +45,17 @@ Classifier                                                              & APCR &
 
 \subsection{CASIA Video database}
 
-\begin{table}[]
+\begin{table}[htb]
 \centering
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c||c|c|c||c|c|c|}
 \hline
 \rowcolor[HTML]{ECF4FF} 
 Classifier                                                              & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + PCA\\ nº components =\end{tabular} & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + LDA\\ nº components =\end{tabular} & APCR & BPCR \\ \hline
-\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ \hline
 \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular} & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    \\ \hline
 \end{tabular}%
 }
@@ -65,17 +65,17 @@ Classifier                                                              & APCR &
 
 \subsection{FRAV database}
 
-\begin{table}[]
+\begin{table}[htb]
 \centering
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c||c|c|c||c|c|c|}
 \hline
 \rowcolor[HTML]{ECF4FF} 
 Classifier                                                              & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + PCA\\ nº components =\end{tabular} & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + LDA\\ nº components =\end{tabular} & APCR & BPCR \\ \hline
-\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ \hline
 \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular} & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    \\ \hline
 \end{tabular}%
 }
@@ -86,17 +86,17 @@ Classifier                                                              & APCR &
 
 \subsection{FRAV RGB+NIR (feature level) database}
 
-\begin{table}[]
+\begin{table}[htb]
 \centering
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c||c|c|c||c|c|c|}
 \hline
 \rowcolor[HTML]{ECF4FF} 
 Classifier                                                              & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + PCA\\ nº components =\end{tabular} & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + LDA\\ nº components =\end{tabular} & APCR & BPCR \\ \hline
-\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ \hline
 \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular} & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    \\ \hline
 \end{tabular}%
 }
@@ -106,17 +106,17 @@ Classifier                                                              & APCR &
 
 \subsection{FRAV RGB+NIR (classification level) database}
 
-\begin{table}[]
+\begin{table}[htb]
 \centering
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c||c|c|c||c|c|c|}
 \hline
 \rowcolor[HTML]{ECF4FF} 
 Classifier                                                              & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + PCA\\ nº components =\end{tabular} & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + LDA\\ nº components =\end{tabular} & APCR & BPCR \\ \hline
-\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ \hline
 \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular} & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    \\ \hline
 \end{tabular}%
 }
@@ -126,17 +126,17 @@ Classifier                                                              & APCR &
 
 \subsection{MFSD-MSU database}
 
-\begin{table}[]
+\begin{table}[htb]
 \centering
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c||c|c|c||c|c|c|}
 \hline
 \rowcolor[HTML]{ECF4FF} 
 Classifier                                                              & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + PCA\\ nº components =\end{tabular} & APCR & BPCR & \begin{tabular}[c]{@{}c@{}}Classifier + LDA\\ nº components =\end{tabular} & APCR & BPCR \\ \hline
-\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ 
-\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ 
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = X\end{tabular}                  & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = X\end{tabular}               & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                     & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = x\end{tabular}                        & V    & V    \\ \hline
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}         & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =\end{tabular}            & V    & V    \\ \hline
 \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular} & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate =\end{tabular}    & V    & V    \\ \hline
 \end{tabular}%
 }
