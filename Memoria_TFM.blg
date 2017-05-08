@@ -1,8 +1,51 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Memoria_TFM.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Memoria_TFM.aux
 The style file: ieeetr.bst
 Database file #1: references.bib
 Warning--I didn't find a database entry for "S"
 Warning--I didn't find a database entry for "F"
 Warning--empty publisher in BINN
 Warning--empty title in neuroscience
+You've used 40 entries,
+            1876 wiz_defined-function locations,
+            721 strings with 10343 characters,
+and the built_in function-call counts, 9009 in all, are:
+= -- 872
+> -- 335
+< -- 2
++ -- 130
+- -- 90
+* -- 562
+:= -- 1233
+add.period$ -- 55
+call.type$ -- 40
+change.case$ -- 34
+chr.to.int$ -- 0
+cite$ -- 42
+duplicate$ -- 475
+empty$ -- 959
+format.name$ -- 90
+if$ -- 2249
+int.to.chr$ -- 0
+int.to.str$ -- 40
+missing$ -- 37
+newline$ -- 138
+num.names$ -- 32
+pop$ -- 203
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 276
+stack$ -- 0
+substring$ -- 475
+swap$ -- 156
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 73
+width$ -- 42
+write$ -- 364
 (There were 4 warnings)

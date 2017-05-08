@@ -26,9 +26,8 @@ The cost and error obtained at training and validation processed when CASIA vide
 \label{fig:ejecucion2_casia_vid_train}
 \end{figure}
 
-The best validation performance is obtained at iteration 2240 with a 5.71\%
- validation error.\\
-  
+The best validation performance is obtained at iteration 2240 with a 5.71\% validation error.\\
+
 \subsection{FRAV database}
 The cost and error obtained at training an validation processes respectably are represented in figure \ref{fig:ejecucion2_frav_train}. The cost, that could be seen in figure \ref{fig:ejecucion2_frav_train_cost} get a low value, when it converges before the 5000th iteration, the cost obtained is 0.000001. The validation error, represented in figure \ref{fig:ejecucion2_frav_train_cost}, fluctuate a lot, the curve should decrease, but it does not and in 200 epoch, the error is constant in 11.25\%. The generalization at validation is not very good and before the 100th epoch the network seems to overfit.\\
 \begin{figure}[htb]
@@ -72,7 +71,7 @@ The best RGB model is the obtained at iteration 3347, when 0.0\% is gotten at va
 
 \subsection{MFSD database}
 The training results obtained for MFSD database are represented in figure \ref{fig:ejecucion2_mfsd_train}. The cost decreases slowly until get a desirable cost value, near to 0\%. The validation error curve graph (figure \ref{fig:ejecucion2_mfsd_error}) is not as good as the cost curve. The lower error value is obtained in the first 100 iterations, which is constant and then is increased until 35\%.\\
- 
+
 \begin{figure}[htb]
 \centering
 		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_mfsd/cost.png}\label{fig:ejecucion2_mfsd_cost}}
@@ -84,7 +83,7 @@ The training results obtained for MFSD database are represented in figure \ref{f
 The best model is the obtained at iteration 7, in the first epoch, where the validation error is 14,28\%.\\
 
 \section{Testing process}
-From the best CNN model, for each database, A SVM (with lineal and RBF kernel), KNN, Decision Tree and logistic regression has been trained. Also the testing has been realize after training a LDA and PCA (which have been trained too for each database) with each classifier.\\ 
+From the best CNN model, for each database, A SVM (with lineal and RBF kernel), KNN, Decision Tree and logistic regression has been trained. Also the testing has been realize after training a LDA and PCA (which have been trained too for each database) with each classifier.\\
 
 The test performance for each classifier, has been realized after chosen the best classifier model.  The results are going to be exposed independently of each database and then compared among all databases.\\
 
@@ -98,7 +97,7 @@ The results obtained testing the CNN model for CASIA image database are shown. \
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|c|c||c|c|c||c|c|c|}
 \hline
-\rowcolor[HTML]{ECF4FF} 
+\rowcolor[HTML]{ECF4FF}
 Classifier                                                                   & APCR & BPCR  & \begin{tabular}[|c]{@{}c@{}}Classifier + PCA\\ nº components = 103\end{tabular} & APCR & BPCR  & \begin{tabular}[|c]{@{}c@{}}Classifier + LDA\\ nº components = 1\end{tabular}   & APCR & BPCR  \\ \hline
 \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.5\end{tabular}                  & 0    & 0.125 & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 1\end{tabular}                      & 0    & 0.125 & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.5\end{tabular}                    & 0    & 0.125 \\ \hline
 \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}             & 0    & 1     & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}               & 0    & 1     & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.005\end{tabular}               & 0    & 1     \\ \hline
@@ -125,7 +124,7 @@ In table \ref{APCR_BPCR_CASIA_vid} APCR and BPCR results are summarized. The bes
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|c|c||c|c|c||c|c|c|}
 \hline
-\rowcolor[HTML]{ECF4FF} 
+\rowcolor[HTML]{ECF4FF}
 Classifier                                                                   & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + PCA\\ nº components = 283\end{tabular} & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + LDA\\ nº components = 1\end{tabular}  & APCR & BPCR \\ \hline
 \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.1\end{tabular}                  & 0.14 & 0.53 & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.5\end{tabular}                    & 0.17 & 0.46 & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.05\end{tabular}                  & \textbf{0.16} & \textbf{0.44} \\ \hline
 \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}             & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}               & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}              & 0    & 1    \\ \hline
@@ -152,7 +151,7 @@ APCR and BPCR results are in table \ref{APCR_BPCR_FRAV}. In general, results are
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|c|c||c|c|c||c|c|c|}
 \hline
-\rowcolor[HTML]{ECF4FF} 
+\rowcolor[HTML]{ECF4FF}
 Classifier                                                                   & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + PCA\\ nº components = 463\end{tabular} & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + LDA\\ nº components = 1\end{tabular}  & APCR & BPCR \\ \hline
 \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.5\end{tabular}                  & 0.06 & 0.06 & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 1\end{tabular}                      & \textbf{0.04} & \textbf{0.06} & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.1\end{tabular}                   & 0.05 & 0.06 \\ \hline
 \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.005\end{tabular}             & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.005\end{tabular}               & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.5\end{tabular}                & 0.05 & 0.06 \\ \hline
@@ -166,18 +165,19 @@ Classifier                                                                   & A
 
 The best  result is obtained when SVM with RBF kernel has been used with C = 1 and using LDA with 1 component. LDA improves the results obtained when neither PCA nor just the classifier has been used, although the improved is not too much.\\
 
-The misclassified samples are repeated among the classifiers. The two samples shown in figure: %('False Positive: ', 'databases/from/attack_04/tablet_162.JPG') ('False Positive: ', 'databases/from/attack_04/tablet_109.JPG') 
+The misclassified samples are repeated among the classifiers. The two samples shown in figure: %('False Positive: ', 'databases/from/attack_04/tablet_162.JPG') ('False Positive: ', 'databases/from/attack_04/tablet_109.JPG')
 represents the two most misclassified samples, almost every classifier have classified it incorrectly.\\
 
 \subsection{FRAV RGB+NIR (feature level) database}
 Results obtained at classifying RGB+NIR (feature level) database are shown following.\\
 
+Table \ref{APCR_BPCR_FRAV_feature} shows the APCR and BPCR values that have been obtained for each classifier.
 \begin{table}[htb]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|c|c||c|c|c||c|c|c|}
 \hline
-\rowcolor[HTML]{ECF4FF} 
+\rowcolor[HTML]{ECF4FF}
 Classifier                                                                   & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + PCA\\ nº components = 463\end{tabular} & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + LDA\\ nº components = 1\end{tabular} & APCR & BPCR \\ \hline
 \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 2\end{tabular}                    & 0.02 & 0    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 5\end{tabular}                      & 0.02 & 0    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.1\end{tabular}                  & 0.04 & 0    \\ \hline
 \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.005\end{tabular}             & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}               & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 10\end{tabular}                & 0.05 & 0    \\ \hline
@@ -196,7 +196,7 @@ Classifier                                                                   & A
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|c|c||c|c|c||c|c|c|}
 \hline
-\rowcolor[HTML]{ECF4FF} 
+\rowcolor[HTML]{ECF4FF}
 Classifier                                                                   & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + PCA\\ nº components = 463\end{tabular} & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + LDA\\ nº components = 1\end{tabular}  & APCR & BPCR \\ \hline
 \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 10\end{tabular}                   & 0.01 & 0    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 1\end{tabular}                      & 0.02 & 0    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 2\end{tabular}                     & 0.01 & 0    \\ \hline
 \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}             & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}               & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 1\end{tabular}                  & 0.01 & 0    \\ \hline
@@ -215,7 +215,7 @@ Classifier                                                                   & A
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|c|c||c|c|c||c|c|c|}
 \hline
-\rowcolor[HTML]{ECF4FF} 
+\rowcolor[HTML]{ECF4FF}
 Classifier                                                                   & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + PCA\\ nº components = 463\end{tabular} & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + LDA\\ nº components = 1\end{tabular}   & APCR & BPCR \\ \hline
 \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.01\end{tabular}                 & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.001\end{tabular}                  & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 1\end{tabular}                      & 0    & 1    \\ \hline
 \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}             & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}               & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 10\end{tabular}                  & 0    & 1    \\ \hline
