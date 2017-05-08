@@ -17,7 +17,7 @@ From these years, neural networks does not have much importance, until computati
 
 From this time on, neural networks are having a significant importance and are researched widely, it has to notice, that nowadays the computational resources are bigger than some years and that makes that the researchers could be more extensive.\\
 
-\subsection{Introduction}
+\subsection{Introduction to ANN}
 Humans, along the history, have tried to reproduce nature. Evolution, has turned out to be a big coordination in nature. If object recognition, associate concepts, memorize or extracting the semantic of images are focused, humans are provided of those processing information qualities. Trying to get those qualities with technology is a current (and not surprising) challenge.\\
 
 One of the matters that is increasing its importance are neural networks which are inspired in biological neural networks. Neural networks are a important subject of the Artificial Intelligence (AI) and it is a new way (and more sophisticated) of processing information \cite{Rojas}.\\
@@ -25,13 +25,14 @@ One of the matters that is increasing its importance are neural networks which a
 \subsection{Biological Neural Networks}
 Biological neural networks are part of the nervous system and are formed by neurons units or nervous cells. Each neuron is a capable of process information in different ways by itself \cite{Rojas}.\\
 
-The principal components of a neuron are the nucleus, dendrite, cell body, axon, schwann cell, the node of Ranvier... In figure \ref{fig:Bio-Neuron} a biologica neural is shown in which its components are signalized \cite{BINN}.\\
-
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.6\textwidth]{images_miscelaneus/neuron.png}
+\includegraphics[width=0.65\textwidth]{images_miscelaneus/neuron.png}
 \caption{Biological Neural Network. Image obtained from \cite{BINN}} \label{fig:Bio-Neuron}
 \end{figure}
+
+
+The principal components of a neuron are the nucleus, dendrite, cell body, axon, schwann cell, the node of Ranvier... In figure \ref{fig:Bio-Neuron} a biologica neural is shown in which its components are signalized \cite{BINN}.\\
 
 The soma is the spherical central part of the nerve cell in whose there is a salt and potassium concentration which is covered by the neuronal membrane. Inside the soma is the neuronal nucleus and from the soma branches are extend (dendrites). Nerve cells are connected among them by dendrites. Neurons are transmitting and receiving nervous signals continuously, communicating among them. The information transference is produced, more specifically, in the synaptic clef (space between two neurons connection). This exchange of information is denominated synapses and it is made though electrochemical activities. The axon is a soma extension whose responsibility is transmitting the information electrochemical out of the neuron, by the nervous system thanks to its terminal branches \cite{BINN, neuroscience}\\
 
@@ -69,7 +70,6 @@ The simplest example of a neural network is formed by two inputs neurons and a o
 			\label{eq:ecuation_neuronasencilla}
 			\end{equation}\\
 
-
 Due to activation function, the output of the neuron would change if the input is bigger than a some threshold. This threshold is defined by the own activation function. There are various functions that are used: sigmoid function, Heaviside function, Fermi function or hyperbolic tangent among others. In figure \ref{fig:activation_function} (which has been obtained from \cite{BINN}) the mentioned function are shown and the output would be 0 or 1 values if the function is sigmoid or Fermi and the output would be -1 or 1 if the function is an hyperbolic tangent. \\
 
 \begin{figure}[htb]
@@ -91,14 +91,12 @@ Transfer function                & Soma \\
 Connexion between Artificial neurons               & Axón                     \\
 Weight                                     & Synapses                 \\ \hline
 \end{tabular}  \caption{Analogies between artificial neural networks and biological neural networks} \label{table:Analogias}
-
 \end{table}
 
 \subsubsection{Learning}
 Neuronal networks are able to learn features from the input to classify or just extract features of the input data. In order to know how to get the desired output, a learning process is needed. The learning process what really do is modifying weights and bias values for each layer with the purpose of getting a better output \cite{NNDesign}.\\
 
 There are three main different learning procedures that defined following \cite{NNDesign,Duda}:
-
 \begin{description}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
 	\item \textbf{Supervised Learning:} the input training data is given with its target (correct result of its corresponding sample), that means that the train samples has associated the desired output. The learning consist in adjust the weights and bias until the output of the network is the same or the closest value as the target.
 	\item \textbf{Reinforcement Learning:} in the training, the correct target is not provided, but just a grade is given to the network.
@@ -108,7 +106,6 @@ There are three main different learning procedures that defined following \cite{
 All the learning procedures in neural networks have in common the modification of weights ans bias to learn and obtain the desired output, so the error at the output is minimized. The most useful learning procedure is the supervised learning.\\
 
 The gradient descend procedure is an algorithm whose goal is minimize the error of a function \textit{J}.\textit{J(a)} would be the minimum if \textit{a} is the solution. To get the solution the gradient of \textit{J} ($\nabla J(a)$) is calculated for each value of \textit{a}: $\nabla J(a(1))$ is obtained and \textit{a(2)} is obtained moving some distance from \textit{a(2)}, in steps called \textit{learning rate $\eta$}, in direction of the negative gradient. The \textit{a(k+1)} value would be: \cite{Duda}.\\
-
 
 \begin{equation}
 a(k+1) = a(k) - \eta (k) \nabla J(a(k))
@@ -158,7 +155,7 @@ The layers that conforms the networks could be different depending on the mathem
 	\item  \textbf{Fully-connected layer:} Fully connected layer is vector in which the input is connected to each nenuron that conforms this layer. This layer is the high-level reasoning layer so, it is used before the classification.  
 \end{description}
 
-One neural network is defined by its type of layers and the number of neurons, also, there are parameters that also affect to the behaviour of the network (learning rate,...)\cite{Lecum2}.
+One neural network is defined by its type of layers and the number of neurons, also, there are parameters that also affect to the behaviour of the network (learning rate,...)\cite{Lecum2}.\\
 
 %\subsection{Type of Networks}
 

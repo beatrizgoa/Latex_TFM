@@ -1,0 +1,230 @@
+%!TEX root = Memoria_TFM.tex
+In this chapter the results obtained are presented as well as the training process that is going to be discussed.% The hole process (training and testing) has been realized three times to have more general results.
+
+
+\section{Training and validating process}
+The convolutional neural networks has been trained independently for each database as is explained in \ref{Final_archi}. In this section, the training and validation process is presented for each database.\\
+\subsection{CASIA Image database}
+In figure \ref{fig:ejecucion2_casia_im_train} the cost and training are represented (\ref{fig:ejecucion2_casia_im_train_cost} and \ref{fig:ejecucion2_casia_im_train_cost} respectively). The training process converge in a low values, smaller than 0.0001; while the validation process converges in 20\% error from the 250th epoch. The iterations where the training process oscillates sharply agree with the epochs where the cost oscillates sharply too. After those oscillations, the validation gets constant and the training error variates in its lowest values.\\
+\begin{figure}[htb]
+\centering
+		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_casia_images/cost.png}\label{fig:ejecucion2_casia_im_train_cost}}
+		\subfigure[Error at validation]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_casia_images/error.png}\label{fig:ejecucion2_casia_im_train_error}}
+\caption{Cost (a) and error (b) at training CASIA image database}
+\label{fig:ejecucion2_casia_im_train}
+\end{figure}
+
+The saved model to realize the test performance is the obtained at iteration 1176 with a 15\% validation error.\\
+
+\subsection{CASIA Video database}
+The cost and error obtained at training and validation processed when CASIA video database is used, are represented in figure \ref{fig:ejecucion2_casia_vid_train}. The minimun cost is almost 0 and is obtained before 2000th iteration, as is represented in figure \ref{fig:ejecucion2_casia_vid_train_cost}}. The validation converges at the same time as the training, where oscillate between 7\% an 6\%.\\
+\begin{figure}[htb]
+\centering
+		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_casia_videos/cost.png}\label{fig:ejecucion2_casia_vid_train_cost}}
+		\subfigure[Error at validation]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_casia_videos/error.png}\label{fig:ejecucion2_casia_vid_train_error}}
+\caption{Cost (a) and error (b) at training CASIA video database}
+\label{fig:ejecucion2_casia_vid_train}
+\end{figure}
+
+The best validation performance is obtained at iteration 2240 with a 5.71\%
+ validation error.\\
+  
+\subsection{FRAV database}
+The cost and error obtained at training an validation processes respectably are represented in figure \ref{fig:ejecucion2_frav_train}. The cost, that could be seen in figure \ref{fig:ejecucion2_frav_train_cost} get a low value, when it converges before the 5000th iteration, the cost obtained is 0.000001. The validation error, represented in figure \ref{fig:ejecucion2_frav_train_cost}, fluctuate a lot, the curve should decrease, but it does not and in 200 epoch, the error is constant in 11.25\%. The generalization at validation is not very good and before the 100th epoch the network seems to overfit.\\
+\begin{figure}[htb]
+\centering
+		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav/cost.png}\label{fig:ejecucion2_frav_train_cost}}
+		\subfigure[Error at validation]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav/error.png}\label{fig:ejecucion2_frav_train_error}}
+\caption{Cost (a) and error (b) at training RGB FRAV image database}
+\label{fig:ejecucion2_frav_train}
+\end{figure}
+
+The best validation score of 1.25\% has been obtained at iteration 2016 which is saved as model for testing.\\
+
+\subsection{FRAV RGB+NIR (feature level) database}
+The RGB+NIR FRAV database, whose images has been added before the training process, has a cost and error which is represented in figure \ref{fig:ejecucion2_frav_feat_train}. The cost at training, that could be seen in \ref{fig:ejecucion2_frav_feat_train_cost} oscillates in the 3500 first iterations until decrease its value to 0 in the last 100 iterations. The cost at validation oscillates in the same oscillation cost period, where the value gets 0\% in different times. After this, the value gets in 3,3\%. Although the validation performance does not decrease in a desirable way, it gets a 0\% error which means that the generalization is very good.\\
+\begin{figure}[htb]
+\centering
+		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav_rgb_nir/cost.png}\label{fig:ejecucion2_frav_feat_train_cost}}
+		\subfigure[Error at validation]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav_rgb_nir/error.png}\label{fig:ejecucion2_frav_feat_train_error}}
+\caption{Cost (a) and error (b) at training RGB and NIR FRAV (feature level) image database}
+\label{fig:ejecucion2_frav_feat_train}
+\end{figure}
+
+The best model is obtained at 702 iteration, when the validation gets 0\% for the first time.\\
+
+\subsection{FRAV RGB+NIR (classification level) database}
+In figure \ref{fig:ejecucion2_frav_clas_train} is represented the training cost and the validation error when the database has been trained, first the RGB subset and then NIR subset. This two subsets are trained independently and features of each best model are concatenated to test performance.\\
+
+\begin{figure}[htb]
+\centering
+		\subfigure[Cost at training RGB subset]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav_concatenated/cost_rgb.png}\label{fig:ejecucion2_frav_clas_train_cost_rgb}}
+		\subfigure[Error at validation RGB subset]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav_concatenated/error_rgb.png}\label{fig:ejecucion2_frav_clas_train_error_rgb}}
+		\subfigure[Cost at training NIR subset]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav_concatenated/cost_nir.png}\label{fig:ejecucion2_frav_clas_train_cost_nir}}
+		\subfigure[Error at validation NIR subset]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav_concatenated/error_nir.png}\label{fig:ejecucion2_frav_clas_train_error_nir}}
+\caption{Cost (a) and error (b) at training RGB subset, cost (c) and error (d) at training NIR subset for FRAV (RGB+NIR at classification level) image database}
+\label{fig:ejecucion2_frav_clas_train}
+\end{figure}
+
+In RGB and NIR cost training, after decreasing its value got a very low value as in others databases. About the cost in validation, in both cases gets 0\%, the difference is that in RGB, this lowest value is gotten twice at epoch 124 and 125 and then the value is increased until get constant at 10\%, what seems an overfit. But in NIR validation error, it oscillates until gets 0\% value and is constant until the end.\\
+
+The best RGB model is the obtained at iteration 3347, when 0.0\% is gotten at validation error. The best NIR model is the obtained at iteration 674, the first time that the validation error gets 0\%.\\
+
+\subsection{MFSD database}
+The training results obtained for MFSD database are represented in figure \ref{fig:ejecucion2_mfsd_train}. The cost decreases slowly until get a desirable cost value, near to 0\%. The validation error curve graph (figure \ref{fig:ejecucion2_mfsd_error}) is not as good as the cost curve. The lower error value is obtained in the first 100 iterations, which is constant and then is increased until 35\%.\\
+ 
+\begin{figure}[htb]
+\centering
+		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_mfsd/cost.png}\label{fig:ejecucion2_mfsd_cost}}
+		\subfigure[Error at validation]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_mfsd/error.png}\label{fig:ejecucion2_mfsd_error}}
+\caption{Cost (a) and error (b) at training MFSD image database}
+\label{fig:ejecucion2_mfsd_train}
+\end{figure}
+
+The best model is the obtained at iteration 7, in the first epoch, where the validation error is 14,28\%.\\
+
+\section{Testing process}
+From the best CNN model, for each database, A SVM (with lineal and RBF kernel), KNN, Decision Tree and logistic regression has been trained. Also the testing has been realize after training a LDA and PCA (which have been trained too for each database) with each classifier.\\ 
+
+The test performance for each classifier, has been realized after chosen the best classifier model.  The results are going to be exposed independently of each database and then compared among all databases.\\
+
+Best obtained results are highlighted in bold in each table.\\
+
+\subsection{CASIA Image database}
+The results obtained testing the CNN model for CASIA image database are shown. \\
+
+\begin{table}[htb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c||c|c|c||c|c|c|}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+Classifier                                                                   & APCR & BPCR  & \begin{tabular}[|c]{@{}c@{}}Classifier + PCA\\ nº components = 103\end{tabular} & APCR & BPCR  & \begin{tabular}[|c]{@{}c@{}}Classifier + LDA\\ nº components = 1\end{tabular}   & APCR & BPCR  \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.5\end{tabular}                  & 0    & 0.125 & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 1\end{tabular}                      & 0    & 0.125 & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.5\end{tabular}                    & 0    & 0.125 \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}             & 0    & 1     & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}               & 0    & 1     & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.005\end{tabular}               & 0    & 1     \\ \hline
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = 2\end{tabular}                          & 0    & 0.125 & \begin{tabular}[c]{@{}c@{}}KNN\\ k = 2\end{tabular}                            & 0    & 0.125 & \begin{tabular}[c]{@{}c@{}}KNN\\ k = 4\end{tabular}                            & 0    & 0.125 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =  12\end{tabular}          & 0    & 0.5   & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 4\end{tabular}              & 0    & 0.125 & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}              & 0    & 0.125 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.01\end{tabular} & 0    & 0.125 & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.0001\end{tabular} & 0    & 0.125 & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.0001\end{tabular} & 0    & 0.125 \\ \hline
+\end{tabular} }
+\caption{APCR and BPCR classifying results using CASIA image database}
+\label{APCR_BPCR_CASIA_im}
+\end{table}
+
+In table \ref{APCR_BPCR_CASIA_im} are exposed the APCR and BPCR parameters for each classifier. All the attacks samples are well classified because APCR value is 0. The number of genuine samples misclassified is what changes, it gets 1 for SVM with kernel lineal,all the positives samples have been misclassified, and decision tree whose number of misclassified real user are 4 (the half of the total real samples of the test subset). The rest of the classifiers takes a 0.125 APCR value, just one sample is misclassified, the same sample which could be seen in figure % :('False Negative: ', 'databases/Casia database Fixed/Real/41.jpg')\\
+
+With respect to APCR and BPCR it is not possible to get the best combination with which the results are better.\\
+
+
+\subsection{CASIA Video database}
+Next analyzed results are from CASIA video database.\\
+
+In table \ref{APCR_BPCR_CASIA_vid} APCR and BPCR results are summarized. The best result has been obtained with SVM classifier and kernel RBF (C= 0.05) after applying LDA with 1 component. The worst values obtained are the SVM with linear kernel, no matters if PCA or LDA have been used, because all the positives samples have been classified as negatives. \\
+
+\begin{table}[htb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c||c|c|c||c|c|c|}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+Classifier                                                                   & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + PCA\\ nº components = 283\end{tabular} & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + LDA\\ nº components = 1\end{tabular}  & APCR & BPCR \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.1\end{tabular}                  & 0.14 & 0.53 & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.5\end{tabular}                    & 0.17 & 0.46 & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.05\end{tabular}                  & \textbf{0.16} & \textbf{0.44} \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}             & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}               & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}              & 0    & 1    \\ \hline
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = 2\end{tabular}                          & 0.19 & 0.42 & \begin{tabular}[c]{@{}c@{}}KNN\\ k = 2\end{tabular}                            & 0.2  & 0.42 & \begin{tabular}[c]{@{}c@{}}KNN\\ k = 2\end{tabular}                           & 0.16 & 0.47 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =  2\end{tabular}           & 0.19 & 0.49 & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}              & 0.15 & 0.53 & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}             & 0.15 & 0.46 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.01\end{tabular} & 0.15 & 0.49 & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.005\end{tabular}  & 0.23 & 0.34 & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.005\end{tabular} & 0.23 & 0.37 \\ \hline
+\end{tabular} }
+\caption{APCR and BPCR classifying results using CASIA video database}
+\label{APCR_BPCR_CASIA_vid}
+\end{table}
+
+From the table it is not possible to know if LDA and PCA are significant because with some classifiers APCR and BPCR have been improve or worsened.\\
+
+Also The last conclusion that could be gotten from the table is that Attacks samples are better classified that genuine samples, it is due to the fact that has been trained with more negative samples.\\
+
+\subsection{FRAV database}
+The RGB FRAV database results are presented and analyzed.\\
+
+APCR and BPCR results are in table \ref{APCR_BPCR_FRAV}. In general, results are very good because values are lower than 0.5. With SVM linear kernel, all the samples are classified as negatives except when it has been used when LDA, that results are as good as the obtained with RBF kernel.\\
+
+
+\begin{table}[htb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c||c|c|c||c|c|c|}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+Classifier                                                                   & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + PCA\\ nº components = 463\end{tabular} & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + LDA\\ nº components = 1\end{tabular}  & APCR & BPCR \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.5\end{tabular}                  & 0.06 & 0.06 & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 1\end{tabular}                      & \textbf{0.04} & \textbf{0.06} & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.1\end{tabular}                   & 0.05 & 0.06 \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.005\end{tabular}             & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.005\end{tabular}               & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.5\end{tabular}                & 0.05 & 0.06 \\ \hline
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = 16\end{tabular}                         & 0.07 & 0.06 & \begin{tabular}[c]{@{}c@{}}KNN\\ k = 26\end{tabular}                           & 0.06 & 0.06 & \begin{tabular}[c]{@{}c@{}}KNN\\ k = 20\end{tabular}                          & 0.05 & 0.06 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =  2\end{tabular}           & 0.04 & 0.11 & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}              & 0.06 & 0.11 & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}             & 0.06 & 0.06 \\ \hline
+\begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.01\end{tabular} & 0.01 & 0.17 & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.05\end{tabular}   & 0.06 & 0.06 & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.005\end{tabular} & 0.06 & 0.06 \\ \hline
+\end{tabular} }
+\caption{APCR and BPCR classifying results using FRAV RGB database}
+\label{APCR_BPCR_FRAV}
+\end{table}
+
+The best  result is obtained when SVM with RBF kernel has been used with C = 1 and using LDA with 1 component. LDA improves the results obtained when neither PCA nor just the classifier has been used, although the improved is not too much.\\
+
+The misclassified samples are repeated among the classifiers. The two samples shown in figure: %('False Positive: ', 'databases/from/attack_04/tablet_162.JPG') ('False Positive: ', 'databases/from/attack_04/tablet_109.JPG') 
+represents the two most misclassified samples, almost every classifier have classified it incorrectly.\\
+
+\subsection{FRAV RGB+NIR (feature level) database}
+Results obtained at classifying RGB+NIR (feature level) database are shown following.\\
+
+\begin{table}[htb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c||c|c|c||c|c|c|}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+Classifier                                                                   & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + PCA\\ nº components = 463\end{tabular} & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + LDA\\ nº components = 1\end{tabular} & APCR & BPCR \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 2\end{tabular}                    & 0.02 & 0    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 5\end{tabular}                      & 0.02 & 0    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.1\end{tabular}                  & 0.04 & 0    \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.005\end{tabular}             & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}               & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 10\end{tabular}                & 0.05 & 0    \\ \hline
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = 6\end{tabular}                          & 0.09 & 0    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = 12\end{tabular}                           & 0.12 & 0    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = 10\end{tabular}                         & 0.04 & 0    \\ \hline
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =  2\end{tabular}           & \texttbf{0}    & \textvf{0}    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}              & 0.01 & 0    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}            & 0.05 & 0    \\ \hline
+\begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.01\end{tabular} & \textbf{0}    & \textbf{0}    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.05\end{tabular}   & 0.06 & 0    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.05\end{tabular} & 0.07 & 0    \\ \hline
+\end{tabular} }
+\caption{APCR and BPCR classifying results using FRAV RGB+NIR (feature level) database}
+\label{APCR_BPCR_FRAV_feature}
+\end{table}
+
+\subsection{FRAV RGB+NIR (classification level) database}
+
+\begin{table}[htb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c||c|c|c||c|c|c|}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+Classifier                                                                   & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + PCA\\ nº components = 463\end{tabular} & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + LDA\\ nº components = 1\end{tabular}  & APCR & BPCR \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 10\end{tabular}                   & 0.01 & 0    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 1\end{tabular}                      & 0.02 & 0    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 2\end{tabular}                     & 0.01 & 0    \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}             & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}               & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 1\end{tabular}                  & 0.01 & 0    \\ \hline
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = 6\end{tabular}                          & 0.32 & 0    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = 14\end{tabular}                           & 0.04 & 0    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = 6\end{tabular}                           & 0.01 & 0    \\ \hline
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =  2\end{tabular}           & 0.04 & 0.07 & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}              & 0.05 & 0.07 & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}             & 0.01 & 0    \\ \hline
+\begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.01\end{tabular} & 0    & 0.29 & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.05\end{tabular}   & 0.07 & 0    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.005\end{tabular} & 0.02 & 0    \\ \hline
+\end{tabular} }
+\caption{APCR and BPCR classifying results using FRAV RGB+NIR (classification level) database}
+\label{APCR_BPCR_FRAV_class}
+\end{table}
+
+\subsection{MFSD-MSU database}
+
+\begin{table}[htb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c||c|c|c||c|c|c|}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+Classifier                                                                   & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + PCA\\ nº components = 463\end{tabular} & APCR & BPCR & \begin{tabular}[|c]{@{}c@{}}Classifier + LDA\\ nº components = 1\end{tabular}   & APCR & BPCR \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.01\end{tabular}                 & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.001\end{tabular}                  & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 1\end{tabular}                      & 0    & 1    \\ \hline
+\begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}             & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}               & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 10\end{tabular}                  & 0    & 1    \\ \hline
+\begin{tabular}[c]{@{}c@{}}KNN\\ k = 24\end{tabular}                         & 0    & 1    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = 30\end{tabular}                           & 0    & 1    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = 30\end{tabular}                           & 0    & 1    \\ \hline
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =  12\end{tabular}          & 0    & 1    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}              & 0    & 1    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}              & 0    & 1    \\ \hline
+\begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.01\end{tabular} & 0    & 1    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.0001\end{tabular} & 0    & 1    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.0001\end{tabular} & 0    & 1    \\ \hline
+\end{tabular} }
+\caption{APCR and BPCR classifying results using MFSD-MSU database}
+\label{APCR_BPCR_MFSD}
+\end{table}
+
+\subsection{Comparative among databases}
