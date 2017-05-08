@@ -1,5 +1,55 @@
 \begin{thebibliography}{10}
 
+\bibitem{Intro_biometrics}
+J.~Wayman, A.~Jain, D.~Maltoni, and D.~Maio, {\em An Introduction to Biometric
+  Authentication Systems}, pp.~1--20.
+\newblock Springer London, 2005.
+
+\bibitem{fingerprint_image}
+``Take biometric security systems to the next level.''
+  \url{http://www.rechters.pl/take-biometric-security-systems-to-the-next-level/}.
+\newblock Accessed: 2017-05-04.
+
+\bibitem{Spoofing_survey}
+J.~Galbally, S.~Marcel, and J.~Fiérrez, ``Biometric antispoofing methods: A
+  survey in face recognition.,'' {\em IEEE Access}, vol.~2, pp.~1530--1552,
+  2014.
+
+\bibitem{distorsion}
+D.~Wen, H.~Han, and A.~K. Jain, ``Face spoof detection with image distortion
+  analysis,'' {\em IEEE Transactions on Information Forensics and Security},
+  vol.~10, no.~4, pp.~746--761, 2015.
+
+\bibitem{survey2}
+K.~D. I and M.~Grgic, ``A survey of biometric recognition methods,'' in {\em
+  Proceedings. Elmar-2004. 46th International Symposium on Electronics in
+  Marine}, pp.~184--193, 2004.
+
+\bibitem{LSTM-CNN}
+Z.~Xu, S.~Li, and W.~Deng, ``Learning temporal features using {LSTM-CNN}
+  architecture for face anti-spoofing,'' in {\em 3rd {IAPR} Asian Conference on
+  Pattern Recognition, {ACPR} 2015, Kuala Lumpur, Malaysia, November 3-6,
+  2015}, pp.~141--145, 2015.
+
+\bibitem{Verification}
+M.~K. Hani and S.~S. Liew, ``A convolutional neural network approach for face
+  verification,'' in {\em International Conference on High Performance
+  Computing {\&} Simulation, {HPCS} 2014, Bologna, Italy, 21-25 July, 2014},
+  pp.~707--714, 2014.
+
+\bibitem{yangLL14}
+J.~Yang, Z.~Lei, and S.~Z. Li, ``Learn convolutional neural network for face
+  anti-spoofing,'' {\em CoRR}, vol.~abs/1408.5601, 2014.
+
+\bibitem{LBP_FaceAnti}
+I.~Chingovska, A.~Anjos, and S.~Marcel, ``On the effectiveness of local binary
+  patterns in face anti-spoofing,'' Idiap-RR Idiap-RR-19-2012, Idiap, 2012.
+
+\bibitem{Blink_antispoofing}
+L.~Sun, G.~Pan, Z.~Wu, and S.~Lao, {\em Blinking-Based Live Face Detection
+  Using Conditional Random Fields}, pp.~252--260.
+\newblock Springer Berlin Heidelberg, 2007.
+
 \bibitem{BINN}
 D.~Kriesel, {\em A Brief Introduction to Neural Networks}.
 \newblock 2007.
@@ -15,16 +65,26 @@ M.~F. Bear, B.~W.Connors, and M.~A. Paradiso.
 \bibitem{krose}
 B.~J.~A. Kr{\"o}se and P.~P. van~der Smagt, {\em An Introduction to Neural
   Networks}.
-\newblock The University of Amsterdam, 1996.
+\newblock The University of Amsterdam, 8th~ed., 1996.
 
 \bibitem{NNDesign}
 H.~B. Demuth, M.~H. Beale, O.~De~Jess, and M.~T. Hagan, {\em Neural Network
   Design}.
 \newblock USA: Martin Hagan, 2nd~ed., 2014.
 
+\bibitem{Duda}
+R.~O. Duda, P.~E. Hart, and D.~G. Stork, {\em Pattern Classification (2Nd
+  Edition)}.
+\newblock Wiley-Interscience, 2000.
+
 \bibitem{Doorn}
 {\em Analysis of Deep Convolutional Neural Network Architectures}, vol.~21,
   University of Twente, 2014.
+
+\bibitem{Lecum2}
+D.~Eigen, J.~T. Rolfe, R.~Fergus, and Y.~LeCun, ``Understanding deep
+  architectures using a recursive convolutional network,'' {\em CoRR},
+  vol.~abs/1312.1847, 2013.
 
 \bibitem{Lecum3}
 C.~Farabet, R.~Paz, J.~Perez-Carrasco, C.~Zamarreños, A.~Linares-Barranco,
@@ -32,11 +92,6 @@ C.~Farabet, R.~Paz, J.~Perez-Carrasco, C.~Zamarreños, A.~Linares-Barranco,
   ``Comparison between frame-constrained fix-pixel-value and frame-free
   spiking-dynamic-pixel convnets for visual processing,'' {\em Frontiers in
   Neuroscience}, vol.~6, p.~32, 2012.
-
-\bibitem{Lecum2}
-D.~Eigen, J.~T. Rolfe, R.~Fergus, and Y.~LeCun, ``Understanding deep
-  architectures using a recursive convolutional network,'' {\em CoRR},
-  vol.~abs/1312.1847, 2013.
 
 \bibitem{theano}
 T.~D. Team, ``Theano: A {Python} framework for fast computation of mathematical
@@ -68,7 +123,8 @@ D.~Wen, H.~Han, and A.~K. Jain, ``Face spoof detection with image distortion
   no.~4, pp.~746--761, 2015.
 
 \bibitem{Stutz}
-D.~Stutz, ``Understanding convolutional neural networks,'' 2014.
+D.~Stutz, ``Understanding convolutional neural networks,'' tech. rep.,
+  Fakultät für Mathematik, Informatik und Naturwissenschaften, 2014.
 
 \bibitem{Sokolova}
 M.~Sokolova, N.~Japkowicz, and S.~Szpakowicz, ``Beyond accuracy, f-score and
@@ -87,11 +143,6 @@ J.~Davis and M.~Goadrich, ``The relationship between precision-recall and roc
 
 \bibitem{ISO}
 ``Sc37 iso/iec jtc1,'' 2014.
-
-\bibitem{Duda}
-R.~O. Duda, P.~E. Hart, and D.~G. Stork, {\em Pattern Classification (2Nd
-  Edition)}.
-\newblock Wiley-Interscience, 2000.
 
 \bibitem{PCAvsLDA}
 A.~M. Martinez and A.~C. Kak, ``Pca versus lda,'' {\em IEEE TRANSACTIONS ON
@@ -140,11 +191,5 @@ X.~Glorot and Y.~Bengio, ``Understanding the difficulty of training deep
   feedforward neural networks,'' in {\em In Proceedings of the International
   Conference on Artificial Intelligence and Statistics (AISTATS’10). Society
   for Artificial Intelligence and Statistics}, 2010.
-
-\bibitem{LSTM-CNN}
-Z.~Xu, S.~Li, and W.~Deng, ``Learning temporal features using {LSTM-CNN}
-  architecture for face anti-spoofing,'' in {\em 3rd {IAPR} Asian Conference on
-  Pattern Recognition, {ACPR} 2015, Kuala Lumpur, Malaysia, November 3-6,
-  2015}, pp.~141--145, 2015.
 
 \end{thebibliography}

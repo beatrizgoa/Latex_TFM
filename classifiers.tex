@@ -89,13 +89,36 @@ The input data is split to maximize its separation, resulting a tree structure \
 
 \subsection{Dimensionality reduction algorithms}
 The objective of those algorithms is transform the characteristic vector into another characteristic vector but whit a lower dimensionality. Linear methods, that projects the dimensional data onto an another space whose dimensionality is lower \cite{Duda}, have been used. The two techniques, the most common used, are described and used along the thesis.\\
+
+
 \subsubsection{Linear Discriminant Analysis}
-Linear Discriminant Analysis (LDA) looks for the vectors in the space that best discriminate among classes \cite{PCAvsLDA}.
+Linear Discriminant Analysis (LDA) looks for the vectors in the space that best discriminate among classes, that is that LDA pretend to maximize the between-class meause (equation \ref{eq:Sb}) at the same time as the within-class measure (equation \ref{eq:Sw}) is minimized \cite{PCAvsLDA}.\\
+
+\begin{equation}
+S_w = \sum^c_{j=1}(\mu _j - \mu)(\mu _j - \mu)^T
+\end{equation}\label{eq:Sb}
+
+\begin{equation}
+S_w = \sum^c_{j=1}\sum^{N_j}_{i=1}(X_i^j - \mu _j)(X_i^j - \mu _j)^T
+\end{equation}\label{eq:Sw}
+
+The data of \textit{d} dimensions would be projected onto a \textit{s} dimensions and being $s < d$. The minimum value that \textit{s} could take would depend on the number of classes \textit{n}: $s \geq n-1$ .
+
 
 \subsubsection{Principal Component Analysis}
-Principal Component Analysis (PCA) uses a subspace in which the the variance direction among basis vectors is maximum in the original space \cite{PCAvsLDA}. PCA faces the problem of reducing the \textit{n} dimensional samples vector to a single vector \textit{X\_0}. The \textit{X\_0} vector would be the result of the sum of the squared distances between \textit{X\_0} and various features \textit{X\_k} is the smallest cite{Duda}.\\
+Principal Component Analysis (PCA) uses a subspace {\textit{t)} in which the the variance direction among basis vectors is maximum in the original space (\textit{f}) \cite{PCAvsLDA}. PCA faces the problem of reducing the \textit{n} dimensional samples vector to a single vector \textit{X\_0}. The \textit{X\_0} vector would be the result of the sum of the squared distances between \textit{X\_0} and various features \textit{X\_k} is the smallest \cite{Duda}.\\
 
+The new subspace is usually smaller than the original space \cite{PCAvsLDA}.\\
 
+The linear transformation from one space into another would be denoted as \textit{W}, and its columns are eigenvalues which has eigenvectors associated.\\
+
+The feature vectors (\textit{y}) from the \textit{f} space would depend on W:
+
+\begin{equation}
+y_{i} = W^TX_{i}, i=1,...,N
+\end{equation}
+
+Being N the total number of feature vectors.\\
 
 \subsection{Cross Validation}
 Classifiers are defined by certain parameters. For example,the number of neighbours (\textit{k}) in KNN classifier is a value that user have to determine. In this case is useful use Cross Validation to determine the value of \textit{k}.\\

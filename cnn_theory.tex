@@ -1,10 +1,11 @@
+%!TEX root = Memoria_TFM.tex
 \section{Neural Network background theory}
 In this section, the basis and the theoretical background of the convolutional neural networks theory is exposed.\\
 
 \subsection{Historical introduction}
 The historical introduction to neural networks is going to be summarized \cite{BINN}:
 
-Neural Networks are introduced by first time in the years 40 by Warren McCulloch and Walter Pitts, more specifically, simple models of neural networks (switches based on neurons) were able to calculate almost every arithmetic problems and logic operations. Few years layer, the recognition of spacial patters field was defined as a interesting scope for neural networks.\\
+Neural Networks are introduced by first time in the years 40 by Warren McCulloch and Walter Pitts, more specifically, simple models of neural networks (switches based on neurons) were able to calculate almost every arithmetic problems and logic operations. Few years layer, the recognition of spacial patterns field was defined as a interesting scope for neural networks.\\
 
 In 1949 the `Hebbian rule' was postulate by Donald O. Hebb. The rules describes the generalized learning basis of neural networks. This rule explain that two connected neurons have  a bigger strength if they are active at the same time, and the strength changes proportionally to the product of the two activities.\\
 
@@ -96,7 +97,7 @@ Weight                                     & Synapses                 \\ \hline
 \subsubsection{Learning}
 Neuronal networks are able to learn features from the input to classify or just extract features of the input data. In order to know how to get the desired output, a learning process is needed. The learning process what really do is modifying weights and bias values for each layer with the purpose of getting a better output \cite{NNDesign}.\\
 
-There are three main different learning procedures that defined following \cite{NNDesign}:
+There are three main different learning procedures that defined following \cite{NNDesign,Duda}:
 
 \begin{description}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
 	\item \textbf{Supervised Learning:} the input training data is given with its target (correct result of its corresponding sample), that means that the train samples has associated the desired output. The learning consist in adjust the weights and bias until the output of the network is the same or the closest value as the target.
@@ -104,56 +105,70 @@ There are three main different learning procedures that defined following \cite{
 	\item \textbf{Unsupervised Learning:} there is not help in the training, no target and no grade, just the input data. The networks learn to cluster the input data and the weights and bias changes in function of the bias.
 \end{description}
 
-All the learning procedures in neural networks have in common the modification of weights ans bias to learn and obtain the desired output, so the error at the output is minimized. The most useful learning procedure is the supervised learning, along this project this is the used.\\
+All the learning procedures in neural networks have in common the modification of weights ans bias to learn and obtain the desired output, so the error at the output is minimized. The most useful learning procedure is the supervised learning.\\
 
-Una manera de buscar ese mínimo error en la red es utilizando el método del descenso del gradiente, $\mathit{\nabla}$.\\
+The gradient descend procedure is an algorithm whose goal is minimize the error of a function \textit{J}.\textit{J(a)} would be the minimum if \textit{a} is the solution. To get the solution the gradient of \textit{J} ($\nabla J(a)$) is calculated for each value of \textit{a}: $\nabla J(a(1))$ is obtained and \textit{a(2)} is obtained moving some distance from \textit{a(2)}, in steps called \textit{learning rate $\eta$}, in direction of the negative gradient. The \textit{a(k+1)} value would be: \cite{Duda}.\\
 
-El gradiente es una generalización de la derivada para funciones multidimensionales. Este método busca un mínimo en pasos proporcionales en la dirección contraria al gradiente (negativo). El problema que plantea este método es encontrar en un mínimo local en lugar de en un mínimo global, a pesar de ser un mínimo que proporciona un error aceptable puede existir un mínimo en el gradiente que ofrezca un error menor. %\cite{DKriesel} \cite{understandConv}.
-También hay que llegar a un compromiso entre el tamaño de los pasos, ya que si son muy grandes te puedes saltar el mínimo, y son muy pequeños el coste computacional es mucho mayor al igual que el tiempo de procesado.\\
 
-La retropropagación del error o \textit{Backpropagation error} es un tipo de aprendizaje supervisado muy recurrido, en el que se sabe de antemano la salida deseada. Al tener salida deseada y la salida real de la red \textit{y(x)}, se puede calcular la función del error que comete la red \textit{Err(w)} que va a ser usado, en función de los pesos para entrenar la red para obtener la salida deseada más aproximada posible.\\
+\begin{equation}
+a(k+1) = a(k) - \eta (k) \nabla J(a(k))
+\end{equation}
 
-El error \textit{E} que comete una red es la suma de los errores de cada muestra \textit{p}, $E^{p}$:
+One of the most used supervised techniques of neural network learning is the back-propagation, this learning rule is based in the gradient descend. In general, this rule, from a randomize initialization of weights, the error would be minimized changing the weights in the direction of the gradient descend:
+
+\begin{equation}
+\delta w = -\eta\frac{\partial J}{\partial w}
+\end{equation}
+
+Being $\frac{\partial J}{\partial w}$ The gradient of \textit{J} in function of weights \textit{w}.
+
+The error is calculated as defined in equation \ref{eq:error_bb}
 
 %Ecuacion error 1
 \begin{equation}
 E=\sum_{p}E^p = \frac{1}{2}\sum_{p}(\delta^p- y^p)^2
-\end{equation}
+\end{equation} \label{eq:error_bb}
 
-El error total, se puede definir como el mínimo cuadrado medio de la salida deseada y la salida real para cada muestra. El mínimo cuadrado medio encuentra los valores de todos los pesos que minimizan la función de error a través del descenso de gradiente. La idea es hacer un cambio en el peso proporcional al negativo de la derivada del error medido en el patrón actual con respecto a cada peso %\cite{BKrose} \cite{DKriesel}.\\
-
-La retropropagación del error está basada en la regla delta generalizada o ``generalized delta rule''. En la retropropagación del error se sabe la salida deseada de la red, calculando con la regla delta la adaptación de los pesos, pero para aplicar esto a salida de las capas ocultas es necesario aplicar la regla de la cadena para adaptar los pesos de las capas ocultas ya que no se tiene el valor $\delta$ para estas capas. La regla de la cadena distribuye el error de una neurona de salida $y_o$ todas las neuronas ocultas con las que está conectadas, comparando la salida deseada $d_o$ y resultando en la señal error $\sigma_o$ Por lo que el peso de una conexión entre dos neuronas se puede expresar %\cite{BKrose} \cite{DKriesel}:\\
+The error is backpropagated to the last layers until the first layer, modifying the weights to balance the error proportionally to the gradient of the error function. This is called the chain rule or the delta rule \cite{Duda, BINN, krose}. The backpropagation equation is defined below\\
 
 %Ecuacion backpropagation 1
 			\begin{equation}
-			\Delta_{p}W_{jk}=\gamma \delta _{k}^{p}y_{j}^{p}
+			\Delta_{p}W_{jk}=ºeta \delta _{k}^{p}y_{j}^{p}
 			\label{eq:ecuation_back1}
 			\end{equation}\\
 
-Siendo  $\gamma$ la constante de aprendizaje, \textit{k} la unidad que recibe la entrada y salida de la neurona \textit{j}.\\
+Being  \textit{k} the unit which receives the input and \textit{j} the output.\\
+
+There are three useful training protocols depending on how training set is used:
+\begin{description}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
+	\item \textbf{Stochastic training:} Samples are choosen randomly and for each sample, weights are updated.
+	 \item \textbf{Batch training:} All training samples are used to the learning process.
+	 \item \textbf{on-line training:} There is no memory, as the same time as samples are received, they are used once to train.
+\end{description}
+
 
 \subsubsection{Type of Layers}
-The layers that conforms the networks could be different depending on the mathematical operation. The most common used layers are described above:
+The layers that conforms the networks could be different depending on the mathematical operation. The most common used layers are described below:
 \begin{description}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
 	\item \textbf{Convolutional layer:} In this type of layers, the convolution operator is processed at the input. Weights are the applying filters and the output are the features or characteristics useful to extract the information of the image. In one convolutional layer, there could be used as many filters are user defines.
 	\item \textbf{Pooling Layer:} In this layer, the dimensionality is reduced. The most important information is preserved. It is usually used at the output of the convolutional to resume its out \cite{Doorn}. The most used pooling layer is the max-pooling layer, the maximum values are saved.
-	\item \textbf{No-linearity layer: } Esta capa consta de una función sigmoide punto tanh() aplicado a la entrada de la capa. Sin embargo, en las implementaciones recientes, se han utilizado otras no linealidades más sofisticadas \cite{Lecum3, Doorn}.
-	\item \textbf{Dropout layer:} Las neuronas de una arquitectura diseñada tienden a confiar en la salidas de unas neuronas específicas, y esto provoca sobreajuste. La finalidad de esta capa es evitar este problema, para ello se omiten los valores de activación a cero omitiendo temporalmente algunas neuronas en cada caso de entrenamiento. De este modo, las neuronas se vuelven más adaptativas y menos restrictivas a la arquitectura. Otra forma similar de evitar el problema es utilizar \textbf{``DropConnect''}, donde en lugar de eliminar las neuronas, son los pesos los que se ponen a cero \cite{Doorn}.\\
-	\item  \textbf{Fully-connected layer:} La finalidad de esta capa es usada para la clasificación basada en las características que se han ido computando en la red %\cite{understandConv}.
+	%\item \textbf{No-linearity layer:} Esta capa consta de una función sigmoide punto tanh() aplicado a la entrada de la capa. Sin embargo, en las implementaciones recientes, se han utilizado otras no linealidades más sofisticadas \cite{Lecum3, Doorn}.
+	\item \textbf{Normalization layer:} This layer normalize the activities of the neurons, because of that the processing time could be reducing during training or testing. There are two types of normalization layer: Local Response Normalization (LRN) and Batch Normalization.
+	\item \textbf{Dropout layer:} The ouput of a network could rely on the output of an spefici neurons being this a overfitting cause. To prevent it, during training, some neurons are 'turn off´ setting its value to 0. In this way, neurons are more adaptative. Dropout is a spefic layer that manage this. In stead of \textit{eliminate} neurons, if it is possible that weights are put to 0. In this case, the layer would be \textbf{``DropConnect''} \cite{Doorn}.
+	\item  \textbf{Fully-connected layer:} Fully connected layer is vector in which the input is connected to each nenuron that conforms this layer. This layer is the high-level reasoning layer so, it is used before the classification.  
 \end{description}
 
-El rendimiento de las redes está determinado por muchos factores interrelacionados arquitectónicos; Entre ellos están el número de capas, dimensiones de los mapas de características, extensiones del kernel espaciales, el número de parámetros y tamaños de agrupación y la colocación de las capas %\cite{LeCum2}.
+One neural network is defined by its type of layers and the number of neurons, also, there are parameters that also affect to the behaviour of the network (learning rate,...)\cite{Lecum2}.
 
-\subsection{Type of Networks}
+%\subsection{Type of Networks}
 
-\begin{description}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
-	\item \textbf{Siamese:}
-	\item \textbf{Convolutional:}
-	\item \textbf{Recurrent:}
-\end{description}
+%\begin{description}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
+%	\item \textbf{Siamese:}
+%	\item \textbf{Convolutional:}
+%	\item \textbf{Recurrent:}
+%\end{description}
 
 \section{Convolutional Neural Network (CNN)}
-Convolutional neural network are a determinate typology of neural network, CNN are inspired in how the visual cortex of a cat works \cite{Doorn}. This type of neural networks are (usually) used with images at input.\\
+Convolutional neural network are a determinate typology of neural network, CNN are inspired in how the visual cortex of a cat works \cite{Doorn}. This type of neural networks are (usually) used with images at the input of the network.\\
 
-Convolutional neural network has been used successfully in recognition and classification task includying document and object recognition, face detection, robotics navegation... \cite{Lecum2, Lecum3}.
- Una red de convolución consiste en múltiples capas de bancos de filtros seguido de no linealidad y la agrupación espacial. En la figura %\ref{convnet} se puede ver un esquema simplificado de las redes neuronales %\cite{Farabet}. \\
+Convolutional neural network has been used successfully in recognition and classification task includying document and object recognition, face detection, robotics navegation... \cite{Lecum2, Lecum3}.\\
