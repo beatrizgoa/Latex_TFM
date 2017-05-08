@@ -64,51 +64,51 @@
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Experiment 2: using ReLu}}}{42}{figure.caption.38}
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Experiment 3: using ReLu and LRN}}}{42}{figure.caption.38}
 \contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Experiment 4: using Gaussian weights init.}}}{42}{figure.caption.38}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Error of Lenet using LFW.\relax }}{44}{figure.caption.39}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Error of LeNet-5 using LFW with a learning rate of 0.001.\relax }}{45}{figure.caption.41}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Cost of Lenet using LFW with a learning rate of 0.001.\relax }}{46}{figure.caption.42}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Error of Lenet using LFW changing learning rate to 0.01.\relax }}{47}{figure.caption.43}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Error of Lenet using LFW changing learning rate to 0.1.\relax }}{48}{figure.caption.44}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Error of Lenet using LFW changing learning rate to 0.5.\relax }}{49}{figure.caption.45}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Error of Lenet using LFW changing number of kernels in example 1.\relax }}{50}{figure.caption.47}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Error of Lenet using LFW changing number of kernels and the filter size in example 2.\relax }}{51}{figure.caption.48}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Error of Lenet using LFW changing number of kernels and the filter size in example 3.\relax }}{52}{figure.caption.49}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Output of the convolutional layers using LeNet and LFW.\relax }}{54}{figure.caption.50}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Cost function at training of the three examples chanching the convolutional parameters.\relax }}{55}{figure.caption.51}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Example 1}}}{55}{figure.caption.51}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Example 2}}}{55}{figure.caption.51}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Example 3}}}{55}{figure.caption.51}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Error and cost using ReLu instead of tanh\relax }}{56}{figure.caption.53}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cost at training}}}{56}{figure.caption.53}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Error at validation}}}{56}{figure.caption.53}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Error using FRAV database and five classes.\relax }}{57}{figure.caption.54}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Error using FRAV database and two classes.\relax }}{57}{figure.caption.55}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Error of Lenet in the first try to build imagenet.\relax }}{60}{figure.caption.58}
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Cost at training and error at validating. Normal initialition. Learning rate = 0.001 (frav1).\relax }}{63}{figure.caption.62}
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Cost at training and error at validating. Gassian initialization. Learning rate = 0.001 - frav\_gaussian\_init\relax }}{63}{figure.caption.63}
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Cost at training and error at validating - Gaussian initialization. learning rate = 0.01 frav svm\_gauss.\relax }}{64}{figure.caption.64}
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Cost at training and error at validating - Noraml initialization. learning rate = 0.01 frav svm\_general.\relax }}{64}{figure.caption.65}
-\contentsline {figure}{\numberline {3.27}{\ignorespaces ROC and Precision- Recall courve - Noraml initialization. learning rate = 0.01 frav svm\_general.\relax }}{65}{figure.caption.66}
-\contentsline {figure}{\numberline {3.28}{\ignorespaces Training loss of four test Casia database\relax }}{66}{figure.caption.69}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Test 1}}}{66}{figure.caption.69}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Test 2}}}{66}{figure.caption.69}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Test 3}}}{66}{figure.caption.69}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Test 4}}}{66}{figure.caption.69}
-\contentsline {figure}{\numberline {3.29}{\ignorespaces Validation error of four test Casia database\relax }}{67}{figure.caption.70}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Test 1}}}{67}{figure.caption.70}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Test 2}}}{67}{figure.caption.70}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Test 3}}}{67}{figure.caption.70}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Test 4}}}{67}{figure.caption.70}
-\contentsline {figure}{\numberline {3.30}{\ignorespaces Cost at training and error at validating -casia svm\_gauss.\relax }}{68}{figure.caption.71}
-\contentsline {figure}{\numberline {3.31}{\ignorespaces Cost at training and error at validating -casia svm\_general.\relax }}{68}{figure.caption.72}
-\contentsline {figure}{\numberline {3.32}{\ignorespaces Cost at training and error at validating - mfsd svm\_gauss.\relax }}{69}{figure.caption.74}
-\contentsline {figure}{\numberline {3.33}{\ignorespaces Cost at training and error at validating - mfsd svm\_general.\relax }}{69}{figure.caption.75}
-\contentsline {figure}{\numberline {3.34}{\ignorespaces cost and error of the tree experiments with frav.\relax }}{74}{figure.caption.78}
-\contentsline {figure}{\numberline {3.35}{\ignorespaces cost and error of the tree experiments with FRAV (rgb + nir) image level images.\relax }}{75}{figure.caption.79}
-\contentsline {figure}{\numberline {3.36}{\ignorespaces cost and error of the tree experiments with CASIA images.\relax }}{76}{figure.caption.80}
-\contentsline {figure}{\numberline {3.37}{\ignorespaces cost and error of the tree experiments with CASIA videos.\relax }}{77}{figure.caption.81}
-\contentsline {figure}{\numberline {3.38}{\ignorespaces cost and error of the tree experiments with MFSD images.\relax }}{78}{figure.caption.82}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Cost at training and error at validating. Normal initialition. Learning rate = 0.001 (frav1).\relax }}{45}{figure.caption.41}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Cost at training and error at validating. Gassian initialization. Learning rate = 0.001 - frav\_gaussian\_init\relax }}{45}{figure.caption.42}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Cost at training and error at validating - Gaussian initialization. learning rate = 0.01 frav svm\_gauss.\relax }}{46}{figure.caption.43}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Cost at training and error at validating - Noraml initialization. learning rate = 0.01 frav svm\_general.\relax }}{46}{figure.caption.44}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces ROC and Precision- Recall courve - Noraml initialization. learning rate = 0.01 frav svm\_general.\relax }}{47}{figure.caption.45}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Training loss of four test Casia database\relax }}{48}{figure.caption.48}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Test 1}}}{48}{figure.caption.48}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Test 2}}}{48}{figure.caption.48}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Test 3}}}{48}{figure.caption.48}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Test 4}}}{48}{figure.caption.48}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Validation error of four test Casia database\relax }}{49}{figure.caption.49}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Test 1}}}{49}{figure.caption.49}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Test 2}}}{49}{figure.caption.49}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Test 3}}}{49}{figure.caption.49}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Test 4}}}{49}{figure.caption.49}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Cost at training and error at validating -casia svm\_gauss.\relax }}{50}{figure.caption.50}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Cost at training and error at validating -casia svm\_general.\relax }}{50}{figure.caption.51}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Cost at training and error at validating - mfsd svm\_gauss.\relax }}{51}{figure.caption.53}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Cost at training and error at validating - mfsd svm\_general.\relax }}{51}{figure.caption.54}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces cost and error of the tree experiments with frav.\relax }}{56}{figure.caption.57}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces cost and error of the tree experiments with FRAV (rgb + nir) image level images.\relax }}{57}{figure.caption.58}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces cost and error of the tree experiments with CASIA images.\relax }}{58}{figure.caption.59}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces cost and error of the tree experiments with CASIA videos.\relax }}{59}{figure.caption.60}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces cost and error of the tree experiments with MFSD images.\relax }}{60}{figure.caption.61}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Results}{79}{chapter.1.4}
+\contentsline {xchapter}{Results}{61}{chapter.1.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Cost (a) and error (b) at training CASIA image database\relax }}{62}{figure.caption.63}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cost at training}}}{62}{figure.caption.63}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Error at validation}}}{62}{figure.caption.63}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Cost (a) and error (b) at training CASIA video database\relax }}{62}{figure.caption.64}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cost at training}}}{62}{figure.caption.64}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Error at validation}}}{62}{figure.caption.64}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Cost (a) and error (b) at training RGB FRAV image database\relax }}{63}{figure.caption.65}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cost at training}}}{63}{figure.caption.65}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Error at validation}}}{63}{figure.caption.65}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Cost (a) and error (b) at training RGB and NIR FRAV (feature level) image database\relax }}{64}{figure.caption.66}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cost at training}}}{64}{figure.caption.66}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Error at validation}}}{64}{figure.caption.66}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Cost (a) and error (b) at training RGB subset, cost (c) and error (d) at training NIR subset for FRAV (RGB+NIR at classification level) image database\relax }}{65}{figure.caption.67}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cost at training RGB subset}}}{65}{figure.caption.67}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Error at validation RGB subset}}}{65}{figure.caption.67}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Cost at training NIR subset}}}{65}{figure.caption.67}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Error at validation NIR subset}}}{65}{figure.caption.67}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Cost (a) and error (b) at training MFSD image database\relax }}{66}{figure.caption.68}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cost at training}}}{66}{figure.caption.68}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Error at validation}}}{66}{figure.caption.68}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusions and future work}{83}{chapter.1.5}
+\contentsline {xchapter}{Conclusions and future work}{71}{chapter.1.5}

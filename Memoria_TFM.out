@@ -39,34 +39,28 @@
 \BOOKMARK [2][-]{subsection.1.3.1.1}{LeNet-5 specifications}{section.1.3.1}% 39
 \BOOKMARK [2][-]{subsection.1.3.1.2}{LeNet-5 Results}{section.1.3.1}% 40
 \BOOKMARK [2][-]{subsection.1.3.1.3}{Modifying LeNet}{section.1.3.1}% 41
-\BOOKMARK [1][-]{section.1.3.2}{Start working with Faces databases}{chapter.1.3}% 42
-\BOOKMARK [2][-]{subsection.1.3.2.1}{Using Labeled Faces in the Wild}{section.1.3.2}% 43
-\BOOKMARK [2][-]{subsection.1.3.2.2}{Using FRAV dataset}{section.1.3.2}% 44
-\BOOKMARK [1][-]{section.1.3.3}{Defining a new architecture}{chapter.1.3}% 45
-\BOOKMARK [1][-]{section.1.3.4}{Regenerating the databases}{chapter.1.3}% 46
-\BOOKMARK [2][-]{subsection.1.3.4.1}{Architecture implemented in CASIA videos}{section.1.3.4}% 47
-\BOOKMARK [2][-]{subsection.1.3.4.2}{As close as possible as Imagenet}{section.1.3.4}% 48
-\BOOKMARK [2][-]{subsection.1.3.4.3}{New database}{section.1.3.4}% 49
-\BOOKMARK [1][-]{section.1.3.5}{Final architecture}{chapter.1.3}% 50
-\BOOKMARK [0][-]{chapter.1.4}{Results}{part.1}% 51
-\BOOKMARK [1][-]{section.1.4.1}{Training and validating process}{chapter.1.4}% 52
-\BOOKMARK [2][-]{subsection.1.4.1.1}{CASIA Image database}{section.1.4.1}% 53
-\BOOKMARK [2][-]{subsection.1.4.1.2}{CASIA Video database}{section.1.4.1}% 54
-\BOOKMARK [2][-]{subsection.1.4.1.3}{FRAV database}{section.1.4.1}% 55
-\BOOKMARK [2][-]{subsection.1.4.1.4}{FRAV RGB+NIR \(feature level\) database}{section.1.4.1}% 56
-\BOOKMARK [2][-]{subsection.1.4.1.5}{FRAV RGB+NIR \(classification level\) database}{section.1.4.1}% 57
-\BOOKMARK [2][-]{subsection.1.4.1.6}{MFSD database}{section.1.4.1}% 58
-\BOOKMARK [1][-]{section.1.4.2}{Testing process}{chapter.1.4}% 59
-\BOOKMARK [2][-]{subsection.1.4.2.1}{CASIA Image database}{section.1.4.2}% 60
-\BOOKMARK [2][-]{subsection.1.4.2.2}{CASIA Video database}{section.1.4.2}% 61
-\BOOKMARK [2][-]{subsection.1.4.2.3}{FRAV database}{section.1.4.2}% 62
-\BOOKMARK [2][-]{subsection.1.4.2.4}{FRAV RGB+NIR \(feature level\) database}{section.1.4.2}% 63
-\BOOKMARK [2][-]{subsection.1.4.2.5}{FRAV RGB+NIR \(classification level\) database}{section.1.4.2}% 64
-\BOOKMARK [2][-]{subsection.1.4.2.6}{MFSD-MSU database}{section.1.4.2}% 65
-\BOOKMARK [2][-]{subsection.1.4.2.7}{Comparative among databases}{section.1.4.2}% 66
-\BOOKMARK [0][-]{chapter.1.5}{Conclusions and future work}{part.1}% 67
-\BOOKMARK [1][-]{section.1.5.1}{Conclusions}{chapter.1.5}% 68
-\BOOKMARK [1][-]{section.1.5.2}{FUture work}{chapter.1.5}% 69
-\BOOKMARK [0][-]{chapter*.90}{Bibliography}{part.1}% 70
-\BOOKMARK [0][-]{chapter*.91}{List of Figures}{part.1}% 71
-\BOOKMARK [0][-]{chapter*.92}{List of Tables}{part.1}% 72
+\BOOKMARK [2][-]{subsection.1.3.1.4}{As close as possible as Imagenet}{section.1.3.1}% 42
+\BOOKMARK [2][-]{subsection.1.3.1.5}{New database}{section.1.3.1}% 43
+\BOOKMARK [1][-]{section.1.3.2}{Final architecture}{chapter.1.3}% 44
+\BOOKMARK [0][-]{chapter.1.4}{Results}{part.1}% 45
+\BOOKMARK [1][-]{section.1.4.1}{Training and validating process}{chapter.1.4}% 46
+\BOOKMARK [2][-]{subsection.1.4.1.1}{CASIA Image database}{section.1.4.1}% 47
+\BOOKMARK [2][-]{subsection.1.4.1.2}{CASIA Video database}{section.1.4.1}% 48
+\BOOKMARK [2][-]{subsection.1.4.1.3}{FRAV database}{section.1.4.1}% 49
+\BOOKMARK [2][-]{subsection.1.4.1.4}{FRAV RGB+NIR \(feature level\) database}{section.1.4.1}% 50
+\BOOKMARK [2][-]{subsection.1.4.1.5}{FRAV RGB+NIR \(classification level\) database}{section.1.4.1}% 51
+\BOOKMARK [2][-]{subsection.1.4.1.6}{MFSD database}{section.1.4.1}% 52
+\BOOKMARK [1][-]{section.1.4.2}{Testing process}{chapter.1.4}% 53
+\BOOKMARK [2][-]{subsection.1.4.2.1}{CASIA Image database}{section.1.4.2}% 54
+\BOOKMARK [2][-]{subsection.1.4.2.2}{CASIA Video database}{section.1.4.2}% 55
+\BOOKMARK [2][-]{subsection.1.4.2.3}{FRAV database}{section.1.4.2}% 56
+\BOOKMARK [2][-]{subsection.1.4.2.4}{FRAV RGB+NIR \(feature level\) database}{section.1.4.2}% 57
+\BOOKMARK [2][-]{subsection.1.4.2.5}{FRAV RGB+NIR \(classification level\) database}{section.1.4.2}% 58
+\BOOKMARK [2][-]{subsection.1.4.2.6}{MFSD-MSU database}{section.1.4.2}% 59
+\BOOKMARK [2][-]{subsection.1.4.2.7}{Comparative among databases}{section.1.4.2}% 60
+\BOOKMARK [0][-]{chapter.1.5}{Conclusions and future work}{part.1}% 61
+\BOOKMARK [1][-]{section.1.5.1}{Conclusions}{chapter.1.5}% 62
+\BOOKMARK [1][-]{section.1.5.2}{FUture work}{chapter.1.5}% 63
+\BOOKMARK [0][-]{chapter*.75}{Bibliography}{part.1}% 64
+\BOOKMARK [0][-]{chapter*.76}{List of Figures}{part.1}% 65
+\BOOKMARK [0][-]{chapter*.77}{List of Tables}{part.1}% 66
