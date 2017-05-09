@@ -93,19 +93,10 @@ C.~Farabet, R.~Paz, J.~Perez-Carrasco, C.~Zamarreños, A.~Linares-Barranco,
   spiking-dynamic-pixel convnets for visual processing,'' {\em Frontiers in
   Neuroscience}, vol.~6, p.~32, 2012.
 
-\bibitem{theano}
-T.~D. Team, ``Theano: A {Python} framework for fast computation of mathematical
-  expressions,'' {\em arXiv e-prints}, vol.~abs/1605.02688, 2016.
-
 \bibitem{MNISTimage}
 ``Sample digits of mnist handwritten digit database.''
   \url{https://www.researchgate.net/figure/264273647_fig1_Fig-18-0-9-Sample-digits-of-MNIST-handwritten-digit-database}.
 \newblock Accessed: 2017-04-19.
-
-\bibitem{LFWTech}
-G.~B. Huang, M.~Ramesh, T.~Berg, and E.~Learned-Miller, ``Labeled faces in the
-  wild: A database for studying face recognition in unconstrained
-  environments,'' Tech. Rep. 07-49, University of Massachusetts, Amherst, 2007.
 
 \bibitem{ABC4EU}
 ``Automated border control gates for europe.'' \url{http://abc4eu.com/}.
@@ -191,5 +182,10 @@ X.~Glorot and Y.~Bengio, ``Understanding the difficulty of training deep
   feedforward neural networks,'' in {\em In Proceedings of the International
   Conference on Artificial Intelligence and Statistics (AISTATS’10). Society
   for Artificial Intelligence and Statistics}, 2010.
+
+\bibitem{imagenet}
+A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
+  deep convolutional neural networks,'' in {\em Advances in Neural Information
+  Processing Systems 25}, pp.~1097--1105, 2012.
 
 \end{thebibliography}

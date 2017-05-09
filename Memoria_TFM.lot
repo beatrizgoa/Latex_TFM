@@ -5,9 +5,9 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Theoretical Basics}{5}{chapter.0.2}
 \contentsline {table}{\numberline {2.1}{\ignorespaces Analogies between artificial neural networks and biological neural networks\relax }}{13}{table.caption.9}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Confusion Matrix\relax }}{26}{table.caption.20}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Confusion Matrix\relax }}{24}{table.caption.17}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Methodology}{35}{chapter.0.3}
+\contentsline {xchapter}{Methodology}{33}{chapter.0.3}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Results}{65}{chapter.0.4}
 \contentsline {table}{\numberline {4.1}{\ignorespaces APCR and BPCR classifying results using CASIA image database\relax }}{71}{table.caption.69}
@@ -16,5 +16,6 @@
 \contentsline {table}{\numberline {4.4}{\ignorespaces APCR and BPCR classifying results using FRAV RGB+NIR (feature level) database\relax }}{74}{table.caption.74}
 \contentsline {table}{\numberline {4.5}{\ignorespaces APCR and BPCR classifying results using FRAV RGB+NIR (classification level) database\relax }}{75}{table.caption.76}
 \contentsline {table}{\numberline {4.6}{\ignorespaces APCR and BPCR classifying results using MFSD-MSU database\relax }}{76}{table.caption.78}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Executing time\relax }}{77}{table.caption.79}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusions and future work}{77}{chapter.0.5}
+\contentsline {xchapter}{Conclusions and future work}{79}{chapter.0.5}

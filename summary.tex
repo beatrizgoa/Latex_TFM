@@ -55,7 +55,7 @@ In addition to the number of epoch, other way to stop the training procedure is 
 %The training would run for a number of epoch that the user has given or by a early-Stopping that has been developed by authors. The early-stopping combats over-fitting by monitoring the model's performance on a validation set.\\
 
 \subsection{LeNet-5 Results}
-While the training is being calculate, the weights are being update in each iteration. When A  model is selected or saved, weights are actually what is being chosen or saved. An example of weights is represented in figure \ref where twenty first weights at epoch 10 of the first convolutional layer are represented. So when its being trained, what the network is doing is adapting the weights to the input to get a good performance.\\
+While the training is being calculate, the weights are being update in each iteration. When A  model is selected or saved, weights are actually what is being chosen or saved. An example of weights is represented in figure \ref{fig:weights_lenet} where twenty first weights at epoch 10 of the first convolutional layer are represented. So when its being trained, what the network is doing is adapting the weights to the input to get a good performance.\\
 
 \begin{figure}[htb]
 \centering
@@ -189,22 +189,63 @@ The results obtained, at testing, have been the following ones:
 
 The best configuration for the network is the original one. With Gaussian initialization, the network does not find a local minimum in such a sort of time. Using LRN and ReLu, test result is closer to the obtained with LeNet original, but not as good as the last one. Changing the activation function has not been a good change. Not taking into account original LeNet, the best test performance has been obtained with 1,08\% using ReLu and LRN, but the best validation error is 0,99\% obtained using just LRN. The values are close of the modifications, but the modification of Gaussian weight initialization.\\
 
+\subsection{LeNet-5 and face database}
+The goal of this thesis is train a convolutional neural network for face anti-spoofing, so the following step is feed LeNet-5 with one face databases, FRAV RGB database, the one that would be used in the final architecture.\\
+
+\subsection{Using FRAV dataset}
+One of the databases used with the final architecture and configuration of the network is FRAV database. LeNet-5 is tested with this database in this current section.\\
+
+In order to work with images, because of the difference among the images shape, they have been resized into 252x180, this new shape is proportional to $0.7*height = weight$ because all images studied save that proportion approximately.\\
+
+The network has been tested with this databases in the two ways of classify images, with two classes (genuine and attacks) and five classes (genuine and four classes, one per type of attack).\\ %Also, different learning rates have been used.\\
+
+The architecture used is the same as LeNet-5 except for the batch size that has been reduced to 50 because there are not as much samples as in the MNIST database.\\
+
+
+Figure \ref{fig:FRAV_five} shows the validation error of five classes, the best validation error has token place in epoch 7 with test performance 60.4\%. It has token 68.78 minutes to run.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.6\textwidth]{images/epoch_5classes_FRAV_1.png}
+\caption{Error using FRAV database and five classes.}
+\label{fig:FRAV_five}
+\end{figure}
+
+In figure \ref{fig:FRAV_two}, the validation error in each epoch could be visualized using two classes to classify. It could be seen that in each epoch the validation error is the same. Test error performance at the first epoch is 23.2 \%. The total time of the running has been 64.0167 minutes.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.6\textwidth]{images/epoch_2classes_FRAV_1.png}
+\caption{Error using FRAV database and two classes.}
+\label{fig:FRAV_two}
+\end{figure}
+
+The time in both cases, classifying with two or five classes are similar, but not the result, is better when just two classes are used and no differentiation is made among attacks. There would be need more samples and more time to get a better score if five classes classification is wanted. Also, the architecture should be adapted to this problem.\\
+
+
+
 \clearpage
+\section{Adapting LeNet-5 architecture}
+From LeNet-5 architecture, changes have been made in order to build a similar convolutional architecture as described in \cite{yangLL14}.\\
 
-\subsection{As close as possible as Imagenet}
+In \cite{yangLL14} authors develop a convolutional neural network with similar objectives as the described in this thesis. The CNN is based on \textit{Imagenet} architecture \cite{imagenet}, this is a determined architecture used for classifying objects which is well known and very used in the deep learning community. Its architecture is described in \ref{fig:Imagenet_architecture}. Imagenet has been trained with thousand of objects samples.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.65\textwidth]{images_miscelaneus/Imagenet.png}
+\caption{Imagenet architecture.} \label{fig:Imagenet_architecture}
+\end{figure}
+
+Authors from \cite{yangLL14} describe lightly the architecture, the parameters and the changes made from Imagenet, so it is not possible to develop the same architecture.\\
+
 %Dentro de la carpeta de FRAv\_casia\_ImageNet, en imagenet2, se ha programado imagenet, lo unico que sin strides en la primera capa de convolucion.\\
-Because of the lack of information about the convolutional neural network described in casia paper, it has been necessary  to though the original code that authors use, Imagenet. Authors use the same architecture, although how it has been modified it is not explained. \\
-
-It has been possible to implement Imagenet, the difference between the implementation and the original one is that the strides used in the first convolutional layer has not been used because the input of the images need to be bigger to have more than one neuron in the last layer.\\
-
+%Because of the lack of information about the convolutional neural network described in casia paper, it has been necessary  to though the original code that authors use, Imagenet. Authors use the same architecture, although how it has been modified it is not explained. \\
+%It has been possible to implement Imagenet, the difference between the implementation and the original one is that the strides used in the first convolutional layer has not been used because the input of the images need to be bigger to have more than one neuron in the last layer.\\
 %Dentro hay una carpeta para cada base de datos. Dentro de cada carpeta estan las pruebas que se hacen con cada base de datos.\\
-
-The convolutional neural network has been tested with different databases: FRAV, CASIA and MFSD and different experiments have been carried out with each one.\\
+%The convolutional neural network has been tested with different databases: FRAV, CASIA and MFSD and different experiments have been carried out with each one.\\
 
 \subsubsection{Network configuration for each experiment}
-The configuration of each experiment of each network are described in the following lines. When it is said that Gaussian weight initialization has been used, the mean value is 0 and the std used is 0.01 in all the times ans bias has been initialized to 1, if not, bias has been initialized to 0. When Gaussian initialization has not been used,  weights are sampled randomly from a uniform distribution in the range [-1/fan-in, 1/fan-in], where fan-in is the number of inputs to a hidden unit [copy-paste from deeplearning.net]. \\
-
-The goal of the next experiments is getting an optimal architecture changing the parameters. the difference between using a normal distribution o a Gaussian distribution of weights initialization has been tested and using SVM with linear kernel and RBF kernel has been tried.\\
+The goal of the next experiments is getting an optimal architecture changing the parameters. The difference between using a normal distribution o a Gaussian distribution of weights initialization has been tested and using SVM with linear kernel and RBF kernel has been tried.\\
 
 FRAV database (Common parameters:  n\_epochs=400, nkerns=[96, 256, 386, 384, 256], batch\_size=20):\\
 \begin{itemize}
@@ -240,7 +281,6 @@ IMPORTANT: The valid graphs are made with SOFTMAX independly of the classifier u
 \subsubsection{Results with FRAV database}
 
 In this section, cost (at training) and error (at validating) is going to be visualized. First when FRAV database has been trained with Gaussian initialization and with a learning rate = 0.001 \ref{fig:Imagenet2-frav1}. Second with the same learning rate, but Gaussian initialization for weights \ref{fig:Imagenet2-frav_gaussian_init}. Third, decreasing the learning rate to 0.01 and with normal initialization \ref{fig:Imagenet2-frav-svm_general} and the last one, whit the same learning rate but with Gaussian weights initialization \ref{fig:Imagenet2-frav-svm_gauss}.\\
-
 
 \begin{figure}[htb]
 \centering
@@ -300,7 +340,7 @@ SVM lineal(C=5)&      Gaussian     &     0.01      &  63 & 593 & 19  &5  \\
 \end{table}
 
 
-\subsubsection{casia results}
+\subsubsection{CASIA results}
 For Casia, different experiments has been carried out in order to train the network, using SOFTMAX as classifier and normal weight initialization:\\
 
 \begin{itemize}
@@ -318,19 +358,19 @@ In figure \ref{fig:errorCasia4Test} it is possible to see that the error changes
 
 \begin{figure}[htb]
 \centering
-		\subfigure[Test 1]{\includegraphics[width=0.47\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba1/cost_frav_p1.png}}
-		\subfigure[Test 2]{\includegraphics[width=0.47\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba2/cost_frav_p2.png}}			\subfigure[Test 3]{\includegraphics[width=0.47\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba3/cost_frav_p3.png}}
-		\subfigure[Test 4]{\includegraphics[width=0.47\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba4/cost_frav_p4.png}}
+		\subfigure[Test 1]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba1/cost_frav_p1.png}}
+		\subfigure[Test 2]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba2/cost_frav_p2.png}}			\subfigure[Test 3]{\includegraphics[width=0.47\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba3/cost_frav_p3.png}}
+		\subfigure[Test 4]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba4/cost_frav_p4.png}}
 \caption{Training loss of four test Casia database}
 \label{fig:lossCasia4Test}
 \end{figure}
 
 \begin{figure}[htb]
 \centering
-		\subfigure[Test 1]{\includegraphics[width=0.47\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba1/error_frav_p1.png}}
-		\subfigure[Test 2]{\includegraphics[width=0.47\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba2/error_frav_p2.png}}
-		\subfigure[Test 3]{\includegraphics[width=0.47\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba3/error_frav_p3.png}}
-		\subfigure[Test 4]{\includegraphics[width=0.47\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba4/error_frav_p4.png}}
+		\subfigure[Test 1]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba1/error_frav_p1.png}}
+		\subfigure[Test 2]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba2/error_frav_p2.png}}
+		\subfigure[Test 3]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba3/error_frav_p3.png}}
+		\subfigure[Test 4]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba4/error_frav_p4.png}}
 \caption{Validation error of four test Casia database}
 \label{fig:errorCasia4Test}
 \end{figure}
@@ -431,67 +471,67 @@ With that databases. Some experiments has been carried out:
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_frav/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_frav/error.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset/error.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset_tested_itself/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset_tested_itself/error.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset_tested_iteself_lr_0_001/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset_tested_iteself_lr_0_001/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset_tested_itself/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset_tested_itself/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset_tested_iteself_lr_0_001/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset_tested_iteself_lr_0_001/error.png}
 \caption{cost and error of the tree experiments with frav.} \label{fig:frav-ejec1}
 \end{figure}
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/error.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset/error.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_itself/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_itself/error.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_iteself_lr_0_001/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_iteself_lr_0_001/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_itself/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_itself/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_iteself_lr_0_001/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_iteself_lr_0_001/error.png}
 \caption{cost and error of the tree experiments with FRAV (rgb + nir) image level images.} \label{fig:frav_imagelevel-ejec1}
 \end{figure}
 
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_casia/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_casia/error.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset/error.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset_tested_itself/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset_tested_itself/error.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset_tested_iteself_lr_0_001/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset_tested_iteself_lr_0_001/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset_tested_itself/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset_tested_itself/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset_tested_iteself_lr_0_001/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset_tested_iteself_lr_0_001/error.png}
 \caption{cost and error of the tree experiments with CASIA images.} \label{fig:casia-ejec1}
 \end{figure}
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_casia_video/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_casia_video/error.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset/error.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_itself/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_itself/error.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_iteself_lr_0_001/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_iteself_lr_0_001/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia_video/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia_video/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_itself/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_itself/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_iteself_lr_0_001/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_iteself_lr_0_001/error.png}
 \caption{cost and error of the tree experiments with CASIA videos.} \label{fig:casiavid-ejec1}
 \end{figure}
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_mfsd/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_mfsd/error.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset/minidatasetcost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset/minidataseterror.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_itself/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_itself/error.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_iteself_lr_0_001/cost.png}
-\includegraphics[width=0.45\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_iteself_lr_0_001/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_mfsd/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_mfsd/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset/minidatasetcost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset/minidataseterror.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_itself/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_itself/error.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_iteself_lr_0_001/cost.png}
+\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_iteself_lr_0_001/error.png}
 \caption{cost and error of the tree experiments with MFSD images.} \label{fig:mfsd-ejec1}
 \end{figure}
 

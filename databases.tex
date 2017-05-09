@@ -24,32 +24,6 @@ Some examples of the digit image MNIST database could be seen in \ref{fig:MNIST_
 \item The samples are directly separated into train, test and validate subset.
 \end{itemize}
 
-\subsection{Labeled faces in the wild}
-\textit{The Labeled Faces in the Wild} (LFW) is face database of well-known people that are collected from the net. The database can be found in its official web page \url{http://vis-www.cs.umass.edu/lfw/} \cite{LFWTech}.\\
-
-The characteristics of this database are the following ones:
-\begin{itemize}
- \item There are 13233 unique samples.
- \item The size of each image is 250x250 pixels. The number of features per image is 187500.
- \item There are images from 5748 different people, so there are 5748 different classes (if is used as one class per people).
-\item The number of images per person is not the same for each one. There are 1680 people with two or more images.
-\item The images are in RGB space.
-\item The faces are centred in the image.\\
-\end{itemize}
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.2\textwidth]{images_databases/LFW/1.jpg}
-\includegraphics[width=0.2\textwidth]{images_databases/LFW/2.jpg}
-\includegraphics[width=0.2\textwidth]{images_databases/LFW/3.jpg}
-\includegraphics[width=0.2\textwidth]{images_databases/LFW/4.jpg}
-\caption{Samples of LFW database} \label{fig:LFW1}
-\end{figure}
-
-Four examples of the images of this database could be seen in figure \ref{fig:LFW1} in which faces of well-known people are visualized.\\
-
-
-This database has been used to learn; to learn how to read a database, how to feed the network with those images. It has been used assigning each class to a different people.\\
-
 \subsection{FRAV dataset}
 FRAV database is an anti-spoofing face database built in the FRAV research group of tu URJC University and which is part of the Automated Border Control Gates for Europe project \cite{ABC4EU}.\\
 
@@ -74,7 +48,7 @@ One exaple of RGB images of FRAV database are shown in figure \ref{fig:RGB-frav1
 \subfigure[tablet attack RGB]{\includegraphics[width=0.18\textwidth]{images_databases/fravrgb/at4-1.JPG} \label{frav_im2-4}}
 \subfigure[real user RGB]{\includegraphics[width=0.18\textwidth]{images_databases/fravrgb/real1.JPG} \label{frav_im2-5}} 
 
-\subfigure[printed NIR image attack]{\includegraphics[width=0.18\textwidth]{images_databases/fravnnir/at-1.jpg} \label{frav_im-1} }
+\subfigure[printed NIR image attack]{\includegraphics[width=0.18\textwidth]{images_databases/fravnnir/at-1.jpg} \label{frav_im3-1} }
 \subfigure[mask attack NIR]{\includegraphics[width=0.18\textwidth]{images_databases/fravnnir/at-2.jpg} \label{frav_im3-2}}
 \subfigure[eye mask attack NIR]{\includegraphics[width=0.18\textwidth]{images_databases/fravnnir/at-3.jpg} \label{frav_im3-3}}
 \subfigure[tablet attack NIR]{\includegraphics[width=0.18\textwidth]{images_databases/fravnnir/at-4.jpg} \label{frav_im3-4}}

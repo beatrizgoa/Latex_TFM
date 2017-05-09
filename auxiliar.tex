@@ -1,3 +1,29 @@
+\subsection{Labeled faces in the wild}
+\textit{The Labeled Faces in the Wild} (LFW) is face database of well-known people that are collected from the net. The database can be found in its official web page \url{http://vis-www.cs.umass.edu/lfw/} \cite{LFWTech}.\\
+
+The characteristics of this database are the following ones:
+\begin{itemize}
+ \item There are 13233 unique samples.
+ \item The size of each image is 250x250 pixels. The number of features per image is 187500.
+ \item There are images from 5748 different people, so there are 5748 different classes (if is used as one class per people).
+\item The number of images per person is not the same for each one. There are 1680 people with two or more images.
+\item The images are in RGB space.
+\item The faces are centred in the image.\\
+\end{itemize}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.2\textwidth]{images_databases/LFW/1.jpg}
+\includegraphics[width=0.2\textwidth]{images_databases/LFW/2.jpg}
+\includegraphics[width=0.2\textwidth]{images_databases/LFW/3.jpg}
+\includegraphics[width=0.2\textwidth]{images_databases/LFW/4.jpg}
+\caption{Samples of LFW database} \label{fig:LFW1}
+\end{figure}
+
+Four examples of the images of this database could be seen in figure \ref{fig:LFW1} in which faces of well-known people are visualized.\\
+
+
+This database has been used to learn; to learn how to read a database, how to feed the network with those images. It has been used assigning each class to a different people.\\
+
 \section{Start working with Faces databases}
 Once LeNet-5 architecture has been understanding, the used database is changed because the final goal is using a convolutional neural network with different faces databases.\\
 
