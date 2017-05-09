@@ -110,5 +110,9 @@
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Cost (a) and error (b) at training MFSD image database\relax }}{66}{figure.caption.68}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cost at training}}}{66}{figure.caption.68}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Error at validation}}}{66}{figure.caption.68}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Casia image misclassified sample.\relax }}{67}{figure.caption.70}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces RGB FRAV misclassified samples.\relax }}{69}{figure.caption.73}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces RGB+NIR FRAV (feature level) misclassified samples.\relax }}{70}{figure.caption.75}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces RGB+NIR FRAV (classification level) misclassified samples.\relax }}{71}{figure.caption.77}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusions and future work}{71}{chapter.1.5}
+\contentsline {xchapter}{Conclusions and future work}{73}{chapter.1.5}

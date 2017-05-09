@@ -109,15 +109,18 @@ Classifier                                                                   & A
 \label{APCR_BPCR_CASIA_im}
 \end{table}
 
-In table \ref{APCR_BPCR_CASIA_im} are exposed the APCR and BPCR parameters for each classifier. All the attacks samples are well classified because APCR value is 0. The number of genuine samples misclassified is what changes, it gets 1 for SVM with kernel lineal,all the positives samples have been misclassified, and decision tree whose number of misclassified real user are 4 (the half of the total real samples of the test subset). The rest of the classifiers takes a 0.125 APCR value, just one sample is misclassified, the same sample which could be seen in figure % :('False Negative: ', 'databases/Casia database Fixed/Real/41.jpg')\\
+In table \ref{APCR_BPCR_CASIA_im} are exposed the APCR and BPCR parameters for each classifier. All the attacks samples are well classified because APCR value is 0. The number of genuine samples misclassified is what changes, it gets 1 for SVM with kernel lineal,all the positives samples have been misclassified, and decision tree whose number of misclassified real user are 4 (the half of the total real samples of the test subset). The rest of the classifiers takes a 0.125 APCR value, just one sample is misclassified, the same sample which could be seen in figure \ref{fig:casia_im_miscl}.\\% :('False Negative: ', 'databases/Casia database Fixed/Real/41.jpg')\\
 
 With respect to APCR and BPCR it is not possible to get the best combination with which the results are better.\\
 
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.2\textwidth]{images_databases/casia_real_41.jpg}
+\caption{Casia image misclassified sample.} \label{fig:casia_im_miscl}
+\end{figure}
 
 \subsection{CASIA Video database}
 Next analyzed results are from CASIA video database.\\
-
-In table \ref{APCR_BPCR_CASIA_vid} APCR and BPCR results are summarized. The best result has been obtained with SVM classifier and kernel RBF (C= 0.05) after applying LDA with 1 component. The worst values obtained are the SVM with linear kernel, no matters if PCA or LDA have been used, because all the positives samples have been classified as negatives. \\
 
 \begin{table}[htb]
 \centering
@@ -136,15 +139,14 @@ Classifier                                                                   & A
 \label{APCR_BPCR_CASIA_vid}
 \end{table}
 
-From the table it is not possible to know if LDA and PCA are significant because with some classifiers APCR and BPCR have been improve or worsened.\\
+In table \ref{APCR_BPCR_CASIA_vid} APCR and BPCR results are summarized. The best result has been obtained with SVM classifier and kernel RBF (C= 0.05) after applying LDA with 1 component. The worst values obtained are the SVM with linear kernel, no matters if PCA or LDA have been used, because all the positives samples have been classified as negatives. \\
+
+From the table it is not possible to know if LDA and PCA are significant because with some classifiers APCR and BPCR results have been improve or worsened.\\
 
 Also The last conclusion that could be gotten from the table is that Attacks samples are better classified that genuine samples, it is due to the fact that has been trained with more negative samples.\\
 
 \subsection{FRAV database}
 The RGB FRAV database results are presented and analyzed.\\
-
-APCR and BPCR results are in table \ref{APCR_BPCR_FRAV}. In general, results are very good because values are lower than 0.5. With SVM linear kernel, all the samples are classified as negatives except when it has been used when LDA, that results are as good as the obtained with RBF kernel.\\
-
 
 \begin{table}[htb]
 \centering
@@ -163,15 +165,24 @@ Classifier                                                                   & A
 \label{APCR_BPCR_FRAV}
 \end{table}
 
+
+APCR and BPCR results are in table \ref{APCR_BPCR_FRAV}. In general, results are very good because values are lower than 0.5. With SVM linear kernel, all the samples are classified as negatives except when it has been used when LDA, that results are as good as the obtained with RBF kernel.\\
+
 The best  result is obtained when SVM with RBF kernel has been used with C = 1 and using LDA with 1 component. LDA improves the results obtained when neither PCA nor just the classifier has been used, although the improved is not too much.\\
 
-The misclassified samples are repeated among the classifiers. The two samples shown in figure: %('False Positive: ', 'databases/from/attack_04/tablet_162.JPG') ('False Positive: ', 'databases/from/attack_04/tablet_109.JPG')
-represents the two most misclassified samples, almost every classifier have classified it incorrectly.\\
+The misclassified samples are repeated among the classifiers. The two samples shown in figure \ref{fig:frav_miscl} represents the two most misclassified images, almost every classifier have classified it incorrectly.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.2\textwidth]{images_databases/frav_tablet_109.JPG}
+\includegraphics[width=0.2\textwidth]{images_databases/frav_tablet_162.JPG}
+%('False Positive: ', 'databases/from/attack_04/tablet_162.JPG') ('False Positive: ', 'databases/from/attack_04/tablet_109.JPG')
+\caption{RGB FRAV misclassified samples.} \label{fig:frav_miscl}
+\end{figure}
 
 \subsection{FRAV RGB+NIR (feature level) database}
 Results obtained at classifying RGB+NIR (feature level) database are shown following.\\
 
-Table \ref{APCR_BPCR_FRAV_feature} shows the APCR and BPCR values that have been obtained for each classifier.
 \begin{table}[htb]
 \centering
 \resizebox{\textwidth}{!}{%
@@ -182,15 +193,32 @@ Classifier                                                                   & A
 \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 2\end{tabular}                    & 0.02 & 0    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 5\end{tabular}                      & 0.02 & 0    & \begin{tabular}[c]{@{}c@{}}SVM - RBF\\ C = 0.1\end{tabular}                  & 0.04 & 0    \\ \hline
 \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.005\end{tabular}             & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 0.001\end{tabular}               & 0    & 1    & \begin{tabular}[c]{@{}c@{}}SVM - lineal\\ C = 10\end{tabular}                & 0.05 & 0    \\ \hline
 \begin{tabular}[c]{@{}c@{}}KNN\\ k = 6\end{tabular}                          & 0.09 & 0    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = 12\end{tabular}                           & 0.12 & 0    & \begin{tabular}[c]{@{}c@{}}KNN\\ k = 10\end{tabular}                         & 0.04 & 0    \\ \hline
-\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =  2\end{tabular}           & \texttbf{0}    & \textvf{0}    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}              & 0.01 & 0    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}            & 0.05 & 0    \\ \hline
+\begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =  2\end{tabular}           & \textbf{0}    & \textbf{0}    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}              & 0.01 & 0    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}            & 0.05 & 0    \\ \hline
 \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.01\end{tabular} & \textbf{0}    & \textbf{0}    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.05\end{tabular}   & 0.06 & 0    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.05\end{tabular} & 0.07 & 0    \\ \hline
 \end{tabular} }
 \caption{APCR and BPCR classifying results using FRAV RGB+NIR (feature level) database}
 \label{APCR_BPCR_FRAV_feature}
 \end{table}
 
-\subsection{FRAV RGB+NIR (classification level) database}
+Table \ref{APCR_BPCR_FRAV_feature} shows the APCR and BPCR values that have been obtained for each classifier. Except for SVM with linear kernel, which has classified all the samples as negatives when just the classifier has been used or if PCA has been aplied too, classifications have produced good results, the APCR and BPCR values are very low, close to 0. In fact, Decision Tree and logistic regression classify correctly all the samples because APCR and BPCR are equal to 0. \\
 
+PCA and LDA have not improved results significantly. SVM lineal with LDA does not classify all the samples as negatives. But when PCA and LDA is applied with logistic regression and Decision tree, the classification is not perfect as it is when none is applied.\\
+
+In general, the same samples are miscclasified in the classification tasks. The two most misclassified samples are represented in figure \ref{fig:frav_feat_miscl}.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.2\textwidth]{images_databases/frav_rgb_151.JPG}
+\includegraphics[width=0.2\textwidth]{images_databases/frav_nir_151.JPG} 
+\\
+\includegraphics[width=0.2\textwidth]{images_databases/frav_rgb_128.JPG}
+\includegraphics[width=0.2\textwidth]{images_databases/frav_nir_128.JPG}
+%('False Positive: ', 'databases/RGB_NIR/RGB/attack_03/151.JPG') ('False Positive: ', 'databases/RGB_NIR/RGB/attack_03/128.JPG')
+\caption{RGB+NIR FRAV (feature level) misclassified samples.} \label{fig:frav_feat_miscl}
+\end{figure}
+
+\subsection{FRAV RGB+NIR (classification level) database}
+Results obtained when RGB+NIR FRAV database (classification level) is used are described.\\
 \begin{table}[htb]
 \centering
 \resizebox{\textwidth}{!}{%
@@ -208,7 +236,22 @@ Classifier                                                                   & A
 \label{APCR_BPCR_FRAV_class}
 \end{table}
 
+APCR and BPDR results are summarized in table \ref{APCR_BPCR_FRAV_class}. Results are closer to 0, but none classifier classifies perfectly. There is possible to see that with LDA that APCR results are better and BPCR results are perfect.\\
+
+SVM linear classifier classifies incorrectly positives samples although PCA is used too, with LDA that does not happen.\\
+
+In most of cases, classifiers just misclassify one sample, the same sample represented in figure \ref{fig:frav_clas_miscl}. Classifiers that misclassify more than one sample, the sample \ref{fig:frav_clas_miscl} is one of the misclassified.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.2\textwidth]{images_databases/frav_rgb_128.JPG}
+\includegraphics[width=0.2\textwidth]{images_databases/frav_nir_128.JPG}
+%('False Positive: ', 'databases/RGB_NIR/RGB/attack_03/128.JPG')
+\caption{RGB+NIR FRAV (classification level) misclassified samples.} \label{fig:frav_clas_miscl}
+\end{figure}
+
 \subsection{MFSD-MSU database}
+MFSD-MSU database results are described following.\\
 
 \begin{table}[htb]
 \centering
@@ -227,4 +270,4 @@ Classifier                                                                   & A
 \label{APCR_BPCR_MFSD}
 \end{table}
 
-\subsection{Comparative among databases}
+The classification with this database is not good because all the samples are classified as negatives, as could be seen in table \ref{APCR_BPCR_MFSD} where , independently of the classifier or if LDA and PCA are used, the BPCR value is always 1 and the APCR value is 0.\\

@@ -74,14 +74,14 @@
 \contentsline {section}{\numberline {4.2}Testing process}{65}{section.1.4.2}
 \contentsline {subsection}{\numberline {4.2.1}CASIA Image database}{66}{subsection.1.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}CASIA Video database}{67}{subsection.1.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}FRAV database}{67}{subsection.1.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}FRAV RGB+NIR (feature level) database}{68}{subsection.1.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}FRAV RGB+NIR (classification level) database}{69}{subsection.1.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}MFSD-MSU database}{69}{subsection.1.4.2.6}
-\contentsline {subsection}{\numberline {4.2.7}Comparative among databases}{69}{subsection.1.4.2.7}
-\contentsline {chapter}{\numberline {5}Conclusions and future work}{71}{chapter.1.5}
-\contentsline {section}{\numberline {5.1}Conclusions}{71}{section.1.5.1}
-\contentsline {section}{\numberline {5.2}FUture work}{71}{section.1.5.2}
-\contentsline {chapter}{Bibliography}{73}{chapter*.75}
-\contentsline {chapter}{List of Figures}{77}{chapter*.76}
-\contentsline {chapter}{List of Tables}{81}{chapter*.77}
+\contentsline {subsection}{\numberline {4.2.3}FRAV database}{68}{subsection.1.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}FRAV RGB+NIR (feature level) database}{69}{subsection.1.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}FRAV RGB+NIR (classification level) database}{70}{subsection.1.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}MFSD-MSU database}{71}{subsection.1.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Comparative among databases}{71}{subsection.1.4.2.7}
+\contentsline {chapter}{\numberline {5}Conclusions and future work}{73}{chapter.1.5}
+\contentsline {section}{\numberline {5.1}Conclusions}{73}{section.1.5.1}
+\contentsline {section}{\numberline {5.2}FUture work}{73}{section.1.5.2}
+\contentsline {chapter}{Bibliography}{75}{chapter*.79}
+\contentsline {chapter}{List of Figures}{79}{chapter*.80}
+\contentsline {chapter}{List of Tables}{83}{chapter*.81}
