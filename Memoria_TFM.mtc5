@@ -1,15 +1,14 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Training and validating process}{\reset@font\mtcSfont 61}{section.1.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.1}CASIA Image database}{\reset@font\mtcSSfont 61}{subsection.1.4.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.2}CASIA Video database}{\reset@font\mtcSSfont 61}{subsection.1.4.1.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.3}FRAV database}{\reset@font\mtcSSfont 62}{subsection.1.4.1.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.4}FRAV RGB+NIR (feature level) database}{\reset@font\mtcSSfont 63}{subsection.1.4.1.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.5}FRAV RGB+NIR (classification level) database}{\reset@font\mtcSSfont 64}{subsection.1.4.1.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.6}MFSD database}{\reset@font\mtcSSfont 64}{subsection.1.4.1.6}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Testing process}{\reset@font\mtcSfont 65}{section.1.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}CASIA Image database}{\reset@font\mtcSSfont 66}{subsection.1.4.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}CASIA Video database}{\reset@font\mtcSSfont 67}{subsection.1.4.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.3}FRAV database}{\reset@font\mtcSSfont 68}{subsection.1.4.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.4}FRAV RGB+NIR (feature level) database}{\reset@font\mtcSSfont 69}{subsection.1.4.2.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.5}FRAV RGB+NIR (classification level) database}{\reset@font\mtcSSfont 70}{subsection.1.4.2.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.6}MFSD-MSU database}{\reset@font\mtcSSfont 71}{subsection.1.4.2.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.7}Comparative among databases}{\reset@font\mtcSSfont 71}{subsection.1.4.2.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Training and validating process}{\reset@font\mtcSfont 65}{section.0.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.1}CASIA Image database}{\reset@font\mtcSSfont 66}{subsection.0.4.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.2}CASIA Video database}{\reset@font\mtcSSfont 66}{subsection.0.4.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.3}FRAV database}{\reset@font\mtcSSfont 67}{subsection.0.4.1.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.4}FRAV RGB+NIR (feature level) database}{\reset@font\mtcSSfont 68}{subsection.0.4.1.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.5}FRAV RGB+NIR (classification level) database}{\reset@font\mtcSSfont 68}{subsection.0.4.1.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.6}MFSD database}{\reset@font\mtcSSfont 70}{subsection.0.4.1.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Testing process}{\reset@font\mtcSfont 70}{section.0.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}CASIA Image database}{\reset@font\mtcSSfont 71}{subsection.0.4.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}CASIA Video database}{\reset@font\mtcSSfont 72}{subsection.0.4.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.3}FRAV database}{\reset@font\mtcSSfont 72}{subsection.0.4.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.4}FRAV RGB+NIR (feature level) database}{\reset@font\mtcSSfont 73}{subsection.0.4.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.5}FRAV RGB+NIR (classification level) database}{\reset@font\mtcSSfont 74}{subsection.0.4.2.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.6}MFSD-MSU database}{\reset@font\mtcSSfont 75}{subsection.0.4.2.6}}
