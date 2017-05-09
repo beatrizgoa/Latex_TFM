@@ -4,7 +4,7 @@
 
 \begin{small}
 \emph{In this chapter the results obtained are presented as well as the training process that is going to be discussed.\\}
-\end{small} 
+\end{small}
 % The hole process (training and testing) has been realized three times to have more general results.
 
 \section{Training and validating process}
@@ -205,16 +205,16 @@ Classifier                                                                   & A
 \label{APCR_BPCR_FRAV_feature}
 \end{table}
 
-Table \ref{APCR_BPCR_FRAV_feature} shows the APCR and BPCR values that have been obtained for each classifier. Except for SVM with linear kernel, which has classified all the samples as negatives when just the classifier has been used or if PCA has been aplied too, classifications have produced good results, the APCR and BPCR values are very low, close to 0. In fact, Decision Tree and logistic regression classify correctly all the samples because APCR and BPCR are equal to 0. \\
+Table \ref{APCR_BPCR_FRAV_feature} shows the APCR and BPCR values that have been obtained for each classifier. Except for SVM with linear kernel, which has classified all the samples as negatives when just the classifier has been used or if PCA has been applied too, classifications have produced good results, the APCR and BPCR values are very low, close to 0. In fact, Decision Tree and logistic regression classify correctly all the samples because APCR and BPCR are equal to 0. \\
 
 PCA and LDA have not improved results significantly. SVM lineal with LDA does not classify all the samples as negatives. But when PCA and LDA is applied with logistic regression and Decision tree, the classification is not perfect as it is when none is applied.\\
 
-In general, the same samples are miscclasified in the classification tasks. The two most misclassified samples are represented in figure \ref{fig:frav_feat_miscl}.\\
+In general, the same samples are misclassified in the classification tasks. The two most misclassified samples are represented in figure \ref{fig:frav_feat_miscl}.\\
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.2\textwidth]{images_databases/frav_rgb_151.JPG}
-\includegraphics[width=0.2\textwidth]{images_databases/frav_nir_151.JPG} 
+\includegraphics[width=0.2\textwidth]{images_databases/frav_nir_151.JPG}
 \\
 \includegraphics[width=0.2\textwidth]{images_databases/frav_rgb_128.JPG}
 \includegraphics[width=0.2\textwidth]{images_databases/frav_nir_128.JPG}
@@ -241,11 +241,11 @@ Classifier                                                                   & A
 \label{APCR_BPCR_FRAV_class}
 \end{table}
 
-APCR and BPDR results are summarized in table \ref{APCR_BPCR_FRAV_class}. Results are closer to 0, but none classifier classifies perfectly. There is possible to see that with LDA that APCR results are better and BPCR results are perfect.\\
+APCER and BPCER results are summarized in table \ref{APCR_BPCR_FRAV_class}. Results are closer to 0, but none classifier classifies perfectly. There is possible to see that with LDA that APCR results are better and BPCR results are perfect.\\
 
 SVM linear classifier classifies incorrectly positives samples although PCA is used too, with LDA that does not happen.\\
 
-In most of cases, classifiers just misclassify one sample, the same sample represented in figure \ref{fig:frav_clas_miscl}. Classifiers that misclassify more than one sample, the sample \ref{fig:frav_clas_miscl} is one of the misclassified.\\
+In most of cases, classifiers just mis-classify one sample, the same sample represented in figure \ref{fig:frav_clas_miscl}. Classifiers that mis-classify more than one sample, the sample \ref{fig:frav_clas_miscl} is one of the misclassified.\\
 
 \begin{figure}[htb]
 \centering
@@ -299,7 +299,7 @@ In table \ref{table:Executing_time} the time (minutes) is exposed for each proce
 \begin{tabular}{|
 >{\columncolor[HTML]{ECF4FF}}c |c|c|c|c|c|c|}
 \hline
-Process             & 1 & 1 & 2 & 3 & 5 & 4 \\ 
+Process             & 1 & 1 & 2 & 3 & 5 & 4 \\
 Executing Time(min) & 51.93m  & 152.40m  &  274.87m & 240.09m  & 432.78m  & 43.95m
   \\ \hline
 \end{tabular}

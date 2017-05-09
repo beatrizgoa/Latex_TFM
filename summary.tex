@@ -4,7 +4,7 @@
 
 \begin{small}
 \emph{In this chapter the start and the evolution of the built convolutional neural network used is described.\\}
-\end{small} 
+\end{small}
 
 \section{LeNet-5}
 LeNet-5 \cite{Lenet5} is the name of a certain architecture of a convolutional network designed for document recognition (handwritten, machine printed characters) developed by Yan Lecun \textit{et al}.\\
@@ -121,9 +121,7 @@ With the original size and size equal to 20, it is possible to get to the same m
 
 
 %If the patience is increased from 10000 to 100000 for a batch size = 20 and equal to 100, results obtained are that for a value of 20, it has been running for 40 epoch, having the same results that the one obtained with a patience of 10000.\\
-
 %For a value of 100 with the patience increased to 100000, the results are not the same as the one obtained the patience equal to 10000. In this occasion, the results are better than in the original one; The code has run for 258,08 minutes and for 200 epochs. The result obtained was better than in the original one has it has said. In epoch 51 has gotten a validation error of  1 \% and the error test has been 0,89\%, from this point, the test error that has been calculated five more times, has been increasing until get the value 0,85\% in iteration 55500, epoch number 111, the validation error obtained has been 0,95\%. From this epoch until number 200, the network has not had any better result.\\
-
 %In figure X it is possible to see the error function for those two examples. It could be seen that the example with batch size = 20 has just run for 40 epoch and the good results of the example with batch size = 100, remembering that the patience has been increased from 10000 to 100000.\\
 
 
@@ -201,7 +199,6 @@ The network has been tested with this databases in the two ways of classify imag
 
 The architecture used is the same as LeNet-5 except for the batch size that has been reduced to 50 because there are not as much samples as in the MNIST database.\\
 
-
 Figure \ref{fig:FRAV_five} shows the validation error of five classes, the best validation error has token place in epoch 7 with test performance 60.4\%. It has token 68.78 minutes to run.\\
 
 \begin{figure}[htb]
@@ -220,9 +217,7 @@ In figure \ref{fig:FRAV_two}, the validation error in each epoch could be visual
 \label{fig:FRAV_two}
 \end{figure}
 
-The time in both cases, classifying with two or five classes are similar, but not the result, is better when just two classes are used and no differentiation is made among attacks. There would be need more samples and more time to get a better score if five classes classification is wanted. Also, the architecture should be adapted to this problem.\\
-
-
+The time in both cases, classifying with two or five classes, is similar. The result is better when just two classes are used and no differentiation is made among attacks. There would be need more samples and more time to get a better score if five classes classification is wanted. Also, the architecture should be adapted to this problem.\\
 
 \clearpage
 \section{Adapting LeNet-5 architecture}
@@ -244,6 +239,8 @@ Authors from \cite{yangLL14} describe lightly the architecture, the parameters a
 %Dentro hay una carpeta para cada base de datos. Dentro de cada carpeta estan las pruebas que se hacen con cada base de datos.\\
 %The convolutional neural network has been tested with different databases: FRAV, CASIA and MFSD and different experiments have been carried out with each one.\\
 
+
+
 \subsubsection{Network configuration for each experiment}
 The goal of the next experiments is getting an optimal architecture changing the parameters. The difference between using a normal distribution o a Gaussian distribution of weights initialization has been tested and using SVM with linear kernel and RBF kernel has been tried.\\
 
@@ -259,10 +256,10 @@ FRAV database (Common parameters:  n\_epochs=400, nkerns=[96, 256, 386, 384, 256
 CASIA (images) ( nkerns=[96, 256, 386, 384, 256]):\\
 First, four test has been carries out (in which the learning rate has been changed and the number of epochs. trying to get the best learning rate configuration. In four test the batch size used is 25 samples, the classifier used at testing is Softmax and the weight initialization used is normal distribution.:\\
 \begin{itemize}
-\item Test1: learning\_rate=0.01, nepochs=400.
-\item Test2: learning\_rate=0.001, n\_epochs=400.
-\item Test3: learning\_rate=0.0005, n\_epochs=400.
-\item TEst4: learning\_rate=0.001, n\_epochs=1000,
+\item Test1: learning rate = 0.01 and nº epochs = 400.
+\item Test2: learning rate = 0.001 and nº epochs = 400.
+\item Test3: learning rate = 0.0005 and nºepochs = 400.
+\item TEst4: learning rate = 0.001 and nº epochs = 1000,
 \end{itemize}
 
 It has not been possible getting a train loss that converge in a minimum in none of the four tests. A good train loss should decrease in each epoch until converge in a minimum. But in the tests, the
@@ -433,30 +430,6 @@ As the same way in FRAV and CASIA, but now with MFSD, it is going to be tested t
 
 The same problem occurs. The train and valid graphs are the same in both cases, independently of the initialization.\\ Also, the result at testing is the same in three cases: TP = 12, TN = 3, FP = 105, FN = 0\\
 
-
-\clearpage
-
-\subsection{New database}
-From images, a new database has been developed. Images are read and re-sized directly to 128x128. The reason of using 128x128 is the size that authors in the Casia paper use.  The databases explained in \ref{tabla-databasesDistribution}:
-
-\begin{table}[htb]
-\centering
-\begin{tabular}{cccccc}
--                         & FRAV & FRAV (rgb+nir) & CASIA images & CASIA video &  MFSD\\
-nº train samples class 0  & 157  &   133    &     26       &  255    &    30\\
-nº train samples class 1  & 459  &   417    &     111      &  81     &    68\\
-nº test samples class 0   &  19  &   16    &       16      &  540    &     3\\
-nº test samples class 1   & 167  &   141    &      23      &  180    &    25 \\
-nº valid samples class 0  &  10  &   8     &        7      &  105    &     2\\
-nº valid samples class 1  &  83  &   70    &       13      &  39     &    12\\
-
-\end{tabular} \label{tabla-databasesDistribution}
-
-\end{table}
-
-
-I can not obtain results with Casia RGB + NIR appended in classifier because it said that there is not space enough.\\
-
 \clearpage
 \subsubsection{experiments}
 With that databases. Some experiments has been carried out:
@@ -537,15 +510,15 @@ With that databases. Some experiments has been carried out:
 
 From images, could be concluded that in general, decreasing the learning rate for this experiment has not been a good idea.\\
 
-In table \ref{table-ej1} could be seen the positive and negatives rates when has been used SVM RBF to classify. The result obtained with FRAV (rgb + NIR) is really good because just 3 samples have been missclaffied from 140 images.\\
+In table \ref{table-ej1} could be seen the positive and negatives rates when has been used SVM with RBF kernel to classify. The result obtained with FRAV (rgb + NIR) is really good because just 3 samples have been misclassified from 140 images.\\
 
-I do not know why the test is the same for minidataset and minidatset tested with itself.\\
+I do not know why the test is the same for minidataset and minidataset tested with itself.\\
 
 \begin{table}[htb]
 \centering
 \label{table-ej1}
 \begin{tabular}{cccccc}
--              &Optima CSVM& TP & TN & FP & FN \\
+-              &Optima C SVM& TP & TN & FP & FN \\
 FRAV           &    0.05   & 136& 24 &  11 & 9 \\
 FRAV (rgb+nir) &    0.1    & 113& 24 &  1  & 2 \\
 CASIA images   &    5      & 9  & 2  &  0  & 9 \\
@@ -569,19 +542,33 @@ It has been used the minibatch Stochastic Gradient Descend and in the training, 
 
 The learning rate is fixed at a 0.01 value and a bath size of 20, except when the MFSD database is used that he batch size is 14.\\
 
-The dataset used in this experiment are the FRAV with the only RGB images, the FRAV database with the RGB and NIR added at the characteristic level  and  the classifier level. The MFSD database has been used too and both CASIA database has been used, image and video CASIA database.\\
+The dataset used in this experiment are the FRAV with the only RGB images, the FRAV database with the RGB and NIR added at the characteristic level  and  classifier level. The MFSD database has been used too and both CASIA database have been used, image and video CASIA database. For each database, it has been split randomly into train, test and validate subsets. Two classes has been used, class 0: the real users class and class 1: the attacks class. In next table \ref{Samples_distribution} is possible to visualize the samples distribution for each subset (train, test, validation). There is just one row for RGB+NIR FRAV database because the sample distribution is the same independently of when the are concatenate.\\
 
-For each database, it has been split randomly into train, test and validate subsets. Two classes has been used, class 0: the real users class and class 1: the attacks class.\\
+\begin{table}[]
+\centering
+\begin{tabular}{c|c|c|c|c|c|}
+\cline{2-6}
+                                                                       & \cellcolor[HTML]{ECF4FF}RGB FRAV & \cellcolor[HTML]{ECF4FF}RGB + NIR FRAV & \cellcolor[HTML]{ECF4FF}CASIA images & \cellcolor[HTML]{ECF4FF}CASIA videos & \cellcolor[HTML]{ECF4FF}MFSD \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº train samples class 0} & 157                              & 133                                    & 26                                   & 255                                  & 30                           \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº train samples class 1} & 459                              & 417                                    & 111                                  & 81                                   & 68                           \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº valid samples class 0} & 10                               & 8                                      & 7                                    & 105                                  & 2                            \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº valid samples class 1} & 83                               & 70                                     & 13                                   & 39                                   & 12                           \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº test samples class 0}  & 19                               & 16                                     & 16                                   & 540                                  & 3                            \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº test samples class 1}  & 167                              & 70                                     & 23                                   & 180                                  & 25                           \\ \hline
+\end{tabular}\caption{Samples distribution for each database}
+\label{Samples_distribution}
+\end{table}
+
 
 For testing some classifiers has been utilized, and they are fed by the output of the convolutional neural network last layer, the Fully-connected layer.\\
 
 The classifiers used to classify the features of the output of the CNN and get the results are the SVM (with RBF and linear kernel), KNN, Decision Tree and logistic regression. Also, PCA and LDA techniques has been used with each classifier separately to reduce the dimensionality of the features.\\
 
-The classifiers, before use them, has been personalize to each and particular time (for each database and if LDA or PCA is used). For that, cross validation has been used, more concretely, the \textit{cros\_val\_Score()} function from sklarn has used with 10 folders.\\
+The classifiers, before use them, has been personalize to each and particular time (for each database and if LDA or PCA is used). For that, cross validation has been used, more concretely, the \textit{cros\_val\_Score()} function from sklearn has used with 10 folders.\\
 
 \begin{itemize}
 \item For SMV classifier, the C parameter has been searched among the following values: 0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 2, 3, 5 and 10.
-\item For KNN classifier, the number of neighbours (K)has been searched among the following values: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 and 30.
+\item For KNN classifier, the number of neighbors (K) has been searched among the following values: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 and 30.
 \item For Deep Trees classifier, the depth of the tree has been searches among the following values: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 and 30.
 \item For PCA, the number of components has been found in a range of 3 to 5000, in 3 to 3 steps.
 \item For LDA, the number of components has been found in a range of 1 to the length of the characteristic vector in 10 to 10 steps.
