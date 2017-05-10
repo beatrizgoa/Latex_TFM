@@ -250,12 +250,13 @@ FRAV database (Common parameters:  n\_epochs=400, nkerns=[96, 256, 386, 384, 256
 \end{itemize}
 
 CASIA (images) ( nkerns=[96, 256, 386, 384, 256]):\\
-First, four test has been carries out (in which the learning rate has been changed and the number of epochs. trying to get the best learning rate configuration. In four test the batch size used is 25 samples, the classifier used at testing is Softmax and the weight initialization used is normal distribution.:\\
-\begin{itemize}
+First, four test has been carries out (in which the learning rate has been changed and the number of epochs. trying to get the best learning rate configuration. In four test the batch size used is 25 samples, the classifier used at testing is Softmax and the weight initialization used is normal distribution:
+
+\begin{itemize} [noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
 \item Test1: learning rate = 0.01 and nº epochs = 400.
 \item Test2: learning rate = 0.001 and nº epochs = 400.
 \item Test3: learning rate = 0.0005 and nºepochs = 400.
-\item TEst4: learning rate = 0.001 and nº epochs = 1000,
+\item Test4: learning rate = 0.001 and nº epochs = 1000,
 \end{itemize}
 
 It has not been possible getting a train loss that converge in a minimum in none of the four tests. A good train loss should decrease in each epoch until converge in a minimum. But in the tests, the
@@ -453,13 +454,14 @@ Samples distribution are described in table \ref{Samples_distribution} where the
 \centering
 \begin{tabular}{c|c|c|c|c|c|}
 \cline{2-6}
-                                                                       & \cellcolor[HTML]{ECF4FF}RGB FRAV & \cellcolor[HTML]{ECF4FF}RGB + NIR FRAV & \cellcolor[HTML]{ECF4FF}CASIA images & \cellcolor[HTML]{ECF4FF}CASIA videos & \cellcolor[HTML]{ECF4FF}MFSD \\ \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº train samples class 0} & 157                              & 133                                    & 26                                   & 255                                  & 30                           \\ \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº train samples class 1} & 459                              & 417                                    & 111                                  & 81                                   & 68                           \\ \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº valid samples class 0} & 10                               & 8                                      & 7                                    & 105                                  & 2                            \\ \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº valid samples class 1} & 83                               & 70                                     & 13                                   & 39                                   & 12                           \\ \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº test samples class 0}  & 19                               & 16                                     & 16                                   & 540                                  & 3                            \\ \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº test samples class 1}  & 167                              & 70                                     & 23                                   & 180                                  & 25                           \\ \hline
+                       & \cellcolor[HTML]{ECF4FF}\begin{tabular}[c]{@{}l@{}}RGB\\ FRAV\end{tabular} & \cellcolor[HTML]{ECF4FF}\begin{tabular}[c]{@{}l@{}}RGB+NIR\\ FRAV\end{tabular} & \cellcolor[HTML]{ECF4FF}\begin{tabular}[c]{@{}l@{}}Images\\ CASIA\end{tabular} & \cellcolor[HTML]{ECF4FF}\begin{tabular}[c]{@{}l@{}}Videos\\ CASIA\end{tabular} & \cellcolor[HTML]{ECF4FF}MFSD-MSU \\ \hline
+
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Train samples class 0} & 157                              & 133                                    & 26                                   & 255                                  & 30                           \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Train samples class 1} & 459                              & 417                                    & 111                                  & 81                                   & 68                           \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Valid samples class 0} & 10                               & 8                                      & 7                                    & 105                                  & 2                            \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Valid samples class 1} & 83                               & 70                                     & 13                                   & 39                                   & 12                           \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Test samples class 0}  & 19                               & 16                                     & 16                                   & 540                                  & 3                            \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Test samples class 1}  & 167                              & 70                                     & 23                                   & 180                                  & 25                           \\ \hline
 \end{tabular}\caption{Samples distribution for each database}
 \label{Samples_distribution}
 \end{table}
