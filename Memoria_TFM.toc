@@ -25,17 +25,17 @@
 \contentsline {subsection}{\numberline {2.5.2}FRAV dataset}{18}{subsection.0.2.5.2}
 \contentsline {subsection}{\numberline {2.5.3}CASIA dataset}{20}{subsection.0.2.5.3}
 \contentsline {subsection}{\numberline {2.5.4}MSU - MFSD database}{22}{subsection.0.2.5.4}
-\contentsline {section}{\numberline {2.6}Metrics}{23}{section.0.2.6}
+\contentsline {section}{\numberline {2.6}Metrics}{22}{section.0.2.6}
 \contentsline {subsection}{\numberline {2.6.1}Cost and Error rate}{23}{subsection.0.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{24}{subsection.0.2.6.2}
+\contentsline {subsection}{\numberline {2.6.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{23}{subsection.0.2.6.2}
 \contentsline {subsection}{\numberline {2.6.3}ROC curve and Precision and Recall curve}{24}{subsection.0.2.6.3}
 \contentsline {subsection}{\numberline {2.6.4}APCER and BPCER}{26}{subsection.0.2.6.4}
-\contentsline {section}{\numberline {2.7}Classifiers, Reduction of the dimensionality algorithms and Cross Validation}{27}{section.0.2.7}
+\contentsline {section}{\numberline {2.7}Classifiers, Reduction of the dimensionality algorithms and Cross Validation}{26}{section.0.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Classifiers}{27}{subsection.0.2.7.1}
 \contentsline {subsubsection}{Logistic Regression}{27}{subsubsection*.19}
 \contentsline {subsubsection}{Support Vector Machine}{28}{subsubsection*.20}
 \contentsline {subsubsection}{K Nearest Neighbours}{29}{subsubsection*.22}
-\contentsline {subsubsection}{Decision Tree}{30}{subsubsection*.23}
+\contentsline {subsubsection}{Decision Tree}{29}{subsubsection*.23}
 \contentsline {subsection}{\numberline {2.7.2}Dimensionality reduction algorithms}{30}{subsection.0.2.7.2}
 \contentsline {subsubsection}{Linear Discriminant Analysis}{30}{subsubsection*.25}
 \contentsline {subsubsection}{Principal Component Analysis}{31}{subsubsection*.26}
@@ -56,7 +56,7 @@
 \contentsline {subsubsection}{MFSD results}{54}{subsubsection*.51}
 \contentsline {subsection}{\numberline {3.2.2}Architecture}{55}{subsection.0.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Databases}{55}{subsection.0.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Experiments Description}{56}{subsection.0.3.2.4}
+\contentsline {subsection}{\numberline {3.2.4}Experiments Description}{55}{subsection.0.3.2.4}
 \contentsline {section}{\numberline {3.3}Final architecture}{57}{section.0.3.3}
 \contentsline {chapter}{\numberline {4}Results}{65}{chapter.0.4}
 \contentsline {section}{\numberline {4.1}Training and validating process}{65}{section.0.4.1}
