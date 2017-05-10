@@ -3,3 +3,64 @@
 \BOOKMARK [1][-]{section.0.1.1}{Motivation}{chapter.0.1}% 3
 \BOOKMARK [1][-]{section.0.1.2}{Objectives}{chapter.0.1}% 4
 \BOOKMARK [1][-]{section.0.1.3}{Thesis structure}{chapter.0.1}% 5
+\BOOKMARK [0][-]{chapter.0.2}{Theoretical Basics}{}% 6
+\BOOKMARK [1][-]{section.0.2.1}{Anti-spoofing and biometrics systems}{chapter.0.2}% 7
+\BOOKMARK [2][-]{subsection.0.2.1.1}{Spoofing and biometrics introduction}{section.0.2.1}% 8
+\BOOKMARK [2][-]{subsection.0.2.1.2}{Face anti-spoofing}{section.0.2.1}% 9
+\BOOKMARK [2][-]{subsection.0.2.1.3}{Related Works}{section.0.2.1}% 10
+\BOOKMARK [1][-]{section.0.2.2}{Neural Network background theory}{chapter.0.2}% 11
+\BOOKMARK [2][-]{subsection.0.2.2.1}{Historical introduction}{section.0.2.2}% 12
+\BOOKMARK [2][-]{subsection.0.2.2.2}{Introduction to ANN}{section.0.2.2}% 13
+\BOOKMARK [2][-]{subsection.0.2.2.3}{Biological Neural Networks}{section.0.2.2}% 14
+\BOOKMARK [2][-]{subsection.0.2.2.4}{Artificial Neural Networks \(ANN\)}{section.0.2.2}% 15
+\BOOKMARK [1][-]{section.0.2.3}{Convolutional Neural Network \(CNN\)}{chapter.0.2}% 16
+\BOOKMARK [1][-]{section.0.2.4}{Programming language and frameworks}{chapter.0.2}% 17
+\BOOKMARK [1][-]{section.0.2.5}{Databases}{chapter.0.2}% 18
+\BOOKMARK [2][-]{subsection.0.2.5.1}{MNIST digit database}{section.0.2.5}% 19
+\BOOKMARK [2][-]{subsection.0.2.5.2}{FRAV dataset}{section.0.2.5}% 20
+\BOOKMARK [2][-]{subsection.0.2.5.3}{CASIA dataset}{section.0.2.5}% 21
+\BOOKMARK [2][-]{subsection.0.2.5.4}{MSU - MFSD database}{section.0.2.5}% 22
+\BOOKMARK [1][-]{section.0.2.6}{Metrics}{chapter.0.2}% 23
+\BOOKMARK [2][-]{subsection.0.2.6.1}{Cost and Error rate}{section.0.2.6}% 24
+\BOOKMARK [2][-]{subsection.0.2.6.2}{True Positives \(TP\), True Negatives \(TN\), False Positives \(FP\), False Negatives \(FN\)}{section.0.2.6}% 25
+\BOOKMARK [2][-]{subsection.0.2.6.3}{ROC curve and Precision and Recall curve}{section.0.2.6}% 26
+\BOOKMARK [2][-]{subsection.0.2.6.4}{APCER and BPCER}{section.0.2.6}% 27
+\BOOKMARK [1][-]{section.0.2.7}{Classifiers, Reduction of the dimensionality algorithms and Cross Validation}{chapter.0.2}% 28
+\BOOKMARK [2][-]{subsection.0.2.7.1}{Classifiers}{section.0.2.7}% 29
+\BOOKMARK [2][-]{subsection.0.2.7.2}{Dimensionality reduction algorithms}{section.0.2.7}% 30
+\BOOKMARK [2][-]{subsection.0.2.7.3}{Cross Validation}{section.0.2.7}% 31
+\BOOKMARK [0][-]{chapter.0.3}{Methodology}{}% 32
+\BOOKMARK [1][-]{section.0.3.1}{LeNet-5}{chapter.0.3}% 33
+\BOOKMARK [2][-]{subsection.0.3.1.1}{LeNet-5 specifications}{section.0.3.1}% 34
+\BOOKMARK [2][-]{subsection.0.3.1.2}{LeNet-5 Results}{section.0.3.1}% 35
+\BOOKMARK [2][-]{subsection.0.3.1.3}{Modifying LeNet}{section.0.3.1}% 36
+\BOOKMARK [2][-]{subsection.0.3.1.4}{LeNet-5 and face database}{section.0.3.1}% 37
+\BOOKMARK [2][-]{subsection.0.3.1.5}{Using FRAV dataset}{section.0.3.1}% 38
+\BOOKMARK [1][-]{section.0.3.2}{Adapting LeNet-5 architecture}{chapter.0.3}% 39
+\BOOKMARK [2][-]{subsection.0.3.2.1}{Experiments description}{section.0.3.2}% 40
+\BOOKMARK [2][-]{subsection.0.3.2.2}{Architecture}{section.0.3.2}% 41
+\BOOKMARK [2][-]{subsection.0.3.2.3}{Databases}{section.0.3.2}% 42
+\BOOKMARK [2][-]{subsection.0.3.2.4}{Experiments Description}{section.0.3.2}% 43
+\BOOKMARK [1][-]{section.0.3.3}{Final architecture}{chapter.0.3}% 44
+\BOOKMARK [0][-]{chapter.0.4}{Results}{}% 45
+\BOOKMARK [1][-]{section.0.4.1}{Training and validating process}{chapter.0.4}% 46
+\BOOKMARK [2][-]{subsection.0.4.1.1}{CASIA Image database}{section.0.4.1}% 47
+\BOOKMARK [2][-]{subsection.0.4.1.2}{CASIA Video database}{section.0.4.1}% 48
+\BOOKMARK [2][-]{subsection.0.4.1.3}{FRAV database}{section.0.4.1}% 49
+\BOOKMARK [2][-]{subsection.0.4.1.4}{FRAV RGB+NIR \(feature level\) database}{section.0.4.1}% 50
+\BOOKMARK [2][-]{subsection.0.4.1.5}{FRAV RGB+NIR \(classification level\) database}{section.0.4.1}% 51
+\BOOKMARK [2][-]{subsection.0.4.1.6}{MFSD database}{section.0.4.1}% 52
+\BOOKMARK [1][-]{section.0.4.2}{Testing process}{chapter.0.4}% 53
+\BOOKMARK [2][-]{subsection.0.4.2.1}{CASIA Image database}{section.0.4.2}% 54
+\BOOKMARK [2][-]{subsection.0.4.2.2}{CASIA Video database}{section.0.4.2}% 55
+\BOOKMARK [2][-]{subsection.0.4.2.3}{FRAV database}{section.0.4.2}% 56
+\BOOKMARK [2][-]{subsection.0.4.2.4}{FRAV RGB+NIR \(feature level\) database}{section.0.4.2}% 57
+\BOOKMARK [2][-]{subsection.0.4.2.5}{FRAV RGB+NIR \(classification level\) database}{section.0.4.2}% 58
+\BOOKMARK [2][-]{subsection.0.4.2.6}{MFSD-MSU database}{section.0.4.2}% 59
+\BOOKMARK [1][-]{section.0.4.3}{Executing time}{chapter.0.4}% 60
+\BOOKMARK [0][-]{chapter.0.5}{Conclusions and future work}{}% 61
+\BOOKMARK [1][-]{section.0.5.1}{Conclusions}{chapter.0.5}% 62
+\BOOKMARK [1][-]{section.0.5.2}{Future work}{chapter.0.5}% 63
+\BOOKMARK [0][-]{chapter*.78}{Bibliography}{}% 64
+\BOOKMARK [0][-]{chapter*.79}{List of Figures}{}% 65
+\BOOKMARK [0][-]{chapter*.80}{List of Tables}{}% 66

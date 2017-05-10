@@ -82,25 +82,20 @@ The error obtained at validation is represented in figure \ref{fig:Lenetresult},
 The test result has been calculated with the model of the iteration 18300 (epoch $37^{th}$), with a validation error of 0.91\%. The error rate obtained is 0.92\% what it means that 920 samples of 100000 of the testing subset are being misclassified.\\
 
 %The neural network has beoen built in Python using Theano library. The %network has been based on the one exposed in \textit{Learn Convolutional %Neural Network for Face Anti-Spoofing} and \textit{LeNet}.\\
-
 %The architecture of the network is formed by two convolutional layers which %is followed (each one) by a max-pool layer.The  last max-pool layer is %followed by a fully-connected layer which have sigmoidal activation %function.\\
-
 %The rectified linear activation function (reLu) is used as activation %function of the convolutional layers. It has been used a normalized %distribution of weights and bias, the same which was implemented in LeNet: %weights are sampled randomly from a uniform distribution in the range [-1/%fan-in, 1/fan-in], where fan-in is the number of inputs of the previous %layer. The ReLu function that has been used is the one implemented in %theano as theano.tensor.nnet.relu.\\
-
 %The number of kernels used in the conv layers are 48 and 96 of size 5x5, %the size of the max-pool layer is 2x2.\\
-
 %The network is trained with the 70\% of the data, the 30\% is used to test. %From the 70\% of the training data, the 25\% is used to validation.\\
 
-
 \subsection{Modifying LeNet}
-Modifications has been made to LeNet-5 architecture. First the batch size has been changed and then the activation function, a normalization has been added o the weight initialization. The database used for those experiments is the MNIST digit database.\\
+Modifications have been made to LeNet-5 architecture. First the batch size has been changed and then the activation function, a normalization layer has been added and the weight initialization has been changed too. The database used for those experiments is the MNIST digit database.\\
 
 \subsubsection{Changing the batch size}
-Two experiments have been developed in order to compare the results when the batch size is changed and how the network behavior change too with respect to LeNet-5 with the original batch size (500).\\
+Two experiments have been developed in order to compare the results when the batch size is changed and how the network behaviour change too with respect to LeNet-5 with the original batch size (500).\\
 
 The first experiment is with 20 samples per batch. For the second experiment, the batch size used is 100. In both cases, the training process has been stopped by the early-stopping; at epoch $31^{th}$ has stopped the first experiment, because from epoch $16^{th}$ the error at validating was not being improved and for the second experiment, at $33^{th}$ epoch is when the early-stopping has finished the training.\\
 
-The validation error for both experiments and the original LeNet are represented in figure \ref{figures:LENET-batches}. From images could be seen that the validation error in first epochs is lower (9 \% in the first experiment) than the validation error when the batch size is bigger. Whith the batch size equal to 20, the optimal test error rate has been obtained in the first $15^{th}$ epochs, the same error rate than in the original case (0.92\%), but for 100 samples per batch, it has not been possible to get to that error rate, the best test error rate has been 1.04\% at iteration 8500.\\
+The validation error for both experiments and the original LeNet are represented in figure \ref{figures:LENET-batches}. From images could be seen that the validation error in first epochs is lower (9 \% in the first experiment) than the validation error when the batch size is bigger. When the batch size is equal to 20, the optimal test error rate has been obtained in the first $15^{th}$ epochs, the same error rate than in the original case (0.92\%), but for 100 samples per batch, it has not been possible to get to that error rate, the best test error rate has been 1.04\% at iteration 8500.\\
 
 \begin{figure}[htb]
     \centering
@@ -151,7 +146,7 @@ Below the details of each experiment are described:\\
 
 %Using Local Response Normalization we want to detect high frequency features with a large response. If we normalize around the local neighborhood of the excited neuron, it becomes even more sensitive as compared to its neighbors.[\url{https://prateekvjoshi.com/2016/04/05/what-is-local-response-normalization-in-convolutional-neural-networks/}].\\
 
-First, the cost of training process are going to be visualized with the original cost train, without modifying LeNet). In figure \ref{fig:CostModLeNet} is represented. Also the validation error (validation cost*100) could be visualized in figure \ref{fig:CostModLeNet}. The network has been running for 200 epochs.\\
+First, the cost of training process are going to be visualized with the original cost train, without modifying LeNet). In figure \ref{fig:CostModLeNet} is represented. Also the validation error ($validation_error = validation_cost*100$) could be visualized in figure \ref{fig:CostModLeNet}. The network has been running for 200 epochs.\\
 
 \begin{figure}[htb]    \centering
 	\subfigure[Original LeNet]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet.png}\label{fig:cost_lenet} }
@@ -162,7 +157,7 @@ First, the cost of training process are going to be visualized with the original
     \caption{Cost function of Lenet and Lenet Modified.} \label{fig:CostModLeNet}
 \end{figure}
 
-Visualizing the loss during the training, could be affirmed that the network with Gaussian initialization is in a local minimum because the loss has converged as could be seen in figure \ref{fig:cost_gaus_lenet}. The loss of LeNet without being modified (figure  \ref{fig:cost_lenet}) is the one whose oscillation at training is less than others.\\
+Visualizing the loss during the training, could be affirmed that the network with Gaussian initialization is in a local minimum because the loss has converged as could be seen in figure \ref{fig:cost_gaus_lenet}. The loss of LeNet-5 without being modified (figure  \ref{fig:cost_lenet}) is the one whose oscillation at training is less than others.\\
 
 \begin{figure}[htb]    \centering
 	\subfigure[Original LeNet]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/error_lenet.png}\label{fig:error_lenet} }
@@ -185,10 +180,10 @@ The results obtained, at testing, have been the following ones:
 \item{Experiment 4: Gaussian weight initialization}: Best validation score of 81.22\% obtained at iteration 100, with test performance 80.90\%.
 \end{itemize}
 
-The best configuration for the network is the original one. With Gaussian initialization, the network does not find a local minimum in such a sort of time. Using LRN and ReLu, test result is closer to the obtained with LeNet original, but not as good as the last one. Changing the activation function has not been a good change. Not taking into account original LeNet, the best test performance has been obtained with 1,08\% using ReLu and LRN, but the best validation error is 0,99\% obtained using just LRN. The values are close of the modifications, but the modification of Gaussian weight initialization.\\
+The best configuration for the network is the original one. With Gaussian initialization, the network does not find a local minimum in such a sort of time. Using LRN and ReLu, test result is closer to the obtained with LeNet-5 original, but not as good as the last one. Changing the activation function has not been a good change. Not taking into account original LeNet-5, the best test performance has been obtained with 1,08\% using ReLu and LRN, but the best validation error is 0,99\% obtained using just LRN. The values are close of the modifications, but the modification of Gaussian weight initialization.\\
 
 \subsection{LeNet-5 and face database}
-The goal of this thesis is train a convolutional neural network for face anti-spoofing, so the following step is feed LeNet-5 with one face databases, FRAV RGB database, the one that would be used in the final architecture.\\
+The goal of this thesis is train a convolutional neural network for face anti-spoofing, so the following step is feed LeNet-5 with one face databases, RGB FRAV database, the one that would be used in the final architecture.\\
 
 \subsection{Using FRAV dataset}
 One of the databases used with the final architecture and configuration of the network is FRAV database. LeNet-5 is tested with this database in this current section.\\
@@ -221,15 +216,17 @@ The time in both cases, classifying with two or five classes, is similar. The re
 
 \clearpage
 \section{Adapting LeNet-5 architecture}
-From LeNet-5 architecture, changes have been made in order to build a similar convolutional architecture as described in \cite{yangLL14}.\\
+From LeNet-5 architecture, changes have been made in order to build a similar convolutional architecture as described in \cite{yangLL14}. LeNet-5 architecture is simple to use it for this project purpose.\\
 
-In \cite{yangLL14} authors develop a convolutional neural network with similar objectives as the described in this thesis. The CNN is based on \textit{Imagenet} architecture \cite{imagenet}, this is a determined architecture used for classifying objects which is well known and very used in the deep learning community. Its architecture is described in \ref{fig:Imagenet_architecture}. Imagenet has been trained with thousand of objects samples.\\
+In \cite{yangLL14} authors develop a convolutional neural network with similar objectives as the described in this thesis. The CNN is based on \textit{Imagenet} architecture \cite{imagenet}, this is a determined architecture used for classifying objects which is well known and very used in the deep learning community. Its architecture is described in figure \ref{fig:Imagenet_architecture}.\\
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.65\textwidth]{images_miscelaneus/Imagenet.png}
 \caption{Imagenet architecture.} \label{fig:Imagenet_architecture}
 \end{figure}
+
+Imagenet is formed by convolutional layers, max-pooling layers, normalization layers, dropout layers and a fully-connected layer.\\
 
 Authors from \cite{yangLL14} describe lightly the architecture, the parameters and the changes made from Imagenet, so it is not possible to develop the same architecture.\\
 
@@ -240,9 +237,8 @@ Authors from \cite{yangLL14} describe lightly the architecture, the parameters a
 %The convolutional neural network has been tested with different databases: FRAV, CASIA and MFSD and different experiments have been carried out with each one.\\
 
 
-
-\subsubsection{Network configuration for each experiment}
-The goal of the next experiments is getting an optimal architecture changing the parameters. The difference between using a normal distribution o a Gaussian distribution of weights initialization has been tested and using SVM with linear kernel and RBF kernel has been tried.\\
+\subsection{Experiments description} %IMAGENET 2
+The goal of the next experiments is visualized the new architecture behaviour and make changes and how the network is adapted.\\
 
 FRAV database (Common parameters:  n\_epochs=400, nkerns=[96, 256, 386, 384, 256], batch\_size=20):\\
 \begin{itemize}
@@ -276,7 +272,6 @@ MFSD  (learning\_rate=0.01, n\_epochs=400, nkerns=[96, 256, 386, 384, 256], batc
 IMPORTANT: The valid graphs are made with SOFTMAX independly of the classifier used to test.\\
 
 \subsubsection{Results with FRAV database}
-
 In this section, cost (at training) and error (at validating) is going to be visualized. First when FRAV database has been trained with Gaussian initialization and with a learning rate = 0.001 \ref{fig:Imagenet2-frav1}. Second with the same learning rate, but Gaussian initialization for weights \ref{fig:Imagenet2-frav_gaussian_init}. Third, decreasing the learning rate to 0.01 and with normal initialization \ref{fig:Imagenet2-frav-svm_general} and the last one, whit the same learning rate but with Gaussian weights initialization \ref{fig:Imagenet2-frav-svm_gauss}.\\
 
 \begin{figure}[htb]
@@ -431,7 +426,45 @@ As the same way in FRAV and CASIA, but now with MFSD, it is going to be tested t
 The same problem occurs. The train and valid graphs are the same in both cases, independently of the initialization.\\ Also, the result at testing is the same in three cases: TP = 12, TN = 3, FP = 105, FN = 0\\
 
 \clearpage
-\subsubsection{experiments}
+\subsection{Architecture}
+%Ejecucuion1
+The new architecture would be formed by the following layers:
+\begin{itemize}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
+\item Convolutional layer with 96 kernels of size 11x11 followed by a max-pool layer (2x2 size) and a local response normalization.
+\item Convolutional layer with 256 kernels whose size is 4x4.
+\item Convolutional layer with 386 kernels whose size is 3x3.
+\item Convolutional layer with 384 kernels whose size is 3x3.
+\item Convolutional layer with 256 kernels whose size is 3x3 followed by a max-pool layer of 2x2 size.
+\item Dropout layer with 4096 neurons.
+\item Dropout layer with 4096 neurons.
+\item Fully Connected layer with 2000 neurons at the output.
+\end{itemize}
+
+ReLu has been used as activation function. Logistic regression has been used in the training process. Weights have been initialized with Gaussian initialization and bias to 1.\\
+
+Some experiments are going to be developed, and parameters like the learning rate would be changed to obtain the optimal one and those would be explained for each one.\\
+                                                                                                                                                                                       
+\subsection{Databases}
+The databases used in for experiments are CASIA images, CASIA videos, RGB FRAV, (RGB+NIR) FRAV feature level database and MFSD-MSU database. Just two classes are going to be used in this experiment: class 0 is real users class and class 1 is attack class.\\
+
+Samples distribution are described in table \ref{Samples_distribution} where the number of samples per class and  subset (train, test and validation) are summarized for each database. It is possible to realize that the number of positive (class 0) samples is lower for all the databases, but more specifically, the amount of positive samples in MFSD-MSU database is very small.\\
+
+\begin{table}[]
+\centering
+\begin{tabular}{c|c|c|c|c|c|}
+\cline{2-6}
+                                                                       & \cellcolor[HTML]{ECF4FF}RGB FRAV & \cellcolor[HTML]{ECF4FF}RGB + NIR FRAV & \cellcolor[HTML]{ECF4FF}CASIA images & \cellcolor[HTML]{ECF4FF}CASIA videos & \cellcolor[HTML]{ECF4FF}MFSD \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº train samples class 0} & 157                              & 133                                    & 26                                   & 255                                  & 30                           \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº train samples class 1} & 459                              & 417                                    & 111                                  & 81                                   & 68                           \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº valid samples class 0} & 10                               & 8                                      & 7                                    & 105                                  & 2                            \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº valid samples class 1} & 83                               & 70                                     & 13                                   & 39                                   & 12                           \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº test samples class 0}  & 19                               & 16                                     & 16                                   & 540                                  & 3                            \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº test samples class 1}  & 167                              & 70                                     & 23                                   & 180                                  & 25                           \\ \hline
+\end{tabular}\caption{Samples distribution for each database}
+\label{Samples_distribution}
+\end{table}
+
+\subsection{Experiments Description}
 With that databases. Some experiments has been carried out:
 
 \begin{itemize}
@@ -544,20 +577,7 @@ The learning rate is fixed at a 0.01 value and a bath size of 20, except when th
 
 The dataset used in this experiment are the FRAV with the only RGB images, the FRAV database with the RGB and NIR added at the characteristic level  and  classifier level. The MFSD database has been used too and both CASIA database have been used, image and video CASIA database. For each database, it has been split randomly into train, test and validate subsets. Two classes has been used, class 0: the real users class and class 1: the attacks class. In next table \ref{Samples_distribution} is possible to visualize the samples distribution for each subset (train, test, validation). There is just one row for RGB+NIR FRAV database because the sample distribution is the same independently of when the are concatenate.\\
 
-\begin{table}[]
-\centering
-\begin{tabular}{c|c|c|c|c|c|}
-\cline{2-6}
-                                                                       & \cellcolor[HTML]{ECF4FF}RGB FRAV & \cellcolor[HTML]{ECF4FF}RGB + NIR FRAV & \cellcolor[HTML]{ECF4FF}CASIA images & \cellcolor[HTML]{ECF4FF}CASIA videos & \cellcolor[HTML]{ECF4FF}MFSD \\ \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº train samples class 0} & 157                              & 133                                    & 26                                   & 255                                  & 30                           \\ \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº train samples class 1} & 459                              & 417                                    & 111                                  & 81                                   & 68                           \\ \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº valid samples class 0} & 10                               & 8                                      & 7                                    & 105                                  & 2                            \\ \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº valid samples class 1} & 83                               & 70                                     & 13                                   & 39                                   & 12                           \\ \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº test samples class 0}  & 19                               & 16                                     & 16                                   & 540                                  & 3                            \\ \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Nº test samples class 1}  & 167                              & 70                                     & 23                                   & 180                                  & 25                           \\ \hline
-\end{tabular}\caption{Samples distribution for each database}
-\label{Samples_distribution}
-\end{table}
+
 
 
 For testing some classifiers has been utilized, and they are fed by the output of the convolutional neural network last layer, the Fully-connected layer.\\
