@@ -157,7 +157,7 @@ First, the cost of training process are going to be visualized with the original
     \caption{Cost function of Lenet and Lenet Modified.} \label{fig:CostModLeNet}
 \end{figure}
 
-Visualizing the loss during the training, could be affirmed that the network with Gaussian initialization is in a local minimum because the loss has converged as could be seen in figure \ref{fig:cost_gaus_lenet}. The loss of LeNet-5 without being modified (figure  \ref{fig:cost_lenet}) is the one whose oscillation at training is less than others.\\
+Visualizing the loss during the training, could be affirmed that the network with Gaussian initialization is in a local minimum because the loss has converged as could be seen in figure \ref{fig:cost_gaus_lenet}. The loss of LeNet-5 without being modified (figure  \ref{fig:cost_lenet}) is the one whose oscillation at training is less than others.
 
 \begin{figure}[htb]    \centering
 	\subfigure[Original LeNet]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/error_lenet.png}\label{fig:error_lenet} }
@@ -169,6 +169,7 @@ Visualizing the loss during the training, could be affirmed that the network wit
 \end{figure}
 
 About the error at validation, visualizing the graphs in figure \ref{fig:CostModLeNet}, it is very similar the curve for original LeNet-5, LeNet-5 with ReLu, LeNet-5 with LRN and LeNet-5 with LRN and ReLu.\\
+\clearpage
 
 The results obtained, at testing, have been the following ones:
 
@@ -193,9 +194,16 @@ The network has been tested with this databases in the two ways of classify imag
 
 The architecture used is the same as LeNet-5 except for the batch size that has been reduced to 50 because there are not as much samples as in the MNIST database.\\
 
+\begin{figure}[htb]
+\centering
+\subfigure[Cost]{\includegraphics[width=0.47\textwidth]{images/ModificandoLenet/lenet_frav_cost.png}\label{Lenet_FRAV_cost} }
+\subfigure[Error]{\includegraphics[width=0.47\textwidth]{images/ModificandoLenet/lenet_frav_error.png} \label{Lenet_FRAV_error} }
+\caption{Cost at training (a) and Error at validation (b) when LeNet has been used with RGB FRAV database.}
+\label{fig:Lenet_FRAV}
+\end{figure}
+
 In figure \ref{fig:Lenet_FRAV} is represented the training cost \ref{Lenet_FRAV_cost} and the validation error \ref{Lenet_FRAV_error} of the training process. In the figure, is represented when 2 classes are used to classify in  blue and red when 5 classes are used, for both cases (cost and error). From the figure it is possible to visualize that the hole training process is not desirable for 2 classes and 5 classes, because it seems that the network does not learn, the architecture should be modified.\\
 
-\clearpage
 \section{Adapting LeNet-5 architecture}
 From LeNet-5 architecture, changes have been made in order to build a similar convolutional architecture as described in \cite{yangLL14}. LeNet-5 architecture is simple to use it for this project purpose.\\
 

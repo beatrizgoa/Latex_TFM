@@ -47,12 +47,12 @@
 \contentsline {subsection}{\numberline {3.1.3}Modifying LeNet}{36}{subsection.0.3.1.3}
 \contentsline {subsubsection}{Changing the batch size}{37}{subsubsection*.31}
 \contentsline {subsubsection}{Changing activation function, normalization and weights initialization}{39}{subsubsection*.33}
-\contentsline {subsection}{\numberline {3.1.4}LeNet-5 and RGB FRAV faces database}{41}{subsection.0.3.1.4}
-\contentsline {section}{\numberline {3.2}Adapting LeNet-5 architecture}{45}{section.0.3.2}
+\contentsline {subsection}{\numberline {3.1.4}LeNet-5 and RGB FRAV faces database}{43}{subsection.0.3.1.4}
+\contentsline {section}{\numberline {3.2}Adapting LeNet-5 architecture}{44}{section.0.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Experiments description}{45}{subsection.0.3.2.1}
-\contentsline {subsubsection}{Results with FRAV database}{47}{subsubsection*.37}
-\contentsline {subsubsection}{CASIA results}{49}{subsubsection*.44}
-\contentsline {subsubsection}{MFSD results}{53}{subsubsection*.49}
+\contentsline {subsubsection}{Results with FRAV database}{46}{subsubsection*.38}
+\contentsline {subsubsection}{CASIA results}{48}{subsubsection*.45}
+\contentsline {subsubsection}{MFSD results}{53}{subsubsection*.50}
 \contentsline {subsection}{\numberline {3.2.2}Architecture}{54}{subsection.0.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Databases}{54}{subsection.0.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Experiments Description}{54}{subsection.0.3.2.4}
@@ -76,6 +76,6 @@
 \contentsline {chapter}{\numberline {5}Conclusions and future work}{77}{chapter.0.5}
 \contentsline {section}{\numberline {5.1}Conclusions}{77}{section.0.5.1}
 \contentsline {section}{\numberline {5.2}Future work}{78}{section.0.5.2}
-\contentsline {chapter}{Bibliography}{79}{chapter*.76}
-\contentsline {chapter}{List of Figures}{83}{chapter*.77}
-\contentsline {chapter}{List of Tables}{87}{chapter*.78}
+\contentsline {chapter}{Bibliography}{79}{chapter*.77}
+\contentsline {chapter}{List of Figures}{83}{chapter*.78}
+\contentsline {chapter}{List of Tables}{87}{chapter*.79}
