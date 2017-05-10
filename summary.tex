@@ -193,15 +193,6 @@ The network has been tested with this databases in the two ways of classify imag
 
 The architecture used is the same as LeNet-5 except for the batch size that has been reduced to 50 because there are not as much samples as in the MNIST database.\\
 
-\begin{figure}[htb]
-\centering
-\subfigure[Cost]{\includegraphics[width=0.48\textwidth]{images/ModificandoLenet/lenet_frav_cost.png}\label{Lenet_FRAV_cost} }
-\subfigure[Error]{\includegraphics[width=0.48\textwidth]{images/ModificandoLenet/lenet_frav_error.png \label{Lenet_FRAV_error}}
-
-\caption{Cost at training (a) and Error at validation (b) when LeNet has been used with RGB FRAB database.}
-\label{fig:Lenet_FRAV}
-\end{figure}
-
 In figure \ref{fig:Lenet_FRAV} is represented the training cost \ref{Lenet_FRAV_cost} and the validation error \ref{Lenet_FRAV_error} of the training process. In the figure, is represented when 2 classes are used to classify in  blue and red when 5 classes are used, for both cases (cost and error). From the figure it is possible to visualize that the hole training process is not desirable for 2 classes and 5 classes, because it seems that the network does not learn, the architecture should be modified.\\
 
 \clearpage
@@ -434,7 +425,7 @@ The new architecture would be formed by the following layers:
 ReLu has been used as activation function. Logistic regression has been used in the training process. Weights have been initialized with Gaussian initialization and bias to 1.\\
 
 Some experiments are going to be developed, and parameters like the learning rate would be changed to obtain the optimal one and those would be explained for each one.\\
-                                                                                                                                                                                       
+
 \subsection{Databases}
 The databases used in for experiments are CASIA images, CASIA videos, RGB FRAV, (RGB+NIR) FRAV feature level database and MFSD-MSU database. Just two classes are going to be used in this experiment: class 0 is real users class and class 1 is attack class.\\
 

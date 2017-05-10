@@ -1,3 +1,200 @@
+
+\subsection{Experiments description} %IMAGENET 2
+The goal of the next experiments is visualized the new architecture behaviour and make changes and how the network is adapted.\\
+
+FRAV database (Common parameters:  n\_epochs=400, nkerns=[96, 256, 386, 384, 256], batch\_size=20):\\
+\begin{itemize}
+\item frav1: Gaussian weights initialization. SOFTMAX used as classifier. Learning rate = 0.001 Figure \ref{fig:Imagenet2-frav1}.
+\item  frav\_gaussian\_initinizialization: Gaussian weight Initialization. Learning rate = 0.001. SOFMTAX used as classifier. Figure \ref{fig:Imagenet2-frav_gaussian_init} .
+\item svm\_gauss: Using SVM (with RBF kernel) as classifier. Gaussian weight Initialization. Learning rate = 0.01 \ref{fig:Imagenet2-frav-svm_gauss}.
+\item svm\_genera: Using as a classifier SVM with RBF kernel. Learning rate = 0.01 \ref{fig:Imagenet2-mfsd-svm_general}.
+\item svm\_linear: Classifying with SVM (linear) and Gaussian weight initialization. Learning rate = 0.01\\
+\end{itemize}
+
+CASIA (images) ( nkerns=[96, 256, 386, 384, 256]):\\
+First, four test has been carries out (in which the learning rate has been changed and the number of epochs. trying to get the best learning rate configuration. In four test the batch size used is 25 samples, the classifier used at testing is Softmax and the weight initialization used is normal distribution:
+
+\begin{itemize} [noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
+\item Test1: learning rate = 0.01 and nº epochs = 400.
+\item Test2: learning rate = 0.001 and nº epochs = 400.
+\item Test3: learning rate = 0.0005 and nºepochs = 400.
+\item Test4: learning rate = 0.001 and nº epochs = 1000,
+\end{itemize}
+
+It has not been possible getting a train loss that converge in a minimum in none of the four tests. A good train loss should decrease in each epoch until converge in a minimum. But in the tests, the
+- casia\_gaussian\_init: gausiana de pesos con mean 0 y std 0.01. SOFMTAX como clasificador. learning\_rate=0.01, n\_epochs=400, nkerns=[96, 256, 386, 384, 256], batch\_size=20 \\
+- svm\_gauss: Utilizando svm (rbf) como clasificador, con inizializacion normal. learning\_rate=0.01, n\_epochs=400, nkerns=[96, 256, 386, 384, 256], batch\_size=20\\
+- svm\_general: utilizando SVM (rbf) con inicializacion de pesos gaussiana. learning\_rate=0.01, n\_epochs=400, nkerns=[96, 256, 386, 384, 256], batch\_size=20\\
+- svm\_linear: SVM (linear) con inicializacion de pesos gaussiana. learning\_rate=0.01, n\_epochs=400, nkerns=[96, 256, 386, 384, 256], batch\_size=20\\
+
+MFSD  (learning\_rate=0.01, n\_epochs=400, nkerns=[96, 256, 386, 384, 256], batch\_size=20):\\
+- svm\_gauss: Utilizando svm (rbf) como clasificador, con inizializacion gaussianana.\\
+- svm\_genera:utilizando SVM (rbf) con inicializacion de pesos gaussiana \\
+- svm\_linear: SVM (linear) con inicializacion de pesos gaussiana\\
+
+IMPORTANT: The valid graphs are made with SOFTMAX independly of the classifier used to test.\\
+
+\subsubsection{Results with FRAV database}
+In this section, cost (at training) and error (at validating) is going to be visualized. First when FRAV database has been trained with Gaussian initialization and with a learning rate = 0.001 \ref{fig:Imagenet2-frav1}. Second with the same learning rate, but Gaussian initialization for weights \ref{fig:Imagenet2-frav_gaussian_init}. Third, decreasing the learning rate to 0.01 and with normal initialization \ref{fig:Imagenet2-frav-svm_general} and the last one, whit the same learning rate but with Gaussian weights initialization \ref{fig:Imagenet2-frav-svm_gauss}.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/frav1/cost_frav.png}
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/frav1/error_frav.png}
+\caption{Cost at training and error at validating. Normal initialition. Learning rate = 0.001 (frav1).} \label{fig:Imagenet2-frav1}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/frav_gaussian_init/cost_frav.png}
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/frav_gaussian_init/error_frav.png}
+\caption{Cost at training and error at validating. Gassian initialization. Learning rate = 0.001 - frav\_gaussian\_init} \label{fig:Imagenet2-frav_gaussian_init}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/svm_gauss/cost.png}
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/svm_gauss/error.png}
+\caption{Cost at training and error at validating - Gaussian initialization. learning rate = 0.01 frav svm\_gauss.} \label{fig:Imagenet2-frav-svm_gauss}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/svm_general/cost.png}
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/svm_general/error.png}
+\caption{Cost at training and error at validating - Noraml initialization. learning rate = 0.01 frav svm\_general.} \label{fig:Imagenet2-frav-svm_general}
+\end{figure}
+
+
+First FRAV experiment (SOFTMAX as classifier and regular initialization) gives good results. The cost converges to 0 at training, the validation gets a 1.470588 \% best error rate with test performance of 5 \%. In testing, just 10 samples has been misclassified (7 samples of class 0 and 3 of class 1, from 679 test samples as total. The ROC  and precision-recall curves could been visualized figure \ref{fig:Imagenet2-frav-frav1ROC}\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/frav1/ROC.png}
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/svm_general/Precision-Recall.png}
+\caption{ROC and Precision- Recall courve - Noraml initialization. learning rate = 0.01 frav svm\_general.} \label{fig:Imagenet2-frav-frav1ROC}
+\end{figure}
+
+It could be seen in the graphics that the Gaussian initialization does not matter when the learning rate is 0.01, but the cost changes when the learning rate is 0.001. In this case, the learning rate 0.001 should be the chosen one.\\
+
+In the table \ref{fravv} The positive and negative rates are visualized from the different classifier (softmax and SVM) the two different weights initialization and the two learning rates used. The results of the table are the same when the learning rate is 0.01 independently of the weight initialization or the kernel used to classify. The metrics rate are not too bad, with the learning rate the results are worse, the learning rate is too big.\\
+
+\begin{table}[htb]
+\centering
+\begin{tabular}{|ccccccc|}
+\hline
+Classifier &  Weight initialization & learning rate & TP  & TN  & FP  & FN \\ \hline
+Softmax    &         Normal        &     0.001     & 61  & 609 &  3  & 7  \\
+Softmax    &       Gaussian        &     0.001     & 66  & 605 &  7  & 2   \\
+SVM RBF(C=5)&         Normal       &     0.01      & 63  & 593 & 19  & 5  \\
+SVM RBF(C=5)&         Gaussian     &     0.01      &  63 & 593 & 19  &5  \\
+SVM lineal(C=5)&      Gaussian     &     0.01      &  63 & 593 & 19  &5  \\
+\hline
+\end{tabular} \label{fravv}
+
+\end{table}
+
+
+\subsubsection{CASIA results}
+For Casia, different experiments has been carried out in order to train the network, using SOFTMAX as classifier and normal weight initialization:\\
+
+\begin{itemize}
+\item{Test 1}: Learning rate = 0.01 y 400 epoch.
+\item{Test 2}: Learning rate = 0.001 y 400 epoch.
+\item{Test 3}: Learning rate = 0.0005 y 400 epoch.
+\item{Test 4}: Learning rate = 0.001 y 1000 epoch.
+\end{itemize}
+
+
+In figure \ref{fig:lossCasia4Test} the cost at training could be visualized. In general, should decrease varying its value but decreasing logarithmically. In the first experiment (test 1), the value varies but in a small range, and in general it is constant, in the other three experiments, the cost decreases and this is what must happen, but in test 2 the loss converges two times, after converge the first time, then it increase again ans converges again.\\
+
+In figure \ref{fig:errorCasia4Test} it is possible to see that the error changes but not in a logarithmically way. It increase and decreases its value in each epoch but it all experiments it gets in a 42\% or 40\% error. The desired curve should be as the loss one, but the error should not decrease as much as the training loss does.\\
+
+
+\begin{figure}[htb]
+\centering
+		\subfigure[Test 1]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba1/cost_frav_p1.png}}
+		\subfigure[Test 2]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba2/cost_frav_p2.png}}			\subfigure[Test 3]{\includegraphics[width=0.47\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba3/cost_frav_p3.png}}
+		\subfigure[Test 4]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba4/cost_frav_p4.png}}
+\caption{Training loss of four test Casia database}
+\label{fig:lossCasia4Test}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+		\subfigure[Test 1]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba1/error_frav_p1.png}}
+		\subfigure[Test 2]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba2/error_frav_p2.png}}
+		\subfigure[Test 3]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba3/error_frav_p3.png}}
+		\subfigure[Test 4]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba4/error_frav_p4.png}}
+\caption{Validation error of four test Casia database}
+\label{fig:errorCasia4Test}
+\end{figure}
+
+
+As the same way that in the first experiment that FRAV database converges is that would be expected from Casia, but it has not gotten.\\
+
+\clearpage
+At the same way as FRAV, the classifier and the weight initialization has been changed in order to know how the networks behavior with these changes. The learning rate used for this experiment is 0.01. First, the cost (at training) and the error (at validating) are going to be visualized when the weight initialization is normal \ref{fig:Imagenet2-casia-svm_general}. Second when the weight initialization used is Gaussian \ref{fig:Imagenet2-casia-svm_gauss}.\\
+
+%\begin{figure}[htb]
+%\centering
+%\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/%casia_gaussian_init/cost_frav.png}
+%\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/%casia_gaussian_init/error_frav.png}
+%\caption{Cost at training and error at testing - casia\_gaussian\_init} %\label{fig:Imagenet2-casia_gaussian_init}
+%\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/svm_gauss/cost.png}
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/svm_gauss/error.png}
+\caption{Cost at training and error at validating -casia svm\_gauss.} \label{fig:Imagenet2-casia-svm_gauss}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/svm_general/cost.png}
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/svm_general/error.png}
+\caption{Cost at training and error at validating -casia svm\_general.} \label{fig:Imagenet2-casia-svm_general}
+\end{figure}
+
+As the same way than in FRAV database, the cost and at training the error at validating has not changed. The positive and negative rates are the following ones in the three experiments:  TP = 8; TN = 21; FP = 3; FN = 8.\\
+
+
+\clearpage
+\subsubsection{MFSD results}
+
+%\begin{figure}[htb]
+%\centering
+%\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/mfsd/mfsd_gaussian_init/cost_frav.png}
+%\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/mfsd/mfsd_gaussian_init/error_frav.png}
+%\caption{Cost at training and error at testing - mfsd\_gaussian\_init} %\label{fig:Imagenet2-mfsd_gaussian_init}
+%\end{figure}
+
+As the same way in FRAV and CASIA, but now with MFSD, it is going to be tested the network with a learning rate of 0.01, Gaussian initialization \ref{fig:Imagenet2-mfsd-svm_gauss} and normal distribution initialization \ref{fig:Imagenet2-mfsd-svm_general} and classifying the test with SVM (RBF kernel and linear) and softmax.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/mfsd/svm_gauss/cost.png}
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/mfsd/svm_gauss/error.png}
+\caption{Cost at training and error at validating - mfsd svm\_gauss.} \label{fig:Imagenet2-mfsd-svm_gauss}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/mfsd/svm_general/cost.png}
+\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/mfsd/svm_general/error.png}
+\caption{Cost at training and error at validating - mfsd svm\_general.} \label{fig:Imagenet2-mfsd-svm_general}
+\end{figure}
+
+The same problem occurs. The train and valid graphs are the same in both cases, independently of the initialization.\\ Also, the result at testing is the same in three cases: TP = 12, TN = 3, FP = 105, FN = 0\\
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 \subsection{Labeled faces in the wild}
 \textit{The Labeled Faces in the Wild} (LFW) is face database of well-known people that are collected from the net. The database can be found in its official web page \url{http://vis-www.cs.umass.edu/lfw/} \cite{LFWTech}.\\
 

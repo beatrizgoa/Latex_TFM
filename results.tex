@@ -11,11 +11,10 @@
 The convolutional neural networks has been trained independently for each database as is explained in \ref{Final_archi}. In this section, the training and validation process is presented for each database.\\
 \subsection{CASIA Image database}
 In figure \ref{fig:ejecucion2_casia_im_train} the cost and training are represented (\ref{fig:ejecucion2_casia_im_train_cost} and \ref{fig:ejecucion2_casia_im_train_cost} respectively). The training process converge in a low values, smaller than 0.0001; while the validation process converges in 20\% error from the 250th epoch. The iterations where the training process oscillates sharply agree with the epochs where the cost oscillates sharply too. After those oscillations, the validation gets constant and the training error variates in its lowest values.\\
-
 \begin{figure}[htb]
 \centering
-\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_casia_images/cost.png} \label{fig:ejecucion2_casia_im_train_cost}}
-\subfigure[Error at validation]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_casia_images/error.png} \label{fig:ejecucion2_casia_im_train_error}}
+		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_casia_images/cost.png}\label{fig:ejecucion2_casia_im_train_cost}}
+		\subfigure[Error at validation]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_casia_images/error.png}\label{fig:ejecucion2_casia_im_train_error}}
 \caption{Cost (a) and error (b) at training CASIA image database}
 \label{fig:ejecucion2_casia_im_train}
 \end{figure}
@@ -215,10 +214,10 @@ In general, the same samples are misclassified in the classification tasks. The 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.2\textwidth]{images_databases/frav_rgb_151.JPG}
-\includegraphics[width=0.2\textwidth]{images_databases/frav_nir_151.JPG}
+\includegraphics[width=0.2\textwidth]{images_databases/frav_nir_151.jpg}
 \\
 \includegraphics[width=0.2\textwidth]{images_databases/frav_rgb_128.JPG}
-\includegraphics[width=0.2\textwidth]{images_databases/frav_nir_128.JPG}
+\includegraphics[width=0.2\textwidth]{images_databases/frav_nir_128.jpg}
 %('False Positive: ', 'databases/RGB_NIR/RGB/attack_03/151.JPG') ('False Positive: ', 'databases/RGB_NIR/RGB/attack_03/128.JPG')
 \caption{RGB+NIR FRAV (feature level) misclassified samples.} \label{fig:frav_feat_miscl}
 \end{figure}
@@ -251,7 +250,7 @@ In most of cases, classifiers just mis-classify one sample, the same sample repr
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.2\textwidth]{images_databases/frav_rgb_128.JPG}
-\includegraphics[width=0.2\textwidth]{images_databases/frav_nir_128.JPG}
+\includegraphics[width=0.2\textwidth]{images_databases/frav_nir_128.jpg}
 %('False Positive: ', 'databases/RGB_NIR/RGB/attack_03/128.JPG')
 \caption{RGB+NIR FRAV (classification level) misclassified samples.} \label{fig:frav_clas_miscl}
 \end{figure}

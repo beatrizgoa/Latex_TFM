@@ -1,17 +1,16 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}LeNet-5}{\reset@font\mtcSfont 33}{section.0.3.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.1}LeNet-5 specifications}{\reset@font\mtcSSfont 34}{subsection.0.3.1.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.2}LeNet-5 Results}{\reset@font\mtcSSfont 35}{subsection.0.3.1.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.3}Modifying LeNet}{\reset@font\mtcSSfont 37}{subsection.0.3.1.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.3}Modifying LeNet}{\reset@font\mtcSSfont 36}{subsection.0.3.1.3}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Changing the batch size}{\reset@font\mtcSSSfont 37}{subsubsection*.31}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Changing activation function, normalization and weights initialization}{\reset@font\mtcSSSfont 39}{subsubsection*.33}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.4}LeNet-5 and face database}{\reset@font\mtcSSfont 41}{subsection.0.3.1.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.5}Using FRAV dataset}{\reset@font\mtcSSfont 41}{subsection.0.3.1.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Adapting LeNet-5 architecture}{\reset@font\mtcSfont 46}{section.0.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Experiments description}{\reset@font\mtcSSfont 46}{subsection.0.3.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Results with FRAV database}{\reset@font\mtcSSSfont 48}{subsubsection*.39}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode CASIA results}{\reset@font\mtcSSSfont 50}{subsubsection*.46}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode MFSD results}{\reset@font\mtcSSSfont 54}{subsubsection*.51}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Architecture}{\reset@font\mtcSSfont 55}{subsection.0.3.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.3}Databases}{\reset@font\mtcSSfont 55}{subsection.0.3.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.4}Experiments Description}{\reset@font\mtcSSfont 55}{subsection.0.3.2.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Final architecture}{\reset@font\mtcSfont 57}{section.0.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.4}LeNet-5 and RGB FRAV faces database}{\reset@font\mtcSSfont 41}{subsection.0.3.1.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Adapting LeNet-5 architecture}{\reset@font\mtcSfont 45}{section.0.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Experiments description}{\reset@font\mtcSSfont 45}{subsection.0.3.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Results with FRAV database}{\reset@font\mtcSSSfont 47}{subsubsection*.37}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode CASIA results}{\reset@font\mtcSSSfont 49}{subsubsection*.44}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode MFSD results}{\reset@font\mtcSSSfont 53}{subsubsection*.49}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Architecture}{\reset@font\mtcSSfont 54}{subsection.0.3.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.3}Databases}{\reset@font\mtcSSfont 54}{subsection.0.3.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.4}Experiments Description}{\reset@font\mtcSSfont 54}{subsection.0.3.2.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Final architecture}{\reset@font\mtcSfont 56}{section.0.3.3}}
