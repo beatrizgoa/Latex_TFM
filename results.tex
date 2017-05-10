@@ -277,6 +277,32 @@ Classifier                                                                   & A
 
 The classification with this database is not good because all the samples are classified as negatives, as could be seen in table \ref{APCR_BPCR_MFSD} where , independently of the classifier or if LDA and PCA are used, the BPCR value is always 1 and the APCR value is 0.\\
 
+\section{Comparative among databases}
+In this section it is going to discuss databases classification in common.
+
+\subsection{FRAVs databases}
+Three FRAVs databases are compared in order to discuss easier if NIR images, in general, help in order to detect anti-spoofing attacks. In order to do that, an due to the fact to the big amount of data, one classifier is chosen to do this comparative: SVM with RBF kernel.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.58\textwidth]{images/comparative/FRAVs_SVM_RBF_ROC.png}
+\caption{Comparative among FRAV databases with SVM RBF.} \label{fig:FRAVS_SVM_comparative}
+\end{figure}
+
+In figure \ref{fig:FRAVS_SVM_comparative} are represented the three databases: In blue is represented RGB database, in green RGB+NIR FRAV database classification level and in magenta RGB+NIR FRAV database feature level. And the ROC curve with NIR work better, in fact, is almost perfect.\\
+
+This image and the perfect APCR and BPCR result obtained with logistic regression and decision tree in the RGB+NIR feature level tends to conduce that NIR database are improved the results.\\
+
+\subsection{CASIAs databases}
+As the same as FRAVs databases, the comparative is going to be made with CASIAs databases: Image and Videos. In order to do that, KNN classifier is going to be used.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.58\textwidth]{images/comparative/CASIAs_KNN_ROC.png}
+\caption{Comparative among CASIA databases with KNN.} \label{fig:CASIAS_KNN_comparative}
+\end{figure}
+
+In figure \ref{fig:CASIAS_KNN_comparative} is represented the comparative between image CASIA in blue and video CASIA database in green. As it is possible to see, the result is much better when just CASIA images databases are used.\\  
 
 \section{Executing time}
 In this section, the time that has been necessary to carry out the training and testing processing described in this chapter  are exposed.\\

@@ -98,9 +98,9 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Cost (a) and error (b) at training CASIA video database\relax }}{65}{figure.caption.61}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cost at training}}}{65}{figure.caption.61}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Error at validation}}}{65}{figure.caption.61}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Cost (a) and error (b) at training RGB FRAV image database\relax }}{65}{figure.caption.62}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cost at training}}}{65}{figure.caption.62}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Error at validation}}}{65}{figure.caption.62}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Cost (a) and error (b) at training RGB FRAV image database\relax }}{66}{figure.caption.62}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cost at training}}}{66}{figure.caption.62}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Error at validation}}}{66}{figure.caption.62}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Cost (a) and error (b) at training RGB and NIR FRAV (feature level) image database\relax }}{66}{figure.caption.63}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Cost at training}}}{66}{figure.caption.63}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Error at validation}}}{66}{figure.caption.63}
@@ -116,5 +116,7 @@
 \contentsline {figure}{\numberline {4.8}{\ignorespaces RGB FRAV misclassified samples.\relax }}{71}{figure.caption.70}
 \contentsline {figure}{\numberline {4.9}{\ignorespaces RGB+NIR FRAV (feature level) misclassified samples.\relax }}{72}{figure.caption.72}
 \contentsline {figure}{\numberline {4.10}{\ignorespaces RGB+NIR FRAV (classification level) misclassified samples.\relax }}{73}{figure.caption.74}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Comparative among FRAV databases with SVM RBF.\relax }}{75}{figure.caption.76}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Comparative among CASIA databases with KNN.\relax }}{75}{figure.caption.77}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Conclusions and future work}{77}{chapter.0.5}

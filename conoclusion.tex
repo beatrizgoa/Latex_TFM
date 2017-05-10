@@ -16,6 +16,12 @@ Continuing with databases, the need of having a balanced database has been raise
 %Best database and combination
 So, FRAV database is the most well-classified. The worst results obtained has been with MFSD-MSU database, this database has been built with the camera of a smartphone and a laptop. To get better results with MFSD-MSU database, the CNN needs to be modified, for example, trying to change the learning rate or trying to build a balanced database, because all the training and testing processes get stuck classifying all the samples as negatives.\\
 
+%FRAVS comparation
+It has been conclude that using NIR images with RGB have improved the results. NIR images could detect attacks because printed photos or tablets are similar to real user in RGB space but not in NIR space.\\
+
+%CASIAS comparation
+With respect with CASIA image and CASIA video, results are much better with CASIA images, one sample is missclassifed in most of the cases, but in CASIA videos the quantity is much bigger. But there are much samples in CASIA video database.\\
+
 %Best combination
 The best model combination of CNN + classifier is obtained when RGB+NIR FRAV database feature level. This best result is a perfect classification with logistic regression and with Decision Tree too. RGB+NIR FRAV database classification level results are also outstanding, specially when LDA has been used for each classify because just one sample has been misclassified, the same sample and two samples has been misclassified with LDA + logistic regression.\\
 
@@ -31,3 +37,7 @@ With respect to using LDA or PCA reduction dimensionality methods none fundament
 First trying to minimize the unbalanced database, like it is not possible to get more samples, change the error in that way that the network does not be penalized as much as will be during training if a sample of the less-samples class  is misclassified.\\
 
 It would be interesting test the neural network and the classifier which works the best in a database with other databases. \\
+
+If further work would like to do with the databases, it should be necessary to modify the convolutional neural network if working with MFSD-MSU database is necessary.\\
+
+About improve the convolutional neural network, an adaptive learning rate would help. This kind of learning rate change its value, decreasing it, with the epochs. So, big steps are made while a minimum is searched and small steps are made to get in the minimum.\\

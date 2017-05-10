@@ -58,11 +58,11 @@
 \contentsline {subsection}{\numberline {3.2.4}Experiments Description}{54}{subsection.0.3.2.4}
 \contentsline {section}{\numberline {3.3}Final architecture}{56}{section.0.3.3}
 \contentsline {chapter}{\numberline {4}Results}{63}{chapter.0.4}
-\contentsline {section}{\numberline {4.1}Training and validating process}{63}{section.0.4.1}
+\contentsline {section}{\numberline {4.1}Training and validating process}{64}{section.0.4.1}
 \contentsline {subsection}{\numberline {4.1.1}CASIA Image database}{64}{subsection.0.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}CASIA Video database}{64}{subsection.0.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}FRAV database}{65}{subsection.0.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}FRAV RGB+NIR (feature level) database}{66}{subsection.0.4.1.4}
+\contentsline {subsection}{\numberline {4.1.4}FRAV RGB+NIR (feature level) database}{65}{subsection.0.4.1.4}
 \contentsline {subsection}{\numberline {4.1.5}FRAV RGB+NIR (classification level) database}{66}{subsection.0.4.1.5}
 \contentsline {subsection}{\numberline {4.1.6}MFSD database}{68}{subsection.0.4.1.6}
 \contentsline {section}{\numberline {4.2}Testing process}{68}{section.0.4.2}
@@ -72,10 +72,13 @@
 \contentsline {subsection}{\numberline {4.2.4}FRAV RGB+NIR (feature level) database}{71}{subsection.0.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}FRAV RGB+NIR (classification level) database}{72}{subsection.0.4.2.5}
 \contentsline {subsection}{\numberline {4.2.6}MFSD-MSU database}{73}{subsection.0.4.2.6}
-\contentsline {section}{\numberline {4.3}Executing time}{74}{section.0.4.3}
+\contentsline {section}{\numberline {4.3}Comparative among databases}{74}{section.0.4.3}
+\contentsline {subsection}{\numberline {4.3.1}FRAVs databases}{74}{subsection.0.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}CASIAs databases}{74}{subsection.0.4.3.2}
+\contentsline {section}{\numberline {4.4}Executing time}{76}{section.0.4.4}
 \contentsline {chapter}{\numberline {5}Conclusions and future work}{77}{chapter.0.5}
 \contentsline {section}{\numberline {5.1}Conclusions}{77}{section.0.5.1}
 \contentsline {section}{\numberline {5.2}Future work}{78}{section.0.5.2}
-\contentsline {chapter}{Bibliography}{79}{chapter*.77}
-\contentsline {chapter}{List of Figures}{83}{chapter*.78}
-\contentsline {chapter}{List of Tables}{87}{chapter*.79}
+\contentsline {chapter}{Bibliography}{81}{chapter*.79}
+\contentsline {chapter}{List of Figures}{85}{chapter*.80}
+\contentsline {chapter}{List of Tables}{89}{chapter*.81}
