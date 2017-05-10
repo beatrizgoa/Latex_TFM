@@ -8,15 +8,16 @@
 \contentsline {table}{\numberline {2.2}{\ignorespaces Confusion Matrix\relax }}{24}{table.caption.17}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Methodology}{33}{chapter.0.3}
-\contentsline {table}{\numberline {3.1}{\ignorespaces Samples distribution for each database\relax }}{55}{table.caption.53}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Samples distribution for each database\relax }}{46}{table.caption.38}
+\contentsline {table}{\numberline {3.2}{\ignorespaces TP, FP, TN and FN obtained with each database.\relax }}{47}{table.caption.44}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Results}{63}{chapter.0.4}
-\contentsline {table}{\numberline {4.1}{\ignorespaces APCR and BPCR classifying results using CASIA image database\relax }}{69}{table.caption.66}
-\contentsline {table}{\numberline {4.2}{\ignorespaces APCR and BPCR classifying results using CASIA video database\relax }}{70}{table.caption.68}
-\contentsline {table}{\numberline {4.3}{\ignorespaces APCR and BPCR classifying results using FRAV RGB database\relax }}{71}{table.caption.69}
-\contentsline {table}{\numberline {4.4}{\ignorespaces APCR and BPCR classifying results using FRAV RGB+NIR (feature level) database\relax }}{72}{table.caption.71}
-\contentsline {table}{\numberline {4.5}{\ignorespaces APCR and BPCR classifying results using FRAV RGB+NIR (classification level) database\relax }}{73}{table.caption.73}
-\contentsline {table}{\numberline {4.6}{\ignorespaces APCR and BPCR classifying results using MFSD-MSU database\relax }}{74}{table.caption.75}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Executing time\relax }}{76}{table.caption.78}
+\contentsline {xchapter}{Results}{55}{chapter.0.4}
+\contentsline {table}{\numberline {4.1}{\ignorespaces APCR and BPCR classifying results using CASIA image database\relax }}{61}{table.caption.51}
+\contentsline {table}{\numberline {4.2}{\ignorespaces APCR and BPCR classifying results using CASIA video database\relax }}{62}{table.caption.53}
+\contentsline {table}{\numberline {4.3}{\ignorespaces APCR and BPCR classifying results using FRAV RGB database\relax }}{63}{table.caption.54}
+\contentsline {table}{\numberline {4.4}{\ignorespaces APCR and BPCR classifying results using FRAV RGB+NIR (feature level) database\relax }}{64}{table.caption.56}
+\contentsline {table}{\numberline {4.5}{\ignorespaces APCR and BPCR classifying results using FRAV RGB+NIR (classification level) database\relax }}{65}{table.caption.58}
+\contentsline {table}{\numberline {4.6}{\ignorespaces APCR and BPCR classifying results using MFSD-MSU database\relax }}{66}{table.caption.60}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Executing time\relax }}{68}{table.caption.63}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusions and future work}{77}{chapter.0.5}
+\contentsline {xchapter}{Conclusions and future work}{69}{chapter.0.5}

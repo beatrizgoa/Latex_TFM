@@ -225,198 +225,7 @@ Authors from \cite{yangLL14} describe lightly the architecture, the parameters a
 %Dentro hay una carpeta para cada base de datos. Dentro de cada carpeta estan las pruebas que se hacen con cada base de datos.\\
 %The convolutional neural network has been tested with different databases: FRAV, CASIA and MFSD and different experiments have been carried out with each one.\\
 
-
-\subsection{Experiments description} %IMAGENET 2
-The goal of the next experiments is visualized the new architecture behaviour and make changes and how the network is adapted.\\
-
-FRAV database (Common parameters:  n\_epochs=400, nkerns=[96, 256, 386, 384, 256], batch\_size=20):\\
-\begin{itemize}
-\item frav1: Gaussian weights initialization. SOFTMAX used as classifier. Learning rate = 0.001 Figure \ref{fig:Imagenet2-frav1}.
-\item  frav\_gaussian\_initinizialization: Gaussian weight Initialization. Learning rate = 0.001. SOFMTAX used as classifier. Figure \ref{fig:Imagenet2-frav_gaussian_init} .
-\item svm\_gauss: Using SVM (with RBF kernel) as classifier. Gaussian weight Initialization. Learning rate = 0.01 \ref{fig:Imagenet2-frav-svm_gauss}.
-\item svm\_genera: Using as a classifier SVM with RBF kernel. Learning rate = 0.01 \ref{fig:Imagenet2-mfsd-svm_general}.
-\item svm\_linear: Classifying with SVM (linear) and Gaussian weight initialization. Learning rate = 0.01\\
-\end{itemize}
-
-CASIA (images) ( nkerns=[96, 256, 386, 384, 256]):\\
-First, four test has been carries out (in which the learning rate has been changed and the number of epochs. trying to get the best learning rate configuration. In four test the batch size used is 25 samples, the classifier used at testing is Softmax and the weight initialization used is normal distribution:
-
-\begin{itemize} [noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
-\item Test1: learning rate = 0.01 and nº epochs = 400.
-\item Test2: learning rate = 0.001 and nº epochs = 400.
-\item Test3: learning rate = 0.0005 and nºepochs = 400.
-\item Test4: learning rate = 0.001 and nº epochs = 1000,
-\end{itemize}
-
-It has not been possible getting a train loss that converge in a minimum in none of the four tests. A good train loss should decrease in each epoch until converge in a minimum. But in the tests, the
-- casia\_gaussian\_init: gausiana de pesos con mean 0 y std 0.01. SOFMTAX como clasificador. learning\_rate=0.01, n\_epochs=400, nkerns=[96, 256, 386, 384, 256], batch\_size=20 \\
-- svm\_gauss: Utilizando svm (rbf) como clasificador, con inizializacion normal. learning\_rate=0.01, n\_epochs=400, nkerns=[96, 256, 386, 384, 256], batch\_size=20\\
-- svm\_general: utilizando SVM (rbf) con inicializacion de pesos gaussiana. learning\_rate=0.01, n\_epochs=400, nkerns=[96, 256, 386, 384, 256], batch\_size=20\\
-- svm\_linear: SVM (linear) con inicializacion de pesos gaussiana. learning\_rate=0.01, n\_epochs=400, nkerns=[96, 256, 386, 384, 256], batch\_size=20\\
-
-MFSD  (learning\_rate=0.01, n\_epochs=400, nkerns=[96, 256, 386, 384, 256], batch\_size=20):\\
-- svm\_gauss: Utilizando svm (rbf) como clasificador, con inizializacion gaussianana.\\
-- svm\_genera:utilizando SVM (rbf) con inicializacion de pesos gaussiana \\
-- svm\_linear: SVM (linear) con inicializacion de pesos gaussiana\\
-
-IMPORTANT: The valid graphs are made with SOFTMAX independly of the classifier used to test.\\
-
-\subsubsection{Results with FRAV database}
-In this section, cost (at training) and error (at validating) is going to be visualized. First when FRAV database has been trained with Gaussian initialization and with a learning rate = 0.001 \ref{fig:Imagenet2-frav1}. Second with the same learning rate, but Gaussian initialization for weights \ref{fig:Imagenet2-frav_gaussian_init}. Third, decreasing the learning rate to 0.01 and with normal initialization \ref{fig:Imagenet2-frav-svm_general} and the last one, whit the same learning rate but with Gaussian weights initialization \ref{fig:Imagenet2-frav-svm_gauss}.\\
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/frav1/cost_frav.png}
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/frav1/error_frav.png}
-\caption{Cost at training and error at validating. Normal initialition. Learning rate = 0.001 (frav1).} \label{fig:Imagenet2-frav1}
-\end{figure}
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/frav_gaussian_init/cost_frav.png}
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/frav_gaussian_init/error_frav.png}
-\caption{Cost at training and error at validating. Gassian initialization. Learning rate = 0.001 - frav\_gaussian\_init} \label{fig:Imagenet2-frav_gaussian_init}
-\end{figure}
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/svm_gauss/cost.png}
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/svm_gauss/error.png}
-\caption{Cost at training and error at validating - Gaussian initialization. learning rate = 0.01 frav svm\_gauss.} \label{fig:Imagenet2-frav-svm_gauss}
-\end{figure}
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/svm_general/cost.png}
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/svm_general/error.png}
-\caption{Cost at training and error at validating - Noraml initialization. learning rate = 0.01 frav svm\_general.} \label{fig:Imagenet2-frav-svm_general}
-\end{figure}
-
-
-First FRAV experiment (SOFTMAX as classifier and regular initialization) gives good results. The cost converges to 0 at training, the validation gets a 1.470588 \% best error rate with test performance of 5 \%. In testing, just 10 samples has been misclassified (7 samples of class 0 and 3 of class 1, from 679 test samples as total. The ROC  and precision-recall curves could been visualized figure \ref{fig:Imagenet2-frav-frav1ROC}\\
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/frav1/ROC.png}
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/svm_general/Precision-Recall.png}
-\caption{ROC and Precision- Recall courve - Noraml initialization. learning rate = 0.01 frav svm\_general.} \label{fig:Imagenet2-frav-frav1ROC}
-\end{figure}
-
-It could be seen in the graphics that the Gaussian initialization does not matter when the learning rate is 0.01, but the cost changes when the learning rate is 0.001. In this case, the learning rate 0.001 should be the chosen one.\\
-
-In the table \ref{fravv} The positive and negative rates are visualized from the different classifier (softmax and SVM) the two different weights initialization and the two learning rates used. The results of the table are the same when the learning rate is 0.01 independently of the weight initialization or the kernel used to classify. The metrics rate are not too bad, with the learning rate the results are worse, the learning rate is too big.\\
-
-\begin{table}[htb]
-\centering
-\begin{tabular}{|ccccccc|}
-\hline
-Classifier &  Weight initialization & learning rate & TP  & TN  & FP  & FN \\ \hline
-Softmax    &         Normal        &     0.001     & 61  & 609 &  3  & 7  \\
-Softmax    &       Gaussian        &     0.001     & 66  & 605 &  7  & 2   \\
-SVM RBF(C=5)&         Normal       &     0.01      & 63  & 593 & 19  & 5  \\
-SVM RBF(C=5)&         Gaussian     &     0.01      &  63 & 593 & 19  &5  \\
-SVM lineal(C=5)&      Gaussian     &     0.01      &  63 & 593 & 19  &5  \\
-\hline
-\end{tabular} \label{fravv}
-
-\end{table}
-
-
-\subsubsection{CASIA results}
-For Casia, different experiments has been carried out in order to train the network, using SOFTMAX as classifier and normal weight initialization:\\
-
-\begin{itemize}
-\item{Test 1}: Learning rate = 0.01 y 400 epoch.
-\item{Test 2}: Learning rate = 0.001 y 400 epoch.
-\item{Test 3}: Learning rate = 0.0005 y 400 epoch.
-\item{Test 4}: Learning rate = 0.001 y 1000 epoch.
-\end{itemize}
-
-
-In figure \ref{fig:lossCasia4Test} the cost at training could be visualized. In general, should decrease varying its value but decreasing logarithmically. In the first experiment (test 1), the value varies but in a small range, and in general it is constant, in the other three experiments, the cost decreases and this is what must happen, but in test 2 the loss converges two times, after converge the first time, then it increase again ans converges again.\\
-
-In figure \ref{fig:errorCasia4Test} it is possible to see that the error changes but not in a logarithmically way. It increase and decreases its value in each epoch but it all experiments it gets in a 42\% or 40\% error. The desired curve should be as the loss one, but the error should not decrease as much as the training loss does.\\
-
-
-\begin{figure}[htb]
-\centering
-		\subfigure[Test 1]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba1/cost_frav_p1.png}}
-		\subfigure[Test 2]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba2/cost_frav_p2.png}}			\subfigure[Test 3]{\includegraphics[width=0.47\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba3/cost_frav_p3.png}}
-		\subfigure[Test 4]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba4/cost_frav_p4.png}}
-\caption{Training loss of four test Casia database}
-\label{fig:lossCasia4Test}
-\end{figure}
-
-\begin{figure}[htb]
-\centering
-		\subfigure[Test 1]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba1/error_frav_p1.png}}
-		\subfigure[Test 2]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba2/error_frav_p2.png}}
-		\subfigure[Test 3]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba3/error_frav_p3.png}}
-		\subfigure[Test 4]{\includegraphics[width=0.42\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/prueba4/error_frav_p4.png}}
-\caption{Validation error of four test Casia database}
-\label{fig:errorCasia4Test}
-\end{figure}
-
-
-As the same way that in the first experiment that FRAV database converges is that would be expected from Casia, but it has not gotten.\\
-
-\clearpage
-At the same way as FRAV, the classifier and the weight initialization has been changed in order to know how the networks behavior with these changes. The learning rate used for this experiment is 0.01. First, the cost (at training) and the error (at validating) are going to be visualized when the weight initialization is normal \ref{fig:Imagenet2-casia-svm_general}. Second when the weight initialization used is Gaussian \ref{fig:Imagenet2-casia-svm_gauss}.\\
-
-%\begin{figure}[htb]
-%\centering
-%\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/%casia_gaussian_init/cost_frav.png}
-%\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/frav/%casia_gaussian_init/error_frav.png}
-%\caption{Cost at training and error at testing - casia\_gaussian\_init} %\label{fig:Imagenet2-casia_gaussian_init}
-%\end{figure}
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/svm_gauss/cost.png}
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/svm_gauss/error.png}
-\caption{Cost at training and error at validating -casia svm\_gauss.} \label{fig:Imagenet2-casia-svm_gauss}
-\end{figure}
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/svm_general/cost.png}
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/casia/svm_general/error.png}
-\caption{Cost at training and error at validating -casia svm\_general.} \label{fig:Imagenet2-casia-svm_general}
-\end{figure}
-
-As the same way than in FRAV database, the cost and at training the error at validating has not changed. The positive and negative rates are the following ones in the three experiments:  TP = 8; TN = 21; FP = 3; FN = 8.\\
-
-
-\clearpage
-\subsubsection{MFSD results}
-
-%\begin{figure}[htb]
-%\centering
-%\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/mfsd/mfsd_gaussian_init/cost_frav.png}
-%\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/mfsd/mfsd_gaussian_init/error_frav.png}
-%\caption{Cost at training and error at testing - mfsd\_gaussian\_init} %\label{fig:Imagenet2-mfsd_gaussian_init}
-%\end{figure}
-
-As the same way in FRAV and CASIA, but now with MFSD, it is going to be tested the network with a learning rate of 0.01, Gaussian initialization \ref{fig:Imagenet2-mfsd-svm_gauss} and normal distribution initialization \ref{fig:Imagenet2-mfsd-svm_general} and classifying the test with SVM (RBF kernel and linear) and softmax.\\
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/mfsd/svm_gauss/cost.png}
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/mfsd/svm_gauss/error.png}
-\caption{Cost at training and error at validating - mfsd svm\_gauss.} \label{fig:Imagenet2-mfsd-svm_gauss}
-\end{figure}
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/mfsd/svm_general/cost.png}
-\includegraphics[width=0.45\textwidth]{images/FRAv_casia_ImageNet/Imagenet2/mfsd/svm_general/error.png}
-\caption{Cost at training and error at validating - mfsd svm\_general.} \label{fig:Imagenet2-mfsd-svm_general}
-\end{figure}
-
-The same problem occurs. The train and valid graphs are the same in both cases, independently of the initialization.\\ Also, the result at testing is the same in three cases: TP = 12, TN = 3, FP = 105, FN = 0\\
-
-\clearpage
-\subsection{Architecture}
+\subsection{New Architecture} \label{subsec:ejecucion1}
 %Ejecucuion1
 The new architecture would be formed by the following layers:
 \begin{itemize}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
@@ -434,7 +243,7 @@ ReLu has been used as activation function. Logistic regression has been used in 
 
 Some experiments are going to be developed, and parameters like the learning rate would be changed to obtain the optimal one and those would be explained for each one.\\
 
-\subsection{Databases}
+\subsection{Databases} \label{subssec:ejec1_database}
 The databases used in for experiments are CASIA images, CASIA videos, RGB FRAV, (RGB+NIR) FRAV feature level database and MFSD-MSU database. Just two classes are going to be used in this experiment: class 0 is real users class and class 1 is attack class.\\
 
 Samples distribution are described in table \ref{Samples_distribution} where the number of samples per class and  subset (train, test and validation) are summarized for each database. It is possible to realize that the number of positive (class 0) samples is lower for all the databases, but more specifically, the amount of positive samples in MFSD-MSU database is very small.\\
@@ -456,15 +265,14 @@ Samples distribution are described in table \ref{Samples_distribution} where the
 \end{table}
 
 \subsection{Experiments Description}
-With that databases. Some experiments has been carried out:
+With that databases. Some experiments has been carried out. To test, the used classiffier is SVM with RBF, the parametr C has been searched for each experiment
 
 \begin{itemize}
 \item general experiment, with Gaussian weight initialization, classification with SVM RBF and SOFTMAX.
-\item general experiment but with a small database in order to make over-fitting in the network and check it. It has been used 20 train, test and validation images in all databases but MFSD that has been used 14 images for each subset.
+\item general experiment but with a small database in order to make over-fitting in the network and check it. It has been used 20 samples for training, testing and validation images in all databases but MFSD that has been used 14 images for each subset.
 \item The same experiment that above but the test has been realized with the same subset that in training, this is to check that the network has over-fit or should have over-fitted.
 \item The same as above but decreasing the learning rate from 0.01 to 0.001. \\
 \end{itemize}
-
 
 \begin{figure}[htb]
 \centering
@@ -491,7 +299,6 @@ With that databases. Some experiments has been carried out:
 \includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_iteself_lr_0_001/error.png}
 \caption{cost and error of the tree experiments with FRAV (rgb + nir) image level images.} \label{fig:frav_imagelevel-ejec1}
 \end{figure}
-
 
 \begin{figure}[htb]
 \centering
@@ -532,23 +339,25 @@ With that databases. Some experiments has been carried out:
 \caption{cost and error of the tree experiments with MFSD images.} \label{fig:mfsd-ejec1}
 \end{figure}
 
-From images, could be concluded that in general, decreasing the learning rate for this experiment has not been a good idea.\\
+In figure \ref{fig:frav-ejec1} are represented the experiments with RGB FRAV database. RGB+NIR FRAV database results are represented in figure \ref{fig:frav_imagelevel-ejec1}. CASIA image database experiments are represented in figure  \ref{fig:casia-ejec1}, CASIA video database is represented in figure \ref{fig:casiavid-ejec1}. In figure \ref{fig:mfsd-ejec1} are represented results of MFSD-MSU database.\\
 
-In table \ref{table-ej1} could be seen the positive and negatives rates when has been used SVM with RBF kernel to classify. The result obtained with FRAV (rgb + NIR) is really good because just 3 samples have been misclassified from 140 images.\\
+From images, could be concluded that in general, decreasing the learning rate from 0.01 to 0.001, for this experiment, does not affect in any database.\\
 
-I do not know why the test is the same for minidataset and minidataset tested with itself.\\
+In table \ref{table-ej1} could be seen the positive and negatives rates obtained for each database when the general experiment (the fist one described) has been tested. The result obtained with RGB+NIR FRAV database is the best because just 3 samples have been misclassified from 140 images. In general, classification is not bag. The database whose samples are misclassifed in a big amount is CASIA videos but the total number of samples is much bigger too.\\
 
-\begin{table}[htb]
+\begin{table}[]
 \centering
-\label{table-ej1}
-\begin{tabular}{cccccc}
--              &Optima C SVM& TP & TN & FP & FN \\
-FRAV           &    0.05   & 136& 24 &  11 & 9 \\
-FRAV (rgb+nir) &    0.1    & 113& 24 &  1  & 2 \\
-CASIA images   &    5      & 9  & 2  &  0  & 9 \\
-CASIA videos   &    0.1    & 478& 75 &  105& 62 \\
-MFSD           &    10     & 19 &  1 &   8 & 0 \\
+\begin{tabular}{c|c|c|c|c|c|}
+\cline{2-6}
+                                                                        & \cellcolor[HTML]{ECF4FF}\begin{tabular}[c]{@{}c@{}}SVM\\ Optima C\end{tabular} & \cellcolor[HTML]{ECF4FF}TP & \cellcolor[HTML]{ECF4FF}TN & \cellcolor[HTML]{ECF4FF}FP & \cellcolor[HTML]{ECF4FF}FN \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}RGB FRAV}                  & 0.05                                                                           & 136                        & 24                         & 11                         & 9                          \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}RGB+NIR FRAV (feat level)} & 0.1                                                                            & 113                        & 24                         & 1                          & 2                          \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}CASIA images}              & 5                                                                              & 9                          & 2                          & 0                          & 9                          \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}CASIA videos}              & 0.1                                                                            & 478                        & 75                         & 105                        & 62                         \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}MFSD-MSU}                  & 10                                                                             & 19                         & 1                          & 8                          & 0                          \\ \hline
 \end{tabular}
+\caption{TP, FP, TN and FN obtained with each database.}
+\label{table-ej1}
 \end{table}
 
 Looking the graphs where a minidataset has been used (20 images or 14), if the cost (training) is visualized, could be expected that the train is learning the images because the cost decreases to 0 (almost zero) so that means that if it is tested with itself the error should be 0, but that does not happen.\\
@@ -556,8 +365,9 @@ Looking the graphs where a minidataset has been used (20 images or 14), if the c
 The conclusion is the needed of a balanced database, at least to do this experiment. In which the number of class 0 samples are the same that the number of class 1 samples, because the network would not learn in the same way if in some cases the number of samples of  attack class is four times than the number of samples of class 1, just predicting 0 would have 25\% accuracy, and having less than 5 samples in validation or testing is not a good generalizer (2 samples in class 0 MFSD database).\\
 
 \section{Final architecture}\label{Final_archi} %Used in ejecucion 2
-The architecture utilized in the final, and the most important experiment is described in this section.\\
+The architecture utilized in the final, and the most important experiment is described in this section. This architecture is like the presented in section \ref{subsec:ejecucion1}. But know it is going to be explained in detail.\\
 
+\subsection{Architecture}
 The neural network is composed by five convolutional layers: the first and second convolutional layers (CL1 and CL2) , whose kernel sizes are 11x11 and 3x3 respectively, are followed by a local response normalization layer and a max pool layer whose size is 2x2. The third convolutional layer (CL3), with a kernel size of 3x3 , the next layer is a convolutional one (CL4) of size 3x3 followed by a max-pool layer whose size is 2x2. The next two layers are Dropouts layers (DL1 and DL2) with 4096 neurons. The next layer us a Fully-connected layer (FL) with 4096 neurons at the input and 2000 layers at the output.\\
 
 The activation function used in each layer is the ReLu. The weights have been initialized pseudo-randomly (a random initialization that could be repeated selecting he same seed) with a Gaussian distribution and the bias has been initialized with 1.\\
@@ -566,11 +376,14 @@ It has been used the minibatch Stochastic Gradient Descend and in the training, 
 
 The learning rate is fixed at a 0.01 value and a bath size of 20, except when the MFSD database is used that he batch size is 14.\\
 
-The dataset used in this experiment are the FRAV with the only RGB images, the FRAV database with the RGB and NIR added at the characteristic level  and  classifier level. The MFSD database has been used too and both CASIA database have been used, image and video CASIA database. For each database, it has been split randomly into train, test and validate subsets. Two classes has been used, class 0: the real users class and class 1: the attacks class. In next table \ref{Samples_distribution} is possible to visualize the samples distribution for each subset (train, test, validation). There is just one row for RGB+NIR FRAV database because the sample distribution is the same independently of when the are concatenate.\\
+\subsection{Database}
+The dataset used in this experiment is the same as used in the previous architecture, the described in section \ref{subssec:ejec1_database}, but also, RGB+NIR FRAV database added in classification level is going to be used.\\
 
+The sample distribution is the same, which is summarized in table table \ref{Samples_distribution}. There is just one row for RGB+NIR FRAV database because the sample distribution is the same independently of when the are concatenate.\\
 
+Two classes has been used, class 0: the real users class and class 1: the attacks class.\\
 
-
+\subsection{Classification}
 For testing some classifiers has been utilized, and they are fed by the output of the convolutional neural network last layer, the Fully-connected layer.\\
 
 The classifiers used to classify the features of the output of the CNN and get the results are the SVM (with RBF and linear kernel), KNN, Decision Tree and logistic regression. Also, PCA and LDA techniques has been used with each classifier separately to reduce the dimensionality of the features.\\

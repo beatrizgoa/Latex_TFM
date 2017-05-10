@@ -44,41 +44,40 @@
 \contentsline {section}{\numberline {3.1}LeNet-5}{33}{section.0.3.1}
 \contentsline {subsection}{\numberline {3.1.1}LeNet-5 specifications}{34}{subsection.0.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}LeNet-5 Results}{35}{subsection.0.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Modifying LeNet}{36}{subsection.0.3.1.3}
+\contentsline {subsection}{\numberline {3.1.3}Modifying LeNet}{37}{subsection.0.3.1.3}
 \contentsline {subsubsection}{Changing the batch size}{37}{subsubsection*.31}
 \contentsline {subsubsection}{Changing activation function, normalization and weights initialization}{39}{subsubsection*.33}
 \contentsline {subsection}{\numberline {3.1.4}LeNet-5 and RGB FRAV faces database}{43}{subsection.0.3.1.4}
 \contentsline {section}{\numberline {3.2}Adapting LeNet-5 architecture}{44}{section.0.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Experiments description}{45}{subsection.0.3.2.1}
-\contentsline {subsubsection}{Results with FRAV database}{46}{subsubsection*.38}
-\contentsline {subsubsection}{CASIA results}{48}{subsubsection*.45}
-\contentsline {subsubsection}{MFSD results}{53}{subsubsection*.50}
-\contentsline {subsection}{\numberline {3.2.2}Architecture}{54}{subsection.0.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Databases}{54}{subsection.0.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Experiments Description}{54}{subsection.0.3.2.4}
-\contentsline {section}{\numberline {3.3}Final architecture}{56}{section.0.3.3}
-\contentsline {chapter}{\numberline {4}Results}{63}{chapter.0.4}
-\contentsline {section}{\numberline {4.1}Training and validating process}{64}{section.0.4.1}
-\contentsline {subsection}{\numberline {4.1.1}CASIA Image database}{64}{subsection.0.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}CASIA Video database}{64}{subsection.0.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}FRAV database}{65}{subsection.0.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}FRAV RGB+NIR (feature level) database}{65}{subsection.0.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}FRAV RGB+NIR (classification level) database}{66}{subsection.0.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}MFSD database}{68}{subsection.0.4.1.6}
-\contentsline {section}{\numberline {4.2}Testing process}{68}{section.0.4.2}
-\contentsline {subsection}{\numberline {4.2.1}CASIA Image database}{69}{subsection.0.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}CASIA Video database}{70}{subsection.0.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}FRAV database}{70}{subsection.0.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}FRAV RGB+NIR (feature level) database}{71}{subsection.0.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}FRAV RGB+NIR (classification level) database}{72}{subsection.0.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}MFSD-MSU database}{73}{subsection.0.4.2.6}
-\contentsline {section}{\numberline {4.3}Comparative among databases}{74}{section.0.4.3}
-\contentsline {subsection}{\numberline {4.3.1}FRAVs databases}{74}{subsection.0.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}CASIAs databases}{74}{subsection.0.4.3.2}
-\contentsline {section}{\numberline {4.4}Executing time}{76}{section.0.4.4}
-\contentsline {chapter}{\numberline {5}Conclusions and future work}{77}{chapter.0.5}
-\contentsline {section}{\numberline {5.1}Conclusions}{77}{section.0.5.1}
-\contentsline {section}{\numberline {5.2}Future work}{78}{section.0.5.2}
-\contentsline {chapter}{Bibliography}{81}{chapter*.79}
-\contentsline {chapter}{List of Figures}{85}{chapter*.80}
-\contentsline {chapter}{List of Tables}{89}{chapter*.81}
+\contentsline {subsection}{\numberline {3.2.1}New Architecture}{45}{subsection.0.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Databases}{46}{subsection.0.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Experiments Description}{46}{subsection.0.3.2.3}
+\contentsline {section}{\numberline {3.3}Final architecture}{48}{section.0.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Architecture}{48}{subsection.0.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Database}{48}{subsection.0.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Classification}{49}{subsection.0.3.3.3}
+\contentsline {chapter}{\numberline {4}Results}{55}{chapter.0.4}
+\contentsline {section}{\numberline {4.1}Training and validating process}{56}{section.0.4.1}
+\contentsline {subsection}{\numberline {4.1.1}CASIA Image database}{56}{subsection.0.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}CASIA Video database}{56}{subsection.0.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}FRAV database}{57}{subsection.0.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}FRAV RGB+NIR (feature level) database}{57}{subsection.0.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}FRAV RGB+NIR (classification level) database}{58}{subsection.0.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}MFSD database}{60}{subsection.0.4.1.6}
+\contentsline {section}{\numberline {4.2}Testing process}{60}{section.0.4.2}
+\contentsline {subsection}{\numberline {4.2.1}CASIA Image database}{61}{subsection.0.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}CASIA Video database}{62}{subsection.0.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}FRAV database}{62}{subsection.0.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}FRAV RGB+NIR (feature level) database}{63}{subsection.0.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}FRAV RGB+NIR (classification level) database}{64}{subsection.0.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}MFSD-MSU database}{65}{subsection.0.4.2.6}
+\contentsline {section}{\numberline {4.3}Comparative among databases}{66}{section.0.4.3}
+\contentsline {subsection}{\numberline {4.3.1}FRAVs databases}{66}{subsection.0.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}CASIAs databases}{66}{subsection.0.4.3.2}
+\contentsline {section}{\numberline {4.4}Executing time}{68}{section.0.4.4}
+\contentsline {chapter}{\numberline {5}Conclusions and future work}{69}{chapter.0.5}
+\contentsline {section}{\numberline {5.1}Conclusions}{69}{section.0.5.1}
+\contentsline {section}{\numberline {5.2}Future work}{70}{section.0.5.2}
+\contentsline {chapter}{Bibliography}{73}{chapter*.64}
+\contentsline {chapter}{List of Figures}{77}{chapter*.65}
+\contentsline {chapter}{List of Tables}{81}{chapter*.66}
