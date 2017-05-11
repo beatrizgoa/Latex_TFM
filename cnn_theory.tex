@@ -61,7 +61,7 @@ A single neuron is formed by an input, a weight \textit{W} and a bias \textit{b}
 \caption{Simplest neural network architecture.} \label{fig:neuronasencilla}
 \end{figure}
 
-The simplest example of a neural network is formed by two inputs neurons and a output neuron as it is shown in figure \ref{fig:neuronasencilla}in which \textit{$W=[w_1,w_2]$} are refered to the weights assigned to each neuron. The \textit{b} value is refered to the bias term. \textit{$X=[x_{1},x_{2}]$} are the input of the network architecture and \textit{y(x)} the output. The output is predetermined by the equation \ref{eq:ecuation_neuronasencilla}. So, the output would depend on the input, weights and bias sand the activation function (or transfer function) \textit{F} \cite{krose}. \\
+The simplest example of a neural network is formed by two inputs neurons and a output neuron as it is shown in figure \ref{fig:neuronasencilla}in which \textit{$W=[w_1,w_2]$} are referred to the weights assigned to each neuron. The \textit{b} value is referred to the bias term. \textit{$X=[x_{1},x_{2}]$} are the input of the network architecture and \textit{y(x)} the output. The output is predetermined by the equation \ref{eq:ecuation_neuronasencilla}. So, the output would depend on the input, weights and bias sand the activation function (or transfer function) \textit{F} \cite{krose}. \\
 
 %Ecuacion salida neurona
 			\begin{equation}
@@ -150,7 +150,7 @@ The layers that conforms the networks could be different depending on the mathem
 	\item \textbf{Pooling Layer:} In this layer, the dimensionality is reduced. The most important information is preserved. It is usually used at the output of the convolutional to resume its out \cite{Doorn}. The most used pooling layer is the max-pooling layer, the maximum values are saved.
 	%\item \textbf{No-linearity layer:} Esta capa consta de una función sigmoide punto tanh() aplicado a la entrada de la capa. Sin embargo, en las implementaciones recientes, se han utilizado otras no linealidades más sofisticadas \cite{Lecum3, Doorn}.
 	\item \textbf{Normalization layer:} This layer normalize the activities of the neurons, because of that the processing time could be reducing during training or testing. There are two types of normalization layer: Local Response Normalization (LRN) and Batch Normalization.
-	\item \textbf{Dropout layer:} The output of a network could rely on the output of an specific neurons being this a overfitting cause. To prevent it, during training, some neurons are 'turn off´ setting its value to 0. In this way, neurons are more adaptable. Dropout is a specific layer that manage this. Instead of \textit{eliminate} neurons, if it is possible that weights are put to 0. In this case, the layer would be \textbf{``DropConnect''} \cite{Doorn}.
+	\item \textbf{Dropout layer:} The output of a network could rely on the output of an specific neurons being this an overfitting cause. To prevent it, during training, some neurons are 'turn off´ setting its value to 0. In this way, neurons are more adaptable. Dropout is a specific layer that manage this. Instead of \textit{eliminate} neurons, if it is possible that weights are put to 0. In this case, the layer would be \textbf{``DropConnect''} \cite{Doorn}.
 	\item  \textbf{Fully-connected layer:} Fully connected layer is vector in which the input is connected to each neuron that conforms this layer. This layer is the high-level reasoning layer so, it is used before the classification.
 \end{description}
 

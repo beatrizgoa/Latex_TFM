@@ -19,13 +19,13 @@ Some examples of the digit image MNIST database could be seen in \ref{fig:MNIST_
 
 \begin{itemize}
  \item There are 70.000 number of unique samples.
- \item Altough original size of the database is 32x32 pixels, the samples of this downloaded database are 28x28 pixels in gray scale, that is 784 features per image.
+ \item Though original size of the database is 32x32 pixels, the samples of this downloaded database are 28x28 pixels in gray scale, that is 784 features per image.
  \item 10 classes could be differentiated, one per digit.
 \item The samples are directly separated into train, test and validate subset.
 \end{itemize}
 
 \subsection{FRAV dataset}
-FRAV database is an anti-spoofing face database built in the FRAV research group of tu URJC University and which is part of the Automated Border Control Gates for Europe project \cite{ABC4EU}.\\
+FRAV database is an anti-spoofing face database built in the FRAV research group of the URJC University and which is part of the Automated Border Control Gates for Europe project \cite{ABC4EU}.\\
 
 One example of RGB images of FRAV database are shown in figure \ref{fig:RGB-frav1} and another example could be seen in \ref{fig:RGB-frav2}. In both images, the four attacks described previously and the real user could be visualized. \\
 
@@ -72,7 +72,7 @@ Images of classes can be found in RGB and NIR (not all RGB images has its corres
 \begin{itemize}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
 \item There are 939 people in each RGB class or 195 in each NIR class.
 \item There is one image per person.
-\item Each image has it is own shape.
+\item Each image has its own shape.
 \item As it real user has all the four attack, all the classes has the same number of samples.
 \item The faces are centered in the image.
 \end{itemize}
@@ -86,13 +86,13 @@ This database is used in two different ways:
 
 If RGB and NIR (figure \ref{fig:RGB-frav2})images are used at the same time, two different methods, for using both types of images together, are used:
 \begin{itemize}
-\item Characteristic level: adding the NIR image as another layer to RGB image, so the resultant image have hightxweightx4 dimensions (NIR images has one layer because it is a gray scale image and RGB images has tree layers, one per each primary color). The network is feed with the resultant images like other times.
+\item Characteristic level: adding the NIR image as another layer to RGB image, so the resultant image have hightxweightx4 dimensions (NIR images has one layer because it is a gray scale image and RGB images has three layers, one per each primary color). The network is feed with the resultant images like other times.
 \item Classification level: after the network training and before feeding the classifier, RGB and NIR would be trained separately and its features would be appended as the input of the classifier.
 \end{itemize}
 
 To conclude, this database is going to be used in the three different ways: just RGB images, RGB and NIR images added in characteristic level or classification level.\\
 
-When the classes are build, two ways are possible to be done: the first one where real people are one class (positive) and the different attacks are other class (negatives), so two classes have been used; and the second way where each attacks correspond with a class, so five classes (4 attacks and 1 real) have been used.\\
+When the classes are build, two ways are possible to be done: the first one where real people are one class (positive) and the different attacks are another class (negatives), so two classes have been used; and the second way where each attacks correspond with a class, so five classes (4 attacks and 1 real) have been used.\\
 
 
 \subsection{CASIA dataset}
@@ -133,8 +133,9 @@ The characteristics of the CASIA image database are the following ones:
 \end{itemize}
 
 The characteristics of the CASIA video database are the following ones:
-\begin{itemize}
-\item There are 8 videos per person (two videos for real user, and two per each attack). There are two videos because one is filmed horizontally and the other vertically, one filmed with a smartphone and the other with the frontal camera of a laptop.
+\begin{itemize}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
+\item There are 8 videos per person (two videos for real user, and two per each attack).
+\item There are two videos because one is filmed horizontally and the other vertically, one filmed with a smartphone and the other with the frontal camera of a laptop.
 \item There are 50 different users, so there are 400 different videos.
 \item For each video 3 frames are read, so there are 1200 unique samples.
 \item Samples are in RGB space.

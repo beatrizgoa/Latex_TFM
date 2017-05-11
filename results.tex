@@ -22,7 +22,7 @@ In figure \ref{fig:ejecucion2_casia_im_train} the cost and training are represen
 The saved model to realize the test performance is the obtained at iteration 1176 with a 15\% validation error.\\
 
 \subsection{CASIA Video database}
-The cost and error obtained at training and validation processed when CASIA video database is used, are represented in figure \ref{fig:ejecucion2_casia_vid_train}. The minimun cost is almost 0 and is obtained before 2000th iteration, as is represented in figure \ref{fig:ejecucion2_casia_vid_train_cost}}. The validation converges at the same time as the training, where oscillate between 7\% an 6\%.\\
+The cost and error obtained at training and validation processed when CASIA video database is used, are represented in figure \ref{fig:ejecucion2_casia_vid_train}. The minimum cost is almost 0 and is obtained before 2000th iteration, as is represented in figure \ref{fig:ejecucion2_casia_vid_train_cost}. The validation converges at the same time as the training, where oscillate between 7\% and 6\%.\\
 \begin{figure}[htb]
 \centering
 		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_casia_videos/cost.png}\label{fig:ejecucion2_casia_vid_train_cost}}
@@ -34,7 +34,7 @@ The cost and error obtained at training and validation processed when CASIA vide
 The best validation performance is obtained at iteration 2240 with a 5.71\% validation error.\\
 
 \subsection{FRAV database}
-The cost and error obtained at training an validation processes respectably are represented in figure \ref{fig:ejecucion2_frav_train}. The cost, that could be seen in figure \ref{fig:ejecucion2_frav_train_cost} get a low value, when it converges before the 5000th iteration, the cost obtained is 0.000001. The validation error, represented in figure \ref{fig:ejecucion2_frav_train_cost}, fluctuate a lot, the curve should decrease, but it does not and in 200 epoch, the error is constant in 11.25\%. The generalization at validation is not very good and before the 100th epoch the network seems to overfit.\\
+The cost and error obtained at training and validation processes respectively are represented in figure \ref{fig:ejecucion2_frav_train}. The cost, that could be seen in figure \ref{fig:ejecucion2_frav_train_cost} get a low value, when it converges before the 5000th iteration, the cost obtained is 0.000001. The validation error, represented in figure \ref{fig:ejecucion2_frav_train_cost}, fluctuate a lot, the curve should decrease, but it does not and in 200 epoch, the error is constant in 11.25\%. The generalization at validation is not very good and before the 100th epoch the network seems to overfit.\\
 \begin{figure}[htb]
 \centering
 		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav/cost.png}\label{fig:ejecucion2_frav_train_cost}}
@@ -88,7 +88,7 @@ The training results obtained for MFSD database are represented in figure \ref{f
 The best model is the obtained at iteration 7, in the first epoch, where the validation error is 14,28\%.\\
 
 \section{Testing process}
-From the best CNN model, for each database, A SVM (with lineal and RBF kernel), KNN, Decision Tree and logistic regression has been trained. Also the testing has been realize after training a LDA and PCA (which have been trained too for each database) with each classifier.\\
+From the best CNN model, for each database, A SVM (with lineal and RBF kernel), KNN, Decision Tree and logistic regression has been trained. Also the testing has been realized after training a LDA and PCA (which have been trained too for each database) with each classifier.\\
 
 The test performance for each classifier, has been realized after chosen the best classifier model.  The results are going to be exposed independently of each database and then compared among all databases.\\
 
@@ -144,7 +144,7 @@ Classifier                                                                   & A
 \label{APCR_BPCR_CASIA_vid}
 \end{table}
 
-In table \ref{APCR_BPCR_CASIA_vid} APCR and BPCR results are summarized. The best result has been obtained with SVM classifier and kernel RBF (C= 0.05) after applying LDA with 1 component. The worst values obtained are the SVM with linear kernel, no matters if PCA or LDA have been used, because all the positives samples have been classified as negatives. \\
+In table \ref{APCR_BPCR_CASIA_vid} APCR and BPCR results are summarized. The best result has been obtained with SVM classifier and kernel RBF (C= 0.05) after applying LDA with 1 component. The worst values obtained are the SVM with lineal kernel, no matters if PCA or LDA have been used, because all the positives samples have been classified as negatives. \\
 
 From the table it is not possible to know if LDA and PCA are significant because with some classifiers APCR and BPCR results have been improve or worsened.\\
 
@@ -171,7 +171,7 @@ Classifier                                                                   & A
 \end{table}
 
 
-APCR and BPCR results are in table \ref{APCR_BPCR_FRAV}. In general, results are very good because values are lower than 0.5. With SVM linear kernel, all the samples are classified as negatives except when it has been used when LDA, that results are as good as the obtained with RBF kernel.\\
+APCR and BPCR results are in table \ref{APCR_BPCR_FRAV}. In general, results are very good because values are lower than 0.5. With SVM lineal kernel, all the samples are classified as negatives except when it has been used when LDA, that results are as good as the obtained with RBF kernel.\\
 
 The best  result is obtained when SVM with RBF kernel has been used with C = 1 and using LDA with 1 component. LDA improves the results obtained when neither PCA nor just the classifier has been used, although the improved is not too much.\\
 
@@ -205,7 +205,7 @@ Classifier                                                                   & A
 \label{APCR_BPCR_FRAV_feature}
 \end{table}
 
-Table \ref{APCR_BPCR_FRAV_feature} shows the APCR and BPCR values that have been obtained for each classifier. Except for SVM with linear kernel, which has classified all the samples as negatives when just the classifier has been used or if PCA has been applied too, classifications have produced good results, the APCR and BPCR values are very low, close to 0. In fact, Decision Tree and logistic regression classify correctly all the samples because APCR and BPCR are equal to 0. \\
+Table \ref{APCR_BPCR_FRAV_feature} shows the APCR and BPCR values that have been obtained for each classifier. Except for SVM with lineal kernel, which has classified all the samples as negatives when just the classifier has been used or if PCA has been applied too, classifications have produced good results, the APCR and BPCR values are very low, close to 0. In fact, Decision Tree and logistic regression classify correctly all the samples because APCR and BPCR are equal to 0. \\
 
 PCA and LDA have not improved results significantly. SVM lineal with LDA does not classify all the samples as negatives. But when PCA and LDA is applied with logistic regression and Decision tree, the classification is not perfect as it is when none is applied.\\
 
@@ -243,7 +243,7 @@ Classifier                                                                   & A
 
 APCER and BPCER results are summarized in table \ref{APCR_BPCR_FRAV_class}. Results are closer to 0, but none classifier classifies perfectly. There is possible to see that with LDA that APCR results are better and BPCR results are perfect.\\
 
-SVM linear classifier classifies incorrectly positives samples although PCA is used too, with LDA that does not happen.\\
+SVM lineal classifier classifies incorrectly positives samples although PCA is used too, with LDA that does not happen.\\
 
 In most of cases, classifiers just mis-classify one sample, the same sample represented in figure \ref{fig:frav_clas_miscl}. Classifiers that mis-classify more than one sample, the sample \ref{fig:frav_clas_miscl} is one of the misclassified.\\
 
@@ -302,7 +302,7 @@ As the same as FRAVs databases, the comparative is going to be made with CASIAs 
 \caption{Comparative among CASIA databases with KNN.} \label{fig:CASIAS_KNN_comparative}
 \end{figure}
 
-In figure \ref{fig:CASIAS_KNN_comparative} is represented the comparative between image CASIA in blue and video CASIA database in green. As it is possible to see, the result is much better when just CASIA images databases are used, although CASIA video results are not bad.\\  
+In figure \ref{fig:CASIAS_KNN_comparative} is represented the comparative between image CASIA in blue and video CASIA database in green. As it is possible to see, the result is much better when just CASIA images databases are used, although CASIA video results are not bad.\\
 
 \section{Executing time}
 In this section, the time that has been necessary to carry out the training and testing processing described in this chapter  are exposed.\\
