@@ -20,7 +20,7 @@ The loss is calculated in the following way:\\
   Loss(\theta, D) = - \sum_{i=0}^{|D|}log P(Y = y^{(i)}|x^{(i)}, \theta)
 \end{equation}
 
-The error in the validation process is calculated after the logistic regression classification, because is the classifier used during the training process. The error during the testing procedure depends on the used classifier. In both cases, the error represents the number of misclassified samples over the total samples used.\\ 
+The error in the validation process is calculated after the logistic regression classification, because is the classifier used during the training process. The error during the testing procedure depends on the used classifier. In both cases, the error represents the number of misclassified samples over the total samples used.\\
 
 
 \subsection{True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}
@@ -59,16 +59,16 @@ FPR = \frac{FP}{N}
 Where:
  \begin{equation}
   N = FP + TN
-\end{equation} 
+\end{equation}
 
-\item The True Positive Rate (TPR) is defined as the proportion of all the positive samples (\textit{P}) that are classified correctly \cite{ROC}. This parameter could be known as Recall too: 
+\item The True Positive Rate (TPR) is defined as the proportion of all the positive samples (\textit{P}) that are classified correctly \cite{ROC}. This parameter could be known as Recall too:
 \begin{equation}
-TPR = Recall = \frac{TP}{P} 
+TPR = Recall = \frac{TP}{P}
 \end{equation}
 Where:
  \begin{equation}
   P = TP + FN
-\end{equation} 
+\end{equation}
 %TPR could be called sensitivity and FPR could be calculated as 1 – specificity \\
 
 \item Precision is defined as the proportion of real positive samples that has been classified as positive \cite{ROC,Sokolova}:
@@ -93,14 +93,14 @@ The Receiver Operator Characteristic (ROC) curve is the representation how the n
 
 The figure \ref{RocImage}, obtained from \cite{RocImage}, it is shown a ROC graph in which three curves are shown.  The yellow one represents a good classification, it is the desired ROC curve, but the blue curve represents a bad classification and it is not the desired result.\\
 
-From the ROC curve, the Area Under the Curve (AUC) could be obtained, this value is the integral of the ROC curve, and its maximun value is 1 that means a perfect performance of the classifier. If the value of this parameter is lower than 0.7 the classifier performance should be improved significantly.\\
+From the ROC curve, the Area Under the Curve (AUC) could be obtained, this value is the integral of the ROC curve, and its maximum value is 1 that means a perfect performance of the classifier. If the value of this parameter is lower than 0.7 the classifier performance should be improved significantly.\\
 
 The Precision and Recall curve is the representation of the Precision and the Recall in the same graph. The desired behaviour of a classification system is a high recall (1) and a high precision (1) because that would mean that predictions made by the classifier are correct.\\
 
 \subsection{APCER and BPCER}
 The ISO/IEC 30107-3 \cite{ISO} is the collaboration result of  the International Organization for Standardization (ISO) with the International Electrotechnical Commission (IEC).\\
 
-This ISO defines the terms related to the tests, the reports and the biometric presentation of bioimetrics systems. In addition, the performance methods, specify principles as well as metrics are defined. From this document, the APCER, BPCER and APCER-BPCER curve metrics have been obtained:\\
+This ISO defines the terms related to the tests, the reports and the biometric presentation of biometrics systems. In addition, the performance methods, specify principles as well as metrics are defined. From this document, the APCER, BPCER and APCER-BPCER curve metrics have been obtained:\\
 
 Attack Presentation Classification Error Rate (APCER) is defined as the proportion of presentation attacks that has been classified incorrectly (as \textit{bona fide} presentation.)\\
 
@@ -120,4 +120,4 @@ where: \begin{itemize}
 \item $N_{PAIS}$ is the number of attack presentations
 \end{itemize}
 
-The APCER-BPCER curve shows in the same graph both parameters. The ideal system would have a low APCER (0) and a low BPCER (0) because it means that samples are not incorrectly classified.\\ 
+The APCER-BPCER curve shows in the same graph both parameters. The ideal system would have a low APCER (0) and a low BPCER (0) because it means that samples are not incorrectly classified.\\

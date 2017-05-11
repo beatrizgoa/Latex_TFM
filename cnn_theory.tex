@@ -4,22 +4,22 @@ In this section, the basis and the theoretical background of the convolutional n
 \subsection{Historical introduction}
 The historical introduction to neural networks is going to be summarized \cite{BINN}:\\
 
-Neural Networks are introduced by first time in the years 40 by Warren McCulloch and Walter Pitts, more specifically, simple models of neural networks (switches based on neurons) were able to calculate almost every arithmetic problems and logic operations. Few years layer, the recognition of spacial patterns field was defined as a interesting scope for neural networks.\\
+Neural Networks are introduced by first time in the years 40 by Warren McCulloch and Walter Pitts, more specifically, simple models of neural networks (switches based on neurons) were able to calculate almost every arithmetic problems and logic operations. Few years later, the recognition of spacial patterns field was defined as an interesting scope for neural networks.\\
 
-In 1949 the `Hebbian rule' was postulate by Donald O. Hebb. The rules describes the generalized learning basis of neural networks. This rule explain that two connected neurons have  a bigger strength if they are active at the same time, and the strength changes proportionally to the product of the two activities.\\
+In 1949 the `Hebbian rule' was postulated by Donald O. Hebb. The rules describes the generalized learning basis of neural networks. This rule explain that two connected neurons have  a bigger strength if they are active at the same time, and the strength changes proportionally to the product of the two activities.\\
 
 From 1951, the golden age of neural networks start although it stopped with a big pause. The first neurocomputer which was capable to adjust the weights by itself was developed in 1951 and was called \textit{Snark}. The fist neurocomputer able to recognize simple numbers was called \textit{`Mark I perceptron'} as was developed between 1957 and 1958.\\
 
 It was in 1959 when Franck Rosenblatt  defined the \textit{perceptron} and the \textit{perceptron convergence theorem} was verified. One year later, the \textit{ADALINE (ADAptive LInear NEuron)} was developed, this was the first commercially used neural network which was a fast and precise system. One important characteristic was the \textit{delta rule} rule used for the training procedure. Before the golden age finished, researched figured out that the XOR function was not able to be solve with just one perceptron.\\
 
-From these years, neural networks does not have much importance, until computational resources were enough. But some important advances were developed ad the \textit{linear associator} model (an associative memory model). The backpropagation of error, a very used learning procedure was defined in 1974 by Paul Werbos. \textit{The self-organizing feature maps} were described in 1982, there are also known as Kohonen maps. In 1983, a neural model able to recognize handwritten characters was developed as an extension of the Cognitron, the new model was called Neocognitron.\\
+From these years, neural networks does not have much importance, until computational resources were enough. But some important advances were developed and the \textit{linear associator} model (an associative memory model). The backpropagation of error, a very used learning procedure was defined in 1974 by Paul Werbos. \textit{The self-organizing feature maps} were described in 1982, there are also known as Kohonen maps. In 1983, a neural model able to recognize handwritten characters was developed as an extension of the Cognitron, the new model was called Neocognitron.\\
 
 From this time on, neural networks are having a significant importance and are researched widely, it has to notice, that nowadays the computational resources are bigger than some years and that makes that the researchers could be more extensive.\\
 
 \subsection{Introduction to ANN}
 Humans, along the history, have tried to reproduce nature. Evolution, has turned out to be a big coordination in nature. If object recognition, associate concepts, memorize or extracting the semantic of images are focused, humans are provided of those processing information qualities. Trying to get those qualities with technology is a current (and not surprising) challenge.\\
 
-One of the matters that is increasing its importance are neural networks which are inspired in biological neural networks. Neural networks are a important subject of the Artificial Intelligence (AI) and it is a new way (and more sophisticated) of processing information \cite{Rojas}.\\
+One of the matters that is increasing its importance are neural networks which are inspired in biological neuron networks. Neural networks are a important subject of the Artificial Intelligence (AI) and it is a new way (and more sophisticated) of processing information \cite{Rojas}.\\
 
 \subsection{Biological Neural Networks}
 Biological neural networks are part of the nervous system and are formed by neurons units or nervous cells. Each neuron is a capable of process information in different ways by itself \cite{Rojas}.\\
@@ -33,7 +33,7 @@ Biological neural networks are part of the nervous system and are formed by neur
 
 The principal components of a neuron are the nucleus, dendrite, cell body, axon, schwann cell, the node of Ranvier... In figure \ref{fig:Bio-Neuron} a biologica neural is shown in which its components are signalized \cite{BINN}.\\
 
-The soma is the spherical central part of the nerve cell in whose there is a salt and potassium concentration which is covered by the neuronal membrane. Inside the soma is the neuronal nucleus and from the soma branches are extend (dendrites). Nerve cells are connected among them by dendrites. Neurons are transmitting and receiving nervous signals continuously, communicating among them. The information transference is produced, more specifically, in the synaptic clef (space between two neurons connection). This exchange of information is denominated synapses and it is made though electrochemical activities. The axon is a soma extension whose responsibility is transmitting the information electrochemical out of the neuron, by the nervous system thanks to its terminal branches \cite{BINN, neuroscience}\\
+The soma is the spherical central part of the nerve cell in whose there is a salt and potassium concentration which is covered by the neuronal membrane. Inside the soma is the neuronal nucleus and from the soma branches are extend (dendrites). Nerve cells are connected among them by dendrites. Neurons are transmitting and receiving nervous signals continuously, communicating among them. The information transference is produced, more specifically, in the synaptic clef (space between two neurons connection). This exchange of information is denominated synapses and it is made through electrochemical activities. The axon is a soma extension whose responsibility is transmitting the information electrochemical out of the neuron, by the nervous system thanks to its terminal branches \cite{BINN, neuroscience}\\
 
 \subsection{Artificial Neural Networks (ANN)}
 As the same way as the nervous systems is formed by neurons, artificial neural networks are composed by artificial neurons. Each artificial neuron is a processing unit whose input is processed and shared to another neuron or to the output. Neurons are connected among them \cite{BINN}\\
@@ -102,7 +102,7 @@ There are three main different learning procedures that defined following \cite{
 	\item \textbf{Unsupervised Learning:} there is not help in the training, no target and no grade, just the input data. The networks learn to cluster the input data and the weights and bias changes in function of the bias.
 \end{description}
 
-All the learning procedures in neural networks have in common the modification of weights ans bias to learn and obtain the desired output, so the error at the output is minimized. The most useful learning procedure is the supervised learning.\\
+All the learning procedures in neural networks have in common the modification of weights and bias to learn and obtain the desired output, so the error at the output is minimized. The most useful learning procedure is the supervised learning.\\
 
 The gradient descend procedure is an algorithm whose goal is minimize the error of a function \textit{J}.\textit{J(a)} would be the minimum if \textit{a} is the solution. To get the solution the gradient of \textit{J} ($\nabla J(a)$) is calculated for each value of \textit{a}: $\nabla J(a(1))$ is obtained and \textit{a(2)} is obtained moving some distance from \textit{a(2)}, in steps called \textit{learning rate $\eta$}, in direction of the negative gradient. The \textit{a(k+1)} value would be: \cite{Duda}.\\
 
@@ -137,7 +137,7 @@ Being  \textit{k} the unit which receives the input and \textit{j} the output.\\
 
 There are three useful training protocols depending on how training set is used:
 \begin{description}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
-	\item \textbf{Stochastic training:} Samples are choosen randomly and for each sample, weights are updated.
+	\item \textbf{Stochastic training:} Samples are chosen randomly and for each sample, weights are updated.
 	 \item \textbf{Batch training:} All training samples are used to the learning process.
 	 \item \textbf{on-line training:} There is no memory, as the same time as samples are received, they are used once to train.
 \end{description}
@@ -150,11 +150,11 @@ The layers that conforms the networks could be different depending on the mathem
 	\item \textbf{Pooling Layer:} In this layer, the dimensionality is reduced. The most important information is preserved. It is usually used at the output of the convolutional to resume its out \cite{Doorn}. The most used pooling layer is the max-pooling layer, the maximum values are saved.
 	%\item \textbf{No-linearity layer:} Esta capa consta de una función sigmoide punto tanh() aplicado a la entrada de la capa. Sin embargo, en las implementaciones recientes, se han utilizado otras no linealidades más sofisticadas \cite{Lecum3, Doorn}.
 	\item \textbf{Normalization layer:} This layer normalize the activities of the neurons, because of that the processing time could be reducing during training or testing. There are two types of normalization layer: Local Response Normalization (LRN) and Batch Normalization.
-	\item \textbf{Dropout layer:} The ouput of a network could rely on the output of an spefici neurons being this a overfitting cause. To prevent it, during training, some neurons are 'turn off´ setting its value to 0. In this way, neurons are more adaptative. Dropout is a spefic layer that manage this. In stead of \textit{eliminate} neurons, if it is possible that weights are put to 0. In this case, the layer would be \textbf{``DropConnect''} \cite{Doorn}.
-	\item  \textbf{Fully-connected layer:} Fully connected layer is vector in which the input is connected to each nenuron that conforms this layer. This layer is the high-level reasoning layer so, it is used before the classification.
+	\item \textbf{Dropout layer:} The output of a network could rely on the output of an specific neurons being this a overfitting cause. To prevent it, during training, some neurons are 'turn off´ setting its value to 0. In this way, neurons are more adaptable. Dropout is a specific layer that manage this. Instead of \textit{eliminate} neurons, if it is possible that weights are put to 0. In this case, the layer would be \textbf{``DropConnect''} \cite{Doorn}.
+	\item  \textbf{Fully-connected layer:} Fully connected layer is vector in which the input is connected to each neuron that conforms this layer. This layer is the high-level reasoning layer so, it is used before the classification.
 \end{description}
 
-One neural network is defined by its type of layers and the number of neurons, also, there are parameters that also affect to the behaviour of the network (learning rate,...)\cite{Lecum2}.\\
+One neural network is defined by its type of layers and the number of neurons, also, there are parameters that also affect to the behavior of the network (learning rate,...)\cite{Lecum2}.\\
 
 %\subsection{Type of Networks}
 
@@ -167,4 +167,4 @@ One neural network is defined by its type of layers and the number of neurons, a
 \section{Convolutional Neural Network (CNN)}
 Convolutional neural network are a determinate typology of neural network, CNN are inspired in how the visual cortex of a cat works \cite{Doorn}. This type of neural networks are (usually) used with images at the input of the network.\\
 
-Convolutional neural network has been used successfully in recognition and classification task includying document and object recognition, face detection, robotics navegation... \cite{Lecum2, Lecum3}.\\
+Convolutional neural network has been used successfully in recognition and classification task including document and object recognition, face detection, robotics navegation... \cite{Lecum2, Lecum3}.\\

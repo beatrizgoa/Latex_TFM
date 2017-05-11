@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.4)  10 MAY 2017 23:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.4)  11 MAY 2017 11:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1211,13 +1211,6 @@ File: images_databases/casia/real2.jpg Graphic file (type jpg)
 Package pdftex.def Info: images_databases/casia/real2.jpg used on input line 108.
 (pdftex.def)             Requested size: 91.04742pt x 158.01181pt.
  [20]
-
-LaTeX Warning: Citation `S' on page 21 undefined on input line 140.
-
-
-LaTeX Warning: Citation `F' on page 21 undefined on input line 141.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
@@ -1227,22 +1220,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
-
+[21 </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at1-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at2-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at3-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/real2.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
-[21 </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at1-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at2-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/at3-2.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/casia/real2.jpg>] <images_databases/MFSD/at1-1.jpg, id=716, 100.2144pt x 112.7412pt>
+<images_databases/MFSD/at1-1.jpg, id=715, 100.2144pt x 112.7412pt>
 File: images_databases/MFSD/at1-1.jpg Graphic file (type jpg)
  <use images_databases/MFSD/at1-1.jpg>
 Package pdftex.def Info: images_databases/MFSD/at1-1.jpg used on input line 171.
 (pdftex.def)             Requested size: 91.04742pt x 102.4312pt.
- <images_databases/MFSD/at2-1.jpg, id=717, 100.2144pt x 112.7412pt>
+ <images_databases/MFSD/at2-1.jpg, id=716, 100.2144pt x 112.7412pt>
 File: images_databases/MFSD/at2-1.jpg Graphic file (type jpg)
  <use images_databases/MFSD/at2-1.jpg>
 Package pdftex.def Info: images_databases/MFSD/at2-1.jpg used on input line 172.
 (pdftex.def)             Requested size: 91.04742pt x 102.4312pt.
- <images_databases/MFSD/at3-1.jpg, id=718, 100.2144pt x 112.7412pt>
+ <images_databases/MFSD/at3-1.jpg, id=717, 100.2144pt x 112.7412pt>
 File: images_databases/MFSD/at3-1.jpg Graphic file (type jpg)
  <use images_databases/MFSD/at3-1.jpg>
 Package pdftex.def Info: images_databases/MFSD/at3-1.jpg used on input line 173.
@@ -1252,7 +1245,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 173--173
 []\OT1/cmr/m/n/10 (c) smart-phone
  []
 
-<images_databases/MFSD/1.jpg, id=719, 100.2144pt x 112.7412pt>
+<images_databases/MFSD/1.jpg, id=718, 100.2144pt x 112.7412pt>
 File: images_databases/MFSD/1.jpg Graphic file (type jpg)
  <use images_databases/MFSD/1.jpg>
 Package pdftex.def Info: images_databases/MFSD/1.jpg used on input line 174.
@@ -1307,12 +1300,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
-[24] <images_miscelaneus/roccomp.jpg, id=762, 72.27pt x 72.27pt>
+<images_miscelaneus/roccomp.jpg, id=762, 72.27pt x 72.27pt>
 File: images_miscelaneus/roccomp.jpg Graphic file (type jpg)
  <use images_miscelaneus/roccomp.jpg>
 Package pdftex.def Info: images_miscelaneus/roccomp.jpg used on input line 89.
@@ -2669,22 +2662,18 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 202.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 202.
 Package rerunfilecheck Info: File `Memoria_TFM.out' has not changed.
 (rerunfilecheck)             Checksum: 37A3631EBAB8BE0DCF0DDC732830429C;5258.
-
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 202.
  ) 
 Here is how much of TeX's memory you used:
- 13094 strings out of 493029
- 212973 string characters out of 6136235
+ 13092 strings out of 493029
+ 212967 string characters out of 6136235
  328628 words of memory out of 5000000
- 15698 multiletter control sequences out of 15000+600000
+ 15696 multiletter control sequences out of 15000+600000
  16647 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,18n,43p,953b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /home/beaa/Escritorio/Latex_TFM/Memoria_TFM.pdf (90 pages, 13560202 bytes).
+Output written on /home/beaa/Escritorio/Latex_TFM/Memoria_TFM.pdf (90 pages, 13560071 bytes).
 PDF statistics:
  1595 PDF objects out of 1728 (max. 8388607)
  1279 compressed objects within 13 object streams
