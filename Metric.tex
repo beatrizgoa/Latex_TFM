@@ -26,7 +26,7 @@ The error in the validation process is calculated after the logistic regression 
 \subsection{True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}
 If each predicted class is compared with it real target, True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN) values could be calculated. These metrics are usually used for bi-classes problems.\\
 
-Those metrics, are gotten when a positive or negative samples is well or misclassified \cite{Sokolova}. The classified sample or predicted is compared with it real target.\\
+Those metrics, are gotten when a positive or negative samples is correctly or incorrectly classified \cite{Sokolova}. The classified sample or predicted is compared with it real target.\\
 
 If a positive sample is classified as positive is a true positive (TP), but if it has been classified as negative is a false negative (FN).\\
 If a negative sample is classified as negative is a true negative (TN), but if it has been classified as positive, is a false positive (FP).\\
@@ -76,7 +76,7 @@ Where:
   precision = \frac{TP}{TP + FP}
 \end{equation}
 
-\item Accuracy is defined as the proportion of the well-classified samples of all the samples \cite{Sokolova}. The classifiers implemented in scikit-learn library return this value as metric.:
+\item Accuracy is defined as the proportion of the correctly classified samples of all the samples \cite{Sokolova}. The classifiers implemented in scikit-learn library return this value as metric.:
 \begin{equation}
   Accuracy = \frac{TP + TN}{TP + FP + FN + TN}
 \end{equation}
