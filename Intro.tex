@@ -6,22 +6,30 @@
 \emph{In this chapter why this thesis has been realized, its objectives and this document structure are described.\\}
 \end{small}
 \section{Motivation}
-Artificial intelligence is a field that I, personally, find very interesting. Convolutional neural networks and its bio-inspired basis is the most attractive subject that I have considered: how from images, features are learned and the big accuracy of pattern recognition task is gotten makes me learn deeply in this subject. This is the main reason on focusing in this thesis in convolutional neural networks.\\
+Security is a important field that has grown up with technology at the same time that attacks have increase its potential.\\
 
-The object with which neural network would be used in this thesis is face spoofing detection, this is because I would like to work with real problems that could be used in the real world like is this subject, that is being part of the \textit{ABC4EU European Project}. Because of this and the importance of detecting cases of identity theft in nowadays security has driven me to work in spoofing detection attacks using convolutional neural networks.
+Human body as an identification key is a fast and private way that has been possible to implement with computer advances, also being aware of the attacks that could be produced. Using the acquired knowledge along the Master to prevent attacks or improve security of biometrics systems has cough my interest.\\
+
+The desire of working in a anti-spoofing real problem was incremented if the problem was real and I could solve it.\\
+
+On the other hand, artificial intelligence is a very interesting field which nowadays is having a lot of importance and it is expanding. Because of my interest I decided studied an Artificial Vision Master and the field that I most liked was Deep Learning.\\
+
+How bio-inspired algorithms (as Artificial Neural Networks) are learning and classifying or creating music and pictures impressed me and is a knowledge that I would like to get.\\
+
+The opportunity of working in a security and more specifically, and anti-spoofing real problem as FRAV group is dealing being part of the \textit{ABC4EU European Project} added with the chance of solving that problem with Deep Learning encourage me to started to work in this thesis.\\
 
 \section{Objectives and contributions}
-The principal objective of this thesis is being able to classify face images from people. Those images are people images (real users) and images from people trying to impersonate (attacks).\\
+The principal objective of this thesis is being able to detect face spoofing attacks made on images. Those images are images from genuine users (real users) and images from people trying to impersonate. Those attacks are from different nature, printed images, masks or images shown in devices as smartphones or tablets.\\
 
-The samples used are from different databases: CASIA, FRAV and MFSU database. Those databases are formed by real users and attacks samples (images of people with mask, images from smart phones or tablets, ...) and have been used in recognition and spoofing task before.\\
+To differentiate between real users and attacks images a Convolutional Neural Network (CNN) has been developed using Python language and Theano (a Python library). The secondary objective is learning this artificial intelligence research field that nowadays has a significance importance and obtain an CNN architecture which is able to learn the spoofing features which optimise the classification task.\\
 
-To differentiate between real users images and the attacks images a Convolutional Neural Network (CNN) has been developed using Python language and Theano (a Python library). The secondary objective is learning this artificial intelligence research field that nowadays has a significance importance.\\
+Images from different database are feed to the CNN and the output features obtained are the input of the classifiers. Various classifiers has been trained (KNN, logistic regression, Support Vector Machine, ...) for this purpose. Next goal is obtaining the best classifier that suits better to this anti-spoofing detection problem and if dimensionality reduction algorithms as LDA or PCA are needed.\\
 
-Images from each database are feed to the CNN and the output features obtained are the input of the classifiers. Various classifiers has been trained (KNN, logistic regression, Support Vector Machine, ...) for this purpose.\\
+The main contribution of this thesis would be the best combination between a specific CNN architecture and the classifier to classify rightly the most number of samples.\\
 
-Get the best combination between CNN and classifier to classify rightly the most number of samples is another objective. Knowing what database is better for this thesis objectives and why also would be part of the objective.\\
+Trying to differentiate characteristics of the rightly classified samples and incorrectly classified samples would be interesting. The following objective is identify a pattern (if exists) of incorrectly classified samples.\\
 
-Finally, trying to differentiate characteristics of the rightly classified samples and incorrectly classified samples would be interesting. The last objective is identify a pattern (if exists) of bad-classified samples.\\
+Because of the fact that some databases are going to be used for each experiment, the last objective is presented as what database performs a better classification task and why.\\
 
 \section{Thesis structure}
 This thesis is formed by a brief introduction, presented in chapter \ref{ch:introduction}, where the motivation to carry out this project has been exposed and this thesis main objectives are described.\\
