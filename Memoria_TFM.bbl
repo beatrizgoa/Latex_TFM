@@ -5,6 +5,20 @@ J.~Wayman, A.~Jain, D.~Maltoni, and D.~Maio, {\em An Introduction to Biometric
   Authentication Systems}, pp.~1--20.
 \newblock Springer London, 2005.
 
+\bibitem{biometrics_beha}
+M.~Baca, M.~Schatten, and J.~Seva, ``Behavioral and physical biometric
+  characteristics modeling used for its security improvement,'' 2010.
+
+\bibitem{2d_3d_face}
+A.~F. Abate, M.~Nappi, D.~Riccio, and G.~Sabatino, ``2d and 3d face
+  recognition: A survey,'' {\em Pattern Recognition Letters}, vol.~28, no.~14,
+  pp.~1885 -- 1906, 2007.
+
+\bibitem{Intro_biometrics2}
+A.~K. Jain, A.~Ross, and S.~Prabhakar, ``An introduction to biometric
+  recognition,'' {\em IEEE Transactions on Circuits and Systems for Video
+  Technology}, vol.~14, no.~1, pp.~4--20, 2004.
+
 \bibitem{fingerprint_image}
 ``Take biometric security systems to the next level.''
   \url{http://www.rechters.pl/take-biometric-security-systems-to-the-next-level/}.
@@ -15,15 +29,20 @@ J.~Galbally, S.~Marcel, and J.~Fiérrez, ``Biometric antispoofing methods: A
   survey in face recognition.,'' {\em IEEE Access}, vol.~2, pp.~1530--1552,
   2014.
 
+\bibitem{survey2}
+K.~D. I and M.~Grgic, ``A survey of biometric recognition methods,'' in {\em
+  Proceedings. Elmar-2004. 46th International Symposium on Electronics in
+  Marine}, pp.~184--193, 2004.
+
 \bibitem{distorsion}
 D.~Wen, H.~Han, and A.~K. Jain, ``Face spoof detection with image distortion
   analysis,'' {\em IEEE Transactions on Information Forensics and Security},
   vol.~10, no.~4, pp.~746--761, 2015.
 
-\bibitem{survey2}
-K.~D. I and M.~Grgic, ``A survey of biometric recognition methods,'' in {\em
-  Proceedings. Elmar-2004. 46th International Symposium on Electronics in
-  Marine}, pp.~184--193, 2004.
+\bibitem{3dmask}
+N.~Erdogmus and S.~Marcel, ``Spoofing face recognition with 3d masks,'' {\em
+  IEEE Transactions on Information Forensics and Security}, vol.~9, no.~7,
+  pp.~1084--1097, 2014.
 
 \bibitem{LSTM-CNN}
 Z.~Xu, S.~Li, and W.~Deng, ``Learning temporal features using {LSTM-CNN}
@@ -66,6 +85,11 @@ M.~F. Bear, B.~W.Connors, and M.~A. Paradiso.
 B.~J.~A. Kr{\"o}se and P.~P. van~der Smagt, {\em An Introduction to Neural
   Networks}.
 \newblock The University of Amsterdam, 8th~ed., 1996.
+
+\bibitem{Analogies}
+I.~Basheer and M.~N. Hajmeer, ``Artificial neural networks: fundamentals,
+  computing, design, and application,'' {\em Journal of Microbiological
+  Methods}, vol.~43, no.~1, pp.~3 -- 31, 2000.
 
 \bibitem{NNDesign}
 H.~B. Demuth, M.~H. Beale, O.~De~Jess, and M.~T. Hagan, {\em Neural Network

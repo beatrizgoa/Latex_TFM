@@ -1,83 +1,86 @@
 \select@language {american}
 \contentsline {xchapter}{}{i}{Doc-Start}
-\contentsline {chapter}{Contents}{v}{chapter*.2}
+\contentsline {chapter}{Contents}{vii}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.0.1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.0.1.1}
-\contentsline {section}{\numberline {1.2}Objectives}{2}{section.0.1.2}
-\contentsline {section}{\numberline {1.3}Thesis structure}{2}{section.0.1.3}
+\contentsline {section}{\numberline {1.2}Objectives and contributions}{2}{section.0.1.2}
+\contentsline {section}{\numberline {1.3}Thesis structure}{3}{section.0.1.3}
 \contentsline {chapter}{\numberline {2}Theoretical Basics}{5}{chapter.0.2}
 \contentsline {section}{\numberline {2.1}Anti-spoofing and biometrics systems}{6}{section.0.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Spoofing and biometrics introduction}{6}{subsection.0.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Face anti-spoofing}{7}{subsection.0.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Related Works}{8}{subsection.0.2.1.3}
-\contentsline {section}{\numberline {2.2}Neural Network background theory}{9}{section.0.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Historical introduction}{9}{subsection.0.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Introduction to ANN}{10}{subsection.0.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Biological Neural Networks}{10}{subsection.0.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Artificial Neural Networks (ANN)}{11}{subsection.0.2.2.4}
-\contentsline {subsubsection}{Analogies between ANN and Biological Neural Networks}{13}{subsubsection*.8}
-\contentsline {subsubsection}{Learning}{13}{subsubsection*.10}
-\contentsline {subsubsection}{Type of Layers}{15}{subsubsection*.11}
-\contentsline {section}{\numberline {2.3}Convolutional Neural Network (CNN)}{16}{section.0.2.3}
-\contentsline {section}{\numberline {2.4}Programming language and frameworks}{16}{section.0.2.4}
-\contentsline {section}{\numberline {2.5}Databases}{16}{section.0.2.5}
-\contentsline {subsection}{\numberline {2.5.1}MNIST digit database}{17}{subsection.0.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}FRAV dataset}{18}{subsection.0.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}CASIA dataset}{20}{subsection.0.2.5.3}
-\contentsline {subsection}{\numberline {2.5.4}MSU - MFSD database}{22}{subsection.0.2.5.4}
-\contentsline {section}{\numberline {2.6}Metrics}{22}{section.0.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Cost and Error rate}{23}{subsection.0.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{23}{subsection.0.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}ROC curve and Precision and Recall curve}{24}{subsection.0.2.6.3}
-\contentsline {subsection}{\numberline {2.6.4}APCER and BPCER}{26}{subsection.0.2.6.4}
-\contentsline {section}{\numberline {2.7}Classifiers, Reduction of the dimensionality algorithms and Cross Validation}{26}{section.0.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Classifiers}{27}{subsection.0.2.7.1}
-\contentsline {subsubsection}{Logistic Regression}{27}{subsubsection*.19}
-\contentsline {subsubsection}{Support Vector Machine}{28}{subsubsection*.20}
-\contentsline {subsubsection}{K Nearest Neighbours}{29}{subsubsection*.22}
-\contentsline {subsubsection}{Decision Tree}{29}{subsubsection*.23}
-\contentsline {subsection}{\numberline {2.7.2}Dimensionality reduction algorithms}{30}{subsection.0.2.7.2}
-\contentsline {subsubsection}{Linear Discriminant Analysis}{30}{subsubsection*.25}
-\contentsline {subsubsection}{Principal Component Analysis}{31}{subsubsection*.26}
-\contentsline {subsection}{\numberline {2.7.3}Cross Validation}{31}{subsection.0.2.7.3}
-\contentsline {chapter}{\numberline {3}Methodology}{33}{chapter.0.3}
-\contentsline {section}{\numberline {3.1}LeNet-5}{33}{section.0.3.1}
-\contentsline {subsection}{\numberline {3.1.1}LeNet-5 specifications}{34}{subsection.0.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}LeNet-5 Results}{35}{subsection.0.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Modifying LeNet}{37}{subsection.0.3.1.3}
-\contentsline {subsubsection}{Changing the batch size}{37}{subsubsection*.31}
-\contentsline {subsubsection}{Changing activation function, normalization and weights initialization}{39}{subsubsection*.33}
-\contentsline {subsection}{\numberline {3.1.4}LeNet-5 and RGB FRAV faces database}{43}{subsection.0.3.1.4}
-\contentsline {section}{\numberline {3.2}Adapting LeNet-5 architecture}{44}{section.0.3.2}
-\contentsline {subsection}{\numberline {3.2.1}New Architecture}{45}{subsection.0.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Databases}{46}{subsection.0.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Experiments Description}{46}{subsection.0.3.2.3}
-\contentsline {section}{\numberline {3.3}Final architecture}{48}{section.0.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Architecture}{48}{subsection.0.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Database}{48}{subsection.0.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Classification}{49}{subsection.0.3.3.3}
-\contentsline {chapter}{\numberline {4}Results}{55}{chapter.0.4}
-\contentsline {section}{\numberline {4.1}Training and validating process}{56}{section.0.4.1}
-\contentsline {subsection}{\numberline {4.1.1}CASIA Image database}{56}{subsection.0.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}CASIA Video database}{56}{subsection.0.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}FRAV database}{57}{subsection.0.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}FRAV RGB+NIR (feature level) database}{57}{subsection.0.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}FRAV RGB+NIR (classification level) database}{58}{subsection.0.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}MFSD database}{60}{subsection.0.4.1.6}
-\contentsline {section}{\numberline {4.2}Testing process}{60}{section.0.4.2}
-\contentsline {subsection}{\numberline {4.2.1}CASIA Image database}{61}{subsection.0.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}CASIA Video database}{62}{subsection.0.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}FRAV database}{62}{subsection.0.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}FRAV RGB+NIR (feature level) database}{63}{subsection.0.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}FRAV RGB+NIR (classification level) database}{64}{subsection.0.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}MFSD-MSU database}{65}{subsection.0.4.2.6}
-\contentsline {section}{\numberline {4.3}Comparative among databases}{66}{section.0.4.3}
-\contentsline {subsection}{\numberline {4.3.1}FRAVs databases}{66}{subsection.0.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}CASIAs databases}{66}{subsection.0.4.3.2}
-\contentsline {section}{\numberline {4.4}Executing time}{68}{section.0.4.4}
-\contentsline {chapter}{\numberline {5}Conclusions and future work}{69}{chapter.0.5}
-\contentsline {section}{\numberline {5.1}Conclusions}{69}{section.0.5.1}
-\contentsline {section}{\numberline {5.2}Future work}{70}{section.0.5.2}
-\contentsline {chapter}{Bibliography}{73}{chapter*.64}
-\contentsline {chapter}{List of Figures}{77}{chapter*.65}
-\contentsline {chapter}{List of Tables}{81}{chapter*.66}
+\contentsline {subsection}{\numberline {2.1.1}Historical introduction}{6}{subsection.0.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Biometrics}{7}{subsection.0.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Biometric system}{7}{subsection.0.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Spoofing}{8}{subsection.0.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Face anti-spoofing}{9}{subsection.0.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}Related Works}{10}{subsection.0.2.1.6}
+\contentsline {section}{\numberline {2.2}Neural Network background theory}{10}{section.0.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Historical introduction}{11}{subsection.0.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Introduction to ANN}{12}{subsection.0.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Biological Neural Networks}{12}{subsection.0.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Artificial Neural Networks (ANN)}{13}{subsection.0.2.2.4}
+\contentsline {subsubsection}{Analogies between ANN and Biological Neural Networks}{14}{subsubsection*.11}
+\contentsline {subsubsection}{Learning}{15}{subsubsection*.13}
+\contentsline {subsubsection}{Type of Layers}{17}{subsubsection*.14}
+\contentsline {section}{\numberline {2.3}Convolutional Neural Network (CNN)}{18}{section.0.2.3}
+\contentsline {section}{\numberline {2.4}Programming language and frameworks}{18}{section.0.2.4}
+\contentsline {section}{\numberline {2.5}Databases}{18}{section.0.2.5}
+\contentsline {subsection}{\numberline {2.5.1}MNIST digit database}{19}{subsection.0.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}FRAV dataset}{20}{subsection.0.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}CASIA dataset}{22}{subsection.0.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}MSU - MFSD database}{24}{subsection.0.2.5.4}
+\contentsline {section}{\numberline {2.6}Metrics}{24}{section.0.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Cost and Error rate}{25}{subsection.0.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{25}{subsection.0.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}ROC curve and Precision and Recall curve}{26}{subsection.0.2.6.3}
+\contentsline {subsection}{\numberline {2.6.4}APCER and BPCER}{28}{subsection.0.2.6.4}
+\contentsline {section}{\numberline {2.7}Classifiers, Reduction of the dimensionality algorithms and Cross Validation}{28}{section.0.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Classifiers}{29}{subsection.0.2.7.1}
+\contentsline {subsubsection}{Logistic Regression}{29}{subsubsection*.22}
+\contentsline {subsubsection}{Support Vector Machine}{30}{subsubsection*.23}
+\contentsline {subsubsection}{K Nearest Neighbours}{31}{subsubsection*.25}
+\contentsline {subsubsection}{Decision Tree}{31}{subsubsection*.26}
+\contentsline {subsection}{\numberline {2.7.2}Dimensionality reduction algorithms}{32}{subsection.0.2.7.2}
+\contentsline {subsubsection}{Linear Discriminant Analysis}{32}{subsubsection*.28}
+\contentsline {subsubsection}{Principal Component Analysis}{33}{subsubsection*.29}
+\contentsline {subsection}{\numberline {2.7.3}Cross Validation}{33}{subsection.0.2.7.3}
+\contentsline {chapter}{\numberline {3}Methodology}{35}{chapter.0.3}
+\contentsline {section}{\numberline {3.1}LeNet-5}{35}{section.0.3.1}
+\contentsline {subsection}{\numberline {3.1.1}LeNet-5 specifications}{36}{subsection.0.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}LeNet-5 Results}{37}{subsection.0.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Modifying LeNet}{39}{subsection.0.3.1.3}
+\contentsline {subsubsection}{Changing the batch size}{39}{subsubsection*.34}
+\contentsline {subsubsection}{Changing activation function, normalization and weights initialization}{41}{subsubsection*.36}
+\contentsline {subsection}{\numberline {3.1.4}LeNet-5 and RGB FRAV faces database}{45}{subsection.0.3.1.4}
+\contentsline {section}{\numberline {3.2}Adapting LeNet-5 architecture}{46}{section.0.3.2}
+\contentsline {subsection}{\numberline {3.2.1}New Architecture}{47}{subsection.0.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Databases}{48}{subsection.0.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Experiments Description}{48}{subsection.0.3.2.3}
+\contentsline {section}{\numberline {3.3}Final architecture}{50}{section.0.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Architecture}{50}{subsection.0.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Database}{50}{subsection.0.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Classification}{51}{subsection.0.3.3.3}
+\contentsline {chapter}{\numberline {4}Results}{57}{chapter.0.4}
+\contentsline {section}{\numberline {4.1}Training and validating process}{58}{section.0.4.1}
+\contentsline {subsection}{\numberline {4.1.1}CASIA Image database}{58}{subsection.0.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}CASIA Video database}{58}{subsection.0.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}FRAV database}{59}{subsection.0.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}FRAV RGB+NIR (feature level) database}{59}{subsection.0.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}FRAV RGB+NIR (classification level) database}{60}{subsection.0.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}MFSD database}{62}{subsection.0.4.1.6}
+\contentsline {section}{\numberline {4.2}Testing process}{62}{section.0.4.2}
+\contentsline {subsection}{\numberline {4.2.1}CASIA Image database}{63}{subsection.0.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}CASIA Video database}{64}{subsection.0.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}FRAV database}{64}{subsection.0.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}FRAV RGB+NIR (feature level) database}{65}{subsection.0.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}FRAV RGB+NIR (classification level) database}{66}{subsection.0.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}MFSD-MSU database}{67}{subsection.0.4.2.6}
+\contentsline {section}{\numberline {4.3}Comparative among databases}{68}{section.0.4.3}
+\contentsline {subsection}{\numberline {4.3.1}FRAVs databases}{68}{subsection.0.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}CASIAs databases}{68}{subsection.0.4.3.2}
+\contentsline {section}{\numberline {4.4}Executing time}{70}{section.0.4.4}
+\contentsline {chapter}{\numberline {5}Conclusions and future work}{71}{chapter.0.5}
+\contentsline {section}{\numberline {5.1}Conclusions}{71}{section.0.5.1}
+\contentsline {section}{\numberline {5.2}Future work}{72}{section.0.5.2}
+\contentsline {chapter}{Bibliography}{75}{chapter*.67}
+\contentsline {chapter}{List of Figures}{79}{chapter*.68}
+\contentsline {chapter}{List of Tables}{83}{chapter*.69}

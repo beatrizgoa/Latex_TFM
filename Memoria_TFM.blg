@@ -1,50 +1,8 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: Memoria_TFM.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Memoria_TFM.aux
 The style file: ieeetr.bst
 Database file #1: references.bib
+Warning--empty booktitle in biometrics_beha
 Warning--empty publisher in BINN
 Warning--empty title in neuroscience
 Warning--empty publisher in imagenet
-You've used 39 entries,
-            1876 wiz_defined-function locations,
-            711 strings with 10170 characters,
-and the built_in function-call counts, 9109 in all, are:
-= -- 888
-> -- 328
-< -- 1
-+ -- 127
-- -- 88
-* -- 566
-:= -- 1226
-add.period$ -- 54
-call.type$ -- 39
-change.case$ -- 33
-chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 481
-empty$ -- 971
-format.name$ -- 88
-if$ -- 2283
-int.to.chr$ -- 0
-int.to.str$ -- 39
-missing$ -- 37
-newline$ -- 135
-num.names$ -- 31
-pop$ -- 204
-preamble$ -- 1
-purify$ -- 0
-quote$ -- 0
-skip$ -- 292
-stack$ -- 0
-substring$ -- 515
-swap$ -- 165
-text.length$ -- 1
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
-warning$ -- 3
-while$ -- 75
-width$ -- 41
-write$ -- 355
-(There were 3 warnings)
+(There were 4 warnings)

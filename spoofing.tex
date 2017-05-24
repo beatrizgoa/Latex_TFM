@@ -1,21 +1,51 @@
-%!TEX root = Memoria_TFM.tex
+ %!TEX root = Memoria_TFM.tex
 \section{Anti-spoofing and biometrics systems}
 At the same time as technology advance, capture systems and processing algorithms have proceed too. This open an immense options quantity and one of them is the capability of developing more sophisticated identification systems, giving way to biometrics systems.\\
 
 \subsection{Historical introduction}
 There were in the 1870s when the necessity of identifying people getting physical characteristics appeared. Alphonse Bertillon had the desire of identifing jail prisoners, in order to do that, the skull diameter, arm and foot length were utilized for that purpose in USA until the 1920s \cite{Intro_biometrics}.\\
 
- There were in the 1880s when fingerprint and facial identification were proposed. But with the appearance of digital signals processing systems in 1960, the voice and the fingerprint biometric systems were started to be investigated and researches started to think to use this system to identification in access control security \cite{Intro_biometrics}.\\
+There were in the 1880s when fingerprint and facial identification were proposed. With the appearance of digital signals processing systems in 1960, the voice and the fingerprint biometric systems were started to be investigated and researches started to think to use this system to identification in access control security \cite{Intro_biometrics}.\\
  
 Ten years later, the geometry of the hand was started to be a field of interest for automated technologies of identification. The retina and signature verification appeared in the 80s and after a short time the face systems \cite{Intro_biometrics}.\\
 
- The last biometrics systems appeared in the 1990s with the iris recognition \cite{Intro_biometrics}.\\
+The last biometrics systems appeared in the 1990s with the iris recognition \cite{Intro_biometrics}.\\
 
-\subsection{BLAAAAAA}
-Some biometrics systems have been mentioned above. Each one uses a specific part of the human body to identify or verify an identity. But there are more biometrics than the described above as the veins or the ear.\\
+\subsection{Biometrics}
+Biometrics is a characteristics that each human own, is inherent and is exclusive for each human. Because of that, are used as identification.\\
 
-As the same time as biometrics authentication systems appeared, the attacks to trick systems emerge and they are called \textit{spoofing attacks}. For example making plaster molds for geometric hand biometrics or fingerprints would be an attack as the presented in figure \ref{fig:Spoof_fingerprint} (image has been obtained from \cite{fingerprint_image}).\\
+Biometrics could be distinguished as physical or behavioural biometrics. Physical biometrics are characteristics which every human is born with, is genetic, fingerprint, face, DNA, ear and iris are physical biometrics; behavioural biometrics are characteristics which has been matured with person, is  psychological, signature and gait are behavioural biometrics \cite{biometrics_beha}.\\
 
+Nowadays, the quantity of biometrics is considerable. There are not a biometric which is only used or could be selected as optimal, although fingerprint is the most popular biometrics \cite{2d_3d_face}. The characteristic of each biometrics makes it appropriate for the application \cite{Intro_biometrics}.\\% The most common biometrics are described \cite{Intro_biometrics}:
+
+%\begin{description}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt] \item \textbf{DNA:} using the DNA for recognition is widely used in forensic. This biometric is intrusive and identical twins share the ADN \cite{Intro_biometrics}. \end{description}
+
+%\subsubsection{Face biometric}
+%The thesis research is focused on face biometric.\\
+
+\subsection{Biometric system}
+A biometric system could be defined as a structure which collect determined biometric data from a user. The input data is processed in order to obtain features with which are compared with template samples. A biometric system could be labelled as a recognition system or verification system depending on the realized task \cite{Intro_biometrics2}:
+\begin{description}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
+\item \textbf{Verification system:} user claims an identity and the system validates the identity comparing the acquired data with the stored in the template database.
+\item \textbf{Recognition or Identification system:} user data is compared with the all the template database to find user's identity. The identity is not claimed by the user and is given by the system in function of features. 
+\end{description}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\textwidth]{images_miscelaneus/verif_identif.PNG}
+\caption{Verification and Identification system diagram. Image obtained from \cite{Intro_biometrics2}} \label{fig:Verif_ident}
+\end{figure}
+
+Figure \ref{fig:Verif_ident} (figure obtained from \cite{Intro_biometrics2}) represents briefly the process of the acquired data until be compared  with the system database if it is a verification or recognition system. The modules showed in figure \ref{fig:Verif_ident} are described \cite{Intro_biometrics2}: 
+\begin{description}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
+\item \textbf{Sensor:} the first module is the sensor, which obtain the user's biometric. Depending on the biometrics, the sensor can vary greatly.
+\item \textbf{Feature extractor:} input data is processed to obtain the features. The features that are extracted in this module should be the same as the saved in the database.
+\item \textbf{Matcher:} features obtained from the previous module are compared or classify with the templates database so the identity of the user could be verified or assigned.
+\item \textbf{Database:} the database is formed by templates which are going used as true samples to compare the obtained with sensors. An user should be registered to the system contributing with it biometric template. 
+\end{description}
+
+\subsection{Spoofing}
+As the same time as biometrics authentication systems appeared, the attacks to trick systems emerge and they are called \textit{spoofing attacks}. For example making plaster molds for geometric hand biometrics or fingerprints would be an attack as the presented in figure \ref{fig:Spoof_fingerprint} (image obtained from \cite{fingerprint_image}).\\
 
 \begin{figure}[htb]
 \centering
@@ -23,7 +53,7 @@ As the same time as biometrics authentication systems appeared, the attacks to t
 \caption{Spoofing fingerprint. Image obtained from \cite{fingerprint_image}} \label{fig:Spoof_fingerprint}
 \end{figure}
 
-Spoofing is referenced to create a new and genuine identity or impersonate a system. The attack would depend on the biometry and the capturing system \cite{Spoofing_survey}.\\
+Spoofing is referenced to impersonate a biometric system trying to be verified or get a identity when user is not a genuine. The attack would depend on the biometry and the capturing system \cite{Spoofing_survey}. Attacks are usually made with artificial articles.\\
 
 In order to get the tricks and do not allow spoofing attacks, \textit{anti-spoofing} tries to minimize the attacks or prevent them.\\
 
@@ -33,20 +63,29 @@ There are two ways of evaluating anti-spoofing scenarios \cite{Spoofing_survey}:
 \item \textbf{System-based or scenario evaluation:} to evaluate the entire acquisition systems.
 \end{description}
 
-When an identification or biometric system is used two general task could perform:
-\begin{description}[noitemsep,topsep=8pt,parsep=0pt,partopsep=20pt]
-\item \textbf{Recognition:} when the system, from the input, has to decide the identity of the user (name, ID,...)
-\item \textbf{Verification:} when the system is given a determined identity and has to decide if it is the genuine or is a person trying to supplant the identity.
-\end{description}
-
-In this project it is going to be developed the algorithm to detect anti-spoofing attacks when the face is using as biometrics. Given an image, the system has to decide if it is an attack or a genuine user. It would be a verification task.\\
+In this project it is going to be developed the algorithm to detect anti-spoofing attacks when face is using as biometrics. Given an image, the system has to decide if it is an attack or a genuine user. It would be a verification task.\\
 
 \subsection{Face anti-spoofing}
-Face is a very used biometric system and also it is one of the most attacked biometrics because of the fact that the capturing system for face biometrics could be as simple as a RGB camera, so a printed photo or an image in a smartphone could be easy to acquire as spoofing attacks. Otherwise, a spoofing attack for an vein biometrics is more sophisticated than a printed photo.\\
+Face biometrics is very used biometric system because of its attributes as is not intrusive, it is easy to capture images, it is very accepted by people as biometrics. \\
 
-The principal or main used acquire system are RGB cameras although other cameras as infra-red  or depth camera are used too. Using different types of camera could help to detect anti-spoofing attacks. The main used attacks for this biometric is a printed image or a mask and displaying a photo or video in a smartphone or tablet and its cost is low \cite{distorsion}.\\
+The principal or main used acquire system are RGB cameras although other cameras as infra-red  or depth camera are used too. Using different types of camera could help to detect anti-spoofing attacks.\\
 
-Two big advantages of this biometric are the non-intrusive method and the positive acceptance of this biometric in society. On the other hand, compare frontal face with faces with a determined angle is not as well managed as compared frontal with frontal faces \cite{survey2}.\\
+The disadvantages of cameras as sensor are that the illumination should be controlled and images from differents angles could not be suitable, in addition, people expresions are complicated to work with \cite{survey2}.\\
+
+Attack to this biometric system is also easy, face images from people are easy to obtain in social networks. The spoofing attacks could be 3D attacks if 3D masks are used or 2D attacks if printed photos, 2D mask or displaying an image or video in a smarthpone or tablet \cite{2d_3d_face}. Moreover, those attacks cost is very low \cite{distorsion}.\\ 
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\textwidth]{images_miscelaneus/fig_masks.png}
+\caption{3D face masks. Image obtained from \cite{3dmask}} \label{fig:3dMasks}
+\end{figure}
+
+In figure \ref{fig:3dMasks} (image obtained from \cite{3dmask}) are represented 3D faces mask. This masks are used for a 3D face mask database but could be used as face spoofing attack.\\
+
+As a camera could be used as sensor, the location of verification or identification could be in a static and specific place as the office entry or could be a wide place as a subway or an airport \cite{survey2}.\\
+
+To argument spoofing, three convectional methods are used in the processing module to verify that no artefacts are being used: texture-based, motion-based and multispectral-based anti-spoofing techniques; deep learning is a new anti-spoofing method that is being  profoundly researched \cite{LSTM-CNN}.
+
 
 \subsection{Related Works}
 There are a lot of research work in face anti-spoofing and different method has been tested in researches.\\
