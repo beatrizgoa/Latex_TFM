@@ -18,8 +18,8 @@
 \contentsline {subsection}{\numberline {3.2.1}Historical introduction}{12}{subsection.0.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Introduction to ANN}{13}{subsection.0.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Biological Neural Networks}{14}{subsection.0.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Artificial Neural Networks (ANN)}{14}{subsection.0.3.2.4}
-\contentsline {subsubsection}{Analogies between ANN and Biological Neural Networks}{17}{subsubsection*.11}
+\contentsline {subsection}{\numberline {3.2.4}Artificial Neural Networks (ANN)}{15}{subsection.0.3.2.4}
+\contentsline {subsubsection}{Analogies between ANN and Biological Neural Networks}{16}{subsubsection*.11}
 \contentsline {subsubsection}{Learning}{17}{subsubsection*.13}
 \contentsline {subsubsection}{Type of Layers}{19}{subsubsection*.14}
 \contentsline {section}{\numberline {3.3}Convolutional Neural Network (CNN)}{19}{section.0.3.3}
