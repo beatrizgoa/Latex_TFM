@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  25 MAY 2017 16:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  25 MAY 2017 16:50
 entering extended mode
 **./Memoria_TFM.tex
 (Memoria_TFM.tex
@@ -1032,35 +1032,35 @@ Package pdftex.def Info: images_miscelaneus/verif_identif.PNG used on input lin
 e 35.
 (pdftex.def)             Requested size: 227.62206pt x 177.75226pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
- []
-
-
-<images_miscelaneus/spoofing_fingerprint.jpg, id=522, 519.9425pt x 347.2975pt>
-File: images_miscelaneus/spoofing_fingerprint.jpg Graphic file (type jpg)
-
-<use images_miscelaneus/spoofing_fingerprint.jpg>
-Package pdftex.def Info: images_miscelaneus/spoofing_fingerprint.jpg used on in
-put line 52.
-(pdftex.def)             Requested size: 227.62206pt x 152.03766pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
 [9 <./images_miscelaneus/verif_identif.PNG>]
+<images_miscelaneus/spoofing_fingerprint.jpg, id=531, 519.9425pt x 347.2975pt>
+File: images_miscelaneus/spoofing_fingerprint.jpg Graphic file (type jpg)
+
+<use images_miscelaneus/spoofing_fingerprint.jpg>
+Package pdftex.def Info: images_miscelaneus/spoofing_fingerprint.jpg used on in
+put line 54.
+(pdftex.def)             Requested size: 227.62206pt x 152.03766pt.
+
 Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
 
-Overfull \hbox (1.484pt too wide) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Overfull \hbox (1.484pt too wide) in paragraph at lines 73--74
 []\OT1/cmr/m/n/12 Evaluate the en-tire ac-qui-si-tion sys-tems in-clud-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
@@ -3362,13 +3362,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--201
 (Memoria_TFM.bbl [77] [78
 
 ]
-Underfull \hbox (badness 1194) in paragraph at lines 53--56
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no © in font cmr12!
+
+Underfull \hbox (badness 1194) in paragraph at lines 58--61
 []\OT1/cmr/m/n/12 ``Take bio-met-ric se-cu-rity sys-tems to the next level.'' [
 ]$http : / / www . rechters . pl /
  []
 
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no © in font cmr12!
 [79]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ± in font cmr12!
@@ -3453,7 +3454,7 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Memoria_TFM.pdf (98 pages, 14132947 bytes).
+Output written on Memoria_TFM.pdf (98 pages, 14132931 bytes).
 PDF statistics:
  1702 PDF objects out of 1728 (max. 8388607)
  363 named destinations out of 1000 (max. 500000)
