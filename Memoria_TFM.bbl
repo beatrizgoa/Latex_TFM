@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{distorsion}
+D.~Wen, H.~Han, and A.~K. Jain, ``Face spoof detection with image distortion
+  analysis,'' {\em IEEE Transactions on Information Forensics and Security},
+  vol.~10, no.~4, pp.~746--761, 2015.
+
 \bibitem{LSTM-CNN}
 Z.~Xu, S.~Li, and W.~Deng, ``Learning temporal features using {LSTM-CNN}
   architecture for face anti-spoofing,'' in {\em 3rd {IAPR} Asian Conference on
@@ -15,11 +20,6 @@ M.~K. Hani and S.~S. Liew, ``A convolutional neural network approach for face
 \bibitem{yangLL14}
 J.~Yang, Z.~Lei, and S.~Z. Li, ``Learn convolutional neural network for face
   anti-spoofing,'' {\em CoRR}, vol.~abs/1408.5601, 2014.
-
-\bibitem{distorsion}
-D.~Wen, H.~Han, and A.~K. Jain, ``Face spoof detection with image distortion
-  analysis,'' {\em IEEE Transactions on Information Forensics and Security},
-  vol.~10, no.~4, pp.~746--761, 2015.
 
 \bibitem{LBP_FaceAnti}
 I.~Chingovska, A.~Anjos, and S.~Marcel, ``On the effectiveness of local binary

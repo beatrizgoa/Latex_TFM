@@ -3,11 +3,19 @@
 \mtcskip
 
 \begin{small}
-\emph{In this chapter, the researched work in the same field as this thesis is presented.}
+\emph{In this chapter, the researched work in the same field as this thesis is summarized.}
 \end{small} 
 
 \section{Related Works}
-There are a lot of research work in face anti-spoofing and different method has been tested in researches.\\
+The anti-spoofing is an ample investigation field, and concretely, face anti-spoofing is one of the most investigated.\\
+
+Face anti-spoofing investigation is usually split in four research groups: Using texture-based features, motion or liveness detection, analysing the image quality and multispectral-based methods \cite{distorsion,LSTM-CNN}.\\
+
+Texture based methods use Local Binary Patterns (LBP),  Histogram of Oriented Gradients (HOG) or Difference of Gaussian (DoG) algorithms to extract images features.\\
+
+Motion or liveness detection methods search for movement in videos asking user to do something or analysing the frames sequence. The liveness could be detected in blinking eyes, lip movement or head rotation.\\
+
+
 
 Deep learning has been used to detect spoofing attacks. Convolutional neural networks are used to extract features and be allowed to differenciate between genuine and fake users. In \cite{LSTM-CNN} A LSTM-CNN has been developed, where the input in stead of being images are video and the network learn temporal features. In \cite{Verification} the purpose is the verification task, where the input are two images and the convolutional neural network is a Siamese. Another Anti-spoofing research with deep learning is the developed in \cite{yangLL14} where a simple Convolutional neural network has been developed to difference between genuine and no-real users.\\
 

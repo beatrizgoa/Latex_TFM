@@ -36,13 +36,10 @@
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Motivation}{1}{section.0.1.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Objectives and contributions}{2}{section.0.1.2}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.3}Thesis structure}{3}{section.0.1.3}}
+\citation{distorsion,LSTM-CNN}
 \citation{LSTM-CNN}
 \citation{Verification}
 \citation{yangLL14}
-\citation{distorsion}
-\citation{LBP_FaceAnti}
-\citation{distorsion}
-\citation{Blink_antispoofing}
 \@writefile{toc}{\contentsline {chapter}{\numberline {2}Literature Review}{5}{chapter.0.2}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -50,6 +47,10 @@
 \@writefile{lot}{\contentsline {xchapter}{Literature Review}{5}{chapter.0.2}}
 \newlabel{ch:review}{{2}{5}{Literature Review}{chapter.0.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}Related Works}{5}{section.0.2.1}}
+\citation{distorsion}
+\citation{LBP_FaceAnti}
+\citation{distorsion}
+\citation{Blink_antispoofing}
 \citation{Intro_biometrics}
 \@writefile{toc}{\contentsline {chapter}{\numberline {3}Background Theory}{7}{chapter.0.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
@@ -81,64 +82,69 @@
 \newlabel{fig:Verif_ident}{{3.1}{9}{Verification and Identification system diagram. Image obtained from \cite {Intro_biometrics2}\relax }{figure.caption.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Spoofing}{9}{subsection.0.3.1.4}}
 \citation{Spoofing_survey}
-\citation{survey2}
+\citation{Spoofing_survey}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Spoofing fingerprint. Image obtained from \cite  {fingerprint_image}\relax }}{10}{figure.caption.5}}
 \newlabel{fig:Spoof_fingerprint}{{3.2}{10}{Spoofing fingerprint. Image obtained from \cite {fingerprint_image}\relax }{figure.caption.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Face anti-spoofing}{10}{subsection.0.3.1.5}}
+\citation{survey2,2d_3d_face}
+\citation{survey2}
 \citation{2d_3d_face}
 \citation{distorsion}
 \citation{3dmask}
 \citation{3dmask}
 \citation{3dmask}
-\citation{survey2}
-\citation{LSTM-CNN}
-\citation{BINN}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Face anti-spoofing}{11}{subsection.0.3.1.5}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces 3D face masks. Image obtained from \cite  {3dmask}\relax }}{11}{figure.caption.6}}
 \newlabel{fig:3dMasks}{{3.3}{11}{3D face masks. Image obtained from \cite {3dmask}\relax }{figure.caption.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Neural Network background theory}{11}{section.0.3.2}}
+\citation{Spoofing_survey}
+\citation{Spoofing_survey}
+\citation{distorsion,Spoofing_survey}
+\citation{distorsion,Spoofing_survey}
+\citation{distorsion}
+\citation{BINN}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Neural Network background theory}{12}{section.0.3.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Historical introduction}{12}{subsection.0.3.2.1}}
 \citation{Rojas}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Introduction to ANN}{13}{subsection.0.3.2.2}}
 \citation{Rojas}
 \citation{BINN}
 \citation{BINN}
 \citation{BINN}
 \citation{BINN,neuroscience}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Introduction to ANN}{13}{subsection.0.3.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Biological Neural Networks}{13}{subsection.0.3.2.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Biological Neural Network. Image obtained from \cite  {BINN}\relax }}{13}{figure.caption.7}}
-\newlabel{fig:Bio-Neuron}{{3.4}{13}{Biological Neural Network. Image obtained from \cite {BINN}\relax }{figure.caption.7}{}}
 \citation{BINN}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Biological Neural Networks}{14}{subsection.0.3.2.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Biological Neural Network. Image obtained from \cite  {BINN}\relax }}{14}{figure.caption.7}}
+\newlabel{fig:Bio-Neuron}{{3.4}{14}{Biological Neural Network. Image obtained from \cite {BINN}\relax }{figure.caption.7}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Artificial Neural Networks (ANN)}{14}{subsection.0.3.2.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Schematic of a general neural network.\relax }}{14}{figure.caption.8}}
-\newlabel{fig:esquemaneuronal}{{3.5}{14}{Schematic of a general neural network.\relax }{figure.caption.8}{}}
 \citation{krose}
-\citation{BINN}
-\citation{BINN}
-\citation{BINN}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Simplest neural network architecture.\relax }}{15}{figure.caption.9}}
-\newlabel{fig:neuronasencilla}{{3.6}{15}{Simplest neural network architecture.\relax }{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Schematic of a general neural network.\relax }}{15}{figure.caption.8}}
+\newlabel{fig:esquemaneuronal}{{3.5}{15}{Schematic of a general neural network.\relax }{figure.caption.8}{}}
 \newlabel{eq:ecuation_neuronasencilla}{{3.1}{15}{Artificial Neural Networks (ANN)}{equation.0.3.2.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Analogies between ANN and Biological Neural Networks}{15}{subsubsection*.11}}
+\citation{BINN}
+\citation{BINN}
+\citation{BINN}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Simplest neural network architecture.\relax }}{16}{figure.caption.9}}
+\newlabel{fig:neuronasencilla}{{3.6}{16}{Simplest neural network architecture.\relax }{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Different activation functions. Image obtained from \cite  {BINN}\relax }}{16}{figure.caption.10}}
+\newlabel{fig:activation_function}{{3.7}{16}{Different activation functions. Image obtained from \cite {BINN}\relax }{figure.caption.10}{}}
 \citation{Analogies}
 \citation{Analogies}
 \citation{Analogies}
 \citation{NNDesign}
 \citation{NNDesign,Duda}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Different activation functions. Image obtained from \cite  {BINN}\relax }}{16}{figure.caption.10}}
-\newlabel{fig:activation_function}{{3.7}{16}{Different activation functions. Image obtained from \cite {BINN}\relax }{figure.caption.10}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Analogies between artificial neural networks and biological neural networks \cite  {Analogies}\relax }}{16}{table.caption.12}}
-\newlabel{table:Analogias}{{3.1}{16}{Analogies between artificial neural networks and biological neural networks \cite {Analogies}\relax }{table.caption.12}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Learning}{16}{subsubsection*.13}}
+\@writefile{toc}{\contentsline {subsubsection}{Analogies between ANN and Biological Neural Networks}{17}{subsubsection*.11}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Analogies between artificial neural networks and biological neural networks \cite  {Analogies}\relax }}{17}{table.caption.12}}
+\newlabel{table:Analogias}{{3.1}{17}{Analogies between artificial neural networks and biological neural networks \cite {Analogies}\relax }{table.caption.12}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Learning}{17}{subsubsection*.13}}
 \citation{Duda}
 \citation{Duda,BINN,krose}
-\newlabel{eq:error_bb}{{3.2.4}{17}{Learning}{equation.0.3.2.4}{}}
-\newlabel{eq:ecuation_back1}{{3.5}{17}{Learning}{equation.0.3.2.5}{}}
+\newlabel{eq:error_bb}{{3.2.4}{18}{Learning}{equation.0.3.2.4}{}}
+\newlabel{eq:ecuation_back1}{{3.5}{18}{Learning}{equation.0.3.2.5}{}}
 \citation{Doorn}
 \citation{Doorn}
 \citation{Lecum2}
 \citation{Doorn}
-\@writefile{toc}{\contentsline {subsubsection}{Type of Layers}{18}{subsubsection*.14}}
 \citation{Lecum2,Lecum3}
+\@writefile{toc}{\contentsline {subsubsection}{Type of Layers}{19}{subsubsection*.14}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}Convolutional Neural Network (CNN)}{19}{section.0.3.3}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}Methodology}{21}{chapter.0.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
@@ -505,10 +511,10 @@
 \@writefile{toc}{\contentsline {section}{\numberline {7.2}Future work}{76}{section.0.7.2}}
 \bibstyle{ieeetr}
 \bibdata{references}
-\bibcite{LSTM-CNN}{1}
-\bibcite{Verification}{2}
-\bibcite{yangLL14}{3}
-\bibcite{distorsion}{4}
+\bibcite{distorsion}{1}
+\bibcite{LSTM-CNN}{2}
+\bibcite{Verification}{3}
+\bibcite{yangLL14}{4}
 \bibcite{LBP_FaceAnti}{5}
 \bibcite{Blink_antispoofing}{6}
 \bibcite{Intro_biometrics}{7}
