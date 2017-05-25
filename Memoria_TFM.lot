@@ -3,21 +3,25 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Introduction}{1}{chapter.0.1}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Theoretical Basics}{5}{chapter.0.2}
-\contentsline {table}{\numberline {2.1}{\ignorespaces Analogies between artificial neural networks and biological neural networks \cite {Analogies}\relax }}{15}{table.caption.12}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Confusion Matrix\relax }}{26}{table.caption.20}
+\contentsline {xchapter}{Literature Review}{5}{chapter.0.2}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Methodology}{35}{chapter.0.3}
-\contentsline {table}{\numberline {3.1}{\ignorespaces Samples distribution for each database\relax }}{48}{table.caption.41}
-\contentsline {table}{\numberline {3.2}{\ignorespaces TP, FP, TN and FN obtained with each database.\relax }}{49}{table.caption.47}
+\contentsline {xchapter}{Background Theory}{7}{chapter.0.3}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Analogies between artificial neural networks and biological neural networks \cite {Analogies}\relax }}{16}{table.caption.12}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Results}{57}{chapter.0.4}
-\contentsline {table}{\numberline {4.1}{\ignorespaces APCR and BPCR classifying results using CASIA image database\relax }}{63}{table.caption.54}
-\contentsline {table}{\numberline {4.2}{\ignorespaces APCR and BPCR classifying results using CASIA video database\relax }}{64}{table.caption.56}
-\contentsline {table}{\numberline {4.3}{\ignorespaces APCR and BPCR classifying results using FRAV RGB database\relax }}{65}{table.caption.57}
-\contentsline {table}{\numberline {4.4}{\ignorespaces APCR and BPCR classifying results using FRAV RGB+NIR (feature level) database\relax }}{66}{table.caption.59}
-\contentsline {table}{\numberline {4.5}{\ignorespaces APCR and BPCR classifying results using FRAV RGB+NIR (classification level) database\relax }}{67}{table.caption.61}
-\contentsline {table}{\numberline {4.6}{\ignorespaces APCR and BPCR classifying results using MFSD-MSU database\relax }}{68}{table.caption.63}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Executing time\relax }}{70}{table.caption.66}
+\contentsline {xchapter}{Methodology}{21}{chapter.0.4}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Confusion Matrix\relax }}{35}{table.caption.28}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusions and future work}{71}{chapter.0.5}
+\contentsline {xchapter}{Experiments}{39}{chapter.0.5}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Samples distribution for each database\relax }}{52}{table.caption.41}
+\contentsline {table}{\numberline {5.2}{\ignorespaces TP, FP, TN and FN obtained with each database.\relax }}{53}{table.caption.47}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Results}{61}{chapter.0.6}
+\contentsline {table}{\numberline {6.1}{\ignorespaces APCR and BPCR classifying results using CASIA image database\relax }}{67}{table.caption.54}
+\contentsline {table}{\numberline {6.2}{\ignorespaces APCR and BPCR classifying results using CASIA video database\relax }}{68}{table.caption.56}
+\contentsline {table}{\numberline {6.3}{\ignorespaces APCR and BPCR classifying results using FRAV RGB database\relax }}{69}{table.caption.57}
+\contentsline {table}{\numberline {6.4}{\ignorespaces APCR and BPCR classifying results using FRAV RGB+NIR (feature level) database\relax }}{70}{table.caption.59}
+\contentsline {table}{\numberline {6.5}{\ignorespaces APCR and BPCR classifying results using FRAV RGB+NIR (classification level) database\relax }}{71}{table.caption.61}
+\contentsline {table}{\numberline {6.6}{\ignorespaces APCR and BPCR classifying results using MFSD-MSU database\relax }}{72}{table.caption.63}
+\contentsline {table}{\numberline {6.7}{\ignorespaces Executing time\relax }}{74}{table.caption.66}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Conclusions and future work}{75}{chapter.0.7}
