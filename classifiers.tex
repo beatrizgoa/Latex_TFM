@@ -1,5 +1,5 @@
 \section{Classifiers, Reduction of the dimensionality algorithms and Cross Validation}
-Classifying is called to the task of sign a a category to a object. The classification task is based in the features of the object obtained of the feature extractor \cite{Duda}, that in the particular case of this thesis is the output of a convolutional neural network.\\
+Classifying is called to the task of assign a category to an object. The classification task is based in the obtained features of the object and the characteristics of the feature extractor \cite{Duda}. The particular case of this thesis, features obtained at the output of a Convolutional Neural Network are utilized for classification.\\
 
 The output of the convolutional neural network could be bigger enough and some features could not be relevant for the classification. To solve the speed and robustness issues that could appear because of the quantity of features \cite{PCAvsLDA}, techniques to reduce the dimensionality are used.\\
 
@@ -29,10 +29,10 @@ The class of a new sample (\textit{y\_{pred}}) would be classified as:
 y_{pred} = argmax_{i}P(y_i|X_i,W,b)
 \end{equation}
 
-That is that the sample would belong to a class depending on position in the space with respect to the hyperplane that separates the classes.\\
+A sample would belong to a class depending on position in the space with respect to the hyperplane that separates the classes.\\
 
 \subsubsection{Support Vector Machine}
-Support Vector Machine (SVM) is a two-class classifier. The smallest generalization error is linked to the \textit{margin} concept. Margin is the perpendicular distance between the closest sample of the database and the calculate hyperplane \cite{MachineLearning}. An hyperplane is optimal if the margin is the maximum and this margin is calculated (as the same way as logistic regression):\\
+Support Vector Machine (SVM) is a two-class (bi-class) classifier. The smallest generalization error is linked to the \textit{margin} concept. Margin is the perpendicular distance between the closest sample of the database and the calculate hyperplane \cite{MachineLearning}. An hyperplane is optimal if the margin is the maximum and this margin is calculated (as the same way as logistic regression):\\
 
 \begin{equation}
 \underset{w b}{\operatorname{arg\,max}}\left \{ \frac{1}{||W||} \underset{n}{\operatorname{min}}[t_{n}(W^T \phi (X_n)+b)]   \right \}
@@ -47,37 +47,36 @@ Where \textit{w, b} are the parameters that should be optimized in order to maxi
 \caption{Optimal hyperplane and the decision boundary. Image obtained from \cite{SVMimage}} \label{fig:SVM}
 \end{figure}
 
-In figure \ref{fig:SVM} the optimal hyperplane between two classes are represented with its corresponding margin. In this example the two classes are well differentiated. This image has been obtained from \cite{SVMimage}.\\
+In figure \ref{fig:SVM} the optimal hyperplane between two classes are represented with its corresponding margin. In the given example, the two classes are well differentiated. Figure \ref{fig:SVM} has been obtained from \cite{SVMimage}.\\
 
-Based on estimate the hyperplane that the distance between classes, the closest vectors of each class, is maximized \cite{SVM1, MachineLearning}. In practice, the margin is determined by \textit{C}, a parameter that should be chosen by user to get the optimal margin.\\
+Based on estimate the hyperplane that maximize the distance between classes, the closest vectors of each class are selected \cite{SVM1, MachineLearning}. In practice, the margin is determined by \textit{C}, a parameter that should be chosen by user to get the optimal margin.\\
 
-The SVM performance is join to a kernel function which allows variability in nonlinearity and flexibility in the model \cite{ClassifiersReview, practicalguideSVM}. There are many kernels (polynomial, sigmoid, etc.), but the two used are described:
+The SVM performance is join to a kernel function which allows variability in nonlinearity and flexibility in the model \cite{ClassifiersReview, practicalguideSVM}. There are various kernels (polynomial, sigmoid, etc.), two of them are utilized:
 
 \begin{enumerate}
-\item Linear: $ K(x_{i},x_{j}) = x_i^T x_j$.
-\item Radial basis function (RBF): $K(x_{i},x_{j}) = exp(-\gamma||x_i-x_j||^2), \gamma>0$
+\item Linear kernel: $ K(x_{i},x_{j}) = x_i^T x_j$.
+\item Radial basis function (RBF) kernel: $K(x_{i},x_{j}) = exp(-\gamma||x_i-x_j||^2), \gamma>0$
 \end{enumerate}
 
-
 \subsubsection{K Nearest Neighbours}
-K- Nearest Neighbour (KNN) is a generative and non parametric classifier. For classifying, the density estimation procedure is used. The difference between this classifiers and others used is this algorithm uses the data directly for classification, without building a model first \cite{ClassifiersReview}. The density function is determined by the form \cite{MachineLearning}:
+K- Nearest Neighbour (KNN) is a generative and non parametric classifier. For classifying, the density estimation procedure is utilized. The difference between this classifier and others is that data is used in this algorithm directly for classification, without building a model first \cite{ClassifiersReview}. The density function is determined by the form \cite{MachineLearning}:
 \begin{equation}
 p(x) = \frac{K}{N V}
 \end{equation}
 
 Where \textit{K} is the number of points inside the region \textit{R} whose volume is \textit{V} and \textit{N} is the number of total samples or observations.\\
 
-This classifiers uses the observation directly to classify and needs all the samples to predict a new one. The probability of a sample \textit{x} belonging to a class \textit{$C_k$} is defined by \cite{MachineLearning}:
+This classifier uses the observation directly to classify and needs all the samples to predict a new one. The probability of a sample \textit{x} belonging to a class \textit{$C_k$} is defined by \cite{MachineLearning}:
 \begin{equation}
 p(x|C_k) = \frac{K_k}{N_k V}
 \end{equation}
 
 Where $N_k$ are the observations of a class $C_k$ and $K_k$ of it class points are contained in the volume \textit{V}.\\
 
-The \textit{K} value is fixed, should be calculated and optimized by user of each application.\\
+The \textit{K} value is fixed and constant, it should be calculated and optimized by user of each application.\\
 
 \subsubsection{Decision Tree}
-Decision Tree classifier is based in a natural classification based in a sequence of true/false or yes/no questions \cite{Duda}. It could be used as a binary classifier or with \textit{k} classes. \\
+Decision Tree classifier is based in a natural classification based in a sequence of true/false or yes/no questions \cite{Duda}. It could be used as a binary classifier or a \textit{k} classes classifier. \\
 
 The input data is split to maximize its separation, resulting a tree structure \cite{ClassifiersReview} as is described in figure \ref{fig:Tree} (image obtained from \cite{Treeimage}). Where depending on the features, a sample changes from a principal branch to a branch of this until a class is signed. The last branches correspond to the classes and the same class could be in different final branches. \\
 
@@ -88,8 +87,7 @@ The input data is split to maximize its separation, resulting a tree structure \
 \end{figure}
 
 \subsection{Dimensionality reduction algorithms}
-The objective of those algorithms is transform the characteristic vector into another characteristic vector but with a lower dimensionality. Linear methods, that projects the dimensional data onto another space whose dimensionality is lower \cite{Duda}, have been used. The two techniques, the most common used, are described and used along the thesis.\\
-
+The objective of those algorithms is transformed by the characteristic vector into another characteristic vector but with a lower dimensionality. Linear methods, that projects the dimensional data onto another space whose dimensionality is lower \cite{Duda}, have been used. The two techniques, the most common used, are described and used along the thesis.\\
 
 \subsubsection{Linear Discriminant Analysis}
 Linear Discriminant Analysis (LDA) looks for the vectors in the space that best discriminate among classes, that is that LDA pretend to maximize the between-class measure (equation \ref{eq:Sb}) at the same time as the within-class measure (equation \ref{eq:Sw}) is minimized \cite{PCAvsLDA}.\\
