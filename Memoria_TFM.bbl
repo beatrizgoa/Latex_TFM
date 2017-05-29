@@ -1,5 +1,35 @@
 \begin{thebibliography}{10}
 
+\bibitem{yangLL14}
+J.~Yang, Z.~Lei, and S.~Z. Li, ``Learn convolutional neural network for face
+  anti-spoofing,'' {\em CoRR}, vol.~abs/1408.5601, 2014.
+
+\bibitem{LSTM-CNN}
+Z.~Xu, S.~Li, and W.~Deng, ``Learning temporal features using {LSTM-CNN}
+  architecture for face anti-spoofing,'' in {\em 3rd {IAPR} Asian Conference on
+  Pattern Recognition, {ACPR} 2015, Kuala Lumpur, Malaysia, November 3-6,
+  2015}, pp.~141--145, 2015.
+
+\bibitem{imagenet}
+A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
+  deep convolutional neural networks,'' in {\em Advances in Neural Information
+  Processing Systems 25}, pp.~1097--1105, 2012.
+
+\bibitem{Verification}
+M.~K. Hani and S.~S. Liew, ``A convolutional neural network approach for face
+  verification,'' in {\em International Conference on High Performance
+  Computing {\&} Simulation, {HPCS} 2014, Bologna, Italy, 21-25 July, 2014},
+  pp.~707--714, 2014.
+
+\bibitem{LBP_FaceAnti}
+I.~Chingovska, A.~Anjos, and S.~Marcel, ``On the effectiveness of local binary
+  patterns in face anti-spoofing,'' Idiap-RR Idiap-RR-19-2012, Idiap, 2012.
+
+\bibitem{Blink_antispoofing}
+L.~Sun, G.~Pan, Z.~Wu, and S.~Lao, {\em Blinking-Based Live Face Detection
+  Using Conditional Random Fields}, pp.~252--260.
+\newblock Springer Berlin Heidelberg, 2007.
+
 \bibitem{Intro_biometrics}
 J.~Wayman, A.~Jain, D.~Maltoni, and D.~Maio, {\em An Introduction to Biometric
   Authentication Systems}, pp.~1--20.
@@ -107,20 +137,10 @@ Z.~Zhang, J.~Yan, S.~Liu, Z.~Lei, D.~Yi, and S.~Z. Li, ``A face antispoofing
   on Biometrics, {ICB} 2012, New Delhi, India, March 29 - April 1, 2012},
   pp.~26--31, 2012.
 
-\bibitem{yangLL14}
-J.~Yang, Z.~Lei, and S.~Z. Li, ``Learn convolutional neural network for face
-  anti-spoofing,'' {\em CoRR}, vol.~abs/1408.5601, 2014.
-
 \bibitem{MSUdatabse}
 D.~Wen, H.~Han, and A.~K. Jain, ``Face spoof detection with image distortion
   analysis,'' {\em {IEEE} Trans. Information Forensics and Security}, vol.~10,
   no.~4, pp.~746--761, 2015.
-
-\bibitem{LSTM-CNN}
-Z.~Xu, S.~Li, and W.~Deng, ``Learning temporal features using {LSTM-CNN}
-  architecture for face anti-spoofing,'' in {\em 3rd {IAPR} Asian Conference on
-  Pattern Recognition, {ACPR} 2015, Kuala Lumpur, Malaysia, November 3-6,
-  2015}, pp.~141--145, 2015.
 
 \bibitem{PCAvsLDA}
 A.~M. Martinez and A.~C. Kak, ``Pca versus lda,'' {\em IEEE TRANSACTIONS ON
@@ -191,10 +211,5 @@ X.~Glorot and Y.~Bengio, ``Understanding the difficulty of training deep
   feedforward neural networks,'' in {\em In Proceedings of the International
   Conference on Artificial Intelligence and Statistics (AISTATS’10). Society
   for Artificial Intelligence and Statistics}, 2010.
-
-\bibitem{imagenet}
-A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
-  deep convolutional neural networks,'' in {\em Advances in Neural Information
-  Processing Systems 25}, pp.~1097--1105, 2012.
 
 \end{thebibliography}

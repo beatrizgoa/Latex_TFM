@@ -67,7 +67,7 @@ A representation of RGB database is shown in figure \ref{fig:RGB-frav1}, where g
 \end{figure}
 
 \subsubsection{FRAV RGB+NIR database}
-This database is smaller that RGB database because not all users have its corresponding NIR image. A representation of RGB database is presented in figure \ref\label{fig:RGB-frav2}, where each RGB image has its corresponding NIR image.\\
+This database is smaller that RGB database because not all users have its corresponding NIR image. A representation of RGB database is presented in figure \ref{fig:RGB-frav2}, where each RGB image has its corresponding NIR image.\\
 
 \begin{figure}[htb]
 \centering
@@ -118,7 +118,7 @@ CASIA database is formed by real or genuine images of people and three different
 \end{figure}
 
 Originally, this database is a video database, in which each sample is a different video, but for the experiments developed no videos (entirely or fed directly to the network) have been used. The CASIA database has been used in two different ways:
-\begin{itemize}
+\begin{itemize} [itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
  \item Using a single image per person and class. When this database is used, it is going to be referred as CASIA image database.
  \item Reading three frames per video and saving each frame as a independent image sample. This database is going to be referred as CASIA video database.
 \end{itemize}
@@ -161,8 +161,8 @@ The MSU Mobile Face Spoofing Database (MSU-MFSD) is a video face anti-spoofing d
 In figure \ref{fig:mfsd} are represented the three attacks and a real user which forms this database:
 \begin{itemize}[itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
 \item Printed photo attack represented in figure \ref{mfsd_im1-1}.
-\item Tablet attack where a video is Replayed represented in figure \ref{mfsd_im1-1}.
-\item Smartphone attack represented in figure \ref{mfsd_im1-1}.
+\item Tablet (iPad Air) attack where a video is Replayed represented in figure \ref{mfsd_im1-1}.
+\item Smartphone (iPhone 5s) attack represented in figure \ref{mfsd_im1-1}.
 \item Real user represented in figure \ref{mfsd_im1-1}.
 \end{itemize}
 
@@ -176,12 +176,13 @@ In figure \ref{fig:mfsd} are represented the three attacks and a real user which
 \caption{Three attacks and  real user from a person of MFSD database } \label{fig:mfsd}
 \end{figure}
 
-Originally, the database is a video one, but only one image per user and class is used. The characteristics of the database are the following ones:
+Originally, the database is a video database, but only one frame per user and class is used. The characteristics of the database are the following ones:
 \begin{itemize}[itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
 \item There are 35 images per attack or genuine user. There are 140 unique samples.
 \item Images are in RGB space.
 \item Faces are centred in images.
 \item The size of each image are not equal. Approximately images are 300 pixel heigh and 335 pixel width.
+\item Images have been acquired with a Macbook Air laptop and a Google Nexus4 smartphone.
 \end{itemize}
 
 %\begin{figure}[htb]

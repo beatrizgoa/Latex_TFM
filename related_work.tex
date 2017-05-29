@@ -9,16 +9,31 @@
 \section{Related Works}
 Anti-spoofing is an ample investigation field, and concretely, face anti-spoofing is one of the most investigated next to fingerprint biometrics.\\
 
+Regarding to the anti-spoofing investigation with Deep Learning, thus for researched for is described:\\
+
+In \cite{yangLL14}, a Convolutional Neural Network architecture is built for face anti-spoofing purpose.  The databases that authors use are CASIA and REPLAY-ATTACK face anti-spoofing datasets. Input data is pre-processed, faces are located and cropped with different spacial size with the finality of investigating if background affects to the classification. The convolutional neural network is trained with a sequence of frames and with single images in order to know if temporal features obtained from frames are helpful for face antispoofing. For classifying CNN output features, SVM is utilized. Authors conclude that background in images is necessary and using a sequence of frames, the performance obtained is better than the results obtained with single images. Authors assert that in spite of not to select carefully the parameters of the CNN, the results obtained are satisfying. \\
+
+In \cite{LSTM-CNN} a Long Short Term Memory combined with a Convolutional Neural Network (LSTM-CNN) and a single Convolutional Neural Network are used for face anti-spoofing. Authors use LSTM with the purpose of provide memory to the system to learn temporal features. Experiments are made on CASIA database, hence, authors use video samples to train and test the network. Input samples are pre-processed, faces are located and different scales are used to study the background consequences. Results express that the LSTM has a better performance than single CNN architecture, moreover, authors conclude that the background information is essential to detect face anti-spoofing.\\
+
+The Convolutional Neural Network architectures used in \cite{yangLL14,LSTM-CNN} are based on \textit{Imagenet} \cite{imagenet}, this is an extensively used architecture whose layers are defined. Imagenet architecture won an image classification task in 2012, the purpose of Imagenet architecture is object classification task.\\
+
+A siamese architecture is developed in \cite{Verification}, the siamese architecture is composed by two identical Convolutional Neural network architecture. The purpose of this research is the spoofing identification in verification tasks. AT\&T is face database used in this research work, it is formed by pairs of singles images (genuine and impostor) which are used to feed the network.  Authors realize an exhaustive search of the best CNN parameters. Results obtained are competitive, yet the performance could be improved is pointed.\\
+
+Deep Learning spoofing researched is not as ample as the textured-based researched work: LBP, HOG or DoG algorithms are feature extractors. In \cite{LBP_FaceAnti} authors study Local Binary Patterns (LBP) and variants of this method for face anti-spoofing.\\
+
+Motion-based is also very investigation for face anti-spoofing: the lip movement, head rotatior or blinking eyes is detected and studied for spoofing detection. In \cite{Blink_antispoofing} authors use the blink eyes movement.\\
+
+
 %Face anti-spoofing research work has been developed at sensor level, feature level and score level.\\
 
 %Face anti-spoofing investigation is usually split in four research groups: Using texture-based features, motion or liveness detection, analysing the image quality and multispectral-based methods \cite{distorsion,LSTM-CNN}.\\
 
-%Texture based methods use Local Binary Patterns (LBP),  Histogram of Oriented Gradients (HOG) or Difference of Gaussian (DoG) algorithms to extract images features.\\
+%Texture based methods use Local Binary Patterns (LBP),  Histogram of Oriented Gradients  or Difference of Gaussian  algorithms to extract images features.\\
 
 %Motion or liveness detection methods search for movement in videos asking user to do something or analysing the frames sequence. The liveness could be detected in blinking eyes, lip movement or head rotation.\\
 
 %Deep learning has been used to detect spoofing attacks. Convolutional neural networks are used to extract features and be allowed to differenciate between genuine and fake users. In \cite{LSTM-CNN} A LSTM-CNN has been developed, where the input in stead of being images are video and the network learn temporal features. In \cite{Verification} the purpose is the verification task, where the input are two images and the convolutional neural network is a Siamese. Another Anti-spoofing research with deep learning is the developed in \cite{yangLL14} where a simple Convolutional neural network has been developed to difference between genuine and no-real users.\\
 
-%Not only deep learning has been used with this purpose. The extraction of texture-based features (LBP, HOG, DoG,..) for face anti-spoofing have been researched \cite{distorsion}. In \cite{LBP_FaceAnti} authors study Local Binary Patterns (LBP) and variants of this method for face anti-spoofing.\\
+%Not only deep learning has been used with this purpose. The extraction of texture-based features (LBP, HOG, DoG,..) for face anti-spoofing have been researched \cite{distorsion}. \\
 
-%Also the motion has been used. The lip movement, the head rotation or the blink eyes \cite{distorsion}. In \cite{Blink_antispoofing} is the blink movement of the eyes what authors use for face anti-spoofing.\\
+%Also the motion has been used. The lip movement, the head rotation or the blink eyes \cite{distorsion}. \\

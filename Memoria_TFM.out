@@ -24,7 +24,7 @@
 \BOOKMARK [2][-]{subsection.0.4.2.1}{MNIST digit database}{section.0.4.2}% 24
 \BOOKMARK [2][-]{subsection.0.4.2.2}{FRAV dataset}{section.0.4.2}% 25
 \BOOKMARK [2][-]{subsection.0.4.2.3}{CASIA dataset}{section.0.4.2}% 26
-\BOOKMARK [2][-]{subsection.0.4.2.4}{MSU - MFSD database}{section.0.4.2}% 27
+\BOOKMARK [2][-]{subsection.0.4.2.4}{MSU-MFSD database}{section.0.4.2}% 27
 \BOOKMARK [1][-]{section.0.4.3}{Classifiers, Reduction of the dimensionality algorithms and Cross Validation}{chapter.0.4}% 28
 \BOOKMARK [2][-]{subsection.0.4.3.1}{Classifiers}{section.0.4.3}% 29
 \BOOKMARK [2][-]{subsection.0.4.3.2}{Dimensionality reduction algorithms}{section.0.4.3}% 30
@@ -70,3 +70,4 @@
 \BOOKMARK [0][-]{chapter.0.7}{Conclusions and future work}{}% 70
 \BOOKMARK [1][-]{section.0.7.1}{Conclusions}{chapter.0.7}% 71
 \BOOKMARK [1][-]{section.0.7.2}{Future work}{chapter.0.7}% 72
+\BOOKMARK [0][-]{chapter*.71}{Bibliography}{}% 73
