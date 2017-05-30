@@ -7,7 +7,7 @@
 \end{small}
 % The hole process (training and testing) has been realized three times to have more general results.
 
-\section{Training and validating process}
+\section{Training and validation process}
 The convolutional neural networks has been trained independently for each database as is explained in \ref{Final_archi}. In this section, the training and validation process is presented for each database.\\
 \subsection{CASIA Image database}
 In figure \ref{fig:ejecucion2_casia_im_train} the cost and training are represented (\ref{fig:ejecucion2_casia_im_train_cost} and \ref{fig:ejecucion2_casia_im_train_cost} respectively). The training process converge in a low values, smaller than 0.0001; while the validation process converges in 20\% error from the 250th epoch. The iterations where the training process oscillates sharply agree with the epochs where the cost oscillates sharply too. After those oscillations, the validation gets constant and the training error variates in its lowest values.\\
@@ -275,13 +275,24 @@ Classifier                                                                   & A
 \label{APCR_BPCR_MFSD}
 \end{table}
 
-The classification with this database is not good because all the samples are classified as negatives, as could be seen in table \ref{APCR_BPCR_MFSD} where , independently of the classifier or if LDA and PCA are used, the BPCR value is always 1 and the APCR value is 0.\\
+The classification with this database is not accurate because all the samples are classified as negatives, as could be seen in table \ref{APCR_BPCR_MFSD} where , independently of the classifier or if LDA and PCA are used, the BPCR value is always 1 and the APCR value is 0.\\
 
 \section{Comparative among databases}
 In this section it is going to discuss databases classification in common.
 
+\subsection{CASIAs databases}
+As the same as FRAVs databases, the comparative is going to be made with CASIAs databases: Image and Videos. With this purpose, KNN classifier is going to be used.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.58\textwidth]{images/comparative/CASIAs_KNN_ROC.png}
+\caption{Comparative among CASIA databases with KNN.} \label{fig:CASIAS_KNN_comparative}
+\end{figure}
+
+In figure \ref{fig:CASIAS_KNN_comparative} is represented the comparative between image CASIA in blue and video CASIA database in green. As it is possible to see, the result is much better when just CASIA images databases are used, although CASIA video results are not bad.\\
+
 \subsection{FRAVs databases}
-Three FRAVs databases are compared in order to discuss easier if NIR images, in general, help in order to detect anti-spoofing attacks. In order to do that, an due to the fact to the big amount of data, one classifier is chosen to do this comparative: SVM with RBF kernel.\\
+Three FRAVs databases are compared in order to discuss easier if NIR images, in general, help in order to detect anti-spoofing attacks. In order to do that, and due to the fact to the big amount of data, one classifier is chosen to do the comparative: SVM with RBF kernel.\\
 
 \begin{figure}[htb]
 \centering
@@ -292,17 +303,6 @@ Three FRAVs databases are compared in order to discuss easier if NIR images, in 
 In figure \ref{fig:FRAVS_SVM_comparative} are represented the three databases: In blue is represented RGB database, in green RGB+NIR FRAV database classification level and in magenta RGB+NIR FRAV database feature level. And the ROC curve with NIR work better, in fact, is almost perfect.\\
 
 This image and the perfect APCR and BPCR result obtained with logistic regression and decision tree in the RGB+NIR feature level tends to conduce that NIR database are improved the results.\\
-
-\subsection{CASIAs databases}
-As the same as FRAVs databases, the comparative is going to be made with CASIAs databases: Image and Videos. In order to do that, KNN classifier is going to be used.\\
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.58\textwidth]{images/comparative/CASIAs_KNN_ROC.png}
-\caption{Comparative among CASIA databases with KNN.} \label{fig:CASIAS_KNN_comparative}
-\end{figure}
-
-In figure \ref{fig:CASIAS_KNN_comparative} is represented the comparative between image CASIA in blue and video CASIA database in green. As it is possible to see, the result is much better when just CASIA images databases are used, although CASIA video results are not bad.\\
 
 \section{Executing time}
 In this section, the time that has been necessary to carry out the training and testing processing described in this chapter  are exposed.\\

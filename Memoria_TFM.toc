@@ -59,7 +59,7 @@
 \contentsline {subsection}{\numberline {5.1.4}LeNet-5 and RGB FRAV faces database}{49}{subsection.0.5.1.4}
 \contentsline {section}{\numberline {5.2}Adapting LeNet-5 architecture}{50}{section.0.5.2}
 \contentsline {subsection}{\numberline {5.2.1}New Architecture}{51}{subsection.0.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Databases}{52}{subsection.0.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Databases}{51}{subsection.0.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Experiments Description}{52}{subsection.0.5.2.3}
 \contentsline {section}{\numberline {5.3}Final architecture}{54}{section.0.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Architecture}{54}{subsection.0.5.3.1}
@@ -87,4 +87,4 @@
 \contentsline {chapter}{\numberline {7}Conclusions and future work}{75}{chapter.0.7}
 \contentsline {section}{\numberline {7.1}Conclusions}{75}{section.0.7.1}
 \contentsline {section}{\numberline {7.2}Future work}{77}{section.0.7.2}
-\contentsline {chapter}{Bibliography}{79}{chapter*.71}
+\contentsline {chapter}{Bibliography}{79}{chapter*.72}

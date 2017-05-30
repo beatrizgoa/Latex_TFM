@@ -7,7 +7,7 @@ Neural Networks are introduced by first time in the years 40 by Warren McCulloch
 
 In 1949 the `Hebbian rule' was postulated by Donald O. Hebb. The rule describes the generalized learning basis of neural networks. This rule explain that two connected neurons have  a bigger strength if they are active at the same time, and the strength changes proportionally to the product of the two activities \cite{BINN}.\\
 
-From 1951, the golden age of neural networks started. The first neurocomputer, which was capable of adjusting the weights by itself, was developed in 1951 and was called \textit{Snark}. The neurocomputer which was able to recognize simple numbers was called \textit{`Mark I perceptron'} as was developed between 1957 and 1958 \cite{BINN}.\\
+From 1951, the golden age of neural networks initialized. The first neurocomputer, which was capable of adjusting the weights by itself, was developed in 1951 and was called \textit{Snark}. The neurocomputer which was able to recognize simple numbers was called \textit{`Mark I perceptron'} as was developed between 1957 and 1958 \cite{BINN}.\\
 
 It was in 1959 when Franck Rosenblatt defined the \textit{perceptron}; the \textit{perceptron convergence theorem} was verified. One year later, the \textit{ADALINE (ADAptive LInear NEuron)} was developed, this was the first commercially used neural network, a fast and precise system. One important characteristic was the \textit{delta rule} rule used for the training procedure. Before the golden age finished, researched figured out that the XOR function was not able to be solved with just one perceptron \cite{BINN}.\\
 
@@ -29,14 +29,14 @@ Biological neural networks are part of the nervous system and are formed by neur
 \caption{Biological Neural Network. Image obtained from \cite{BINN}} \label{fig:Bio-Neuron}
 \end{figure}
 
-The principal components of a biological neuron are the nucleus, dendrite, cell body, axon, Schwann cell, the node of Ranvier, etc. In figure \ref{fig:Bio-Neuron}, a biological neural is shown and its components are signalized \cite{BINN}.\\
+The principal components of a biological neuron are the nucleus, dendrite, cell body, axon, Schwann cell, the node of Ranvier, etc. In figure \ref{fig:Bio-Neuron}, a biological neural is illustrated and its components are signalized \cite{BINN}.\\
 
 The soma is the spherical central part of the nerve cell in whose there is a salt and potassium concentration which is covered by the neuronal membrane. Inside the soma is the neuronal nucleus and from the soma, branches are extend (dendrites). Nerve cells are connected among them by dendrites. Neurons are transmitting and receiving nervous signals continuously, communicating among them. The information transference is produced, more specifically, in the synaptic clef (space between two neurons connection). This exchange of information is denominated synapses and it is made through electrochemical activities. The axon is a soma extension whose responsibility is transmitting the information electrochemical out of the neuron, by the nervous system thanks to its terminal branches \cite{BINN, neuroscience}\\
 
 \subsection{Artificial Neural Networks (ANN)}
 As the same way as the nervous systems is formed by neurons, artificial neural networks are composed of artificial neurons. Each artificial neuron is a processing unit whose input is processed and shared to another neuron or to the output. Neurons are connected among them \cite{BINN}\\
 
-Basically, there are three groups of artificial neurons:
+Summarizing, there are three groups of artificial neurons:
 \begin{description}[itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
 \item \textbf{Input neurons}, if belong to the input layer. These neurons receive the input data of the network.
 \item \textbf{Hidden Units}, if belong to the processing layers. There are many types of layers: convolutional, pooling, dropout, etc.. There could be as many hidden layers and hidden units as user desire. The connectivity and the topology of the layers define the topology of the network.
@@ -59,7 +59,7 @@ A single neuron is formed by an input, a weight \textit{W} and an associated bia
 \caption{Simplest neural network architecture.} \label{fig:neuronasencilla}
 \end{figure}
 
-The simplest example of a neural network is formed by two inputs neurons and a output neuron as it is shown in figure \ref{fig:neuronasencilla}in which \textit{$W=[w_1,w_2]$} are referred to the weights assigned to each neuron. The \textit{b} value is referred to the bias term. \textit{$X=[x_{1},x_{2}]$} are the input of the network architecture and \textit{y(x)} the output. The output is predetermined by the equation \ref{eq:ecuation_neuronasencilla}. So, the output would depend on the input, weights and bias sand the activation function (or transfer function) \textit{F} \cite{krose}. \\
+The simplest example of a neural network is formed by two inputs neurons and a output neuron as it is demonstrated in figure \ref{fig:neuronasencilla}in which \textit{$W=[w_1,w_2]$} are referred to the weights assigned to each neuron. The \textit{b} value is referred to the bias term. \textit{$X=[x_{1},x_{2}]$} are the input of the network architecture and \textit{y(x)} the output. The output is predetermined by the equation \ref{eq:ecuation_neuronasencilla}. So, the output would depend on the input, weights and bias sand the activation function (or transfer function) \textit{F} \cite{krose}. \\
 
 %Ecuacion salida neurona
 			\begin{equation}
@@ -67,7 +67,7 @@ The simplest example of a neural network is formed by two inputs neurons and a o
 			\label{eq:ecuation_neuronasencilla}
 			\end{equation}\\
 
-Due to the activation function, the output of the neuron would change if the input is bigger than a defined threshold. This threshold is defined by the own activation function. There are various functions that are used: sigmoid function, Heaviside function, Fermi function or hyperbolic tangent among others. In figure \ref{fig:activation_function} (which has been obtained from \cite{BINN}) the quoted functions are shown. The output would be 0 or 1 values if the function is sigmoid or Fermi and the output would be -1 or 1 if the function is a hyperbolic tangent. \\
+Due to the activation function, the output of the neuron would change if the input is bigger than a defined threshold. This threshold is defined by the own activation function. There are various functions that are used: sigmoid function, Heaviside function, Fermi function or hyperbolic tangent among others. In figure \ref{fig:activation_function} (which has been obtained from \cite{BINN}) the quoted functions are portrayed. The output would be 0 or 1 values if the function is sigmoid or Fermi and the output would be -1 or 1 if the function is a hyperbolic tangent. \\
 
 \begin{figure}[htb]
 \centering

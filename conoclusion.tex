@@ -17,13 +17,13 @@ In the used databases, it has been proved that the quality of images is importan
 %Why does not work
 In addition with the quality of images, a database should be balanced, that imply that the amount of samples in each class should be equal by the reason of having a 70\%-30\% distribution of samples would mean that classifier starts with 30\% error if all samples are classified in the same class, and the training would not be performed as correct as if the database is balanced.\\
 
-Balancing problems occurs in used database and, specially with MSU-MFSD database, the training procedure is not favorable, are samples are classified in the same class independently of the classifier.\\
+Balancing problems occurs in used database and, specially with MSU-MFSD database, the training procedure is not favourable, samples are classified in the same class independently of the classifier.\\
 
 To solve balance issues, first recommendation is trying to acquire more samples; but if it is not achievable, at training, penalize the classifier strongly the samples (from the class with less samples) which has been incorrectly classified is recommended, therefore, the training procedure is more balanced.\\
  
 The number of samples also affects the training process, Deep Learning techniques require a big quantity of samples; MSU-MFSD is composed only by 35 class 0 samples, in validation, there are only 2 genuine samples and 12 attacks samples, In consequence, bad results are obtained.\\
 
-FRAV and CASIA quantity of samples is grater than MFSD-MSU, but usually, thousands of samples are used to train neural networks.\\ 
+FRAV and CASIA quantity of samples is greater than MFSD-MSU, but usually, thousands of samples are used to train neural networks.\\ 
  
 %Best database and combination
 From results obtained, FRAV database is the database whose samples are the most correctly classified. The worst results obtained has been with MFSD-MSU database.\\
@@ -34,7 +34,7 @@ With the purpose of getting better results with MFSD-MSU database, the CNN requi
 It has been conclude that using NIR images with RGB have improved the results until getting a perfect classification at testing. NIR images could detect attacks because printed photos or tablets are similar to real user in RGB space but not in NIR space. It has been proved that using complementary devices enhance results.\\
 
 %CASIAS comparation
-With respect with CASIA image and CASIA video databases, results are  better when CASIA images database is utilized, one sample is misclassified in most of the cases; on the contraty, CASIA videos database is formed by a higher quantity of samples and more samples are erroneously classified.\\
+With respect with CASIA image and CASIA video databases, results are  better when CASIA images database is utilized, one sample is misclassified in most of the cases; on the contrary, CASIA videos database is formed by a higher quantity of samples and more samples are erroneously classified.\\
 
 %Best combination
 The best model combination of CNN + classifier is obtained when RGB+NIR FRAV database feature level is utilized. This best result is a perfect classification with logistic regression and with Decision Tree too. RGB+NIR FRAV database classification level results are also outstanding, especially when LDA has been used for each classify because just one sample has been misclassified, the same sample and two samples has been misclassified with LDA + logistic regression.\\
