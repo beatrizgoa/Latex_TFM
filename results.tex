@@ -241,7 +241,7 @@ Classifier                                                                   & A
 \label{APCR_BPCR_FRAV_class}
 \end{table}
 
-APCER and BPCER results are summarized in table \ref{APCR_BPCR_FRAV_class}. Results are closer to 0, but none classifier classifies perfectly. There is possible to see that with LDA that APCR results are better and BPCR results are perfect.\\
+APCER and BPCER results are summarized in table \ref{APCR_BPCR_FRAV_class}. Results are closer to 0, but none classifier classifies perfectly. It is possible to realize that with LDA that APCR results are better and BPCR results are perfect.\\
 
 SVM lineal classifier classifies incorrectly positives samples although PCA is used too, with LDA that does not happen.\\
 
@@ -303,6 +303,26 @@ Three FRAVs databases are compared in order to discuss easier if NIR images, in 
 In figure \ref{fig:FRAVS_SVM_comparative} are represented the three databases: In blue is represented RGB database, in green RGB+NIR FRAV database classification level and in magenta RGB+NIR FRAV database feature level. And the ROC curve with NIR work better, in fact, is almost perfect.\\
 
 This image and the perfect APCR and BPCR result obtained with logistic regression and decision tree in the RGB+NIR feature level tends to conduce that NIR database are improved the results.\\
+\section{Results comparative with related works}
+To compare results with related work, Equal Error rate (ERR) metric is going to be utilized. The comparative it is going to be made with CASIA database and MFSD-MSU database, because FRAV database results with others methods are not available.\\
+
+Table \ref 
+
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+\multicolumn{2}{|c|}{\cellcolor[HTML]{ECF4FF}\textbf{CASIA database}}           & \multicolumn{2}{c|}{\cellcolor[HTML]{ECF4FF}\textbf{MFSD - MSU database}} \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+{\color[HTML]{333333} \textbf{CNN model}} & {\color[HTML]{333333} \textbf{EER}} & \textbf{CNN model}                     & \textbf{EER}                     \\ \hline
+CASIA database                            &                                     &                                        &                                  \\ \hline
+Experiment 1                              &                                     &                                        &                                  \\ \hline
+Experiment 2                              &                                     &                                        &                                  \\ \hline
+\end{tabular}
+\caption{My caption}
+\label{my-label}
+\end{table}
 
 \section{Executing time}
 In this section, the time that has been necessary to carry out the training and testing processing described in this chapter  are exposed.\\

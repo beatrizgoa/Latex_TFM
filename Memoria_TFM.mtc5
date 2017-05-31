@@ -19,5 +19,5 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}Metrics}{\reset@font\mtcSfont 33}{section.0.4.4}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.1}Cost and Error rate}{\reset@font\mtcSSfont 33}{subsection.0.4.4.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{\reset@font\mtcSSfont 34}{subsection.0.4.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.3}ROC curve and Precision and Recall curve}{\reset@font\mtcSSfont 34}{subsection.0.4.4.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.3}ROC curve and Equal Error Rate (EER)}{\reset@font\mtcSSfont 34}{subsection.0.4.4.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.4}APCER and BPCER}{\reset@font\mtcSSfont 36}{subsection.0.4.4.4}}
