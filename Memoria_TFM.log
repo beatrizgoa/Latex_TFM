@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  1 JUN 2017 16:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  1 JUN 2017 16:48
 entering extended mode
 **./Memoria_TFM.tex
 (Memoria_TFM.tex
@@ -3104,7 +3104,7 @@ File: images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png Graphic file (type png)
  <use images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png>
 Package pdftex.def Info: images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png used 
 on input line 158.
-(pdftex.def)             Requested size: 295.90588pt x 246.23502pt.
+(pdftex.def)             Requested size: 227.62206pt x 189.40622pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
@@ -3119,12 +3119,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
-[68 <./images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
-
+[68 <./images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
@@ -3156,7 +3156,7 @@ File: images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png Graphic file (type png)
 <use images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png>
 Package pdftex.def Info: images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png used on in
 put line 201.
-(pdftex.def)             Requested size: 295.90588pt x 246.23502pt.
+(pdftex.def)             Requested size: 227.62206pt x 189.40622pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
@@ -3166,13 +3166,13 @@ Missing character: There is no Â in font cmr12!
 Missing character: There is no º in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no º in font cmr12!
-[69 <./images_databases/frav_tablet_109.JPG> <./images_databases/frav_tablet_16
-2.JPG>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
-[70 <./images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png>]
+[69 <./images_databases/frav_tablet_109.JPG> <./images_databases/frav_tablet_16
+2.JPG>]
 Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
@@ -3182,7 +3182,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
-<images_databases/frav_rgb_151.JPG, id=1344, 39.23228pt x 50.589pt>
+<images_databases/frav_rgb_151.JPG, id=1338, 39.23228pt x 50.589pt>
 File: images_databases/frav_rgb_151.JPG Graphic file (type jpg)
 
 <use images_databases/frav_rgb_151.JPG>
@@ -3190,7 +3190,7 @@ Package pdftex.def Info: images_databases/frav_rgb_151.JPG used on input line 2
 34.
 (pdftex.def)             Requested size: 91.04742pt x 117.4198pt.
 
-<images_databases/frav_nir_151.jpg, id=1345, 45.771pt x 59.0205pt>
+<images_databases/frav_nir_151.jpg, id=1339, 45.771pt x 59.0205pt>
 File: images_databases/frav_nir_151.jpg Graphic file (type jpg)
 
 <use images_databases/frav_nir_151.jpg>
@@ -3198,7 +3198,7 @@ Package pdftex.def Info: images_databases/frav_nir_151.jpg used on input line 2
 35.
 (pdftex.def)             Requested size: 91.04742pt x 117.41653pt.
 
-<images_databases/frav_rgb_128.JPG, id=1346, 39.23228pt x 50.589pt>
+<images_databases/frav_rgb_128.JPG, id=1340, 39.23228pt x 50.589pt>
 File: images_databases/frav_rgb_128.JPG Graphic file (type jpg)
 
 <use images_databases/frav_rgb_128.JPG>
@@ -3206,7 +3206,7 @@ Package pdftex.def Info: images_databases/frav_rgb_128.JPG used on input line 2
 37.
 (pdftex.def)             Requested size: 91.04742pt x 117.4198pt.
 
-<images_databases/frav_nir_128.jpg, id=1347, 143.03438pt x 184.43906pt>
+<images_databases/frav_nir_128.jpg, id=1341, 143.03438pt x 184.43906pt>
 File: images_databases/frav_nir_128.jpg Graphic file (type jpg)
 
 <use images_databases/frav_nir_128.jpg>
@@ -3218,15 +3218,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
-
-<images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png, id=1349, 495.0495pt x 411.939pt>
+[70 <./images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png>]
+<images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png, id=1350, 495.0495pt x 411.939pt>
 File: images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png Graphic file (type png)
 <use images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png>
 Package pdftex.def Info: images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png used on i
 nput line 247.
 (pdftex.def)             Requested size: 213.96529pt x 178.04173pt.
 
-<images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png, id=1350, 495.0495pt x 411.9
+<images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png, id=1351, 495.0495pt x 411.9
 39pt>
 File: images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png Graphic file (type png)
 
@@ -3243,13 +3243,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
-
+[71 <./images_databases/frav_rgb_151.JPG> <./images_databases/frav_nir_151.jpg>
+ <./images_databases/frav_rgb_128.JPG> <./images_databases/frav_nir_128.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
-[71 <./images_databases/frav_rgb_151.JPG> <./images_databases/frav_nir_151.jpg>
- <./images_databases/frav_rgb_128.JPG> <./images_databases/frav_nir_128.jpg>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
@@ -3274,8 +3274,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--287
 
  []
 
-
-<images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png, id=1361, 495.0495pt x 411.93
+[72 <./images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png> <./images/FAR-FRR/FRAV_fea
+t_DecisionTree_FAR_FRR.png>]
+<images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png, id=1370, 495.0495pt x 411.93
 9pt>
 File: images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png Graphic file (type png)
  <use images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png>
@@ -3292,32 +3293,28 @@ Missing character: There is no º in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no º in font cmr12!
 
-Underfull \vbox (badness 5578) has occurred while \output is active []
-
- [72 <./images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png> <./images/FAR-FRR/FRAV_fe
-at_DecisionTree_FAR_FRR.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
 
-
+[73 <./images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
-<images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png, id=1373, 495.0495pt x 411.939pt>
+<images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png, id=1380, 495.0495pt x 411.939pt>
 File: images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png Graphic file (type png)
 
 <use images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png>
 Package pdftex.def Info: images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png used on input 
 line 320.
-(pdftex.def)             Requested size: 295.90588pt x 246.23502pt.
+(pdftex.def)             Requested size: 227.62206pt x 189.40622pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
-[73] <images/comparative/CASIAs_KNN_ROC.png, id=1380, 578.16pt x 433.62pt>
+<images/comparative/CASIAs_KNN_ROC.png, id=1381, 578.16pt x 433.62pt>
 File: images/comparative/CASIAs_KNN_ROC.png Graphic file (type png)
 
 <use images/comparative/CASIAs_KNN_ROC.png>
@@ -3334,7 +3331,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
-<images/comparative/FRAVs_SVM_RBF_ROC.png, id=1382, 578.16pt x 433.62pt>
+[74 <./images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png>]
+<images/comparative/FRAVs_SVM_RBF_ROC.png, id=1390, 578.16pt x 433.62pt>
 File: images/comparative/FRAVs_SVM_RBF_ROC.png Graphic file (type png)
 
 <use images/comparative/FRAVs_SVM_RBF_ROC.png>
@@ -3357,7 +3355,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 351--352
 
  []
 
-[74 <./images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png>]
+[75 <./images/comparative/CASIAs_KNN_ROC.png> <./images/comparative/FRAVs_SVM_R
+BF_ROC.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 354--355
 
  []
@@ -3376,17 +3375,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 381--382
 
  []
 
-[75 <./images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png>]
+[76]
 Underfull \hbox (badness 10000) in paragraph at lines 394--395
 
  []
 
-[76 <./images/comparative/CASIAs_KNN_ROC.png>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 396.
 
-) [77 <./images/comparative/FRAVs_SVM_RBF_ROC.png>] [78
+) [77] [78
 
 ]
 Chapter 7.
@@ -3569,7 +3567,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
 Here is how much of TeX's memory you used:
  13224 strings out of 493333
  214047 string characters out of 3139198
- 330723 words of memory out of 3000000
+ 329723 words of memory out of 3000000
  15786 multiletter control sequences out of 15000+200000
  14985 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3585,7 +3583,7 @@ m/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Memoria_TFM.pdf (96 pages, 14555830 bytes).
+Output written on Memoria_TFM.pdf (96 pages, 14555705 bytes).
 PDF statistics:
  1582 PDF objects out of 1728 (max. 8388607)
  372 named destinations out of 1000 (max. 500000)
