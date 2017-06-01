@@ -30,6 +30,11 @@ L.~Sun, G.~Pan, Z.~Wu, and S.~Lao, {\em Blinking-Based Live Face Detection
   Using Conditional Random Fields}, pp.~252--260.
 \newblock Springer Berlin Heidelberg, 2007.
 
+\bibitem{MSUdatabse}
+D.~Wen, H.~Han, and A.~K. Jain, ``Face spoof detection with image distortion
+  analysis,'' {\em {IEEE} Trans. Information Forensics and Security}, vol.~10,
+  no.~4, pp.~746--761, 2015.
+
 \bibitem{Intro_biometrics}
 J.~Wayman, A.~Jain, D.~Maltoni, and D.~Maio, {\em An Introduction to Biometric
   Authentication Systems}, pp.~1--20.
@@ -136,11 +141,6 @@ Z.~Zhang, J.~Yan, S.~Liu, Z.~Lei, D.~Yi, and S.~Z. Li, ``A face antispoofing
   database with diverse attacks,'' in {\em 5th {IAPR} International Conference
   on Biometrics, {ICB} 2012, New Delhi, India, March 29 - April 1, 2012},
   pp.~26--31, 2012.
-
-\bibitem{MSUdatabse}
-D.~Wen, H.~Han, and A.~K. Jain, ``Face spoof detection with image distortion
-  analysis,'' {\em {IEEE} Trans. Information Forensics and Security}, vol.~10,
-  no.~4, pp.~746--761, 2015.
 
 \bibitem{PCAvsLDA}
 A.~M. Martinez and A.~C. Kak, ``Pca versus lda,'' {\em IEEE TRANSACTIONS ON

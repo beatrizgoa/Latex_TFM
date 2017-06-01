@@ -77,14 +77,15 @@
 \contentsline {subsection}{\numberline {6.2.1}CASIA Image database}{66}{subsection.0.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}CASIA Video database}{67}{subsection.0.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}FRAV database}{68}{subsection.0.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}FRAV RGB+NIR (feature level) database}{69}{subsection.0.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}FRAV RGB+NIR (classification level) database}{70}{subsection.0.6.2.5}
-\contentsline {subsection}{\numberline {6.2.6}MFSD-MSU database}{71}{subsection.0.6.2.6}
-\contentsline {section}{\numberline {6.3}Comparative among databases}{72}{section.0.6.3}
-\contentsline {subsection}{\numberline {6.3.1}CASIAs databases}{72}{subsection.0.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}FRAVs databases}{72}{subsection.0.6.3.2}
-\contentsline {section}{\numberline {6.4}Executing time}{73}{section.0.6.4}
-\contentsline {chapter}{\numberline {7}Conclusions and future work}{75}{chapter.0.7}
-\contentsline {section}{\numberline {7.1}Conclusions}{75}{section.0.7.1}
-\contentsline {section}{\numberline {7.2}Future work}{77}{section.0.7.2}
-\contentsline {chapter}{Bibliography}{79}{chapter*.72}
+\contentsline {subsection}{\numberline {6.2.4}FRAV RGB+NIR (feature level) database}{70}{subsection.0.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}FRAV RGB+NIR (classification level) database}{71}{subsection.0.6.2.5}
+\contentsline {subsection}{\numberline {6.2.6}MFSD-MSU database}{73}{subsection.0.6.2.6}
+\contentsline {section}{\numberline {6.3}Comparative among databases}{73}{section.0.6.3}
+\contentsline {subsection}{\numberline {6.3.1}CASIAs databases}{74}{subsection.0.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}FRAVs databases}{74}{subsection.0.6.3.2}
+\contentsline {section}{\numberline {6.4}Results comparative with related works}{75}{section.0.6.4}
+\contentsline {section}{\numberline {6.5}Executing time}{75}{section.0.6.5}
+\contentsline {chapter}{\numberline {7}Conclusions and future work}{79}{chapter.0.7}
+\contentsline {section}{\numberline {7.1}Conclusions}{79}{section.0.7.1}
+\contentsline {section}{\numberline {7.2}Future work}{81}{section.0.7.2}
+\contentsline {chapter}{Bibliography}{83}{chapter*.78}

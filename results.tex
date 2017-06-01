@@ -125,7 +125,7 @@ With respect to APCR and BPCR it is not possible to get the best combination wit
 \end{figure}
 
 \subsection{CASIA Video database}
-Next analyzed results are from CASIA video database.\\
+Next analysed results are from CASIA video database.\\
 
 \begin{table}[htb]
 \centering
@@ -149,6 +149,15 @@ In table \ref{APCR_BPCR_CASIA_vid} APCR and BPCR results are summarized. The bes
 From the table it is not possible to know if LDA and PCA are significant because with some classifiers APCR and BPCR results have been improve or worsened.\\
 
 Also The last conclusion that could be gotten from the table is that Attacks samples are better classified that genuine samples, it is due to the fact that has been trained with more negative samples.\\
+
+Figure \ref{fig:CASIA_vid_FAR_FRR} represents the FAR-FRR curve of the best obtained model: CNN architecture and using LDA with SVM RBF kernel. From the figure, the Equal Error Rate obtained value is 0.115, it is a improvable value; EER is obtained at 0,64 threshold. The poor value obtaines is due to the fact that the number of false accepted and false rejected is lower with respect to the total amount of samples.\\
+
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.65\textwidth]{images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png}
+\caption{FAR-FRR curve of CASIA videos database using LDA and SVM (RBF kernel).} \label{fig:CASIA_vid_FAR_FRR}
+\end{figure}
 
 \subsection{FRAV database}
 The RGB FRAV database results are presented and analyzed.\\
@@ -184,6 +193,15 @@ The misclassified samples are repeated among the classifiers. The two samples sh
 %('False Positive: ', 'databases/from/attack_04/tablet_162.JPG') ('False Positive: ', 'databases/from/attack_04/tablet_109.JPG')
 \caption{RGB FRAV misclassified samples.} \label{fig:frav_miscl}
 \end{figure}
+
+The FAR-FRR graph is represented in figure \ref{fig:RGB_FRAV_FAR_FRR} from which the EER value acquired is 0.022, a satisfactory value, at 0.954 threshold. The performance of the FAR and FRR curves is acceptable because the values obtained are low, and that means that the false positives and false negatives are a small quantity.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.65\textwidth]{images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png}
+\caption{FAR-FRR curve of RGB FRAV database using LDA and SVM (RBF kernel).} \label{fig:RGB_FRAV_FAR_FRR}
+\end{figure}
+
 
 \subsection{FRAV RGB+NIR (feature level) database}
 Results obtained at classifying RGB+NIR (feature level) database are shown following.\\
@@ -222,6 +240,16 @@ In general, the same samples are misclassified in the classification tasks. The 
 \caption{RGB+NIR FRAV (feature level) misclassified samples.} \label{fig:frav_feat_miscl}
 \end{figure}
 
+The perfect performance could be also demonstrated in figure \ref{figures:FAR-FRR-FRAV_FEAT}, where FAR and FRR curves are plot when logistic regression and Decission Tree classifiers are used. In both cases, because of the perfect classification, the EER value obtained is 0.\\
+
+\begin{figure}[htb]
+    \centering
+	\subfigure[logistic regression classifier]{\includegraphics[width=0.47\textwidth]{images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png} }
+	\subfigure[Decision Tree classifier]{\includegraphics[width=0.47\textwidth]{images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png} }
+
+    \caption{FAR-FRR curve for RGB+NIR FRAV database (feature level).} \label{figures:FAR-FRR-FRAV_FEAT}
+\end{figure}
+
 \subsection{FRAV RGB+NIR (classification level) database}
 Results obtained when RGB+NIR FRAV database (classification level) is used are described.\\
 \begin{table}[htb]
@@ -255,6 +283,14 @@ In most of cases, classifiers just mis-classify one sample, the same sample repr
 \caption{RGB+NIR FRAV (classification level) misclassified samples.} \label{fig:frav_clas_miscl}
 \end{figure}
 
+There are various classifiers with the best performance, FAR-FRR curve it is illustrated for SVm )RBF kernel) with LDA method in figure \ref{}. The result obtained is acceptable, a 0,004 ERR. The number of incorrectly classified samples is low.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.65\textwidth]{images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png}
+\caption{FAR-FRR curve of RGB+NIR FRAV database using LDA and SVM (RBF kernel).} \label{fig:RGB_FRAV_clas_FAR_FRR}
+\end{figure}
+
 \subsection{MFSD-MSU database}
 MFSD-MSU database results are described following.\\
 
@@ -276,6 +312,16 @@ Classifier                                                                   & A
 \end{table}
 
 The classification with this database is not accurate because all the samples are classified as negatives, as could be seen in table \ref{APCR_BPCR_MFSD} where , independently of the classifier or if LDA and PCA are used, the BPCR value is always 1 and the APCR value is 0.\\
+
+Because of the similarity in results, FAR-FRR curve of SVM with RBF is demonstrate in figure \ref{fig:MFSD_FAR_FRR}. The result obtained is an 0,089 EER, it is not an unacceptable value, but it is due to the fact that all samples are classified as negative samples.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.65\textwidth]{images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png}
+\caption{FAR-FRR curve of MFSD database using SVM with RBF kernel.} \label{fig:MFSD_FAR_FRR}
+\end{figure}
+
+
 
 \section{Comparative among databases}
 In this section it is going to discuss databases classification in common.
@@ -303,29 +349,33 @@ Three FRAVs databases are compared in order to discuss easier if NIR images, in 
 In figure \ref{fig:FRAVS_SVM_comparative} are represented the three databases: In blue is represented RGB database, in green RGB+NIR FRAV database classification level and in magenta RGB+NIR FRAV database feature level. And the ROC curve with NIR work better, in fact, is almost perfect.\\
 
 This image and the perfect APCR and BPCR result obtained with logistic regression and decision tree in the RGB+NIR feature level tends to conduce that NIR database are improved the results.\\
+
 \section{Results comparative with related works}
 To compare results with related work, Equal Error rate (ERR) metric is going to be utilized. The comparative it is going to be made with CASIA database and MFSD-MSU database, because FRAV database results with others methods are not available.\\
 
-Table \ref
+In table \ref{table_literature_comp} are exposed EER(\%) of the results obtained with CASIA images database and CASIA video database with the literature review; In addition, the EER (\%) obtained with the proposed model is presented in the table with the literature review.\\
 
 \begin{table}[]
 \centering
-\begin{tabular}{|c|c|c|c|}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|cc}
 \hline
-\rowcolor[HTML]{ECF4FF}
-\multicolumn{2}{|c|}{\cellcolor[HTML]{ECF4FF}\textbf{CASIA database}}           & \multicolumn{2}{c|}{\cellcolor[HTML]{ECF4FF}\textbf{MFSD - MSU database}} \\ \hline
-\rowcolor[HTML]{ECF4FF}
-{\color[HTML]{333333} \textbf{CNN model}} & {\color[HTML]{333333} \textbf{EER(\%)}} & \textbf{CNN model}      & \textbf{EER}     \\ \hline
-Own model CASIA Video proposed  &                             &  Own Model proposed MFSD-MSU database &                                  \\ \hline
-0wn model CASIA images proposed   &                            &                                        &                                  \\ \hline
-CNN architecture proposed in \cite{LSTM-CNN} &           6,2     &                                        &                                  \\ \hline
-LSTM-CNN architecture proposed in \cite{LSTM-CNN} &      5,17    &                      &                  \\ \hline
-CNN architecture proposed in \cite{yangLL14} &      4,64          &                      &                  \\ \hline
-
-\end{tabular}
-\caption{My caption}
-\label{my-label}
+\rowcolor[HTML]{ECF4FF} 
+\multicolumn{2}{|c|}{\cellcolor[HTML]{ECF4FF}\textbf{CASIA database}} & \multicolumn{2}{c|}{\cellcolor[HTML]{ECF4FF}\textbf{MFSD - MSU database}} \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+{\color[HTML]{333333} \textbf{CNN model}} & {\color[HTML]{333333} \textbf{EER (\%)}} & \multicolumn{1}{c|}{\cellcolor[HTML]{ECF4FF}\textbf{CNN model}} & \multicolumn{1}{c|}{\cellcolor[HTML]{ECF4FF}\textbf{EER (\%)}} \\ \hline
+Own CASIA image  proposed model &  & \multicolumn{1}{c|}{Own MFSD-MSU proposed model} & \multicolumn{1}{c|}{} \\ \hline
+Own CASIA video proposed model & 12 & \multicolumn{1}{c|}{IDA+SVM proposed model in \cite{MSUdatabse}} & \multicolumn{1}{c|}{5.82} \\ \hline
+CNN model proposed model in \cite{LSTM-CNN} & 6.2 &  &  \\ \cline{1-2}
+LSTM-CNN proposed model in \cite{LSTM-CNN} & 5.17 &  &  \\ \cline{1-2}
+CNN proposed model in \cite{yangLL14} & 4.64 &  &  \\ \cline{1-2}
+IDA+SVM proposed model in \cite{MSUdatabse} & 12.9 &  &  \\ \cline{1-2}
+\end{tabular}%
+}
+\caption{Comparative among proposed models and literature work}
+\label{table_literature_comp}
 \end{table}
+There are not researched work of MFSD-MSU database with Deep Learning.
 
 \section{Executing time}
 In this section, the time that has been necessary to carry out the training and testing processing described in this chapter  are exposed.\\
