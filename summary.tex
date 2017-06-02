@@ -282,7 +282,6 @@ With that databases. Some experiments has been carried out. To test, the used cl
 \item Experiment 4: the finality is the same as Experiment 3, knowing the behaviour of the network and provoke overfitting, but differs in the learning rate that has been changed to 0.001 value. \\
 \end{itemize}
 
-Because the training process in experiment 2 and experiment 3 should be the same (the difference among those experiments is the validation process, and thus test process), only one cost would be represented.\\
 %Experiment 2 and experiment 3 would have the same training cost curve, because they differs in the validation subset.\\
 
 \begin{figure}[htb]
@@ -337,8 +336,33 @@ Because the training process in experiment 2 and experiment 3 should be the same
  \label{fig:mfsd-ejec1}
 \end{figure}
 
+Because the training process in experiment 2 and experiment 3 should be the same (the difference among those experiments is the validation process, and thus test process), only one cost would be represented.\\
 
-In figure \ref{fig:frav-ejec1} are represented the validation error and training cost of each experiment with RGB FRAV database. RGB+NIR FRAV database results are represented in figure \ref{fig:frav_imagelevel-ejec1}. CASIA image database experiments are represented in figure  \ref{fig:casia-ejec1}, CASIA video database is represented in figure \ref{fig:casiavid-ejec1}. In figure \ref{fig:mfsd-ejec1} are represented results of MFSD-MSU database.\\
+In figures \ref{fig:casia-ejec1}, \ref{fig:casiavid-ejec1}, \ref{fig:frav-ejec1}, \ref{fig:frav_imagelevel-ejec1}, \ref{fig:frav_classlevel-ejec1} and \ref{fig:mfsd-ejec1} are represented the cost at training and the error at validation, for each database, when the four described experiments have been developed. All figures have the same color legend which is summarized in table \ref{table:color_legend}.\\
+
+\begin{table}[htb]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+\textbf{Experiment}           & \textbf{Color legend}          \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\multicolumn{2}{|c|}{\cellcolor[HTML]{ECF4FF}Training cost}    \\ \hline
+General Experiment            & Blue                           \\ \hline
+Experiment 2 and 3            & Orange                         \\ \hline
+Experiment 4                  & Brown                          \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\multicolumn{2}{|c|}{\cellcolor[HTML]{ECF4FF}Validation Error} \\ \hline
+General Experiment            & Blue                           \\ \hline
+Experiment 2                  & Green                          \\ \hline
+Experiment 3                  & Magenta                        \\ \hline
+Experiment 4                  & Brown                          \\ \hline
+\end{tabular}
+\caption{Experiments colour legend.}
+\label{table:color_legend}
+\end{table}
+
+%In figure \ref{fig:frav-ejec1} are represented the validation error and training cost of each experiment with RGB FRAV database. RGB+NIR FRAV database results are represented in figure \ref{fig:frav_imagelevel-ejec1}. CASIA image database experiments are represented in figure  \ref{fig:casia-ejec1}, CASIA video database is represented in figure \ref{fig:casiavid-ejec1}. In figure \ref{fig:mfsd-ejec1} are represented results of MFSD-MSU database.\\
 
 From images, could be concluded that in general, decreasing the learning rate from 0.01 to 0.001, for this experiment, does not affect in any database.\\
 
