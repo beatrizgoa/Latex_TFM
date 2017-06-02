@@ -10,12 +10,12 @@
 \section{Training and validation process}
 The convolutional neural networks has been trained independently for each database as is explained in \ref{Final_archi}. In this section, the training and validation process is presented for each database.\\
 \subsection{CASIA Image database}
-In figure \ref{fig:ejecucion2_casia_im_train} the cost and training are represented (\ref{fig:ejecucion2_casia_im_train_cost} and \ref{fig:ejecucion2_casia_im_train_cost} respectively). The training process converge in a low values, smaller than 0.0001; while the validation process converges in 20\% error from the 250th epoch. The iterations where the training process oscillates sharply agree with the epochs where the cost oscillates sharply too. After those oscillations, the validation gets constant and the training error variates in its lowest values.\\
+In figure \ref{fig:ejecucion2_casia_im_train} the cost at training and the error at validation are represented (\ref{fig:ejecucion2_casia_im_train_cost} and \ref{fig:ejecucion2_casia_im_train_error} respectively). The training process converge in a low values, smaller than 0.0001; while the validation process converges in 20\% error from the 250th epoch. The iterations where the training process oscillates sharply agree with the epochs where the cost oscillates sharply too. After those oscillations, the validation gets constant and the training error variates in its lowest values.\\
 \begin{figure}[htb]
 \centering
 		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_casia_images/cost.png}\label{fig:ejecucion2_casia_im_train_cost}}
 		\subfigure[Error at validation]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_casia_images/error.png}\label{fig:ejecucion2_casia_im_train_error}}
-\caption{Cost (a) and error (b) at training CASIA image database}
+\caption{Cost (a) and error (b) at training CASIA image database.}
 \label{fig:ejecucion2_casia_im_train}
 \end{figure}
 
@@ -27,7 +27,7 @@ The cost and error obtained at training and validation processed when CASIA vide
 \centering
 		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_casia_videos/cost.png}\label{fig:ejecucion2_casia_vid_train_cost}}
 		\subfigure[Error at validation]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_casia_videos/error.png}\label{fig:ejecucion2_casia_vid_train_error}}
-\caption{Cost (a) and error (b) at training CASIA video database}
+\caption{Cost (a) and error (b) at training CASIA video database.}
 \label{fig:ejecucion2_casia_vid_train}
 \end{figure}
 
@@ -39,7 +39,7 @@ The cost and error obtained at training and validation processes respectively ar
 \centering
 		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav/cost.png}\label{fig:ejecucion2_frav_train_cost}}
 		\subfigure[Error at validation]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav/error.png}\label{fig:ejecucion2_frav_train_error}}
-\caption{Cost (a) and error (b) at training RGB FRAV image database}
+\caption{Cost (a) and error (b) at training RGB FRAV image database.}
 \label{fig:ejecucion2_frav_train}
 \end{figure}
 
@@ -51,7 +51,7 @@ The RGB+NIR FRAV database, whose images has been added before the training proce
 \centering
 		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav_rgb_nir/cost.png}\label{fig:ejecucion2_frav_feat_train_cost}}
 		\subfigure[Error at validation]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav_rgb_nir/error.png}\label{fig:ejecucion2_frav_feat_train_error}}
-\caption{Cost (a) and error (b) at training RGB and NIR FRAV (feature level) image database}
+\caption{Cost (a) and error (b) at training RGB and NIR FRAV (feature level) image database.}
 \label{fig:ejecucion2_frav_feat_train}
 \end{figure}
 
@@ -66,7 +66,7 @@ In figure \ref{fig:ejecucion2_frav_clas_train} is represented the training cost 
 		\subfigure[Error at validation RGB subset]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav_concatenated/error_rgb.png}\label{fig:ejecucion2_frav_clas_train_error_rgb}}
 		\subfigure[Cost at training NIR subset]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav_concatenated/cost_nir.png}\label{fig:ejecucion2_frav_clas_train_cost_nir}}
 		\subfigure[Error at validation NIR subset]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav_concatenated/error_nir.png}\label{fig:ejecucion2_frav_clas_train_error_nir}}
-\caption{Cost (a) and error (b) at training RGB subset, cost (c) and error (d) at training NIR subset for FRAV (RGB+NIR at classification level) image database}
+\caption{Cost (a) and error (b) at training RGB subset, cost (c) and error (d) at training NIR subset for FRAV (RGB+NIR at classification level) image database.}
 \label{fig:ejecucion2_frav_clas_train}
 \end{figure}
 
@@ -81,7 +81,7 @@ The training results obtained for MFSD database are represented in figure \ref{f
 \centering
 		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_mfsd/cost.png}\label{fig:ejecucion2_mfsd_cost}}
 		\subfigure[Error at validation]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_mfsd/error.png}\label{fig:ejecucion2_mfsd_error}}
-\caption{Cost (a) and error (b) at training MFSD image database}
+\caption{Cost (a) and error (b) at training MFSD image database.}
 \label{fig:ejecucion2_mfsd_train}
 \end{figure}
 
@@ -110,7 +110,7 @@ Classifier                                                                   & A
 \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =  12\end{tabular}          & 0    & 0.5   & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 4\end{tabular}              & 0    & 0.125 & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}              & 0    & 0.125 \\ \hline
 \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.01\end{tabular} & 0    & 0.125 & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.0001\end{tabular} & 0    & 0.125 & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.0001\end{tabular} & 0    & 0.125 \\ \hline
 \end{tabular} }
-\caption{APCR and BPCR classifying results using CASIA image database}
+\caption{APCR and BPCR classifying results using CASIA image database.}
 \label{APCR_BPCR_CASIA_im}
 \end{table}
 
@@ -140,7 +140,7 @@ Classifier                                                                   & A
 \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =  2\end{tabular}           & 0.19 & 0.49 & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}              & 0.15 & 0.53 & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}             & 0.15 & 0.46 \\ \hline
 \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.01\end{tabular} & 0.15 & 0.49 & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.005\end{tabular}  & 0.23 & 0.34 & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.005\end{tabular} & 0.23 & 0.37 \\ \hline
 \end{tabular} }
-\caption{APCR and BPCR classifying results using CASIA video database}
+\caption{APCR and BPCR classifying results using CASIA video database.}
 \label{APCR_BPCR_CASIA_vid}
 \end{table}
 
@@ -175,7 +175,7 @@ Classifier                                                                   & A
 \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =  2\end{tabular}           & 0.04 & 0.11 & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}              & 0.06 & 0.11 & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}             & 0.06 & 0.06 \\ \hline
 \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.01\end{tabular} & 0.01 & 0.17 & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.05\end{tabular}   & 0.06 & 0.06 & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.005\end{tabular} & 0.06 & 0.06 \\ \hline
 \end{tabular} }
-\caption{APCR and BPCR classifying results using FRAV RGB database}
+\caption{APCR and BPCR classifying results using FRAV RGB database.}
 \label{APCR_BPCR_FRAV}
 \end{table}
 
@@ -219,7 +219,7 @@ Classifier                                                                   & A
 \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =  2\end{tabular}           & \textbf{0}    & \textbf{0}    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}              & 0.01 & 0    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}            & 0.05 & 0    \\ \hline
 \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.01\end{tabular} & \textbf{0}    & \textbf{0}    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.05\end{tabular}   & 0.06 & 0    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.05\end{tabular} & 0.07 & 0    \\ \hline
 \end{tabular} }
-\caption{APCR and BPCR classifying results using FRAV RGB+NIR (feature level) database}
+\caption{APCR and BPCR classifying results using FRAV RGB+NIR (feature level) database.}
 \label{APCR_BPCR_FRAV_feature}
 \end{table}
 
@@ -265,7 +265,7 @@ Classifier                                                                   & A
 \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =  2\end{tabular}           & 0.04 & 0.07 & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}              & 0.05 & 0.07 & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}             & 0.01 & 0    \\ \hline
 \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.01\end{tabular} & 0    & 0.29 & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.05\end{tabular}   & 0.07 & 0    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.005\end{tabular} & 0.02 & 0    \\ \hline
 \end{tabular} }
-\caption{APCR and BPCR classifying results using FRAV RGB+NIR (classification level) database}
+\caption{APCR and BPCR classifying results using FRAV RGB+NIR (classification level) database.}
 \label{APCR_BPCR_FRAV_class}
 \end{table}
 
@@ -287,8 +287,8 @@ There are various classifiers with the best performance, FAR-FRR curve it is ill
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.65\textwidth]{images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png}
-\caption{FAR-FRR curve of RGB+NIR FRAV database using LDA and SVM (RBF kernel).} \label{fig:RGB_FRAV_clas_FAR_FRR}
+\includegraphics[width=0.5\textwidth]{images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png}
+\caption{FAR-FRR curve of RGB+NIR FRAV (classification level) database using LDA and SVM (RBF kernel).} \label{fig:RGB_FRAV_clas_FAR_FRR}
 \end{figure}
 
 \subsection{MFSD-MSU database}
@@ -307,7 +307,7 @@ Classifier                                                                   & A
 \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth =  12\end{tabular}          & 0    & 1    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}              & 0    & 1    & \begin{tabular}[c]{@{}c@{}}Decision Tree\\ Depth = 2\end{tabular}              & 0    & 1    \\ \hline
 \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.01\end{tabular} & 0    & 1    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.0001\end{tabular} & 0    & 1    & \begin{tabular}[c]{@{}c@{}}Logistic Regression\\ l. rate = 0.0001\end{tabular} & 0    & 1    \\ \hline
 \end{tabular} }
-\caption{APCR and BPCR classifying results using MFSD-MSU database}
+\caption{APCR and BPCR classifying results using MFSD-MSU database.}
 \label{APCR_BPCR_MFSD}
 \end{table}
 
@@ -372,7 +372,7 @@ CNN proposed model in \cite{yangLL14} & 4.64 &  &  \\ \cline{1-2}
 IDA+SVM proposed model in \cite{MSUdatabse} & 12.9 &  &  \\ \cline{1-2}
 \end{tabular}%
 }
-\caption{Comparative among proposed models and literature work}
+\caption{Comparative among proposed models and literature work.}
 \label{table_literature_comp}
 \end{table}
 There are not researched work of MFSD-MSU database with Deep Learning.
@@ -402,6 +402,6 @@ Process             & 1 & 1 & 2 & 3 & 5 & 4 \\
 Executing Time(min) & 51.93m  & 152.40m  &  274.87m & 240.09m  & 432.78m  & 43.95m
   \\ \hline
 \end{tabular}
-\caption{Executing time}
+\caption{Executing time.}
 \label{table:Executing_time}
 \end{table}
