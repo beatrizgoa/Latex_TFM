@@ -115,13 +115,23 @@ Classifier                                                                   & A
 
 In table \ref{APCR_BPCR_CASIA_im} are exposed the APCR and BPCR parameters for each classifier. All the attacks samples are rightly classified because APCR value is 0. The number of genuine samples misclassified is what changes, it gets 1 for SVM with kernel lineal, all the positives samples have been misclassified, and decision tree whose number of misclassified real user are 4 (the half of the total real samples of the test subset). The rest of the classifiers takes a 0.125 APCR value, just one sample is misclassified, the same sample which could be seen in figure \ref{fig:casia_im_miscl}.\\% :('False Negative: ', 'databases/Casia database Fixed/Real/41.jpg')\\
 
-With respect to APCR and BPCR it is not possible to get the best combination with which the results are better, because most of classifiers works correctly.
+With respect to APCR and BPCR it is not possible to get the best combination with which the results are better, because most of classifiers works correctly.\\
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.2\textwidth]{images_databases/casia_real_41.jpg}
 \caption{Casia image misclassified sample.} \label{fig:casia_im_miscl}
 \end{figure}
+
+In figure \ref is represented  FAR and FRR curves, from which is obtained a 0,025 EER at 0,015 threshold. The EER obtained is a desirable result, on the contrary, the threshold is low, it is not usually used a 0,015 threshold.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\textwidth]{images/FAR-FRR/CASIA_im_SVM_RBF_FAR_FRR.png}
+\caption{FAR-FRR curve of CASIA image database using SVM (RBF kernel).} \label{fig:CASIA_im_FAR_FRR}
+\end{figure}
+
+
 
 \subsection{CASIA Video database}
 Next analysed results are from CASIA video database.\\

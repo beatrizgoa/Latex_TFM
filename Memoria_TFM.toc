@@ -79,10 +79,10 @@
 \contentsline {subsection}{\numberline {6.2.3}FRAV database}{66}{subsection.0.6.2.3}
 \contentsline {subsection}{\numberline {6.2.4}FRAV RGB+NIR (feature level) database}{67}{subsection.0.6.2.4}
 \contentsline {subsection}{\numberline {6.2.5}FRAV RGB+NIR (classification level) database}{69}{subsection.0.6.2.5}
-\contentsline {subsection}{\numberline {6.2.6}MFSD-MSU database}{71}{subsection.0.6.2.6}
-\contentsline {section}{\numberline {6.3}Comparative among databases}{72}{section.0.6.3}
-\contentsline {subsection}{\numberline {6.3.1}CASIAs databases}{72}{subsection.0.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}FRAVs databases}{73}{subsection.0.6.3.2}
+\contentsline {subsection}{\numberline {6.2.6}MFSD-MSU database}{70}{subsection.0.6.2.6}
+\contentsline {section}{\numberline {6.3}Comparative among databases}{71}{section.0.6.3}
+\contentsline {subsection}{\numberline {6.3.1}CASIAs databases}{71}{subsection.0.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}FRAVs databases}{72}{subsection.0.6.3.2}
 \contentsline {section}{\numberline {6.4}Results comparative with related works}{73}{section.0.6.4}
 \contentsline {section}{\numberline {6.5}Executing time}{74}{section.0.6.5}
 \contentsline {chapter}{\numberline {7}Discussion on experiments}{77}{chapter.0.7}
@@ -92,4 +92,4 @@
 \contentsline {chapter}{\numberline {8}Conclusions and future work}{79}{chapter.0.8}
 \contentsline {section}{\numberline {8.1}Conclusions}{79}{section.0.8.1}
 \contentsline {section}{\numberline {8.2}Future work}{81}{section.0.8.2}
-\contentsline {chapter}{Bibliography}{83}{chapter*.79}
+\contentsline {chapter}{Bibliography}{83}{chapter*.80}
