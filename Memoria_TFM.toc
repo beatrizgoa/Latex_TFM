@@ -61,35 +61,35 @@
 \contentsline {subsection}{\numberline {5.2.1}New Architecture}{51}{subsection.0.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Databases}{51}{subsection.0.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Experiments Description}{52}{subsection.0.5.2.3}
-\contentsline {section}{\numberline {5.3}Final architecture}{53}{section.0.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Architecture}{53}{subsection.0.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Database}{54}{subsection.0.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Classification}{54}{subsection.0.5.3.3}
-\contentsline {chapter}{\numberline {6}Results}{61}{chapter.0.6}
-\contentsline {section}{\numberline {6.1}Training and validation process}{61}{section.0.6.1}
-\contentsline {subsection}{\numberline {6.1.1}CASIA Image database}{61}{subsection.0.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}CASIA Video database}{61}{subsection.0.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}FRAV database}{63}{subsection.0.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}FRAV RGB+NIR (feature level) database}{63}{subsection.0.6.1.4}
-\contentsline {subsection}{\numberline {6.1.5}FRAV RGB+NIR (classification level) database}{64}{subsection.0.6.1.5}
-\contentsline {subsection}{\numberline {6.1.6}MFSD database}{64}{subsection.0.6.1.6}
-\contentsline {section}{\numberline {6.2}Testing process}{65}{section.0.6.2}
-\contentsline {subsection}{\numberline {6.2.1}CASIA Image database}{66}{subsection.0.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}CASIA Video database}{67}{subsection.0.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}FRAV database}{68}{subsection.0.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}FRAV RGB+NIR (feature level) database}{69}{subsection.0.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}FRAV RGB+NIR (classification level) database}{71}{subsection.0.6.2.5}
-\contentsline {subsection}{\numberline {6.2.6}MFSD-MSU database}{73}{subsection.0.6.2.6}
-\contentsline {section}{\numberline {6.3}Comparative among databases}{74}{section.0.6.3}
-\contentsline {subsection}{\numberline {6.3.1}CASIAs databases}{74}{subsection.0.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}FRAVs databases}{74}{subsection.0.6.3.2}
-\contentsline {section}{\numberline {6.4}Results comparative with related works}{75}{section.0.6.4}
-\contentsline {section}{\numberline {6.5}Executing time}{76}{section.0.6.5}
-\contentsline {chapter}{\numberline {7}Discussion on experiments}{79}{chapter.0.7}
-\contentsline {section}{\numberline {7.1}Discussion of LeNet-5 and its results}{79}{section.0.7.1}
-\contentsline {section}{\numberline {7.2}Discussion of the own architecture developed experiments}{80}{section.0.7.2}
-\contentsline {section}{\numberline {7.3}Discussion of the final experiment}{80}{section.0.7.3}
-\contentsline {chapter}{\numberline {8}Conclusions and future work}{81}{chapter.0.8}
-\contentsline {section}{\numberline {8.1}Conclusions}{81}{section.0.8.1}
-\contentsline {section}{\numberline {8.2}Future work}{83}{section.0.8.2}
-\contentsline {chapter}{Bibliography}{85}{chapter*.78}
+\contentsline {section}{\numberline {5.3}Final architecture}{54}{section.0.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Architecture}{54}{subsection.0.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Database}{55}{subsection.0.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Classification}{56}{subsection.0.5.3.3}
+\contentsline {chapter}{\numberline {6}Results}{59}{chapter.0.6}
+\contentsline {section}{\numberline {6.1}Training and validation process}{59}{section.0.6.1}
+\contentsline {subsection}{\numberline {6.1.1}CASIA Image database}{59}{subsection.0.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}CASIA Video database}{59}{subsection.0.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}FRAV database}{61}{subsection.0.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}FRAV RGB+NIR (feature level) database}{61}{subsection.0.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}FRAV RGB+NIR (classification level) database}{62}{subsection.0.6.1.5}
+\contentsline {subsection}{\numberline {6.1.6}MFSD database}{62}{subsection.0.6.1.6}
+\contentsline {section}{\numberline {6.2}Testing process}{63}{section.0.6.2}
+\contentsline {subsection}{\numberline {6.2.1}CASIA Image database}{64}{subsection.0.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}CASIA Video database}{65}{subsection.0.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}FRAV database}{66}{subsection.0.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}FRAV RGB+NIR (feature level) database}{67}{subsection.0.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}FRAV RGB+NIR (classification level) database}{69}{subsection.0.6.2.5}
+\contentsline {subsection}{\numberline {6.2.6}MFSD-MSU database}{71}{subsection.0.6.2.6}
+\contentsline {section}{\numberline {6.3}Comparative among databases}{72}{section.0.6.3}
+\contentsline {subsection}{\numberline {6.3.1}CASIAs databases}{72}{subsection.0.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}FRAVs databases}{72}{subsection.0.6.3.2}
+\contentsline {section}{\numberline {6.4}Results comparative with related works}{73}{section.0.6.4}
+\contentsline {section}{\numberline {6.5}Executing time}{74}{section.0.6.5}
+\contentsline {chapter}{\numberline {7}Discussion on experiments}{77}{chapter.0.7}
+\contentsline {section}{\numberline {7.1}Discussion of LeNet-5 and its results}{77}{section.0.7.1}
+\contentsline {section}{\numberline {7.2}Discussion of the own architecture developed experiments}{78}{section.0.7.2}
+\contentsline {section}{\numberline {7.3}Discussion of the final experiment}{78}{section.0.7.3}
+\contentsline {chapter}{\numberline {8}Conclusions and future work}{79}{chapter.0.8}
+\contentsline {section}{\numberline {8.1}Conclusions}{79}{section.0.8.1}
+\contentsline {section}{\numberline {8.2}Future work}{81}{section.0.8.2}
+\contentsline {chapter}{Bibliography}{83}{chapter*.79}

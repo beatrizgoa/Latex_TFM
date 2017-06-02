@@ -281,77 +281,65 @@ With that databases. Some experiments has been carried out. To test, the used cl
 \begin{itemize}
 \item General experiment: the architecture described in \ref{subsec:ejecucion1} is trained without changes.
 \item Experiment 2: with the purpose of trying to know if the configuration of the network is correct, only it is going to be trained with 20 samples for each subset, expect for MFSD-MSU database in which 14 samples are used.
-\item Experiment 3: with the purpose of provoke overfitting, 20 samples are used for each subset, but training samples are going to be used as validation samples too.
+\item Experiment 3: with the purpose of provoke overfitting, 20 samples are used for each subset, however validation samples are the same as training samples.
 \item Experiment 4: the finality is the same as Experiment 3, knowing the behaviour of the network and provoke overfitting, but differs in the learning rate that has been changed to 0.001 value. \\
 \end{itemize}
 
-
+Because the training process in experiment 2 and experiment 3 should be the same (the difference among those experiments is the validation process, and thus test process), only one cost would be represented.\\
 %Experiment 2 and experiment 3 would have the same training cost curve, because they differs in the validation subset.\\
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav/error.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset/error.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset_tested_itself/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset_tested_itself/error.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset_tested_iteself_lr_0_001/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav/minidataset_tested_iteself_lr_0_001/error.png}
-\caption{cost and error of the tree experiments with frav.} \label{fig:frav-ejec1}
+\subfigure[Cost]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/CASIA_im_experiments_cost_2.png} \label{fig:casia-ejec1_cost}  }
+\subfigure[Error]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/CASIA_im_experiments_error.png} \label{fig:casia-ejec1_error} }
+\caption{Cost at training (a) and Error at validation (b) for general experiment when CASIA image database has been used.}
+\label{fig:casia-ejec1} 
 \end{figure}
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/error.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset/error.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_itself/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_itself/error.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_iteself_lr_0_001/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_iteself_lr_0_001/error.png}
-\caption{cost and error of the tree experiments with FRAV (rgb + nir) image level images.} \label{fig:frav_imagelevel-ejec1}
+\subfigure[Cost]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/CASIA_vid_experiments_cost_2.png} \label{fig:casia-vid-ejec1_cost}  }
+\subfigure[Error]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/CASIA_vid_experiments_error.png} \label{fig:casia-vid-ejec1_error} }
+\caption{Cost at training (a) and Error at validation (b) for general experiment when CASIA video database has been used.}
+ \label{fig:casiavid-ejec1}
 \end{figure}
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia/error.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset/error.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset_tested_itself/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset_tested_itself/error.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset_tested_iteself_lr_0_001/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia/minidataset_tested_iteself_lr_0_001/error.png}
-\caption{cost and error of the tree experiments with CASIA images.} \label{fig:casia-ejec1}
+\subfigure[Cost]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/FRAV_experiments_cost_2.png} \label{fig:FRAV-ejec1_cost}  }
+\subfigure[Error]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/FRAV_experiments_error.png} \label{fig:FRAV-ejec1_error} }
+\caption{Cost at training (a) and Error at validation (b) for general experiment when RGB FRAV database has been used.}
+\label{fig:frav-ejec1}
 \end{figure}
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia_video/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia_video/error.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset/error.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_itself/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_itself/error.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_iteself_lr_0_001/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_iteself_lr_0_001/error.png}
-\caption{cost and error of the tree experiments with CASIA videos.} \label{fig:casiavid-ejec1}
+\subfigure[Cost]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/FRAV_FEAT_experiments_cost_2.png} \label{fig:FRAV_FEAT-ejec1_cost}  }
+\subfigure[Error]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/FRAV_FEAT_experiments_error.png} \label{fig:FRAV_FEAT-ejec1_error} }
+\caption{Cost at training (a) and Error at validation (b) for general experiment when RGB+NIR (feature level) FRAV database has been used.}
+\label{fig:frav_imagelevel-ejec1}
 \end{figure}
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_mfsd/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_mfsd/error.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset/minidatasetcost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset/minidataseterror.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_itself/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_itself/error.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_iteself_lr_0_001/cost.png}
-\includegraphics[width=0.42\textwidth]{images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_iteself_lr_0_001/error.png}
-\caption{cost and error of the tree experiments with MFSD images.} \label{fig:mfsd-ejec1}
+\subfigure[RGB Cost]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/RGB_FRAV_CLAS_experiments_cost_2.png} \label{fig:RGB_FRAV_CLAS-ejec1_cost}  }
+\subfigure[RGB Error]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/RGB_FRAV_CLAS_experiments_error.png} \label{fig:RGB_FRAV_CLAS-ejec1_error} }
+
+\subfigure[NIR Cost]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/NIR_FRAV_CLAS_experiments_cost_2.png} \label{fig:NIR_FRAV_CLAS-ejec1_cost}  }
+\subfigure[NIR Error]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/NIR_FRAV_CLAS_experiments_error.png} \label{fig:NIR_FRAV_CLAS-ejec1_error} }
+
+\caption{RGB Cost at training (a) and Error at validation (b), NIR Cost at training (c) and Error at validation (d) for general experiment when RGB+NIR (classification level) FRAV database has been used.}
+\label{fig:frav_imagelevel-ejec1}
 \end{figure}
+
+\begin{figure}[htb]
+\centering
+\subfigure[Cost]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/MFSD_experiments_cost_2.png} \label{fig:mfsd-ejec1_cost}  }
+\subfigure[Error]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/MFSD_experiments_error.png} \label{fig:mfsd-ejec1_error} }
+\caption{Cost at training (a) and Error at validation (b) for general experiment when MFSD-MSU database has been used.}
+ \label{fig:mfsd-ejec1}
+\end{figure}
+
 
 In figure \ref{fig:frav-ejec1} are represented the validation error and training cost of each experiment with RGB FRAV database. RGB+NIR FRAV database results are represented in figure \ref{fig:frav_imagelevel-ejec1}. CASIA image database experiments are represented in figure  \ref{fig:casia-ejec1}, CASIA video database is represented in figure \ref{fig:casiavid-ejec1}. In figure \ref{fig:mfsd-ejec1} are represented results of MFSD-MSU database.\\
 
@@ -402,8 +390,7 @@ For testing some classifiers has been utilized, and they are fed by the output o
 
 The classifiers used to classify the features of the output of the CNN and get the results are the SVM (with RBF and linear kernel), KNN, Decision Tree and logistic regression. Also, PCA and LDA techniques has been used with each classifier separately to reduce the dimensionality of the features.\\
 
-The classifiers, before use them, has been personalize to each and particular time (for each database and if LDA or PCA is used). For that, cross validation has been used, more concretely, the \textit{cros\_val\_Score()} function from sklearn has used with 10 folders:\\
-
+The classifiers, before use them, has been personalize to each and particular time (for each database and if LDA or PCA is used). For that, cross validation has been used, more concretely, the \textit{cros\_val\_Score()} function from sklearn has used with 10 folders:
 \begin{itemize}
 \item For SMV classifier, the C parameter has been searched among the following values: 0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 2, 3, 5 and 10.
 \item For KNN classifier, the number of neighbors (K) has been searched among the following values: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 and 30.
