@@ -1,1 +1,30 @@
 %!TEX root = Memoria_TFM.tex
+%\minitoc
+%\mtcskip
+
+\begin{small}
+\emph{In this chapter, from results obtained in previous chapter (chapter \ref{ch:results}) is detailed with the purpose of achieve the conclusion of the following chapter.\\}
+\end{small}
+
+\section{Discussion of LeNet-5 and its results}
+The final architecture has been developed from LeNet-5 architecture whose training, validation and test performance is exemplary.\\
+
+Because of the big size of the batch size used in LeNet-5 architecture, it has been changed to test how the learning process is modified, because in the experiments made with others databases, the amount of samples is not enough to preserve the batch size. The used learning process is Mini-batch Stochastic Gradient Descend, it uses the samples in each batch to learn. And results obtained are improve (when batch size is 100) and descend when batch size used is 20. \\
+
+Usually, in literature, a 32 size is used. And it has been concluded that the batch size is used not to provide the network with all the samples, because the computational resources are limited and depending on the batch size, the neural network would need more epochs.\\
+
+Due to the fact that the Lenet-5 architecture is optimized for MNIST Digit classification, when changes have been made (changing weight initialization, modifying activation function, adding ReLu layer, etc.) results have not been improved, although the difference is not immense.\\
+
+The worst result is when Gaussian weight initialization is used, the performance of the training process suggest that the learning is in a local minimum, because the training performance is correct, however the validation  and the test processes return a high error rate.\\
+
+Regarding to using RGB FRAV database with LeNet-5 architecture, the purpose of the experiment is test LeNet-5 with a ant-ispoofing face database. The  results obtained are not satisfying. In that experiment, RGB FRAV database has been testing using two classes (attacks and genuine users) and five classes (genuine users and each attack correspond with one different class).\\
+
+In both cases the results are poor and the reason is the architecture is simple and is not able to extract relevant features from images in order to classify them correctly, there is not a learning curve process, the architecture required to be modified; indeed, the learning curve suggest that the learning rate is small because the cost does not decrease, there is no learning.\\
+
+\section{Discussion of the own architecture developed experiments}
+In consequence with the poor performance of LeNet-5 with the anti-spoofing database, the architecture has been modified. Previous works are based on Imagenet architecture and its results are respectable, therefore an own architecture based on Imagenet is developed.\\
+
+The four experiments described to test the architecture behaviour, have been realized with the three anti-spoofing databases: CASIA, FRAV and MFSD-MSU databases.\\
+
+
+\section{Discussion of the final experiment}

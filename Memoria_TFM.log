@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  1 JUN 2017 16:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  2 JUN 2017 14:53
 entering extended mode
 **./Memoria_TFM.tex
 (Memoria_TFM.tex
@@ -489,6 +489,10 @@ Package minitoc Info: I0033
 Package minitoc Info: I0033
 (minitoc)             Writing Memoria_TFM.mtc9.
 \openout3 = `Memoria_TFM.mtc9'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing Memoria_TFM.mtc10.
+\openout3 = `Memoria_TFM.mtc10'.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tocbibind\tocbibind.sty"
@@ -1035,7 +1039,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-<images_miscelaneus/verif_identif.PNG, id=485, 694.09312pt x 542.025pt>
+<images_miscelaneus/verif_identif.PNG, id=505, 694.09312pt x 542.025pt>
 File: images_miscelaneus/verif_identif.PNG Graphic file (type png)
 
 <use images_miscelaneus/verif_identif.PNG>
@@ -1048,7 +1052,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
  []
 
 
-<images_miscelaneus/spoofing_fingerprint.jpg, id=504, 519.9425pt x 347.2975pt>
+<images_miscelaneus/spoofing_fingerprint.jpg, id=524, 519.9425pt x 347.2975pt>
 File: images_miscelaneus/spoofing_fingerprint.jpg Graphic file (type jpg)
 
 <use images_miscelaneus/spoofing_fingerprint.jpg>
@@ -1100,7 +1104,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-<images_miscelaneus/fig_masks.png, id=528, 433.62pt x 275.3487pt>
+<images_miscelaneus/fig_masks.png, id=548, 433.62pt x 275.3487pt>
 File: images_miscelaneus/fig_masks.png Graphic file (type png)
 
 <use images_miscelaneus/fig_masks.png>
@@ -1196,7 +1200,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 Underfull \vbox (badness 3803) has occurred while \output is active []
 
  [13]
-<images_miscelaneus/neuron.png, id=567, 693.59125pt x 325.215pt>
+<images_miscelaneus/neuron.png, id=587, 693.59125pt x 325.215pt>
 File: images_miscelaneus/neuron.png Graphic file (type png)
 
 <use images_miscelaneus/neuron.png>
@@ -1222,7 +1226,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
-<images_miscelaneus/red_neuronal.jpg, id=582, 1783.66376pt x 790.955pt>
+<images_miscelaneus/red_neuronal.jpg, id=602, 1783.66376pt x 790.955pt>
 File: images_miscelaneus/red_neuronal.jpg Graphic file (type jpg)
 
 <use images_miscelaneus/red_neuronal.jpg>
@@ -1234,7 +1238,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
-<images_miscelaneus/neurona_sencilla.jpg, id=583, 963.6pt x 722.7pt>
+<images_miscelaneus/neurona_sencilla.jpg, id=603, 963.6pt x 722.7pt>
 File: images_miscelaneus/neurona_sencilla.jpg Graphic file (type jpg)
 
 <use images_miscelaneus/neurona_sencilla.jpg>
@@ -1257,7 +1261,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--71
  []
 
 [15 <./images_miscelaneus/red_neuronal.jpg>]
-<images_miscelaneus/activation_function.PNG, id=603, 1006.962pt x 823.878pt>
+<images_miscelaneus/activation_function.PNG, id=623, 1006.962pt x 823.878pt>
 File: images_miscelaneus/activation_function.PNG Graphic file (type png)
 
 <use images_miscelaneus/activation_function.PNG>
@@ -1367,7 +1371,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-<images_databases/mnistExamples.png, id=670, 531.9875pt x 298.11375pt>
+<images_databases/mnistExamples.png, id=690, 531.9875pt x 298.11375pt>
 File: images_databases/mnistExamples.png Graphic file (type png)
 
 <use images_databases/mnistExamples.png>
@@ -1389,7 +1393,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-<images_databases/fravrgb/at1-0.JPG, id=717, 154.6578pt x 218.87486pt>
+<images_databases/fravrgb/at1-0.JPG, id=737, 154.6578pt x 218.87486pt>
 File: images_databases/fravrgb/at1-0.JPG Graphic file (type jpg)
 
 <use images_databases/fravrgb/at1-0.JPG>
@@ -1401,7 +1405,7 @@ Underfull \hbox (badness 4556) in paragraph at lines 60--60
 []\OT1/cmr/m/n/10 (a) printed im-age
  []
 
-<images_databases/fravrgb/at2-0.JPG, id=718, 154.6578pt x 218.87486pt>
+<images_databases/fravrgb/at2-0.JPG, id=738, 154.6578pt x 218.87486pt>
 File: images_databases/fravrgb/at2-0.JPG Graphic file (type jpg)
 
 <use images_databases/fravrgb/at2-0.JPG>
@@ -1409,7 +1413,7 @@ Package pdftex.def Info: images_databases/fravrgb/at2-0.JPG used on input line
 61.
 (pdftex.def)             Requested size: 81.9406pt x 115.96303pt.
 
-<images_databases/fravrgb/at3-0.JPG, id=719, 154.6578pt x 211.44138pt>
+<images_databases/fravrgb/at3-0.JPG, id=739, 154.6578pt x 211.44138pt>
 File: images_databases/fravrgb/at3-0.JPG Graphic file (type jpg)
 
 <use images_databases/fravrgb/at3-0.JPG>
@@ -1417,7 +1421,7 @@ Package pdftex.def Info: images_databases/fravrgb/at3-0.JPG used on input line
 62.
 (pdftex.def)             Requested size: 81.9406pt x 112.02466pt.
 
-<images_databases/fravrgb/at4-0.JPG, id=720, 125.95628pt x 178.19717pt>
+<images_databases/fravrgb/at4-0.JPG, id=740, 125.95628pt x 178.19717pt>
 File: images_databases/fravrgb/at4-0.JPG Graphic file (type jpg)
 
 <use images_databases/fravrgb/at4-0.JPG>
@@ -1425,7 +1429,7 @@ Package pdftex.def Info: images_databases/fravrgb/at4-0.JPG used on input line
 63.
 (pdftex.def)             Requested size: 81.9406pt x 115.92738pt.
 
-<images_databases/fravrgb/real0.JPG, id=721, 154.6578pt x 218.87486pt>
+<images_databases/fravrgb/real0.JPG, id=741, 154.6578pt x 218.87486pt>
 File: images_databases/fravrgb/real0.JPG Graphic file (type jpg)
 
 <use images_databases/fravrgb/real0.JPG>
@@ -1437,7 +1441,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-<images_databases/fravrgb/at1-1.JPG, id=723, 214.12569pt x 302.91454pt>
+<images_databases/fravrgb/at1-1.JPG, id=743, 214.12569pt x 302.91454pt>
 File: images_databases/fravrgb/at1-1.JPG Graphic file (type jpg)
 
 <use images_databases/fravrgb/at1-1.JPG>
@@ -1445,7 +1449,7 @@ Package pdftex.def Info: images_databases/fravrgb/at1-1.JPG used on input line
 73.
 (pdftex.def)             Requested size: 81.9406pt x 115.91757pt.
 
-<images_databases/fravrgb/at2-1.JPG, id=724, 237.45857pt x 335.74577pt>
+<images_databases/fravrgb/at2-1.JPG, id=744, 237.45857pt x 335.74577pt>
 File: images_databases/fravrgb/at2-1.JPG Graphic file (type jpg)
 
 <use images_databases/fravrgb/at2-1.JPG>
@@ -1457,7 +1461,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--74
 []\OT1/cmr/m/n/10 (b) mask at-tack
  []
 
-<images_databases/fravrgb/at3-1.JPG, id=725, 294.8616pt x 418.95952pt>
+<images_databases/fravrgb/at3-1.JPG, id=745, 294.8616pt x 418.95952pt>
 File: images_databases/fravrgb/at3-1.JPG Graphic file (type jpg)
 
 <use images_databases/fravrgb/at3-1.JPG>
@@ -1465,7 +1469,7 @@ Package pdftex.def Info: images_databases/fravrgb/at3-1.JPG used on input line
 75.
 (pdftex.def)             Requested size: 81.9406pt x 116.42564pt.
 
-<images_databases/fravrgb/at4-1.JPG, id=726, 148.05026pt x 209.37651pt>
+<images_databases/fravrgb/at4-1.JPG, id=746, 148.05026pt x 209.37651pt>
 File: images_databases/fravrgb/at4-1.JPG Graphic file (type jpg)
 
 <use images_databases/fravrgb/at4-1.JPG>
@@ -1477,7 +1481,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--76
 []\OT1/cmr/m/n/10 (d) tablet at-tack
  []
 
-<images_databases/fravrgb/real1.JPG, id=727, 341.94034pt x 483.58954pt>
+<images_databases/fravrgb/real1.JPG, id=747, 341.94034pt x 483.58954pt>
 File: images_databases/fravrgb/real1.JPG Graphic file (type jpg)
 
 <use images_databases/fravrgb/real1.JPG>
@@ -1485,7 +1489,7 @@ Package pdftex.def Info: images_databases/fravrgb/real1.JPG used on input line
 77.
 (pdftex.def)             Requested size: 81.9406pt x 115.87938pt.
 
-<images_databases/fravnnir/at-1.jpg, id=728, 113.67468pt x 188.95593pt>
+<images_databases/fravnnir/at-1.jpg, id=748, 113.67468pt x 188.95593pt>
 File: images_databases/fravnnir/at-1.jpg Graphic file (type jpg)
 
 <use images_databases/fravnnir/at-1.jpg>
@@ -1493,7 +1497,7 @@ Package pdftex.def Info: images_databases/fravnnir/at-1.jpg used on input line
 79.
 (pdftex.def)             Requested size: 81.9406pt x 136.20673pt.
 
-<images_databases/fravnnir/at-2.jpg, id=729, 113.67468pt x 188.95593pt>
+<images_databases/fravnnir/at-2.jpg, id=749, 113.67468pt x 188.95593pt>
 File: images_databases/fravnnir/at-2.jpg Graphic file (type jpg)
 
 <use images_databases/fravnnir/at-2.jpg>
@@ -1505,7 +1509,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--80
 []\OT1/cmr/m/n/10 (g) mask at-tack
  []
 
-<images_databases/fravnnir/at-3.jpg, id=730, 113.67468pt x 188.95593pt>
+<images_databases/fravnnir/at-3.jpg, id=750, 113.67468pt x 188.95593pt>
 File: images_databases/fravnnir/at-3.jpg Graphic file (type jpg)
 
 <use images_databases/fravnnir/at-3.jpg>
@@ -1513,7 +1517,7 @@ Package pdftex.def Info: images_databases/fravnnir/at-3.jpg used on input line
 81.
 (pdftex.def)             Requested size: 81.9406pt x 136.20673pt.
 
-<images_databases/fravnnir/at-4.jpg, id=731, 113.67468pt x 188.95593pt>
+<images_databases/fravnnir/at-4.jpg, id=751, 113.67468pt x 188.95593pt>
 File: images_databases/fravnnir/at-4.jpg Graphic file (type jpg)
 
 <use images_databases/fravnnir/at-4.jpg>
@@ -1525,7 +1529,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--82
 []\OT1/cmr/m/n/10 (i) tablet at-tack
  []
 
-<images_databases/fravnnir/real.jpg, id=732, 113.67468pt x 188.95593pt>
+<images_databases/fravnnir/real.jpg, id=752, 113.67468pt x 188.95593pt>
 File: images_databases/fravnnir/real.jpg Graphic file (type jpg)
 
 <use images_databases/fravnnir/real.jpg>
@@ -1549,7 +1553,7 @@ G> <./images_databases/fravrgb/at3-1.JPG> <./images_databases/fravrgb/at4-1.JPG
 > <./images_databases/fravrgb/real1.JPG> <./images_databases/fravnnir/at-1.jpg>
  <./images_databases/fravnnir/at-2.jpg> <./images_databases/fravnnir/at-3.jpg> 
 <./images_databases/fravnnir/at-4.jpg> <./images_databases/fravnnir/real.jpg>]
-<images_databases/casia/at1-2.jpg, id=754, 592.2125pt x 1031.855pt>
+<images_databases/casia/at1-2.jpg, id=774, 592.2125pt x 1031.855pt>
 File: images_databases/casia/at1-2.jpg Graphic file (type jpg)
 
 <use images_databases/casia/at1-2.jpg>
@@ -1557,7 +1561,7 @@ Package pdftex.def Info: images_databases/casia/at1-2.jpg used on input line 11
 1.
 (pdftex.def)             Requested size: 91.04742pt x 158.62904pt.
 
-<images_databases/casia/at2-2.jpg, id=755, 444.15938pt x 773.89125pt>
+<images_databases/casia/at2-2.jpg, id=775, 444.15938pt x 773.89125pt>
 File: images_databases/casia/at2-2.jpg Graphic file (type jpg)
 
 <use images_databases/casia/at2-2.jpg>
@@ -1565,7 +1569,7 @@ Package pdftex.def Info: images_databases/casia/at2-2.jpg used on input line 11
 2.
 (pdftex.def)             Requested size: 91.04742pt x 158.63692pt.
 
-<images_databases/casia/at3-2.jpg, id=756, 592.2125pt x 1031.855pt>
+<images_databases/casia/at3-2.jpg, id=776, 592.2125pt x 1031.855pt>
 File: images_databases/casia/at3-2.jpg Graphic file (type jpg)
 
 <use images_databases/casia/at3-2.jpg>
@@ -1573,7 +1577,7 @@ Package pdftex.def Info: images_databases/casia/at3-2.jpg used on input line 11
 3.
 (pdftex.def)             Requested size: 91.04742pt x 158.62904pt.
 
-<images_databases/casia/real2.jpg, id=757, 592.2125pt x 1027.84pt>
+<images_databases/casia/real2.jpg, id=777, 592.2125pt x 1027.84pt>
 File: images_databases/casia/real2.jpg Graphic file (type jpg)
 
 <use images_databases/casia/real2.jpg>
@@ -1596,7 +1600,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
-<images_databases/MFSD/at1-1.jpg, id=777, 100.2144pt x 112.7412pt>
+<images_databases/MFSD/at1-1.jpg, id=797, 100.2144pt x 112.7412pt>
 File: images_databases/MFSD/at1-1.jpg Graphic file (type jpg)
 
 <use images_databases/MFSD/at1-1.jpg>
@@ -1604,7 +1608,7 @@ Package pdftex.def Info: images_databases/MFSD/at1-1.jpg used on input line 170
 .
 (pdftex.def)             Requested size: 91.04742pt x 102.4312pt.
 
-<images_databases/MFSD/at2-1.jpg, id=778, 100.2144pt x 112.7412pt>
+<images_databases/MFSD/at2-1.jpg, id=798, 100.2144pt x 112.7412pt>
 File: images_databases/MFSD/at2-1.jpg Graphic file (type jpg)
 
 <use images_databases/MFSD/at2-1.jpg>
@@ -1612,7 +1616,7 @@ Package pdftex.def Info: images_databases/MFSD/at2-1.jpg used on input line 171
 .
 (pdftex.def)             Requested size: 91.04742pt x 102.4312pt.
 
-<images_databases/MFSD/at3-1.jpg, id=779, 100.2144pt x 112.7412pt>
+<images_databases/MFSD/at3-1.jpg, id=799, 100.2144pt x 112.7412pt>
 File: images_databases/MFSD/at3-1.jpg Graphic file (type jpg)
 
 <use images_databases/MFSD/at3-1.jpg>
@@ -1624,7 +1628,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--172
 []\OT1/cmr/m/n/10 (c) smart-phone
  []
 
-<images_databases/MFSD/1.jpg, id=780, 100.2144pt x 112.7412pt>
+<images_databases/MFSD/1.jpg, id=800, 100.2144pt x 112.7412pt>
 File: images_databases/MFSD/1.jpg Graphic file (type jpg)
 
 <use images_databases/MFSD/1.jpg>
@@ -1677,7 +1681,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-<images_miscelaneus/svm.png, id=802, 72.27pt x 71.3064pt>
+<images_miscelaneus/svm.png, id=822, 72.27pt x 71.3064pt>
 File: images_miscelaneus/svm.png Graphic file (type png)
 
 <use images_miscelaneus/svm.png>
@@ -1718,7 +1722,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
-<images_miscelaneus/tree.png, id=844, 1159.33125pt x 905.3825pt>
+<images_miscelaneus/tree.png, id=864, 1159.33125pt x 905.3825pt>
 File: images_miscelaneus/tree.png Graphic file (type png)
 
 <use images_miscelaneus/tree.png>
@@ -1829,7 +1833,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
-<images_miscelaneus/roccomp.jpg, id=896, 72.27pt x 72.27pt>
+<images_miscelaneus/roccomp.jpg, id=916, 72.27pt x 72.27pt>
 File: images_miscelaneus/roccomp.jpg Graphic file (type jpg)
 
 <use images_miscelaneus/roccomp.jpg>
@@ -1890,7 +1894,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
  []
 
 
-<images/images_lenet/LenetArquitectura.png, id=931, 1759.57375pt x 495.8525pt>
+<images/images_lenet/LenetArquitectura.png, id=951, 1759.57375pt x 495.8525pt>
 File: images/images_lenet/LenetArquitectura.png Graphic file (type png)
 
 <use images/images_lenet/LenetArquitectura.png>
@@ -1962,7 +1966,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
-<images/images_lenet/w_layer0_epoch10.png, id=948, 578.16pt x 433.62pt>
+<images/images_lenet/w_layer0_epoch10.png, id=968, 578.16pt x 433.62pt>
 File: images/images_lenet/w_layer0_epoch10.png Graphic file (type png)
 
 <use images/images_lenet/w_layer0_epoch10.png>
@@ -1974,7 +1978,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-<images/images_lenet/cost_lenet.png, id=950, 578.16pt x 433.62pt>
+<images/images_lenet/cost_lenet.png, id=970, 578.16pt x 433.62pt>
 File: images/images_lenet/cost_lenet.png Graphic file (type png)
 
 <use images/images_lenet/cost_lenet.png>
@@ -1986,7 +1990,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-<images/ModificandoLenet/error_lenet.png, id=952, 578.16pt x 433.62pt>
+<images/ModificandoLenet/error_lenet.png, id=972, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/error_lenet.png Graphic file (type png)
 
 <use images/ModificandoLenet/error_lenet.png>
@@ -2019,7 +2023,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--100
  []
 
 [42 <./images/images_lenet/w_layer0_epoch10.png>]
-<images/images_lenet/lenet_batch/lenet_500batch_rror.png, id=969, 578.16pt x 43
+<images/images_lenet/lenet_batch/lenet_500batch_rror.png, id=989, 578.16pt x 43
 3.62pt>
 File: images/images_lenet/lenet_batch/lenet_500batch_rror.png Graphic file (typ
 e png)
@@ -2028,7 +2032,7 @@ Package pdftex.def Info: images/images_lenet/lenet_batch/lenet_500batch_rror.pn
 g used on input line 103.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
 
-<images/images_lenet/lenet_batch/lenet_20batch_error.png, id=970, 578.16pt x 43
+<images/images_lenet/lenet_batch/lenet_20batch_error.png, id=990, 578.16pt x 43
 3.62pt>
 File: images/images_lenet/lenet_batch/lenet_20batch_error.png Graphic file (typ
 e png)
@@ -2037,7 +2041,7 @@ Package pdftex.def Info: images/images_lenet/lenet_batch/lenet_20batch_error.pn
 g used on input line 104.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
 
-<images/images_lenet/lenet_batch/lenet_100batch_error.png, id=971, 578.16pt x 4
+<images/images_lenet/lenet_batch/lenet_100batch_error.png, id=991, 578.16pt x 4
 33.62pt>
 File: images/images_lenet/lenet_batch/lenet_100batch_error.png Graphic file (ty
 pe png)
@@ -2098,7 +2102,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
-<images/ModificandoLenet/cost_lenet.png, id=1002, 578.16pt x 433.62pt>
+<images/ModificandoLenet/cost_lenet.png, id=1022, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/cost_lenet.png Graphic file (type png)
 
 <use images/ModificandoLenet/cost_lenet.png>
@@ -2106,7 +2110,7 @@ Package pdftex.def Info: images/ModificandoLenet/cost_lenet.png used on input l
 ine 153.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/ModificandoLenet/cost_lenet_LRN.png, id=1003, 578.16pt x 433.62pt>
+<images/ModificandoLenet/cost_lenet_LRN.png, id=1023, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/cost_lenet_LRN.png Graphic file (type png)
 
 <use images/ModificandoLenet/cost_lenet_LRN.png>
@@ -2114,7 +2118,7 @@ Package pdftex.def Info: images/ModificandoLenet/cost_lenet_LRN.png used on inp
 ut line 154.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/ModificandoLenet/cost_lenet_relu.png, id=1004, 578.16pt x 433.62pt>
+<images/ModificandoLenet/cost_lenet_relu.png, id=1024, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/cost_lenet_relu.png Graphic file (type png)
 
 <use images/ModificandoLenet/cost_lenet_relu.png>
@@ -2122,14 +2126,14 @@ Package pdftex.def Info: images/ModificandoLenet/cost_lenet_relu.png used on in
 put line 155.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/ModificandoLenet/cost_lenet_relu_lrn.png, id=1005, 578.16pt x 433.62pt>
+<images/ModificandoLenet/cost_lenet_relu_lrn.png, id=1025, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/cost_lenet_relu_lrn.png Graphic file (type png)
 <use images/ModificandoLenet/cost_lenet_relu_lrn.png>
 Package pdftex.def Info: images/ModificandoLenet/cost_lenet_relu_lrn.png used o
 n input line 156.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/ModificandoLenet/cost_lenet_gausianInit.png, id=1006, 578.16pt x 433.62
+<images/ModificandoLenet/cost_lenet_gausianInit.png, id=1026, 578.16pt x 433.62
 pt>
 File: images/ModificandoLenet/cost_lenet_gausianInit.png Graphic file (type png
 )
@@ -2148,7 +2152,7 @@ Package pdftex.def Info: images/ModificandoLenet/error_lenet.png used on input
 line 164.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/ModificandoLenet/error_lenet_LRN.png, id=1009, 578.16pt x 433.62pt>
+<images/ModificandoLenet/error_lenet_LRN.png, id=1029, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/error_lenet_LRN.png Graphic file (type png)
 
 <use images/ModificandoLenet/error_lenet_LRN.png>
@@ -2156,7 +2160,7 @@ Package pdftex.def Info: images/ModificandoLenet/error_lenet_LRN.png used on in
 put line 165.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/ModificandoLenet/error_lenet_relu.png, id=1010, 578.16pt x 433.62pt>
+<images/ModificandoLenet/error_lenet_relu.png, id=1030, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/error_lenet_relu.png Graphic file (type png)
 
 <use images/ModificandoLenet/error_lenet_relu.png>
@@ -2164,7 +2168,7 @@ Package pdftex.def Info: images/ModificandoLenet/error_lenet_relu.png used on i
 nput line 166.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/ModificandoLenet/error_lenet_relu_lrn.png, id=1011, 578.16pt x 433.62pt
+<images/ModificandoLenet/error_lenet_relu_lrn.png, id=1031, 578.16pt x 433.62pt
 >
 File: images/ModificandoLenet/error_lenet_relu_lrn.png Graphic file (type png)
  <use images/ModificandoLenet/error_lenet_relu_lrn.png>
@@ -2172,7 +2176,7 @@ Package pdftex.def Info: images/ModificandoLenet/error_lenet_relu_lrn.png used
 on input line 167.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/ModificandoLenet/error_frav_gausianInit.png, id=1012, 578.16pt x 433.62
+<images/ModificandoLenet/error_frav_gausianInit.png, id=1032, 578.16pt x 433.62
 pt>
 File: images/ModificandoLenet/error_frav_gausianInit.png Graphic file (type png
 )
@@ -2215,7 +2219,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
-<images/ModificandoLenet/lenet_frav_cost.png, id=1049, 578.16pt x 433.62pt>
+<images/ModificandoLenet/lenet_frav_cost.png, id=1069, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/lenet_frav_cost.png Graphic file (type png)
 
 <use images/ModificandoLenet/lenet_frav_cost.png>
@@ -2223,7 +2227,7 @@ Package pdftex.def Info: images/ModificandoLenet/lenet_frav_cost.png used on in
 put line 208.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
 
-<images/ModificandoLenet/lenet_frav_error.png, id=1050, 578.16pt x 433.62pt>
+<images/ModificandoLenet/lenet_frav_error.png, id=1070, 578.16pt x 433.62pt>
 File: images/ModificandoLenet/lenet_frav_error.png Graphic file (type png)
 
 <use images/ModificandoLenet/lenet_frav_error.png>
@@ -2247,7 +2251,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
-<images_miscelaneus/Imagenet.png, id=1066, 509.65407pt x 235.63031pt>
+<images_miscelaneus/Imagenet.png, id=1086, 509.65407pt x 235.63031pt>
 File: images_miscelaneus/Imagenet.png Graphic file (type png)
 
 <use images_miscelaneus/Imagenet.png>
@@ -2286,502 +2290,502 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--259
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
 [51]
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
 
  []
 
 
-<images/redes/ejecucion1/general_svm_frav/cost.png, id=1084, 578.16pt x 433.62p
+<images/redes/ejecucion1/general_svm_frav/cost.png, id=1104, 578.16pt x 433.62p
 t>
 File: images/redes/ejecucion1/general_svm_frav/cost.png Graphic file (type png)
 
  <use images/redes/ejecucion1/general_svm_frav/cost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_frav/cost.png used
- on input line 293.
+ on input line 294.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_frav/error.png, id=1085, 578.16pt x 433.62
+<images/redes/ejecucion1/general_svm_frav/error.png, id=1105, 578.16pt x 433.62
 pt>
 File: images/redes/ejecucion1/general_svm_frav/error.png Graphic file (type png
 )
  <use images/redes/ejecucion1/general_svm_frav/error.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_frav/error.png use
-d on input line 294.
+d on input line 295.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_frav/minidataset/cost.png, id=1086, 578.16
+<images/redes/ejecucion1/general_svm_frav/minidataset/cost.png, id=1106, 578.16
 pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_frav/minidataset/cost.png Graphic fil
 e (type png)
 
 <use images/redes/ejecucion1/general_svm_frav/minidataset/cost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_frav/minidataset/c
-ost.png used on input line 295.
+ost.png used on input line 296.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_frav/minidataset/error.png, id=1087, 578.1
+<images/redes/ejecucion1/general_svm_frav/minidataset/error.png, id=1107, 578.1
 6pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_frav/minidataset/error.png Graphic fi
 le (type png)
 
 <use images/redes/ejecucion1/general_svm_frav/minidataset/error.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_frav/minidataset/e
-rror.png used on input line 296.
+rror.png used on input line 297.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_frav/minidataset_tested_itself/cost.png, i
-d=1088, 578.16pt x 433.62pt>
+d=1108, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_frav/minidataset_tested_itself/cost.p
 ng Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_frav/minidataset_tested_itself/cost.pn
 g>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_frav/minidataset_t
-ested_itself/cost.png used on input line 297.
+ested_itself/cost.png used on input line 298.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_frav/minidataset_tested_itself/error.png, 
-id=1089, 578.16pt x 433.62pt>
+id=1109, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_frav/minidataset_tested_itself/error.
 png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_frav/minidataset_tested_itself/error.p
 ng>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_frav/minidataset_t
-ested_itself/error.png used on input line 298.
+ested_itself/error.png used on input line 299.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_frav/minidataset_tested_iteself_lr_0_001/c
-ost.png, id=1090, 578.16pt x 433.62pt>
+ost.png, id=1110, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_frav/minidataset_tested_iteself_lr_0_
 001/cost.png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_frav/minidataset_tested_iteself_lr_0_0
 01/cost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_frav/minidataset_t
-ested_iteself_lr_0_001/cost.png used on input line 299.
+ested_iteself_lr_0_001/cost.png used on input line 300.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_frav/minidataset_tested_iteself_lr_0_001/e
-rror.png, id=1091, 578.16pt x 433.62pt>
+rror.png, id=1111, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_frav/minidataset_tested_iteself_lr_0_
 001/error.png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_frav/minidataset_tested_iteself_lr_0_0
 01/error.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_frav/minidataset_t
-ested_iteself_lr_0_001/error.png used on input line 300.
+ested_iteself_lr_0_001/error.png used on input line 301.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_frav_rgb_nir/cost.png, id=1092, 578.16pt x
+<images/redes/ejecucion1/general_svm_frav_rgb_nir/cost.png, id=1112, 578.16pt x
  433.62pt>
 File: images/redes/ejecucion1/general_svm_frav_rgb_nir/cost.png Graphic file (t
 ype png)
  <use images/redes/ejecucion1/general_svm_frav_rgb_nir/cost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_frav_rgb_nir/cost.
-png used on input line 306.
+png used on input line 307.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_frav_rgb_nir/error.png, id=1093, 578.16pt 
+<images/redes/ejecucion1/general_svm_frav_rgb_nir/error.png, id=1113, 578.16pt 
 x 433.62pt>
 File: images/redes/ejecucion1/general_svm_frav_rgb_nir/error.png Graphic file (
 type png)
  <use images/redes/ejecucion1/general_svm_frav_rgb_nir/error.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_frav_rgb_nir/error
-.png used on input line 307.
+.png used on input line 308.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset/cost.png, id=1094
+<images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset/cost.png, id=1114
 , 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset/cost.png Gra
 phic file (type png)
 
 <use images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset/cost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_frav_rgb_nir/minid
-ataset/cost.png used on input line 308.
+ataset/cost.png used on input line 309.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset/error.png, id=109
+<images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset/error.png, id=111
 5, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset/error.png Gr
 aphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset/error.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_frav_rgb_nir/minid
-ataset/error.png used on input line 309.
+ataset/error.png used on input line 310.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_itself/cos
-t.png, id=1096, 578.16pt x 433.62pt>
+t.png, id=1116, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_itsel
 f/cost.png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_itself
 /cost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_frav_rgb_nir/minid
-ataset_tested_itself/cost.png used on input line 310.
+ataset_tested_itself/cost.png used on input line 311.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_itself/err
-or.png, id=1097, 578.16pt x 433.62pt>
+or.png, id=1117, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_itsel
 f/error.png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_itself
 /error.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_frav_rgb_nir/minid
-ataset_tested_itself/error.png used on input line 311.
+ataset_tested_itself/error.png used on input line 312.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_iteself_lr
-_0_001/cost.png, id=1098, 578.16pt x 433.62pt>
+_0_001/cost.png, id=1118, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_itese
 lf_lr_0_001/cost.png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_itesel
 f_lr_0_001/cost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_frav_rgb_nir/minid
-ataset_tested_iteself_lr_0_001/cost.png used on input line 312.
+ataset_tested_iteself_lr_0_001/cost.png used on input line 313.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_iteself_lr
-_0_001/error.png, id=1099, 578.16pt x 433.62pt>
+_0_001/error.png, id=1119, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_itese
 lf_lr_0_001/error.png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_frav_rgb_nir/minidataset_tested_itesel
 f_lr_0_001/error.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_frav_rgb_nir/minid
-ataset_tested_iteself_lr_0_001/error.png used on input line 313.
+ataset_tested_iteself_lr_0_001/error.png used on input line 314.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_casia/cost.png, id=1100, 578.16pt x 433.62
+<images/redes/ejecucion1/general_svm_casia/cost.png, id=1120, 578.16pt x 433.62
 pt>
 File: images/redes/ejecucion1/general_svm_casia/cost.png Graphic file (type png
 )
  <use images/redes/ejecucion1/general_svm_casia/cost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_casia/cost.png use
-d on input line 319.
+d on input line 320.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_casia/error.png, id=1101, 578.16pt x 433.6
+<images/redes/ejecucion1/general_svm_casia/error.png, id=1121, 578.16pt x 433.6
 2pt>
 File: images/redes/ejecucion1/general_svm_casia/error.png Graphic file (type pn
 g)
  <use images/redes/ejecucion1/general_svm_casia/error.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_casia/error.png us
-ed on input line 320.
+ed on input line 321.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_casia/minidataset/cost.png, id=1102, 578.1
+<images/redes/ejecucion1/general_svm_casia/minidataset/cost.png, id=1122, 578.1
 6pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_casia/minidataset/cost.png Graphic fi
 le (type png)
 
 <use images/redes/ejecucion1/general_svm_casia/minidataset/cost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_casia/minidataset/
-cost.png used on input line 321.
+cost.png used on input line 322.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_casia/minidataset/error.png, id=1103, 578.
+<images/redes/ejecucion1/general_svm_casia/minidataset/error.png, id=1123, 578.
 16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_casia/minidataset/error.png Graphic f
 ile (type png)
 
 <use images/redes/ejecucion1/general_svm_casia/minidataset/error.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_casia/minidataset/
-error.png used on input line 322.
+error.png used on input line 323.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_casia/minidataset_tested_itself/cost.png, 
-id=1104, 578.16pt x 433.62pt>
+id=1124, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_casia/minidataset_tested_itself/cost.
 png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_casia/minidataset_tested_itself/cost.p
 ng>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_casia/minidataset_
-tested_itself/cost.png used on input line 323.
+tested_itself/cost.png used on input line 324.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_casia/minidataset_tested_itself/error.png,
- id=1105, 578.16pt x 433.62pt>
+ id=1125, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_casia/minidataset_tested_itself/error
 .png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_casia/minidataset_tested_itself/error.
 png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_casia/minidataset_
-tested_itself/error.png used on input line 324.
+tested_itself/error.png used on input line 325.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_casia/minidataset_tested_iteself_lr_0_001/
-cost.png, id=1106, 578.16pt x 433.62pt>
+cost.png, id=1126, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_casia/minidataset_tested_iteself_lr_0
 _001/cost.png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_casia/minidataset_tested_iteself_lr_0_
 001/cost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_casia/minidataset_
-tested_iteself_lr_0_001/cost.png used on input line 325.
+tested_iteself_lr_0_001/cost.png used on input line 326.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_casia/minidataset_tested_iteself_lr_0_001/
-error.png, id=1107, 578.16pt x 433.62pt>
+error.png, id=1127, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_casia/minidataset_tested_iteself_lr_0
 _001/error.png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_casia/minidataset_tested_iteself_lr_0_
 001/error.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_casia/minidataset_
-tested_iteself_lr_0_001/error.png used on input line 326.
+tested_iteself_lr_0_001/error.png used on input line 327.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_casia_video/cost.png, id=1108, 578.16pt x 
+<images/redes/ejecucion1/general_svm_casia_video/cost.png, id=1128, 578.16pt x 
 433.62pt>
 File: images/redes/ejecucion1/general_svm_casia_video/cost.png Graphic file (ty
 pe png)
  <use images/redes/ejecucion1/general_svm_casia_video/cost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_casia_video/cost.p
-ng used on input line 332.
+ng used on input line 333.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_casia_video/error.png, id=1109, 578.16pt x
+<images/redes/ejecucion1/general_svm_casia_video/error.png, id=1129, 578.16pt x
  433.62pt>
 File: images/redes/ejecucion1/general_svm_casia_video/error.png Graphic file (t
 ype png)
  <use images/redes/ejecucion1/general_svm_casia_video/error.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_casia_video/error.
-png used on input line 333.
+png used on input line 334.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_casia_video/minidataset/cost.png, id=1110,
+<images/redes/ejecucion1/general_svm_casia_video/minidataset/cost.png, id=1130,
  578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_casia_video/minidataset/cost.png Grap
 hic file (type png)
 
 <use images/redes/ejecucion1/general_svm_casia_video/minidataset/cost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_casia_video/minida
-taset/cost.png used on input line 334.
+taset/cost.png used on input line 335.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_casia_video/minidataset/error.png, id=1111
+<images/redes/ejecucion1/general_svm_casia_video/minidataset/error.png, id=1131
 , 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_casia_video/minidataset/error.png Gra
 phic file (type png)
 
 <use images/redes/ejecucion1/general_svm_casia_video/minidataset/error.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_casia_video/minida
-taset/error.png used on input line 335.
+taset/error.png used on input line 336.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_itself/cost
-.png, id=1112, 578.16pt x 433.62pt>
+.png, id=1132, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_itself
 /cost.png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_itself/
 cost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_casia_video/minida
-taset_tested_itself/cost.png used on input line 336.
+taset_tested_itself/cost.png used on input line 337.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_itself/erro
-r.png, id=1113, 578.16pt x 433.62pt>
+r.png, id=1133, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_itself
 /error.png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_itself/
 error.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_casia_video/minida
-taset_tested_itself/error.png used on input line 337.
+taset_tested_itself/error.png used on input line 338.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_iteself_lr_
-0_001/cost.png, id=1114, 578.16pt x 433.62pt>
+0_001/cost.png, id=1134, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_itesel
 f_lr_0_001/cost.png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_iteself
 _lr_0_001/cost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_casia_video/minida
-taset_tested_iteself_lr_0_001/cost.png used on input line 338.
+taset_tested_iteself_lr_0_001/cost.png used on input line 339.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_iteself_lr_
-0_001/error.png, id=1115, 578.16pt x 433.62pt>
+0_001/error.png, id=1135, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_itesel
 f_lr_0_001/error.png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_casia_video/minidataset_tested_iteself
 _lr_0_001/error.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_casia_video/minida
-taset_tested_iteself_lr_0_001/error.png used on input line 339.
+taset_tested_iteself_lr_0_001/error.png used on input line 340.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_mfsd/cost.png, id=1116, 578.16pt x 433.62p
+<images/redes/ejecucion1/general_svm_mfsd/cost.png, id=1136, 578.16pt x 433.62p
 t>
 File: images/redes/ejecucion1/general_svm_mfsd/cost.png Graphic file (type png)
 
  <use images/redes/ejecucion1/general_svm_mfsd/cost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_mfsd/cost.png used
- on input line 345.
+ on input line 346.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-<images/redes/ejecucion1/general_svm_mfsd/error.png, id=1117, 578.16pt x 433.62
+<images/redes/ejecucion1/general_svm_mfsd/error.png, id=1137, 578.16pt x 433.62
 pt>
 File: images/redes/ejecucion1/general_svm_mfsd/error.png Graphic file (type png
 )
  <use images/redes/ejecucion1/general_svm_mfsd/error.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_mfsd/error.png use
-d on input line 346.
+d on input line 347.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_mfsd/minidataset/minidatasetcost.png, id=1
-118, 578.16pt x 433.62pt>
+138, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_mfsd/minidataset/minidatasetcost.png 
 Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_mfsd/minidataset/minidatasetcost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_mfsd/minidataset/m
-inidatasetcost.png used on input line 347.
+inidatasetcost.png used on input line 348.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_mfsd/minidataset/minidataseterror.png, id=
-1119, 578.16pt x 433.62pt>
+1139, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_mfsd/minidataset/minidataseterror.png
  Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_mfsd/minidataset/minidataseterror.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_mfsd/minidataset/m
-inidataseterror.png used on input line 348.
+inidataseterror.png used on input line 349.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_itself/cost.png, i
-d=1120, 578.16pt x 433.62pt>
+d=1140, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_itself/cost.p
 ng Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_itself/cost.pn
 g>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_mfsd/minidataset_t
-ested_itself/cost.png used on input line 349.
+ested_itself/cost.png used on input line 350.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_itself/error.png, 
-id=1121, 578.16pt x 433.62pt>
+id=1141, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_itself/error.
 png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_itself/error.p
 ng>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_mfsd/minidataset_t
-ested_itself/error.png used on input line 350.
+ested_itself/error.png used on input line 351.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_iteself_lr_0_001/c
-ost.png, id=1122, 578.16pt x 433.62pt>
+ost.png, id=1142, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_iteself_lr_0_
 001/cost.png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_iteself_lr_0_0
 01/cost.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_mfsd/minidataset_t
-ested_iteself_lr_0_001/cost.png used on input line 351.
+ested_iteself_lr_0_001/cost.png used on input line 352.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
 <images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_iteself_lr_0_001/e
-rror.png, id=1123, 578.16pt x 433.62pt>
+rror.png, id=1143, 578.16pt x 433.62pt>
 File: images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_iteself_lr_0_
 001/error.png Graphic file (type png)
 
 <use images/redes/ejecucion1/general_svm_mfsd/minidataset_tested_iteself_lr_0_0
 01/error.png>
 Package pdftex.def Info: images/redes/ejecucion1/general_svm_mfsd/minidataset_t
-ested_iteself_lr_0_001/error.png used on input line 352.
+ested_iteself_lr_0_001/error.png used on input line 353.
 (pdftex.def)             Requested size: 191.20169pt x 143.3994pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--357
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
 
  []
 
 [52]
-Underfull \hbox (badness 10000) in paragraph at lines 377--378
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--383
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
 
  []
 
 [53]
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--390
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 391--392
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 405--406
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
 
  []
 
@@ -2837,7 +2841,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
  []
 
 
-<images/ejecucion2_general/resultados_casia_images/cost.png, id=1220, 578.16pt 
+<images/ejecucion2_general/resultados_casia_images/cost.png, id=1240, 578.16pt 
 x 433.62pt>
 File: images/ejecucion2_general/resultados_casia_images/cost.png Graphic file (
 type png)
@@ -2846,7 +2850,7 @@ Package pdftex.def Info: images/ejecucion2_general/resultados_casia_images/cost
 .png used on input line 16.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
 
-<images/ejecucion2_general/resultados_casia_images/error.png, id=1221, 578.16pt
+<images/ejecucion2_general/resultados_casia_images/error.png, id=1241, 578.16pt
  x 433.62pt>
 File: images/ejecucion2_general/resultados_casia_images/error.png Graphic file 
 (type png)
@@ -2860,7 +2864,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
  []
 
 
-<images/ejecucion2_general/resultados_casia_videos/cost.png, id=1224, 578.16pt 
+<images/ejecucion2_general/resultados_casia_videos/cost.png, id=1244, 578.16pt 
 x 433.62pt>
 File: images/ejecucion2_general/resultados_casia_videos/cost.png Graphic file (
 type png)
@@ -2869,7 +2873,7 @@ Package pdftex.def Info: images/ejecucion2_general/resultados_casia_videos/cost
 .png used on input line 28.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
 
-<images/ejecucion2_general/resultados_casia_videos/error.png, id=1225, 578.16pt
+<images/ejecucion2_general/resultados_casia_videos/error.png, id=1245, 578.16pt
  x 433.62pt>
 File: images/ejecucion2_general/resultados_casia_videos/error.png Graphic file 
 (type png)
@@ -2887,7 +2891,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
  []
 
 
-<images/ejecucion2_general/resultados_frav/cost.png, id=1237, 578.16pt x 433.62
+<images/ejecucion2_general/resultados_frav/cost.png, id=1257, 578.16pt x 433.62
 pt>
 File: images/ejecucion2_general/resultados_frav/cost.png Graphic file (type png
 )
@@ -2896,7 +2900,7 @@ Package pdftex.def Info: images/ejecucion2_general/resultados_frav/cost.png use
 d on input line 40.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
 
-<images/ejecucion2_general/resultados_frav/error.png, id=1238, 578.16pt x 433.6
+<images/ejecucion2_general/resultados_frav/error.png, id=1258, 578.16pt x 433.6
 2pt>
 File: images/ejecucion2_general/resultados_frav/error.png Graphic file (type pn
 g)
@@ -2913,7 +2917,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
  []
 
 
-<images/ejecucion2_general/resultados_frav_rgb_nir/cost.png, id=1253, 578.16pt 
+<images/ejecucion2_general/resultados_frav_rgb_nir/cost.png, id=1273, 578.16pt 
 x 433.62pt>
 File: images/ejecucion2_general/resultados_frav_rgb_nir/cost.png Graphic file (
 type png)
@@ -2922,7 +2926,7 @@ Package pdftex.def Info: images/ejecucion2_general/resultados_frav_rgb_nir/cost
 .png used on input line 52.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
 
-<images/ejecucion2_general/resultados_frav_rgb_nir/error.png, id=1254, 578.16pt
+<images/ejecucion2_general/resultados_frav_rgb_nir/error.png, id=1274, 578.16pt
  x 433.62pt>
 File: images/ejecucion2_general/resultados_frav_rgb_nir/error.png Graphic file 
 (type png)
@@ -2945,7 +2949,7 @@ Underfull \vbox (badness 2310) has occurred while \output is active []
 
  [63 <./images/ejecucion2_general/resultados_frav/cost.png> <./images/ejecucion
 2_general/resultados_frav/error.png>]
-<images/ejecucion2_general/resultados_frav_concatenated/cost_rgb.png, id=1266, 
+<images/ejecucion2_general/resultados_frav_concatenated/cost_rgb.png, id=1286, 
 578.16pt x 433.62pt>
 File: images/ejecucion2_general/resultados_frav_concatenated/cost_rgb.png Graph
 ic file (type png)
@@ -2955,7 +2959,7 @@ Package pdftex.def Info: images/ejecucion2_general/resultados_frav_concatenated
 /cost_rgb.png used on input line 65.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
 
-<images/ejecucion2_general/resultados_frav_concatenated/error_rgb.png, id=1267,
+<images/ejecucion2_general/resultados_frav_concatenated/error_rgb.png, id=1287,
  578.16pt x 433.62pt>
 File: images/ejecucion2_general/resultados_frav_concatenated/error_rgb.png Grap
 hic file (type png)
@@ -2965,7 +2969,7 @@ Package pdftex.def Info: images/ejecucion2_general/resultados_frav_concatenated
 /error_rgb.png used on input line 66.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
 
-<images/ejecucion2_general/resultados_frav_concatenated/cost_nir.png, id=1268, 
+<images/ejecucion2_general/resultados_frav_concatenated/cost_nir.png, id=1288, 
 578.16pt x 433.62pt>
 File: images/ejecucion2_general/resultados_frav_concatenated/cost_nir.png Graph
 ic file (type png)
@@ -2975,7 +2979,7 @@ Package pdftex.def Info: images/ejecucion2_general/resultados_frav_concatenated
 /cost_nir.png used on input line 67.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
 
-<images/ejecucion2_general/resultados_frav_concatenated/error_nir.png, id=1269,
+<images/ejecucion2_general/resultados_frav_concatenated/error_nir.png, id=1289,
  578.16pt x 433.62pt>
 File: images/ejecucion2_general/resultados_frav_concatenated/error_nir.png Grap
 hic file (type png)
@@ -3000,7 +3004,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
  []
 
 
-<images/ejecucion2_general/resultados_mfsd/cost.png, id=1272, 578.16pt x 433.62
+<images/ejecucion2_general/resultados_mfsd/cost.png, id=1292, 578.16pt x 433.62
 pt>
 File: images/ejecucion2_general/resultados_mfsd/cost.png Graphic file (type png
 )
@@ -3009,7 +3013,7 @@ Package pdftex.def Info: images/ejecucion2_general/resultados_mfsd/cost.png use
 d on input line 82.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
 
-<images/ejecucion2_general/resultados_mfsd/error.png, id=1273, 578.16pt x 433.6
+<images/ejecucion2_general/resultados_mfsd/error.png, id=1293, 578.16pt x 433.6
 2pt>
 File: images/ejecucion2_general/resultados_mfsd/error.png Graphic file (type pn
 g)
@@ -3061,7 +3065,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
-<images_databases/casia_real_41.jpg, id=1306, 722.7pt x 1284.8pt>
+<images_databases/casia_real_41.jpg, id=1326, 722.7pt x 1284.8pt>
 File: images_databases/casia_real_41.jpg Graphic file (type jpg)
 
 <use images_databases/casia_real_41.jpg>
@@ -3098,7 +3102,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
  []
 
 
-<images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png, id=1315, 495.0495pt x 411.93
+<images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png, id=1335, 495.0495pt x 411.93
 9pt>
 File: images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png Graphic file (type png)
  <use images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png>
@@ -3129,7 +3133,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
-<images_databases/frav_tablet_109.JPG, id=1325, 133.38977pt x 188.72794pt>
+<images_databases/frav_tablet_109.JPG, id=1345, 133.38977pt x 188.72794pt>
 File: images_databases/frav_tablet_109.JPG Graphic file (type jpg)
 
 <use images_databases/frav_tablet_109.JPG>
@@ -3137,7 +3141,7 @@ Package pdftex.def Info: images_databases/frav_tablet_109.JPG used on input lin
 e 191.
 (pdftex.def)             Requested size: 91.04742pt x 128.82573pt.
 
-<images_databases/frav_tablet_162.JPG, id=1326, 165.60155pt x 234.1548pt>
+<images_databases/frav_tablet_162.JPG, id=1346, 165.60155pt x 234.1548pt>
 File: images_databases/frav_tablet_162.JPG Graphic file (type jpg)
 
 <use images_databases/frav_tablet_162.JPG>
@@ -3150,7 +3154,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--198
  []
 
 
-<images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png, id=1328, 495.0495pt x 411.939pt>
+<images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png, id=1348, 495.0495pt x 411.939pt>
 File: images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png Graphic file (type png)
 
 <use images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png>
@@ -3182,7 +3186,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
-<images_databases/frav_rgb_151.JPG, id=1338, 39.23228pt x 50.589pt>
+<images_databases/frav_rgb_151.JPG, id=1358, 39.23228pt x 50.589pt>
 File: images_databases/frav_rgb_151.JPG Graphic file (type jpg)
 
 <use images_databases/frav_rgb_151.JPG>
@@ -3190,7 +3194,7 @@ Package pdftex.def Info: images_databases/frav_rgb_151.JPG used on input line 2
 34.
 (pdftex.def)             Requested size: 91.04742pt x 117.4198pt.
 
-<images_databases/frav_nir_151.jpg, id=1339, 45.771pt x 59.0205pt>
+<images_databases/frav_nir_151.jpg, id=1359, 45.771pt x 59.0205pt>
 File: images_databases/frav_nir_151.jpg Graphic file (type jpg)
 
 <use images_databases/frav_nir_151.jpg>
@@ -3198,7 +3202,7 @@ Package pdftex.def Info: images_databases/frav_nir_151.jpg used on input line 2
 35.
 (pdftex.def)             Requested size: 91.04742pt x 117.41653pt.
 
-<images_databases/frav_rgb_128.JPG, id=1340, 39.23228pt x 50.589pt>
+<images_databases/frav_rgb_128.JPG, id=1360, 39.23228pt x 50.589pt>
 File: images_databases/frav_rgb_128.JPG Graphic file (type jpg)
 
 <use images_databases/frav_rgb_128.JPG>
@@ -3206,7 +3210,7 @@ Package pdftex.def Info: images_databases/frav_rgb_128.JPG used on input line 2
 37.
 (pdftex.def)             Requested size: 91.04742pt x 117.4198pt.
 
-<images_databases/frav_nir_128.jpg, id=1341, 143.03438pt x 184.43906pt>
+<images_databases/frav_nir_128.jpg, id=1361, 143.03438pt x 184.43906pt>
 File: images_databases/frav_nir_128.jpg Graphic file (type jpg)
 
 <use images_databases/frav_nir_128.jpg>
@@ -3219,14 +3223,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--244
  []
 
 [70 <./images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png>]
-<images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png, id=1350, 495.0495pt x 411.939pt>
+<images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png, id=1370, 495.0495pt x 411.939pt>
 File: images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png Graphic file (type png)
 <use images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png>
 Package pdftex.def Info: images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png used on i
 nput line 247.
 (pdftex.def)             Requested size: 213.96529pt x 178.04173pt.
 
-<images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png, id=1351, 495.0495pt x 411.9
+<images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png, id=1371, 495.0495pt x 411.9
 39pt>
 File: images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png Graphic file (type png)
 
@@ -3276,7 +3280,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--287
 
 [72 <./images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png> <./images/FAR-FRR/FRAV_fea
 t_DecisionTree_FAR_FRR.png>]
-<images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png, id=1370, 495.0495pt x 411.93
+<images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png, id=1390, 495.0495pt x 411.93
 9pt>
 File: images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png Graphic file (type png)
  <use images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png>
@@ -3302,7 +3306,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
-<images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png, id=1380, 495.0495pt x 411.939pt>
+<images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png, id=1400, 495.0495pt x 411.939pt>
 File: images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png Graphic file (type png)
 
 <use images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png>
@@ -3314,7 +3318,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
-<images/comparative/CASIAs_KNN_ROC.png, id=1381, 578.16pt x 433.62pt>
+<images/comparative/CASIAs_KNN_ROC.png, id=1401, 578.16pt x 433.62pt>
 File: images/comparative/CASIAs_KNN_ROC.png Graphic file (type png)
 
 <use images/comparative/CASIAs_KNN_ROC.png>
@@ -3332,7 +3336,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 341--342
  []
 
 [74 <./images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png>]
-<images/comparative/FRAVs_SVM_RBF_ROC.png, id=1390, 578.16pt x 433.62pt>
+<images/comparative/FRAVs_SVM_RBF_ROC.png, id=1410, 578.16pt x 433.62pt>
 File: images/comparative/FRAVs_SVM_RBF_ROC.png Graphic file (type png)
 
 <use images/comparative/FRAVs_SVM_RBF_ROC.png>
@@ -3388,6 +3392,58 @@ LaTeX Warning: No positions in optional float specifier.
 
 ]
 Chapter 7.
+(Results_discussion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+[79]
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+) [80]
+Chapter 8.
 (conoclusion.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
@@ -3423,7 +3479,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-[79]
+[81
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
@@ -3463,7 +3521,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-[80]
+[82]
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
@@ -3494,16 +3552,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--61
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 62--201
+Underfull \hbox (badness 10000) in paragraph at lines 62--202
 
  []
 
-(Memoria_TFM.bbl [81] [82
+(Memoria_TFM.bbl [83] [84
 
 ]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
- [83]
+ [85]
 Underfull \hbox (badness 1194) in paragraph at lines 63--66
 []\OT1/cmr/m/n/12 ``Take bio-met-ric se-cu-rity sys-tems to the next level.'' [
 ]$http : / / www . rechters . pl /
@@ -3511,7 +3569,7 @@ Underfull \hbox (badness 1194) in paragraph at lines 63--66
 
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ± in font cmr12!
-[84]
+[86]
 Overfull \hbox (15.76105pt too wide) in paragraph at lines 131--134
 \OT1/cmr/m/n/12 gure / 264273647[]g1[]Fig-[]18-[]0-[]9-[]Sample-[]digits-[]of
 -[]MNIST-[]handwritten-[]digit-[]database$[].
@@ -3524,7 +3582,7 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¤ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¼ in font cmr12!
-[85]
+[87]
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
@@ -3550,25 +3608,25 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the Memoria_TFM.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
-[86]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 220.
+[88]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
  (Memoria_TFM.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 220.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 220.
 Package rerunfilecheck Info: File `Memoria_TFM.out' has not changed.
-(rerunfilecheck)             Checksum: D74B19450224D23A60B0800FC9F6350A;5628.
+(rerunfilecheck)             Checksum: DFBED8BC4C6573BC63BD1C4F9B2A992D;5975.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 220.
  ) 
 Here is how much of TeX's memory you used:
- 13224 strings out of 493333
- 214047 string characters out of 3139198
- 329723 words of memory out of 3000000
- 15786 multiletter control sequences out of 15000+200000
+ 13241 strings out of 493333
+ 214262 string characters out of 3139198
+ 329778 words of memory out of 3000000
+ 15791 multiletter control sequences out of 15000+200000
  14985 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,18n,43p,959b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3583,9 +3641,9 @@ m/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Memoria_TFM.pdf (96 pages, 14555705 bytes).
+Output written on Memoria_TFM.pdf (98 pages, 14683251 bytes).
 PDF statistics:
- 1582 PDF objects out of 1728 (max. 8388607)
- 372 named destinations out of 1000 (max. 500000)
- 1203 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1613 PDF objects out of 1728 (max. 8388607)
+ 378 named destinations out of 1000 (max. 500000)
+ 1235 words of extra memory for PDF output out of 10000 (max. 10000000)
 

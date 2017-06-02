@@ -13,7 +13,7 @@ LeNet-5 \cite{Lenet5} is the name of a certain architecture of a convolutional n
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.7\textwidth]{images/images_lenet/LenetArquitectura.png}
-  \caption{LeNet-5 Arquitecture}
+  \caption{LeNet-5 Arquitecture.}
   \label{Lenet5Arquitectura}
 \end{figure}
 
@@ -61,7 +61,7 @@ While the training is being calculate, the weights are being updated in each ite
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.7\textwidth]{images/images_lenet/w_layer0_epoch10.png}
-\caption{Weights at epoch 10 of the first convolutional layer} \label{fig:weights_lenet}
+\caption{Weights at epoch 10 of the first convolutional layer.} \label{fig:weights_lenet}
 \end{figure}
 
 The training procedure returns the cost function in each iteration to evaluate the training behavior. The cost function at training obtained executing LeNet-5 is represented in figure \ref{fig:Lenetcost}, and its value decreases as the iterations rise converging in almost 0; this curve is the desired one for each training practice, because it is not oscillate abruptly and converges in a very low value logarithmically.\\
@@ -77,7 +77,7 @@ The error obtained at validation is represented in figure \ref{fig:Lenetresult},
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.7\textwidth]{images/ModificandoLenet/error_lenet.png}
-\caption{Validation error obtained with LeNet-5 with MNIST digit database} \label{fig:Lenetresult}
+\caption{Validation error obtained with LeNet-5 with MNIST digit database.} \label{fig:Lenetresult}
 \end{figure}
 
 The test result has been calculated with the model of the iteration 18300 (epoch $37^{th}$), with a validation error of 0.91\%. The error rate obtained is 0.92\% what it means that 920 samples of 100000 of the testing subset are being misclassified.\\
@@ -188,7 +188,7 @@ Experiment 3  &     Using ReLu and LRN                      &              1.18\
 Experiment 4  &     Gaussian weight initialization          &              81.22\%  (100 iter.)              &                          80.90\%         \\ \hline
 \end{tabular}%
 }
-\caption{Lenet-5 experiments results}
+\caption{Lenet-5 experiments results.}
 \label{Experiments-lenet}
 \end{table}
 
@@ -269,7 +269,7 @@ Samples distribution are described in table \ref{Samples_distribution} where the
 \multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Valid samples class 1} & 83                               & 70                                     & 13                                   & 39                                   & 12                           \\ \hline \hline
 \multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Test samples class 0}  & 19                               & 16                                     & 16                                   & 540                                  & 3                            \\ \hline
 \multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Test samples class 1}  & 167                              & 70                                     & 23                                   & 180                                  & 25                           \\ \hline
-\end{tabular}\caption{Samples distribution for each database}
+\end{tabular}\caption{Samples distribution for each database.}
 \label{Samples_distribution}
 \end{table}
 

@@ -85,7 +85,11 @@
 \contentsline {subsection}{\numberline {6.3.2}FRAVs databases}{74}{subsection.0.6.3.2}
 \contentsline {section}{\numberline {6.4}Results comparative with related works}{76}{section.0.6.4}
 \contentsline {section}{\numberline {6.5}Executing time}{76}{section.0.6.5}
-\contentsline {chapter}{\numberline {7}Conclusions and future work}{79}{chapter.0.7}
-\contentsline {section}{\numberline {7.1}Conclusions}{79}{section.0.7.1}
-\contentsline {section}{\numberline {7.2}Future work}{81}{section.0.7.2}
-\contentsline {chapter}{Bibliography}{83}{chapter*.78}
+\contentsline {chapter}{\numberline {7}Discussion on experiments}{79}{chapter.0.7}
+\contentsline {section}{\numberline {7.1}Discussion of LeNet-5 and its results}{79}{section.0.7.1}
+\contentsline {section}{\numberline {7.2}Discussion of the own architecture developed experiments}{80}{section.0.7.2}
+\contentsline {section}{\numberline {7.3}Discussion of the final experiment}{80}{section.0.7.3}
+\contentsline {chapter}{\numberline {8}Conclusions and future work}{81}{chapter.0.8}
+\contentsline {section}{\numberline {8.1}Conclusions}{81}{section.0.8.1}
+\contentsline {section}{\numberline {8.2}Future work}{83}{section.0.8.2}
+\contentsline {chapter}{Bibliography}{85}{chapter*.78}
