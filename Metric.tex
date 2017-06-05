@@ -3,8 +3,7 @@
 To characterize a system, it is necessary metrics that evaluate it. In this section the used metrics along the thesis are exposed.\\
 
 Before describing the parameters it is necessary define that the posed problem is bi-class, that means that only two classes would be used:
-
-\begin{description}
+\begin{description}[itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
 \item \textbf{Positive class}: are the samples of the real users, the genuine or \textit{bona fide}.
 \item \textbf{Negative class}: are the different attacks samples which that pretend to be real users but not.
 \end{description}
@@ -20,7 +19,7 @@ The loss is calculated in the following way:\\
   Loss(\theta, D) = - \sum_{i=0}^{|D|}log P(Y = y^{(i)}|x^{(i)}, \theta)
 \end{equation}
 
-The error in the validation process is calculated after the logistic regression classification, because is the classifier used during the training process. The error during the testing procedure depends on the used classifier. In both cases, the error represents the number of misclassified samples over the total samples used.\\
+The error in the validation process is calculated after the logistic regression classification, because is the classifier used during the training process. The error during the testing procedure depends on the used classifier. In both cases, the error represents the number of misclassified samples over the total samples used.
 
 \subsection{True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}
 If each predicted class is compared with it real target, True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN) values could be calculated. These metrics are usually used for bi-classes problems.\\
@@ -45,11 +44,10 @@ From those four metrics, it could be extracted the confusion matrix for binary c
 \caption{Confusion Matrix.} \label{table:ConfusionMatrix}
 \end{table}
 
-The confusion Matrix resume these four metrics in a table. Both, the confusion matrix or the parameters individually, are widely utilized.\\
+The confusion Matrix resume these four metrics in a table. Both, the confusion matrix or the parameters individually, are widely utilized.
 
 \subsection{ROC curve and Equal Error Rate (EER)}
-From the confusion matrix, it is possible calculate others parameters \cite{Sokolova}: precision, recall, specificity, accuracy, etc. because its values depend on TP, TN, FP, FN:\\
-
+From the confusion matrix, it is possible calculate others parameters \cite{Sokolova}: precision, recall, specificity, accuracy, etc. because its values depend on TP, TN, FP, FN:
 \begin{itemize}
 \item The False Positive Rate (FPR) is defined as the proportion of all the negative samples (\textit{N}) that are classified as positive incorrectly \cite{ROC}:
 
@@ -104,7 +102,8 @@ The figure \ref{RocImage}, obtained from \cite{RocImage}, demonstrates a ROC gra
 
 From the ROC curve, the Area Under the Curve (AUC) could be obtained, this value is the integral of the ROC curve, and its maximum value is 1 that means a perfect performance of the classifier. If the value of this parameter is lower than 0.7 the classifier performance required to be improved significantly.\\
 
-From FAR and FRR rates it is possible to calculate the Equal Error Rate (ERR) and it is obtained at the point where FAR and FRR acquire the same value. The closest is its value to 0, the better is the performance of the classifier.\\
+From FAR and FRR rates it is possible to calculate the Equal Error Rate (ERR) and it is obtained at the point where FAR and FRR acquire the same value. The closest is its value to 0, the better is the performance of the classifier.
+
 %The Precision and Recall curve is the representation of the Precision and the Recall in the same graph. The desired behaviour of a classification system is a high recall (1) and a high precision (1) because that would mean that predictions made by the classifier are correct.\\
 
 \subsection{APCER and BPCER}
@@ -130,4 +129,4 @@ where: \begin{itemize}
 \item $N_{PAIS}$ is the number of attack presentations
 \end{itemize}
 
-The APCER-BPCER curve illustrates in the same graph both parameters. The ideal system would have a low APCER (0) and a low BPCER (0) because it means that samples are not incorrectly classified.\\
+The APCER-BPCER curve illustrates in the same graph both parameters. The ideal system would have a low APCER (0) and a low BPCER (0) because it means that samples are not incorrectly classified.
