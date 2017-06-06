@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  5 JUN 2017 16:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  6 JUN 2017 16:41
 entering extended mode
 **./Memoria_TFM.tex
 (Memoria_TFM.tex
@@ -788,9 +788,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
-(agradecimientos.tex [3] [4
-
-]
+(agradecimientos.tex [3] [4]
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
@@ -810,7 +808,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--175
 
  []
 
-[5] [6
+[5
+
+] [6
 
 ] (Memoria_TFM.toc [7] [8])
 \tf@toc=\write5
@@ -845,11 +845,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-
- []
-
 [1
 
 ]
@@ -878,37 +873,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Underfull \vbox (badness 1112) has occurred while \output is active []
+
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
@@ -916,10 +904,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
-
-
-LaTeX Warning: Reference `ch:experiments' on page 3 undefined on input line 49.
-
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 49--50
@@ -931,8 +915,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+
+LaTeX Warning: Reference `ch:experiments' on page 3 undefined on input line 55.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
 )
-Underfull \hbox (badness 10000) in paragraph at lines 53--188
+Underfull \hbox (badness 10000) in paragraph at lines 59--188
 
  []
 
@@ -980,20 +983,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
- []
-
 ) [6]
 Chapter 3.
 (theory.tex (spoofing.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
@@ -1015,11 +1008,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 [7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
@@ -1065,37 +1053,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
  []
 
 [9 <./images_miscelaneus/verif_identif.PNG>]
-Overfull \hbox (1.484pt too wide) in paragraph at lines 74--75
-[]\OT1/cmr/m/n/12 Evaluate the en-tire ac-qui-si-tion sys-tems in-clud-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
 [10 <./images_miscelaneus/spoofing_fingerprint.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
@@ -1103,41 +1085,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
 File: images_miscelaneus/fig_masks.png Graphic file (type png)
 
 <use images_miscelaneus/fig_masks.png>
-Package pdftex.def Info: images_miscelaneus/fig_masks.png used on input line 92
+Package pdftex.def Info: images_miscelaneus/fig_masks.png used on input line 94
 .
 (pdftex.def)             Requested size: 227.62206pt x 144.53922pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
 [11 <./images_miscelaneus/fig_masks.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
 ) (cnn_theory.tex
-Underfull \hbox (badness 10000) in paragraph at lines 114--2
+Underfull \hbox (badness 10000) in paragraph at lines 117--2
 
  []
 
@@ -3112,7 +3094,7 @@ Here is how much of TeX's memory you used:
  15723 multiletter control sequences out of 15000+200000
  14985 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,18n,43p,959b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,18n,43p,967b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
@@ -3124,7 +3106,7 @@ m/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Memoria_TFM.pdf (94 pages, 13818608 bytes).
+Output written on Memoria_TFM.pdf (94 pages, 13819506 bytes).
 PDF statistics:
  1568 PDF objects out of 1728 (max. 8388607)
  391 named destinations out of 1000 (max. 500000)
