@@ -1,7 +1,7 @@
  %!TEX root = Memoria_TFM.tex
 \section{Anti-spoofing and biometrics systems}
 At the same time that technology has evolved, capture systems and processing algorithms have proceeded too. This opens up a wide variety of options,  one of them being the capability of developing biometrics systems, giving way to identification and recognition systems.\\
- 
+
 A biometric system is a software and hardware system which is based on human physical characteristics or psychological behavior in order to identify a person.
 
 \subsection{Historical introduction}
@@ -58,7 +58,7 @@ At the same time that biometrics authentication systems appeared, the attacks to
 \end{figure}
 
 Spoofing is referenced to impersonate a biometric system trying to be verified or to get an identity when the user is not a genuine. The attack would depend on the biometry and the capturing system \cite{Spoofing_survey}. Attacks are usually made with artificial articles.\\
- 
+
 In order to identify the tricks and putting an end to  spoofing attacks, \textit{anti-spoofing} tries to minimize the attacks or prevent them.\\
 
 
@@ -79,13 +79,13 @@ In this project,  an algorithm is going to be developed so as to detect anti-spo
 
 \subsection{Face anti-spoofing}
 Face biometrics is a frequently used biometric system because of its attributes since it is not intrusive, it is easy capturing images and it is considerably accepted by people as biometrics. \\
- 
+
 The principal or main used acquire systems are visible light cameras, apart from, other cameras as infra-red or depth camera that can also be used too. Moreover, using different types of cameras could help to detect anti-spoofing attacks.\\
- 
+
 The disadvantages of cameras as sensors are that the illumination needs to be controlled and images from different angles may not always be be suitable. In addition, people’s expressions or face occlusions are complicated to work with \cite{survey2,2d_3d_face}. On the contrary, the main advantage of using a visible light camera as sensor is the cost, which is affordable. \\
- 
+
 The location of verification or identification systems could be in a static and specific place as the office entrance or a wide place as a subway or an airport \cite{survey2}.\\
- 
+
 The spoofing attacks could be 3D attacks, if 3D masks are used; printed photos; 2D mask and displaying an image or video on a smartphone or tablet can also be considered 2D attacks \cite{2d_3d_face}. The cost of 2D attacks is not high \cite{distorsion} and less expensive than 3D spoofing attacks.\\
 
 
@@ -99,19 +99,19 @@ In figure \ref{fig:3dMasks} (image obtained from \cite{3dmask}) 3D resin face ma
 
 A 2D mask, printed photos or images and videos displayed on a smart device are attacks that easier to obtain thanks to the accessibility to personal information in social networks or the easy purchase of visible light cameras.\\
 
- 
+
 To discuss about spoofing attacks, the feature level is the most studied method. Literature separates it into two different groups: the dynamic and the static approach \cite{Spoofing_survey}:
 \begin{description}[itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
-\item[Dynamic:] is based on motion to detect anti-spoofing, for instance, blink eyes or optical flow assessment, therefore a temporal sequence of images are needed. It could be efficient when image attacks are used, but not too accurate when videos are used.
+\item[Dynamic:] it is based on motion to detect anti-spoofing. blinking eyes or optical flow assessment for example. Therefore, a temporal sequence of images are needed. It could be efficient when image attacks are used, but not too accurate when videos are used.
 \item[Static:] a unique image is analyzed.
 \end{description}
 
-Different techniques, to decide if a user is being impersonated, are being researched and could be used with image and video sequences \cite{Spoofing_survey}.\\
+Different techniques to decide if a user is being impersonated or not are being researched and could be used with image and video sequences \cite{Spoofing_survey}.\\
 
 Texture-based methods are one of the most investigated. Local Binary Patterns (LBP),  Histogram of Oriented Gradients (HOG) or Difference of Gaussian (DoG) are algorithms used to extract images features \cite{distorsion,Spoofing_survey}.\\
 
-Motion or liveness detection methods search for movement in videos, asking the user to realize a movement or analyzing the video frames sequence. The liveness could be detected in the blinking eyes, lip movement or head rotation \cite{distorsion,Spoofing_survey}.\\
+Motion or liveness detection methods search for movement in videos, asking the user to make a movement or analyzing the video frames sequence. The liveness could be detected in the blinking of the eyes, lip movement or head rotation \cite{distorsion,Spoofing_survey}.\\
 
-Others methods, as multispectral-based anti-spoofing, uses images obtained from an alternative to visible light cameras such as infra-red cameras \cite{distorsion}.\\
+Others methods, as multispectral-based anti-spoofing, use images obtained from an alternative to visible light cameras such as infra-red cameras \cite{distorsion}.\\
 
-In general, the explained methods works with 2D face anti-spoofing although 3D anti-spoofing is present too using as a sensor depth cameras \cite{2d_3d_face}. This thesis is focused on 2D face anti-spoofing.\\
+Generally, the explained methods work with 2D face anti-spoofing.  However, 3D anti-spoofing is present too used as sensor depth cameras \cite{2d_3d_face}. This thesis is focused on 2D face anti-spoofing.\\

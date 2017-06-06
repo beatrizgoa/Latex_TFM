@@ -144,40 +144,30 @@ Below the details of each experiment are described:\\
 
 %Using Local Response Normalization we want to detect high frequency features with a large response. If we normalize around the local neighborhood of the excited neuron, it becomes even more sensitive as compared to its neighbors.[\url{https://prateekvjoshi.com/2016/04/05/what-is-local-response-normalization-in-convolutional-neural-networks/}].\\
 
-First, the cost of training process are going to be visualized with the original cost train, without modifying LeNet). In figure \ref{fig:CostModLeNet} is represented. Also the validation error ($validationError = validationCost*100$) could be visualized in figure \ref{fig:CostModLeNet}. The network has been running for 200 epochs.\\
+In figure \ref{fig:LenetModifications} are represented the cost at training (figure \ref{fig:cost_lenet_modifications}) and the error at validation (figure \ref{fig:error_lenet_modifications}) of the four training process experiments  with the original LeNet-5 results. Each network has run 200 epoch, except if early-stopping has been needed.\\
 
 \begin{figure}[htb]    \centering
-	\subfigure[Original LeNet]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet.png}\label{fig:cost_lenet} }
-	\subfigure[Experiment 1: using LRN]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet_LRN.png}}
-	\subfigure[Experiment 2: using ReLu]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet_relu.png}}
-	\subfigure[Experiment 3: using ReLu and LRN]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet_relu_lrn.png}}
-	\subfigure[Experiment 4: using Gaussian weights init.]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet_gausianInit.png} \label{fig:cost_gaus_lenet}}
-    \caption{Cost function of Lenet and Lenet Modified.} \label{fig:CostModLeNet}
+	\subfigure[Cost at training{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet.png}\label{fig:cost_lenet_modifications} }
+	\subfigure[Error at validation]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet_LRN.png}}\label{fig:cost_lenet_modifications}}
+    \caption{Cost at training and error at validatioin of LeNet-5 and the four experiments.} \label{fig:LenetModifications}
 \end{figure}
+
+From figure \ref{fig:LenetModifications}, the first observation is the Gaussian initialization has worsened the original result significantly, the cost converges in 2.3 while in others experiments converges in a value close to 0. Moreover, the early-stopping has provoke that the training process for the fourth experiment Gaussian initialization experiment) stops in 100^{th} epoch.\\
 
 Visualizing the loss during the training, could be affirmed that the network with Gaussian initialization is in a local minimum because the loss has converged as could be seen in figure \ref{fig:cost_gaus_lenet}. The loss of LeNet-5 without being modified (figure  \ref{fig:cost_lenet}) is the one whose oscillation at training is less than others.\\
-
-\begin{figure}[htb]    \centering
-	\subfigure[Original LeNet]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/error_lenet.png}\label{fig:error_lenet} }
-	\subfigure[Experiment 1: using LRN]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/error_lenet_LRN.png}}
-	\subfigure[Experiment 2: using ReLu]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/error_lenet_relu.png}}
-	\subfigure[Experiment 3: using ReLu and LRN]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/error_lenet_relu_lrn.png}}
-	\subfigure[Experiment 4: using Gaussian weights init.]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/error_frav_gausianInit.png} \label{fig:error_gaus_lenet}}
-    \caption{Valid error of Lenet and Lenet Modified.} \label{fig:ErrorModLeNet}
-\end{figure}
 
 About the error at validation, visualizing the graphs in figure \ref{fig:CostModLeNet}, it is very similar the curve for original LeNet-5, LeNet-5 with ReLu, LeNet-5 with LRN and LeNet-5 with LRN and ReLu.\\
 \clearpage
 
-The results obtained, at validation and testing for each experiment are exposed in table \ref{Experiments-lenet}. 
+The results obtained, at validation and testing for each experiment are exposed in table \ref{Experiments-lenet}.
 
 \begin{table}[htb]
 \centering
 \resizebox{0.95\textwidth}{!}{%
 \begin{tabular}{|c|c|c|c|}
 \hline
-\rowcolor[HTML]{ECF4FF} 
-{\color[HTML]{333333} \textbf{CNN model}} & {\color[HTML]{333333} \textbf{Description}} & {\color[HTML]{333333} \textbf{Best validation Error}} & {\color[HTML]{333333} \textbf{Test Error}} \\ \hline 
+\rowcolor[HTML]{ECF4FF}
+{\color[HTML]{333333} \textbf{CNN model}} & {\color[HTML]{333333} \textbf{Description}} & {\color[HTML]{333333} \textbf{Best validation Error}} & {\color[HTML]{333333} \textbf{Test Error}} \\ \hline
 Lenet-5       &     Original Lenet-5 without modifications  &              0.91\% (17400 iter.)              &                         0.92\%             \\ \hline
 Experiment 1  &    Using Local Response Normalization       &              0.99\%  (13400 iter.)             &                          1.6\%            \\ \hline
 Experiment 2  &    Using ReLu as activation function        &              1.04\% (11900 iter.)              &                          2.4\%            \\ \hline
@@ -289,7 +279,7 @@ With that databases. Some experiments has been carried out. To test, the used cl
 \subfigure[Cost]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/CASIA_im_experiments_cost_2.png} \label{fig:casia-ejec1_cost}  }
 \subfigure[Error]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/CASIA_im_experiments_error.png} \label{fig:casia-ejec1_error} }
 \caption{Cost at training (a) and Error at validation (b) for general experiment when CASIA image database has been used.}
-\label{fig:casia-ejec1} 
+\label{fig:casia-ejec1}
 \end{figure}
 
 \begin{figure}[htb]
@@ -344,14 +334,14 @@ In figures \ref{fig:casia-ejec1}, \ref{fig:casiavid-ejec1}, \ref{fig:frav-ejec1}
 \centering
 \begin{tabular}{|c|c|}
 \hline
-\rowcolor[HTML]{ECF4FF} 
+\rowcolor[HTML]{ECF4FF}
 \textbf{Experiment}           & \textbf{Color legend}          \\ \hline
-\rowcolor[HTML]{ECF4FF} 
+\rowcolor[HTML]{ECF4FF}
 \multicolumn{2}{|c|}{\cellcolor[HTML]{ECF4FF}Training cost}    \\ \hline
 General Experiment            & Blue                           \\ \hline
 Experiment 2 and 3            & Orange                         \\ \hline
 Experiment 4                  & Brown                          \\ \hline
-\rowcolor[HTML]{ECF4FF} 
+\rowcolor[HTML]{ECF4FF}
 \multicolumn{2}{|c|}{\cellcolor[HTML]{ECF4FF}Validation Error} \\ \hline
 General Experiment            & Blue                           \\ \hline
 Experiment 2                  & Green                          \\ \hline
