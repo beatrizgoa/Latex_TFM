@@ -146,22 +146,20 @@ Below the details of each experiment are described:\\
 
 In figure \ref{fig:LenetModifications} are represented the cost at training (figure \ref{fig:cost_lenet_modifications}) and the error at validation (figure \ref{fig:error_lenet_modifications}) of the four training process experiments  with the original LeNet-5 results. Each network has run 200 epoch, except if early-stopping has been needed.\\
 
-\begin{figure}[htb]    \centering
-	\subfigure[Cost at training{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet.png}\label{fig:cost_lenet_modifications} }
-	\subfigure[Error at validation]{\includegraphics[width=0.42\textwidth]{images/ModificandoLenet/cost_lenet_LRN.png}}\label{fig:cost_lenet_modifications}}
+\begin{figure}[tb]    \centering
+	\subfigure[Cost at training]{\includegraphics[width=0.48\textwidth]{images/ModificandoLenet/Cost_Lenet5_modifications.png}\label{fig:cost_lenet_modifications} }
+	\subfigure[Error at validation]{\includegraphics[width=0.48\textwidth]{images/ModificandoLenet/Error_Lenet5_modifications.png}\label{fig:error_lenet_modifications}}
     \caption{Cost at training and error at validatioin of LeNet-5 and the four experiments.} \label{fig:LenetModifications}
 \end{figure}
 
-From figure \ref{fig:LenetModifications}, the first observation is the Gaussian initialization has worsened the original result significantly, the cost converges in 2.3 while in others experiments converges in a value close to 0. Moreover, the early-stopping has provoke that the training process for the fourth experiment Gaussian initialization experiment) stops in 100^{th} epoch.\\
+From figure \ref{fig:LenetModifications}, the first observation is the Gaussian initialization has worsened the original result significantly, the cost converges in 2.3 while in others experiments converges in a value close to 0; therefore, the training has converged in a local minimum. Moreover, the early-stopping has provoke that the training process for the fourth experiment Gaussian initialization experiment) stops in $100^{th}$ epoch.\\
 
-Visualizing the loss during the training, could be affirmed that the network with Gaussian initialization is in a local minimum because the loss has converged as could be seen in figure \ref{fig:cost_gaus_lenet}. The loss of LeNet-5 without being modified (figure  \ref{fig:cost_lenet}) is the one whose oscillation at training is less than others.\\
+From figure \ref{fig:LenetModifications}, also can be conclude that the training and validation processes in others experiments behaviour similar as original LeNet-5 performance.\\
 
-About the error at validation, visualizing the graphs in figure \ref{fig:CostModLeNet}, it is very similar the curve for original LeNet-5, LeNet-5 with ReLu, LeNet-5 with LRN and LeNet-5 with LRN and ReLu.\\
-\clearpage
 
 The results obtained, at validation and testing for each experiment are exposed in table \ref{Experiments-lenet}.
 
-\begin{table}[htb]
+\begin{table}[tb]
 \centering
 \resizebox{0.95\textwidth}{!}{%
 \begin{tabular}{|c|c|c|c|}
@@ -190,7 +188,7 @@ The network has been tested with this databases in the two ways of classify imag
 
 The architecture used is the same as LeNet-5 except for the batch size that has been reduced to 50 because there are not as much samples as in the MNIST database.\\
 
-\begin{figure}[htb]
+\begin{figure}[tb]
 \centering
 \subfigure[Cost]{\includegraphics[width=0.47\textwidth]{images/ModificandoLenet/lenet_frav_cost.png}\label{Lenet_FRAV_cost} }
 \subfigure[Error]{\includegraphics[width=0.47\textwidth]{images/ModificandoLenet/lenet_frav_error.png} \label{Lenet_FRAV_error} }
@@ -205,9 +203,9 @@ From LeNet-5 architecture, changes have been made in order to build a similar co
 
 In \cite{yangLL14} authors develop a convolutional neural network with similar objectives as the described in this thesis. The CNN is based on \textit{Imagenet} architecture \cite{imagenet}, this is a determined architecture used for classifying objects which is well known and very used in the deep learning community. Its architecture is described in figure \ref{fig:Imagenet_architecture}.\\
 
-\begin{figure}[htb]
+\begin{figure}[tb]
 \centering
-\includegraphics[width=0.65\textwidth]{images_miscelaneus/Imagenet.png}
+\includegraphics[width=0.75\textwidth]{images_miscelaneus/Imagenet.png}
 \caption{Imagenet architecture.} \label{fig:Imagenet_architecture}
 \end{figure}
 
@@ -326,6 +324,7 @@ With that databases. Some experiments has been carried out. To test, the used cl
  \label{fig:mfsd-ejec1}
 \end{figure}
 
+
 Because the training process in experiment 2 and experiment 3 should be the same (the difference among those experiments is the validation process, and thus test process), only one cost would be represented.\\
 
 In figures \ref{fig:casia-ejec1}, \ref{fig:casiavid-ejec1}, \ref{fig:frav-ejec1}, \ref{fig:frav_imagelevel-ejec1}, \ref{fig:frav_classlevel-ejec1} and \ref{fig:mfsd-ejec1} are represented the cost at training and the error at validation, for each database, when the four described experiments have been developed. All figures have the same color legend which is summarized in table \ref{table:color_legend}.\\
@@ -354,7 +353,13 @@ Experiment 4                  & Brown                          \\ \hline
 
 %In figure \ref{fig:frav-ejec1} are represented the validation error and training cost of each experiment with RGB FRAV database. RGB+NIR FRAV database results are represented in figure \ref{fig:frav_imagelevel-ejec1}. CASIA image database experiments are represented in figure  \ref{fig:casia-ejec1}, CASIA video database is represented in figure \ref{fig:casiavid-ejec1}. In figure \ref{fig:mfsd-ejec1} are represented results of MFSD-MSU database.\\
 
-From images, could be concluded that in general, decreasing the learning rate from 0.01 to 0.001, for this experiment, does not affect in any database.\\
+From the general experiment, can be seen that the cost converges in low values, the validation error converges (from 10\% error to very low values near to 0\% error) for all databases except for MFSD-MSU database as could be seen in figure \ref{fig:mfsd-ejec1} which means that the generalization is not correct. \\
+
+From Experiment 2, would expect that the training and validation processes converges without oscillations and in less epochs, but because of the unbalanced samples, the validation results are worsen.\\
+
+From Experiment 3 and experiment 2, overfitting would be expected. Just in Experiment 3 and with all databases except for FRAV one is obtained.\\
+
+Decreasing the learning rate from 0.01 to 0.001 does not improve the performance as could be seen for all databases in figures \ref{fig:casia-ejec1}, \ref{fig:casiavid-ejec1}, \ref{fig:frav-ejec1}, \ref{fig:frav_imagelevel-ejec1}, \ref{fig:frav_classlevel-ejec1} and \ref{fig:mfsd-ejec1}. The  training curve should converge with more epochs, but the training and validation error is constant.\\
 
 In table \ref{table-ej1} could be seen the positive and negatives rates obtained for each database when the general experiment (the fist one described) has been tested. The result obtained with RGB+NIR FRAV database is the best because just 3 samples have been misclassified from 140 images. In general, classification is not bag. The database whose samples are misclassified in a big amount is CASIA videos but the total number of samples is much bigger too.\\
 
@@ -373,7 +378,6 @@ In table \ref{table-ej1} could be seen the positive and negatives rates obtained
 \label{table-ej1}
 \end{table}
 
-Looking the graphs where a minidataset has been used (20 images or 14), if the cost (training) is visualized, could be expected that the train is learning the images because the cost decreases to 0 (almost zero) so that means that if it is tested with itself the error should be 0, but that does not happen.\\
 
 The conclusion is the needed of a balanced database, at least to do this experiment. In which the number of class 0 samples are the same that the number of class 1 samples, because the network would not learn in the same way if in some cases the number of samples of  attack class is four times than the number of samples of class 1, just predicting 0 would have 25\% accuracy, and having less than 5 samples in validation or testing is not a good generalizer (2 samples in class 0 MFSD database).
 
@@ -404,7 +408,7 @@ The classifiers used to classify the features of the output of the CNN and get t
 The classifiers, before use them, has been personalize to each and particular time (for each database and if LDA or PCA is used). For that, cross validation has been used, more concretely, the \textit{cros\_val\_Score()} function from sklearn has used with 10 folders:
 \begin{itemize}
 \item For SMV classifier, the C parameter has been searched among the following values: 0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 2, 3, 5 and 10.
-\item For KNN classifier, the number of neighbors (K) has been searched among the following values: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 and 30.
+\item For KNN classifier, the number of neighbours (K) has been searched among the following values: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 and 30.
 \item For Deep Trees classifier, the depth of the tree has been searches among the following values: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 and 30.
 \item For PCA, the number of components has been found in a range of 3 to 5000, in 3 to 3 steps.
 \item For LDA, the number of components has been found in a range of 1 to the length of the characteristic vector in 10 to 10 steps.
