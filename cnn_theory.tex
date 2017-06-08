@@ -3,25 +3,25 @@
 In this section, the basis and the theoretical background of the convolutional neural networks theory are presented.\\
 
 \subsection{Historical introduction}
-Neural Networks are introduced by first time in the years 40 by Warren McCulloch and Walter Pitts, more specifically, simple models of neural networks (switches based on neurons) were able to calculate almost every arithmetic problems and logic operations. A few years later, the recognition of spatial patterns field was defined as an interesting scope for neural networks \cite{BINN}.\\
+Neural Networks are introduced for the first time in the 40's by Warren McCulloch and Walter Pitts, more specifically, it was simple models of neural networks (switches based on neurons) that were able to calculate almost every arithmetic problem and logic operations. A few years later, the recognition field of spatial patterns was defined as an interesting scope for neural networks \cite{BINN}.\\
 
-In 1949 the `Hebbian rule' was postulated by Donald O. Hebb. The rule describes the generalized learning basis of neural networks. This rule explain that two connected neurons have  a bigger strength if they are active at the same time, and the strength changes proportionally to the product of the two activities \cite{BINN}.\\
+In 1949 the `Hebbian rule' was postulated by Donald O. Hebb. The rule describes the general learning basis of neural networks. This rule explains that two connected neurons have  a bigger strength if they are active at the same time, and the strength changes proportionally to the product of the two activities \cite{BINN}.\\
 
-From 1951, the golden age of neural networks initialized. The first neurocomputer, which was capable of adjusting the weights by itself, was developed in 1951 and was called \textit{Snark}. The neurocomputer which was able to recognize simple numbers was called \textit{`Mark I perceptron'} as was developed between 1957 and 1958 \cite{BINN}.\\
+From 1951, the golden age of neural networks initialized. The first neurocomputer, which was capable of adjusting the weights by itself, was developed in 1951 and was called \textit{Snark}. The neurocomputer which was able to recognize simple numbers was called \textit{`Mark I perceptron'} and was developed between 1957 and 1958 \cite{BINN}.\\
 
-It was in 1959 when Franck Rosenblatt defined the \textit{perceptron}; the \textit{perceptron convergence theorem} was verified. One year later, the \textit{ADALINE (ADAptive LInear NEuron)} was developed, this was the first commercially used neural network, a fast and precise system. One important characteristic was the \textit{delta rule} rule used for the training procedure. Before the golden age finished, researched figured out that the XOR function was not able to be solved with just one perceptron \cite{BINN}.\\
+It was in 1959 when Franck Rosenblatt defined the \textit{perceptron}; the \textit{perceptron convergence theorem} was verified. One year later, the \textit{ADALINE (ADAptive LInear NEuron)} was developed, being the first commercially used neural network, a fast and precise system. One important characteristic was the \textit{delta rule} rule used for the training procedure. Before the golden age finished, researchers figured out that the XOR function was not able to be solved with just one perceptron \cite{BINN}.\\
 
-After 1960, neural networks golden age finished and the importance of this researched field decreased until computational resources were enough, but some important advances were developed such as the \textit{linear associator} model (an associative memory model). The backpropagation of error is a very used learning procedure that was defined in 1974 by Paul Werbos. \textit{The self-organizing feature maps} were described in 1982 alternatively known as Kohonen maps. In 1983, a neural model able to recognize handwritten characters was developed as an extension of the Cognitron, the new model was called Neocognitron \cite{BINN}.\\
+After 1960, the neural networks golden age finished and the importance of this researched field decreased until computational resources were enough. However,  some important advances were developed such as the \textit{linear associator} model (an associative memory model). The backpropagation of error is a very used learning procedure that was defined in 1974 by Paul Werbos. \textit{The self-organizing feature maps} were described in 1982 alternatively known as Kohonen maps. In 1983, a neural model able to recognize handwritten characters was developed as an extension of the Cognitron, the new model was called Neocognitron \cite{BINN}.\\
 
-In recent years, neural networks are having a significant importance and are researched widely and the computational resources are more capacious, consequently, the exploration of this area is faster, accurate and more extensive.\\
+In recent years, neural networks are having a significant importance and are researched widely and Computational resources are more capacious and consequently, the exploration of this area is faster, more accurate and more extensive.\\
 
 \subsection{Introduction to ANN}
-Humans, along the history, have tried to reproduce nature. Evolution has turned out to be a big coordination in nature. Object recognition, associating concepts, memorize or extracting the semantic of images are competences that humans are capable. These processing information tasks are being investigated and it is now when technology is being more accurate; nevertheless, not as precise as humans skills.\\
+Humans, along the history of time, have tried to reproduce nature. Evolution has turned out to be a big coordination in nature. Object recognition, associating concepts, memorizing or extracting the semantic of images are competences that humans are capable of. These processing information tasks are being investigated and it is now when technology is being more accurate, not as precise as humans skills.\\
 
 Neural Networks are an important Artificial Intelligence (AI) subject and a sophisticated information processor which is inspired in the information processing in the brain \cite{Rojas}.\\
 
 \subsection{Biological Neural Networks}
-Biological neural networks are part of the nervous system and are formed by neurons units or nervous cells. Each neuron is effective to process information in different ways by itself \cite{Rojas}.\\
+Biological neural networks are part of the nervous system and are formed by neurons units or nervous cells. Each neuron is capable of processing information in different ways by itself \cite{Rojas}.\\
 
 \begin{figure}[htb]
 \centering
@@ -29,21 +29,21 @@ Biological neural networks are part of the nervous system and are formed by neur
 \caption{Biological Neural Network. Image obtained from \cite{BINN}.} \label{fig:Bio-Neuron}
 \end{figure}
 
-The principal components of a biological neuron are the nucleus, dendrite, cell body, axon, Schwann cell, the node of Ranvier, etc. In figure \ref{fig:Bio-Neuron}, a biological neural is illustrated and its components are signalized \cite{BINN}.\\
+The principal components of a biological neuron are the nucleus, dendrite, cell body, axon, Schwann cell, the node of Ranvier, etc. In figure \ref{fig:Bio-Neuron}, a biological nueron is illustrated and its components are signalized \cite{BINN}.\\
 
-The soma is the spherical central part of the nerve cell in whose there is a salt and potassium concentration which is covered by the neuronal membrane. Inside the soma is the neuronal nucleus and from the soma, branches are extend (dendrites). Nerve cells are connected among them by dendrites. Neurons are transmitting and receiving nervous signals continuously, communicating among them. The information transference is produced, more specifically, in the synaptic clef (space between two neurons connection). This exchange of information is denominated synapses and it is made through electrochemical activities. The axon is a soma extension whose responsibility is transmitting the information electrochemical out of the neuron, by the nervous system thanks to its terminal branches \cite{BINN, neuroscience}\\
+The soma is the spherical central part of the nerve cell in which there is  salt and potassium concentration which is covered by the neuronal membrane. Inside the soma we can find the neuronal nucleus and from the soma, branches  extend  from it(dendrites). Nerve cells are connected among each other by dendrites. Neurons are continuosly transmitting and receiving nervous signals, communicating among them. The information transference is produced, more specifically, in the synaptic clef (space between the connection of two neurons). This exchange of information is denominated synapses and it is made through electrochemical activities. The axon is a soma extension whose responsibility is transmitting the information electrochemical out of the neuron by the nervous system thanks to its terminal branches \cite{BINN, neuroscience}\\
 
 \subsection{Artificial Neural Networks (ANN)}
-As the same way as the nervous systems is formed by neurons, artificial neural networks are composed of artificial neurons. Each artificial neuron is a processing unit whose input is processed and shared to another neuron or to the output. Neurons are connected among them \cite{BINN}\\
+Just as the nervous systems is formed by neurons, artificial neural networks are composed of artificial neurons. Each artificial neuron is a processing unit whose input is processed and shared to another neuron or to the output. Neurons are connected among them \cite{BINN}\\
 
-Summarizing, there are three groups of artificial neurons:
+To sum up, there are three groups of artificial neurons:
 \begin{description}[itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
-\item \textbf{Input neurons}, if belong to the input layer. These neurons receive the input data of the network.
-\item \textbf{Hidden Units}, if belong to the processing layers. There are many types of layers: convolutional, pooling, dropout, etc.. There could be as many hidden layers and hidden units as user desire. The connectivity and the topology of the layers define the topology of the network.
-\item \textbf{Output neurons}, if belong to the output layer. these neurons gives the user the processed information.
+\item \textbf{Input neurons}, if they belong to the input layer. These neurons receive the input data of the network.
+\item \textbf{Hidden Units}, if they belong to the processing layers. There are many types of layers: convolutional, pooling, dropout, etc. There could be as many hidden layers and hidden units as the user desires. The connectivity and the topology of the layers define the topology of the network.
+\item \textbf{Output neurons}, if they belong to the output layer. These neurons give the user the processed information.
 \end{description}
 
-In figure \ref{fig:esquemaneuronal} the schematic of a general neural network it is possible to visualize the schematic of a general neural network with an undefined number of neurons in each layer and an undefined number of hidden layers.\\
+In figure \ref{fig:esquemaneuronal} the schematic of a general neural network  is possible to visualize the schematic of a general neural network with an undefined number of neurons in each layer and an undefined number of hidden layers.\\
 
 \begin{figure}[htb]
 \centering
@@ -51,7 +51,7 @@ In figure \ref{fig:esquemaneuronal} the schematic of a general neural network it
 \caption{Schematic of a general neural network.} \label{fig:esquemaneuronal}
 \end{figure}
 
-A single neuron is formed by an input, a weight \textit{W} and an associated bias \textit{b} (independent term). The value of the bias is always 1, but it has an associated weight that makes that the value of the bias change. Weight and bias values could be modified. The output of the neuron is associated to an activation function. \\
+A single neuron is formed by an input, a weight \textit{W} and an associated bias \textit{b} (independent term). The value of the bias is always 1, but it has an associated weight that makes the value of the bias change. Weight and bias values could be modified. The output of the neuron is associated to an activation function. \\
 
 \begin{figure}[htb]
 \centering
@@ -59,7 +59,7 @@ A single neuron is formed by an input, a weight \textit{W} and an associated bia
 \caption{Simplest neural network architecture.} \label{fig:neuronasencilla}
 \end{figure}
 
-The simplest example of a neural network is formed by two inputs neurons and a output neuron as it is demonstrated in figure \ref{fig:neuronasencilla}in which \textit{$W=[w_1,w_2]$} are referred to the weights assigned to each neuron. The \textit{b} value is referred to the bias term. \textit{$X=[x_{1},x_{2}]$} are the input of the network architecture and \textit{y(x)} the output. The output is predetermined by the equation \ref{eq:ecuation_neuronasencilla}. So, the output would depend on the input, weights and bias sand the activation function (or transfer function) \textit{F} \cite{krose}. \\
+The simplest example of a neural network is formed by two input neurons and an output neuron as demonstrated in figure \ref{fig:neuronasencilla}in which \textit{$W=[w_1,w_2]$} are referred to the weights assigned to each neuron. The \textit{b} value is referred to the bias term. \textit{$X=[x_{1},x_{2}]$} are the input of the network architecture and \textit{y(x)} the output. The output is predetermined by the equation \ref{eq:ecuation_neuronasencilla}. So, the output would depend on the input, weights and bias send the activation function (or transfer function) \textit{F} \cite{krose}. \\
 
 %Ecuacion salida neurona
 			\begin{equation}
@@ -76,9 +76,9 @@ Due to the activation function, the output of the neuron would change if the inp
 \end{figure}
 
 \subsubsection{Analogies between ANN and Biological Neural Networks}
-Due to the fact that Artificial Neural Networks are based on Biological neural networks, analogies remain.\\
+Due to the fact that Artificial Neural Networks are based on Biological Neural Networks, analogies remain.\\
 
-Biological neurons corresponds to artificial neurons is the most discernible analogy. The cell body correspond with transference function. The output to others neurons would correlate with the axon and synapses with weights and bias. The soma would correspond with the transfer function. Those analogies are summarized in table \ref{table:Analogias} \cite{Analogies}. Artificial neural networks are inspired in Biological neural networks, and thus both work in a different (although inspired) way.\\
+Biological neurons correspond to artificial neurons is the most discernible analogy. The cell body correspond with the transference function. The output to other neurons would correlate with the axon and synapses with weights and bias. The soma would correspond with the transfer function. Those analogies are summarized in table \ref{table:Analogias} \cite{Analogies}. Artificial neural networks are inspired in Biological neural networks, and thus both work in a different (although similar) way.\\
 
 \begin{table}[htb]
 \centering
@@ -97,19 +97,19 @@ Neuronal networks are able to learn features from the input to classify or with 
 
 There are three main different learning procedures \cite{NNDesign,Duda}:
 \begin{description}[itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
-	\item \textbf{Supervised Learning:} the input training data is given with its target (the correct result of its corresponding sample), that means that the train samples has associated the desired output. The learning consists in adjusting the weights and bias until the output of the network is the same or the closest value as the target.
-	\item \textbf{Reinforcement Learning:} in the training, the correct target is not provided, but a grade is given to the network. Weights and bias are updated with respect to the grade.
+	\item \textbf{Supervised Learning:} the input training data is given with its target (the correct result of its corresponding sample), that means that the training samples has associated with the desired output. The learning consists in adjusting the weights and bias until the output of the network is the same or the closest value to the target.
+	\item \textbf{Reinforcement Learning:} in the training, the correct target is not provided, but a grade is given to the network. Weights and bias are updated regarding the grade.
 	\item \textbf{Unsupervised Learning:} input data is constituted by samples, targets are not provided. Network clusters the data with its own criteria modifying weights and bias values.
 \end{description}
 
-Neural network learning procedures have in common the modification of weights and bias to learn and obtain the desired output, hence the error at the output is minimized. The most useful learning procedure is supervised learning.\\
+What Neural Network learning procedures have in common is the modification of weights and bias to learn and obtain the desired output, hence, the error at the output is minimized. The most useful learning procedure is supervised learning.\\
 
-The gradient descent procedure is an algorithm whose goal is minimize the error of a function \textit{J}. \textit{J(a)} would be the minimum if \textit{a} is the solution. To get the solution the gradient of \textit{J} ($\nabla J(a)$) is calculated for each value of \textit{a}: $\nabla J(a(1))$ is obtained and \textit{a(2)} is obtained moving some distance from \textit{a(2)}, in steps called \textit{learning rate $\eta$}, and in direction of the negative gradient. The \textit{a(k+1)} value would be: \cite{Duda}.\\
+The gradient descent procedure is an algorithm whose goal is to minimize the error of a function \textit{J}. \textit{J(a)} would be the minimum if \textit{a} is the solution. To get the solution the gradient of \textit{J} ($\nabla J(a)$) is calculated for each value of \textit{a}: $\nabla J(a(1))$ is obtained and \textit{a(2)} is obtained moving some distance from \textit{a(2)}, in steps called \textit{learning rate $\eta$}, and in direction of the negative gradient. The \textit{a(k+1)} value would be: \cite{Duda}.\\
 
 \begin{equation}
 a(k+1) = a(k) - \eta (k) \nabla J(a(k))
 \end{equation}
-One of the most used supervised techniques of neural network learning is the back-propagation, this learning rule is based on the gradient descent. In general, this rule, from a randomize initialization of weights, the error would be minimized changing the weights in the direction of the gradient descent:
+One of the most used supervised techniques of neural network learning is the back-propagation, this learning rule is based on the gradient descent. In general, this rule, from a randomized initialization of weights, the error would be minimized changing the weights in the direction of the gradient descent:
 
 \begin{equation}
 \delta w = -\eta\frac{\partial J}{\partial w}
@@ -136,9 +136,9 @@ Being \textit{k} the unit which receives the input and \textit{j} the output.\\
 
 There are three useful training protocols according to the use of the training subset:
 \begin{description}[itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
-	\item \textbf{Stochastic training:} samples are elected randomly and for each sample, weights are updated.
+	\item \textbf{Stochastic training:} samples are selected randomly and for each sample, weights are updated.
 	 \item \textbf{Batch training:} all training samples are used to the learning process.
-	 \item \textbf{on-line training:} there is no memory, as the same time as samples are received, they are used once to train.
+	 \item \textbf{on-line training:} there is no memory, at the same time that samples are received, they are used once to train.
 \end{description}
 
 \subsubsection{Type of Layers}

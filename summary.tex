@@ -211,14 +211,13 @@ In \cite{yangLL14} authors develop a convolutional neural network with similar o
 
 Imagenet is formed by convolutional layers, max-pooling layers, normalization layers, dropout layers and a fully-connected layer.\\
 
-Authors from \cite{yangLL14} describe lightly the architecture, the parameters and the changes made from Imagenet, so it is not possible to develop the same architecture.
+Authors from \cite{yangLL14} describe lightly the architecture, the parameters and the changes made from Imagenet, so it is not possible to develop a architecture based on the utilized in the article \cite{yangLL14}, therefore, it is going to be based on Imagenet.\\
 
 %Dentro de la carpeta de FRAv\_casia\_ImageNet, en imagenet2, se ha programado imagenet, lo unico que sin strides en la primera capa de convolucion.\\
 %Because of the lack of information about the convolutional neural network described in casia paper, it has been necessary  to though the original code that authors use, Imagenet. Authors use the same architecture, although how it has been modified it is not explained. \\
 %It has been possible to implement Imagenet, the difference between the implementation and the original one is that the strides used in the first convolutional layer has not been used because the input of the images need to be bigger to have more than one neuron in the last layer.\\
 %Dentro hay una carpeta para cada base de datos. Dentro de cada carpeta estan las pruebas que se hacen con cada base de datos.\\
 %The convolutional neural network has been tested with different databases: FRAV, CASIA and MFSD and different experiments have been carried out with each one.\\
-
 \subsection{New Architecture} \label{subsec:ejecucion1}
 %Ejecucuion1
 The new architecture is formed by the following layers:
@@ -260,9 +259,8 @@ Samples distribution are described in table \ref{Samples_distribution} where the
 
 Databases are built independently of the CNN process. Images are read, shuffled and splited in train, test and validation subsets in order to be saved in a pickle file and used in the same way as much times as necessary without being reading the raw data.
 
-\subsection{Experiments Description}
+\subsection{Experiments Description} \label{sec:experiments_ejec1}
 With that databases. Some experiments has been carried out. To test, the used classifier is SVM with RBF, the parameter \textit{C} has been searched for each experiment:
-
 \begin{itemize}
 \item General experiment: the architecture described in \ref{subsec:ejecucion1} is trained without changes.
 \item Experiment 2: with the purpose of trying to know if the configuration of the network is correct, only it is going to be trained with 20 samples for each subset, expect for MFSD-MSU database in which 14 samples are used.
@@ -384,27 +382,38 @@ In table \ref{table-ej1} could be seen the positive and negatives rates obtained
 
 The conclusion is the needed of a balanced database, at least to do this experiment. In which the number of class 0 samples are the same that the number of class 1 samples, because the network would not learn in the same way if in some cases the number of samples of  attack class is four times than the number of samples of class 1, just predicting 0 would have 25\% accuracy, and having less than 5 samples in validation or testing is not a good generalizer (2 samples in class 0 MFSD database).
 
-\section{Final architecture}\label{sec:Final_archi} %Used in ejecucion 2
-The architecture utilized in the final, and the most important experiment is described in this section. This architecture is similar to the presented in section \ref{subsec:ejecucion1} and it is going to be explained in detail.
+\section{Final experiment}\label{sec:Final_archi} %Used in ejecucion 2
+In this section, the last, and the most relevant experiment is described.\\
 
-\subsection{Architecture}
-The neural network is composed by five convolutional layers: the first and second convolutional layers (CL1 and CL2) , whose kernel sizes are 11x11 and 3x3 respectively, are followed by a local response normalization layer and a max pool layer whose size is 2x2. The third convolutional layer (CL3), with a kernel size of 3x3 , the next layer is a convolutional one (CL4) of size 3x3 followed by a max-pool layer whose size is 2x2. The next two layers are Dropouts layers (DL1 and DL2) with 4096 neurons. The next layer us a Fully-connected layer (FL) with 4096 neurons at the input and 2000 layers at the output.\\
+The architecture used for this experiment is the same as the used in \ref{subsec:ejecucion1}, the learning rate, the classifier used at training and the batch size are the same too.\\
 
-The activation function used in each layer is the ReLu. The weights have been initialized pseudo-randomly (a random initialization that could be repeated selecting the same seed) with a Gaussian distribution and the bias has been initialized with 1.\\
+All the databases are utilized. Samples distribution  is described in table \ref{Samples_distribution}, the same utilized as in \ref{subssec:ejec1_database}.\\
 
-It has been used the minibatch Stochastic Gradient Descend and in the training, the used classifier, is the logistic regression.\\
+The difference between this experiment and the realized in \ref{sec:experiments_ejec1} is the classification task.\\
 
-The learning rate is fixed at a 0.01 value and a bath size of 20, except when the MFSD database is used, in this case, the batch size is 14.
+Each database has been trained and validated individually. The best model obtained at validation is saved for testing, for each database. Features obtained at the output of the Neural Network best model are used to fed each classifier for training (with training samples), validating (with validation samples) and testing (with testing samples).\\
 
-\subsection{Database}
-The dataset used in this experiment is the same as used in the previous architecture, the described in section \ref{subssec:ejec1_database}, but also, RGB+NIR FRAV database added in classification level is going to be used.\\
+Classifiers are trained with the features of the training samples. The best model of the classifier is selected depending on the features obtained of validation samples and the test is realized with the features of the test samples.\\
 
-The sample distribution is the same, which is summarized in table table \ref{Samples_distribution}. There is just one row for RGB+NIR FRAV database because the sample distribution is the same independently of when the are concatenate.\\
 
-Two classes has been used, class 0: the real users class and class 1: the attacks class.
+%\subsection{Architecture}
+%The neural network is composed by five convolutional layers: the first and second convolutional layers (CL1 and CL2) , whose kernel sizes are 11x11 and 3x3 respectively, are followed by a local response normalization layer and a max pool layer whose size is 2x2. The third convolutional layer (CL3), with a kernel size of 3x3 , the next layer is a convolutional one (CL4) of size 3x3 followed by a max-pool layer whose size is 2x2. The next two layers are Dropouts layers (DL1 and DL2) with 4096 neurons. The next layer us a Fully-connected layer (FL) with 4096 neurons at the input and 2000 layers at the output.\\
 
-\subsection{Classification}
-For testing some classifiers has been utilized, and they are fed by the output of the convolutional neural network last layer, the Fully-connected layer.\\
+%The activation function used in each layer is the ReLu. The weights have been initialized pseudo-randomly (a random initialization that could be repeated selecting the same seed) with a Gaussian distribution and the bias has been initialized with 1.\\
+
+%It has been used the minibatch Stochastic Gradient Descend and in the training, the used classifier, is the logistic regression.\\
+
+%The learning rate is fixed at a 0.01 value and a bath size of 20, except when the MFSD database is used, in this case, the batch size is 14.
+
+%\subsection{Database}
+%The dataset used in this experiment is the same as used in the previous architecture, the described in section \ref{subssec:ejec1_database}, but also, RGB+NIR FRAV database added in classification level is going to be used.\\
+
+%The sample distribution is the same, which is summarized in table table \ref{Samples_distribution}. There is just one row for RGB+NIR FRAV database because the sample distribution is the same independently of when the are concatenate.\\
+
+%Two classes has been used, class 0: the real users class and class 1: the attacks class.
+
+%\subsection{Classification}
+%For testing some classifiers has been utilized, and they are fed by the output of the convolutional neural network last layer, the Fully-connected layer.\\
 
 The classifiers used to classify the features of the output of the CNN and get the results are the SVM (with RBF and linear kernel), KNN, Decision Tree and logistic regression. Also, PCA and LDA techniques has been used with each classifier separately to reduce the dimensionality of the features.\\
 

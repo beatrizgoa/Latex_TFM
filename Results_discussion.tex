@@ -8,7 +8,7 @@
 \section{Discussion of LeNet-5 and its results}
 The final architecture has been developed from LeNet-5 architecture whose training, validation and test performance is exemplary as it has been explained in \ref{sec:lenet_results}.\\
 
-Because of the big size of the batch size used in LeNet-5 architecture, it has been changed to test how the learning process is modified, because in the experiments made with others databases, the amount of samples is not enough to preserve the batch size. The used learning process is Mini-batch Stochastic Gradient Descend, it uses the samples in each batch to learn. And results obtained are improve (when batch size is 100) and descend when batch size used is 20. \\
+The large size of the batch size used in LeNet-5 architecture it has been changed to test how the learning process is modified, because in the experiments made with others databases, the amount of samples is not enough to preserve the batch size. The used learning method is the Mini-batch Stochastic Gradient Descend, it uses the samples in each batch to learn. And results obtained are improved (when batch size is 100) and descend when batch size used is 20. \\
 
 Usually, in literature, a 32 size is used. And it has been concluded that the batch size is used not to provide the network with all the samples, because the computational resources are limited and depending on the batch size, the neural network would need more epochs.\\
 
@@ -25,7 +25,17 @@ In consequence with the poor performance of LeNet-5 with the anti-spoofing datab
 
 The four experiments described to test the architecture behaviour, have been realized with the three anti-spoofing databases: CASIA, FRAV and MFSD-MSU databases.\\
 
+The training process of the general experiment are acceptable because each one converges into a minimum and close to 0, meaning that the trianing procedure is correct, although there are oscillations and the cost curve is not as perfect as the obtained with original LeNet-5.\\
 
+The validation process should decrease its value in each epoch converging in a low value (not as lower as the obtained with the cost performance). The validation performance obtained with CASIA image database is not the desirable one because it oscillates changing the error value between 60\% and 10\%. The validation curve obtained in CASIA video, RGB FRAV database and RGB+NIR (feature level) is preferred, the value descends until converge.\\
+
+The result obtained in RGB from RGB+NIR (classification level) FRAV database suggest an overfitting, because the cost descends until 0 and the error at validation descends until 0\% and then improve until converge in a 10\%, what means that the training samples are being learnt.\\
+
+The validation result obtained with MFSD-MSU does not show a favourable performance, the value oscillates between 30\% and 40\% which are large error values.\\
+
+The results obtained with experiment two and three\\
+
+The result obtained in experiment four are not acceptable for any database. The training cost and the validation error get constant values. Decreasing the learning rate is not an option for any database. The training cost curve should decrease slower and converge.\\
 
 \section{Discussion of the final experiment}
-After building the final architecture, it is tested with the all the databases (as is detailed in \ref{sec:Final_archi}).\\
+The final architecture built is tested with the all the databases (as is detailed in \ref{sec:Final_archi}).\\
