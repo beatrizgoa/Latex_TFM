@@ -54,7 +54,7 @@ In addition to the number of epoch, an alternatively approach would be to stop t
 
 %The training would run for a number of epoch that the user has given or by a early-Stopping that has been developed by authors. The early-stopping combats over-fitting by monitoring the model's performance on a validation set.\\
 
-\subsection{LeNet-5 Results}
+\subsection{LeNet-5 Results} \label{sec:lenet_results}
 While the training is being calculate, the weights are being updated in each iteration. When a  model is selected or saved, weights are indeed what is being chosen or saved. An example of weights is represented in figure \ref{fig:weights_lenet} where twenty first weights at epoch 10 of the first convolutional layer are demonstrated. So when it is being trained, what the network is doing is adapting the weights to the input to get a good performance.\\
 
 \begin{figure}[htb]
@@ -179,7 +179,7 @@ Experiment 4  &     Gaussian weight initialization          &              81.22
 
 From table \ref{Experiments-lenet}, it could be concluded that the best configuration for the network is the original one. With Gaussian initialization, the network does not find a local minimum in such a sort of time. Using LRN and ReLu, test result is closer to the obtained with LeNet-5 original, but not as good as the last one. Changing the activation function has not been a good change. Not taking into account original LeNet-5, the best test performance has been obtained with 1,08\% using ReLu and LRN, but the best validation error is 0,99\% obtained using just LRN. The modifications results are similar, except experiment 4.
 
-\subsection{LeNet-5 and RGB FRAV faces database}
+\subsection{LeNet-5 and RGB FRAV faces database} \label{Lenet-FRAV}
 The goal of this thesis is train a convolutional neural network for face anti-spoofing, so the following step is feed LeNet-5 with a face databases, RGB FRAV database.\\
 
 In order to work with images, because of the difference among the images shape, they have been resized into 252x180, this new shape is proportional to $0.7*height = weight$ because all images studied save that proportion approximately.\\
@@ -198,7 +198,7 @@ The architecture used is the same as LeNet-5 except for the batch size that has 
 
 In figure \ref{fig:Lenet_FRAV} is represented the training cost \ref{Lenet_FRAV_cost} and the validation error \ref{Lenet_FRAV_error} of the training process. In the figure, is represented when 2 classes are used to classify in  blue and red when 5 classes are used, for both cases (cost and error). From the figure it is possible to visualize that the whole training process is not desirable for 2 classes and 5 classes, because it seems that the network does not learn, the architecture required to be modified.
 
-\section{Adapting LeNet-5 architecture}
+\section{Adapting LeNet-5 architecture} \label{sec:adapt_lenet}
 From LeNet-5 architecture, changes have been made in order to build a similar convolutional architecture as described in \cite{yangLL14}. LeNet-5 architecture is simple to use it for this project purpose.\\
 
 In \cite{yangLL14} authors develop a convolutional neural network with similar objectives as the described in this thesis. The CNN is based on \textit{Imagenet} architecture \cite{imagenet}, this is a determined architecture used for classifying objects which is well known and very used in the deep learning community. Its architecture is described in figure \ref{fig:Imagenet_architecture}.\\
@@ -384,7 +384,7 @@ In table \ref{table-ej1} could be seen the positive and negatives rates obtained
 
 The conclusion is the needed of a balanced database, at least to do this experiment. In which the number of class 0 samples are the same that the number of class 1 samples, because the network would not learn in the same way if in some cases the number of samples of  attack class is four times than the number of samples of class 1, just predicting 0 would have 25\% accuracy, and having less than 5 samples in validation or testing is not a good generalizer (2 samples in class 0 MFSD database).
 
-\section{Final architecture}\label{Final_archi} %Used in ejecucion 2
+\section{Final architecture}\label{sec:Final_archi} %Used in ejecucion 2
 The architecture utilized in the final, and the most important experiment is described in this section. This architecture is similar to the presented in section \ref{subsec:ejecucion1} and it is going to be explained in detail.
 
 \subsection{Architecture}
