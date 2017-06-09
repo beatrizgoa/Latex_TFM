@@ -1,14 +1,13 @@
 %!TEX root = Memoria_TFM.tex
 %\minitoc
 %\mtcskip
-\begin{small}
-\emph{In this chapter the results obtained are presented as well as the training process that is going to be discussed.\\}
-\end{small}
+\section{Final experiment results}
+The results obtained in section \ref{sec:Final_archi} are presented as well as the training process, that is going to be discussed, as the test results obtained with each database and classifier.
 
-\section{Training and validation process}
+\subsection{Training and validation process}
 The convolutional neural networks has been trained independently for each database as is explained in \ref{sec:Final_archi}. In this section, the training and validation process is presented for each database.
 
-\subsection{CASIA Image database}
+\subsubsection{CASIA Image database}
 In figure \ref{fig:ejecucion2_casia_im_train} the cost at training and the error at validation are represented (\ref{fig:ejecucion2_casia_im_train_cost} and \ref{fig:ejecucion2_casia_im_train_error} respectively). The training process converge in a low values, smaller than 0.0001; while the validation process converges in 20\% error from the 250th epoch. The iterations where the training process oscillates sharply agree with the epochs where the cost oscillates sharply too. After those oscillations, the validation gets constant and the training error variates in its lowest values.\\
 \begin{figure}[htb]
 \centering
@@ -20,7 +19,7 @@ In figure \ref{fig:ejecucion2_casia_im_train} the cost at training and the error
 
 The saved model to realize the test performance is the obtained at iteration 1176 with a 15\% validation error.
 
-\subsection{CASIA Video database}
+\subsubsection{CASIA Video database}
 The cost and error obtained at training and validation processed when CASIA video database is used, are represented in figure \ref{fig:ejecucion2_casia_vid_train}. The minimum cost is almost 0 and is obtained before 2000th iteration, as is represented in figure \ref{fig:ejecucion2_casia_vid_train_cost}. The validation converges at the same time as the training, where oscillate between 7\% and 6\%.\\
 \begin{figure}[htb]
 \centering
@@ -32,7 +31,7 @@ The cost and error obtained at training and validation processed when CASIA vide
 
 The best validation performance is obtained at iteration 2240 with a 5.71\% validation error.
 
-\subsection{FRAV database}
+\subsubsection{FRAV database}
 The cost and error obtained at training and validation processes respectively are represented in figure \ref{fig:ejecucion2_frav_train}. The cost, that could be seen in figure \ref{fig:ejecucion2_frav_train_cost} get a low value, when it converges before the 5000th iteration, the cost obtained is 0.000001. The validation error, represented in figure \ref{fig:ejecucion2_frav_train_cost}, fluctuate a lot, the curve should decrease, but it does not and in 200 epoch, the error is constant in 11.25\%. The generalization at validation is not very good and before the 100th epoch the network seems to overfit.\\
 \begin{figure}[htb]
 \centering
@@ -44,7 +43,7 @@ The cost and error obtained at training and validation processes respectively ar
 
 The best validation score of 1.25\% has been obtained at iteration 2016 which is saved as model for testing.
 
-\subsection{FRAV RGB+NIR (feature level) database}
+\subsubsection{FRAV RGB+NIR (feature level) database}
 The RGB+NIR FRAV database, whose images has been added before the training process, has a cost and error which is represented in figure \ref{fig:ejecucion2_frav_feat_train}. The cost at training, that could be seen in \ref{fig:ejecucion2_frav_feat_train_cost} oscillates in the 3500 first iterations until decrease its value to 0 in the last 100 iterations. The cost at validation oscillates in the same oscillation cost period, where the value gets 0\% in different times. After this, the value gets in 3,3\%. Although the validation performance does not decrease in a desirable way, it gets a 0\% error which means that the generalization is very good.\\
 \begin{figure}[htb]
 \centering
@@ -56,7 +55,7 @@ The RGB+NIR FRAV database, whose images has been added before the training proce
 
 The best model is obtained at 702 iteration, when the validation gets 0\% for the first time.
 
-\subsection{FRAV RGB+NIR (classification level) database}
+\subsubsection{FRAV RGB+NIR (classification level) database}
 In figure \ref{fig:ejecucion2_frav_clas_train} is represented the training cost and the validation error when the database has been trained, first the RGB subset and then NIR subset. This two subsets are trained independently and features of each best model are concatenated to test performance.\\
 
 \begin{figure}[htb]
@@ -73,7 +72,7 @@ In RGB and NIR cost training, after decreasing its value got a very low value as
 
 The best RGB model is the obtained at iteration 3347, when 0.0\% is gotten at validation error. The best NIR model is the obtained at iteration 674, the first time that the validation error gets 0\%.
 
-\subsection{MFSD database}
+\subsubsection{MFSD database}
 The training results obtained for MFSD database are represented in figure \ref{fig:ejecucion2_mfsd_train}. The cost decreases slowly until get a desirable cost value, near to 0\%. The validation error curve graph (figure \ref{fig:ejecucion2_mfsd_error}) is not as good as the cost curve. The lower error value is obtained in the first 100 iterations, which is constant and then is increased until 35\%.\\
 
 \begin{figure}[htb]
@@ -86,14 +85,14 @@ The training results obtained for MFSD database are represented in figure \ref{f
 
 The best model is the obtained at iteration 7, in the first epoch, where the validation error is 14,28\%.
 
-\section{Testing process}
+\subsection{Testing process}
 From the best CNN model, for each database, A SVM (with lineal and RBF kernel), KNN, Decision Tree and logistic regression has been trained. Also the testing has been realized after training a LDA and PCA (which have been trained too for each database) with each classifier.\\
 
 The test performance for each classifier, has been realized after chosen the best classifier model.  The results are going to be exposed independently of each database and then compared among all databases.\\
 
 Best obtained results are highlighted in bold in each table.
 
-\subsection{CASIA Image database}
+\subsubsection{CASIA Image database}
 The results obtained testing the CNN model for CASIA image database are shown. \\
 
 \begin{table}[htb]
@@ -132,8 +131,7 @@ In figure \ref is represented  FAR and FRR curves, from which is obtained a 0,02
 \end{figure}
 
 
-
-\subsection{CASIA Video database}
+\subsubsection{CASIA Video database}
 Next analysed results are from CASIA video database.\\
 
 \begin{table}[htb]
@@ -168,7 +166,7 @@ Figure \ref{fig:CASIA_vid_FAR_FRR} represents the FAR-FRR curve of the best obta
 \caption{FAR-FRR curve of CASIA videos database using LDA and SVM (RBF kernel).} \label{fig:CASIA_vid_FAR_FRR}
 \end{figure}
 
-\subsection{FRAV database}
+\subsubsection{FRAV database}
 The RGB FRAV database results are presented and analyzed.\\
 
 \begin{table}[htb]
@@ -212,7 +210,7 @@ The FAR-FRR graph is represented in figure \ref{fig:RGB_FRAV_FAR_FRR} from which
 \end{figure}
 
 
-\subsection{FRAV RGB+NIR (feature level) database}
+\subsubsection{FRAV RGB+NIR (feature level) database}
 Results obtained at classifying RGB+NIR (feature level) database are shown following.\\
 
 \begin{table}[htb]
@@ -259,7 +257,7 @@ The perfect performance could be also demonstrated in figure \ref{figures:FAR-FR
     \caption{FAR-FRR curve for RGB+NIR FRAV database (feature level).} \label{figures:FAR-FRR-FRAV_FEAT}
 \end{figure}
 
-\subsection{FRAV RGB+NIR (classification level) database}
+\subsubsection{FRAV RGB+NIR (classification level) database}
 Results obtained when RGB+NIR FRAV database (classification level) is used are described.\\
 \begin{table}[htb]
 \centering
@@ -300,7 +298,7 @@ There are various classifiers with the best performance, FAR-FRR curve it is ill
 \caption{FAR-FRR curve of RGB+NIR FRAV (classification level) database using LDA and SVM (RBF kernel).} \label{fig:RGB_FRAV_clas_FAR_FRR}
 \end{figure}
 
-\subsection{MFSD-MSU database}
+\subsubsection{MFSD-MSU database}
 MFSD-MSU database results are described following.\\
 
 \begin{table}[htb]
@@ -332,10 +330,10 @@ Because of the similarity in results, FAR-FRR curve of SVM with RBF is demonstra
 
 
 
-\section{Comparative among databases}
+\subsection{Comparative among databases}
 In this section it is going to discuss databases classification in common.
 
-\subsection{CASIAs databases}
+\subsubsection{CASIAs databases}
 As the same as FRAVs databases, the comparative is going to be made with CASIAs databases: Image and Videos. With this purpose, KNN classifier is going to be used.\\
 
 \begin{figure}[htb]
@@ -346,7 +344,7 @@ As the same as FRAVs databases, the comparative is going to be made with CASIAs 
 
 In figure \ref{fig:CASIAS_KNN_comparative} is represented the comparative between image CASIA in blue and video CASIA database in green. As it is possible to see, the result is much better when just CASIA images databases are used, although CASIA video results are not bad.
 
-\subsection{FRAVs databases}
+\subsubsection{FRAVs databases}
 Three FRAVs databases are compared in order to discuss easier if NIR images, in general, help in order to detect anti-spoofing attacks. In order to do that, and due to the fact to the big amount of data, one classifier is chosen to do the comparative: SVM with RBF kernel.\\
 
 \begin{figure}[htb]
@@ -359,7 +357,7 @@ In figure \ref{fig:FRAVS_SVM_comparative} are represented the three databases: I
 
 This image and the perfect APCR and BPCR result obtained with logistic regression and decision tree in the RGB+NIR feature level tends to conduce that NIR database are improved the results.
 
-\section{Results comparative with related works}
+\subsection{Results comparative with related works}
 To compare results with related work, Equal Error rate (ERR) metric is going to be utilized. The comparative it is going to be made with CASIA database and MFSD-MSU database, because FRAV database results with others methods are not available.\\
 
 In table \ref{table_literature_comp} are exposed EER(\%) of the results obtained with CASIA images database and CASIA video database with the literature review; In addition, the EER (\%) obtained with the proposed model is presented in the table with the literature review.\\
@@ -386,7 +384,7 @@ IDA+SVM proposed model in \cite{MSUdatabse} & 12.9 &  &  \\ \cline{1-2}
 \end{table}
 There are not researched work of MFSD-MSU database with Deep Learning.
 
-\section{Executing time}
+\subsection{Executing time}
 In this section, the time that has been necessary to carry out the training and testing processing described in this chapter  are exposed.\\
 
 Each general experiment is formed by the CNN training and the classification, which involves the search of the optimal parameter for each classifier, and the metrics calculation. There are six general experiment, one per used databased:
