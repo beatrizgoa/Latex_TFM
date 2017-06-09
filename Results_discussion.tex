@@ -40,4 +40,27 @@ The results obtained in experiment four are not acceptable for any database. The
 \section{Discussion of the final experiment}
 The final architecture built is tested with the all the databases (as is detailed in \ref{sec:Final_archi}).\\
 
+First, the acquired results, for each database, at the training process are going to be discussed. Training cost and validation error are different from the obtained in section \ref{sec:experiments_ejec1} because weights are initialized (with a Gaussian distribution) randomly, but the seed provided to the random function does not provide the same weight initialization. Also, the number of epoch at training in this last experimtn has been increased until 600.\\
+
+The obtained cost at the training process for each database is correct, because converges in low values. The error at the validation process is not as desirable as the cost. The oscillation is hardly, the convergence is not the expected one in some databases (RGB FRAV and RGB+NIR (feature level) FRAV databases and MFSD-MSU). When CASIA image and video databases have been used, the performance of the validation error curve is more desireable.\\
+
+The cause of the oscillation problem is the unbalanced databases, more specifically, training with the inequality number of samples in each class would produce the tendency to classify all the samples in the same class.\\
+
+From the results at testing the best model obtained (for each database except CASIA videos) in the training process could be visualize the consequences of training with unbalance databases: all the negative samples are correctly classified but some of the positive samples are incorrectly classified.\\
+
+CASIA image database just misclassified one sample with all the classifiers, the same positive sample. SVM linear does not work correctly with the features obtained in the database, so all the samples are classify as negatives. PCA and LDA methods does not improve the performance, the same sample is misclassified.\\
+
+When CASIA video database is used, the proportion of incorrectly classified samples is increased, BPCR takes higher values than with CASIA image database. Moreover, a small proportion of negative samples are misclassified. When SVM (RBF) and LDA has been used, the results are considered the best, but rest of the models works in a similar way. The worst is obtained when Decision Tree and PCA are used.\\
+
+With RGB FRAV database, there are the same proportion of misclassified samples as negative samples. The SVM (linear classifier) does not work properly. The rest of the cases, the incorrectly classified samples are repeated in almost every classifier.\\
+
+
+The Equal Error Rate value obtained for all the databases is lower than 1, except for CASIA video database that is 1,15 value; with MFSD-MSU the EER value is the second higher: 0.089. The lowest EER value is obtained when RGB+NIR (feature level) FRAV database is used, because is 0 when Decision Tree and logistic regression classifiers have been used.\\
+
+
+ 
+
+
+
+
 

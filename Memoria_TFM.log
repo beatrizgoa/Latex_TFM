@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  9 JUN 2017 15:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  9 JUN 2017 17:06
 entering extended mode
 **./Memoria_TFM.tex
 (Memoria_TFM.tex
@@ -2501,12 +2501,8 @@ File: images_databases/casia_real_41.jpg Graphic file (type jpg)
 Package pdftex.def Info: images_databases/casia_real_41.jpg used on input line 
 121.
 (pdftex.def)             Requested size: 91.04742pt x 161.8543pt.
-
-
-LaTeX Warning: Reference `i' on page 61 undefined on input line 125.
-
-[61 <./images_databases/casia_real_41.jpg>]
-<images/FAR-FRR/CASIA_im_SVM_RBF_FAR_FRR.png, id=1174, 495.0495pt x 411.939pt>
+ [61 <./images_databases/casia_real_41.jpg>]
+<images/FAR-FRR/CASIA_im_SVM_RBF_FAR_FRR.png, id=1176, 495.0495pt x 411.939pt>
 File: images/FAR-FRR/CASIA_im_SVM_RBF_FAR_FRR.png Graphic file (type png)
 
 <use images/FAR-FRR/CASIA_im_SVM_RBF_FAR_FRR.png>
@@ -2538,7 +2534,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--159
  []
 
 
-<images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png, id=1185, 495.0495pt x 411.93
+<images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png, id=1186, 495.0495pt x 411.93
 9pt>
 File: images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png Graphic file (type png)
  <use images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png>
@@ -2570,7 +2566,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--195
  []
 
 [63 <./images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png>]
-<images_databases/frav_tablet_109.JPG, id=1196, 133.38977pt x 188.72794pt>
+<images_databases/frav_tablet_109.JPG, id=1197, 133.38977pt x 188.72794pt>
 File: images_databases/frav_tablet_109.JPG Graphic file (type jpg)
 
 <use images_databases/frav_tablet_109.JPG>
@@ -2578,7 +2574,7 @@ Package pdftex.def Info: images_databases/frav_tablet_109.JPG used on input lin
 e 198.
 (pdftex.def)             Requested size: 91.04742pt x 128.82573pt.
 
-<images_databases/frav_tablet_162.JPG, id=1197, 165.60155pt x 234.1548pt>
+<images_databases/frav_tablet_162.JPG, id=1198, 165.60155pt x 234.1548pt>
 File: images_databases/frav_tablet_162.JPG Graphic file (type jpg)
 
 <use images_databases/frav_tablet_162.JPG>
@@ -2586,7 +2582,7 @@ Package pdftex.def Info: images_databases/frav_tablet_162.JPG used on input lin
 e 199.
 (pdftex.def)             Requested size: 91.04742pt x 128.74266pt.
 
-<images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png, id=1199, 495.0495pt x 411.939pt>
+<images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png, id=1200, 495.0495pt x 411.939pt>
 File: images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png Graphic file (type png)
 
 <use images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png>
@@ -2618,7 +2614,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
-<images_databases/frav_rgb_151.JPG, id=1210, 39.23228pt x 50.589pt>
+<images_databases/frav_rgb_151.JPG, id=1211, 39.23228pt x 50.589pt>
 File: images_databases/frav_rgb_151.JPG Graphic file (type jpg)
 
 <use images_databases/frav_rgb_151.JPG>
@@ -2626,7 +2622,7 @@ Package pdftex.def Info: images_databases/frav_rgb_151.JPG used on input line 2
 41.
 (pdftex.def)             Requested size: 91.04742pt x 117.4198pt.
 
-<images_databases/frav_nir_151.jpg, id=1211, 45.771pt x 59.0205pt>
+<images_databases/frav_nir_151.jpg, id=1212, 45.771pt x 59.0205pt>
 File: images_databases/frav_nir_151.jpg Graphic file (type jpg)
 
 <use images_databases/frav_nir_151.jpg>
@@ -2634,7 +2630,7 @@ Package pdftex.def Info: images_databases/frav_nir_151.jpg used on input line 2
 42.
 (pdftex.def)             Requested size: 91.04742pt x 117.41653pt.
 
-<images_databases/frav_rgb_128.JPG, id=1212, 39.23228pt x 50.589pt>
+<images_databases/frav_rgb_128.JPG, id=1213, 39.23228pt x 50.589pt>
 File: images_databases/frav_rgb_128.JPG Graphic file (type jpg)
 
 <use images_databases/frav_rgb_128.JPG>
@@ -2642,7 +2638,7 @@ Package pdftex.def Info: images_databases/frav_rgb_128.JPG used on input line 2
 44.
 (pdftex.def)             Requested size: 91.04742pt x 117.4198pt.
 
-<images_databases/frav_nir_128.jpg, id=1213, 143.03438pt x 184.43906pt>
+<images_databases/frav_nir_128.jpg, id=1214, 143.03438pt x 184.43906pt>
 File: images_databases/frav_nir_128.jpg Graphic file (type jpg)
 
 <use images_databases/frav_nir_128.jpg>
@@ -2650,14 +2646,14 @@ Package pdftex.def Info: images_databases/frav_nir_128.jpg used on input line 2
 45.
 (pdftex.def)             Requested size: 91.04742pt x 117.40456pt.
 
-<images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png, id=1215, 495.0495pt x 411.939pt>
+<images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png, id=1216, 495.0495pt x 411.939pt>
 File: images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png Graphic file (type png)
 <use images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png>
 Package pdftex.def Info: images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png used on i
 nput line 254.
 (pdftex.def)             Requested size: 213.96529pt x 178.04173pt.
 
-<images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png, id=1216, 495.0495pt x 411.9
+<images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png, id=1217, 495.0495pt x 411.9
 39pt>
 File: images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png Graphic file (type png)
 
@@ -2700,11 +2696,7 @@ Package pdftex.def Info: images_databases/frav_nir_128.jpg used on input line 2
 88.
 (pdftex.def)             Requested size: 91.04742pt x 117.40456pt.
 
-
-LaTeX Warning: Reference `' on page 67 undefined on input line 293.
-
-
-<images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png, id=1234, 495.0495pt x 411.93
+<images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png, id=1236, 495.0495pt x 411.93
 9pt>
 File: images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png Graphic file (type png)
  <use images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png>
@@ -2729,7 +2721,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
-<images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png, id=1246, 495.0495pt x 411.939pt>
+<images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png, id=1249, 495.0495pt x 411.939pt>
 File: images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png Graphic file (type png)
 
 <use images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png>
@@ -2744,7 +2736,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 337--338
 
  []
 
-<images/comparative/CASIAs_KNN_ROC.png, id=1256, 578.16pt x 433.62pt>
+<images/comparative/CASIAs_KNN_ROC.png, id=1258, 578.16pt x 433.62pt>
 File: images/comparative/CASIAs_KNN_ROC.png Graphic file (type png)
 
 <use images/comparative/CASIAs_KNN_ROC.png>
@@ -2757,7 +2749,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 348--349
 
  []
 
-<images/comparative/FRAVs_SVM_RBF_ROC.png, id=1266, 578.16pt x 433.62pt>
+<images/comparative/FRAVs_SVM_RBF_ROC.png, id=1268, 578.16pt x 433.62pt>
 File: images/comparative/FRAVs_SVM_RBF_ROC.png Graphic file (type png)
 
 <use images/comparative/FRAVs_SVM_RBF_ROC.png>
@@ -2887,9 +2879,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-) [75] [76
 
-]
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+[75]
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+) [76]
 Chapter 7.
 (conoclusion.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--8
@@ -2926,7 +2956,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-[77]
+[77
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
@@ -3058,10 +3090,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 220.
  ) 
 Here is how much of TeX's memory you used:
- 13112 strings out of 493333
- 203848 string characters out of 3139198
+ 13110 strings out of 493333
+ 203843 string characters out of 3139198
  333083 words of memory out of 3000000
- 15677 multiletter control sequences out of 15000+200000
+ 15675 multiletter control sequences out of 15000+200000
  15293 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,18n,43p,967b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3077,9 +3109,9 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Memoria_TFM.pdf (92 pages, 13621578 bytes).
+Output written on Memoria_TFM.pdf (92 pages, 13624211 bytes).
 PDF statistics:
- 1480 PDF objects out of 1728 (max. 8388607)
+ 1483 PDF objects out of 1728 (max. 8388607)
  377 named destinations out of 1000 (max. 500000)
  939 words of extra memory for PDF output out of 10000 (max. 10000000)
 
