@@ -78,7 +78,7 @@ Due to the activation function, the output of the neuron would change if the inp
 \subsubsection{Analogies between ANN and Biological Neural Networks}
 Due to the fact that Artificial Neural Networks are based on Biological Neural Networks, analogies remain.\\
 
-Biological neurons correspond to artificial neurons is the most discernible analogy. The cell body correspond with the transference function. The output to other neurons would correlate with the axon and synapses with weights and bias. The soma would correspond with the transfer function. Those analogies are summarized in table \ref{table:Analogias} \cite{Analogies}. Artificial neural networks are inspired in Biological neural networks, and thus both work in a different (although similar) way.\\
+The most visible discernible analogy is that which correspond yo the biological neuron and the artificial neuron. The cell body correspond with the transference function. The output to other neurons would correlate with the axon and synapses with weights and bias. The soma would correspond with the transfer function. Those analogies are summarized in table \ref{table:Analogias} \cite{Analogies}. Artificial neural networks are inspired in Biological neural networks, and thus both work in a different (although similar) way.\\
 
 \begin{table}[htb]
 \centering
@@ -109,7 +109,7 @@ The gradient descent procedure is an algorithm whose goal is to minimize the err
 \begin{equation}
 a(k+1) = a(k) - \eta (k) \nabla J(a(k))
 \end{equation}
-One of the most used supervised techniques of neural network learning is the back-propagation, this learning rule is based on the gradient descent. In general, this rule, from a randomized initialization of weights, the error would be minimized changing the weights in the direction of the gradient descent:
+One of the most used supervised techniques of neural network learning is the back-propagation, this learning rule is based on the gradient descent. Most generally with this method, when given a random initialization of weights, these begin to update or change in the gradient descent direction:
 
 \begin{equation}
 \delta w = -\eta\frac{\partial J}{\partial w}
@@ -142,17 +142,17 @@ There are three useful training protocols according to the use of the training s
 \end{description}
 
 \subsubsection{Type of Layers}
-The layers that conforms the networks could be different depending on the mathematical operation. The most common used layers are described below:
+The layers that make up the networks could be different depending on the mathematical operation. The most common used layers are described below:
 \begin{description}[itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
-	\item \textbf{Convolutional layer:} the convolution operator is processed at the input. Weights are the applying filters and the output of the network is a feature vector. In one convolutional layer, the number of filters is defined by user.
-	\item \textbf{Pooling Layer:} in this layer, the dimensionality is reduced. The most important information is preserved. It is usually used at the output of the convolutional to resume its out \cite{Doorn}. The most used pooling layer is the max-pooling layer, the maximum values are saved.
+	\item \textbf{Convolutional layer:} the convolution operator is processed at the input. Weights are the applying filters and the output of the network is a feature vector. In one convolutional layer, the number of filters is defined by the user.
+	\item \textbf{Pooling layer:} in this layer, the dimensionality is reduced. The most important information is preserved. It is usually used at the output of the convolutional to resume its out \cite{Doorn}. The most used pooling layer is the max-pooling layer, the maximum values are saved.
 	%\item \textbf{No-linearity layer:} Esta capa consta de una función sigmoide punto tanh() aplicado a la entrada de la capa. Sin embargo, en las implementaciones recientes, se han utilizado otras no linealidades más sofisticadas \cite{Lecum3, Doorn}.
-	\item \textbf{Normalization layer:} This layer normalize the activities of the neurons, because of that the processing time could be reducing during training or testing. There are two types of normalization layer: Local Response Normalization (LRN) and Batch Normalization.
-	\item \textbf{Dropout layer:} The output of a network could rely on the output of an specific neuron being this an overfitting cause. To prevent it, during training, some neurons are 'turn off´ setting its value to 0. Thus, neurons are more adaptable. Alternatively, instead of \textit{eliminate} neurons,  weights could be set to 0, in this case, the layer would be \textbf{``DropConnect''} \cite{Doorn}.
-	\item  \textbf{Fully-connected layer:} Fully connected layer is a vector of neurons where the input is connected to each neuron that conforms this layer. This layer is the high-level reasoning layer so, it is used ahead classification.
+	\item \textbf{Normalization layer:} This layer normalizes the activities of the neurons, and thus, the processing time could be reduce during training or testing. There are two types of normalization layers: The Local Response Normalization (LRN) and the Batch Normalization.
+	\item \textbf{Dropout layer:} The output of a network could rely on the output of an specific neuron being this an overfitting cause. To prevent it, during training, some neurons are 'turned off´ setting its value to 0. Thus, neurons are more adaptable. Alternatively, instead of \textit{eliminate} neurons,  weights could be set to 0, in this case, the layer would be \textbf{``DropConnect''} \cite{Doorn}.
+\item  \textbf{Fully-connected layer:} The fully connected layer is a vector of neurons where the input is connected to each neuron that conforms this layer. This layer is the high-level reasoning layer and therefore, it is used prior to the classification.
 \end{description}
 
-One neural network is defined by its type of layers and the number of neurons, also, there are parameters that affect the the network behavior (learning rate, etc.)\cite{Lecum2}.\\
+One neural network is defined by its type of layers and the number of neurons. Furthermore, there are parameters that affect the network behavior (learning rate, etc.)\cite{Lecum2}.\\
 
 %\subsection{Type of Networks}
 
@@ -163,6 +163,6 @@ One neural network is defined by its type of layers and the number of neurons, a
 %\end{description}
 
 \subsection{Convolutional Neural Network (CNN)}
-Convolutional neural networks are a determinate typology of neural network, CNN are inspired in how the visual cortex of a cat works \cite{Doorn}. This type of neural networks are used with images at the input of the network.\\
+Convolutional Neural Networks are a determined typology of neural network, CNN are inspired in how the visual cortex of a cat works \cite{Doorn}. This type of neural networks are used with images at the input of the network.\\
 
-This specific neural networks is able to learn features from training images, therefore CNN have been used successfully in recognition and classification task including document and object recognition, face detection, robotics navigation, etc. \cite{Lecum2, Lecum3}.\\
+This specific neural networks is able to learn features from training images, therefore CNN have been successfully used in recognition and classification tasks such as document and object recognition, face detection or robotics navigation among others \cite{Lecum2, Lecum3}.\\
