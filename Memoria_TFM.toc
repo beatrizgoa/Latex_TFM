@@ -19,11 +19,11 @@
 \contentsline {section}{\numberline {3.2}Neural Network background theory}{12}{section.0.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Historical introduction}{12}{subsection.0.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Introduction to ANN}{13}{subsection.0.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Biological Neural Networks}{14}{subsection.0.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Biological Neural Networks}{13}{subsection.0.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Artificial Neural Networks (ANN)}{14}{subsection.0.3.2.4}
-\contentsline {subsubsection}{Analogies between ANN and Biological Neural Networks}{17}{subsubsection*.13}
+\contentsline {subsubsection}{Analogies between ANN and Biological Neural Networks}{16}{subsubsection*.13}
 \contentsline {subsubsection}{Learning}{17}{subsubsection*.15}
-\contentsline {subsubsection}{Type of Layers}{19}{subsubsection*.16}
+\contentsline {subsubsection}{Type of Layers}{18}{subsubsection*.16}
 \contentsline {subsection}{\numberline {3.2.5}Convolutional Neural Network (CNN)}{19}{subsection.0.3.2.5}
 \contentsline {chapter}{\numberline {4}Methodology}{21}{chapter.0.4}
 \contentsline {section}{\numberline {4.1}Programming language and frameworks}{21}{section.0.4.1}
