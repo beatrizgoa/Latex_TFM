@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.4)  11 JUN 2017 18:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.4)  12 JUN 2017 00:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -783,31 +783,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--34
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 
-Underfull \vbox (badness 1112) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Overfull \hbox (12.52742pt too wide) in paragraph at lines 47--48
+[]\OT1/cmr/m/n/12 In chap-ter []4[], the method-ol-ogy is ex-plained and the pro-gram-ming lan-guage, the databases,
  []
 
 
@@ -825,28 +837,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-
-Overfull \hbox (12.52742pt too wide) in paragraph at lines 53--54
-[]\OT1/cmr/m/n/12 In chap-ter []4[], the method-ol-ogy is ex-plained and the pro-gram-ming lan-guage, the databases,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
 )
-Underfull \hbox (badness 10000) in paragraph at lines 60--188
+Underfull \hbox (badness 10000) in paragraph at lines 53--188
 
  []
 
@@ -856,11 +848,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--188
 Chapter 2.
 (/home/beaa/Escritorio/Latex_TFM/related_work.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
@@ -2630,7 +2617,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  42i,18n,43p,965b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /home/beaa/Escritorio/Latex_TFM/Memoria_TFM.pdf (92 pages, 13500642 bytes).
+Output written on /home/beaa/Escritorio/Latex_TFM/Memoria_TFM.pdf (92 pages, 13500322 bytes).
 PDF statistics:
  1497 PDF objects out of 1728 (max. 8388607)
  1224 compressed objects within 13 object streams
