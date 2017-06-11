@@ -2,8 +2,7 @@
 %\minitoc
 %\mtcskip
 \begin{small}
-\emph{In this chapter the experiments commencement
- and the evolution of the built Convolutional Neural Network used are described.\\}
+\emph{In this chapter the evolution of the built Convolutional Neural Network architecture, the experiments carried out and its corresponding results, are described.\\}
 \end{small}
 
 \section{LeNet-5}
@@ -31,7 +30,7 @@ The cost function, or loss that must be minimized during the training, is the ne
 
 The data used is MNIST digit database, whose characteristics are described in section \ref{subsec:MNIST}. The data consists of three subsets: training, testing and validating. Each subset is used for training, testing or validating, respectively.\\
 
-The data is not fed to the network all at once, each subset is grouped in small subsets called batches and whose size is chosen by the user.In the code available of LeNet-5 the batch size is 500 samples. The network is fed by batches, so the size of the net depends on the batch size not the (train, test or validate) subset. In this example, the batch size, is the same for the three subsets. When the subset is divided into batches, if there are some samples that are not enough for a batch, those samples are not used.\\
+The data is not fed to the network all at once, each subset is grouped in small subsets called batches and whose size is chosen by the user.In the code available of LeNet-5 the batch size is 500 samples. The network is fed by batches, so the size of the net depends on the batch size not the (train, test or validate) subset. In this example, the batch size, is the same for the three subsets. When the subset is divided into different batches, if there are samples that are not enough for a batch, those samples are not used.\\
 
 The network train for a specified number of epoch. Each epoch has as many iterations as necessary to go through all batches of the train subset. The reason for using batches is to define the size of the network and because, usually, the quantity of samples used in deep learning is large (thousand, millions..) and too much memory would be needed to build a network of its size and the computational resources available may not be enough.\\
 
@@ -118,14 +117,14 @@ With the original size and size equal to 20, it is possible to get to the same m
 %For a value of 100 with the patience increased to 100000, the results are not the same as the one obtained the patience equal to 10000. In this occasion, the results are better than in the original one; The code has run for 258,08 minutes and for 200 epochs. The result obtained was better than in the original one has it has said. In epoch 51 has gotten a validation error of  1 \% and the error test has been 0,89\%, from this point, the test error that has been calculated five more times, has been increasing until get the value 0,85\% in iteration 55500, epoch number 111, the validation error obtained has been 0,95\%. From this epoch until number 200, the network has not had any better result.\\
 %In figure X it is possible to see the error function for those two examples. It could be seen that the example with batch size = 20 has just run for 40 epoch and the good results of the example with batch size = 100, remembering that the patience has been increased from 10000 to 100000.\\
 
-\subsubsection{Changing activation function, normalization and weights initialization}
-As the same way as the batch has been changed and its results has been compared in the previous subsection, the activation function has been changed, a normalization layer has been added and weights initialization has been changed.\\
+\subsubsection{Changing the activation function, normalization and weights initialization}
+Just as the batch was changed and its results were compared in the previous subsection, the activation function has also been changed, a normalization layer has been added and weights initialization has been changed.\\
 
-LeNet-5 does not use any normalization layer, but in this experiment from the different normalization availables (batch normalization, local normalization, etc.) Local Response normalization has been added after the max-pooling layers.\\
+LeNet-5 does not use any normalization layer, but in this experiment from the different normalization availables (batch normalization, local normalization, etc.) Local Response normalization is added after the max-pooling layers.\\
 
-The activation function used in LeNet-5 is tanh, it has been substituted to rectified linear unit (ReLu) activation function.\\
+The activation function used in LeNet-5 is tanh (hyperbolic tangent), it has been substituted to rectified linear unit (ReLu) activation function.\\
 
-With respect to the weight initialization, in LeNet, for the convolutional layers and the fully connected layer,  a normalized initialization \cite{XavierInitialization} is used:
+Regarding the weight initialization, in LeNet, for the convolutional layers and the fully connected layer,  a normalized initialization \cite{XavierInitialization} is used:
 
 \begin{equation}
   W \sim U [- \frac{\sqrt{6}}{\sqrt{n_{j}+n_{j+1}}},\frac{\sqrt{6}}{\sqrt{n_{j}+n_{j+1}}}]
@@ -133,31 +132,29 @@ With respect to the weight initialization, in LeNet, for the convolutional layer
 
 Where $n_{j}$ is the number of neuron of the current layer and $n_{j+1}$ is number of neurons of the following layers. In this experiment, this initialization has been changed to a weight initialization with a Gaussian distribution.\\
 
-Below the details of each experiment are described:\\
-
+Here below the details of each experiment are described:
 \begin{itemize}
 \item{Experiment 1: using Local Response Normalization (LRN) In which a normalization has been carried out in the convolutional-max pooling layers.}
 \item{Experiment 2: using ReLu as activation function:} The activation function tanh has been substituted by ReLu activation function in convolutional and fully connected layers.
 \item{Experiment 3: using ReLu and LRN}: The activation function used is ReLu and LRN has been used as  normalization layer.
-\item{Experiment 4: changing weights initialization}: Weights initialization has been changed by Gaussian. In which mean value that has been used is 0 and std is 0.01. Weights initialization has been changed in convolutional and fully connected layers. Also, bias initialization has been changed by ones.
+\item{Experiment 4: changing weights initialization}: Weights initialization has been changed by Gaussian. In which the mean value that has been used is 0 and std is 0.01. Weights initialization has been changed in convolutional and fully connected layers. Also, bias initialization has been changed by ones.
 \end{itemize}
 
 %Using Local Response Normalization we want to detect high frequency features with a large response. If we normalize around the local neighborhood of the excited neuron, it becomes even more sensitive as compared to its neighbors.[\url{https://prateekvjoshi.com/2016/04/05/what-is-local-response-normalization-in-convolutional-neural-networks/}].\\
 
-In figure \ref{fig:LenetModifications} are represented the cost at training (figure \ref{fig:cost_lenet_modifications}) and the error at validation (figure \ref{fig:error_lenet_modifications}) of the four training process experiments  with the original LeNet-5 results. Each network has run 200 epoch, except if early-stopping has been needed.\\
-
+In figure \ref{fig:LenetModifications} what is represented is the cost at training (figure \ref{fig:cost_lenet_modifications}) and the error at validation (figure \ref{fig:error_lenet_modifications}) of the four training process experiments  with the original LeNet-5 results. Each network has run 200 epoch, except when early-stopping was needed.
 \begin{figure}[tb]    \centering
 	\subfigure[Cost at training]{\includegraphics[width=0.48\textwidth]{images/ModificandoLenet/Cost_Lenet5_modifications.png}\label{fig:cost_lenet_modifications} }
 	\subfigure[Error at validation]{\includegraphics[width=0.48\textwidth]{images/ModificandoLenet/Error_Lenet5_modifications.png}\label{fig:error_lenet_modifications}}
     \caption{Cost at training and error at validatioin of LeNet-5 and the four experiments.} \label{fig:LenetModifications}
 \end{figure}
 
-From figure \ref{fig:LenetModifications}, the first observation is the Gaussian initialization has worsened the original result significantly, the cost converges in 2.3 while in others experiments converges in a value close to 0; therefore, the training has converged in a local minimum. Moreover, the early-stopping has provoke that the training process for the fourth experiment Gaussian initialization experiment) stops in $100^{th}$ epoch.\\
+From figure \ref{fig:LenetModifications}, the first observation is that the Gaussian initialization has worsened the original result significantly, the cost converges in 2.3 while in other experiments it converges in a value close to 0; therefore, the training has converged in a local minimum. Moreover, the early-stopping led the training process for the fourth experiment Gaussian initialization experiment) to stop in $100^{th}$ epoch.\\
 
-From figure \ref{fig:LenetModifications}, also can be conclude that the training and validation processes in others experiments behaviour similar as original LeNet-5 performance.\\
+From figure \ref{fig:LenetModifications},  it can also be deduced that the training and validation processes in other experiments' behaviour is similar to the original LeNet-5 performance.\\
 
 
-The results obtained, at validation and testing for each experiment are exposed in table \ref{Experiments-lenet}.
+The results obtained at validation and testing for each experiment are exposed in table \ref{Experiments-lenet}.
 
 \begin{table}[tb]
 \centering
@@ -177,16 +174,16 @@ Experiment 4  &     Gaussian weight initialization          &              81.22
 \label{Experiments-lenet}
 \end{table}
 
-From table \ref{Experiments-lenet}, it could be concluded that the best configuration for the network is the original one. With Gaussian initialization, the network does not find a local minimum in such a sort of time. Using LRN and ReLu, test result is closer to the obtained with LeNet-5 original, but not as good as the last one. Changing the activation function has not been a good change. Not taking into account original LeNet-5, the best test performance has been obtained with 1,08\% using ReLu and LRN, but the best validation error is 0,99\% obtained using just LRN. The modifications results are similar, except experiment 4.
+From table \ref{Experiments-lenet}, it could be concluded that the best configuration for the network is the original one. With Gaussian initialization, the network does not find a local minimum in such time. Using LRN and ReLu, the test result is closer to the one obtained with the original LeNet-5, but not as good as the last one. Changing the activation function has not been a good change. Not taking into account the original LeNet-5, the best test performance has been obtained with 1,08\% using ReLu and LRN, but the best validation error is 0,99\% obtained using just LRN. The modifications results are similar, except in experiment 4.
 
 \subsection{LeNet-5 and RGB FRAV faces database} \label{Lenet-FRAV}
-The goal of this thesis is train a convolutional neural network for face anti-spoofing, so the following step is feed LeNet-5 with a face databases, RGB FRAV database.\\
+The objective of this thesis is to train a convolutional neural network for face anti-spoofing, for which the following step is to feed LeNet-5 with a face database, RGB FRAV database.\\
 
-In order to work with images, because of the difference among the images shape, they have been resized into 252x180, this new shape is proportional to $0.7*height = weight$ because all images studied save that proportion approximately.\\
+In order to work with images, because of the difference among the shape of the images, they have been resized into 252x180. This new shape is proportional to $0.7*height = weight$ because all studied images save that proportion approximately.\\
 
-The network has been tested with this databases in the two ways of classify images, with two classes (genuine and attacks) and five classes (genuine and four classes, one per type of attack).\\ %Also, different learning rates have been used.\\
+The network has been tested with this database in the two ways to classify images: with two classes (genuine and attacks) and five classes (genuine and four classes, one per type of attack).\\
 
-The architecture used is the same as LeNet-5 except for the batch size that has been reduced to 50 because there are not as much samples as in the MNIST database.\\
+The architecture used is the same as LeNet-5 except for the batch size that has been reduced to 50 because there are not as many samples as in the MNIST database.\\
 
 \begin{figure}[tb]
 \centering
@@ -196,12 +193,13 @@ The architecture used is the same as LeNet-5 except for the batch size that has 
 \label{fig:Lenet_FRAV}
 \end{figure}
 
-In figure \ref{fig:Lenet_FRAV} is represented the training cost \ref{Lenet_FRAV_cost} and the validation error \ref{Lenet_FRAV_error} of the training process. In the figure, is represented when 2 classes are used to classify in  blue and red when 5 classes are used, for both cases (cost and error). From the figure it is possible to visualize that the whole training process is not desirable for 2 classes and 5 classes, because it seems that the network does not learn, the architecture required to be modified.
+Figure \ref{fig:Lenet_FRAV} represents the training cost \ref{Lenet_FRAV_cost} and the validation error \ref{Lenet_FRAV_error} of the training process. In the figure, it is represented in blue when 2 classes are used to classify and red when 5 classes are used, for both cases (cost and error). From the figure it is possible to visualize that the whole training process is not desirable for 2 classes and 5 classes, because it seems that the network does not learn, the architecture requires to be modified.
+
 
 \section{Adapting LeNet-5 architecture} \label{sec:adapt_lenet}
-From LeNet-5 architecture, changes have been made in order to build a similar convolutional architecture as described in \cite{yangLL14}. LeNet-5 architecture is simple to use it for this project purpose.\\
+From LeNet-5 architecture, changes have been made in order to build a similar convolutional architecture as described in \cite{yangLL14}. LeNet-5 architecture is simple to use  for this project’s purpose.\\
 
-In \cite{yangLL14} authors develop a convolutional neural network with similar objectives as the described in this thesis. The CNN is based on \textit{Imagenet} architecture \cite{imagenet}, this is a determined architecture used for classifying objects which is well known and very used in the deep learning community. Its architecture is described in figure \ref{fig:Imagenet_architecture}.\\
+In \cite{yangLL14} authors develop a convolutional neural network with similar objectives as the one described in this thesis. The CNN is based on \textit{Imagenet} architecture \cite{imagenet}, this is a specific architecture used to classify objects which are well known and regularly used in the deep learning community. Its architecture is described in figure \ref{fig:Imagenet_architecture}.\\
 
 \begin{figure}[tb]
 \centering
@@ -211,7 +209,7 @@ In \cite{yangLL14} authors develop a convolutional neural network with similar o
 
 Imagenet is formed by convolutional layers, max-pooling layers, normalization layers, dropout layers and a fully-connected layer.\\
 
-Authors from \cite{yangLL14} describe lightly the architecture, the parameters and the changes made from Imagenet, so it is not possible to develop an architecture based on the utilized in the article \cite{yangLL14}, therefore, it is going to be based on Imagenet.\\
+Authors from \cite{yangLL14} slightly describe the architecture, the parameters and the changes made from Imagenet. Therefore, it is not possible to develop an architecture based on the one used in the article \cite{yangLL14}, hence, it is going to be based on Imagenet.\\
 
 %Dentro de la carpeta de FRAv\_casia\_ImageNet, en imagenet2, se ha programado imagenet, lo unico que sin strides en la primera capa de convolucion.\\
 %Because of the lack of information about the convolutional neural network described in casia paper, it has been necessary  to though the original code that authors use, Imagenet. Authors use the same architecture, although how it has been modified it is not explained. \\
@@ -220,7 +218,7 @@ Authors from \cite{yangLL14} describe lightly the architecture, the parameters a
 %The convolutional neural network has been tested with different databases: FRAV, CASIA and MFSD and different experiments have been carried out with each one.\\
 \subsection{New Architecture} \label{subsec:ejecucion1}
 %Ejecucuion1
-The new architecture is formed by the following layers:
+The new architecture comprises the following layers:
 \begin{itemize}[itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
 \item Convolutional layer with 96 kernels of size 11x11 followed by a max-pool layer (2x2 size) and a local response normalization.
 \item Convolutional layer with 256 kernels whose size is 4x4.
@@ -232,9 +230,7 @@ The new architecture is formed by the following layers:
 \item Fully Connected layer with 2000 neurons at the output.
 \end{itemize}
 
-ReLu has been used as activation function. Logistic regression has been used in the training process. Weights have been initialized with Gaussian initialization and bias to 1. The learning rate value is 0.01.\\
-
-Some experiments are going to be developed, and parameters like the learning rate would be changed to obtain the optimal one and those would be explained for each one.
+ReLu has been used as an activation function. Logistic regression has been used in the training process. Weights have been initialized with Gaussian initialization and bias to 1. The learning rate value is 0.01.
 
 \subsection{Databases} \label{subssec:ejec1_database}
 The databases used in for experiments are CASIA images, CASIA videos, RGB FRAV, (RGB+NIR) FRAV feature level database and MFSD-MSU database. Just two classes are going to be used in this experiment: class 0 is real users class and class 1 is attack class.\\
