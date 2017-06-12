@@ -13,7 +13,7 @@ The first parameter that is used is the cost. The cost is used while the neural 
 
 The cost calculated with the Minibatch Stochastic Gradient Descent (MSGD) is the Negative Log-Likelihood Loss. The MSGD is a variant of the Stochastic Gradient Descent in which the cost is calculated with a mini batch of data, not each sample independently and the Loss is the accumulation \cite{Stutz}.\\
 
-The loss is calculated in the following way:\\
+The loss is calculated in the following way:
 
 \begin{equation}
   Loss(\theta, D) = - \sum_{i=0}^{|D|}log P(Y = y^{(i)}|x^{(i)}, \theta)
@@ -111,13 +111,13 @@ The ISO/IEC 30107-3 \cite{ISO} is the collaboration result of  the International
 
 The ISO defines the terms related to the tests, the reports and the biometric presentation of biometrics systems. In addition, the performance methods, specify principles as well as metrics are defined. From this document, the APCER, BPCER and APCER-BPCER curve metrics have been obtained:\\
 
-Attack Presentation Classification Error Rate (APCER) is defined as the proportion of presentation attacks that has been classified incorrectly (as \textit{bona fide} presentation.)\\
+Attack Presentation Classification Error Rate (APCER) is defined as the proportion of presentation attacks that has been classified incorrectly (as \textit{bona fide} presentation.)
 
 \begin{equation}
   APCER_{PAIS} = \frac{1}{N_{PAIS}}\sum_{i=1}^{N_{PAIS}}(1 - Res_{i})
 \end{equation}
 
-\textit{Bona fide} Presentation Classification Error Rate (BPCER) is defined as the proportion of \textit{bona fide} presentations  incorrectly classified as presentation attacks.\\
+\textit{Bona fide} Presentation Classification Error Rate (BPCER) is defined as the proportion of \textit{bona fide} presentations  incorrectly classified as presentation attacks.
 
 \begin{equation}
   BPCER = \frac{\sum_{i=1}^{N_{BF}}Res_{i}}{N_{BF}}
