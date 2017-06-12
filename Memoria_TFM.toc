@@ -27,7 +27,7 @@
 \contentsline {subsection}{\numberline {3.2.5}Convolutional Neural Network (CNN)}{19}{subsection.0.3.2.5}
 \contentsline {chapter}{\numberline {4}Methodology}{21}{chapter.0.4}
 \contentsline {section}{\numberline {4.1}Programming language and frameworks}{21}{section.0.4.1}
-\contentsline {section}{\numberline {4.2}Databases}{22}{section.0.4.2}
+\contentsline {section}{\numberline {4.2}Databases}{21}{section.0.4.2}
 \contentsline {subsection}{\numberline {4.2.1}MNIST digit database}{22}{subsection.0.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}FRAV dataset}{23}{subsection.0.4.2.2}
 \contentsline {subsubsection}{FRAV RGB database}{24}{subsubsection*.18}
@@ -39,12 +39,12 @@
 \contentsline {subsubsection}{Logistic Regression}{28}{subsubsection*.24}
 \contentsline {subsubsection}{Support Vector Machine}{29}{subsubsection*.25}
 \contentsline {subsubsection}{K Nearest Neighbours}{30}{subsubsection*.27}
-\contentsline {subsubsection}{Decision Tree}{31}{subsubsection*.28}
+\contentsline {subsubsection}{Decision Tree}{30}{subsubsection*.28}
 \contentsline {subsection}{\numberline {4.3.2}Dimensionality reduction algorithms}{31}{subsection.0.4.3.2}
 \contentsline {subsubsection}{Linear Discriminant Analysis}{31}{subsubsection*.30}
 \contentsline {subsubsection}{Principal Component Analysis}{32}{subsubsection*.31}
 \contentsline {subsection}{\numberline {4.3.3}Cross Validation}{32}{subsection.0.4.3.3}
-\contentsline {section}{\numberline {4.4}Metrics}{33}{section.0.4.4}
+\contentsline {section}{\numberline {4.4}Metrics}{32}{section.0.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Cost and Error rate}{33}{subsection.0.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}True Positives (TP), True Negatives (TN), False Positives (FP), False Negatives (FN)}{33}{subsection.0.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}ROC curve and Equal Error Rate (EER)}{34}{subsection.0.4.4.3}
@@ -86,7 +86,9 @@
 \contentsline {section}{\numberline {6.1}Discussion of LeNet-5 and its results}{73}{section.0.6.1}
 \contentsline {section}{\numberline {6.2}Discussion of the own architecture developed experiments}{74}{section.0.6.2}
 \contentsline {section}{\numberline {6.3}Discussion of the final experiment}{75}{section.0.6.3}
-\contentsline {chapter}{\numberline {7}Conclusions and future work}{77}{chapter.0.7}
-\contentsline {section}{\numberline {7.1}Conclusions}{77}{section.0.7.1}
-\contentsline {section}{\numberline {7.2}Future work}{79}{section.0.7.2}
-\contentsline {chapter}{Bibliography}{81}{chapter*.94}
+\contentsline {subsection}{\numberline {6.3.1}Comparative among databases }{77}{subsection.0.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Results comparative with related works}{77}{subsection.0.6.3.2}
+\contentsline {chapter}{\numberline {7}Conclusions and future work}{79}{chapter.0.7}
+\contentsline {section}{\numberline {7.1}Conclusions}{79}{section.0.7.1}
+\contentsline {section}{\numberline {7.2}Future work}{81}{section.0.7.2}
+\contentsline {chapter}{Bibliography}{83}{chapter*.94}

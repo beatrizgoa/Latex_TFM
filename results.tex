@@ -357,7 +357,7 @@ In figure \ref{fig:FRAVS_SVM_comparative} are represented the three databases: I
 
 This image and the perfect APCR and BPCR result obtained with logistic regression and decision tree in the RGB+NIR feature level tends to conduce that NIR database are improved the results.
 
-\subsection{Results comparative with related works}
+\subsection{Results comparative with related works}\label{sec:comp_results_literature}
 To compare results with related work, Equal Error rate (ERR) metric is going to be utilized. The comparative it is going to be made with CASIA database and MFSD-MSU database, because FRAV database results with others methods are not available.\\
 
 In table \ref{table_literature_comp} are exposed EER(\%) of the results obtained with CASIA images database and CASIA video database with the literature review; In addition, the EER (\%) obtained with the proposed model is presented in the table with the literature review.\\
@@ -371,18 +371,19 @@ In table \ref{table_literature_comp} are exposed EER(\%) of the results obtained
 \multicolumn{2}{|c|}{\cellcolor[HTML]{ECF4FF}\textbf{CASIA database}} & \multicolumn{2}{c|}{\cellcolor[HTML]{ECF4FF}\textbf{MFSD - MSU database}} \\ \hline
 \rowcolor[HTML]{ECF4FF} 
 {\color[HTML]{333333} \textbf{CNN model}} & {\color[HTML]{333333} \textbf{EER (\%)}} & \multicolumn{1}{c|}{\cellcolor[HTML]{ECF4FF}\textbf{CNN model}} & \multicolumn{1}{c|}{\cellcolor[HTML]{ECF4FF}\textbf{EER (\%)}} \\ \hline
-Own CASIA image  proposed model &  & \multicolumn{1}{c|}{Own MFSD-MSU proposed model} & \multicolumn{1}{c|}{} \\ \hline
-Own CASIA video proposed model & 12 & \multicolumn{1}{c|}{IDA+SVM proposed model in \cite{MSUdatabse}} & \multicolumn{1}{c|}{5.82} \\ \hline
+Own CASIA image  proposed model & 2.5 & \multicolumn{1}{c|}{Own MFSD-MSU proposed model} & \multicolumn{1}{c|}{5.4} \\ \hline
+Own CASIA video proposed model & 11.5 & \multicolumn{1}{c|}{LDA+SVM proposed model in \cite{MSUdatabse}} & \multicolumn{1}{c|}{5.82} \\ \hline
 CNN model proposed model in \cite{LSTM-CNN} & 6.2 &  &  \\ \cline{1-2}
 LSTM-CNN proposed model in \cite{LSTM-CNN} & 5.17 &  &  \\ \cline{1-2}
 CNN proposed model in \cite{yangLL14} & 4.64 &  &  \\ \cline{1-2}
-IDA+SVM proposed model in \cite{MSUdatabse} & 12.9 &  &  \\ \cline{1-2}
+LDA+SVM proposed model in \cite{MSUdatabse} & 12.9 &  &  \\ \cline{1-2}
 \end{tabular}%
 }
 \caption{Comparative among proposed models and literature work.}
 \label{table_literature_comp}
 \end{table}
-There are not researched work of MFSD-MSU database with Deep Learning.
+
+The researched work with MFSD-MSU is small and there is not researched work with Deep Learning.
 
 \subsection{Executing time}
 In this section, the time that has been necessary to carry out the training and testing processing described in this chapter  are exposed.\\
@@ -405,7 +406,7 @@ In table \ref{table:Executing_time} the time (minutes) is exposed for each proce
 >{\columncolor[HTML]{ECF4FF}}c |c|c|c|c|c|c|}
 \hline
 Process             & 1 & 2 & 3 & 4 & 5 & 6 \\ \hline
-Executing Time(min) & 51.93m  & 152.40m  &  274.87m & 240.09m  & 432.78m  & 43.95m
+Executing Time(min) & 51.93  & 152.40  &  274.87 & 240.09  & 432.78  & 43.95
   \\ \hline
 \end{tabular}
 \caption{Executing time.}

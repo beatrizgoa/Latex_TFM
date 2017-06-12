@@ -2,65 +2,83 @@
 %\minitoc
 %\mtcskip
 \begin{small}
-\emph{In this chapter, from results obtained in previous chapter (chapter \ref{ch:results}) is detailed with the purpose of achieve the conclusion of the following chapter.\\}
+\emph{In this chapter, from results obtained in the previous chapter (chapter \ref{ch:results}) is detailed with the purpose of achieving the conclusion of the following chapter.\\}
 \end{small}
 
 \section{Discussion of LeNet-5 and its results}
 The final architecture has been developed from LeNet-5 architecture whose training, validation and test performance is exemplary as it has been explained in \ref{sec:lenet_results}.\\
 
-The large size of the batch size used in LeNet-5 architecture it has been changed to test how the learning process is modified, because in the experiments made with others databases, the amount of samples is not enough to preserve the batch size. The used learning method is the Mini-batch Stochastic Gradient Descend, it uses the samples in each batch to learn. And results obtained are improved (when batch size is 100) and descend when batch size used is 20. \\
+The large size of the batch size used in LeNet-5 architecture has been changed to test how the learning process is modified because, in the experiments made with others databases, the number of samples is not enough to preserve the batch size.  And results obtained are improved (when batch size is 100) and descend when batch size used is 20. \\
 
-Usually, in literature, a 32 size is used. And it has been concluded that the batch size is used not to provide the network with all the samples, because the computational resources are limited and depending on the batch size, the neural network would need more epochs.\\
+Usually, in literature, a 32 size is used. And has been concluded that the batch size is 
+ fundamentally used to avoid computational resources problems, therefore, the difference of using a smaller batch size is the number of epoch should be increased.\\
 
-Due to the fact that the Lenet-5 architecture is optimized for MNIST Digit classification, when changes have been made (changing weight initialization, modifying activation function, adding ReLu layer, etc.) results have not been improved, although the difference is not immense.\\
+Due to the fact that the Lenet-5 architecture is optimized for MNIST Digit classification, when changes have been made such as modifying activation function or/and adding ReLu layer, results have not been improved, although the difference with respect to the original result is not relevant .\\
 
-The worst result is when Gaussian weight initialization is used, the performance of the training process suggest that the learning is in a local minimum, because the training performance is correct, however the validation and the test processes return a high error rate.\\
+The worst result is obtained when Gaussian weight initialization is used, the performance of the training process suggest that the learning is stuck in a local minimum because the training performance is correct; however, the validation and the test processes return a high error rate.\\
 
-Regarding to using RGB FRAV database with LeNet-5 architecture (detailed in section \ref{Lenet-FRAV}), the purpose of the experiment is test LeNet-5 with a anti-spoofing face database. The  results obtained are not satisfying. In that experiment, RGB FRAV database has been testing using two classes (attacks and genuine users) and five classes (genuine users and each attack correspond with one different class).\\
+Regarding using RGB FRAV database with LeNet-5 architecture (detailed in section \ref{Lenet-FRAV}), the purpose of the experiment is testing LeNet-5 with an anti-spoofing face database. The results obtained are not satisfying. In that experiment, RGB FRAV database has been testing using two classes (attacks and genuine users) and five classes (genuine users and each attack correspond with one different class).\\
 
-In both cases the results are poor and the reason is the architecture which is simple and is not able to extract relevant features from images in order to classify them correctly, there is not a learning curve process, the architecture required to be modified; indeed, the learning curve suggest that the learning rate is small because the cost does not decrease, there is no learning.
+In both cases the results are poor and the reason is the architecture is simple and is not able to extract relevant features from images in order to classify them correctly. There is not a learning curve process, the architecture required to be modified; indeed, the learning curve suggest that the learning rate is small because the cost does not decrease, there is no learning.
 
 \section{Discussion of the own architecture developed experiments}
-In consequence with the poor performance of LeNet-5 with the anti-spoofing database, the architecture has been modified (described in section \ref{sec:adapt_lenet}). Previous works are based on \textit{Imagenet} architecture and its results are respectable, therefore an own architecture based on Imagenet is developed.\\
+In consequence of the poor LeNet-5 (with the anti-spoofing database) performance, the architecture has been modified (described in section \ref{sec:adapt_lenet}). Previous works are based on \textit{Imagenet} architecture and its results are respectable, therefore an own architecture based on Imagenet is developed.\\
 
-The four experiments described to test the architecture behaviour, have been realized with the three anti-spoofing databases: CASIA, FRAV and MFSD-MSU databases.\\
+The four experiments described to test the architecture behavior, have been realized with the three anti-spoofing databases: CASIA, FRAV and MFSD-MSU databases.\\
 
-The training process of the general experiment are acceptable because each one converges into a minimum and close to 0, meaning that the trianing procedure is correct, although there are oscillations and the cost curve is not as perfect as the obtained with original LeNet-5.\\
+The training process of the general experiments are acceptable because each one converges into a minimum and close to 0, meaning that the training procedure is correct, although there are oscillations and the cost curve is not as perfect as the obtained with original LeNet-5.\\
 
-The validation process should decrease its value in each epoch converging in a low value (not as lower as the obtained with the cost performance). The validation performance obtained with CASIA image database is not the desirable one because it oscillates changing the error value between 60\% and 10\%. The validation curve obtained in CASIA video, RGB FRAV database and RGB+NIR (feature level) is preferred, the value descends until converge.\\
+The validation process should decrease its value in each epoch converging to a low value (not as lower as the obtained with the cost performance). The validation performance obtained with CASIA image database is not the desirable one because it oscillates changing the error value between 60\% and 10\%. The validation curve obtained in CASIA video, RGB FRAV database and RGB+NIR (feature level) is preferred, the value descends until converging.\\
 
 The result obtained in RGB from RGB+NIR (classification level) FRAV database suggest an overfitting, because the cost descends until 0 and the error at validation descends until 0\% and then improve until converge in a 10\%, what means that the training samples are being learnt.\\
 
-The validation result obtained with MFSD-MSU does not show a favourable performance, the value oscillates between 30\% and 40\% which are large error values.\\
+The validation result obtained with MFSD-MSU does not show a favorable performance, the value oscillates between 30\% and 40\% which are large error values.\\
 
-The cost results obtained with experiment two and three are as expected, the cost converges in 0 for each database. Despite the fact that the validation error obtained in experiment 2 and experiment 3 is not a desirable result: for each database the error oscillates sharply, experiments 3 converges in 0\% error for all databases except for FRAV one (overfitting has been provoked). Experiment 2 result does not converge in low values.\\
+The cost results obtained with experiment two and three are as expected, the cost converges in 0 for each database. Despite the fact that the validation error obtained in experiment 2 and experiment 3 is not a desirable result: for each database the error oscillates sharply, experiments 3 converges in 0\% error for all databases except for FRAV one (overfitting has been provoked). Experiment 2 result does not converge to low values.\\
 
 The results obtained in experiment four are not acceptable for any database. The training cost and the validation error get constant values. Decreasing the learning rate is not an option for any database. The training cost curve should decrease slower and converge.\\
 
 \section{Discussion of the final experiment}
 The final architecture built is tested with the all the databases (as is detailed in \ref{sec:Final_archi}).\\
 
-First, the acquired results, for each database, at the training process are going to be discussed. Training cost and validation error are different from the obtained in section \ref{sec:experiments_ejec1} because weights are initialized (with a Gaussian distribution) randomly, but the seed provided to the random function does not provide the same weight initialization. Also, the number of epoch at training in this last experimtn has been increased until 600.\\
+First, the acquired results, for each database, at the training process are going to be discussed. Training cost and validation error are different from the obtained in section \ref{sec:experiments_ejec1} because weights are initialized (with a Gaussian distribution) randomly, but the seed provided to the random function does not provide the same weight initialization. Also, the number of epoch at training in this last experiment has been increased until 600.\\
 
-The obtained cost at the training process for each database is correct, because converges in low values. The error at the validation process is not as desirable as the cost. The oscillation is hardly, the convergence is not the expected one in some databases (RGB FRAV and RGB+NIR (feature level) FRAV databases and MFSD-MSU). When CASIA image and video databases have been used, the performance of the validation error curve is more desireable.\\
+The obtained cost at the training process for each database is correct, because converges in low values. The error at the validation process is not as desirable as the cost. The oscillation is hardly, the convergence is not the expected one in some databases (RGB FRAV and RGB+NIR (feature level) FRAV databases and MFSD-MSU). When CASIA image and video databases have been used, the performance of the validation error curve is more desirable.\\
 
 The cause of the oscillation problem is the unbalanced databases, more specifically, training with the inequality number of samples in each class would produce the tendency to classify all the samples in the same class.\\
 
-From the results at testing the best model obtained (for each database except CASIA videos) in the training process could be visualize the consequences of training with unbalance databases: all the negative samples are correctly classified but some of the positive samples are incorrectly classified.\\
+The consequences of training with unbalance databases is represented by almost each database: all the negative samples are correctly classified but some of the positive samples are incorrectly classified.\\
 
-CASIA image database just misclassified one sample with all the classifiers, the same positive sample. SVM linear does not work correctly with the features obtained in the database, so all the samples are classify as negatives. PCA and LDA methods does not improve the performance, the same sample is misclassified.\\
+CASIA image database just misclassified one sample with all the classifiers, the same positive sample. SVM linear does not work correctly with the features obtained in the database, so all the samples are classified as negatives. PCA and LDA methods does not improve the performance, the same sample is misclassified.\\
 
-When CASIA video database is used, the proportion of incorrectly classified samples is increased, BPCR takes higher values than with CASIA image database. Moreover, a small proportion of negative samples are misclassified. When SVM (RBF) and LDA has been used, the results are considered the best, but rest of the models works in a similar way. The worst is obtained when Decision Tree and PCA are used.\\
+When CASIA video database is used, the proportion of incorrectly classified samples is increased, BPCR takes higher values than with CASIA image database. Moreover, a small proportion of negative samples is misclassified. When SVM (RBF) and LDA has been used, the results are considered the best, but rest of the models works in a similar way. The worst is obtained when Decision Tree and PCA are used.\\
 
 With RGB FRAV database, there are the same proportion of misclassified samples as negative samples. The SVM (linear classifier) does not work properly. The rest of the cases, the incorrectly classified samples are repeated in almost every classifier.\\
 
+When NIR database has been used, results have been improved if images has been added in feature level. When images are added in classification level, results are similar than the obtained in RGB FRAV database.\\
 
-The Equal Error Rate value obtained for all the databases is lower than 1, except for CASIA video database that is 1,15 value; with MFSD-MSU the EER value is the second higher: 0.089. The lowest EER value is obtained when RGB+NIR (feature level) FRAV database is used, because is 0 when Decision Tree and logistic regression classifiers have been used.\\
+When RGB+NIR (feature level) FRAV database is used, a perfect classification task has been obtained when Decision Tree and Logistic Regression. In this experiment, using LDA worsen results.\\
 
+However, when RGB+NIR (classification level) FRAV database is used, using LDA improve results and just one sample is misclassified. The most repeated misclassified sample matches with one of the most incorrectly repeated samples in RGB+NIR (feature level) FRAV database.\\
 
- 
+Best result obtained for RGB+NIR (classification level) FRAV database is any of the classifiers used with LDA.\\
 
+Despite of the fact that APCR result is equal to 0, BPCR result is equal to 1 when MFSD-MSU database has been used. That means that each sample has been classified as attack. No matters the classifier or even LDA and PCA has been used. This performance is the worst with respect others databases.\\
 
+The Equal Error Rate value obtained for all the databases is lower than 1, except for CASIA video database that is 1,15 value; with MFSD-MSU the EER value is the second higher: 0.089. The lowest EER value is obtained when RGB+NIR (feature level) FRAV database is used, because is 0 when Decision Tree and logistic regression classifiers have been used.
 
+\subsection{Comparative among databases }
+To compare the results among databases, ROC curve has been used.\\
 
+Comparing CASIA image and video results, CASIA image outperforms CASIA video results. The performance of the CASIA video ROC curve is poor.\\
 
+With regards to FRAV databases, the perform of the three databases is outstanding; however, the best performance is obtained with FRAV (RGB+NIR) feature level.
+
+\subsection{Results comparative with related works}
+Literature results are summarize in section \ref{sec:comp_results_literature}. CASIA and MFSD-MSU databases are researched in literature; however, MFSD-MSU has been used in one article \cite{MSUdatabse}.\\
+
+The metric used to compare the results is Equal Error Rate, because is the used in literature.\\
+
+Own CASIA result is the best obtained (with respect literature) when CASIA images have been used, 2.5\%, the best result in literature is 4.65\% obtained in \cite{yangLL14}. However, when CASIA video database is used, the EER is the second worst compared with literature (11.5\% EER).\\
+
+With regard to MFSD-MSU, despite the bad classification performance, the EER obtained in the own model (5.4\%) is sligly better that the obtained in \cite{MSUdatabse} (5.84\%).
