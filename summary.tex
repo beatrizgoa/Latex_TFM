@@ -261,16 +261,11 @@ With that databases. Some experiments has been carried out. To test, the used cl
 \item General experiment: the architecture described in \ref{subsec:ejecucion1} is trained without changes.
 \item Experiment 2: with the purpose of trying to know if the configuration of the network is correct, only it is going to be trained with 20 samples for each subset, expect for MFSD-MSU database in which 14 samples are used.
 \item Experiment 3: with the purpose of provoke overfitting, 20 samples are used for each subset, however validation samples are the same as training samples.
-\item Experiment 4: the finality is the same as Experiment 3, knowing the behaviour of the network and provoke overfitting, but differs in the learning rate that has been changed to 0.001 value. \\
+\item Experiment 4: the finality is the same as Experiment 3, knowing the behaviour of the network and provoke overfitting, but differs in the learning rate that has been changed to 0.001 value. 
 \end{itemize}
-
 %Experiment 2 and experiment 3 would have the same training cost curve, because they differs in the validation subset.\\
 
-Because the training process in experiment 2 and experiment 3 should be the same (the difference among those experiments is the validation process, and thus test process), only one cost would be represented.\\
-
-In figures \ref{fig:casia-ejec1}, \ref{fig:casiavid-ejec1}, \ref{fig:frav-ejec1}, \ref{fig:frav_imagelevel-ejec1}, \ref{fig:frav_classlevel-ejec1} and \ref{fig:mfsd-ejec1} are represented the cost at training and the error at validation, for each database, when the four described experiments have been developed. All figures have the same color legend which is summarized in table \ref{table:color_legend}.\\
-
-\begin{table}[htb]
+\begin{table}[t]
 \centering
 \begin{tabular}{|c|c|}
 \hline
@@ -292,7 +287,11 @@ Experiment 4                  & Brown                          \\ \hline
 \label{table:color_legend}
 \end{table}
 
-\begin{figure}[htb]
+Because the training process in experiment 2 and experiment 3 should be the same (the difference among those experiments is the validation process, and thus test process), only one cost would be represented.\\
+
+In figures \ref{fig:casia-ejec1}, \ref{fig:casiavid-ejec1}, \ref{fig:frav-ejec1}, \ref{fig:frav_imagelevel-ejec1}, \ref{fig:frav_classlevel-ejec1} and \ref{fig:mfsd-ejec1} are represented the cost at training and the error at validation, for each database, when the four described experiments have been developed. All figures have the same color legend which is summarized in table \ref{table:color_legend}.\\
+
+\begin{figure}[t]
 \centering
 \subfigure[Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/CASIA_im_experiments_cost_2.png} \label{fig:casia-ejec1_cost}  }
 \subfigure[Error]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/CASIA_im_experiments_error.png} \label{fig:casia-ejec1_error} }
@@ -316,7 +315,6 @@ Experiment 4                  & Brown                          \\ \hline
 \label{fig:frav-ejec1}
 \end{figure}
 
-\clearpage
 
 \begin{figure}[htb]
 \centering
@@ -324,6 +322,14 @@ Experiment 4                  & Brown                          \\ \hline
 \subfigure[Error]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/FRAV_FEAT_experiments_error.png} \label{fig:FRAV_FEAT-ejec1_error} }
 \caption{Cost at training (a) and Error at validation (b) for general experiment when RGB+NIR (feature level) FRAV database has been used.}
 \label{fig:frav_imagelevel-ejec1}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\subfigure[Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/MFSD_experiments_cost_2.png} \label{fig:mfsd-ejec1_cost}  }
+\subfigure[Error]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/MFSD_experiments_error.png} \label{fig:mfsd-ejec1_error} }
+\caption{Cost at training (a) and Error at validation (b) for general experiment when MFSD-MSU database has been used.}
+ \label{fig:mfsd-ejec1}
 \end{figure}
 
 \begin{figure}[htb]
@@ -337,15 +343,6 @@ Experiment 4                  & Brown                          \\ \hline
 \caption{RGB Cost at training (a) and Error at validation (b), NIR Cost at training (c) and Error at validation (d) for general experiment when RGB+NIR (classification level) FRAV database has been used.}
 \label{fig:frav_classlevel-ejec1}
 \end{figure}
-
-\begin{figure}[htb]
-\centering
-\subfigure[Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/MFSD_experiments_cost_2.png} \label{fig:mfsd-ejec1_cost}  }
-\subfigure[Error]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/MFSD_experiments_error.png} \label{fig:mfsd-ejec1_error} }
-\caption{Cost at training (a) and Error at validation (b) for general experiment when MFSD-MSU database has been used.}
- \label{fig:mfsd-ejec1}
-\end{figure}
-
 
 %In figure \ref{fig:frav-ejec1} are represented the validation error and training cost of each experiment with RGB FRAV database. RGB+NIR FRAV database results are represented in figure \ref{fig:frav_imagelevel-ejec1}. CASIA image database experiments are represented in figure  \ref{fig:casia-ejec1}, CASIA video database is represented in figure \ref{fig:casiavid-ejec1}. In figure \ref{fig:mfsd-ejec1} are represented results of MFSD-MSU database.\\
 
@@ -377,6 +374,7 @@ In table \ref{table-ej1} could be seen the positive and negatives rates obtained
 
 
 The conclusion is the needed of a balanced database, at least to do this experiment. In which the number of class 0 samples are the same that the number of class 1 samples, because the network would not learn in the same way if in some cases the number of samples of  attack class is four times than the number of samples of class 1, just predicting 0 would have 25\% accuracy, and having less than 5 samples in validation or testing is not a good generalizer (2 samples in class 0 MFSD database).
+\afterpage{\clearpage}
 
 \section{Final experiment}\label{sec:Final_archi} %Used in ejecucion 2
 In this section, the last, and the most relevant experiment is described.\\
@@ -423,4 +421,3 @@ The classifiers, before use them, has been personalize to each and particular ti
 \end{itemize}
 
 %With the purpose of having a more general results, all the training, validation and testing (with the classification) processes have been repeated three times, those times are differentiated among them in the seed if the pseudo-randomized initialization of the weights.\\
-\clearpage
