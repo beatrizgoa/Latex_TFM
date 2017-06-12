@@ -291,58 +291,6 @@ Because the training process in experiment 2 and experiment 3 should be the same
 
 In figures \ref{fig:casia-ejec1}, \ref{fig:casiavid-ejec1}, \ref{fig:frav-ejec1}, \ref{fig:frav_imagelevel-ejec1}, \ref{fig:frav_classlevel-ejec1} and \ref{fig:mfsd-ejec1} are represented the cost at training and the error at validation, for each database, when the four described experiments have been developed. All figures have the same color legend which is summarized in table \ref{table:color_legend}.\\
 
-\begin{figure}[t]
-\centering
-\subfigure[Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/CASIA_im_experiments_cost_2.png} \label{fig:casia-ejec1_cost}  }
-\subfigure[Error]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/CASIA_im_experiments_error.png} \label{fig:casia-ejec1_error} }
-\caption{Cost at training (a) and Error at validation (b) for general experiment when CASIA image database has been used.}
-\label{fig:casia-ejec1}
-\end{figure}
-
-\begin{figure}[htb]
-\centering
-\subfigure[Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/CASIA_vid_experiments_cost_2.png} \label{fig:casia-vid-ejec1_cost}  }
-\subfigure[Error]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/CASIA_vid_experiments_error.png} \label{fig:casia-vid-ejec1_error} }
-\caption{Cost at training (a) and Error at validation (b) for general experiment when CASIA video database has been used.}
- \label{fig:casiavid-ejec1}
-\end{figure}
-
-\begin{figure}[htb]
-\centering
-\subfigure[Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/FRAV_experiments_cost_2.png} \label{fig:FRAV-ejec1_cost}  }
-\subfigure[Error]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/FRAV_experiments_error.png} \label{fig:FRAV-ejec1_error} }
-\caption{Cost at training (a) and Error at validation (b) for general experiment when RGB FRAV database has been used.}
-\label{fig:frav-ejec1}
-\end{figure}
-
-
-\begin{figure}[htb]
-\centering
-\subfigure[Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/FRAV_FEAT_experiments_cost_2.png} \label{fig:FRAV_FEAT-ejec1_cost}  }
-\subfigure[Error]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/FRAV_FEAT_experiments_error.png} \label{fig:FRAV_FEAT-ejec1_error} }
-\caption{Cost at training (a) and Error at validation (b) for general experiment when RGB+NIR (feature level) FRAV database has been used.}
-\label{fig:frav_imagelevel-ejec1}
-\end{figure}
-
-\begin{figure}[htb]
-\centering
-\subfigure[Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/MFSD_experiments_cost_2.png} \label{fig:mfsd-ejec1_cost}  }
-\subfigure[Error]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/MFSD_experiments_error.png} \label{fig:mfsd-ejec1_error} }
-\caption{Cost at training (a) and Error at validation (b) for general experiment when MFSD-MSU database has been used.}
- \label{fig:mfsd-ejec1}
-\end{figure}
-
-\begin{figure}[htb]
-\centering
-\subfigure[RGB Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/RGB_FRAV_CLAS_experiments_cost_2.png} \label{fig:RGB_FRAV_CLAS-ejec1_cost}  }
-\subfigure[RGB Error]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/RGB_FRAV_CLAS_experiments_error.png} \label{fig:RGB_FRAV_CLAS-ejec1_error} }
-
-\subfigure[NIR Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/NIR_FRAV_CLAS_experiments_cost_2.png} \label{fig:NIR_FRAV_CLAS-ejec1_cost}  }
-\subfigure[NIR Error]{\includegraphics[width=0.45\textwidth]{images/images_ejecucion1/NIR_FRAV_CLAS_experiments_error.png} \label{fig:NIR_FRAV_CLAS-ejec1_error} }
-
-\caption{RGB Cost at training (a) and Error at validation (b), NIR Cost at training (c) and Error at validation (d) for general experiment when RGB+NIR (classification level) FRAV database has been used.}
-\label{fig:frav_classlevel-ejec1}
-\end{figure}
 
 %In figure \ref{fig:frav-ejec1} are represented the validation error and training cost of each experiment with RGB FRAV database. RGB+NIR FRAV database results are represented in figure \ref{fig:frav_imagelevel-ejec1}. CASIA image database experiments are represented in figure  \ref{fig:casia-ejec1}, CASIA video database is represented in figure \ref{fig:casiavid-ejec1}. In figure \ref{fig:mfsd-ejec1} are represented results of MFSD-MSU database.\\
 
@@ -357,7 +305,9 @@ Decreasing the learning rate from 0.01 to 0.001 does not improve the performance
 
 In table \ref{table-ej1} could be seen the positive and negatives rates obtained for each database when the general experiment (the fist one described) has been tested. The result obtained with RGB+NIR FRAV database is the best because just 3 samples have been misclassified from 140 images. In general, classification is not bag. The database whose samples are misclassified in a big amount is CASIA videos but the total number of samples is much bigger too.\\
 
-\begin{table}[htb]
+The conclusion is the needed of a balanced database, at least to do this experiment. In which the number of class 0 samples are the same that the number of class 1 samples, because the network would not learn in the same way if in some cases the number of samples of  attack class is four times than the number of samples of class 1, just predicting 0 would have 25\% accuracy, and having less than 5 samples in validation or testing is not a good generalizer (2 samples in class 0 MFSD database).
+
+\begin{table}[tb]
 \centering
 \begin{tabular}{c|c|c|c|c|c|}
 \cline{2-6}
@@ -372,9 +322,58 @@ In table \ref{table-ej1} could be seen the positive and negatives rates obtained
 \label{table-ej1}
 \end{table}
 
+\begin{figure}[H]
+\centering
+\subfigure[Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/CASIA_im_experiments_cost_2.png} \label{fig:casia-ejec1_cost}  }
+\subfigure[Error]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/CASIA_im_experiments_error.png} \label{fig:casia-ejec1_error} }
+\caption{Cost at training (a) and Error at validation (b) for general experiment when CASIA image database has been used.}
+\label{fig:casia-ejec1}
+\end{figure}
 
-The conclusion is the needed of a balanced database, at least to do this experiment. In which the number of class 0 samples are the same that the number of class 1 samples, because the network would not learn in the same way if in some cases the number of samples of  attack class is four times than the number of samples of class 1, just predicting 0 would have 25\% accuracy, and having less than 5 samples in validation or testing is not a good generalizer (2 samples in class 0 MFSD database).
-\afterpage{\clearpage}
+\begin{figure}[H]
+\centering
+\subfigure[Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/CASIA_vid_experiments_cost_2.png} \label{fig:casia-vid-ejec1_cost}  }
+\subfigure[Error]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/CASIA_vid_experiments_error.png} \label{fig:casia-vid-ejec1_error} }
+\caption{Cost at training (a) and Error at validation (b) for general experiment when CASIA video database has been used.}
+ \label{fig:casiavid-ejec1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\subfigure[Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/FRAV_experiments_cost_2.png} \label{fig:FRAV-ejec1_cost}  }
+\subfigure[Error]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/FRAV_experiments_error.png} \label{fig:FRAV-ejec1_error} }
+\caption{Cost at training (a) and Error at validation (b) for general experiment when RGB FRAV database has been used.}
+\label{fig:frav-ejec1}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\subfigure[Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/FRAV_FEAT_experiments_cost_2.png} \label{fig:FRAV_FEAT-ejec1_cost}  }
+\subfigure[Error]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/FRAV_FEAT_experiments_error.png} \label{fig:FRAV_FEAT-ejec1_error} }
+\caption{Cost at training (a) and Error at validation (b) for general experiment when RGB+NIR (feature level) FRAV database has been used.}
+\label{fig:frav_imagelevel-ejec1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\subfigure[RGB Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/RGB_FRAV_CLAS_experiments_cost_2.png} \label{fig:RGB_FRAV_CLAS-ejec1_cost}  }
+\subfigure[RGB Error]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/RGB_FRAV_CLAS_experiments_error.png} \label{fig:RGB_FRAV_CLAS-ejec1_error} }
+
+\subfigure[NIR Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/NIR_FRAV_CLAS_experiments_cost_2.png} \label{fig:NIR_FRAV_CLAS-ejec1_cost}  }
+\subfigure[NIR Error]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/NIR_FRAV_CLAS_experiments_error.png} \label{fig:NIR_FRAV_CLAS-ejec1_error} }
+
+\caption{RGB Cost at training (a) and Error at validation (b), NIR Cost at training (c) and Error at validation (d) for general experiment when RGB+NIR (classification level) FRAV database has been used.}
+\label{fig:frav_classlevel-ejec1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\subfigure[Cost]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/MFSD_experiments_cost_2.png} \label{fig:mfsd-ejec1_cost}  }
+\subfigure[Error]{\includegraphics[width=0.48\textwidth]{images/images_ejecucion1/MFSD_experiments_error.png} \label{fig:mfsd-ejec1_error} }
+\caption{Cost at training (a) and Error at validation (b) for general experiment when MFSD-MSU database has been used.}
+ \label{fig:mfsd-ejec1}
+\end{figure}
 
 \section{Final experiment}\label{sec:Final_archi} %Used in ejecucion 2
 In this section, the last, and the most relevant experiment is described.\\
