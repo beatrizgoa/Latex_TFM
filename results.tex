@@ -45,7 +45,7 @@ The best validation score of 1.25\% has been obtained at iteration 2016 which is
 
 \subsubsection{RGB+NIR (feature level) FRAV database}
 The RGB+NIR FRAV database, whose images have been added before the training process, has a cost and error which is represented in figure \ref{fig:ejecucion2_frav_feat_train}. The cost at training, that can be seen in \ref{fig:ejecucion2_frav_feat_train_cost} oscillates in the 3500 first iterations until it decreases its value to 0 in the last 100 iterations. The cost at validation oscillates in the same oscillation cost period, where the value gets to 0\% at different times. Subsequently, the value gets to 3,3\%. Although the validation performance does not decrease in a desirable way, it gets a 0\% error which means that the generalization is very good.\\
-\begin{figure}[htb]
+\begin{figure}[H]
 \centering
 		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav_rgb_nir/cost.png}\label{fig:ejecucion2_frav_feat_train_cost}}
 		\subfigure[Error at validation]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav_rgb_nir/error.png}\label{fig:ejecucion2_frav_feat_train_error}}
@@ -57,7 +57,6 @@ The best model is obtained at 702 iteration, when the validation gets 0\% for th
 
 \subsubsection{RGB+NIR (classification level) FRAV database}
 In figure \ref{fig:ejecucion2_frav_clas_train} the training cost and the validation error is represented when the database has been trained, first the RGB subset and then NIR subset. These two subsets are trained independently and features of each best model are concatenated to test the performance.\\
-
 \begin{figure}[htb]
 \centering
 		\subfigure[Cost at training RGB subset]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav_concatenated/cost_rgb.png}\label{fig:ejecucion2_frav_clas_train_cost_rgb}}
@@ -75,7 +74,7 @@ The best RGB model is the one obtained at iteration 3347, when 0.0\% is gotten a
 \subsubsection{MFSD database}
 The training results obtained with theMFSD database are represented in figure \ref{fig:ejecucion2_mfsd_train}. The cost slowly decreases until it get a desirable cost value, near to 0\%. The validation error curve graph (figure \ref{fig:ejecucion2_mfsd_error}) is not as good as the cost curve. The lower error value is obtained in the first 100 iterations, which is constant and then it increased until 35\%.\\
 
-\begin{figure}[htb]
+\begin{figure}[H]
 \centering
 		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_mfsd/cost.png}\label{fig:ejecucion2_mfsd_cost}}
 		\subfigure[Error at validation]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_mfsd/error.png}\label{fig:ejecucion2_mfsd_error}}

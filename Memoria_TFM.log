@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.4)  13 JUN 2017 01:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.4)  13 JUN 2017 01:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -727,12 +727,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 10--175
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-[5
+) [5
 
 ] [6
 
@@ -1958,68 +1958,72 @@ File: images/ejecucion2_general/resultados_frav_rgb_nir/error.png Graphic file (
  <use images/ejecucion2_general/resultados_frav_rgb_nir/error.png>
 Package pdftex.def Info: images/ejecucion2_general/resultados_frav_rgb_nir/error.png used on input line 51.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
- [55 </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_casia_images/cost.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_casia_images/error.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--54
 
  []
 
-<images/ejecucion2_general/resultados_frav_concatenated/cost_rgb.png, id=1126, 578.16pt x 433.62pt>
+[55 </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_casia_images/cost.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_casia_images/error.png>] [56 </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_casia_videos/cost.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_casia_videos/error.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_frav_rgb_nir/cost.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_frav_rgb_nir/error.png>] <images/ejecucion2_general/resultados_frav_concatenated/cost_rgb.png, id=1140, 578.16pt x 433.62pt>
 File: images/ejecucion2_general/resultados_frav_concatenated/cost_rgb.png Graphic file (type png)
  <use images/ejecucion2_general/resultados_frav_concatenated/cost_rgb.png>
-Package pdftex.def Info: images/ejecucion2_general/resultados_frav_concatenated/cost_rgb.png used on input line 63.
+Package pdftex.def Info: images/ejecucion2_general/resultados_frav_concatenated/cost_rgb.png used on input line 62.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
- <images/ejecucion2_general/resultados_frav_concatenated/error_rgb.png, id=1127, 578.16pt x 433.62pt>
+ <images/ejecucion2_general/resultados_frav_concatenated/error_rgb.png, id=1141, 578.16pt x 433.62pt>
 File: images/ejecucion2_general/resultados_frav_concatenated/error_rgb.png Graphic file (type png)
  <use images/ejecucion2_general/resultados_frav_concatenated/error_rgb.png>
-Package pdftex.def Info: images/ejecucion2_general/resultados_frav_concatenated/error_rgb.png used on input line 64.
+Package pdftex.def Info: images/ejecucion2_general/resultados_frav_concatenated/error_rgb.png used on input line 63.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
- <images/ejecucion2_general/resultados_frav_concatenated/cost_nir.png, id=1128, 578.16pt x 433.62pt>
+
+<images/ejecucion2_general/resultados_frav_concatenated/cost_nir.png, id=1142, 578.16pt x 433.62pt>
 File: images/ejecucion2_general/resultados_frav_concatenated/cost_nir.png Graphic file (type png)
  <use images/ejecucion2_general/resultados_frav_concatenated/cost_nir.png>
-Package pdftex.def Info: images/ejecucion2_general/resultados_frav_concatenated/cost_nir.png used on input line 65.
+Package pdftex.def Info: images/ejecucion2_general/resultados_frav_concatenated/cost_nir.png used on input line 64.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
- <images/ejecucion2_general/resultados_frav_concatenated/error_nir.png, id=1129, 578.16pt x 433.62pt>
+ <images/ejecucion2_general/resultados_frav_concatenated/error_nir.png, id=1143, 578.16pt x 433.62pt>
 File: images/ejecucion2_general/resultados_frav_concatenated/error_nir.png Graphic file (type png)
  <use images/ejecucion2_general/resultados_frav_concatenated/error_nir.png>
-Package pdftex.def Info: images/ejecucion2_general/resultados_frav_concatenated/error_nir.png used on input line 66.
+Package pdftex.def Info: images/ejecucion2_general/resultados_frav_concatenated/error_nir.png used on input line 65.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
-[56 </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_casia_videos/cost.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_casia_videos/error.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-<images/ejecucion2_general/resultados_mfsd/cost.png, id=1145, 578.16pt x 433.62pt>
+<images/ejecucion2_general/resultados_mfsd/cost.png, id=1146, 578.16pt x 433.62pt>
 File: images/ejecucion2_general/resultados_mfsd/cost.png Graphic file (type png)
  <use images/ejecucion2_general/resultados_mfsd/cost.png>
-Package pdftex.def Info: images/ejecucion2_general/resultados_mfsd/cost.png used on input line 80.
+Package pdftex.def Info: images/ejecucion2_general/resultados_mfsd/cost.png used on input line 79.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
- <images/ejecucion2_general/resultados_mfsd/error.png, id=1146, 578.16pt x 433.62pt>
+ <images/ejecucion2_general/resultados_mfsd/error.png, id=1147, 578.16pt x 433.62pt>
 File: images/ejecucion2_general/resultados_mfsd/error.png Graphic file (type png)
  <use images/ejecucion2_general/resultados_mfsd/error.png>
-Package pdftex.def Info: images/ejecucion2_general/resultados_mfsd/error.png used on input line 81.
+Package pdftex.def Info: images/ejecucion2_general/resultados_mfsd/error.png used on input line 80.
 (pdftex.def)             Requested size: 213.96529pt x 160.46997pt.
+ [57 </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_frav/cost.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_frav/error.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+ [58 </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_frav_concatenated/cost_rgb.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_frav_concatenated/error_rgb.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_frav_concatenated/cost_nir.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_frav_concatenated/error_nir.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
-[57 </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_frav/cost.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_frav/error.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
@@ -2027,23 +2031,52 @@ Missing character: There is no Â in font cmr12!
 Missing character: There is no º in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no º in font cmr12!
-[58 </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_frav_rgb_nir/cost.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_frav_rgb_nir/error.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+[59 </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_mfsd/cost.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_mfsd/error.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
-<images_databases/casia_real_41.jpg, id=1168, 722.7pt x 1284.8pt>
+<images_databases/casia_real_41.jpg, id=1184, 722.7pt x 1284.8pt>
 File: images_databases/casia_real_41.jpg Graphic file (type jpg)
  <use images_databases/casia_real_41.jpg>
-Package pdftex.def Info: images_databases/casia_real_41.jpg used on input line 121.
+Package pdftex.def Info: images_databases/casia_real_41.jpg used on input line 120.
 (pdftex.def)             Requested size: 91.04742pt x 161.8543pt.
- <images/FAR-FRR/CASIA_im_SVM_RBF_FAR_FRR.png, id=1170, 495.0495pt x 411.939pt>
+ <images/FAR-FRR/CASIA_im_SVM_RBF_FAR_FRR.png, id=1186, 495.0495pt x 411.939pt>
 File: images/FAR-FRR/CASIA_im_SVM_RBF_FAR_FRR.png Graphic file (type png)
  <use images/FAR-FRR/CASIA_im_SVM_RBF_FAR_FRR.png>
-Package pdftex.def Info: images/FAR-FRR/CASIA_im_SVM_RBF_FAR_FRR.png used on input line 129.
+Package pdftex.def Info: images/FAR-FRR/CASIA_im_SVM_RBF_FAR_FRR.png used on input line 128.
 (pdftex.def)             Requested size: 227.62206pt x 189.40622pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+Missing character: There is no Â in font cmr12!
+Missing character: There is no º in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no º in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+[60 </home/beaa/Escritorio/Latex_TFM/images_databases/casia_real_41.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+<images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png, id=1197, 495.0495pt x 411.939pt>
+File: images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png Graphic file (type png)
+ <use images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png>
+Package pdftex.def Info: images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png used on input line 164.
+(pdftex.def)             Requested size: 227.62206pt x 189.40622pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
@@ -2054,67 +2087,38 @@ Missing character: There is no º in font cmr12!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59 </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_frav_concatenated/cost_rgb.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_frav_concatenated/error_rgb.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_frav_concatenated/cost_nir.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_frav_concatenated/error_nir.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+ [61 </home/beaa/Escritorio/Latex_TFM/images/FAR-FRR/CASIA_im_SVM_RBF_FAR_FRR.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
-[60 </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_mfsd/cost.png> </home/beaa/Escritorio/Latex_TFM/images/ejecucion2_general/resultados_mfsd/error.png> </home/beaa/Escritorio/Latex_TFM/images_databases/casia_real_41.jpg>] <images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png, id=1197, 495.0495pt x 411.939pt>
-File: images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png Graphic file (type png)
- <use images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png>
-Package pdftex.def Info: images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png used on input line 165.
-(pdftex.def)             Requested size: 227.62206pt x 189.40622pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
-
- []
-
-Missing character: There is no Â in font cmr12!
-Missing character: There is no º in font cmr12!
-Missing character: There is no Â in font cmr12!
-Missing character: There is no º in font cmr12!
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
-
- []
-
-[61 </home/beaa/Escritorio/Latex_TFM/images/FAR-FRR/CASIA_im_SVM_RBF_FAR_FRR.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
-
- []
-
-<images_databases/frav_tablet_109.JPG, id=1208, 133.38977pt x 188.72794pt>
+[62 </home/beaa/Escritorio/Latex_TFM/images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png>] <images_databases/frav_tablet_109.JPG, id=1213, 133.38977pt x 188.72794pt>
 File: images_databases/frav_tablet_109.JPG Graphic file (type jpg)
  <use images_databases/frav_tablet_109.JPG>
-Package pdftex.def Info: images_databases/frav_tablet_109.JPG used on input line 197.
+Package pdftex.def Info: images_databases/frav_tablet_109.JPG used on input line 196.
 (pdftex.def)             Requested size: 91.04742pt x 128.82573pt.
- <images_databases/frav_tablet_162.JPG, id=1209, 165.60155pt x 234.1548pt>
+ <images_databases/frav_tablet_162.JPG, id=1214, 165.60155pt x 234.1548pt>
 File: images_databases/frav_tablet_162.JPG Graphic file (type jpg)
  <use images_databases/frav_tablet_162.JPG>
-Package pdftex.def Info: images_databases/frav_tablet_162.JPG used on input line 198.
+Package pdftex.def Info: images_databases/frav_tablet_162.JPG used on input line 197.
 (pdftex.def)             Requested size: 91.04742pt x 128.74266pt.
- <images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png, id=1211, 495.0495pt x 411.939pt>
+ <images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png, id=1216, 495.0495pt x 411.939pt>
 File: images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png Graphic file (type png)
  <use images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png>
-Package pdftex.def Info: images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png used on input line 207.
+Package pdftex.def Info: images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png used on input line 206.
 (pdftex.def)             Requested size: 227.62206pt x 189.40622pt.
- [62 </home/beaa/Escritorio/Latex_TFM/images/FAR-FRR/Casia_vid_LDA_SVM_RBF_FAR_FRR.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
@@ -2123,85 +2127,85 @@ Missing character: There is no º in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no º in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
 [63 </home/beaa/Escritorio/Latex_TFM/images_databases/frav_tablet_109.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/frav_tablet_162.JPG> </home/beaa/Escritorio/Latex_TFM/images/FAR-FRR/FRAV_LDA_SVM_RBF_FAR_FRR.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 <images_databases/frav_rgb_151.JPG, id=1228, 39.23228pt x 50.589pt>
 File: images_databases/frav_rgb_151.JPG Graphic file (type jpg)
  <use images_databases/frav_rgb_151.JPG>
-Package pdftex.def Info: images_databases/frav_rgb_151.JPG used on input line 240.
+Package pdftex.def Info: images_databases/frav_rgb_151.JPG used on input line 239.
 (pdftex.def)             Requested size: 91.04742pt x 117.4198pt.
  <images_databases/frav_nir_151.jpg, id=1229, 45.771pt x 59.0205pt>
 File: images_databases/frav_nir_151.jpg Graphic file (type jpg)
  <use images_databases/frav_nir_151.jpg>
-Package pdftex.def Info: images_databases/frav_nir_151.jpg used on input line 241.
+Package pdftex.def Info: images_databases/frav_nir_151.jpg used on input line 240.
 (pdftex.def)             Requested size: 91.04742pt x 117.41653pt.
  <images_databases/frav_rgb_128.JPG, id=1230, 39.23228pt x 50.589pt>
 File: images_databases/frav_rgb_128.JPG Graphic file (type jpg)
  <use images_databases/frav_rgb_128.JPG>
-Package pdftex.def Info: images_databases/frav_rgb_128.JPG used on input line 243.
+Package pdftex.def Info: images_databases/frav_rgb_128.JPG used on input line 242.
 (pdftex.def)             Requested size: 91.04742pt x 117.4198pt.
  <images_databases/frav_nir_128.jpg, id=1231, 143.03438pt x 184.43906pt>
 File: images_databases/frav_nir_128.jpg Graphic file (type jpg)
  <use images_databases/frav_nir_128.jpg>
-Package pdftex.def Info: images_databases/frav_nir_128.jpg used on input line 244.
+Package pdftex.def Info: images_databases/frav_nir_128.jpg used on input line 243.
 (pdftex.def)             Requested size: 91.04742pt x 117.40456pt.
  <images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png, id=1233, 495.0495pt x 411.939pt>
 File: images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png Graphic file (type png)
  <use images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png>
-Package pdftex.def Info: images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png used on input line 253.
+Package pdftex.def Info: images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png used on input line 252.
 (pdftex.def)             Requested size: 213.96529pt x 178.04173pt.
  <images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png, id=1234, 495.0495pt x 411.939pt>
 File: images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png Graphic file (type png)
  <use images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png>
-Package pdftex.def Info: images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png used on input line 254.
+Package pdftex.def Info: images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png used on input line 253.
 (pdftex.def)             Requested size: 213.96529pt x 178.04173pt.
 Missing character: There is no Â in font cmr12!
 Missing character: There is no º in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no º in font cmr12!
- [64 </home/beaa/Escritorio/Latex_TFM/images_databases/frav_rgb_151.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/frav_nir_151.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/frav_rgb_128.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/frav_nir_128.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
  []
 
-[65 </home/beaa/Escritorio/Latex_TFM/images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png> </home/beaa/Escritorio/Latex_TFM/images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png>]
+[64]
 File: images_databases/frav_rgb_128.JPG Graphic file (type jpg)
  <use images_databases/frav_rgb_128.JPG>
-Package pdftex.def Info: images_databases/frav_rgb_128.JPG used on input line 286.
+Package pdftex.def Info: images_databases/frav_rgb_128.JPG used on input line 285.
 (pdftex.def)             Requested size: 91.04742pt x 117.4198pt.
 File: images_databases/frav_nir_128.jpg Graphic file (type jpg)
  <use images_databases/frav_nir_128.jpg>
-Package pdftex.def Info: images_databases/frav_nir_128.jpg used on input line 287.
+Package pdftex.def Info: images_databases/frav_nir_128.jpg used on input line 286.
 (pdftex.def)             Requested size: 91.04742pt x 117.40456pt.
- <images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png, id=1256, 495.0495pt x 411.939pt>
+ <images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png, id=1248, 495.0495pt x 411.939pt>
 File: images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png Graphic file (type png)
  <use images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png>
-Package pdftex.def Info: images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png used on input line 296.
+Package pdftex.def Info: images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png used on input line 295.
 (pdftex.def)             Requested size: 227.62206pt x 189.40622pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
@@ -2210,83 +2214,83 @@ Missing character: There is no º in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no º in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
 
  []
 
-[66 </home/beaa/Escritorio/Latex_TFM/images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png>] <images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png, id=1267, 495.0495pt x 411.939pt>
+[65 </home/beaa/Escritorio/Latex_TFM/images_databases/frav_rgb_151.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/frav_nir_151.jpg> </home/beaa/Escritorio/Latex_TFM/images_databases/frav_rgb_128.JPG> </home/beaa/Escritorio/Latex_TFM/images_databases/frav_nir_128.jpg>] <images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png, id=1258, 495.0495pt x 411.939pt>
 File: images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png Graphic file (type png)
  <use images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png>
-Package pdftex.def Info: images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png used on input line 326.
+Package pdftex.def Info: images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png used on input line 325.
 (pdftex.def)             Requested size: 227.62206pt x 189.40622pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
 
  []
 
-[67 </home/beaa/Escritorio/Latex_TFM/images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png>] <images/comparative/CASIAs_KNN_ROC.png, id=1275, 578.16pt x 433.62pt>
+
+Underfull \vbox (badness 1742) has occurred while \output is active []
+
+ [66 </home/beaa/Escritorio/Latex_TFM/images/FAR-FRR/FRAV_feat_SOFTMAX_FAR_FRR.png> </home/beaa/Escritorio/Latex_TFM/images/FAR-FRR/FRAV_feat_DecisionTree_FAR_FRR.png>] <images/comparative/CASIAs_KNN_ROC.png, id=1269, 578.16pt x 433.62pt>
 File: images/comparative/CASIAs_KNN_ROC.png Graphic file (type png)
  <use images/comparative/CASIAs_KNN_ROC.png>
-Package pdftex.def Info: images/comparative/CASIAs_KNN_ROC.png used on input line 340.
+Package pdftex.def Info: images/comparative/CASIAs_KNN_ROC.png used on input line 339.
 (pdftex.def)             Requested size: 264.0424pt x 198.03183pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
 
  []
 
-<images/comparative/FRAVs_SVM_RBF_ROC.png, id=1277, 578.16pt x 433.62pt>
+[67 </home/beaa/Escritorio/Latex_TFM/images/FAR-FRR/FRAV_clas_LDA_SVM_RBF_FAR_FRR.png>] <images/comparative/FRAVs_SVM_RBF_ROC.png, id=1279, 578.16pt x 433.62pt>
 File: images/comparative/FRAVs_SVM_RBF_ROC.png Graphic file (type png)
  <use images/comparative/FRAVs_SVM_RBF_ROC.png>
-Package pdftex.def Info: images/comparative/FRAVs_SVM_RBF_ROC.png used on input line 351.
+Package pdftex.def Info: images/comparative/FRAVs_SVM_RBF_ROC.png used on input line 350.
 (pdftex.def)             Requested size: 264.0424pt x 198.03183pt.
 
-Overfull \hbox (2.38495pt too wide) in paragraph at lines 355--356
+Overfull \hbox (2.38495pt too wide) in paragraph at lines 354--355
 \OT1/cmr/m/n/12 RGB+NIR FRAV database clas-si-fi-ca-tion level in green and the RGB+NIR FRAV database
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
-[68 </home/beaa/Escritorio/Latex_TFM/images/comparative/CASIAs_KNN_ROC.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 364.
+               Default added (so using `tbp') on input line 363.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
+Underfull \hbox (badness 10000) in paragraph at lines 387--388
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [69 </home/beaa/Escritorio/Latex_TFM/images/comparative/FRAVs_SVM_RBF_ROC.png>]
+[68 </home/beaa/Escritorio/Latex_TFM/images/FAR-FRR/MFSD_SVM_RBF_FAR_FRR.png>] [69 </home/beaa/Escritorio/Latex_TFM/images/comparative/CASIAs_KNN_ROC.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 402.
+               Default added (so using `tbp') on input line 401.
 
-) [70]
+) [70 </home/beaa/Escritorio/Latex_TFM/images/comparative/FRAVs_SVM_RBF_ROC.png>]
 Chapter 6.
 (/home/beaa/Escritorio/Latex_TFM/Results_discussion.tex
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -2640,13 +2644,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 220.
 Here is how much of TeX's memory you used:
  13106 strings out of 493029
  205623 string characters out of 6136235
- 333470 words of memory out of 5000000
+ 334470 words of memory out of 5000000
  15673 multiletter control sequences out of 15000+600000
  14985 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,18n,43p,965b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /home/beaa/Escritorio/Latex_TFM/Memoria_TFM.pdf (92 pages, 13603196 bytes).
+Output written on /home/beaa/Escritorio/Latex_TFM/Memoria_TFM.pdf (92 pages, 13546951 bytes).
 PDF statistics:
  1510 PDF objects out of 1728 (max. 8388607)
  1238 compressed objects within 13 object streams

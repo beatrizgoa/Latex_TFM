@@ -2,7 +2,7 @@
 \section{Databases} \label{sec:methd_databses}
 In this section the databases that are used along the thesis are described in this section.\\
 
-One database has utilized to learn \textit{Theano} and three face databases has been used in order to detect anti-spoofing. The face anti-spoofing databases have been generated with face anti-spoofing finality and has been used previously with the same purpose.\\
+One database has utilized to learn \textit{Theano} and three face databases have been used in order to detect anti-spoofing. The face anti-spoofing databases have been generated with face anti-spoofing finality and has been used previously for the same purpose.\\
 
 All the databases are formed by three subsets whose samples are not repeated among subsets:
 \begin{description}[itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
@@ -12,7 +12,7 @@ All the databases are formed by three subsets whose samples are not repeated amo
 \end{description}
 
 \subsection{MNIST digit database}\label{subsec:MNIST}
-MNIST digit database is a image database of human written digits. This database is frequently used to learn machine learning techniques. Because of that, the database has been used, in this thesis, for learning Theano and convolutional neural networks. In addition, this database has been used in a implemented convolutional neural network (LeNet).\\
+MNIST digit database is an image database of human written digits. This database is frequently used to learn machine learning techniques. Because of that, the database has been used, in this thesis, for learning Theano and convolutional neural networks. In addition, this database has been used in a implemented convolutional neural network (LeNet).\\
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.6\textwidth]{images_databases/mnistExamples.png}
@@ -21,7 +21,7 @@ MNIST digit database is a image database of human written digits. This database 
 Some examples of the digit image MNIST database could be seen in \ref{fig:MNIST_digits}, image obtained from \cite{MNISTimage} and the characteristics of this database are the following ones:
 \begin{itemize}[itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
  \item There are 70.000 number of unique samples.
- \item Despite of the original size of the database is 32x32 pixels, the samples of this downloaded database are 28x28 pixels in gray scale, that is 784 features per image.
+ \item Despite the original size of the database is 32x32 pixels, the samples of this downloaded database are 28x28 pixels in gray scale, that is 784 features per image.
  \item 10 classes could be differentiated, one per digit.
 \item The samples are directly separated into train, test and validate subset.
 \end{itemize}
@@ -31,7 +31,7 @@ FRAV database is an anti-spoofing face database built in the  \textit{FRAV} rese
 
 FRAV database is formed by genuine users and spoofing attacks. Moreover, this database is formed by RGB images and NIR images, almost each RGB sample has been captured with infrared camera too.\\
 
-Both databases are composed by genuine users samples and four distinctive attacks: printed photo, 2D mask, 2D mask with eyes cropped and real user image displayed in a tablet device.
+Both databases are composed by genuine users samples and four distinctive attacks: printed photo, 2D mask, 2D mask with eyes cropped and real user image displayed on a tablet device.
 \begin{itemize}[itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
  \item Original images of people represented in figure \ref{frav_im1-4} and figure \ref{frav_im2-5} for RBG images and figure \ref{frav_im3-5} for NIR image.
  \item Images of people printed (attack) represented in figure \ref{frav_im1-1} and figure \ref{frav_im2-1} for RBG images and figure \ref{frav_im3-1} for NIR image.
@@ -48,7 +48,7 @@ The characteristics of this database are described:
 \item There is one image per person.
 \item Each image has its own shape.
 \item The faces are centered in the image.
-\item RGB images has been obtained with a professional visible light camera and NIR images with a Near infrared camera.
+\item RGB images have been obtained with a professional visible light camera and NIR images with a Near infrared camera.
 \item RGB images are in RGB space and NIR images are in gray-scale space.
 \end{itemize}
 
@@ -87,13 +87,13 @@ This database is smaller that RGB database because not all users have its corres
 
 When RGB and NIR (figure \ref{fig:RGB-frav2})images are used at the same time, two different methods, with the finality of using both types of images together, are determined:
 \begin{itemize}
-\item Adding images in characteristic level: adding the NIR image as another layer to RGB image, so the resultant image have hightxweightx4 dimensions (NIR images has one layer because it is a gray scale image and RGB images has three layers, one per each primary color). The network is feed with the resultant images like other times.
+\item Adding images in characteristic level: adding the NIR image as another layer to RGB image, so the resultant image have hightxweightx4 dimensions (NIR images has one layer because it is a gray scale image and RGB images have three layers, one per each primary color). The network is feed with the resultant images like other times.
 \item Adding images in classification level: after the network training and before feeding the classifier, RGB and NIR databases would be trained separately and its features would be appended as the input of the classifier.
 \end{itemize}
 
 To conclude, this database is going to be used in the three different ways: just RGB images, RGB and NIR images added in characteristic level or classification level.\\
 
-When the classes are build, two ways are possible to be done: the first one where real people are one class (positive) and the different attacks are another class (negatives), so two classes have been used; and the second way where each attacks correspond with a class, so five classes (4 attacks and 1 real) have been utilized.\\
+When the classes are built, two ways are possible to be done: the first one where real people are one class (positive) and the different attacks are another class (negatives), so two classes have been used; and the second way where each attack correspond with a class, so five classes (4 attacks and 1 real) have been utilized.\\
 
 \subsection{CASIA dataset}
 The CASIA Face Anti-Spoofing database is a database from the Chinese Academy of Sciences Centre for Biometrics and Security Research (CASIA-CBSR) \cite{Casiadatbase}.
@@ -119,7 +119,7 @@ CASIA database is formed by real or genuine images of people and three different
 Originally, this database is a video database, in which each sample is a different video, but for the experiments developed no videos (entirely or fed directly to the network) have been used. The CASIA database has been used in two different ways:
 \begin{itemize} [itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
  \item Using a single image per person and class. When this database is used, it is going to be referred as CASIA image database.
- \item Reading three frames per video and saving each frame as a independent image sample. This database is going to be referred as CASIA video database.
+ \item Reading three frames per video and saving each frame as an independent image sample. This database is going to be referred as CASIA video database.
 \end{itemize}
 
 The characteristics of the CASIA image database are the following ones:
@@ -140,7 +140,7 @@ The characteristics of the CASIA video database are the following ones:
 \item Faces are centered in the image and blink expression and movement of people are produced.
 \end{itemize}
 
-At the time of assigning a class, it could be done using two classes, the positive class to the real users and the negative class to the attacks; If each attack is assigned to a independent class, it would be four different classes, the real user class and three attack classes.\\
+At the time of assigning a class, it could be done using two classes, the positive class to the real users and the negative class to the attacks; If each attack is assigned to an independent class, it would be four different classes, the real user class and three attack classes.\\
 
 %\begin{figure}[htb]
 %\centering
@@ -179,8 +179,8 @@ Originally, the database is a video database, but only one frame per user and cl
 \begin{itemize}[itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
 \item There are 35 images per attack or genuine user. There are 140 unique samples.
 \item Images are in RGB space.
-\item Faces are centred in images.
-\item The size of each image are not equal. Approximately images are 300 pixel heigh and 335 pixel width.
+\item Faces are centered in images.
+\item The size of each image is not equal. Approximately images are 300 pixel height and 335 pixel width.
 \item Images have been acquired with a Macbook Air laptop and a Google Nexus4 smartphone.
 \end{itemize}
 
