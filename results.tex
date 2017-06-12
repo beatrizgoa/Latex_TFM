@@ -2,13 +2,13 @@
 %\minitoc
 %\mtcskip
 \section{Final experiment results}
-The results obtained in section \ref{sec:Final_archi} are presented as well as the training process, that is going to be discussed, as the test results obtained with each database and classifier.
+In this section, the test results obtained from section \ref{sec:Final_archi} are presented as well as the training process.
 
 \subsection{Training and validation process}
-The convolutional neural networks has been trained independently for each database as is explained in \ref{sec:Final_archi}. In this section, the training and validation process is presented for each database.
+The convolutional neural networks has been trained independently for each database as  explained in \ref{sec:Final_archi}. In this section, the training and validation process are detailed for each database.
 
 \subsubsection{CASIA Image database}
-In figure \ref{fig:ejecucion2_casia_im_train} the cost at training and the error at validation are represented (\ref{fig:ejecucion2_casia_im_train_cost} and \ref{fig:ejecucion2_casia_im_train_error} respectively). The training process converge in a low values, smaller than 0.0001; while the validation process converges in 20\% error from the 250th epoch. The iterations where the training process oscillates sharply agree with the epochs where the cost oscillates sharply too. After those oscillations, the validation gets constant and the training error variates in its lowest values.\\
+In figure \ref{fig:ejecucion2_casia_im_train} the cost and training are represented (\ref{fig:ejecucion2_casia_im_train_cost} and \ref{fig:ejecucion2_casia_im_train_cost} respectively). The training process converges in  low values, smaller than 0.0001; while the validation process converges in a 20\% error from the $250^{th}$ epoch. The iterations, where the training process oscillates sharply, agree with the epochs where the cost oscillates sharply too. After those oscillations, the validation becomes constant and the training error variates in its lowest values.\\
 \begin{figure}[htb]
 \centering
 		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_casia_images/cost.png}\label{fig:ejecucion2_casia_im_train_cost}}
@@ -17,10 +17,10 @@ In figure \ref{fig:ejecucion2_casia_im_train} the cost at training and the error
 \label{fig:ejecucion2_casia_im_train}
 \end{figure}
 
-The saved model to realize the test performance is the obtained at iteration 1176 with a 15\% validation error.
+The saved model to carry out the test performance is the one obtained at iteration 1176 with a 15\% validation error.
 
 \subsubsection{CASIA Video database}
-The cost and error obtained at training and validation processed when CASIA video database is used, are represented in figure \ref{fig:ejecucion2_casia_vid_train}. The minimum cost is almost 0 and is obtained before 2000th iteration, as is represented in figure \ref{fig:ejecucion2_casia_vid_train_cost}. The validation converges at the same time as the training, where oscillate between 7\% and 6\%.\\
+The cost and error obtained at training and validation processes when using the CASIA video database, is represented in figure \ref{fig:ejecucion2_casia_vid_train}. The minimum cost is almost 0 and it is obtained before the $2000^{th}$ iteration, as represented in figure \ref{fig:ejecucion2_casia_vid_train_cost}. The validation converges at the same time as the training, where it oscillates between 7\% and 6\%.\\
 \begin{figure}[htb]
 \centering
 		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_casia_videos/cost.png}\label{fig:ejecucion2_casia_vid_train_cost}}
@@ -31,8 +31,8 @@ The cost and error obtained at training and validation processed when CASIA vide
 
 The best validation performance is obtained at iteration 2240 with a 5.71\% validation error.
 
-\subsubsection{FRAV database}
-The cost and error obtained at training and validation processes respectively are represented in figure \ref{fig:ejecucion2_frav_train}. The cost, that could be seen in figure \ref{fig:ejecucion2_frav_train_cost} get a low value, when it converges before the 5000th iteration, the cost obtained is 0.000001. The validation error, represented in figure \ref{fig:ejecucion2_frav_train_cost}, fluctuate a lot, the curve should decrease, but it does not and in 200 epoch, the error is constant in 11.25\%. The generalization at validation is not very good and before the 100th epoch the network seems to overfit.\\
+\subsubsection{RGB FRAV database}
+The cost and error obtained at training and validation processes respectively are represented in figure \ref{fig:ejecucion2_frav_train}. The cost, that can be seen in figure \ref{fig:ejecucion2_frav_train_cost} has a low value when it converges before the 5000th iteration; the cost obtained is $10^{-6}$. The validation error, represented in figure \ref{fig:ejecucion2_frav_train_cost}, fluctuates considerably. The curve should decrease, yet it does not, and in the 200th epoch, the error is constant in 11.25\%. The generalization at validation is not very good and before the 100th epoch the network seems to overfit.\\
 \begin{figure}[htb]
 \centering
 		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav/cost.png}\label{fig:ejecucion2_frav_train_cost}}
@@ -41,10 +41,10 @@ The cost and error obtained at training and validation processes respectively ar
 \label{fig:ejecucion2_frav_train}
 \end{figure}
 
-The best validation score of 1.25\% has been obtained at iteration 2016 which is saved as model for testing.
+The best validation score of 1.25\% has been obtained at iteration 2016 which is saved as a model for testing.
 
-\subsubsection{FRAV RGB+NIR (feature level) database}
-The RGB+NIR FRAV database, whose images has been added before the training process, has a cost and error which is represented in figure \ref{fig:ejecucion2_frav_feat_train}. The cost at training, that could be seen in \ref{fig:ejecucion2_frav_feat_train_cost} oscillates in the 3500 first iterations until decrease its value to 0 in the last 100 iterations. The cost at validation oscillates in the same oscillation cost period, where the value gets 0\% in different times. After this, the value gets in 3,3\%. Although the validation performance does not decrease in a desirable way, it gets a 0\% error which means that the generalization is very good.\\
+\subsubsection{RGB+NIR (feature level) FRAV database}
+The RGB+NIR FRAV database, whose images have been added before the training process, has a cost and error which is represented in figure \ref{fig:ejecucion2_frav_feat_train}. The cost at training, that can be seen in \ref{fig:ejecucion2_frav_feat_train_cost} oscillates in the 3500 first iterations until it decreases its value to 0 in the last 100 iterations. The cost at validation oscillates in the same oscillation cost period, where the value gets to 0\% at different times. Subsequently, the value gets to 3,3\%. Although the validation performance does not decrease in a desirable way, it gets a 0\% error which means that the generalization is very good.\\
 \begin{figure}[htb]
 \centering
 		\subfigure[Cost at training]{\includegraphics[width=0.47\textwidth]{images/ejecucion2_general/resultados_frav_rgb_nir/cost.png}\label{fig:ejecucion2_frav_feat_train_cost}}
@@ -55,8 +55,8 @@ The RGB+NIR FRAV database, whose images has been added before the training proce
 
 The best model is obtained at 702 iteration, when the validation gets 0\% for the first time.
 
-\subsubsection{FRAV RGB+NIR (classification level) database}
-In figure \ref{fig:ejecucion2_frav_clas_train} is represented the training cost and the validation error when the database has been trained, first the RGB subset and then NIR subset. This two subsets are trained independently and features of each best model are concatenated to test performance.\\
+\subsubsection{RGB+NIR (classification level) FRAV database}
+In figure \ref{fig:ejecucion2_frav_clas_train} the training cost and the validation error is represented when the database has been trained, first the RGB subset and then NIR subset. These two subsets are trained independently and features of each best model are concatenated to test the performance.\\
 
 \begin{figure}[htb]
 \centering
@@ -68,12 +68,12 @@ In figure \ref{fig:ejecucion2_frav_clas_train} is represented the training cost 
 \label{fig:ejecucion2_frav_clas_train}
 \end{figure}
 
-In RGB and NIR cost training, after decreasing its value got a very low value as in others databases. About the cost in validation, in both cases gets 0\%, the difference is that in RGB, this lowest value is gotten twice at epoch 124 and 125 and then the value is increased until get constant at 10\%, what seems an overfit. Nevertheless, in NIR validation error, it oscillates until gets 0\% value and is constant until the end.\\
+In RGB and NIR cost training, it got a very low value as in others databases after decreasing its value. Regarding the cost in validation, it gets 0\% in both cases. The difference is that in RGB, this lowest value is gotten twice at epoch 124 and 125 and then the value is increased until it becomes constant at 10\%, what seems to be an overfit. Nevertheless, in the NIR validation error, it oscillates until it gets 0\% value and is constant until the end.\\
 
-The best RGB model is the obtained at iteration 3347, when 0.0\% is gotten at validation error. The best NIR model is the obtained at iteration 674, the first time that the validation error gets 0\%.
+The best RGB model is the one obtained at iteration 3347, when 0.0\% is gotten at validation error. The best NIR model is the obtained at iteration 674, the first time that the validation error gets 0\%.
 
 \subsubsection{MFSD database}
-The training results obtained for MFSD database are represented in figure \ref{fig:ejecucion2_mfsd_train}. The cost decreases slowly until get a desirable cost value, near to 0\%. The validation error curve graph (figure \ref{fig:ejecucion2_mfsd_error}) is not as good as the cost curve. The lower error value is obtained in the first 100 iterations, which is constant and then is increased until 35\%.\\
+The training results obtained with theMFSD database are represented in figure \ref{fig:ejecucion2_mfsd_train}. The cost slowly decreases until it get a desirable cost value, near to 0\%. The validation error curve graph (figure \ref{fig:ejecucion2_mfsd_error}) is not as good as the cost curve. The lower error value is obtained in the first 100 iterations, which is constant and then it increased until 35\%.\\
 
 \begin{figure}[htb]
 \centering
@@ -83,14 +83,14 @@ The training results obtained for MFSD database are represented in figure \ref{f
 \label{fig:ejecucion2_mfsd_train}
 \end{figure}
 
-The best model is the obtained at iteration 7, in the first epoch, where the validation error is 14,28\%.
+The best model is the one obtained at iteration 7 in the first epoch, where the validation error is 14,28\%.
 
 \subsection{Testing process}
-From the best CNN model, for each database, A SVM (with lineal and RBF kernel), KNN, Decision Tree and logistic regression has been trained. Also the testing has been realized after training a LDA and PCA (which have been trained too for each database) with each classifier.\\
+From the best CNN model, for each database, A SVM (with linear and RBF kernel), a KNN, a decision tree and a logistic regression have been trained. Furthermore,the testing has been carried out after training a LDA and PCA (which have been trained too for each database) with each classifier.\\
 
-The test performance for each classifier, has been realized after chosen the best classifier model.  The results are going to be exposed independently of each database and then compared among all databases.\\
+The test performance for each classifier has been executed after chosing the best classifier model.  The results are going to be exposed independently of each database and then compared among all databases.\\
 
-Best obtained results are highlighted in bold in each table.
+Best obtained results are highlighted in bold in each table.\\
 
 \subsubsection{CASIA Image database}
 The results obtained testing the CNN model for CASIA image database are shown. \\
@@ -112,9 +112,9 @@ Classifier                                                                   & A
 \label{APCR_BPCR_CASIA_im}
 \end{table}
 
-In table \ref{APCR_BPCR_CASIA_im} are exposed the APCR and BPCR parameters for each classifier. All the attacks samples are rightly classified because APCR value is 0. The number of genuine samples misclassified is what changes, it gets 1 for SVM with kernel lineal, all the positives samples have been misclassified, and decision tree whose number of misclassified real user are 4 (the half of the total real samples of the test subset). The rest of the classifiers takes a 0.125 APCR value, just one sample is misclassified, the same sample which could be seen in figure \ref{fig:casia_im_miscl}.\\% :('False Negative: ', 'databases/Casia database Fixed/Real/41.jpg')\\
+In table \ref{APCR_BPCR_CASIA_im} what is  exposed are the APCR and BPCR parameters for each classifier. All the attacks samples are classified correctly because the APCR value is 0. The number of genuine samples misclassified is what changes: it takes value 1 when using SVM with kernel lineal, hence all the positives samples have been misclassified.  And it takes value 0.5 when using the decision tree, whose number of misclassified samples is 5, ( half of the total real samples of the test subset). The rest of the classifiers take a 0.125 APCR value, just one sample is misclassified, the same sample which could be seen in figure \ref{fig:casia_im_miscl}.
 
-With respect to APCR and BPCR it is not possible to get the best combination with which the results are better, because most of classifiers works correctly.\\
+Regarding the APCR and the BPCR, it is not possible to get the best combination with which the results are better because most classifiers work correctly.\\
 
 \begin{figure}[htb]
 \centering
@@ -122,7 +122,7 @@ With respect to APCR and BPCR it is not possible to get the best combination wit
 \caption{Casia image misclassified sample.} \label{fig:casia_im_miscl}
 \end{figure}
 
-In figure \ref{fig:CASIA_im_FAR_FRR} is represented  FAR and FRR curves, from which is obtained a 0,025 EER at 0,015 threshold. The EER obtained is a desirable result, on the contrary, the threshold is low, it is not usually used a 0,015 threshold.
+Figure \ref{fig:CASIA_im_FAR_FRR} represents  FAR and FRR curves, from which is obtained a 0,025 EER at 0,015 threshold. The EER obtained is a desirable result, on the contrary, the threshold is low, it is not usually used a 0,015 threshold.
 
 \begin{figure}[htb]
 \centering
@@ -132,7 +132,7 @@ In figure \ref{fig:CASIA_im_FAR_FRR} is represented  FAR and FRR curves, from wh
 
 
 \subsubsection{CASIA Video database}
-Next analysed results are from CASIA video database.\\
+Next analysed results are from the CASIA video database.\\
 
 \begin{table}[htb]
 \centering
@@ -151,13 +151,13 @@ Classifier                                                                   & A
 \label{APCR_BPCR_CASIA_vid}
 \end{table}
 
-In table \ref{APCR_BPCR_CASIA_vid} APCR and BPCR results are summarized. The best result has been obtained with SVM classifier and kernel RBF (C= 0.05) after applying LDA with 1 component. The worst values obtained are the SVM with lineal kernel, no matters if PCA or LDA have been used, because all the positives samples have been classified as negatives. \\
+In table \ref{APCR_BPCR_CASIA_vid} APCR and BPCR results are summarized. The best result has been obtained with SVM classifier and kernel RBF (C= 0.05) after applying LDA with 1 component. The worst values obtained are the SVM with lineal kernel, even if PCA or LDA have been used, because all the positives samples have been classified as negative. \\
 
-From the table it is not possible to know if LDA and PCA are significant because with some classifiers APCR and BPCR results have been improve or worsened.\\
+From the table it is not possible to know if LDA and PCA are significant because with some classifiers APCR and BPCR results have been improved or worsened.\\
 
-Also The last conclusion that could be gotten from the table is that Attacks samples are better classified that genuine samples, it is due to the fact that has been trained with more negative samples.\\
+Also The last conclusion that could be obtained from the table is that the attack samples are better classified than the genuine samples.This is due to the fact that it has been trained with more negative samples.\\
 
-Figure \ref{fig:CASIA_vid_FAR_FRR} represents the FAR-FRR curve of the best obtained model: CNN architecture and using LDA with SVM RBF kernel. From the figure, the Equal Error Rate obtained value is 0.115, it is a improvable value; EER is obtained at 0,64 threshold. The poor value obtaines is due to the fact that the number of false accepted and false rejected is lower with respect to the total amount of samples.
+Figure \ref{fig:CASIA_vid_FAR_FRR} represents the FAR-FRR curve of the best obtained model: CNN architecture and using LDA with SVM RBF kernel. From the figure, the Equal Error Rate obtained value is 0.115, it is a improvable value; EER is obtained at 0,64 threshold.
 
 
 \begin{figure}[htb]
@@ -166,7 +166,7 @@ Figure \ref{fig:CASIA_vid_FAR_FRR} represents the FAR-FRR curve of the best obta
 \caption{FAR-FRR curve of CASIA videos database using LDA and SVM (RBF kernel).} \label{fig:CASIA_vid_FAR_FRR}
 \end{figure}
 
-\subsubsection{FRAV database}
+\subsubsection{RGB FRAV database}
 The RGB FRAV database results are presented and analyzed.\\
 
 \begin{table}[htb]
@@ -186,12 +186,11 @@ Classifier                                                                   & A
 \label{APCR_BPCR_FRAV}
 \end{table}
 
+APCR and BPCR results are in table \ref{APCR_BPCR_FRAV}. In general, results are very good because values are lower than 0.5. With SVM lineal kernel, all the samples are classified as negatives except when it has been used when LDA, those results are as good as the ones obtained with RBF kernel.\\
 
-APCR and BPCR results are in table \ref{APCR_BPCR_FRAV}. In general, results are very good because values are lower than 0.5. With SVM lineal kernel, all the samples are classified as negatives except when it has been used when LDA, that results are as good as the obtained with RBF kernel.\\
+The best  result is obtained when SVM with RBF kernel has been used with C = 1 and using LDA with 1 component. LDA improves the results obtained when neither PCA nor just the classifier have been used, although the improvement is not much.\\
 
-The best  result is obtained when SVM with RBF kernel has been used with C = 1 and using LDA with 1 component. LDA improves the results obtained when neither PCA nor just the classifier has been used, although the improved is not too much.\\
-
-The misclassified samples are repeated among the classifiers. The two samples shown in figure \ref{fig:frav_miscl} represents the two most misclassified images, almost every classifier have classified it incorrectly.\\
+The misclassified samples are repeated among the classifiers. The two samples shown in figure \ref{fig:frav_miscl} represent the two most misclassified images, almost every classifier has classified it incorrectly.\\
 
 \begin{figure}[htb]
 \centering
@@ -211,7 +210,7 @@ The FAR-FRR graph is represented in figure \ref{fig:RGB_FRAV_FAR_FRR} from which
 
 
 \subsubsection{FRAV RGB+NIR (feature level) database}
-Results obtained at classifying RGB+NIR (feature level) database are shown following.\\
+Results obtained at classifying RGB+NIR (feature level) database are shown next.\\
 
 \begin{table}[htb]
 \centering
@@ -230,9 +229,9 @@ Classifier                                                                   & A
 \label{APCR_BPCR_FRAV_feature}
 \end{table}
 
-Table \ref{APCR_BPCR_FRAV_feature} shows the APCR and BPCR values that have been obtained for each classifier. Except for SVM with lineal kernel, which has classified all the samples as negatives when just the classifier has been used or if PCA has been applied too, classifications have produced good results, the APCR and BPCR values are very low, close to 0. In fact, Decision Tree and logistic regression classify correctly all the samples because APCR and BPCR are equal to 0. \\
+Table \ref{APCR_BPCR_FRAV_feature} shows the APCR and BPCR values that have been obtained for each classifier. Except for SVM with lineal kernel, which has classified all the samples as negatives when just the classifier has been used or if PCA has been applied, classifications have obtained good results. The APCR and BPCR values are very low, close to 0. In fact, the Decision Tree and logistic regression classify correctly all the samples because APCR and BPCR are equal to 0. \\
 
-PCA and LDA have not improved results significantly. SVM lineal with LDA does not classify all the samples as negatives. When PCA and LDA is applied with logistic regression and Decision tree, the classification is not perfect as it is when none is applied.\\
+PCA and LDA have barely improved results. SVM lineal with LDA does not classify all the samples as negatives. When PCA and LDA is applied with logistic regression and Decision tree, the classification is not perfect as it is when none is applied.\\
 
 In general, the same samples are misclassified in the classification tasks. The two most misclassified samples are represented in figure \ref{fig:frav_feat_miscl}.\\
 
@@ -247,7 +246,7 @@ In general, the same samples are misclassified in the classification tasks. The 
 \caption{RGB+NIR FRAV (feature level) misclassified samples.} \label{fig:frav_feat_miscl}
 \end{figure}
 
-The perfect performance could be also demonstrated in figure \ref{figures:FAR-FRR-FRAV_FEAT}, where FAR and FRR curves are plot when logistic regression and Decission Tree classifiers are used. In both cases, because of the perfect classification, the EER value obtained is 0.
+The perfect performance could be also demonstrated in figure \ref{figures:FAR-FRR-FRAV_FEAT}, where FAR and FRR curves are plot when logistic regression and Decision Tree classifiers are used. In both cases, because of the perfect classification, the EER value obtained is 0.
 
 \begin{figure}[htb]
     \centering
@@ -258,7 +257,7 @@ The perfect performance could be also demonstrated in figure \ref{figures:FAR-FR
 \end{figure}
 
 \subsubsection{FRAV RGB+NIR (classification level) database}
-Results obtained when RGB+NIR FRAV database (classification level) is used are described.\\
+Results obtained when the RGB+NIR FRAV database (classification level) is used are described below.\\
 \begin{table}[htb]
 \centering
 \resizebox{\textwidth}{!}{%
@@ -276,11 +275,11 @@ Classifier                                                                   & A
 \label{APCR_BPCR_FRAV_class}
 \end{table}
 
-APCER and BPCER results are summarized in table \ref{APCR_BPCR_FRAV_class}. Results are closer to 0, but none classifier classifies perfectly. It is possible to realize that with LDA that APCR results are better and BPCR results are perfect.\\
+APCER and BPCER results are summarized in table \ref{APCR_BPCR_FRAV_class}. Results are closer to 0, but no classifier classifies perfectly. When using LDA, one can see that APCR results improve and the BPCR results are perfect.\\
 
-SVM lineal classifier classifies incorrectly positives samples although PCA is used too, with LDA that does not happen.\\
+SVM lineal classifier classifies incorrectly positives samples although PCA is used too. With LDA, that does not happen.\\
 
-In most of cases, classifiers just mis-classify one sample, the same sample represented in figure \ref{fig:frav_clas_miscl}. Classifiers that mis-classify more than one sample, the sample \ref{fig:frav_clas_miscl} is one of the misclassified.\\
+In most cases, classifiers just mis-classify one sample, the same sample represented in figure \ref{fig:frav_clas_miscl}. Classifiers that mis-classify more than one sample, the sample \ref{fig:frav_clas_miscl} is one of the misclassified.\\
 
 \begin{figure}[htb]
 \centering
@@ -290,7 +289,7 @@ In most of cases, classifiers just mis-classify one sample, the same sample repr
 \caption{RGB+NIR FRAV (classification level) misclassified samples.} \label{fig:frav_clas_miscl}
 \end{figure}
 
-There are various classifiers with the best performance, FAR-FRR curve it is illustrated for SVM (RBF kernel) with LDA method in figure \ref{fig:RGB_FRAV_clas_FAR_FRR}. The result obtained is acceptable, a 0,004 ERR. The number of incorrectly classified samples is low.
+There are various classifiers which realize the best performance, FAR-FRR curve it is illustrated for SVM (RBF kernel) with LDA method in figure \ref{fig:RGB_FRAV_clas_FAR_FRR}. The result obtained is acceptable, a 0,004 ERR. The number of incorrectly classified samples is low.
 
 \begin{figure}[htb]
 \centering
@@ -320,7 +319,7 @@ Classifier                                                                   & A
 
 The classification with this database is not accurate because all the samples are classified as negatives, as could be seen in table \ref{APCR_BPCR_MFSD} where , independently of the classifier or if LDA and PCA are used, the BPCR value is always 1 and the APCR value is 0.\\
 
-Because of the similarity in results, FAR-FRR curve of SVM with RBF is demonstrate in figure \ref{fig:MFSD_FAR_FRR}. The result obtained is an 0,089 EER, it is not an unacceptable value, but it is due to the fact that all samples are classified as negative samples.
+Because of the similarity in results, only FAR-FRR curve of SVM with RBF is demonstrated. Figure \ref{fig:MFSD_FAR_FRR} showa FAR-FRR curve. The result obtained is an 0,089 EER, it is not an unacceptable value, but it is due to the fact that all samples are classified as negative samples.
 
 \begin{figure}[htb]
 \centering
@@ -334,18 +333,18 @@ Because of the similarity in results, FAR-FRR curve of SVM with RBF is demonstra
 In this section it is going to discuss databases classification in common.
 
 \subsubsection{CASIAs databases}
-As the same as FRAVs databases, the comparative is going to be made with CASIAs databases: Image and Videos. With this purpose, KNN classifier is going to be used.\\
+A comparative between the obtained results of the two CASIAs databases: Image and Videos. In order to do so, KNN classifier is going to be used to compare them.\\
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.58\textwidth]{images/comparative/CASIAs_KNN_ROC.png}
-\caption{Comparative among CASIA databases with KNN.} \label{fig:CASIAS_KNN_comparative}
+\caption{Comparative between CASIA databases with KNN classifier.} \label{fig:CASIAS_KNN_comparative}
 \end{figure}
 
-In figure \ref{fig:CASIAS_KNN_comparative} is represented the comparative between image CASIA in blue and video CASIA database in green. As it is possible to see, the result is much better when just CASIA images databases are used, although CASIA video results are not bad.
+In figure \ref{fig:CASIAS_KNN_comparative} what is represented is the comparison between image CASIA (in blue) and video CASIA database (in green). As it can be seen, the result is much better when just CASIA images databases are used, although CASIA video results are not bad either.\\
 
 \subsubsection{FRAVs databases}
-Three FRAVs databases are compared in order to discuss easier if NIR images, in general, help in order to detect anti-spoofing attacks. In order to do that, and due to the fact to the big amount of data, one classifier is chosen to do the comparative: SVM with RBF kernel.\\
+Three FRAVs databases are compared in order to discuss if NIR images, in general, help to detect anti-spoofing attacks. In order to do so, and due to the large amount of data, one classifier is chosen to do the comparative: SVM with RBF kernel.\\
 
 \begin{figure}[htb]
 \centering
@@ -353,12 +352,12 @@ Three FRAVs databases are compared in order to discuss easier if NIR images, in 
 \caption{Comparative among FRAV databases with SVM RBF.} \label{fig:FRAVS_SVM_comparative}
 \end{figure}
 
-In figure \ref{fig:FRAVS_SVM_comparative} are represented the three databases: In blue is represented RGB database, in green RGB+NIR FRAV database classification level and in magenta RGB+NIR FRAV database feature level. And the ROC curve with NIR work better, in fact, is almost perfect.\\
+In figure \ref{fig:FRAVS_SVM_comparative} the three databases are represented: the RGB database in blue, the RGB+NIR FRAV database classification level in green and the RGB+NIR FRAV database  feature level in magenta. The ROC curve with NIR work better, in fact, it is almost perfect.\\
 
-This image and the perfect APCR and BPCR result obtained with logistic regression and decision tree in the RGB+NIR feature level tends to conduce that NIR database are improved the results.
+Figure \ref{fig:FRAVS_SVM_comparative}, along with the perfect APCR and the BPCR result obtained with logistic regression and the decision tree in the RGB+NIR feature level tends to conduce that NIR database improve the results.\\
 
 \subsection{Results comparative with related works}\label{sec:comp_results_literature}
-To compare results with related work, Equal Error rate (ERR) metric is going to be utilized. The comparative it is going to be made with CASIA database and MFSD-MSU database, because FRAV database results with others methods are not available.\\
+In order to compare results with related work, Equal Error rate (ERR) metric is going to be utilized. The comparative it is going to be made with CASIA database and MFSD-MSU database, because FRAV database results with others methods are not available.\\
 
 In table \ref{table_literature_comp} are exposed EER(\%) of the results obtained with CASIA images database and CASIA video database with the literature review; In addition, the EER (\%) obtained with the proposed model is presented in the table with the literature review.\\
 
@@ -367,9 +366,9 @@ In table \ref{table_literature_comp} are exposed EER(\%) of the results obtained
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|c|cc}
 \hline
-\rowcolor[HTML]{ECF4FF} 
+\rowcolor[HTML]{ECF4FF}
 \multicolumn{2}{|c|}{\cellcolor[HTML]{ECF4FF}\textbf{CASIA database}} & \multicolumn{2}{c|}{\cellcolor[HTML]{ECF4FF}\textbf{MFSD - MSU database}} \\ \hline
-\rowcolor[HTML]{ECF4FF} 
+\rowcolor[HTML]{ECF4FF}
 {\color[HTML]{333333} \textbf{CNN model}} & {\color[HTML]{333333} \textbf{EER (\%)}} & \multicolumn{1}{c|}{\cellcolor[HTML]{ECF4FF}\textbf{CNN model}} & \multicolumn{1}{c|}{\cellcolor[HTML]{ECF4FF}\textbf{EER (\%)}} \\ \hline
 Own CASIA image  proposed model & 2.5 & \multicolumn{1}{c|}{Own MFSD-MSU proposed model} & \multicolumn{1}{c|}{5.4} \\ \hline
 Own CASIA video proposed model & 11.5 & \multicolumn{1}{c|}{LDA+SVM proposed model in \cite{MSUdatabse}} & \multicolumn{1}{c|}{5.82} \\ \hline
@@ -386,9 +385,9 @@ LDA+SVM proposed model in \cite{MSUdatabse} & 12.9 &  &  \\ \cline{1-2}
 The researched work with MFSD-MSU is small and there is not researched work with Deep Learning.
 
 \subsection{Executing time}
-In this section, the time that has been necessary to carry out the training and testing processing described in this chapter  are exposed.\\
+In this section, the time that has been necessary to carry out the training and testing processing described in this chapter are exposed.\\
 
-Each general experiment is formed by the CNN training and the classification, which involves the search of the optimal parameter for each classifier, and the metrics calculation. There are six general experiment, one per used databased:
+Each general experiment is formed by the CNN training and the classification, which involves the search for the optimal parameter for each classifier, and the calculation of metrics. There are six general experiments, one per database used :
 \begin{description}[itemsep=2pt,topsep=8pt,parsep=0pt,partopsep=20pt]
  \item Process 1: when CASIA image database has been used.
  \item Process 2: when CASIA video database has been used.
@@ -398,7 +397,7 @@ Each general experiment is formed by the CNN training and the classification, wh
  \item Process 6: when MFSD database has been used.
 \end{description}
 
-In table \ref{table:Executing_time} the time (minutes) is exposed for each process. All the processes differs (generally) just in the database, so the differences in time is because one database is bigger than other or because it is need to train two different neural networks as in RGB+NIR FRAV classification level.
+In table \ref{table:Executing_time} the time (minutes) is exposed for each process. All the processes differ (generally) just in the database, so the differences in time is due to the fact that one database is bigger than other or because it is needed to train two different neural networks as in the RGB+NIR FRAV classification level.
 
 \begin{table}[]
 \centering

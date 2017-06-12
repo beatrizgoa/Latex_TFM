@@ -3,47 +3,48 @@
 %\mtcskip
 
 \begin{small}
-\emph{In this section the conclusions obtained along the methodology are presented as well as the future work.\\}
+\emph{In this section, the conclusions obtained along the methodology are presented and the future work will be explained.}
 \end{small}
 
 \section{Conclusions}
 %Importante of the database
-First conclusion is the importance of the database. Having a representative and well-build database is essential to train any classifier or neural network.\\
+As a first conclusion,  we can point out the importance of the database. Having a representative and well-built database is essential in order to train any classifier or neural network.\\
 
 Classifiers or Neural Network training procedure is based on the input training samples, databases are the elementary tool.\\
 
-In the used databases, it has been proved that the quality of images is important to extract the features better and minimize the error. The results obtained with FRAV database were better than CASIA database and MSU-MFSD database; one main reason is the quality of images. FRAV database has been build with a professional camera, whereas CASIA and MFSD databases are built with laptop or smartphone cameras.\\
+In the used databases, it has been proved that the quality of images is important to extract the features better and to minimize the error. The results obtained with FRAV database were better than with the CASIA database and MSU-MFSD database. One main reason is the quality of images. FRAV database has been built with a professional camera, whereas CASIA and MFSD databases are built with a laptop or smartphone cameras.\\
 
 %Why does not work
-In addition with the quality of images, a database should be balanced, that imply that the amount of samples in each class should be equal by the reason of having a 70\%-30\% distribution of samples would mean that classifier starts with 30\% error if all samples are classified in the same class, and the training would not be performed as correct as if the database is balanced.\\
+Apart from the quality of images, a database should be balanced. In other words, the amount of samples in each class should be equivalent or close to it since having a 70\%-30\%  distribution of samples would mean that the classifier starts with 30\% error if all samples are classified in the same class. This would mean that training would not be performed as well as if the database were balanced.\\
 
-Balancing problems occurs in used database and, specially with MSU-MFSD database, the training procedure is not favourable, samples are classified in the same class independently of the classifier.\\
+Balancing problems occur in used databases and, specially with MSU-MFSD database, the training procedure is not favourable; samples are classified in the same class regardless of the classifier.\\
 
-To solve balance issues, first recommendation is trying to acquire more samples; but if it is not achievable, at training, penalize the classifier strongly the samples (from the class with less samples) which has been incorrectly classified is recommended, therefore, the training procedure is more balanced.\\
- 
-The number of samples also affects the training process, Deep Learning techniques require a big quantity of samples; MSU-MFSD is composed only by 35 class 0 samples, in validation, there are only 2 genuine samples and 12 attacks samples, In consequence, bad results are obtained.\\
+To solve balancing issues, the first recommendation would be to add more samples to the class with fewer samples. If this is not possible, the classifier should strongly be penalized when classifying a sample from a class with fewer samples. This way; the training procedure would be more balanced.\\
 
-FRAV and CASIA quantity of samples is greater than MFSD-MSU, but usually, thousands of samples are used to train neural networks.\\ 
- 
+The total number of samples affects the training process due to the fact that in Deep Learning techniques, a large quantity of samples (thousands) are required. In the used databases, more specifically the MFSD-MSU database, is composed by only 35 class-0 samples in validation subset and only 2 class-0 samples (12 class-1 samples) in test subset. Consequently, bad results are obtained. Bigger databases should be used.\\
+
+The quantity of FRAV and CASIA samples is greater than MFSD-MSU, but usually, thousands of samples are used to train neural networks.\\
+
 %Best database and combination
-From results obtained, FRAV database is the database whose samples are the most correctly classified. The worst results obtained has been with MFSD-MSU database.\\
+rom the  results obtained, the FRAV database is the database whose samples are the most correctly classified. The worst results obtained have been with the MFSD-MSU database.\\
 
-With the purpose of getting better results with MFSD-MSU database, the CNN requires to be modified, for example, trying to change the learning rate or trying to build a balanced database, because all the training and testing processes get stuck classifying all the samples as negatives.\\
+With the purpose of getting better results with MFSD-MSU database, the CNN requires to be modified by trying to change the learning rate or trying to build a balanced database, for example. This is because all the training and testing processes get stuck classifying all the samples as negatives.\\
 
 %FRAVS comparation
-It has been conclude that using NIR images with RGB have improved the results until getting a perfect classification at testing. NIR images could detect attacks because printed photos or tablets are similar to real user in RGB space but not in NIR space. It has been proved that using complementary devices enhance results.\\
+It has been concluded that using NIR images with RGB have improved the results until getting a perfect classification at testing. NIR images could detect attacks because printed photos or tablets are similar to real user in a RGB space but not in a NIR space. It has been proved that using complementary devices enhances results.\\
 
-%CASIAS comparation
-With respect with CASIA image and CASIA video databases, results are  better when CASIA images database is utilized, one sample is misclassified in most of the cases; on the contrary, CASIA videos database is formed by a higher quantity of samples and more samples are erroneously classified.\\
+Regarding the CASIA image and CASIA video databases, results are  better when the CASIA images database is utilized. One sample is misclassified in most cases, on the contrary, CASIA videos database is formed by a higher quantity of samples and more samples are erroneously classified.\\
 
 %Best combination
-The best model combination of CNN + classifier is obtained when RGB+NIR FRAV database feature level is utilized. This best result is a perfect classification with logistic regression and with Decision Tree too. RGB+NIR FRAV database classification level results are also outstanding, especially when LDA has been used for each classify because just one sample has been misclassified, the same sample and two samples has been misclassified with LDA + logistic regression.\\
+The best model combination of CNN + classifier is obtained when using the RGB+NIR FRAV database feature level. The result from this is a perfect classification obtained with the Logistic Regression and the Decision Tree.\\
+
+The results obtained from the RGB+NIR FRAV database classification level are also outstanding, especially when using LDA since just one sample is misclassified, the same one for all classifiers.\\
 
 %Best classifier
-SVM with RBF kernel is, in general, the classifier that works best along the databases; nevertheless, with this classifier has not been obtained the best performance. SVM is a classifier that works good with bi-class problems. Nonetheless, it has not been possible to classify correctly, most of the time, when SVM with linear kernel has been used. Therefore, it is recommended using various classifiers, occasionally, one would be work than other: the performance of the classifier depends on the features distribution.\\
+SVM with RBF kernel is, in general, the classifier that works best along the databases. Nevertheless, with this classifier the best performance has not been obtained. SVM is a classifier that works well with bi-class problems. Nonetheless, for most of the times, it has not been possible to classify correctly when using SVM with linear kernel. Therefore, it is recommended to use various classifiers as some may work better than others due to the fact that , the performance of each classifier depends on distribution of the feature vector.\\
 
 %LDA and PCA
-With respect to use LDA or PCA reduction dimensionality methods none fundamental conclusion has been obtained, in some cases one works better than others, so it is not a waste of time trying to use it if the resources are available, because results could be improved. Consequently, it is recommended use it if it is possible.
+Regarding the use of LDA or PCA reduction dimensionality methods, no fundamental conclusion has been obtained. In some cases, one works better than others, so it is not a waste of time trying to use it if the resources are available as results could be improved. Consequently, it is recommended to use it when possible.\\
 
 For each database, misclassified samples are repeated along the different classifiers used, but a pattern has not been found.\\
 
@@ -53,13 +54,13 @@ When some samples are misclassified for each classifier, the incorrectly classif
 Regarding literature work, the results acquired with CASIA images and MFSD-MSU databases improve the state of the art.
 
 \section{Future work}
-Foremost, trying to minimize the unbalanced database, since it is not possible to get more genuine samples, error would be change, when positive samples are incorrectly classified, error should be increased. Therefore the unbalance would be compensated.\\
+For future work, foremost, trying to minimize the unbalanced database, since it is not possible to get more genuine samples, the error would increase  when positive samples are incorrectly classified in order to compensate the unbalancing\\
 
-After modify the database, if results are not improved, the network architecture should be changed in order to achieve better results.\\
+After modifying the database, if results do not improve, the network architecture should be changed in order to achieve better results.\\
 
-with the finality of improving the performance of the Convolutional Neural Network, learning rate would be modified to dynamic and its value would decrease in each epoch. Thereby, the training steps at firsts epochs would be bigger and when the minimum is found, the steps are smaller, it would be necessary to prove with different value until obtain the most fitting.\\
+With the aim of improving the performance of the Convolutional Neural Network, the learning rate will change to a dynamic one, whose value would decrease as the number of epochs increases. Thereby, the training steps during the first epochs would be greater and when the minimum is found, the steps are smaller. It would be necessary to try with different values until obtaining the most suitable one.\\
 
-Inter-test experiment are important, in future work, train with one database and validate and test with another is recommendatory in order to know the Convolutional Neural Network adaptation. In the same way, the best model obtained with FRAV database (the most correctly classified database) could be tested with MFSD-MSU and CASIA databases with the purpose of known the adaptation of the trained Neural Network and if results would improve or aggravate.\\
+Inter-test experiments are important, in future work, training with one database and validating and testing with another is recommended in order to know the adaptation of the Convolutional Neural Network. In the same way, the best model obtained with FRAV database (the most correctly classified database) could be tested with MFSD-MSU and CASIA databases with the purpose of knowing the adaptation of the trained Neural Network and if results would improve or aggravate.\\
 
 In addition, other classifiers such as Naive Bayes classifier, Random Forest or Gaussian Mixture model could be utilized in order to have more options.\\
 

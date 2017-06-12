@@ -43,8 +43,8 @@
 \BOOKMARK [1][-]{section.0.5.2}{Adapting LeNet-5 architecture}{chapter.0.5}% 43
 \BOOKMARK [2][-]{subsection.0.5.2.1}{New Architecture}{section.0.5.2}% 44
 \BOOKMARK [2][-]{subsection.0.5.2.2}{Databases}{section.0.5.2}% 45
-\BOOKMARK [2][-]{subsection.0.5.2.3}{Experiments Description}{section.0.5.2}% 46
-\BOOKMARK [1][-]{section.0.5.3}{Final experiment}{chapter.0.5}% 47
+\BOOKMARK [2][-]{subsection.0.5.2.3}{Description of the experiments}{section.0.5.2}% 46
+\BOOKMARK [1][-]{section.0.5.3}{Description of the final experiment}{chapter.0.5}% 47
 \BOOKMARK [1][-]{section.0.5.4}{Final experiment results}{chapter.0.5}% 48
 \BOOKMARK [2][-]{subsection.0.5.4.1}{Training and validation process}{section.0.5.4}% 49
 \BOOKMARK [2][-]{subsection.0.5.4.2}{Testing process}{section.0.5.4}% 50

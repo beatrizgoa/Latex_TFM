@@ -122,9 +122,9 @@ Just as the batch was changed and its results were compared in the previous subs
 
 LeNet-5 does not use any normalization layer, but in this experiment from the different normalization availables (batch normalization, local normalization, etc.) Local Response normalization is added after the max-pooling layers.\\
 
-The activation function used in LeNet-5 is tanh (hyperbolic tangent), it has been substituted to rectified linear unit (ReLu) activation function.\\
+The activation function used in LeNet-5 is tanh (hyperbolic tangent), it has been substituted by the rectified linear unit (ReLu) activation function.\\
 
-Regarding the weight initialization, in LeNet, for the convolutional layers and the fully connected layer,  a normalized initialization \cite{XavierInitialization} is used:
+Regarding the initialization of weights, in LeNet, for the convolutional layers and the fully connected layer,  a normalized initialization \cite{XavierInitialization} is used:
 
 \begin{equation}
   W \sim U [- \frac{\sqrt{6}}{\sqrt{n_{j}+n_{j+1}}},\frac{\sqrt{6}}{\sqrt{n_{j}+n_{j+1}}}]
@@ -134,10 +134,10 @@ Where $n_{j}$ is the number of neuron of the current layer and $n_{j+1}$ is numb
 
 Here below the details of each experiment are described:
 \begin{itemize}
-\item{Experiment 1: using Local Response Normalization (LRN) In which a normalization has been carried out in the convolutional-max pooling layers.}
-\item{Experiment 2: using ReLu as activation function:} The activation function tanh has been substituted by ReLu activation function in convolutional and fully connected layers.
-\item{Experiment 3: using ReLu and LRN}: The activation function used is ReLu and LRN has been used as  normalization layer.
-\item{Experiment 4: changing weights initialization}: Weights initialization has been changed by Gaussian. In which the mean value that has been used is 0 and std is 0.01. Weights initialization has been changed in convolutional and fully connected layers. Also, bias initialization has been changed by ones.
+\item{Experiment 1: using Local Response Normalization (LRN):} in which a normalization has been carried out in the convolutional-max pooling layers.
+\item{Experiment 2: using ReLu as activation function:} the activation function tanh has been substituted by ReLu activation function in convolutional and fully connected layers.
+\item{Experiment 3: using ReLu and LRN}: the activation function used is ReLu and LRN has been used as  normalization layer.
+\item{Experiment 4: changing weights initialization}: weights initialization has been changed by Gaussian. In which the mean value that has been used is 0 and std is 0.01. Weights initialization has been changed in convolutional and fully connected layers. Also, bias initialization has been changed by ones.
 \end{itemize}
 
 %Using Local Response Normalization we want to detect high frequency features with a large response. If we normalize around the local neighborhood of the excited neuron, it becomes even more sensitive as compared to its neighbors.[\url{https://prateekvjoshi.com/2016/04/05/what-is-local-response-normalization-in-convolutional-neural-networks/}].\\
@@ -152,7 +152,6 @@ In figure \ref{fig:LenetModifications} what is represented is the cost at traini
 From figure \ref{fig:LenetModifications}, the first observation is that the Gaussian initialization has worsened the original result significantly, the cost converges in 2.3 while in other experiments it converges in a value close to 0; therefore, the training has converged in a local minimum. Moreover, the early-stopping led the training process for the fourth experiment Gaussian initialization experiment) to stop in $100^{th}$ epoch.\\
 
 From figure \ref{fig:LenetModifications},  it can also be deduced that the training and validation processes in other experiments' behaviour is similar to the original LeNet-5 performance.\\
-
 
 The results obtained at validation and testing for each experiment are exposed in table \ref{Experiments-lenet}.
 
@@ -170,8 +169,7 @@ Experiment 3  &     Using ReLu and LRN                      &              1.18\
 Experiment 4  &     Gaussian weight initialization          &              81.22\%  (100 iter.)              &                          80.90\%         \\ \hline
 \end{tabular}%
 }
-\caption{Lenet-5 experiments results.}
-\label{Experiments-lenet}
+\caption{Lenet-5 experiments results.}\label{Experiments-lenet}
 \end{table}
 
 From table \ref{Experiments-lenet}, it could be concluded that the best configuration for the network is the original one. With Gaussian initialization, the network does not find a local minimum in such time. Using LRN and ReLu, the test result is closer to the one obtained with the original LeNet-5, but not as good as the last one. Changing the activation function has not been a good change. Not taking into account the original LeNet-5, the best test performance has been obtained with 1,08\% using ReLu and LRN, but the best validation error is 0,99\% obtained using just LRN. The modifications results are similar, except in experiment 4.
@@ -233,9 +231,9 @@ The new architecture comprises the following layers:
 ReLu has been used as an activation function. Logistic regression has been used in the training process. Weights have been initialized with Gaussian initialization and bias to 1. The learning rate value is 0.01.
 
 \subsection{Databases} \label{subssec:ejec1_database}
-The databases used in for experiments are CASIA images, CASIA videos, RGB FRAV, (RGB+NIR) FRAV feature level database and MFSD-MSU database. Just two classes are going to be used in this experiment: class 0 is real users class and class 1 is attack class.\\
+The databases used in the experiments are CASIA images, CASIA videos, RGB FRAV, (RGB+NIR) FRAV feature level database and MFSD-MSU database. Databases' description is available in section \ref{sec:methd_databses}. Just two classes are going to be used in this experiment: class 0 (real users class) and class 1 (attack class).\\
 
-Samples distribution are described in table \ref{Samples_distribution} where the number of samples per class and  subset (train, test and validation) are summarized for each database. It is possible to realize that the number of positive (class 0) samples is lower for all the databases, but more specifically, the amount of positive samples in MFSD-MSU database is very small.\\
+The distribution of samples is described in table \ref{Samples_distribution} where the number of samples per class and  per subset (train, test and validation) are summarized for each database. As it can be seen the number of positive (class 0) samples is lower for all the databases, but more specifically, the amount of positive samples in MFSD-MSU database is very small.\\
 
 \begin{table}[htb]
 \centering
@@ -253,15 +251,15 @@ Samples distribution are described in table \ref{Samples_distribution} where the
 \label{Samples_distribution}
 \end{table}
 
-Databases are built independently of the CNN process. Images are read, shuffled and splited in train, test and validation subsets in order to be saved in a pickle file and used in the same way as much times as necessary without being reading the raw data.
+Databases are built independently from CNN process. Images are read, shuffled and split into train, test and validation subsets in order to be saved in a pickle file and used in the same way as many times as necessary without reading the raw data.
 
-\subsection{Experiments Description} \label{sec:experiments_ejec1}
-With that databases. Some experiments has been carried out. To test, the used classifier is SVM with RBF, the parameter \textit{C} has been searched for each experiment:
+\subsection{Description of the experiments} \label{sec:experiments_ejec1}
+Databases described in the previous section 5.2.2 are used with the purpose of carrying out some experiments which are going to be described. In order to test, the used classifier is SVM with RBF, the parameter \textit{C} has been searched for each experiment:
 \begin{itemize}
 \item General experiment: the architecture described in \ref{subsec:ejecucion1} is trained without changes.
-\item Experiment 2: with the purpose of trying to know if the configuration of the network is correct, only it is going to be trained with 20 samples for each subset, expect for MFSD-MSU database in which 14 samples are used.
-\item Experiment 3: with the purpose of provoke overfitting, 20 samples are used for each subset, however validation samples are the same as training samples.
-\item Experiment 4: the finality is the same as Experiment 3, knowing the behaviour of the network and provoke overfitting, but differs in the learning rate that has been changed to 0.001 value. 
+\item Experiment 2: with the purpose of trying to know if the configuration of the network is correct, only it is going to be trained with 20 samples for each subset, except for the MFSD-MSU database in which 14 samples are used.
+\item Experiment 3: with the aim to of provoke overfitting, 20 samples are used for each subset, however validation samples are the same as training samples.
+\item Experiment 4: the finality is the same as Experiment 3, knowing the behaviour of the network and provoke overfitting, but differs in the learning rate that has been changed to 0.001 value.
 \end{itemize}
 %Experiment 2 and experiment 3 would have the same training cost curve, because they differs in the validation subset.\\
 
@@ -286,26 +284,24 @@ Experiment 4                  & Brown                          \\ \hline
 \caption{Experiments colour legend.}
 \label{table:color_legend}
 \end{table}
+Because the training process in experiment 2 and experiment 3 should be the same (the difference among these experiments is the validation process, and thus, the test process), only one cost will be represented.\\
 
-Because the training process in experiment 2 and experiment 3 should be the same (the difference among those experiments is the validation process, and thus test process), only one cost would be represented.\\
-
-In figures \ref{fig:casia-ejec1}, \ref{fig:casiavid-ejec1}, \ref{fig:frav-ejec1}, \ref{fig:frav_imagelevel-ejec1}, \ref{fig:frav_classlevel-ejec1} and \ref{fig:mfsd-ejec1} are represented the cost at training and the error at validation, for each database, when the four described experiments have been developed. All figures have the same color legend which is summarized in table \ref{table:color_legend}.\\
+In figures \ref{fig:casia-ejec1}, \ref{fig:casiavid-ejec1}, \ref{fig:frav-ejec1}, \ref{fig:frav_imagelevel-ejec1}, \ref{fig:frav_classlevel-ejec1} and \ref{fig:mfsd-ejec1} what can be seen is the cost at training and the error at validation for each database, when the four described experiments have been developed. All figures have the same color legend which is summarized in table \ref{table:color_legend}.\\
 
 
 %In figure \ref{fig:frav-ejec1} are represented the validation error and training cost of each experiment with RGB FRAV database. RGB+NIR FRAV database results are represented in figure \ref{fig:frav_imagelevel-ejec1}. CASIA image database experiments are represented in figure  \ref{fig:casia-ejec1}, CASIA video database is represented in figure \ref{fig:casiavid-ejec1}. In figure \ref{fig:mfsd-ejec1} are represented results of MFSD-MSU database.\\
 
+From the general experiment, it can be seen that the cost converges in low values, the validation error converges (from a 10\% error to very low values near to 0\% error) for all databases except for MFSD-MSU database as could be seen in figure \ref{fig:mfsd-ejec1} which means that the generalization is not correct. \\
 
-From the general experiment, can be seen that the cost converges in low values, the validation error converges (from 10\% error to very low values near to 0\% error) for all databases except for MFSD-MSU database as could be seen in figure \ref{fig:mfsd-ejec1} which means that the generalization is not correct. \\
+From Experiment 2, one would expect that the training and validation processes converge without oscillations and in less epochs, but because of the unbalanced samples, the validation results are worsen.\\
 
-From Experiment 2, would expect that the training and validation processes converges without oscillations and in less epochs, but because of the unbalanced samples, the validation results are worsen.\\
+From Experiment 3 and experiment 2, overfitting would be expected. Just in Experiment 3 and in databases, except in the FRAV, it is obtained.\\
 
-From Experiment 3 and experiment 2, overfitting would be expected. Just in Experiment 3 and with all databases except for FRAV one is obtained.\\
+Decreasing the learning rate from 0.01 to 0.001 does not improve the performance as shown for all databases in figures \ref{fig:casia-ejec1}, \ref{fig:casiavid-ejec1}, \ref{fig:frav-ejec1}, \ref{fig:frav_imagelevel-ejec1}, \ref{fig:frav_classlevel-ejec1} and \ref{fig:mfsd-ejec1}. The  training curve should converge with more epochs, but the training and validation error is constant.\\
 
-Decreasing the learning rate from 0.01 to 0.001 does not improve the performance as could be seen for all databases in figures \ref{fig:casia-ejec1}, \ref{fig:casiavid-ejec1}, \ref{fig:frav-ejec1}, \ref{fig:frav_imagelevel-ejec1}, \ref{fig:frav_classlevel-ejec1} and \ref{fig:mfsd-ejec1}. The  training curve should converge with more epochs, but the training and validation error is constant.\\
+Table \ref{table-ej1} shows the positive and negatives rates obtained for each database when the general experiment (the first one described) has been tested. The results obtained with the RGB+NIR FRAV database are the best since just 3 samples have been misclassified from 140 images. In general, the classification is not bad. The database whose samples are misclassified in a big amount is CASIA videos, but it should also be pointed out that the total number of samples is much bigger too.\\
 
-In table \ref{table-ej1} could be seen the positive and negatives rates obtained for each database when the general experiment (the fist one described) has been tested. The result obtained with RGB+NIR FRAV database is the best because just 3 samples have been misclassified from 140 images. In general, classification is not bag. The database whose samples are misclassified in a big amount is CASIA videos but the total number of samples is much bigger too.\\
-
-The conclusion is the needed of a balanced database, at least to do this experiment. In which the number of class 0 samples are the same that the number of class 1 samples, because the network would not learn in the same way if in some cases the number of samples of  attack class is four times than the number of samples of class 1, just predicting 0 would have 25\% accuracy, and having less than 5 samples in validation or testing is not a good generalizer (2 samples in class 0 MFSD database).
+What is concluded from this is the need of a balanced database, at least to do this experiment. In which the number of class 0 samples is the same as the number of class 1 samples. This is due to the fact that the network would not learn in the same way if, in some cases, the number of samples of  the attack class is four times the number of samples of class 1. Just predicting 0 would have a 25\% accuracy, and having less than 5 samples in validation or testing is not a good generalizer (2 samples in class 0 MFSD database).
 
 \begin{table}[tb]
 \centering
@@ -375,19 +371,18 @@ The conclusion is the needed of a balanced database, at least to do this experim
  \label{fig:mfsd-ejec1}
 \end{figure}
 
-\section{Final experiment}\label{sec:Final_archi} %Used in ejecucion 2
+\section{Description of the final experiment}\label{sec:Final_archi} %Used in ejecucion 2
 In this section, the last, and the most relevant experiment is described.\\
 
-The architecture used for this experiment is the same as the used in \ref{subsec:ejecucion1}, the learning rate, the classifier used at training and the batch size are the same too.\\
+The architecture used for this experiment is the same as the one used in \ref{subsec:ejecucion1}. The learning rate (0.01), the classifier used at training (logistic regression) and the batch size (20 and 14) are the same too. The number of epochs has been increased to 600.\\
 
-All the databases are utilized. Samples distribution  is described in table \ref{Samples_distribution}, the same utilized as in \ref{subssec:ejec1_database}.\\
+All the databases are utilized. The distribution of samples  is described in table \ref{Samples_distribution}, the same one used in \ref{subssec:ejec1_database}.\\
 
-The difference between this experiment and the realized in \ref{sec:experiments_ejec1} is the classification task.\\
+The difference between this experiment and the carried out in \ref{sec:experiments_ejec1} is the classification task.\\
 
-Each database has been trained and validated individually. The best model obtained at validation is saved for testing, for each database. Features obtained at the output of the Neural Network best model are used to fed each classifier for training (with training samples), validating (with validation samples) and testing (with testing samples).\\
+Each database has been trained and validated individually. The best model obtained at validation is saved for testing, for each database. Features obtained at the output of the best Neural Network model are used to feed each classifier for training (with training samples), validating (with validation samples) and testing (with testing samples).\\
 
-Classifiers are trained with the features of the training samples. The best model of the classifier is selected depending on the features obtained of validation samples and the test is realized with the features of the test samples.\\
-
+Classifiers are trained with the features of the training samples. The best model of the classifier is selected depending on the features obtained of validation samples and the test is carried to with the features of the test samples.\\
 
 %\subsection{Architecture}
 %The neural network is composed by five convolutional layers: the first and second convolutional layers (CL1 and CL2) , whose kernel sizes are 11x11 and 3x3 respectively, are followed by a local response normalization layer and a max pool layer whose size is 2x2. The third convolutional layer (CL3), with a kernel size of 3x3 , the next layer is a convolutional one (CL4) of size 3x3 followed by a max-pool layer whose size is 2x2. The next two layers are Dropouts layers (DL1 and DL2) with 4096 neurons. The next layer us a Fully-connected layer (FL) with 4096 neurons at the input and 2000 layers at the output.\\
@@ -408,15 +403,16 @@ Classifiers are trained with the features of the training samples. The best mode
 %\subsection{Classification}
 %For testing some classifiers has been utilized, and they are fed by the output of the convolutional neural network last layer, the Fully-connected layer.\\
 
-The classifiers used to classify the features of the output of the CNN and get the results are the SVM (with RBF and linear kernel), KNN, Decision Tree and logistic regression. Also, PCA and LDA techniques has been used with each classifier separately to reduce the dimensionality of the features.\\
+The classifiers used to classify the features of the output of the CNN and to get the results are the SVM (with RBF and linear kernel), KNN, Decision Tree and logistic regression. Also, PCA and LDA techniques have been used with each classifier separately to reduce the dimensionality of the features.\\
 
-The classifiers, before use them, has been personalize to each and particular time (for each database and if LDA or PCA is used). For that, cross validation has been used, more concretely, the \textit{cros\_val\_Score()} function from sklearn has used with 10 folders:
+The classifiers, before using them, have been personalized for each and every particular time (for each database and if LDA or PCA is used). To do so, a cross validation has been used, more specifically, the \textit{cros\_val\_Score()} function from \textit{Sklearn} has been used with 10 folders:\\
+
 \begin{itemize}
-\item For SMV classifier, the C parameter has been searched among the following values: 0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 2, 3, 5 and 10.
-\item For KNN classifier, the number of neighbours (K) has been searched among the following values: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 and 30.
-\item For Deep Trees classifier, the depth of the tree has been searches among the following values: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 and 30.
-\item For PCA, the number of components has been found in a range of 3 to 5000, in 3 to 3 steps.
-\item For LDA, the number of components has been found in a range of 1 to the length of the characteristic vector in 10 to 10 steps.
+\item For the SMV classifier, the C parameter has been searched among the following values: 0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1, 2, 3, 5 and 10.
+\item For the KNN classifier, the number of neighbours (K) has been searched among the following values: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 and 30.
+\item For the Deep Trees classifier, the depth of the tree has been searches among the following values: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 and 30.
+\item For the PCA, the number of components has been found in a range of 3 to 5000, in 3 to 3 steps.
+\item For the LDA, the number of components has been found in a range of 1 to the length of the characteristic vector in 10 to 10 steps.
 \end{itemize}
 
 %With the purpose of having a more general results, all the training, validation and testing (with the classification) processes have been repeated three times, those times are differentiated among them in the seed if the pseudo-randomized initialization of the weights.\\

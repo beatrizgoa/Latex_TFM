@@ -8,25 +8,25 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Adapting LeNet-5 architecture}{\reset@font\mtcSfont 46}{section.0.5.2}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.1}New Architecture}{\reset@font\mtcSSfont 47}{subsection.0.5.2.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.2}Databases}{\reset@font\mtcSSfont 47}{subsection.0.5.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.3}Experiments Description}{\reset@font\mtcSSfont 48}{subsection.0.5.2.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Final experiment}{\reset@font\mtcSfont 53}{section.0.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.3}Description of the experiments}{\reset@font\mtcSSfont 48}{subsection.0.5.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Description of the final experiment}{\reset@font\mtcSfont 53}{section.0.5.3}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Final experiment results}{\reset@font\mtcSfont 54}{section.0.5.4}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.1}Training and validation process}{\reset@font\mtcSSfont 54}{subsection.0.5.4.1}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode CASIA Image database}{\reset@font\mtcSSSfont 54}{subsubsection*.54}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode CASIA Video database}{\reset@font\mtcSSSfont 55}{subsubsection*.56}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode FRAV database}{\reset@font\mtcSSSfont 56}{subsubsection*.58}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode FRAV RGB+NIR (feature level) database}{\reset@font\mtcSSSfont 56}{subsubsection*.60}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode FRAV RGB+NIR (classification level) database}{\reset@font\mtcSSSfont 57}{subsubsection*.62}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode RGB FRAV database}{\reset@font\mtcSSSfont 55}{subsubsection*.58}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode RGB+NIR (feature level) FRAV database}{\reset@font\mtcSSSfont 56}{subsubsection*.60}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode RGB+NIR (classification level) FRAV database}{\reset@font\mtcSSSfont 56}{subsubsection*.62}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode MFSD database}{\reset@font\mtcSSSfont 57}{subsubsection*.64}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.2}Testing process}{\reset@font\mtcSSfont 58}{subsection.0.5.4.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode CASIA Image database}{\reset@font\mtcSSSfont 59}{subsubsection*.66}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.2}Testing process}{\reset@font\mtcSSfont 57}{subsection.0.5.4.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode CASIA Image database}{\reset@font\mtcSSSfont 58}{subsubsection*.66}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode CASIA Video database}{\reset@font\mtcSSSfont 60}{subsubsection*.70}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode FRAV database}{\reset@font\mtcSSSfont 62}{subsubsection*.73}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode RGB FRAV database}{\reset@font\mtcSSSfont 61}{subsubsection*.73}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode FRAV RGB+NIR (feature level) database}{\reset@font\mtcSSSfont 63}{subsubsection*.77}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode FRAV RGB+NIR (classification level) database}{\reset@font\mtcSSSfont 64}{subsubsection*.81}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode FRAV RGB+NIR (classification level) database}{\reset@font\mtcSSSfont 65}{subsubsection*.81}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode MFSD-MSU database}{\reset@font\mtcSSSfont 66}{subsubsection*.85}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.3}Comparative among databases}{\reset@font\mtcSSfont 66}{subsection.0.5.4.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode CASIAs databases}{\reset@font\mtcSSSfont 67}{subsubsection*.88}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode FRAVs databases}{\reset@font\mtcSSSfont 67}{subsubsection*.90}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.4}Results comparative with related works}{\reset@font\mtcSSfont 68}{subsection.0.5.4.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.5}Executing time}{\reset@font\mtcSSfont 69}{subsection.0.5.4.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.3}Comparative among databases}{\reset@font\mtcSSfont 67}{subsection.0.5.4.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode CASIAs databases}{\reset@font\mtcSSSfont 68}{subsubsection*.88}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode FRAVs databases}{\reset@font\mtcSSSfont 68}{subsubsection*.90}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.4}Results comparative with related works}{\reset@font\mtcSSfont 69}{subsection.0.5.4.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.5}Executing time}{\reset@font\mtcSSfont 70}{subsection.0.5.4.5}}
