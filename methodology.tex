@@ -11,7 +11,16 @@
 \input{classifiers.tex}
 \input{Metric.tex}
 \section{Algorithm diagram chart}
-The flowchart of the algorithm developed in \ref{sec:adapt_lenet} is represented in figure X . The code has been run as described in the figure as many times as databases are availables (CASIA images, CASIA videos, RGB FRAV, RGB+NIR feature level FRAV, RGB+NIR classification level FRAV and MFSD-MSU).\\
+The flowchart of the code used for this thesis development in section \ref{sec:adapt_lenet} is shown in \ref{fig:flowchart}. In the figure, the subsets generation flowchart from the databases is presented in \ref{fig:dat_flowchart}; it has been used for each database (CASIA images, CASIA videos, RGB FRAV, RGB+NIR feature level FRAV, RGB+NIR classification level FRAV and MFSD-MSU). The programmed code is summarized in figure \ref{fig:alg_flowchart} which has been run, as described in the figure, as many times as databases are available.
 
-The diagram used to obtain the data (the explained in \ref{subssec:ejec1_database}) and feed the network is represented in figure X. The same process has been carried out for each database.\\
+
+\begin{figure}[tb]
+\centering
+\subfigure[Subsets generator diagram]{\includegraphics[width=0.18\textwidth]{images_miscelaneus/Databases_gen.png}\label{fig:dat_flowchart} }
+\subfigure[General algorithm diagram]{\includegraphics[width=0.62\textwidth]{images_miscelaneus/Algorithm.png} \label{fig:alg_flowchart} }
+\caption{Code diagram chart.}
+\label{fig:flowchart}
+\end{figure}
+
+
 
