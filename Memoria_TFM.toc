@@ -93,3 +93,5 @@
 \contentsline {section}{\numberline {7.1}Conclusions}{79}{section.0.7.1}
 \contentsline {section}{\numberline {7.2}Future work}{81}{section.0.7.2}
 \contentsline {chapter}{Bibliography}{83}{chapter*.95}
+\contentsline {chapter}{List of Figures}{87}{chapter*.96}
+\contentsline {chapter}{List of Tables}{91}{chapter*.97}
