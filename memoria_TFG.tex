@@ -15,7 +15,7 @@
 \usepackage{titlesec}		% Aspecto configurable de los capítulos
 \usepackage{longtable}		% Permite las tablas que ocupan más de una página
 \usepackage{anysize}		% Configuración de márgenes
-\usepackage{color}			% Colores
+\usepackage{corollaryor}			% Colores
 \usepackage{graphicx}		% Gestión de imágenes
 \usepackage{wrapfig}
 \graphicspath{ {media/} }	% Carpeta en la que por defecto se encuentran las imagenes
@@ -42,21 +42,21 @@
 
 %Paquetes para tablas
 \usepackage[table,xcdraw]{xcolor}
-\usepackage{array} 
+\usepackage{array}
 \usepackage{booktabs} %cambiar ancho de las líneas
 
 
 %Cabecera y pie de pagina
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagestyle{fancy}
-\fancyhf{} 
-%\fancyhead[RO]{\leftmark} % En las páginas impares, parte izquierda del encabezado, aparecerá el nombre de capítulo 
-\fancyhead[LE]{\leftmark} % En las páginas pares, parte derecha del encabezado, aparecerá el nombre de sección 
-\fancyhead[LO,RE]{\thepage} % Números de página en las esquinas de los encabezados 
-\renewcommand{\chaptermark}[1]{\markboth{\textbf{\thechapter. #1}}{}} % Formato para el capítulo: N. Nombre 
-\renewcommand{\sectionmark}[1]{\markright{\textbf{\thesection. #1}}} % Formato para la sección: N.M. Nombre 
-\renewcommand{\headrulewidth}{0.4pt} % Ancho de la línea horizontal bajo el encabezado 
-\renewcommand{\footrulewidth}{0.2pt} % Ancho de la línea horizontal sobre el pie 
+\fancyhf{}
+%\fancyhead[RO]{\leftmark} % En las páginas impares, parte izquierda del encabezado, aparecerá el nombre de capítulo
+\fancyhead[LE]{\leftmark} % En las páginas pares, parte derecha del encabezado, aparecerá el nombre de sección
+\fancyhead[LO,RE]{\thepage} % Números de página en las esquinas de los encabezados
+\renewcommand{\chaptermark}[1]{\markboth{\textbf{\thechapter. #1}}{}} % Formato para el capítulo: N. Nombre
+\renewcommand{\sectionmark}[1]{\markright{\textbf{\thesection. #1}}} % Formato para la sección: N.M. Nombre
+\renewcommand{\headrulewidth}{0.4pt} % Ancho de la línea horizontal bajo el encabezado
+\renewcommand{\footrulewidth}{0.2pt} % Ancho de la línea horizontal sobre el pie
 \setlength{\headheight}{1.5\headheight} % Aumenta la altura del encabezado en una vez y media
 \newcommand{\Keywords}[1]{\vfill\noindent{\small{\em Palabras clave}: #1}}
 \definecolor{grisclar}{gray}{0.5}
@@ -126,7 +126,7 @@ Práctica evaluable'}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{document} 
+\begin{document}
 
 \mtcaddchapter % Para que el minitock salga bien
 
@@ -154,7 +154,7 @@ Práctica evaluable'}}
 \blankpage %reverso titulo
 
 %%%%%%%%%%%%%%%% DEDICATORIA %%%%%%%%%%%%%%
-\input{dedicatoria.tex} 
+\input{dedicatoria.tex}
 \blankpage %reverso
 
 %%%%%%%%%%%%%%%% AGRADECIMIENTOS %%%%%%%%%%%%%%%%%%
@@ -186,7 +186,7 @@ Práctica evaluable'}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \mainmatter
-	
+
 \part{Memoria}
 \fancyhead[RO]{\bf I MEMORIA} %Encabezado paginas impares con \part
 \chapter{Motivación, objetivos e introducción}
