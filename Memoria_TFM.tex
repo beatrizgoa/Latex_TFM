@@ -72,15 +72,14 @@
 \makeatletter %Para que al final de cada parte se reanude la numeración de capitulos por 1
 \@addtoreset{chapter}{part}
 \makeatother
-
 \urlstyle{same}
+
 
 % Título, autor y fecha del documento
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{\Huge \textbf{`Learning convolutional Neural Network for Face Anti-Spoofing''}}
+
+\title{\Huge \textbf{`Deep learning for face presentation attack detection'}}
 \author{\Huge \textit{Beatriz G\'omez Ayll\'on}}
-
-
 
 % Referencias internas
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -126,30 +125,30 @@
 
 
 %%%%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%%%
-%\includepdf[pagecommand={\thispagestyle{empty}}]{media/portada.pdf}
+\includepdf[pagecommand={\thispagestyle{empty}}]{portada.pdf}
 
-%\blankpage
-
-%\blankpage % Primera pagina
-%\blankpage % Primera pagina - reverso
+\blankpage
 
 
-%%%%%%%%%%%%%%%%% ACTA %%%%%%%%%%%%%%%%%%%%%
-%\includepdf[pagecommand={\thispagestyle{empty}}]{media/Acta.pdf}
-%\blankpage %reverso del acta
 
 
-\maketitle
 %\blankpage %reverso titulo
-
 %%%%%%%%%%%%%%%% DEDICATORIA %%%%%%%%%%%%%%
-%\input{dedicatoria.tex}
-%\blankpage %reverso
+
+\thispagestyle{empty}
+\vspace*{\fill}
+
+\begin{flushright}
+\textit{To my grandparents.}
+\end{flushright}
+
+\vspace*{\fill}
+
+\blankpage %reverso
 
 %%%%%%%%%%%%%%%% AGRADECIMIENTOS %%%%%%%%%%%%%%%%%%
-%\chapter*{Agradecimientos}
-%	\input{agradecimientos}
-%\blankpage %reverso
+\input{agradecimientos.tex}
+\blankpage %reverso
 
 
 \chapter*{Abstract}
@@ -171,7 +170,7 @@ From the results that were obtained, we can conclude with the fact that the most
 
 
 
-\input{agradecimientos.tex}
+
 
 
 %%%%%%%%%%%%%%% ÍNDICE %%%%%%%%%%%%%%%%%%%%%%%
